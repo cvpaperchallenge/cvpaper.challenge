@@ -1,0 +1,90 @@
+@import url(../lib/font/noto-sans-jp/noto-sans-jp.css);
+
+.reveal .slides section .paper-abstract {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "info info"
+        "item1 item2"
+        "item3 item4";
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: 50vw 50vw;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    margin: 0;
+    font-size: 1.6vw;
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 300;
+}
+
+.reveal .slides section .paper-abstract .title {
+    grid-area: title;
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding: 0.5em 0.8em 0 0.8em;
+}
+
+.reveal .slides section .paper-abstract .info {
+    grid-area: info;
+    padding: 0.3em 1.4em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract .item1 {
+    grid-area: item1;
+    padding: 0.3em 1.4em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract .item2 {
+    grid-area: item2;
+    padding: 0.3em 1.4em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract .item3 {
+    grid-area: item3;
+    padding: 0.3em 1.4em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract .item4 {
+  grid-area: item4;
+  padding: 0.3em 1.4em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract h1 {
+    font-size: 1.8vw;
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.reveal .slides section .paper-abstract .text {
+    padding: 0.4em 0 0 0;
+    line-height: 1.5em;
+}
+
+.reveal .slides section .paper-abstract .text ul {
+    padding-left: 0em;
+}
+
+.reveal .slides section .paper-abstract .text li {
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 300;
+    padding: 0 0 0.4em 0;
+}
+
+.reveal .slides section .paper-abstract img {
+    background: rgb(0, 0, 0);
+    border: 0;
+    box-shadow: 0 0 0 0;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    max-width: auto;
+    max-height: 30vh;
+}
+
+.reveal .slides section .paper-abstract .footer {
+    grid-area: footer;
+}
