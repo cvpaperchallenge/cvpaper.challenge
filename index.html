@@ -22,25 +22,42 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
-            <div class="title">Title </div>
-            <div class="info">Authors, Conference, Year </div>
+            <div class="title">Generating the Future with Adversarial Transformers</div>
+            <div class="info">C. Vondrick et al., CVPR, 2017.</div>
             <div class="item1">
               <h1>概要</h1>
-              <div class="text"></div>
-              <Abstract></Abstract>
+              <div class="text">
+                未来の動画を予測して生成する手法を提案．
+                4フレーム x 64画素 x 64画素のクリップを入力として，その後の16フレームの動画を生成．
+                完全に新しいフレームを生成するのは難しいので，入力フレームの変換により未来のフレームを生成するのがポイント．
+                もっともらしい動画を作るにはLow-Levelな情報が重要になるものの，予測のためにはHigh-Levelな理解も必要であり，
+                その両者を一気に一つのネットワークで学習するのは難しいので，
+                Low-Levelな情報は元のフレームを変換することで引っ張ってきて，ネットワークはHigh-Levelな特徴抽出に集中させるのが良いと主張．
+                このような変換を実現するためにTransformerという機構を取り入れたアーキテクチャを提案．
+                このネットワークの学習には，敵対的学習を利用しており，本物の動画か生成した動画かを識別するDiscriminatorと同時に学習をしている．
+                生成動画の主観評価や可視化，Generatorの特徴を利用した物体認識タスクなどで性能を評価．
+                
+              </div>
             </div>
-            <div class="item2"><img src="ganosaic.png"></div>
+            <div class="item2"><img src="slides/figs/generating_future.png"></div>
             <div class="item3">
               <h1>新規性・結果</h1>
               <div class="text">
                 <ul>
-                  <li>...</li>
+                  <li>元のフレームからの変換により未来のフレームを生成する手法を提案</li>
+                  <li>未来の動画生成において，敵対的学習により大規模な教師なしデータを利用した学習を実現</li>
+                  <li>直接動画を生成したり，回帰誤差で学習したりする手法よりも良いことを主観評価実験で確認          </li>
                 </ul>
               </div>
             </div>
             <div class="item4">
               <h1>自由記述欄</h1>
-              <div class="text">...</div>
+              <div class="text">
+                <ul>
+                  <li>入力が4フレームだけだけど，もっと増やすと性能は変わるのか気になる</li>
+                  <li>主観評価で本物と比較すると提案手法が一番嫌われている率が高いのもちょっと気になる</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
