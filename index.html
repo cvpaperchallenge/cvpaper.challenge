@@ -22,6 +22,66 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">End-to-end Driving via Conditional Imitation Learning</div>
+            <div class="info">Felipe Codevilla, Matthias Müller, Alexey Dosovitskiy, Antonio López, and Vladlen Koltun, arXiv 1710.02410</div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">自動運転を模倣学習により行う手法を提案。実空間での学習結果をヴァーチャルな空間での自動運転にて再現することができた。RGB画像、計測（e.g. スピード）や命令（e.g. turn right）などからステアリング、アクセル、ブレーキなどのコマンドを出力して自動車を操作する。</div>
+            </div>
+            <div class="item2"><img src="slides/figs/180205conditionalimitationlearning.png"><img src="slides/figs/180205framework_imitation.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>模倣学習による自動運転を実現した。</li>
+                  <li>実空間とシミュレーションベースの転移を行うことにも成功。</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>リンク集</h1>
+              <div class="text">
+                <ul>
+                  <li>自動運転の学習はシミュレーションベースで完結してしまう可能性がある。</li>
+                  <li>メタ学習/模倣学習/強化学習などはCVに徐々に取り入れられてくるはずなので、2018年は学習しておいて損はない？</li>
+                  <li><a href="https://arxiv.org/pdf/1710.02410.pdf" target="blank">[論文] End-to-end Driving via Conditional Imitation Learning</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=cFtnflNe5fM" target="blank">YouTube</a></li>
+                  <li><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Open3D: A Modern Library for 3D Data Processing</div>
+            <div class="info">Qian-Yi Zhou et al., arXiv 1801.09847</div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">3Dデータを取り扱い、迅速な開発を可能にする<a href="http://www.open3d.org/" target="blank">Open3D</a>を提供する。Open3DはC++/Pythonをサポート、並列化にも対応しており、クラウドで開発することが可能。
+                点群読み込み-ダウンサンプリング-法線の計算、シーン再構築、3次元可視化などの処理が含まれている。
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180205open3d.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">3次元画像処理のコミュニティにて有益なオープンソースを提供し、その<a href="https://github.com/IntelVCL/Open3D" target="blank">コード</a>も提供されている。</div>
+            </div>
+            <div class="item4">
+              <h1>コメント・リンク集</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="http://www.open3d.org/" target="blank">Project page</a></li>
+                  <li><a href="https://arxiv.org/pdf/1801.09847.pdf" target="blank">[論文] Open3D: A Modern Library for 3D Data Processing</a></li>
+                  <li><a href="https://github.com/IntelVCL/Open3D" target="blank">Code</a></li>
+                  <li><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Hierarchical Variational Autoencoders for Music</div>
             <div class="info">A. Roberts et al., NIPS WS on Machine Learning for Creativity and Design, 2017.</div>
             <div class="item1">
@@ -123,12 +183,10 @@
                 <ul>
                   <li>リアルが完全に崩壊した。（Face2Faceの全身モデル版が実現可能になった？）</li>
                   <li>CG/UIの分野との親和性がより高くなった</li>
-                  <li><a href="https://arxiv.org/abs/1802.00434">DensePose: Dense Human Pose Estimation In The Wild</a></li>
-                  <li><a href="https://arxiv.org/abs/1612.01202">DenseReg</a></li>
-                  <li>
-                    <SMPL></SMPL>
-                  </li>
-                  <li><a href="https://twitter.com/hirokatukataoka">slide by Hirokatsu Kataoka</a></li>
+                  <li><a href="https://arxiv.org/abs/1802.00434" target="blank">DensePose: Dense Human Pose Estimation In The Wild</a></li>
+                  <li><a href="https://arxiv.org/abs/1612.01202" target="blank">DenseReg</a></li>
+                  <li><a href="http://smpl.is.tue.mpg.de" target="blank">SMPL</a></li>
+                  <li><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></li>
                 </ul>
               </div>
             </div>
