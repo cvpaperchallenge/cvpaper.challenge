@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Open3D: A Modern Library for 3D Data Processing
+    .info Qian-Yi Zhou et al., arXiv 1801.09847
+    .item1
+      h1 概要
+      .text.
+        |3Dデータを取り扱い、迅速な開発を可能にする
+        a(href="http://www.open3d.org/") Open3D
+        |を提供する。Open3DはC++/Pythonをサポート、並列化にも対応しており、クラウドで開発することが可能。
+        |点群読み込み=>ダウンサンプリング=>法線の計算、シーン再構築、3次元可視化などの処理が含まれている。
+
+    .item2
+      img(src=figpath+"...png")
+    .item3
+      h1 新規性・結果
+      .text.
+        |3次元画像処理のコミュニティにて有益なオープンソースを提供し、その
+        a(href="https://github.com/IntelVCL/Open3D") コード
+        |も提供されている。
+    .item4
+      h1 リンク集
+      .text
+        ul
+          li: a(href="http://www.open3d.org/") Project page
+          li: a(href="https://arxiv.org/pdf/1801.09847.pdf") [論文] Open3D: A Modern Library for 3D Data Processing
+          li: a(href="https://github.com/IntelVCL/Open3D") Code
+          li: a(href="https://twitter.com/hirokatukataoka") slide by Hirokatsu Kataoka
+
+  +slide
     .title Hierarchical Variational Autoencoders for Music
     .info A. Roberts et al., NIPS WS on Machine Learning for Creativity and Design, 2017.
     .item1
@@ -86,5 +114,5 @@ block slides
           li CG/UIの分野との親和性がより高くなった
           li: a(href="https://arxiv.org/abs/1802.00434") DensePose: Dense Human Pose Estimation In The Wild
           li: a(href="https://arxiv.org/abs/1612.01202") DenseReg
-          li: a(href="http://smpl.is.tue.mpg.de/") SMPL
+          li: a(href="http://smpl.is.tue.mpg.de") SMPL
           li: a(href="https://twitter.com/hirokatukataoka") slide by Hirokatsu Kataoka
