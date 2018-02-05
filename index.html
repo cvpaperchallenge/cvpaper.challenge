@@ -95,6 +95,41 @@
             </div>
           </div>
         </section>
+        <!-- slide2-->
+        <section>
+          <div class="paper-abstract">
+            <div class="title">DensePose: Dense Human Pose Estimation In The Wild</div>
+            <div class="info">Rıza Alp Guler et al., a(href="https://arxiv.org/pdf/1802.00434.pdf")</div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                身体の表面形状まで考慮したDenseな姿勢推定手法に関する研究。サーフェイスモデルを提供するSMPLタイプとアノテーションベースのMSCOCOタイプを提供。手法はMask RCNN（w/ ResNet-50, ROI-align, Regression）をベースに構築している。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180205densepose.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>DenseReg [Guler,CVPR17]は顔表面の推定に対して、本研究では身体全体の表面やデンスなポイントを回帰。</li>
+                  <li>SMPLやDense-COCOのデータセットを構築</li>
+                  <li>非拘束（in the wild）の環境にてDensePoseを学習。     </li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li>リアルが完全に崩壊した。（Face2Faceの全身モデル版が実現可能になった？）</li>
+                  <li>CG/UIの分野との親和性がより高くなった</li>
+                  <li><a href="https://twitter.com/hirokatukataoka">Hirokatsu Kataoka</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
