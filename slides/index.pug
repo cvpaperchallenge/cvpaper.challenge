@@ -2,11 +2,36 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title End-to-end Driving via Conditional Imitation Learning
+    .info Felipe Codevilla, Matthias Müller, Alexey Dosovitskiy, Antonio López, and Vladlen Koltun, arXiv 1710.02410
+    .item1
+      h1 概要
+      .text.
+        自動運転を模倣学習により行う手法を提案。実空間での学習結果をヴァーチャルな空間での自動運転にて再現することができた。RGB画像、計測（e.g. スピード）や命令（e.g. turn right）などからステアリング、アクセル、ブレーキなどのコマンドを出力して自動車を操作する。
+    .item2
+      img(src=figpath+"180205conditionalimitationlearning.png")
+      img(src=figpath+"180205framework_imitation.png")
+    .item3
+      h1 新規性・結果
+      .text
+        li 模倣学習による自動運転を実現した。
+        li 実空間とシミュレーションベースの転移を行うことにも成功。
+    .item4
+      h1 リンク集
+      .text
+        ul
+          li 自動運転の学習はシミュレーションベースで完結してしまう可能性がある。
+          li メタ学習/模倣学習/強化学習などはCVに徐々に取り入れられてくるはずなので、2018年は学習しておいて損はない？
+          li: a(href="https://arxiv.org/pdf/1710.02410.pdf") [論文] End-to-end Driving via Conditional Imitation Learning
+          li: a(href="https://www.youtube.com/watch?v=cFtnflNe5fM") YouTube
+          li: a(href="https://twitter.com/hirokatukataoka") slide by Hirokatsu Kataoka
+
+  +slide
     .title Open3D: A Modern Library for 3D Data Processing
     .info Qian-Yi Zhou et al., arXiv 1801.09847
     .item1
       h1 概要
-      .text.
+      .text
         |3Dデータを取り扱い、迅速な開発を可能にする
         a(href="http://www.open3d.org/") Open3D
         |を提供する。Open3DはC++/Pythonをサポート、並列化にも対応しており、クラウドで開発することが可能。
@@ -16,12 +41,12 @@ block slides
       img(src=figpath+"180205open3d.png")
     .item3
       h1 新規性・結果
-      .text.
+      .text
         |3次元画像処理のコミュニティにて有益なオープンソースを提供し、その
         a(href="https://github.com/IntelVCL/Open3D") コード
         |も提供されている。
     .item4
-      h1 リンク集
+      h1 コメント・リンク集
       .text
         ul
           li: a(href="http://www.open3d.org/") Project page
