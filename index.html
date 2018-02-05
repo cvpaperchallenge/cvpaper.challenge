@@ -22,6 +22,41 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">Hierarchical Variational Autoencoders for Music</div>
+            <div class="info">A. Roberts et al., NIPS WS on Machine Learning for Creativity and Design, 2017.</div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                音楽を生成するためのHierarchical Variational Autoencoders (VAE) を提案．
+                エンコーダとデコーダがLSTMで構成されているReccurent VAEがベース．<a href="https://goo.gl/twGuP2">結果サンプル</a>長い音楽（実験では32小節）を単純なLSTMデコーダで生成するのは難しいので，
+                この研究では複数のLSTMを階層的に重ねて，段階的に長くしていくHierarchical VAEを提案．
+                ループメロディの外挿や，メロディの生成，3ピース構成の音楽生成の実験で性能を検討．
+                結果の音楽やコードは公開されている．
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/hierarchical_vae.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>階層的なLSTMによるデコーダをVAEによる音楽生成に導入</li>
+                  <li><a href="https://goo.gl/twGuP2">結果サンプル</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li>これも長期的な構成を考えて生成することはできていない</li>
+                  <li>Future Workにはインタフェースを作るとあるし，1曲まるごと作るというよりは適当にサンプルを出して作曲家のアイデアを促進することを目指しているのかな．</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Generating the Future with Adversarial Transformers</div>
             <div class="info">C. Vondrick et al., CVPR, 2017.</div>
             <div class="item1">
