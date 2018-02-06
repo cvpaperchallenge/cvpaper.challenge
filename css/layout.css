@@ -3,11 +3,12 @@
 .reveal .slides section .paper-abstract {
     display: grid;
     grid-template-areas:
+        "header header"
         "title title"
         "info info"
         "item1 item2"
         "item3 item4";
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
     grid-template-columns: 50vw 50vw;
     width: 100vw;
     height: 100vh;
@@ -22,7 +23,7 @@
     grid-area: title;
     font-size: 2.5vw;
     font-weight: 400;
-    padding: 0.5em 0.8em 0 0.8em;
+    padding: 0.0em 0.8em 0 0.8em;
 }
 
 .reveal .slides section .paper-abstract .info {
@@ -85,6 +86,10 @@
     max-height: 30vh;
 }
 
-.reveal .slides section .paper-abstract .footer {
-    grid-area: footer;
+.reveal .slides section .paper-abstract .header {
+    grid-area: header;
+    padding: 0.5em 1.4em 0.3em 1.4em;
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 300;
+    font-size: 1.4vw;
 }
