@@ -3,7 +3,7 @@
 .reveal .slides section .paper-abstract {
     display: grid;
     grid-template-areas:
-        "header header"
+        "slide_index slide_editor"
         "title title"
         "info info"
         "item1 item2"
@@ -28,7 +28,33 @@
 
 .reveal .slides section .paper-abstract .info {
     grid-area: info;
-    padding: 0.3em 1.4em 1em 1.4em;
+    display: grid;
+    grid-template-areas:
+        "authors conference paper_id";
+    grid-template-rows: auto;
+    grid-template-columns: auto auto 1fr;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    font-size: 1.6vw;
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 300;
+}
+
+.reveal .slides section .paper-abstract .authors {
+    grid-area: authors;
+    padding: 0.3em 0.3em 1em 1.4em;
+}
+
+.reveal .slides section .paper-abstract .conference {
+    grid-area: conference;
+    padding: 0.3em 0.3em 1em 0em;
+}
+
+.reveal .slides section .paper-abstract .paper_id {
+    grid-area: paper_id;
+    padding: 0.3em 0em 1em 0em;
+    margin:
 }
 
 .reveal .slides section .paper-abstract .item1 {
@@ -86,10 +112,19 @@
     max-height: 30vh;
 }
 
-.reveal .slides section .paper-abstract .header {
-    grid-area: header;
+.reveal .slides section .paper-abstract .slide_index {
+    grid-area: slide_index;
     padding: 0.5em 1.4em 0.3em 1.4em;
     font-family: 'Noto Sans CJK JP';
     font-weight: 300;
     font-size: 1.4vw;
+}
+
+.reveal .slides section .paper-abstract .slide_editor {
+    grid-area: slide_editor;
+    padding: 0.5em 1.4em 0.3em 1.4em;
+    font-family: 'Noto Sans CJK JP';
+    font-weight: 300;
+    font-size: 1.4vw;
+    text-align: right;
 }
