@@ -1,6 +1,35 @@
 extends layouts/_layout
 
 block slides
+
+  +slide
+    .title HemaApp: Noninvasive Blood Screening of Hemoglobin using Smartphone Cameras
+    .info
+      .authors E. J. Wang et al.,
+      .conference Ubicomp 2016
+    .slide_editor Kensho Hara
+
+    .item1
+      .text
+        h1 概要
+        p スマホカメラを使って非侵襲なヘモグロビン濃度の測定を実現．
+          |血中の酸素飽和度の測定などはこれまでにもあったがヘモグロビン濃度まで測定できているものはなかった．
+          |照明条件とRGBの変化からヘモグロビン濃度を推定するためのアルゴリズムを提案．
+    .item2
+      .text
+        p
+          img(src=`${figpath}180228_hemaapp.png`,alt="180228_hemaapp.png")
+    .item3
+      .text
+        h1 新規性・結果
+        p 特別な装置を使うことなく簡単にスマホカメラでヘモグロビン濃度測定を実現した点．
+    .item4
+      .text
+        h1 自由記述欄
+        p システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.1 10:44:03
+
   +slide
     .title End-to-end Driving via Conditional Imitation Learning
     .info
