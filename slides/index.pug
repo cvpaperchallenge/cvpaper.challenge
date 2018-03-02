@@ -1,6 +1,106 @@
 extends layouts/_layout
 
 block slides
+
+  +slide
+    .title Vehicle Three-Dimensional Pose and Shape Estimation from Multiple Monocular Vision
+    .info
+      .authors Wenhao Ding, Shuaijun Li, Guilin Zhang, Xiangyu Lei, Huihuan Qian, Yangsheng Xu
+      .conference arXiv:1802.03515
+    .slide_editor Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p オーバーラップが少ない複数視点カメラから自動車の3次元姿勢や形状を復元する研究。CNNにより自動車のキーポイントや姿勢/3次元形状を出力する。これら情報をヒントに、カメラ視点を推定する。2D画像上でのキーポイント推定にはconv-de-convを4回繰り返すhourglassアーキテクチャを採用、3次元姿勢や形状の推定にはCross Projection Optimization (CPO)を採用し2D-3Dの投影誤差を最小化した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180302Vehicle3DPose.png`,alt="180302Vehicle3DPose")
+    .item3
+      .text
+        h1 新規性・結果
+        p 物体のキーポイント検出においてState-of-the-art。6DoF推定手法 (Pavlakos, ICRA17)では12キーポイントの平均誤差が37.88であったが、提案手法では10.48まで低減した。また、回転/並進誤差も3DVP (Xiang+, CVPR15)では11.18/N/Aであったが、2.87/4.73まで向上させた。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1802.03515.pdf") PDF
+          li
+            a(href="https://arxiv.org/abs/1703.04670") 6-DoF Object Pose from Semantic Keypoints
+          li
+            a(href="http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp.pdf") Data-Driven 3D Voxel Patterns for Object Category Recognition
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.2 10:15:30
+
+
+  +slide
+    .title Joint Event Detection and Description in Continuous Video Streams
+    .info
+      .authors Huijuan Xu, Boyang Li, Vasili Ramanishka, Leonid Sigal, Kate Saenko
+      .conference arXiv:1802.10250
+    .slide_editor Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p End-to-Endでイベント検出（行動の時系列セグメント化）とキャプショニングを実行するタスクを提供する。モデルには3D Convolutionや階層的LSTM（two-level hierarchical LSTM）を採用した。基本的には
+          a(href="https://cs.stanford.edu/people/ranjaykrishna/densevid/") Dense Captioning Events in Videos
+          |をベースにして研究を行なっているが、{Controller, Captioner} LSTMの二段階により前の候補のセンテンスやビデオコンテキストを考慮しつつ状態を更新（Controller LSTM）し、候補領域の特徴を参照しつつキャプションを生成（Captioner LSTM）する。時系列候補領域とキャプションはmulti-task学習、End-to-Endで学習される。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180302VideoCaption.png`,alt="180302VideoCaption")
+    .item3
+      .text
+        h1 新規性・結果
+        p 候補領域生成やキャプショニングの精度を検証した。また、データセットにはActivityNet CaptionsやTACoS Datasetを用いた。候補領域については従来法のDAPが30, multi-scale DAPが38 @AUC (IoU>0.8)に対して提案法であるJEDDi-Netは58.21を記録した。また、キャプショニングについては従来法が{17.95, 4.82, 17.29} (各BLEU1, METEOR, CIDEr)の問題に対して{19.97, 8.58, 19.88}を記録した。
+    .item4
+      .text
+        h1 コメント/リンク集
+        p 動画のタスクはカテゴリのみでなく言語やより表現力豊かな認識ができなければいけない時期になって来た？時系列表現にもまだまだ課題が多いので、これからさらに動画認識にチャレンジすべき。また、キャプショニングの問題は感性評価に対する知見や確固たる評価方法が確立されるとさらに面白くなるのではないか。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1802.10250.pdf") PDF
+          li
+            a(href="https://www.bu.edu/cs/profiles/kate-saenko/") Kate Saenko
+          li
+            a(href="https://cs.stanford.edu/people/ranjaykrishna/densevid/") Dense Captioning Events in Videos
+          li
+            a(href="https://github.com/kenshohara/3D-ResNets-PyTorch") 3D Convolution (3D-ResNets-PyTorch)
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.2 09:36:26
+
+  +slide
+    .title Neural Aesthetic Image Reviewer
+    .info
+      .authors W. Wang, et al.
+      .conference arXiv:1802.10240
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p AIが写真の感性評価やコメント生成を行なってくれる。写真とそのコメントが対応づけられた大規模DBであるAVA-Reviews dataset（52,118画像、312,708コメント）を学習することで写真を入力して図の(1)Predictionや(2)Commentsのようなものが得られる。モデルはCNNにより感性評価（Low-/High-Aesthetic category）を、CNN+LSTM（RNN）によりコメント（e.g. Fastastic colors）を出力する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180301NeuralAesthetic.png`,alt="180301NeuralAesthetic")
+    .item3
+      .text
+        h1 新規性・結果
+        p (i) 人間のような画像に対する感性評価（image aesthetics）をコンピュータに実装した。(ii)自然言語の出力により人間の高次な認知能力を実現。(iii) 画像-言語の組み合わせによるデータセットAVA-Reviews datasetを新規に構築した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1802.10240.pdf") PDF
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.2 08:39:04
+
+
   +slide
     .title Interpreting CNN Knowledge via an Explanatory Graph
     .info
@@ -30,7 +130,7 @@ block slides
         p 深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。
           |さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。
     .slide_index #{getSlideIndex()}
-    
+
   +slide
     .title HemaApp: Noninvasive Blood Screening of Hemoglobin using Smartphone Cameras
     .info
