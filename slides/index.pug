@@ -112,6 +112,7 @@ block slides
     .title We Are Humor Beings: Understanding and Prediction Visual Humor
     .info
       .authors Arjun Chandrasekaran, Ashwin K. Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh, Virginia Tech, TTI-Chicago, Facebook AI Research
+      .conference CVPR 2016
     .item1
       h1 概要
       .text
@@ -126,19 +127,19 @@ block slides
     .item3
       h1 手法1
       .text
+        p 面白さ推定
         ul
-          li 面白さ推定
           li 特徴抽出し，重み付き誤差平均(面白さによって誤差を変える)
           li Abstract Scenesのアニメ画像(VQAの画像とクラウドソーシングで依頼した面白い画像)に5段階評価したデータセット(AVH)
     .item4
       h1 手法2
       .text
+        p 面白い画像・面白くない画像の変換
         ul
-          li 面白い画像・面白くない画像の変換
           li オブジェクトを変更することで，面白い⇔面白くない画像に相互変換
           li AVHから面白いものを選び，クラウドソーシングで依頼した面白くない画像を使い/面白い画像ペアを作成
           li どのオブジェクトが面白さに影響しているか調査
-          li 結果：特に人や動物などのオブジェクトが面白さに影響
+        p 結果：特に人や動物などのオブジェクトが面白さに影響
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Munetaka Minoguchi
