@@ -3,6 +3,46 @@ extends layouts/_layout
 block slides
 
   +slide
+    .title BAM! The Behance Artistic Media Dataset for Recognition Beyond Photography
+    .info
+      .authors Michael J. Wilber, Chen Fang, Hailin Jin, Aaron Hertzmann, John Collomosse, Serge Belongie
+      .conference ICCV 2017
+    .slide_editor Minoguchi Munetaka
+
+    .item1
+      .text
+        h1 概要
+        p CVにおけるデータセットでは，写真に対するラベル付けが一般的。写真だけでなく，イラストや風景画などに対して，以下の3属性のラベルを付加。
+        ul
+          li メディア：漫画、油絵、鉛筆スケッチ、水彩画などで作成した画像にラベル付け
+          li 感情：視聴者に平静、幸せ/陽気、悲しい/悲観的、恐ろしい/恐れを感じさせるような画像にラベル付け
+          li オブジェクト：自転車、車、猫、犬、花、人などの画像にラベル付け
+    .item2
+      .text
+        p
+          img(src=`${figpath}180302BehanceArtisticMedia.jpg`,alt="180302AffordanceNet")
+    .item3
+      .text
+        h1 手法
+        p Behance Artistic Media Dataset
+        ul
+          li ラベル作成にhuman-in-the-loopを採用し，人間とコンピュータのハイブリッドを図る。
+          li 全てのラベルについて学習し，ランク付けを行う。その後，高い順位の画像を人がラベル付け。これを4回繰り返す。
+          li 基本的にはLSUNの方法に基づいている(リンク参照)
+    .item4
+      .text
+        h1 結果・リンク集
+        p 物体認識や物体検出，画像の類似度，属性推定など様々なタスクの機械学習実験を実施。定性的な評価にはなるが，明らかにVOCやImageNetなどの既存のデータセットよりも広い表現の画像で多くのタスクが処理可能となる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1704.08614.pdf") 論文
+          li
+            a(href="http://behance.net") Behence
+          li
+            a(href="https://arxiv.org/abs/1506.03365") LSUN
+    .slide_index #{getSlideIndex()}
+
+  +slide
     .title AffordanceNet: An End-to-End Deep Learning Approach for Object Affordance Detection
     .info
       .authors Thanh-Toan Do, Anh Nguyen, Ian Reid, Darwin G. Caldwell, Nikos G. Tsagarakis
