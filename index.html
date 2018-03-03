@@ -22,6 +22,46 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">One-Shot Visual Imitation Learning via Meta-Learning</div>
+            <div class="info">
+              <div class="authors">Chelsea Finn*, Tianhe Yu*, Tianhao Zhang, Pieter Abbeel, and Sergey Levine</div>
+              <div class="conference">NIPS 2017</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>ワンショットで人間の教示を模倣するロボットのための学習「One-shot Imitation Learning」を提案。人間が物体を把持するなど動作を教示するとロボットが特徴や動作を学習してタスクをこなす様子を学習。Model-Agnostic Meta-Learning（MAML; ICML2017）を応用したモデルを提案し、（VR空間、人間のデモによる）教示から動作を学習する。アーキテクチャはCNNをベースとしてRGB入力から特徴を抽出、中間層（全結合層直前）からロボットの動作やバイアス項を入力してロボットの行動（pre-/post-update）を出力する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303OneshotImitation.png" alt="180303OneshotImitation"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>ロボットの把持タスクをシミュレーション/実空間にておこなった。シミュレーションでは提案法のMILが1ショットで85.81%、5ショットで88.75%（従来法LSTMでは各78.38%, 83.11%）。実空間では90%を実現（従来法LSTM/contextualでは25%）。詳細にはプロジェクトページやプレゼンのビデオを参照。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント・リンク集</h1>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1709.04905.pdf">論文</a></li>
+                  <li><a href="https://sites.google.com/view/one-shot-imitation">Project</a></li>
+                  <li><a href="https://github.com/tianheyu927/mil">GitHub</a></li>
+                  <li><a href="https://vimeo.com/252186304">Presen</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+            <div class="timestamp">2018.3.3 10:13:42</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">BAM! The Behance Artistic Media Dataset for Recognition Beyond Photography</div>
             <div class="info">
               <div class="authors">Michael J. Wilber, Chen Fang, Hailin Jin, Aaron Hertzmann, John Collomosse, Serge Belongie</div>
@@ -66,7 +106,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -76,7 +116,7 @@
               <div class="authors">Thanh-Toan Do, Anh Nguyen, Ian Reid, Darwin G. Caldwell, Nikos G. Tsagarakis</div>
               <div class="conference">ICRA 2018</div>
             </div>
-            <div class="slide_editor">Hirokatsu Kataoka</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
             <div class="item1">
               <div class="text">
                 <h1>概要</h1>
@@ -104,7 +144,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -115,7 +155,7 @@
               <div class="authors">Jiyang Gao, Zijian (James) Guo, Zhen Li, Ram Nevatia</div>
               <div class="conference">arXiv:1711.07607</div>
             </div>
-            <div class="slide_editor">Hirokatsu Kataoka</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
             <div class="item1">
               <div class="text">
                 <h1>概要</h1>
@@ -144,7 +184,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -190,7 +230,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -201,7 +241,7 @@
               <div class="authors">Wenhao Ding, Shuaijun Li, Guilin Zhang, Xiangyu Lei, Huihuan Qian, Yangsheng Xu</div>
               <div class="conference">arXiv:1802.03515</div>
             </div>
-            <div class="slide_editor">Hirokatsu Kataoka</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
             <div class="item1">
               <div class="text">
                 <h1>概要</h1>
@@ -229,7 +269,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -240,7 +280,7 @@
               <div class="authors">Huijuan Xu, Boyang Li, Vasili Ramanishka, Leonid Sigal, Kate Saenko</div>
               <div class="conference">arXiv:1802.10250</div>
             </div>
-            <div class="slide_editor">Hirokatsu Kataoka</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
             <div class="item1">
               <div class="text">
                 <h1>概要</h1>
@@ -270,7 +310,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -307,7 +347,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -347,7 +387,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
           </div>
         </section>
         <section>
@@ -384,7 +424,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -421,8 +461,8 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
-            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+            <div class="slide_index">[#11]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
         <section>
@@ -454,8 +494,8 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
-            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+            <div class="slide_index">[#12]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
         <section>
@@ -494,7 +534,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -539,7 +579,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -579,8 +619,8 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
-            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+            <div class="slide_index">[#15]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
       </div>
