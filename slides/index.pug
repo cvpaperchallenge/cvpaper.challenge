@@ -3,6 +3,42 @@ extends layouts/_layout
 block slides
 
   +slide
+    .title Focal Loss for Dense Object Detection
+    .info
+      .authors Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollar, Facebook AI Research (FAIR)
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 1-stage物体検出手法の精度向上を図る。 YOLOやSSDなどは，矩形領域における前景と背景の面積が不均衡であるため，2-stage物体検出手法に勝てないと推測。この問題を解決するためにクロスエントロピーを再構築したFocal Lossを提案。学習時のネガティブサンプルの影響を減らすことができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180303FocalLoss.jpg`)
+    .item3
+      .text
+        h1 手法
+        p Focal Loss
+        p クロスエントロピーに重みを追加
+        ul
+          li 正解の場合には重みを低減
+          li 不正解の場合には従来通り
+        p →正解になりやすい背景に引っ張られなくなる
+    .item4
+      .text
+        h1 結果・リンク集
+        p 既存の最先端2ステージ検出器(2017年現在)の全てにおいて精度を上回り，既存の1ステージ検出器の検出速度と同等
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1708.02002.pdf") 論文
+          li
+            a(href="https://github.com/facebookresearch/Detectron") ソースコード
+
+    .slide_index #{getSlideIndex()}
+
+  +slide
     .title Towards Diverse and Natural Image Descriptions via a Conditional GAN
     .info
       .authors Bo Dai, Sanja Fidler, Raquel Urtasun, Dahua Lin, et al.

@@ -22,6 +22,50 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">Focal Loss for Dense Object Detection</div>
+            <div class="info">
+              <div class="authors">Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollar, Facebook AI Research (FAIR)</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>1-stage物体検出手法の精度向上を図る。 YOLOやSSDなどは，矩形領域における前景と背景の面積が不均衡であるため，2-stage物体検出手法に勝てないと推測。この問題を解決するためにクロスエントロピーを再構築したFocal Lossを提案。学習時のネガティブサンプルの影響を減らすことができる。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303FocalLoss.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>Focal Loss</p>
+                <p>クロスエントロピーに重みを追加</p>
+                <ul>
+                  <li>正解の場合には重みを低減</li>
+                  <li>不正解の場合には従来通り</li>
+                </ul>
+                <p>→正解になりやすい背景に引っ張られなくなる</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>既存の最先端2ステージ検出器(2017年現在)の全てにおいて精度を上回り，既存の1ステージ検出器の検出速度と同等</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1708.02002.pdf">論文</a></li>
+                  <li><a href="https://github.com/facebookresearch/Detectron">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Towards Diverse and Natural Image Descriptions via a Conditional GAN</div>
             <div class="info">
               <div class="authors">Bo Dai, Sanja Fidler, Raquel Urtasun, Dahua Lin, et al.</div>
@@ -57,7 +101,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -96,7 +140,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -136,7 +180,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -186,7 +230,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
           </div>
         </section>
         <section>
@@ -224,7 +268,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -264,7 +308,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -310,7 +354,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -349,7 +393,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -390,7 +434,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -427,7 +471,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -467,7 +511,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
           </div>
         </section>
         <section>
@@ -504,7 +548,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -541,7 +585,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -574,7 +618,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -614,7 +658,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -659,7 +703,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -699,7 +743,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
