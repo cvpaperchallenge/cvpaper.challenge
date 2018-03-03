@@ -22,6 +22,44 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">Inferring and Executing Programs for Visual Reasoning</div>
+            <div class="info">
+              <div class="authors">Justin Johnson, Bharath Hariharan, Laurens van der Maaten, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>理由に基づいたVQA。既存の手法では，入力を出力に直接マッピングしているため，視覚的推論の学習というよりも，データの偏りを学習しているといえる。そこで，理由を伴った視覚的推論モデルを提案。モデルは、プログラムジェネレータと実行エンジンの2部構成。CLEVRベンチマークを使用し評価。回答の柔軟性、拡張性の向上。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303VisualReasoning_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法・リンク</h1>
+                <p>プログラムジェネレータは、質問の読み取り、単語の羅列として表現される質問から質問に答えるためのプログラムを生成する。基本的にはLSTMのsequence-to-sequenceの考え方。</p>
+                <p>実行エンジンは、予測されたプログラムをミラーリングするニューラルモジュールネットワークを構成し、実行することで画像から回答を生成。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1705.03633.pdf">論文</a></li>
+                  <li><a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">seq-to-seq</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Deep mutual learning </div>
             <div class="info">
               <div class="authors">Ying Zhang, Tao Xiang, Timothy M. Hospedales, Huchuan Lu</div>
@@ -54,7 +92,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -91,7 +129,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
           </div>
         </section>
         <section>
@@ -135,7 +173,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
           </div>
         </section>
         <section>
@@ -175,7 +213,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
           </div>
         </section>
         <section>
@@ -214,7 +252,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -254,7 +292,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -304,7 +342,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
           </div>
         </section>
         <section>
@@ -342,7 +380,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -382,7 +420,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -428,7 +466,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -467,7 +505,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -508,7 +546,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -545,7 +583,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -585,7 +623,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
           </div>
         </section>
         <section>
@@ -622,7 +660,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -659,7 +697,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -692,7 +730,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -732,7 +770,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#19]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -777,7 +815,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#19]</div>
+            <div class="slide_index">[#20]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -817,7 +855,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#20]</div>
+            <div class="slide_index">[#21]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -854,7 +892,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#21]</div>
+            <div class="slide_index">[#22]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
