@@ -667,3 +667,31 @@ block slides
       | #{getSlideIndex()}
     .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
     
+  +slide
+    .title What will Happen Next? Forecasting Player Moves in Sports Videos
+    .info
+      .authors Panna Felsen et al.
+      .conference ICCV, 2017.
+    .item1
+      h1 概要
+      .text.
+        チームスポーツにおいて次に起こることを予測する研究。2チームに分かれたゴール型スポーツを対象とし、ボールを持つ選手の遷移やファールの有無などの推定を行った．
+
+    .item2
+      img(src=figpath+"180303whatwillhappen.PNG")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 水球とバスケットボールのデータセットを構築した
+          li 画像から選手やボールの位置を上から見た画像に変換する手法を提案した
+          li 他のスポーツで学習したものを適用した場合(例：学習→水球　テスト→バスケ)ランダムフォレストの方がニューラルネットより精度が高いことが分かった
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li この論文のようにニューラルネットがうまくいかない例を調べるのは面白そう
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+    
