@@ -22,6 +22,43 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">Learning Features by Watching Objects Move </div>
+            <div class="info">
+              <div class="authors">Deepak Pathak, Ross Girshick, Piotr Dollar, Trevor Darrell, and Bharath Hariharan</div>
+              <div class="conference">CVPR 2017</div>
+            </div>
+            <div class="slide_editor">Tomoyuki Suzuki</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>動き特徴を利用した前景（物体）領域情報は汎用的な表現学習に役立つという考えから、NLCなどのhand-craftな手法を組み合わせて擬似的な動体領域を作成し、それを教師として領域分割をCNNに解かせることで表現特徴を得る。物体検出、物体・行動認識、意味領域分割の問題設定において評価を行った。表現学習のデータとしてYFCCを用いている。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/watching_object.png" alt="180302AffordanceNet"><img src="slides/figs/watching_object3.png" alt="180302AffordanceNet"><img src="slides/figs/watching_object2.png" alt="180302AffordanceNet"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>Pascal VOCの物体検出において教師なし表現学習でSoTA。特にfine-tuningに利用するデータが少量の場合と多くの層のパラメータを固定してfine-tuinigした場合で大きな効果を発揮した。しかし、物体・行動認識、意味領域分割においては従来手法より劣っている。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>自由記述欄</h1>
+                <p>実験は丁寧に行われてる印象。表現学習の設定自体が物体検出を意識しているようにも感じられ（単一物体が写っている画像を優先的に取り出している？など）、物体検出でうまくいくのは当たり前な気もした。</p>しかし、意味領域分割で精度が出ない原因がよくわからなかった（物体部分はできているが背景の分割ができていない？）。
+                <ul>
+                  <li><a href="https://arxiv.org/abs/1612.06370">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Focal Loss for Dense Object Detection</div>
             <div class="info">
               <div class="authors">Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollar, Facebook AI Research (FAIR)</div>
@@ -61,7 +98,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -101,7 +138,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
           </div>
         </section>
         <section>
@@ -140,7 +177,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -180,7 +217,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -230,7 +267,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
           </div>
         </section>
         <section>
@@ -268,7 +305,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -308,7 +345,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -354,7 +391,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -393,7 +430,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -434,7 +471,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -471,7 +508,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -511,7 +548,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
           </div>
         </section>
         <section>
@@ -548,7 +585,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -585,7 +622,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -618,7 +655,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -658,7 +695,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -703,7 +740,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -743,7 +780,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#19]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
