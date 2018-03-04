@@ -22,6 +22,47 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">A Read-Write Memory Network for Movie Story Understanding</div>
+            <div class="info">
+              <div class="authors">Seil Na, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>大規模でマルチモーダルの映画ストーリー理解のためのMovieQA を解く。新しいメモリネットワークモデルのRWMN(ReadWrite Memory Network)を提案。一連のフレームを段階的に抽象化して、より高レベルの順次情報を取得し、それをメモリスロットに格納していく。CNNを多用し、読み取りネットワークと書き込みネットワークを設計。これにより、メモリの読み書き操作に高い容量と柔軟性を持たせることができる。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180304ReadWriteMemory.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>Embedding：ResNetとWord2Vecを用いて映画の埋め込みを行う。</p>
+                <p>Write： CNNを書き込みネットワークとして利用し、メモリテンソルを出力。</p>
+                <p>Read： CNNを使用して、一連のシーン全体をつなぎ合わせて関連付けるために、シーケンシャルメモリスロットにチャンクごとにアクセス。構成されたメモリMrを得る。</p>
+                <p>QA： 5つの候補中から最も信頼度のが高い回答を選ぶ。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク</h1>
+                <p>ストーリーのコンテンツだけでなく、キャラクターとその行動についての理由など、より抽象的な情報を理解できる可能性を示唆。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1709.09345.pdf">論文</a></li>
+                  <li><a href="https://github.com/seilna/RWMN">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Sequence to Sequence – Video to Text</div>
             <div class="info">
               <div class="authors">Subhashini Venugopalan, et al</div>
@@ -56,7 +97,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -95,7 +136,7 @@
                 <p><img src="slides/figs/180304DeformableConvolution_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
           </div>
         </section>
         <section>
@@ -134,7 +175,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
           </div>
         </section>
         <section>
@@ -176,7 +217,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
           </div>
         </section>
         <section>
@@ -215,7 +256,7 @@
                 <p> <img src="slides/figs/180303VisualStorytelling_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
           </div>
         </section>
         <section>
@@ -253,7 +294,7 @@
                 <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
           </div>
         </section>
         <section>
@@ -290,7 +331,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
           </div>
         </section>
         <section>
@@ -327,7 +368,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
           </div>
         </section>
         <section>
@@ -371,7 +412,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
           </div>
         </section>
         <section>
@@ -411,7 +452,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
           </div>
         </section>
         <section>
@@ -450,7 +491,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -490,7 +531,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -540,7 +581,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
           </div>
         </section>
         <section>
@@ -578,7 +619,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -618,7 +659,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -664,7 +705,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -703,7 +744,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -744,7 +785,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#19]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -781,7 +822,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#19]</div>
+            <div class="slide_index">[#20]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -821,7 +862,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#20]</div>
+            <div class="slide_index">[#21]</div>
           </div>
         </section>
         <section>
@@ -858,7 +899,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#21]</div>
+            <div class="slide_index">[#22]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -895,7 +936,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#22]</div>
+            <div class="slide_index">[#23]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -928,7 +969,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#23]</div>
+            <div class="slide_index">[#24]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -968,7 +1009,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#24]</div>
+            <div class="slide_index">[#25]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1013,7 +1054,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#25]</div>
+            <div class="slide_index">[#26]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1053,7 +1094,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#26]</div>
+            <div class="slide_index">[#27]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -1090,7 +1131,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#27]</div>
+            <div class="slide_index">[#28]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -1126,7 +1167,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#28]</div>
+            <div class="slide_index">[#29]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>

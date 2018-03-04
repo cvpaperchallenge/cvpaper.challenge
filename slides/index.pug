@@ -2,6 +2,40 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title A Read-Write Memory Network for Movie Story Understanding
+    .info
+      .authors Seil Na, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 大規模でマルチモーダルの映画ストーリー理解のためのMovieQA を解く。新しいメモリネットワークモデルのRWMN(ReadWrite Memory Network)を提案。一連のフレームを段階的に抽象化して、より高レベルの順次情報を取得し、それをメモリスロットに格納していく。CNNを多用し、読み取りネットワークと書き込みネットワークを設計。これにより、メモリの読み書き操作に高い容量と柔軟性を持たせることができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180304ReadWriteMemory.jpg`)
+    .item3
+      .text
+        h1 手法
+        p Embedding：ResNetとWord2Vecを用いて映画の埋め込みを行う。
+        p Write： CNNを書き込みネットワークとして利用し、メモリテンソルを出力。
+        p Read： CNNを使用して、一連のシーン全体をつなぎ合わせて関連付けるために、シーケンシャルメモリスロットにチャンクごとにアクセス。構成されたメモリMrを得る。
+        p QA： 5つの候補中から最も信頼度のが高い回答を選ぶ。
+    .item4
+      .text
+        h1 結果・リンク
+        p ストーリーのコンテンツだけでなく、キャラクターとその行動についての理由など、より抽象的な情報を理解できる可能性を示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1709.09345.pdf") 論文
+          li
+            a(href="https://github.com/seilna/RWMN") ソースコード
+          
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Sequence to Sequence – Video to Text
     .info
       .authors Subhashini Venugopalan, et al
