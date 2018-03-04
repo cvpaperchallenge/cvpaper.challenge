@@ -2,6 +2,37 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Sequence to Sequence – Video to Text
+    .info
+      .authors Subhashini Venugopalan, et al
+      .conference ICCV 2015
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p ビデオのキャプションを生成するためのend-to-endかつ、sequence-to-sequenceモデルの提案。本手法のS2VTによって、一連のフレームを一連の単語に直接マッピングし、学習することができる。入力フレームの可変数の扱い、ビデオの時間構造を学習、自然な文法文の生成、この3点が本研究のコントリビューション。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180304VideoToText.jpg`)
+    .item3
+      .text
+        h1 手法・結果・リンク
+        p 各フレームのCNNの出力と、連続したLSTMに入力する。また、ビデオの時間構造をモデル化するためにオプティカルフローを算出し、フロー画像もCNNを介してLSTMに入力する。全てのフレームを読み込んだ後に、単語単位で文章を生成する。
+        p 使用データセット：MSVD, M-VAD, MPII Movie Description
+    .item4
+      .text
+        p 評価は機械翻訳に使われるMETEORで行う。フレームの順序をランダムにした場合、スコアがかなり低減したことから、時間的構造を利用したキャプションの生成ができていることを示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1505.00487.pdf") 論文
+          li
+            a(href="https://github.com/vsubhashini/caffe/tree/recurrent/examples/s2vt") ソースコード
+          
+    .slide_index #{getSlideIndex()}
+
+  +slide
     .title Deformable Convolutional Networks
     .info
       .authors Jifeng Dai, et al.
