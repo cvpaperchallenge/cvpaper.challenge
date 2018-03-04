@@ -18,11 +18,12 @@ block slides
           img(src=`${figpath}180304VideoToText.jpg`)
     .item3
       .text
-        h1 手法・結果・リンク
+        h1 手法
         p 各フレームのCNNの出力と、連続したLSTMに入力する。また、ビデオの時間構造をモデル化するためにオプティカルフローを算出し、フロー画像もCNNを介してLSTMに入力する。全てのフレームを読み込んだ後に、単語単位で文章を生成する。
         p 使用データセット：MSVD, M-VAD, MPII Movie Description
     .item4
       .text
+        h1 結果・リンク
         p 評価は機械翻訳に使われるMETEORで行う。フレームの順序をランダムにした場合、スコアがかなり低減したことから、時間的構造を利用したキャプションの生成ができていることを示唆。
         ul
           li
