@@ -22,6 +22,7 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+<<<<<<< HEAD
             <div class="title">Turning an Urban Scene Video into a Cinemagraph</div>
             <div class="info">
               <div class="authors">H. Yan et al.,</div>
@@ -44,10 +45,681 @@
                 <ul>
                   <li>街中で普通に撮影した動画から自動的なCinemagraphの生成を実現</li>
                   <li>ノイジーなWarping動画でも有効な動き解析手法を提案</li>
+=======
+            <div class="title">A Read-Write Memory Network for Movie Story Understanding</div>
+            <div class="info">
+              <div class="authors">Seil Na, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>大規模でマルチモーダルの映画ストーリー理解のためのMovieQA を解く。新しいメモリネットワークモデルのRWMN(ReadWrite Memory Network)を提案。一連のフレームを段階的に抽象化して、より高レベルの順次情報を取得し、それをメモリスロットに格納していく。CNNを多用し、読み取りネットワークと書き込みネットワークを設計。これにより、メモリの読み書き操作に高い容量と柔軟性を持たせることができる。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180304ReadWriteMemory.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>Embedding：ResNetとWord2Vecを用いて映画の埋め込みを行う。</p>
+                <p>Write： CNNを書き込みネットワークとして利用し、メモリテンソルを出力。</p>
+                <p>Read： CNNを使用して、一連のシーン全体をつなぎ合わせて関連付けるために、シーケンシャルメモリスロットにチャンクごとにアクセス。構成されたメモリMrを得る。</p>
+                <p>QA： 5つの候補中から最も信頼度のが高い回答を選ぶ。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク</h1>
+                <p>ストーリーのコンテンツだけでなく、キャラクターとその行動についての理由など、より抽象的な情報を理解できる可能性を示唆。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1709.09345.pdf">論文</a></li>
+                  <li><a href="https://github.com/seilna/RWMN">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Sequence to Sequence – Video to Text</div>
+            <div class="info">
+              <div class="authors">Subhashini Venugopalan, et al</div>
+              <div class="conference">ICCV 2015</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>ビデオのキャプションを生成するためのend-to-endかつ、sequence-to-sequenceモデルの提案。本手法のS2VTによって、一連のフレームを一連の単語に直接マッピングし、学習することができる。入力フレームの可変数の扱い、ビデオの時間構造を学習、自然な文法文の生成、この3点が本研究のコントリビューション。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180304VideoToText.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>各フレームのCNNの出力と、連続したLSTMに入力する。また、ビデオの時間構造をモデル化するためにオプティカルフローを算出し、フロー画像もCNNを介してLSTMに入力する。全てのフレームを読み込んだ後に、単語単位で文章を生成する。</p>
+                <p>使用データセット：MSVD, M-VAD, MPII Movie Description</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク</h1>
+                <p>評価は機械翻訳に使われるMETEORで行う。フレームの順序をランダムにした場合、スコアがかなり低減したことから、時間的構造を利用したキャプションの生成ができていることを示唆。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1505.00487.pdf">論文</a></li>
+                  <li><a href="https://github.com/vsubhashini/caffe/tree/recurrent/examples/s2vt">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#2]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Deformable Convolutional Networks</div>
+            <div class="info">
+              <div class="authors">Jifeng Dai, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>CNNの表現力の向上を図る。CNNによる物体検出などでは、矩形を用いるために検出対象の物体だけでなく、余計な背景も含んでしまい精度低下につながる。可変可能な畳み込みとRoIプーリングを提案。これにより、画像の畳み込みを行う際に、重みに加えてセルの位置も学習する。特に、物体検出やセマンティックセグメンテーションなどのタスクに効果的。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180304DeformableConvolution_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法・結果・リンク</h1>
+                <p>変形可能な畳み込み：規則的(矩形)にセルをサンプリングする標準の畳み込みに、オフセットを追加することで、自由形状変形を可能にする。オフセットは追加の畳み込みレイヤを介し、前のfeature mapから学習可能。</p>
+                <p>可変可能なRoIプーリング：RoIプーリング時の各binの位置にオフセットを追加する。畳み込みと同様に、前のfeature mapから学習可能。</p>
+                <p>様々な条件での実験を実施。どの条件でも提案手法の精度が高い結果となった。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1703.06211.pdf">論文</a></li>
+                  <li><a href="https://github.com/msracver/Deformable-ConvNets">ソースコード</a></li>
                 </ul>
               </div>
             </div>
             <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180304DeformableConvolution_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#3]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Image Captioning with Sentiment Terms via Weakly-Supervised Sentiment Dataset</div>
+            <div class="info">
+              <div class="authors">Andrew Shin, et al.</div>
+              <div class="conference">BMVC 2016</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>画像キャプショニングの中でも、画像上にはない形容詞で表現された“感情”についてのキャプションに焦点を当てる。センチメントタームを用いた画像キャプションモデルを提案。これにより、センチメントの主観的性質に対応するマルチラベル学習を実現。FlickrとDeviantArtから、2.5Mの画像と28Mのコメントを収集し，感情に対するデータセットを構築。“コメント”はキャプションとは性質が異なるが、感情を表現するために適している(否定や不適切を除く)。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180304CaptioningWithSentiment.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>CNN→LSTMという一般的な画像キャプションの流れに、センチメント分析を行うCNNを追加する。SentiWordNetの正または負のスコアが0.5以上の単語を感情単語とする。</p>
+                <p>SentiWordNet：意見聴衆のための語彙リソース。正、負、客観性の3つの感情スコアを算出。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク</h1>
+                <p>キャプションが適切出るかどうかと、キャプションのランク付けの2つの人間による評価。モデルからのキャプションがイメージの感情に関してより適切であるという結果となった。</p>
+                <ul>
+                  <li><a href="http://www.bmva.org/bmvc/2016/papers/paper053/paper053.pdf">論文</a></li>
+                  <li><a href="http://nmis.isti.cnr.it/sebastiani/Publications/LREC10.pdf">SentiWordNet</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#4]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Representation Learning by Learning to Count </div>
+            <div class="info">
+              <div class="authors">Mehdi Noroozi et al. </div>
+              <div class="conference">ICCV 2017 (Oral)</div>
+            </div>
+            <div class="slide_editor">Tomoyuki Suzuki</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p> </p>「画像内のprimitiveを認識できることは高次の特徴を掴んでいる」という考えを基にした、self-supervisedな特徴表現学習手法。
+                画像のオリジナルとそれらを各タイルに分割したものを同じNNに入力し、出力されるタイルのprimitive数の和とオリジナルのprimitive数が一致するように学習する。
+                しかしそれでは出力を単に小さくするように学習することで損失を０にできてしまうので異なる画像も含めたcontrastiveな損失を用いる。
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p> </p>画像識別、物体検出、意味領域分割などのタスクで評価を行っており、識別ではSoTA。
+                学習したNNからの出力を確認すると、ノルムが大きいものは高次な物体が含まれる画像、小さいものは低次なテクスチャしか含まない画像が得られた。
+                これからNNが高次なprimitiveをcountしていることが考察できる。
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/count1.png"><img src="slides/figs/count2.png"><img src="slides/figs/count3.png"></p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>自由記述欄</h1>
+                <p></p>損失を最小化することで結果的にNNが「何かしらのprimitiveを数えていること」になり、冒頭の考えと合わせることで特徴表現学習が可能となる。 
+                何か明示的に数える対象を与えるように想像したが、実際に何を数えているかは学習ベースで、明示的には与えていない点が非常に面白い。
+                <ul>
+                  <li><a href="https://arxiv.org/abs/1708.06734">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#5]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Visual Storytelling</div>
+            <div class="info">
+              <div class="authors">Ting-Hao (Kenneth) Huang, et al.</div>
+              <div class="conference">NAACL 2016</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>アルバムのような時系列画像でキャプション生成を行うためのデータセット。ストーリ性のある画像キャプションデータセット：SINDを構築。10,117個のFlickrアルバム、210,819枚の写真。各アルバムは平均20.8枚。</p>
+                <p>descriptions for images in isolation (DII)：画像一枚の記述</p>
+                <p>descriptions of images in sequence (DIS)：連続画像</p>
+                <p>stories for images in sequence (SIS)：ストーリー</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303VisualStorytelling_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法・リンク</h1>
+                <p>SINDを使いキャプションをイメージごとに生成(Table5)。ストーリー性を含んだキャプションが生成できている。METEORによるスコアも向上。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1604.03968.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p> <img src="slides/figs/180303VisualStorytelling_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#6]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Inferring and Executing Programs for Visual Reasoning</div>
+            <div class="info">
+              <div class="authors">Justin Johnson, Bharath Hariharan, Laurens van der Maaten, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>理由に基づいたVQA。既存の手法では，入力を出力に直接マッピングしているため，視覚的推論の学習というよりも，データの偏りを学習しているといえる。そこで，理由を伴った視覚的推論モデルを提案。モデルは、プログラムジェネレータと実行エンジンの2部構成。CLEVRベンチマークを使用し評価。回答の柔軟性、拡張性の向上。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303VisualReasoning_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法・リンク</h1>
+                <p>プログラムジェネレータは、質問の読み取り、単語の羅列として表現される質問から質問に答えるためのプログラムを生成する。基本的にはLSTMのsequence-to-sequenceの考え方。</p>
+                <p>実行エンジンは、予測されたプログラムをミラーリングするニューラルモジュールネットワークを構成し、実行することで画像から回答を生成。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1705.03633.pdf">論文</a></li>
+                  <li><a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">seq-to-seq</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#7]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Deep mutual learning </div>
+            <div class="info">
+              <div class="authors">Ying Zhang, Tao Xiang, Timothy M. Hospedales, Huchuan Lu</div>
+              <div class="conference">2017</div>
+            </div>
+            <div class="slide_editor">Tomoyuki Suzuki</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>教師モデルと生徒モデルを分けていた従来の蒸留に対してモデル同士の相互学習を提案。ハードラベルによる交差エントロピーと対象モデル以外のモデルの出力とのKL距離を最小化するように学習する。様々なモデル同士の相互学習実験や通常の蒸留との比較、相互学習を行った場合の解がより高い汎化性能を保有していることの検証実験も行っている。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/deep_mutual2.png"><img src="slides/figs/deep_mutual3.png"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>画像識別において通常の蒸留を行うよりも精度が良くなった。生徒モデルの中で相対的に小規模なモデルのみならず大規模なモデルも独立で学習を行うより精度が良かった。さらに相互学習を行うことで、wider minimaに収束しているという実験結果萌えたれた。特に出力される事後確率のエントロピーが大きくなるように学習されることがwider minimaへの収束を促していることがいわれている。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>自由記述欄</h1>
+                <p>ハードラベルありき（ないと相互学習が正しい方向に向かわない）の手法であったが、教師なし手法に拡張できたら面白くなりそうだと感じる。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/abs/1706.00384">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#8]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Learning Features by Watching Objects Move </div>
+            <div class="info">
+              <div class="authors">Deepak Pathak, Ross Girshick, Piotr Dollar, Trevor Darrell, and Bharath Hariharan</div>
+              <div class="conference">CVPR 2017</div>
+            </div>
+            <div class="slide_editor">Tomoyuki Suzuki</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>動き特徴を利用した前景（物体）領域情報は汎用的な表現学習に役立つという考えから、NLCなどのhand-craftな手法を組み合わせて擬似的な動体領域を作成し、それを教師として領域分割をCNNに解かせることで表現特徴を得る。物体検出、物体・行動認識、意味領域分割の問題設定において評価を行った。表現学習のデータとしてYFCCを用いている。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/watching_object.png" alt="180302AffordanceNet"><img src="slides/figs/watching_object3.png" alt="180302AffordanceNet"><img src="slides/figs/watching_object2.png" alt="180302AffordanceNet"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>Pascal VOCの物体検出において教師なし表現学習でSoTA。特にfine-tuningに利用するデータが少量の場合と多くの層のパラメータを固定してfine-tuinigした場合で大きな効果を発揮した。しかし、物体・行動認識、意味領域分割においては従来手法より劣っている。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>自由記述欄</h1>
+                <p>実験は丁寧に行われてる印象。表現学習の設定自体が物体検出を意識しているようにも感じられ（単一物体が写っている画像を優先的に取り出している？など）、物体検出でうまくいくのは当たり前な気もした。</p>しかし、意味領域分割で精度が出ない原因がよくわからなかった（物体部分はできているが背景の分割ができていない？）。
+                <ul>
+                  <li><a href="https://arxiv.org/abs/1612.06370">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#9]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Focal Loss for Dense Object Detection</div>
+            <div class="info">
+              <div class="authors">Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, Piotr Dollar, Facebook AI Research (FAIR)</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>1-stage物体検出手法の精度向上を図る。 YOLOやSSDなどは，矩形領域における前景と背景の面積が不均衡であるため，2-stage物体検出手法に勝てないと推測。この問題を解決するためにクロスエントロピーを再構築したFocal Lossを提案。学習時のネガティブサンプルの影響を減らすことができる。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303FocalLoss.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>Focal Loss</p>
+                <p>クロスエントロピーに重みを追加</p>
+                <ul>
+                  <li>正解の場合には重みを低減</li>
+                  <li>不正解の場合には従来通り</li>
+                </ul>
+                <p>→正解になりやすい背景に引っ張られなくなる</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>既存の最先端2ステージ検出器(2017年現在)の全てにおいて精度を上回り，既存の1ステージ検出器の検出速度と同等</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1708.02002.pdf">論文</a></li>
+                  <li><a href="https://github.com/facebookresearch/Detectron">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#10]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Towards Diverse and Natural Image Descriptions via a Conditional GAN</div>
+            <div class="info">
+              <div class="authors">Bo Dai, Sanja Fidler, Raquel Urtasun, Dahua Lin, et al.</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>画像キャプショニングの性能向上を図る。従来のロバスト性が低いRNNに代わって，GANのフレームワークを採用することで，自然性と多様性を向上。図より，ジェネレータ(G)が文を生成し，ディスクリミネータ(E)が文や段落がどれだけうまく記述されているかを評価する。GとEを同時に学習させることにより，自然な文章を生成。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303TowardsDiverse_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <ul>
+                  <li>人間，G-MLE，G-GAN(本手法)の3つを比較して性能評価</li>
+                  <li>ユーザー調査、定性的な例、および検索アプリケーションなどの評価により，より自然かつ多様、意味的に関連する記述を実現</li>
+                </ul>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1703.06029.pdf">論文</a></li>
+                  <li><a href="https://arxiv.org/abs/1411.4555">MLE</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#11]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Learning to Segment Every Thing</div>
+            <div class="info">
+              <div class="authors">Ronghang Hu, Piotr Dollár, Kaiming He, Trevor Darrell, Ross Girshick</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>ラベルが完全に手に入らない際にでも転移学習が可能なセグメンテーション手法（論文中ではPartially Supervised Training Paradigm, weight transfer functionを紹介）を提案する。条件として、bboxが手に入っている物体に対してセグメンテーション領域を学習可能。Mask R-CNNをベースとしているが、Weight Transfer Functionを追加、セグメントの重みを学習・推定して誤差計算と学習繰り返し。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303SegmentEverything.png" alt="180303SegmentEverything"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>Visual Genome Datasetから3,000の視覚的概念を獲得、MSCOCOから80のマスクアノテーションを獲得した。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント・リンク集</h1>
+                <p>弱教師付き学習が現実的な精度で動作するようになってきた？アノテーションはお金や知識があっても非常に大変なタスクであり、いかに減らすかという方向に研究が進められている。（What's next?ー弱教師/教師なしの先とは？）</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1711.10370.pdf">論文</a></li>
+                  <li><a href="http://ronghanghu.com/">著者</a></li>
+                  <li><a href="http://kaiminghe.com/">Kaiming He</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#12]</div>
+            <div class="timestamp">2018.3.3 10:46:40</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">One-Shot Visual Imitation Learning via Meta-Learning</div>
+            <div class="info">
+              <div class="authors">Chelsea Finn*, Tianhe Yu*, Tianhao Zhang, Pieter Abbeel, and Sergey Levine</div>
+              <div class="conference">NIPS 2017</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>ワンショットで人間の教示を模倣するロボットのための学習「One-shot Imitation Learning」を提案。人間が物体を把持するなど動作を教示するとロボットが特徴や動作を学習してタスクをこなす様子を学習。Model-Agnostic Meta-Learning（MAML; ICML2017）を応用したモデルを提案し、（VR空間、人間のデモによる）教示から動作を学習する。アーキテクチャはCNNをベースとしてRGB入力から特徴を抽出、中間層（全結合層直前）からロボットの動作やバイアス項を入力してロボットの行動（pre-/post-update）を出力する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180303OneshotImitation.png" alt="180303OneshotImitation"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>ロボットの把持タスクをシミュレーション/実空間にておこなった。シミュレーションでは提案法のMILが1ショットで85.81%、5ショットで88.75%（従来法LSTMでは各78.38%, 83.11%）。実空間では90%を実現（従来法LSTM/contextualでは25%）。詳細にはプロジェクトページやプレゼンのビデオを参照。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント・リンク集</h1>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1709.04905.pdf">論文</a></li>
+                  <li><a href="https://sites.google.com/view/one-shot-imitation">Project</a></li>
+                  <li><a href="https://github.com/tianheyu927/mil">GitHub</a></li>
+                  <li><a href="https://vimeo.com/252186304">Presen</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#13]</div>
+            <div class="timestamp">2018.3.3 10:13:42</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">BAM! The Behance Artistic Media Dataset for Recognition Beyond Photography</div>
+            <div class="info">
+              <div class="authors">Michael J. Wilber, Chen Fang, Hailin Jin, Aaron Hertzmann, John Collomosse, Serge Belongie</div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>CVにおけるデータセットでは，写真に対するラベル付けが一般的。写真だけでなく，イラストや風景画などに対して，以下の3属性のラベルを付加。</p>
+                <ul>
+                  <li>メディア：漫画、油絵、鉛筆スケッチ、水彩画などで作成した画像にラベル付け</li>
+                  <li>感情：視聴者に平静、幸せ/陽気、悲しい/悲観的、恐ろしい/恐れを感じさせるような画像にラベル付け</li>
+                  <li>オブジェクト：自転車、車、猫、犬、花、人などの画像にラベル付け</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180302BehanceArtisticMedia.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>Behance Artistic Media Dataset</p>
+                <ul>
+                  <li>ラベル作成にhuman-in-the-loopを採用し，人間とコンピュータのハイブリッドを図る。</li>
+                  <li>全てのラベルについて学習し，ランク付けを行う。その後，高い順位の画像を人がラベル付け。これを4回繰り返す。</li>
+                  <li>基本的にはLSUNの方法に基づいている(リンク参照)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>物体認識や物体検出，画像の類似度，属性推定など様々なタスクの機械学習実験を実施。定性的な評価にはなるが，明らかにVOCやImageNetなどの既存のデータセットよりも広い表現の画像で多くのタスクが処理可能となる。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1704.08614.pdf">論文</a></li>
+                  <li><a href="http://behance.net">Behence</a></li>
+                  <li><a href="https://arxiv.org/abs/1506.03365">LSUN</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#14]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">AffordanceNet: An End-to-End Deep Learning Approach for Object Affordance Detection</div>
+            <div class="info">
+              <div class="authors">Thanh-Toan Do, Anh Nguyen, Ian Reid, Darwin G. Caldwell, Nikos G. Tsagarakis</div>
+              <div class="conference">ICRA 2018</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>物体検出とアフォーダンス（というよりは機能？）のセグメントを同時に回帰するネットワーク、AffordanceNetに関する論文。ロボットへの把持位置/機能教示を行うことができる。基本的なモデルはMask R-CNNを適用していて、物体検出のためのbboxと物体に対する機能セグメントを正解として学習する。多タスクの誤差関数は物体カテゴリ、座標、機能セグメントの3つに関するものである。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180302AffordanceNet.png" alt="180302AffordanceNet"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>従来、物体検知と機能推定は別個に学習・認識されていたが、本研究では多タスク学習の枠組みで、単一モデルにてEnd-to-End学習した。IIT-AFF Datasetにて73.35（SoTAは69.62）、UMD Datasetにて79.9（SoTAは77.0）。モデルも公開されており、誰もがAffordanceNetを実装できるようにしている。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント・リンク集</h1>
+                <p>任意のセグメンテーションラベルさえあれば、物体検知とあらゆる高次なセグメンテーションモデルが実現可能となった。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1709.07326.pdf">論文</a></li>
+                  <li><a href="https://github.com/nqanh/affordance-net">GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#15]</div>
+            <div class="timestamp">2018.3.2 20:38:13</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN</div>
+            <div class="info">
+              <div class="authors">Jiyang Gao, Zijian (James) Guo, Zhen Li, Ram Nevatia</div>
+              <div class="conference">arXiv:1711.07607</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>画像識別における知識蒸留（Knowledge Distillation）の内容である。本論文ではある概念（e.g. 動物認識、人工物認識）ごとに教師となる識別器を事前学習しておき、それらの知識を単一の識別器に学習（これをKnowledge Concentrationと呼称）する。いわば複数の先生がある生徒に教えるという流れで学習する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180302KnowledgeConcentration.png" alt="180302KnowledgeConcentration"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>よくも悪くも、現状のCVはImageNetの1,000カテゴリに頼っているが、これを100倍の100,000カテゴリに増やして学習したらどうか？また、いかにしたら効率よく学習ができるかを検討した。結果はSingle Model（従来のようなCNNによるカテゴリ識別学習）にするよりも複数のスペシャリスト識別器から知識蒸留を行う方が効率よく、精度よく学習ができた。本論文で使用したEFT（Entity-Foto-Tree）データセットはカテゴリ数でImageNetの100倍、JFT-300Mの5倍である。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント・リンク集</h1>
+                <p>読んだだけでGoogleの研究所であることがわかってしまう論文。実行ができるかどうかはさておき、大規模データの扱いやCNN学習の効率化という意味でも精読すべき論文。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1711.07607.pdf">論文</a></li>
+                  <li><a href="https://jiyanggao.github.io/">著者</a></li>
+                  <li><a href="http://codecrafthouse.jp/p/2018/01/knowledge-distillation/">知識蒸留の参考</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#16]</div>
+            <div class="timestamp">2018.3.2 20:04:42</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">We Are Humor Beings: Understanding and Prediction Visual Humor</div>
+            <div class="info">
+              <div class="authors">Arjun Chandrasekaran, Ashwin K. Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh, Virginia Tech, TTI-Chicago, Facebook AI Research</div>
+              <div class="conference">CVPR 2016</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                <ul>
+                  <li>視覚とユーモアの関係をモデル化(不調和説に基づく)</li>
+                  <li>アニメ画像の面白さを推定</li>
+                  <li>画像のオブジェクトと面白さの関連性を推定</li>
+                  <li>データセットの作成</li>
+                  <li>抽象的なシーンを使用したユーモアを引き起こすシーンの理解</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180205HumorBeings.jpg"></div>
+            <div class="item3">
+              <h1>手法1</h1>
+              <div class="text">
+                <p>面白さ推定</p>
+                <ul>
+                  <li>特徴抽出し，重み付き誤差平均(面白さによって誤差を変える)</li>
+                  <li>Abstract Scenesのアニメ画像(VQAの画像とクラウドソーシングで依頼した面白い画像)に5段階評価したデータセット(AVH)</li>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+<<<<<<< HEAD
               <h1>自由記述欄</h1>
               <div class="text">
                 <ul>
@@ -58,6 +730,177 @@
             </div>
             <div class="slide_index">[#1]</div>
             <div class="slide_editor">Kensho Hara</div>
+=======
+              <h1>手法2</h1>
+              <div class="text">
+                <p>面白い画像・面白くない画像の変換</p>
+                <ul>
+                  <li>オブジェクトを変更することで，面白い⇔面白くない画像に相互変換</li>
+                  <li>AVHから面白いものを選び，クラウドソーシングで依頼した面白くない画像を使い/面白い画像ペアを作成</li>
+                  <li>どのオブジェクトが面白さに影響しているか調査</li>
+                </ul>
+                <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
+              </div>
+            </div>
+            <div class="slide_index">[#17]</div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Vehicle Three-Dimensional Pose and Shape Estimation from Multiple Monocular Vision</div>
+            <div class="info">
+              <div class="authors">Wenhao Ding, Shuaijun Li, Guilin Zhang, Xiangyu Lei, Huihuan Qian, Yangsheng Xu</div>
+              <div class="conference">arXiv:1802.03515</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>オーバーラップが少ない複数視点カメラから自動車の3次元姿勢や形状を復元する研究。CNNにより自動車のキーポイントや姿勢/3次元形状を出力する。これら情報をヒントに、カメラ視点を推定する。2D画像上でのキーポイント推定にはconv-de-convを4回繰り返すhourglassアーキテクチャを採用、3次元姿勢や形状の推定にはCross Projection Optimization (CPO)を採用し2D-3Dの投影誤差を最小化した。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180302Vehicle3DPose.png" alt="180302Vehicle3DPose"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>物体のキーポイント検出においてState-of-the-art。6DoF推定手法 (Pavlakos, ICRA17)では12キーポイントの平均誤差が37.88であったが、提案手法では10.48まで低減した。また、回転/並進誤差も3DVP (Xiang+, CVPR15)では11.18/N/Aであったが、2.87/4.73まで向上させた。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>リンク集</h1>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1802.03515.pdf">PDF</a></li>
+                  <li><a href="https://arxiv.org/abs/1703.04670">6-DoF Object Pose from Semantic Keypoints</a></li>
+                  <li><a href="http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp.pdf">Data-Driven 3D Voxel Patterns for Object Category Recognition</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#18]</div>
+            <div class="timestamp">2018.3.2 10:15:30</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Joint Event Detection and Description in Continuous Video Streams</div>
+            <div class="info">
+              <div class="authors">Huijuan Xu, Boyang Li, Vasili Ramanishka, Leonid Sigal, Kate Saenko</div>
+              <div class="conference">arXiv:1802.10250</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>End-to-Endでイベント検出（行動の時系列セグメント化）とキャプショニングを実行するタスクを提供する。モデルには3D Convolutionや階層的LSTM（two-level hierarchical LSTM）を採用した。基本的には<a href="https://cs.stanford.edu/people/ranjaykrishna/densevid/">Dense Captioning Events in Videos</a>をベースにして研究を行なっているが、{Controller, Captioner} LSTMの二段階により前の候補のセンテンスやビデオコンテキストを考慮しつつ状態を更新（Controller LSTM）し、候補領域の特徴を参照しつつキャプションを生成（Captioner LSTM）する。時系列候補領域とキャプションはmulti-task学習、End-to-Endで学習される。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180302VideoCaption.png" alt="180302VideoCaption"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>候補領域生成やキャプショニングの精度を検証した。また、データセットにはActivityNet CaptionsやTACoS Datasetを用いた。候補領域については従来法のDAPが30, multi-scale DAPが38 @AUC (IoU>0.8)に対して提案法であるJEDDi-Netは58.21を記録した。また、キャプショニングについては従来法が{17.95, 4.82, 17.29} (各BLEU1, METEOR, CIDEr)の問題に対して{19.97, 8.58, 19.88}を記録した。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>コメント/リンク集</h1>
+                <p>動画のタスクはカテゴリのみでなく言語やより表現力豊かな認識ができなければいけない時期になって来た？時系列表現にもまだまだ課題が多いので、これからさらに動画認識にチャレンジすべき。また、キャプショニングの問題は感性評価に対する知見や確固たる評価方法が確立されるとさらに面白くなるのではないか。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1802.10250.pdf">PDF</a></li>
+                  <li><a href="https://www.bu.edu/cs/profiles/kate-saenko/">Kate Saenko</a></li>
+                  <li><a href="https://cs.stanford.edu/people/ranjaykrishna/densevid/">Dense Captioning Events in Videos</a></li>
+                  <li><a href="https://github.com/kenshohara/3D-ResNets-PyTorch">3D Convolution (3D-ResNets-PyTorch)</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#19]</div>
+            <div class="timestamp">2018.3.2 09:36:26</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Neural Aesthetic Image Reviewer</div>
+            <div class="info">
+              <div class="authors">W. Wang, et al.</div>
+              <div class="conference">arXiv:1802.10240</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>AIが写真の感性評価やコメント生成を行なってくれる。写真とそのコメントが対応づけられた大規模DBであるAVA-Reviews dataset（52,118画像、312,708コメント）を学習することで写真を入力して図の(1)Predictionや(2)Commentsのようなものが得られる。モデルはCNNにより感性評価（Low-/High-Aesthetic category）を、CNN+LSTM（RNN）によりコメント（e.g. Fastastic colors）を出力する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180301NeuralAesthetic.png" alt="180301NeuralAesthetic"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>(i) 人間のような画像に対する感性評価（image aesthetics）をコンピュータに実装した。(ii)自然言語の出力により人間の高次な認知能力を実現。(iii) 画像-言語の組み合わせによるデータセットAVA-Reviews datasetを新規に構築した。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>リンク集</h1>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1802.10240.pdf">PDF</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#20]</div>
+            <div class="timestamp">2018.3.2 08:39:04</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Interpreting CNN Knowledge via an Explanatory Graph</div>
+            <div class="info">
+              <div class="authors">Q. Zhang, et al.</div>
+              <div class="conference">AAAI 2018</div>
+            </div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>
+                  深層学習の解釈性に関する論文であり、畳み込み層の特徴マップの応答を外的に解析して対応する反応を可視化。畳み込みの各フィルタが異なる部位（e.g. 馬の耳や目）に反応するので、グラフにより解析して元画像の対象位置にアクセス。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180301interpretability.png" alt="180301interpretability.png"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果</h1>
+                <p>
+                  Ground-truthなしに各部位に関する解釈性を与えたことが新規性である。図に示すように入力画像に対するパーツごとの解析をフィルタの反応やグラフの解析から可視化することができる。
+                  さらに、異なる画像間においても一貫性のある反応を得ることができた。
+                </p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>自由記述欄</h1>
+                <p>
+                  深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
+              </div>
+            </div>
+            <div class="slide_index">[#21]</div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
           </div>
         </section>
         <section>
@@ -94,7 +937,11 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#2]</div>
+=======
+            <div class="slide_index">[#22]</div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -131,8 +978,13 @@
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#3]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+=======
+            <div class="slide_index">[#23]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
           </div>
         </section>
         <section>
@@ -164,8 +1016,13 @@
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#4]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+=======
+            <div class="slide_index">[#24]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
           </div>
         </section>
         <section>
@@ -204,7 +1061,11 @@
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#5]</div>
+=======
+            <div class="slide_index">[#25]</div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -249,7 +1110,11 @@
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#6]</div>
+=======
+            <div class="slide_index">[#26]</div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -289,8 +1154,86 @@
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="slide_index">[#7]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">slide by Hirokatsu Kataoka</a></div>
+=======
+            <div class="slide_index">[#27]</div>
+            <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">What will Happen Next? Forecasting Player Moves in Sports Videos</div>
+            <div class="info">
+              <div class="authors">Panna Felsen et al.</div>
+              <div class="conference">ICCV, 2017.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                チームスポーツにおいて次に起こることを予測する研究。2チームに分かれたゴール型スポーツを対象とし、ボールを持つ選手の遷移やファールの有無などの推定を行った．
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180303whatwillhappen.PNG"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>水球とバスケットボールのデータセットを構築した</li>
+                  <li>画像から選手やボールの位置を上から見た画像に変換する手法を提案した</li>
+                  <li>他のスポーツで学習したものを適用した場合(例：学習→水球　テスト→バスケ)ランダムフォレストの方がニューラルネットより精度が高いことが分かった</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li>この論文のようにニューラルネットがうまくいかない例を調べるのは面白そう</li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#28]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Visual Forecasting by Imitating Dynamics in Natural Sequences</div>
+            <div class="info">
+              <div class="authors">Zeng et al.</div>
+              <div class="conference">ICCV, 2017.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                動画シークエンスから未来を予測する研究。フレーム間の遷移モデルを考え，次のフレームや行動を推定する。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180303visualforecasting.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>ドメイン知識やhandcrafted特徴無しにinverse reinforcement learningとして学習させる</li>
+                  <li>フレーム生成、行動予測、ストーリー予測全てにおいて精度の向上に成功した</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li>同じ枠組みで様々な適用対象があるのは面白い</li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#29]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+>>>>>>> 5d0e44addbbc059ee5c3193c9e4a057c2f964432
           </div>
         </section>
       </div>
