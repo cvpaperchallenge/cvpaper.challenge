@@ -1189,7 +1189,7 @@ block slides
     .item1
       h1 概要
       .text.
-        動画シークエンスから未来を予測する研究。フレーム間の遷移モデルを考え，次のフレームや行動を推定する。
+        動画シークエンスから未来を予測する研究。フレーム間の遷移モデルを考え，次のフレームや行動を推定する。適用対象はフレームの生成から次のシーンの選択など幅広い。
 
     .item2
       img(src=figpath+"180303visualforecasting.png")
@@ -1203,7 +1203,7 @@ block slides
       h1 自由記述欄
       .text
         ul
-          li 同じ枠組みで様々な適用対象があるのは面白い
+          li: a(href="https://arxiv.org/abs/1708.05827" target="blank") 論文URL
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
@@ -1216,7 +1216,7 @@ block slides
     .item1
       h1 概要
       .text.
-        画像中に写っている人々の関係を推測する研究。社会心理学に基づいた16の関係(親子、友人など)を識別する。
+        画像中に写っている人々の関係を推測する研究。社会心理学に基づいた16の関係(親子、友人など)を識別する。それぞれの人物から抽出された特徴を入力とするネットワークにより判定する。
 
     .item2
       img(src=figpath+"180306relation.png")
@@ -1244,7 +1244,7 @@ block slides
     .item1
       h1 概要
       .text.
-        画像中に写っている人々の歩行ルートを予測する手法。他の人のルートを考慮した上で進む方向を決定する。
+        画像中に写っている人々の歩行ルートを予測する手法。各歩行者に対して歩行モデルを決定し、他の人とぶつからないようによけるなど他者の行動を考慮した上で歩行ルートを決定していく。
 
     .item2
       img(src=figpath+"180306pedestrians1.png")
@@ -1274,7 +1274,7 @@ block slides
     .item1
       h1 概要
       .text.
-        目的地までのルートを推測する研究。ストリートビューの画像を対象に、目的地に近いと思われる方向を決定する。
+        目的地までのルートを推測する研究。ストリートビューの画像から、どの方向に進めば銀行やガソリンスタンドなどの目的地に近付けるかを決定していく。ネットワークとしては、目的地までの距離、最も最短となる方角、2枚の画像のどちらが目的地に近いかの3種類を提案。
 
     .item2
       img(src=figpath+"180306Deepnav.png")
@@ -1291,6 +1291,8 @@ block slides
         ul
           li それぞれの目的地に対してどのような特徴を持った方向が選ばれているのか気になった
           li 場合によっては同じ場所を何度も回るだけになってしまう？
+          li: a(href="https://arxiv.org/abs/1701.09135" target="blank") 論文URL
+          li: a(href="http://mcdonalds.csail.mit.edu/" target="blank") 比較論文
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
