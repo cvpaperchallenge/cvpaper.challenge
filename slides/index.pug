@@ -1,6 +1,37 @@
 extends layouts/_layout
 
 block slides
+  +slide
+    .title MarioQA: Answering Questions by Watching Gameplay Videos
+    .info
+      .authors Jonghwan Mun, et al. 
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 動画によるVideoQA。マリオのプレイ動画から、発生するイベントの質疑応答を行うMarioQAを提案。イベントログを含むビデオクリップを収集し、抽出されたイベントから自動的にQAペアを生成してデータセットを構築。敵を倒す、死ぬ、ジャンプ、キック、持つなどの11個のアクションパラメータを、動画と対応させたコマンド形式で時系列にまとめたものを学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180306MarioQA_1.jpg`)
+    .item3
+      .text
+        h1 手法・結果・リンク
+        p Gated Recurrent Unit (GRU)で質問の特徴抽出。3DFCNでビデオの特徴抽出。2つの特徴から分類。
+        p NT (case 1), NT+ET (case 2) and NT+ET+HT (case 3)の3ケースについて精度を比較し、時間的推論能力を検証。ETやHTを加えた場合の方が精度が向上することを確認。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1612.01669") 論文
+          li
+            a(href="http://cvlab.postech.ac.kr/research/MarioQA/") MarioQA
+    .item4
+      .text
+        p
+          img(src=`${figpath}180306MarioQA_2.jpg`)
+          
+    .slide_index #{getSlideIndex()}
 
   +slide
     .title Moments in Time Dataset: one million videos for event understanding

@@ -22,6 +22,44 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">MarioQA: Answering Questions by Watching Gameplay Videos</div>
+            <div class="info">
+              <div class="authors">Jonghwan Mun, et al. </div>
+              <div class="conference">ICCV 2017</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>動画によるVideoQA。マリオのプレイ動画から、発生するイベントの質疑応答を行うMarioQAを提案。イベントログを含むビデオクリップを収集し、抽出されたイベントから自動的にQAペアを生成してデータセットを構築。敵を倒す、死ぬ、ジャンプ、キック、持つなどの11個のアクションパラメータを、動画と対応させたコマンド形式で時系列にまとめたものを学習。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180306MarioQA_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法・結果・リンク</h1>
+                <p>Gated Recurrent Unit (GRU)で質問の特徴抽出。3DFCNでビデオの特徴抽出。2つの特徴から分類。</p>
+                <p>NT (case 1), NT+ET (case 2) and NT+ET+HT (case 3)の3ケースについて精度を比較し、時間的推論能力を検証。ETやHTを加えた場合の方が精度が向上することを確認。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/abs/1612.01669">論文</a></li>
+                  <li><a href="http://cvlab.postech.ac.kr/research/MarioQA/">MarioQA</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180306MarioQA_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Moments in Time Dataset: one million videos for event understanding</div>
             <div class="info">
               <div class="authors">Mathew Monfort, Bolei Zhou, Sarah Adel Bargal, Alex Andonian, Tom Yan, Kandan Ramakrishnan, Lisa Brown, Quanfu Fan, Dan Gutfruend, Carl Vondrick, Aude Oliva</div>
@@ -54,7 +92,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
             <div class="timestamp">2018.3.5 20:25:53</div>
           </div>
         </section>
@@ -95,7 +133,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
             <div class="timestamp">2018.3.5 19:53:46</div>
           </div>
         </section>
@@ -132,7 +170,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
             <div class="timestamp">2018.3.5 19:25:04</div>
           </div>
         </section>
@@ -170,7 +208,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
             <div class="timestamp">2018.3.5 19:08:53</div>
           </div>
         </section>
@@ -214,7 +252,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -253,7 +291,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
           </div>
         </section>
         <section>
@@ -292,7 +330,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -334,7 +372,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
           </div>
         </section>
         <section>
@@ -373,7 +411,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
           </div>
         </section>
         <section>
@@ -412,7 +450,7 @@
                 <p><img src="slides/figs/180304DeformableConvolution_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
           </div>
         </section>
         <section>
@@ -451,7 +489,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
           </div>
         </section>
         <section>
@@ -493,7 +531,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
           </div>
         </section>
         <section>
@@ -532,7 +570,7 @@
                 <p> <img src="slides/figs/180303VisualStorytelling_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
           </div>
         </section>
         <section>
@@ -570,7 +608,7 @@
                 <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
           </div>
         </section>
         <section>
@@ -607,7 +645,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
           </div>
         </section>
         <section>
@@ -644,7 +682,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
           </div>
         </section>
         <section>
@@ -688,7 +726,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
           </div>
         </section>
         <section>
@@ -728,7 +766,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#19]</div>
           </div>
         </section>
         <section>
@@ -767,7 +805,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#19]</div>
+            <div class="slide_index">[#20]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -807,7 +845,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#20]</div>
+            <div class="slide_index">[#21]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -857,7 +895,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#21]</div>
+            <div class="slide_index">[#22]</div>
           </div>
         </section>
         <section>
@@ -895,7 +933,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#22]</div>
+            <div class="slide_index">[#23]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -935,7 +973,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#23]</div>
+            <div class="slide_index">[#24]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -981,7 +1019,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#24]</div>
+            <div class="slide_index">[#25]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -1020,7 +1058,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#25]</div>
+            <div class="slide_index">[#26]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -1061,7 +1099,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#26]</div>
+            <div class="slide_index">[#27]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -1098,7 +1136,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#27]</div>
+            <div class="slide_index">[#28]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -1138,7 +1176,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#28]</div>
+            <div class="slide_index">[#29]</div>
           </div>
         </section>
         <section>
@@ -1175,7 +1213,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#29]</div>
+            <div class="slide_index">[#30]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -1212,7 +1250,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#30]</div>
+            <div class="slide_index">[#31]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -1245,7 +1283,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#31]</div>
+            <div class="slide_index">[#32]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -1285,7 +1323,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#32]</div>
+            <div class="slide_index">[#33]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1330,7 +1368,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#33]</div>
+            <div class="slide_index">[#34]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1370,7 +1408,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#34]</div>
+            <div class="slide_index">[#35]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -1407,7 +1445,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#35]</div>
+            <div class="slide_index">[#36]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -1443,7 +1481,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#36]</div>
+            <div class="slide_index">[#37]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
