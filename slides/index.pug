@@ -1,6 +1,36 @@
 extends layouts/_layout
 
-block slides
+block slides    
+  +slide
+    .title Turning an Urban Scene Video into a Cinemagraph
+    .info
+      .authors H. Yan et al.,
+      .conference CVPR 2017
+    .item1
+      h1 概要
+      .text.
+        Cinemagraph（画像中の一部だけ動画）を自動生成するための手法を提案．
+        Warpingして動画中の視点を固定した後，セグメンテーションをかけてからDynamicな領域を見つけて，
+        そこだけ動くようにしてCinemagraphを生成．
+        街中のシーンで光やディスプレイだけが動くようなCinemagraphを自動的に生成することを可能にした．
+
+    .item2
+      img(src=figpath+"180302_turning_cinemagraph.png",alt="180302_turning_cinemagraph.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 街中で普通に撮影した動画から自動的なCinemagraphの生成を実現
+          li ノイジーなWarping動画でも有効な動き解析手法を提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li 特に定量的な評価はなくて，サンプルを出してうまくいっているでしょ，というやり方
+          li 失敗例を出してLimitationまで議論しているけど，こういうのはCVPRだと珍しい気がする
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
 
   +slide
     .title HemaApp: Noninvasive Blood Screening of Hemoglobin using Smartphone Cameras
