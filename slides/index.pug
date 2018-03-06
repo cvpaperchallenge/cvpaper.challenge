@@ -2,6 +2,38 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Beyond Context: Exploring Semantic Similarity for Tiny Face Detection
+    .info
+      .authors Yue Xi, Jiangbin Zheng, Xiangjian He, Wenjing Jia, Hanhui Li
+      .conference arXiv:1803.01555
+    .slide_editor Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p
+          a(href="https://www.cs.cmu.edu/~peiyunh/tiny/") Finding Tiny Faces
+          |を元ネタにして、画像中から微小な顔を検出する手法を提案。元ネタではコンテキストから小さな顔を検出していたが、本論文では画像の類似性（顔は大小に関わらず特徴が類似する）を考慮して極小な顔を検出した。手法としては、画像中から意味的に類似する領域を計算するためのMetric Learning（特徴空間の距離学習）を用いる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180307BeyondContext.png`,alt="180307BeyondContext")
+    .item3
+      .text
+        h1 新規性・結果
+        p 3つの著名な公開データに対して精度を向上させState-of-the-art（と主張しているが、結果のグラフが18/03/07現在論文に埋め込まれていない）。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.01555v1.pdf") 論文
+          li
+            a(href="https://www.cs.cmu.edu/~peiyunh/tiny/") Finding Tiny Faces
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.7 08:27:34
+
+  +slide
     .title Toward Multimodal Image-to-Image Translation
     .info
       .authors Jun-Yan Zhu, Richard Zhang, Deepak Pathak, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman
