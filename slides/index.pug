@@ -1,7 +1,6 @@
 extends layouts/_layout
 
 block slides
-
   +slide
     .title Toward Multimodal Image-to-Image Translation
     .info
@@ -1420,3 +1419,33 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
+
+  +slide
+    .title Toward Geometric Deep SLAM
+    .authors Daniel DeTone, Tomasz Malisiewicz and Andrew Rabinovich
+    .conference arXiv
+    .paper_id arXiv:1707.07410
+    .slide_editor Yoshihiro Fukuhara
+    .item1
+      .text
+        h1 概要
+        p 2つのCNNを用いた高速かつ頑強な物体追跡手法を提案. 
+          |1つ目のCNN(MagicPoint)で入力画像から特徴点を抽出し,
+          |2つ目のCNN(MagicWarp)で抽出された特徴点の位置情報のみから２つの画像間のホモグラフィー行列の推定を行う.
+    .item2
+      .text
+        p
+          img(src=`${figpath}20180306--TowardGeometricDeepSLAM.png`,alt="20180306--TowardGeometricDeepSLAM.png")
+    .item3
+      .text
+        h1 新規性・結果
+        p MagicPointは幾何学的に安定した点（物体の角や辺など）のみを抽出するため, ノイズに頑強である. 
+          |また, MagicWarpを用いることで従来手法のように特徴量の記述子（descriptor） を計算する必要がなくなるため, 高速な動作が可能となった. 
+          |作成した単純形状のデータセット（Synthetic Shapes Dataset）では FAST, Haris, Shi よりも高精度.
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1707.07410") 論文
+    .slide_index #{getSlideIndex()}
