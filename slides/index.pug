@@ -2,6 +2,38 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Neural Scene De-rendering
+    .info
+      .authors Jiajun Wu, et al.
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p シーンの全体理解。オブジェクトの数とそのカテゴリ、ポーズ、位置などの情報をエンコードし、シーンのコンパクトかつ表現力豊に解釈可能な表現の提案。decoderとencoderにより、XML形式の言語表現を実現。特に、encoderは、Renderingの逆であるDe-renderingを実行することで、入力画像をscene XMLに変換する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180307NSD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来研究では、encorderとdecoderベースの深層学習を使用した画像表現を提案してたが、その出力は解釈不可能であるかシーン単一のオブジェクトのみの説明である。そこで、シーン全体かつ解釈可能な表現を出力するモデルの提案。
+        p マインクラフトベースの新しいデータセット。
+        p de-rendering：入力画像からセグメントを生成し、オブジェクトのプロパティを解釈。推測結果を統合し、元の画像を再構成する。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 単純な全体シーン解釈は進んでいる。これからは、より複雑なシーンの解釈に移る。
+        ul
+          li
+            a(href="http://nsd.csail.mit.edu/papers/nsd_cvpr.pdf") 論文
+          li
+            a(href="http://nsd.csail.mit.edu/") NSD
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Visual Diarog
     .info
       .authors Abhishek Das, et al. 
