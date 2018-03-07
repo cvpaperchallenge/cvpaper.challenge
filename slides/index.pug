@@ -2,6 +2,38 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Captioning Images with Diverse Objects
+    .info
+      .authors Subhashini Venugopalan, et al. 
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 既存の画像キャプションデータセットには存在しないオブジェクトカテゴリを記述できるNovel Object Captioner (NOC)の提案。物体認識データセットからの画像と、ラベル付けされていないテキストから抽出された外部ソースからの意味的情報を利用。 MSCOCOにはないImageNetのオブジェクトカテゴリのキャプションを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180307CaptioningWithDiverse.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 画像とキャプションが対になっていないデータや、様々なソースを使って学習することができる。
+        p pre-training済みモデルのembedding空間を使用できるようにし、zero-shotなデータでもキャプションを生成できる。
+        p CNNベースの認識モデル、LSTMベースの言語モデル、キャプションモデルは、別々のソースで同時に学習。しかし、パラメータを共有することで、未知のオブジェクトのキャプションが可能となる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p より多くのオブジェクトのキャプション生成が可能かつ、キャプションの質は同等もしくは向上している。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1606.07770.pdf") 論文
+          li
+            a(href="https://vsubhashini.github.io/noc.html") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Neural Scene De-rendering
     .info
       .authors Jiajun Wu, et al.
