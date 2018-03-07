@@ -2,6 +2,46 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Deep Image Prior 
+    .info
+      .authors Dmitry Ulyanov et al. 
+      .conference 2017
+    .slide_editor Tomoyuki Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 
+        |「CNNは理論上任意の関数を近似できるが、その構造自体に汎化性能をあげるようなPriorが含まれている」という考えのもと、ランダム初期化されたCNNを用いて高いレベルの画像復元、ノイズ除去などを行った。
+        |また、CNNのPrior をさらに裏付けるものとして、自然画像を復元するより、ノイズ画像を復元する学習の方がiteration数がかかることも示された。深いネットワークの方が復元性能が高かった。
+          
+    .item3
+      .text
+        h1 手法
+        p 
+        |ノイズ画像ｚをencoder-decoderモデルに入力して、生成された画像を欠損画像にMSEを近づけるように学習。
+        |注意点として、完全に学習仕切ってしまうと欠損画像と同じものが出るだけなので、学習をある程度のiterationで止めると、復元された画像が得られる。
+        |CNNのPrior をさらに裏付けるものとして、自然画像を復元するより、ノイズ画像を復元する学習の方がiteration数がかかる。
+        
+    .item2
+      .text
+        p
+          img(src=`${figpath}prior1.png`)
+          img(src=`${figpath}prior2.png`)
+          img(src=`${figpath}prior3.png`)
+    .item4
+      .text
+        h1 コメント・リンク
+        p
+        |畳み込み処理×SGDの異常なまでの汎化性能を実験的に裏付けていると思われ非常に面白い。逆にCNNのPriorの苦手なところとして、Adversarial exampleやGANのチェッカーボード現象も関係してそう。
+        |自然画像と畳み込みとの関連なのでFractal画像とも関係してそう。逆に人工データに対しては苦手とかあるのだろうか。Deformable ConvやTemporal ConvなどのPriorの気になる。
+
+        ul
+          li
+            a(href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
     .title Catching the Temporal Regions-of-Interest for Video Captioning
     .info
       .authors Ziwei Yang, Yahong han, Zheng Wang
