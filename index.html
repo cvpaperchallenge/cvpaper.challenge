@@ -2440,6 +2440,44 @@
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Emotional Filters: Automatic Image Transformation for Inducing Affect</div>
+            <div class="info">
+              <div class="authors">Afsheen Rafaqat Ali, Mohsen Ali.</div>
+              <div class="conference">BMVC, 2017.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                入力された感情ヒストグラム(anger, disgust, fear, joy, sadness, surprise, neutral)を想起するように入力画像をカラートランスファーを行う手法を提案。ユーザは参照画像を用意することなく、入力された感情ヒストグラムと画像を元にデータベースから選択される。オブジェクト検出、シーン識別のそれぞれに対して訓練されたCNNに画像を入力することで、それぞれのトップレイヤーから特徴量を抽出。この特徴量と入力感情ヒストグラムを元にデータベースから、参照画像を10枚選択し、Poulのアルゴリズムを元にカラートランスファーを行う。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/bmvc2017_emotional_filters.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>ユーザスタディの結果、多くの画像で入力感情を想起するようにカラートランスファーを行うことができた。</li>
+                  <li>失敗例1 joy成分が強いヒストグラムを入力したところ、生成画像のjoy成分が強く感じたユーザは少なかった。</li>
+                  <li>失敗例2 画像が高次元なコンテキストを含んでいる場合(泣いている少女など)には良い結果は得られなかった。</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1707.08148.pdf" target="blank">論文URL</a></li>
+                  <li><a href="http://im.itu.edu.pk/affective-image-transfer/" target="blank">Project</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#62]</div>
+            <div class="slide_editor">Kazuki Inoue</div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
