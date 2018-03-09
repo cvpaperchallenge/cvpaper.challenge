@@ -2,6 +2,33 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Guiding the Long-Short Term Memory model for Image Caption Generation
+    .info
+      .authors Xu Jia, Efstratios Gavves, Basura Fernando, Tinne Tuytelaars
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p LSTMの拡張するgLSTMの提案。画像から抽出された意味情報をLSTMの各ユニットに入力として追加し、モデルと画像コンテンツを密接に結合させる。また、短い文に偏らないように、ビーム探索時に正規化。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180309gLSTM.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p LSTMは畳み込みで得られた画像情報から単語ごとに文章を生成する。しかし、長い分の場合には、プロセスが継続するにつれて画像情報が薄くなる。これは、シーケンスの最初に出力された単語も同様。そこで、ゲートとセル状態の計算にグローバルな意味情報を追加。意味情報は、画像とその説明から抽出し、単語列生成の過程でガイドとして使用する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Flickr8K、Flickr30K、MS COCOなどのデータセットで、現在(2017)の最先端技術と同等またはそれ以上の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1509.04942.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
     .title Cartooning for Enhanced Privacy in Lifelogging and Streaming Videos
     .info
       .authors Eman T. Hassan, Rakibul Hasan, Patrick Shaffer, David Crandall, Apu Kapadia
