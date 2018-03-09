@@ -2,6 +2,38 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title From Dusk till Dawn: Modeling in the Dark
+    .info
+      .authors F. Radenovic et al.,
+      .conference CVPR2016
+    .item1
+      h1 概要
+      .text.
+        画像データベースからの3次元復元の研究．
+        昼のデータと夜のデータを混ぜて扱うと，輝度などの違いが大きくマッチングが上手くいかずに失敗する場合がある．
+        そのため，昼と夜のデータをクラスタリングにより分割し，それぞれで3D Modelを作った後に統合する．
+        昼と夜でははっきり見える部分が違うので，統合することで両者が相補的に働き，
+        より高精細な3次元復元ができることを示している．
+
+    .item2
+      img(src=figpath+"180307_inthedark.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 昼と夜の画像を自動的に分けるための手法を提案
+          li 昼と夜を分けてモデリングし，その後統合することの優位性を示した
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li かっこいい論文タイトル
+          li 夜のデータに注目してちゃんとやってる論文は意外と珍しい気がする
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+  +slide
     .title Multiple Instance Learning for Soft Bags via Top Instances
     .info
       .authors W. Li et al.,
