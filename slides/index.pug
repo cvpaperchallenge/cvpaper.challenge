@@ -2,6 +2,67 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Dense-Captioning Events in Videos
+    .info
+      .authors Ranjay Krishna, Kenji Hata, Frederic Ren, Li Fei-Fei, Juan Carlos Niebles Stanford University
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p ビデオ中の事象の検出と記述、両方を含む高密度キャプションイベントのタスク。つまり、ビデオ内で検出された複数のイベントを自然言語で同時に記述しながら、全てのイベントを識別できる新しいモデルを提案。ビデオ内のイベント間の依存関係を取得するために、過去と未来のイベントのコンテキスト情報を使用し、すべてのイベントを共同して記述するキャプションモジュールを導入。高密度キャプションイベントの大規模データセットのActivityNet Captionsも提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180309DenseCaptioning.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ビデオには多数のイベントが含まれている。例えば、「ピアノを弾く男」のビデオでは、「別の男の踊り」や「群衆の拍手」が含まれてたりなど。これらすべてのイベントについて、ビデオを1回パスするだけで記述する。
+        p ActivityNetには、100kのキャプション、849時間の動画20k本が含まれる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 複数イベントのキャプションを行えるので、複数人同時に行動認識ができる。人間が見落としがちな細かいシーンも見逃さないのでは？その点では人間を超えてる？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1705.00754.pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title Common Subspace for Model and Similarity:Phrase Learning for Caption Generation from Images
+    .info
+      .authors Yoshitaka Ushiku, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Common Subspace for Model and Similarity (CoSMoS)によるフレーズの学習方法の提案。
+        p 1.同一フレーズに関連付けられたすべての特徴ベクトルを近接するようにマッピング
+        p 2.各フレーズの分類子を学習
+        p 3.フレーズ間でトレーニングサンプルが共有される部分空間を得る
+    .item2
+      .text
+        p
+          img(src=`${figpath}180309CoSMoS.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p “単語”ではなく、オブジェクト、属性、イベント、およびそれらの関係を表現する“フレーズ”に着目している。フレーズ数はさまざまな単語の組み合わせであるため、シングルワードの数よりはるかに多くなる。よって、フレーズはトレーニングサンプルが少なく、正確な推定が困難。そこで、モデルと類似性の共通部分空間を学習する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ウェブのデータセットを増やすことで精度が向上する見込み
+        p 今後は、CNNとRNNによるキャプション生成にもCoSMoSを組み込む予定
+        ul
+          li
+            a(href="http://openaccess.thecvf.com/content_iccv_2015/papers/Ushiku_Common_Subspace_for_ICCV_2015_paper.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title ASePPI: Robust Privacy Protection Against De-Anonymization Attacks
     .info
       .authors Natacha Ruchaud, Jean-Luc Dugelay
@@ -57,10 +118,6 @@ block slides
       .text
         p
           img(src=`${figpath}An_Autonomous_Dynamic_Camera_Method_for_Effective_Remote_Teleoperation_Figure1.png`,alt="Figure1")
-        p (a) 経路のチェックポイントを見せる
-          |(b) 経路を矢印で書く
-          |(c) ARエージェントが移動方向を見てる
-          |(d) ユーザに対するロボットの位置を示唆する
     .item3
       .text
         h1 評価点
