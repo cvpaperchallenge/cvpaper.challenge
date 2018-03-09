@@ -2,6 +2,31 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Combining Image Regions and Human Activity for Indirect Object Recognition in Indoor Wide-Angle Views
+    .info
+      .authors P. Peursum et al.,
+      .conference ICCV 2005
+    .item1
+      h1 概要
+      .text.
+        人の行動から間接的に物体を検出する手法を提案．
+        物体がはっきり撮影できていなくても，それを使う（インタラクションする）人の行動が見えていれば，
+        どのような物体を使っているかは推定できるので，それを元にして物体の検出をする．
+        ベイジアンネットワークをベースにしてこのアイデアを実装．
+
+    .item2
+      img(src=figpath+"180307_combining_1.png",alt="180307_combining_1.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 人物行動に基いて物体のアピアランスに関わらず物体を認識可能
+    .item4
+      img(src=figpath+"180307_combining_2.png",alt="180307_combining_2.png")
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+  +slide
     .title Social Robots for Engagement in Rehabilitative Therapies: Design Implications from a Study with Therapists
     .info
       .authors Katie Winkle, Praminda Caleb-Solly, Ailie Turton and Paul Bremner
