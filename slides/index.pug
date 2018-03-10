@@ -2853,3 +2853,32 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Kazuki Inoue
+
+  +slide
+    .title Predicting Actions from Static Scenes
+    .info
+      .authors Tuan-Hung Vu et al.
+      .conference ECCV, 2014.
+    .item1
+      h1 概要
+      .text.
+        画像に対して、キッチンで料理するなどのようにそのシーン(場所)にふさわしいアクションを検出する研究。クラウドソーシングにより提示した画像に対する適切なアクションを答えてもらうことにより、シーンに対するアクションのラベル付けを行った。学習にはSVMを使用して画像に対するアクションの推定を行った。また、位置情報を持った画像を使用することによりXをするのに適切な場所を探すといった応用が可能となった。
+
+    .item2
+      img(src=figpath+"180310action.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li クラウドソーシングにより各画像に対するアクションのアノテーションを行った
+          li アノテーション結果を分析することにより、人間はシーンからアクションが推測可能であることを示した
+          li 位置情報と組み合わせることで、パリで泳ぐにはどこが適切か？などといった目的の活動ができる場所を探すことが可能に
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li 手法自体には新規性が全くなく、データの構築及び分析がメインの論文
+          li: a(href="http://www.di.ens.fr/willow/research/actionsfromscenes/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
