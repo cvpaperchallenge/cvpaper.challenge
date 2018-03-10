@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Speaking the Same Language: Matching Machine to Human Captions by Adversarial Training
+    .info
+      .authors Rakshith Shetty, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 人間によるキャプションに匹敵するキャプション生成モデルの提案。人間のキャプションに近づけるために、ガンベル分布を組み込み、GANを採用。ガンベル分布を使用してソフトマックス分布からソフトサンプルを取得し、サンプルをバックプロパゲーションする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310SpeakingTheSameLanguage.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 生成された単語の分布、語彙のサイズの欠如、頻繁なキャプションに対するジェネレータの偏りなど、従来のイメージキャプショニング手法と人間によるキャプションの差がある。そこで、イメージキャプショニングの学習目的を、正解キャプション生成から、人間のキャプションと区別できないキャプションの出力に変更。
+    .item4
+      .text
+        h1 結果・リンク集
+        p キャプションの正確さは最先端技術に匹敵する性能。ただし、本手法はキャプションに偏りが少なく、人間よりの出力。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.10476.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Scene Graph Generation from Objects, Phrases and Region Captions
     .info
       .authors Yikang Li, et al.
