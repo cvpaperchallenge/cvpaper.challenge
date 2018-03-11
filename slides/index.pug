@@ -2,6 +2,152 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Boosting Image Captioning with Attributes
+    .info
+      .authors Ting Yao, et al.
+      .conference ICCV 2016
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNN-RNNのキャプション生成モデルに、属性推定を追加したLong Short-Term Memory with Attributes(LSTM-A)を提案。属性間の相関を、 Multiple Instance Learning(MIL)で統合することにより、属性間相関を探索し、文章生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310LSTMA.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p LSTM-Aの5つの変種について研究。
+        p 3つのモデルは属性をどこに追加するか：LSTM-A1は属性のみを利用、LSTM-A2は最初に画像表現を挿入する、LSTM-A3は最初に属性を供給。
+        p 2つのモデルはLSTMに属性や画像表現をどのタイミングで入力するか： LSTMA4は各時間ステップでの画像表現の入力、LSTM-A5は各時間ステップでの属性の入力。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 属性推定を追加することでキャプションのパフォーマンスの向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.01646.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Speaking the Same Language: Matching Machine to Human Captions by Adversarial Training
+    .info
+      .authors Rakshith Shetty, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 人間によるキャプションに匹敵するキャプション生成モデルの提案。人間のキャプションに近づけるために、ガンベル分布を組み込み、GANを採用。ガンベル分布を使用してソフトマックス分布からソフトサンプルを取得し、サンプルをバックプロパゲーションする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310SpeakingTheSameLanguage.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 生成された単語の分布、語彙のサイズの欠如、頻繁なキャプションに対するジェネレータの偏りなど、従来のイメージキャプショニング手法と人間によるキャプションの差がある。そこで、イメージキャプショニングの学習目的を、正解キャプション生成から、人間のキャプションと区別できないキャプションの出力に変更。
+    .item4
+      .text
+        h1 結果・リンク集
+        p キャプションの正確さは最先端技術に匹敵する性能。ただし、本手法はキャプションに偏りが少なく、人間よりの出力。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.10476.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Scene Graph Generation from Objects, Phrases and Region Captions
+    .info
+      .authors Yikang Li, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出、フレーズ、キャプショニングの3つのタスクを共同で学習し、シーン理解を行うMulti-level Scene Description Network(MSDN)の提案。入力画像から異なる意味を持つ領域間をリンクさせるために、グラフを動的に構築。これにより、様々なタスクを整理しながら学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310MSDN_1.jpg`)
+    .item3
+      .text
+        h1 手法・リンク集
+        p VGG16で特徴量を抽出。領域はRoIプーリングで推定。オブジェクト(赤)、フレーズ(緑色)、領域(黄色)から動的グラフを構築。Feature Refiningでは、1つの特徴を、他の2種類の特徴を使ってアップデートさせていくイメージ。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1707.09700.pdf") 論文
+          li
+            a(href="https://github.com/yikang-li/MSDN") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180310MSDN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Areas of Attention for Image Captioning
+    .info
+      .authors Marco Pedersoli, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像キャプショニングのための、アテンションベースモデルであるAreas of Attentionの提案。画像領域、キャプションワード、RNNの状態の間の依存関係をモデル化。従来の画像領域のみをRNN状態に関連付けるモデルとは異なり、キャプションワードと画像領域との間の直接的な関連付けを行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310AreasOfAttention.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p CNN-RNNをベースラインとする。RNNの状態が与えられたときに、次の単語と対応する領域を各タイムステップで共同して予測するアテンションメカニズム。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1612.01033.pdf") 論文
+          li
+            a(href="https://github.com/marcopede/AreasOfAttention") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title An Empirical Study of Language CNN for Image Captioning
+    .info
+      .authors Jiuxiang Gu, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNでイメージキャプショニングを行う言語モデルの提案。1つの単語と状態(state)に基づいて時系列的に次の単語を予測するRNNとは異なり、Language CNNは以前に推定された全ての単語を入力とすることで、画像キャプションとして重要な単語の長期依存性をモデル化できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310LCNN.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 以前の単語の忘却を防ぐために、RNNにCNNLを追加して文章を生成する。全ての時間枠で重みが共有されるのがミソ。
+        p 画像特徴抽出のためのCNNI、言語モデリングのためCNNL、CNNIとCNNLを接続するマルチモーダル層（M）、単語予測のための再帰ネットワーク（RNNやLSTMなど）の4部構成。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p バニラのRNNよりも優れた性能。同じことを何度も言ったり、変な文章になりにくいのでは？
+        ul
+          li
+            a(href="https://arxiv.org/abs/1612.07086") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
     .title Pedestrian Detection at Day/Night Time with Visible and FIR Cameras: A Comparison
     .info
       .authors Alejandro Gonzalez et al.
@@ -2795,3 +2941,84 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Kazuki Inoue
+
+  +slide
+    .title Predicting Actions from Static Scenes
+    .info
+      .authors Tuan-Hung Vu et al.
+      .conference ECCV, 2014.
+    .item1
+      h1 概要
+      .text.
+        画像に対して、キッチンで料理するなどのようにそのシーン(場所)にふさわしいアクションを検出する研究。クラウドソーシングにより提示した画像に対する適切なアクションを答えてもらうことにより、シーンに対するアクションのラベル付けを行った。学習にはSVMを使用して画像に対するアクションの推定を行った。また、位置情報を持った画像を使用することによりXをするのに適切な場所を探すといった応用が可能となった。
+
+    .item2
+      img(src=figpath+"180310action.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li クラウドソーシングにより各画像に対するアクションのアノテーションを行った
+          li アノテーション結果を分析することにより、人間はシーンからアクションが推測可能であることを示した
+          li 位置情報と組み合わせることで、パリで泳ぐにはどこが適切か？などといった目的の活動ができる場所を探すことが可能に
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li 手法自体には新規性が全くなく、データの構築及び分析がメインの論文
+          li: a(href="http://www.di.ens.fr/willow/research/actionsfromscenes/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Predicting Object Dynamics in Scenes
+    .info
+      .authors David F. Fouhey et al.
+      .conference CVPR, 2014.
+    .item1
+      h1 概要
+      .text.
+        画像に写っている物が、どのように移動していくかを予測する研究。接触している物体同士(例：人間と帽子)は一緒に移動するなど、周囲との相互作用などを考慮して過去のフレームからの変化を確率モデルとして考える。
+
+    .item2
+      img(src=figpath+"180310dynamics.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li CRFを用いて前のフレームからの遷移を定式化した
+          li CG画像、自然画像どちらに対しても適用が可能
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://larryzitnick.org/publication/fouhey_zitnick_dynamics.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Event Detection using Multi-Level Relevance Labels and Multiple Features
+    .info
+      .authors Zhongwen Xu et al.
+      .conference CVPR, 2014.
+    .item1
+      h1 概要
+      .text.
+        部分的に関連するexemplarを用いてイベント検出する手法の提案。例えば、”乗り物のタイヤを交換する”というイベントに対して、”車を運転する”というイベントはタイヤを交換という要素は含んでいるが乗り物という要素を含んでいる。このように部分的に関連する動画を探し重みづけすることによりイベント検出を行う。
+
+    .item2
+      img(src=figpath+"180311event.png")
+    .item3
+      h1 新規性・結果
+      .text.
+        対象となるイベントに対して，候補となる動画を列挙する。それらの候補に対して，関連度合いにより重みつけをする手法を提案。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://zhongwen.ai/pdf/multi-level.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
