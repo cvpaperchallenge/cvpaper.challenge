@@ -2,6 +2,37 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title SPICE: Semantic Propositional Image Caption Evaluation
+    .info
+      .authors Peter Anderson, et al.
+      .conference ECCV 2016
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味や内容が、キャプション評価の重要な要素であると仮定し、シーングラフへのマッピングを用いて評価するSemantic Propositional Image Caption Evaluation(SPICE)の提案。これにより、出力したキャプションがオブジェクト、属性およびそれらの関係をいかに表現できていいるかを測ることができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180312SPICE.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 既存の評価では、主に人間によるキャプションに近いかどうかをシミュレートするタスクとしては微妙なところ。
+        p 図中の、上の依存性解析ツリーからオブジェクト(赤色)、属性(緑色)、および関係(青色)を取得し、右のシーングラフにマッピングする。候補シーングラフと参照シーングラフのタプルで計算されたFスコアを用いてキャプションのクオリティを算出。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Bleu、METEOR、ROUGE-L、CIDErなどの既存のn-gramメトリクスよりも、人間が判断したかのように評価することができる。しかし、課題はまだまだある。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1607.08822.pdf") 論文
+          li
+            a(href="http://www.panderson.me/spice") サイト・ソースコードなど
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Semantic Compositional Networks for Visual Captioning
     .info
       .authors Zhe Gan, et al. 
