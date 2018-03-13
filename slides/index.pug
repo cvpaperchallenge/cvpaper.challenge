@@ -2,6 +2,125 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Guided Labeling using Convolutional Neural Networks
+    .info
+      .authors Sebastian Stabinger, et al. 
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p ラベルの付いていないデータに対して、どの画像にラベルを付けてデータセットを構成すればよいかを判断するguided labelingの提案。ラベル付けを行う必要があるサンプルを見定めることで、データセットの量を大幅に減らすことができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180313GuidedLabeling.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 大規模データセットにおいて、手動でのラベル付けは大変。選別してラベル付けを行えば、作業を最小限に抑えられる。また、ある意味良いデータを選別できるため、場合によっては精度も向上。
+    .item4
+      .text
+        p MNISTは、データセットのサイズを1/16に、CIFAR10は1/2に減らすことが可能に。また、MNISTの場合は、全部使った時よりも識別精度が向上した。普遍性を妨げる不必要なデータを取り除けたことが精度向上につながった？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1712.02154.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Pose-Robust Face Recognition via Deep Residual Equivariant Mapping
+    .info
+      .authors Kaidi Cao, Yu Rong, Cheng Li, Xiaoou Tang, Chen Change Loy
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 横顔の認識精度を高めるためにDeep Residual EquivAriant Mapping (DREAM)の提案。正面と側面の顔間のマッピングを行うことで特徴空間を対応付ける。これにより、横顔を正面の姿勢に変換して認識を単純化。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180313DREAM_1.jpg`)
+    .item3
+      .text
+        h1 新規性・手法・リンク集
+        p 正面と側面のトレーニング数の不均衡から、現代の顔認識モデルの多くは、正面と比べて横顔を処理するのが比較的貧弱。本手法は姿勢変動を伴う顔認識に限定されない顔認識が可能で、横顔のデータを増やさなくても精度向上。
+        p 上図より、DREAMをCNNに追加し、入力に残差を動的に追加。下図はマッピングによる姿勢変換の例。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.00839.pdf") 論文
+          li
+            a(href="http://mmlab.ie.cuhk.edu.hk/projects/DREAM") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180313DREAM_2.jpg`)
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title SPICE: Semantic Propositional Image Caption Evaluation
+    .info
+      .authors Peter Anderson, et al.
+      .conference ECCV 2016
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味や内容が、キャプション評価の重要な要素であると仮定し、シーングラフへのマッピングを用いて評価するSemantic Propositional Image Caption Evaluation(SPICE)の提案。これにより、出力したキャプションがオブジェクト、属性およびそれらの関係をいかに表現できていいるかを測ることができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180312SPICE.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 既存の評価では、主に人間によるキャプションに近いかどうかをシミュレートするタスクとしては微妙なところ。
+        p 図中の、上の依存性解析ツリーからオブジェクト(赤色)、属性(緑色)、および関係(青色)を取得し、右のシーングラフにマッピングする。候補シーングラフと参照シーングラフのタプルで計算されたFスコアを用いてキャプションのクオリティを算出。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Bleu、METEOR、ROUGE-L、CIDErなどの既存のn-gramメトリクスよりも、人間が判断したかのように評価することができる。しかし、課題はまだまだある。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1607.08822.pdf") 論文
+          li
+            a(href="http://www.panderson.me/spice") サイト・ソースコードなど
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Semantic Compositional Networks for Visual Captioning
+    .info
+      .authors Zhe Gan, et al. 
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 意味的概念(タグ)を画像から取得し、各タグの確率をLSTMのパラメータとして使用することでイメージキャプショニングを行うSemantic Compositional Network (SCN)の提案。SCNは、LSTMの重みをタグの情報を含んだ重みに拡張する。タグには確率が設けてあり、大きければ大きいほどタグをLSTMに反映させる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180312SCN.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 従来のRNNに、意味的特徴を追加したイメージ。LSTMに“単語”と“状態”を入力する際に、意味的特徴を追加していく。通常の入力と意味的情報を追加したものを重み行列のアンサンブルと呼んでいる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p COCO、Flickr30k、Youtube2Textの3つのデータセットで、最先端の手法よりも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.08002.pdf") 論文
+          li
+            a(href="https://github.com/zhegan27/Semantic_Compositional_Nets") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title TSSD: Temporal Single-Shot Detector Based on Attention and LSTM for Robotic Intelligent Perception
     .info
       .authors Xingyu Chen, Zhengxing Wu, Junzhi Yu
@@ -3056,6 +3175,91 @@ block slides
       .text
         ul
           li: a(href="http://zhongwen.ai/pdf/multi-level.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Some like it hot - visual guidance for preference prediction
+    .info
+      .authors Rasmus Rothe et al.
+      .conference CVPR, 2016.
+    .item1
+      h1 概要
+      .text.
+        初対面の人物に対してどのような第一印象を抱くかを推定する手法。CNNによる抽出した特徴量を利用して、年齢や性別などのattributeを抽出する。また、抽出した特徴や過去のレーティングを基に、特定の個人が異性に対して良い印象と悪い印象どちらを第一印象で抱くかを推定する。
+
+    .item2
+      img(src=figpath+"180311like.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 個人の好みに基づいて印象の良し悪しを推定する
+          li 同じフレームワークを用いて映画のレーティングも可能
+          li デートサイトにおけるレーティングを用いて76%の精度で予測に成功した
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://arxiv.org/pdf/1510.07867.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Understanding Pedestrian Behaviors from Stationary Crowd Groups
+    .info
+      .authors Yi et al.
+      .conference CVPR, 2015.
+    .item1
+      h1 概要
+      .text.
+        写っている人物の歩行ルートなどを検出する研究。動画のフレームから歩行が可能であるかのエネルギーマップを推定することにより目的地までのルートを推定する。エネルギーマップの作成には、噴水などの元々通行が不可能な箇所だけでなく、他の人の情報も考慮し、歩行者ごとに作成する。
+
+    .item2
+      img(src=figpath+"180312pedestrian.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 立ち止まっている人による影響を考慮した歩行のモデル化を行った
+          li 12000人の歩行者の歩行ルートをannotationしたデータセットを構築
+          li 歩行ルートや目的地の推定など、様々な歩行に関連した情報の抽出が可能に
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Yi_Pedestrian_Travel_Time_ICCV_2015_paper.pdf" target="blank") 同じ著者による関連研究
+          li: a(href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Yi_Understanding_Pedestrian_Behaviors_2015_CVPR_paper.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Let there be Color!: Joint End-to-end Learning of Global and Loacal Image Priors for Automatic Image Colorization with Simultaneous Classification
+    .info
+      .authors Satoshi Iizuka et al.
+      .conference SIGGRAPH, 2016.
+    .item1
+      h1 概要
+      .text.
+        白黒画像からカラー画像を推定する手法。従来手法とは異なりend-to-endのネットワークを構築した。色付けする際，シーンの時間帯などの情報を含む大域的な特徴と物体などの情報を含んだ局所的な特徴の2つを組み合わせるこ。これにより，夜のシーンにもかかわらず画像の一部が明るいといったことを防ぐ。
+
+    .item2
+      img(src=figpath+"180312colorization.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 局所特徴と大域特徴を組み合わせることにより，画像全体が自然になるようなネットワークを構築した
+          li 過去に描かれた白黒画像に色付けすることも可能
+          li ベースラインでは70%前後であった自然さが、90%以上に向上した
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/data/colorization_sig2016.pdf" target="blank") 論文URL
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
