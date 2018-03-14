@@ -2,6 +2,66 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN
+    .info
+      .authors Shuai Li, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 新しいRNN手法であるindependently recurrent neural network (IndRNN)の提案。一枚のレイヤ内のニューロンが独立しており、レイヤ間で接続されている。これにより、勾配消失問題や爆発問題を防ぎ、より長期的なデータを学習することができる。また、IndRNNは複数積み重ねることができるため、既存のRNNよりも深いネットワークを構築できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180314IndRNN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 本手法によって下記の従来手法の問題を解決。
+        p RNNは、勾配の消失や爆発の問題、長期パターンの学習が困難である。LSTMやGRUは、上記のRNNの問題を解決すべく開発されたが、層の勾配が減衰してしまう問題がある。また、RNNは全てのニューロンが接続されているため、挙動の解釈が困難。
+    .item4
+      .text
+        h1 結果・リンク集
+        p かなり長いシーケンス(5000回以上の時間ステップ)を処理でき、かなり深いネットワーク（実験では21レイヤー）を構築できる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.04831.pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title Improving Object Localization with Fitness NMS and Bounded IoU Loss
+    .info
+      .authors Lachlan Tychsen-Smith, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 既存のNon-Max Supressionを改良したFitness NMSの提案。Soft NMSも同時に使用するとより効果的。
+        p 勾配降下法の収束特性(滑らかさ、堅牢性など)を維持しつつ、IoUを最大化するという目標により適した損失関数であるBounded IoU Loss の提案。これをRoIクラスタリングと組み合わせることで精度が向上する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180314FitnessNMS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p バウンディングボックスのスコアを算出する関数を拡張する。具体的には、グランドトゥルースとのIoUと、クラスの期待値を追加する。これにより、IoUの重なり推定値と、クラス確率の両方が高いバウンディングボックスを優先して学習することができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p MSCOCO、Titan X(Maxwell)使用時では、精度33.6％-79Hzまたは41.8％-5Hz。本論文ではDeNetでテストしたが、別の手法でも精度向上が望めるよう。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1711.00164.pdf") 論文
+          li
+            a(href="https://github.com/lachlants/denet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Object Recognition with and without Objects
     .info
       .authors Zhuotun Zhu, Lingxi Xie, Alan L. Yuille
