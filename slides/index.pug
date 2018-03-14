@@ -2,6 +2,37 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Object Recognition with and without Objects
+    .info
+      .authors Zhuotun Zhu, Lingxi Xie, Alan L. Yuille
+      .conference IJCAI 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体認識を行う際にコンテキスト情報（ここでは背景領域の特徴）が少なからずヒントとして効いているのでは？という疑問を解決するための検証。通常の物体検出データセット（OrigSet）をbboxのアノテーションを参考にして前景領域（FGSet）と背景領域（BGSet）に分けて精度を確認した。コンテキスト情報は特徴として非常に強く、物体が隠されている場面でも物体認識ができることを示唆した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180314WithoutOBJ.png`,alt="180314WithoutOBJ")
+    .item3
+      .text
+        h1 新規性・結果
+        p AlexNetを用いた場合、OrigSetよりもBGSet（背景領域のみ）の方が精度が高いこともあることが判明した。さらに、BGSetはFGSet（前景領域のみ）よりも大体において良好な性能を実現している。このことからも背景領域におけるコンテキストは無視できないものとなった。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 行動認識における調査"Human Action Recognition without Human"も合わせて読んでおきたい。
+        ul
+          li
+            a(href="https://www.ijcai.org/proceedings/2017/0505.pdf") 論文
+          li
+            a(href="https://arxiv.org/abs/1608.07876") Human Action Recognition without Human (ECCV 2016 WS)
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.14 12:12:33
+
+  +slide
     .title Rethinking Feature Distribution for Loss Functions in Image Classification
     .info
       .authors Weitao Wan, Yuanyi Zhong, Tianpeng Li, Jiansheng Chen
