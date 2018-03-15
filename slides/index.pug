@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Dynamic Vision Sensors for Human Activity Recognition
+    .info
+      .authors Stefanie Anna Baby, Bimal Vinod, Chaitanya Chinni, Kaushik Mitra
+      .conference ACPR 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p フレームレートを修正できるカメラDynamic Vision Sensors (DVS）により行動認識を行う。DVSはピクセル値の変化のみによりON/OFFを切り替え画素値を記録する仕組みで、フレーム間差分を撮像するような画像を入力できる。HD画像を記録した場合でもストレージの消費が抑えられる。本論文ではモーションを記録するために画像スライス（x-y, x-t, y-tの空間）を記録する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180315DVS.png`,alt="180315DVS")
+    .item3
+      .text
+        h1 新規性・結果
+        p Motion boudary histogram (MBH)との統合により良好な精度を実現した。UCF11にて0.6727, MBHとの統合により0.7513（RGB画像では0.7933）。DVS gesture datasetではMBHとの統合により0.9880。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.04667") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.15 09:17:35
+
+  +slide
     .title Future Frame Prediction for Anomaly Detection -- A New Baseline
     .info
       .authors Wen Liu, Weixin Luo, Dongze Lian, Shenghua Gao
