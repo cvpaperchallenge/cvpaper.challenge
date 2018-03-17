@@ -2,6 +2,42 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title FootStriker: An EMS-based Foot Strike Assistant for Running
+    .info
+      .authors F. Daiber et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        ランニングの支援をするウェアラブルシステムを提案．
+        走るときにかかとから着地と負担が大きく怪我につながりやすいので，
+        足先や中心の方から着地する方が良いとされている．
+        そういう走り方を身につけるためのシステムを提案．
+        インソールに仕込んだ圧力センサでかかとからの着地を検出して，
+        足に付けたEMSで電気信号によりフィードバックする．
+        スローモーションビデオを見せて言葉で教えるよりも，
+        システムを使ったほうがかかとからの着地が減少し，
+        良い走り方を身につけるのに有効なことを示した．        
+
+    .item2
+      img(src=figpath+"180317_footstriker.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li ランニング時の着地方法の改善を目的としたウェアラブルシステムを提案
+          li リアルタイムフィードバックで従来のコーチング手法よりも良い結果を実現
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 2: Sports 1
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
     .title BlindType: Eyes-Free Text Entry on Handheld Touchpad by Leveraging Thumb’s Muscle Memory
     .info
       .authors C. Seim et al.,
