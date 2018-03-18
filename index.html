@@ -4613,6 +4613,43 @@
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup</div>
+            <div class="info">
+              <div class="authors">Edgar Simo-Serra et al.</div>
+              <div class="conference">ACM SIGGRAPH, 2017.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                ラフ画の欠損部分を補完して線画にする手法を提案。全層が畳み込み層によって構築されているネットワークを構築し、任意の解像度の入力から線画への変換を可能とする。学習にはラフ画と線画のペアを使用し，重み付きの一致土をロスとして学習をする．学習の際には，データセットの一部をクロップする，トーンを変える，ノイズを乗せるなどによって学習データの数を増やしている。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180318sketch.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>従来手法とは異なり、ユーザーの介入を必要としない全自動の手法を提案した</li>
+                  <li>データセットとして68枚の線画とラフ画のペアを作成。その際，精度を向上するために提案ネットワークのようにラフ画→線画ではなく線画→ラフ画という順で作成。</li>
+                  <li>ユーザースタディによって既存手法と比べて精度を向上したことを確認</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="http://hi.cs.waseda.ac.jp/~iizuka/projects/inpainting/ja/" target="blank">プロジェクトページ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#116]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
