@@ -3682,3 +3682,85 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup
+    .info
+      .authors Edgar Simo-Serra et al.
+      .conference ACM SIGGRAPH, 2017.
+    .item1
+      h1 概要
+      .text.
+        ラフ画の欠損部分を補完して線画にする手法を提案。全層が畳み込み層によって構築されているネットワークを構築し、任意の解像度の入力から線画への変換を可能とする。学習にはラフ画と線画のペアを使用し，重み付きの一致土をロスとして学習をする．学習の際には，データセットの一部をクロップする，トーンを変える，ノイズを乗せるなどによって学習データの数を増やしている。
+
+    .item2
+      img(src=figpath+"180318sketch.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 従来手法とは異なり、ユーザーの介入を必要としない全自動の手法を提案した
+          li データセットとして68枚の線画とラフ画のペアを作成。その際，精度を向上するために提案ネットワークのようにラフ画→線画ではなく線画→ラフ画という順で作成。
+          li ユーザースタディによって既存手法と比べて精度を向上したことを確認
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://hi.cs.waseda.ac.jp/~iizuka/projects/inpainting/ja/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Semantic Shape Editing Using Deformation Handles
+    .info
+      .authors Mehmet Ersin Yumer et al.
+      .conference ACM SIGGRAPH, 2015.
+    .item1
+      h1 概要
+      .text.
+        物体の3次元形状を，ComfortableやFighterなどより高次な特徴に基づいて変形する手法の提案。クラウドソーシングによって，2つの三次元形状を比較してもらうことでattributeと形状の関係を調べ、どのように編集するかを決定する。
+
+    .item2
+      img(src=figpath+"180318shape.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li クラウドソーシングによってattributeとgeometryの対応を定式化し、attributeに基づく変形を可能に
+          li ユーザースタディによって、多くのユーザーが編集結果に満足したという結果を得た。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://dl.acm.org/citation.cfm?id=2766908" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title AttribIt: Content Creation with Semantic Attributes
+    .info
+      .authors Siddhartha Chaudhuri et al.
+      .conference UIST, 2013.
+    .item1
+      h1 概要
+      .text.
+        dangerousやscaryのように、言葉によって表現される特徴に基づきデザインを編集する手法。クラウドソーシングにより特徴とデザインの関係を調査し、特徴に基づいてデザインを編集するインターフェースを構築した。
+
+    .item2
+      img(src=figpath+"180318attriblt.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 3次元モデリングとwebデザインの2つの事例に対して適用した
+          li 編集結果が、目的の特徴を保持しているか、もっともらしいかの2つの観点においてユーザースタディにより提案手法の方が高い評価を得ることができた
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://gfx.cs.princeton.edu/pubs/Chaudhuri_2013_ACC/index.php" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto

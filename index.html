@@ -4613,6 +4613,115 @@
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup</div>
+            <div class="info">
+              <div class="authors">Edgar Simo-Serra et al.</div>
+              <div class="conference">ACM SIGGRAPH, 2017.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                ラフ画の欠損部分を補完して線画にする手法を提案。全層が畳み込み層によって構築されているネットワークを構築し、任意の解像度の入力から線画への変換を可能とする。学習にはラフ画と線画のペアを使用し，重み付きの一致土をロスとして学習をする．学習の際には，データセットの一部をクロップする，トーンを変える，ノイズを乗せるなどによって学習データの数を増やしている。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180318sketch.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>従来手法とは異なり、ユーザーの介入を必要としない全自動の手法を提案した</li>
+                  <li>データセットとして68枚の線画とラフ画のペアを作成。その際，精度を向上するために提案ネットワークのようにラフ画→線画ではなく線画→ラフ画という順で作成。</li>
+                  <li>ユーザースタディによって既存手法と比べて精度を向上したことを確認</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="http://hi.cs.waseda.ac.jp/~iizuka/projects/inpainting/ja/" target="blank">プロジェクトページ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#116]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Semantic Shape Editing Using Deformation Handles</div>
+            <div class="info">
+              <div class="authors">Mehmet Ersin Yumer et al.</div>
+              <div class="conference">ACM SIGGRAPH, 2015.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                物体の3次元形状を，ComfortableやFighterなどより高次な特徴に基づいて変形する手法の提案。クラウドソーシングによって，2つの三次元形状を比較してもらうことでattributeと形状の関係を調べ、どのように編集するかを決定する。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180318shape.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>クラウドソーシングによってattributeとgeometryの対応を定式化し、attributeに基づく変形を可能に</li>
+                  <li>ユーザースタディによって、多くのユーザーが編集結果に満足したという結果を得た。</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="https://dl.acm.org/citation.cfm?id=2766908" target="blank">論文URL</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#117]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">AttribIt: Content Creation with Semantic Attributes</div>
+            <div class="info">
+              <div class="authors">Siddhartha Chaudhuri et al.</div>
+              <div class="conference">UIST, 2013.</div>
+            </div>
+            <div class="item1">
+              <h1>概要</h1>
+              <div class="text">
+                dangerousやscaryのように、言葉によって表現される特徴に基づきデザインを編集する手法。クラウドソーシングにより特徴とデザインの関係を調査し、特徴に基づいてデザインを編集するインターフェースを構築した。
+                
+              </div>
+            </div>
+            <div class="item2"><img src="slides/figs/180318attriblt.png"></div>
+            <div class="item3">
+              <h1>新規性・結果</h1>
+              <div class="text">
+                <ul>
+                  <li>3次元モデリングとwebデザインの2つの事例に対して適用した</li>
+                  <li>編集結果が、目的の特徴を保持しているか、もっともらしいかの2つの観点においてユーザースタディにより提案手法の方が高い評価を得ることができた</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <h1>自由記述欄</h1>
+              <div class="text">
+                <ul>
+                  <li><a href="http://gfx.cs.princeton.edu/pubs/Chaudhuri_2013_ACC/index.php" target="blank">論文URL</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#118]</div>
+            <div class="slide_editor">Shintaro Yamamoto</div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="lib/js/head.min.js"></script>
