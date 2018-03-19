@@ -2,6 +2,363 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Learning from Richer Human Guidance: Augmenting Comparison-Based Learning with Feature Queries
+    .info
+      .authors Chandrayee Basu, Mukesh Singhal and Anca D. Dragan
+      .conference HRI'18
+      .paper_id pp. 132-140
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 所望の機能をロボットに学習させるにあたり，軌跡表示はよい情報提供となるものの，ユーザに見せるには難しい．
+          |ただの比較クエリへの回答（どっちの軌跡が良いか？）はユーザには大分簡単なので，効果的な代替手法として使われてきた．
+          |しかし，比較は情報量に乏しい．やっぱりもっとリッチな情報が欲しい．
+        p 特徴クエリによる比較の拡張に焦点を行ってみる．
+        p シミュレーションと本物ユーザ両方で試した．リッチで特徴拡張なクエリは早くて，よりマッチしたユーザ選択を導くことが分かった．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Learning_from_Richer_Human_Guidance_Augmenting_Comparison-Based_Learning_with_Feature_Queries_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ユーザに特徴を追加した（情報量増やした）クエリを作るという形式は，インタラクションとしては挑戦的に感じる．
+          |「無回答（わからない）」を回答してもよいとか，同じクエリに毎回異なる回答をするユーザを想定するところがちゃんとやっている感じがする．
+        p イントロでContribution並べているCVPR感．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171284") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 14:49:23
+
+  +slide
+    .title Deep Affordance-grounded Sensorimotor Object Recognition
+    .info
+      .authors S. Thermos et al.,
+      .conference CVPR 2017
+    .item1
+      h1 概要
+      .text.
+        物体のアピアランス (sensory) と人と物体のインタラクション (motor) の情報を組み合わせて
+        物体認識するSensorimotor Object Recognitionにおいて，Deep Learningを導入した手法を提案．
+        物体のアピアランスを捉えるストリーム (Colorized Object Depth Map) と，
+        インタラクションを捉えるストリーム (Colorized Hand Depth Map & Hand 3D Flow Magnitude) を組み合わせて利用．
+        様々なFusionの方法を比較した結果，図の(d)に対応するMulti-level Slow Fusionが最高精度を達成．
+        新たなデータセットの提供もしている他，
+        提案アーキテクチャは神経科学などの知見と合わせて議論されている．
+
+    .item2
+      img(src=figpath+"180319_deepaffordance.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li Sensorimotor Object RecognitionにCNNを導入
+          li RGB-D物体認識の新しい大規模データセットを提供
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li 普通にDeepでやりましたという論文にも見えてしまうけど論文の書き方が上手いのか？
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Colorful Image Colorization
+    .info
+      .authors Richard Zhang, Phillip Isola, Alexei A. Efros 
+      .conference in ECCV 2016
+    .item1
+      h1 概要
+      .text.
+        グレースケール画像への色づけ、およびそれに伴う表現学習手法。
+        MSEやMAEでの単純なカラー画像回帰はその平均的な色へ収束するため、彩度が低い画像になりやすい。
+        そこで色の出現頻度に応じた損失重み、分布を再現する出力、Lab空間での処理を行うことで高い彩度を実現し、
+        チューリングテストでSoTA。表現学習でも特にsegmentationで高い性能を発揮した。
+
+    .item2
+      img(src=figpath+"colorful_image.png")
+    .item3
+      h1 手法
+      .text.
+        分布としての出力を行うために、Lab空間を313に分割し、単純に画素値を出力させるのではなく識別問題とする。
+        また、出力された分布から最終的な色を決めるとき、最頻値や平均をとるなど複数の手段が考えられるが、今回はアニーリングをした後、
+        その分布の平均を取っている。アニーリングで平均に近づくほど彩度が失われるが、最頻値に近づくほど空間的整合性が失われる。
+
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |おそらく今のSoTAはGANベースだが、出力値の分布化や、アニーリングによる連続的なトレードオフの考慮は興味深い。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1603.08511") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+
+  +slide
+    .title Active Robot Learning for Temporal Task Models
+    .info
+      .authors M. Racca and V. Kyrki
+      .conference HRI'18
+      .paper_id pp. 123-131
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p タスク実行に関する，自然言語によるユーザー表現のモデル化を行うアクティブラーニングの枠組みを提案．
+          |タスクの時系列に対する素人ユーザの表現を学習する．
+          |以下のような質問を行い，ディリクレ多項モデルなどでモデル化し，逐次アップデートしていく．
+        ul
+          li 「タスクA」の後に，「このくらいの頻度で」「タスクB」をやりますか？
+          li 「タスクA」の後に，どちらかといえば「タスクB」「タスクC」のどちらをやりたいですか？
+          li 「このくらいの頻度で」「タスクA」から始めますか？
+          li どちらかといえば「タスクA」「タスクB」のどちらから始めたいですか？
+    .item2
+      .text
+        p
+          img(src=`${figpath}Active_Robot_Learning_for_Temporal_Task_Models_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p 他手法に比べ，時系列変化を考慮に入れていることが新しい点とのこと．
+        p ロボットとの対話の中で，ロボットとの協議でユーザの傾向を測るのは，あるべきパラダイムであろう．
+          |時変化という制約を付けたことでインタラクション的にも機械学習的にもうまくいくデザインが見つかったのは価値があると思う．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171241") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 13:49:03
+
+  +slide
+    .title VIDEO (LANGUAGE) MODELING: A BASELINE FOR GENERATIVE MODELS OF NATURAL VIDEOS 
+    .info
+      .authors Marc’Aurelio Ranzato et al., 
+      .conference 2014
+    .item1
+      h1 概要
+      .text.
+        言語処理などで行われる時系列生成モデリング(過去フレームを条件とした先フレーム
+        生成)を動画に対して行う問題設定とそのベースラインの提案。
+        MSEやMAEではブラーが起きてしまうため、patchをk-meansクラスタリングし、所属するクラスタを予測することで分布を再現する。
+        本論文では”予想できること”を目標にしている。
+        
+    .item2
+      img(src=figpath+"video_modeling.png")
+    .item3
+      h1 新規性・結果
+      .text.
+        画像は連続空間であるため、P(xt|x[1:t-1])の分布を再現するのが難しくMSEやMAEのが用いられてきたが、クラスタリングによって離散化することで識別問題に帰着させた。
+        定量評価は主にperplexityを用いており、言語モデルを参考にしている。通常のrNNとrCNN(畳み込みでのRNN)などで評価を行っており、従来手法との比較はほぼない（できない）
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |アーキテクチャのlimitationは割と大きい。行動認識など、表現学習の枠組みでの精度評価も気になった。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1412.6604") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+    
+  +slide
+    .title Low-resource Multi-task Audio Sensing for Mobile and Embedded Devices via Shared Deep Neural Network Representations
+    .info
+      .authors P. Georgiev et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        複数タスクを共通の層を使って特徴抽出して解くMulti-task Learningにより，
+        少ない消費電力でのオーディオセンシングを実現する手法を提案．
+        Amazon Echoなどのスマートスピーカで音声認識に加えてその他タスクを同時に実行する必要がある．
+        そのような状況で効率的に動くためのDeep Learningの手法を提案している．
+        評価実験では話者認識，感情認識，ストレス認識，環境音認識の4タスクを扱い，
+        タスクごとに独立でやる場合に比べてマルチタスクで処理したときの有用性を評価．
+        マルチタスクにすることで精度を大きく落とすことなく少ない消費電力での認識が可能なことを示した．
+
+    .item2
+      img(src=figpath+"180317_lowenergy.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li オーディオ認識系の複数タスクを同時に学習するためのフレームワークを提案
+          li マルチタスクで解くことでの少消費電力での認識を実証
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 5: Machine Learning
+          li Multi-taskでやったときの電力消費とかに注目して分析してるのがUbicompっぽい
+          li 技術的なContributionは主張してるけどそこまで大きくないように見える
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Devices and Data and Agents, Oh My: How Smart Home Abstractions Prime End-User Mental Models
+    .info
+      .authors M. Clark et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        Smart Homeについてユーザがどのようなものを求めているかのデータを集めて提供．
+        Capabilities (Data or Device) と Personification (Unmediated or Agent-mediagetd) の2軸で
+        4通りのAbstractionを定義．
+        扱えるデバイスを提示するか提供されるデータを提示するかの軸と，
+        SiriのようなAIが介するかどうかの軸．
+        4つのうちの1つをユーザに提示して，どのようなアプリケーションが欲しいかを記述してもらう．
+        そのデータからユーザが何を求めているかを分析．
+
+    .item2
+      img(src=figpath+"180317_smarthome.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li Smart Home (IoT) における4つのAbstractionを提案
+          li 提示するAbstractionによってユーザの求めるものは大きく変化することを実証
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 3: Software Enginnering
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title FootStriker: An EMS-based Foot Strike Assistant for Running
+    .info
+      .authors F. Daiber et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        ランニングの支援をするウェアラブルシステムを提案．
+        走るときにかかとから着地と負担が大きく怪我につながりやすいので，
+        足先や中心の方から着地する方が良いとされている．
+        そういう走り方を身につけるためのシステムを提案．
+        インソールに仕込んだ圧力センサでかかとからの着地を検出して，
+        足に付けたEMSで電気信号によりフィードバックする．
+        スローモーションビデオを見せて言葉で教えるよりも，
+        システムを使ったほうがかかとからの着地が減少し，
+        良い走り方を身につけるのに有効なことを示した．        
+
+    .item2
+      img(src=figpath+"180317_footstriker.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li ランニング時の着地方法の改善を目的としたウェアラブルシステムを提案
+          li リアルタイムフィードバックで従来のコーチング手法よりも良い結果を実現
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 2: Sports 1
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title BlindType: Eyes-Free Text Entry on Handheld Touchpad by Leveraging Thumb’s Muscle Memory
+    .info
+      .authors C. Seim et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        入力画面を見ないでキー入力するときの入力方法に関する研究．
+        大画面を見たり，HMDをつけたりしながら手元のスマホなどで入力することを想定．
+        入力はQWERTYのバーチャルキーボード．
+        1キーずつ独立に入力判定をする方法 (Absolute) と，
+        前のタッチ位置との相対位置から入力判定する方法 (Relative) の2種類を検討．
+        加えて，ユーザごとにキーボードサイズや位置を学習するPersonalと
+        そうしないGeneralの2パターンを合わせて，組み合わせの4通りを比較．
+        Personalizeはされている方が良いし，Relativeの方が良いという結論．
+        実際にキーボードを見ながら入力するのに近い結果を得た．
+
+    .item2
+      img(src=figpath+"180317_eyefree.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li ユーザに合わせたキーボードモデルの学習手法を提案
+          li Eyes-freeでのタイピングデータをユーザスタディで獲得
+          li ユーザスタディの結果から，入力アルゴリズムを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 1: Input Methods
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles
+    .info
+      .authors Mehdi Noroozi et al.
+      .conference in ECCV 2016
+    .slide_editor Tomoyuki Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 
+        |一枚画像から作成されるジグソーパズルを解くことで表現学習を行う。SiameseNetを用い、9×9のpermutationの識別を解く(実際にはハミング距離などが考慮された1000通りのpermutationに限定)。タイルの境界部分などの低レベルな特徴によってとかないよう、境界を消すような前処理を行う。
+        //|時間の設定をもとに対応する特徴量を計算することができ、実験では仮想的なデータにおけるフレーム生成タスクにおいて、鮮明な出力が得られている
+          
+    .item3
+      .text
+        h1 手法・結果
+        p 
+        |既存手法として中心タイルからの相対位置８クラス分類などの表現学習方法が存在したが、難度が高すぎた。本手法ではpermutationの限定、すべてのタイルを入力として使用することで難度を調整している。様々なタスクの表現学習においてSoTA。
+        
+    .item2
+      .text
+        p
+          img(src=`${figpath}jg_puzzle.png`)
+    .item4
+      .text
+        h1 コメント・リンク
+        p
+        |表現学習にはタスク自体の難易度の調整は重要そう。本研究でも、permutationの数、ハミング距離などが大きく影響していた。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1603.09246") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Dynamic Vision Sensors for Human Activity Recognition
     .info
       .authors Stefanie Anna Baby, Bimal Vinod, Chaitanya Chinni, Kaushik Mitra
@@ -3501,6 +3858,88 @@ block slides
       .text
         ul
           li: a(href="http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/data/colorization_sig2016.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup
+    .info
+      .authors Edgar Simo-Serra et al.
+      .conference ACM SIGGRAPH, 2017.
+    .item1
+      h1 概要
+      .text.
+        ラフ画の欠損部分を補完して線画にする手法を提案。全層が畳み込み層によって構築されているネットワークを構築し、任意の解像度の入力から線画への変換を可能とする。学習にはラフ画と線画のペアを使用し，重み付きの一致土をロスとして学習をする．学習の際には，データセットの一部をクロップする，トーンを変える，ノイズを乗せるなどによって学習データの数を増やしている。
+
+    .item2
+      img(src=figpath+"180318sketch.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 従来手法とは異なり、ユーザーの介入を必要としない全自動の手法を提案した
+          li データセットとして68枚の線画とラフ画のペアを作成。その際，精度を向上するために提案ネットワークのようにラフ画→線画ではなく線画→ラフ画という順で作成。
+          li ユーザースタディによって既存手法と比べて精度を向上したことを確認
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://hi.cs.waseda.ac.jp/~iizuka/projects/inpainting/ja/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Semantic Shape Editing Using Deformation Handles
+    .info
+      .authors Mehmet Ersin Yumer et al.
+      .conference ACM SIGGRAPH, 2015.
+    .item1
+      h1 概要
+      .text.
+        物体の3次元形状を，ComfortableやFighterなどより高次な特徴に基づいて変形する手法の提案。クラウドソーシングによって，2つの三次元形状を比較してもらうことでattributeと形状の関係を調べ、どのように編集するかを決定する。
+
+    .item2
+      img(src=figpath+"180318shape.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li クラウドソーシングによってattributeとgeometryの対応を定式化し、attributeに基づく変形を可能に
+          li ユーザースタディによって、多くのユーザーが編集結果に満足したという結果を得た。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://dl.acm.org/citation.cfm?id=2766908" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title AttribIt: Content Creation with Semantic Attributes
+    .info
+      .authors Siddhartha Chaudhuri et al.
+      .conference UIST, 2013.
+    .item1
+      h1 概要
+      .text.
+        dangerousやscaryのように、言葉によって表現される特徴に基づきデザインを編集する手法。クラウドソーシングにより特徴とデザインの関係を調査し、特徴に基づいてデザインを編集するインターフェースを構築した。
+
+    .item2
+      img(src=figpath+"180318attriblt.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 3次元モデリングとwebデザインの2つの事例に対して適用した
+          li 編集結果が、目的の特徴を保持しているか、もっともらしいかの2つの観点においてユーザースタディにより提案手法の方が高い評価を得ることができた
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://gfx.cs.princeton.edu/pubs/Chaudhuri_2013_ACC/index.php" target="blank") 論文URL
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
