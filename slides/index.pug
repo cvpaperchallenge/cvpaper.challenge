@@ -2,6 +2,41 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Learning from Richer Human Guidance: Augmenting Comparison-Based Learning with Feature Queries
+    .info
+      .authors Chandrayee Basu, Mukesh Singhal and Anca D. Dragan
+      .conference HRI'18
+      .paper_id pp. 132-140
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 所望の機能をロボットに学習させるにあたり，軌跡表示はよい情報提供となるものの，ユーザに見せるには難しい．
+          |ただの比較クエリへの回答（どっちの軌跡が良いか？）はユーザには大分簡単なので，効果的な代替手法として使われてきた．
+          |しかし，比較は情報量に乏しい．やっぱりもっとリッチな情報が欲しい．
+        p 特徴クエリによる比較の拡張に焦点を行ってみる．
+        p シミュレーションと本物ユーザ両方で試した．リッチで特徴拡張なクエリは早くて，よりマッチしたユーザ選択を導くことが分かった．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Learning_from_Richer_Human_Guidance_Augmenting_Comparison-Based_Learning_with_Feature_Queries_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ユーザに特徴を追加した（情報量増やした）クエリを作るという形式は，インタラクションとしては挑戦的に感じる．
+          |「無回答（わからない）」を回答してもよいとか，同じクエリに毎回異なる回答をするユーザを想定するところがちゃんとやっている感じがする．
+        p イントロでContribution並べているCVPR感．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171284") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 14:49:23
+
+  +slide
     .title Deep Affordance-grounded Sensorimotor Object Recognition
     .info
       .authors S. Thermos et al.,
@@ -71,6 +106,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Tomoyuki Suzuki
+
   +slide
     .title Active Robot Learning for Temporal Task Models
     .info
