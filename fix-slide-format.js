@@ -15,31 +15,14 @@ var fout="";
 var li=0;
 while(li<lines.length){
 	for(;li<lines.length;++li){
-		//process.stdout.write(""+li+"\n");
 		var line=lines[li];
-		fout+=line+"\n";
-		if(line.match(/^\s*.timestamp.*/)) break;
+		if(line.match(/^    \.title/)) break;
+		else fout+=line+"\n";
 	}
-	if(li>=lines.length) break;
-	var eli=li;
-	for(++li;li<lines.length;++li){
-		//process.stdout.write("*"+li+"\n");
-		var line=lines[li];
-		if(line.match(/^\s*.+slide.*/)){
-			//correct for this hunk
-			fout+=line+"\n";
-			break;
-		}
-		else if(line.match(/^\s*.\.title.*/)){
-			//lack of +slide
-			fout+="\n";
-			fout+="  +slide\n";
-			fout+=line+"\n";
-			break;
-		}
-		else
-			fout+=line+"\n";
+	if(!lines[li-1].match(/^  \+slide/)){
+		fout+="\n  +slide\n";
 	}
+	fout+=lines[li]+"\n";
 	++li;
 }
 
