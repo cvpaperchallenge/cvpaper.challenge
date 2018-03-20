@@ -2,6 +2,40 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Understanding Deep Image Representations by Inverting Them 
+    .info
+      .authors Aravindh Mahendran and Andrea Vedaldi 
+      .conference in CVPR 2016
+    .item1
+      h1 概要
+      .text.
+        特徴量から元画像復元することで、その特徴量への圧縮によって失われる情報やその特徴量が捉えているものを可視化する研究。
+        特徴量としてはCNN以外にも、微分可能な処理として定義されるHOGやSIFTについても利用できる。
+        CNNの位置普遍性や深いfc層にも画像情報がかなり含まれていること受容野外との関係やチャネルごとの役割の違いなどがわかった。
+
+    .item2
+      img(src=figpath+"image_inversion.png")
+    .item3
+      h1 手法
+      .text.
+        ある(CNNの場合、学習済み )モデルから得られる特徴量のMSEを最小化するように入力画像に対してSGDによって勾配を計算して再構成を行う。
+        画像を自然らしく生成するために、上記MSE以外にtotal variance(TV)制約項を損失関数に導入する。
+
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |全結合層にも画像情報がかなり含まれているなど、興味深い結果が多かった。一方、可視化結果から特徴量の情報を得られるわけではなく、その特徴量となりうる入力画像の「集合」を見て初めて何を特徴量化しているかがわかってくる気がした。
+
+        ul
+          li
+            a(href="https://arxiv.org/abs/1412.0035") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+  +slide
     .title Learning from Richer Human Guidance: Augmenting Comparison-Based Learning with Feature Queries
     .info
       .authors Chandrayee Basu, Mukesh Singhal and Anca D. Dragan
