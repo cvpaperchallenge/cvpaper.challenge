@@ -25,7 +25,7 @@ retval=0
 
 echo "$A $O $B $L $P"
 
-if [ "$P" -eq "slides/index.pug" ]
+if [ "$P" = "slides/index.pug" ]
 then
 	echo "apply union merge to $P"
 	git merge-file -q --union "$A" "$O" "$B"
