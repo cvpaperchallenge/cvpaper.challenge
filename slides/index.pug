@@ -2,6 +2,40 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Learning from Physical Human Corrections, One Feature at a Time
+    .info
+      .authors Andrea Bajcsy, Dylan P. Losey, Marcia K. O'Malley, Anca D. Dragan
+      .conference HRI'18
+      .paper_id pp. 141-149
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 図は，テーブルに腕を近づける動きをさせているが，意図せずコップの向きも変えてしまっている．
+          |このままではロボットはこの二つを同時に学習してしまうが，本来は対テーブルの動きのみ学習すべきである．
+          |そこで，意図しない動きを抜いた動きを使ってロボットの動きを学習しようという試み．
+        p 意図する動きがメジャーを取っているという仮定のもと，
+          |その時々で，ロボットの軌跡の修正に関わる特徴のうち一つだけを使って，あとはゼロにしてしまう（One feature at a time）ことで実現する．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Learning_from_Physical_Human_Corrections_One_Feature_at_a_Time_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p 簡単だが面白いアイデアで，しかも実際にうまくできているという大変興味深い論文．
+          |まさに真理を突いた研究といえる．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171267") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 18:00:31
+
+  +slide
     .title Understanding Deep Image Representations by Inverting Them 
     .info
       .authors Aravindh Mahendran and Andrea Vedaldi 
@@ -140,7 +174,7 @@ block slides
     .title Colorful Image Colorization
     .info
       .authors Richard Zhang, Phillip Isola, Alexei A. Efros 
-      .conference in ECCV 2016
+      .conference ECCV 2016
     .item1
       h1 概要
       .text.
