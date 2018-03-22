@@ -2,11 +2,40 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Training of Convolutional Networks on Multiple Heterogeneous Datasets for Street Scene Semantic Segmentation
+    .info
+      .authors P. Meletis, G. Dubbelman
+      .conference IEEE IV 2018 submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p セマンティックセグメンテーションに関して異なる複数のデータセットを統合して学習する枠組み（Heterogeneous Learningと呼ぶ）を提案する。本稿ではCityscapes, GTSDB, Mapillary Vistasという公開DBを統合してモデルを学習。また、階層的モデルは畳み込み特徴を共有し、各データセットからそれぞれラベルを学習して誤差をフィードバックしながらモデルを学習する（これによりデータセット間でラベルのあり/なしを相殺しながら学習、カテゴリ数が異なる場合にも学習を強化できる）。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322Heterogeneous.png`,alt="180322Heterogeneous")
+    .item3
+      .text
+        h1 新規性・結果
+        p ３つの異なるデータベースから知識を（Heterogeneous学習で）統合することにより、最終的には108カテゴリの階層的な分類をセマンティックセグメンテーションの枠組みで行うことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 各大学、企業などが独立に集めているデータセットも統合し続けたら無限にカテゴリが増えて行くのか？細切れのデータを結集させてさらに強いデータにして行くという枠組みも今後は必要か？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.05675.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 18:52:15
+
+  +slide
     .title Fusing Hierarchical Convolutional Features for Human Body Segmentation and Clothing Fashion Classification
     .info
       .authors Zheng Zhang, Chengfang Song, Qin Zou
       .conference arXiv, 1803.03415
-    .slide_editor Hirokatsu Kataoka
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
 
     .item1
       .text
