@@ -2,6 +2,41 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Learning Category-Specific Mesh Reconstruction from Image Collections
+    .info
+      .authors Angjoo Kanazawa,Shubham Tulsiani,Alexei A. Efros,Jitendra Malik
+      .conference arXiv, 2018
+    .slide_editor Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 一枚絵の画像から3次元形状、カメラパラメータ、テクスチャを推定して物体の構造を再現するという研究。シルエット、3次元キーポイント、テクスチャを推定して誤差を計算、ネットワークを学習する。
+          a(href="http://hiroharu-kato.com/projects/neural_renderer.html") Neural 3D Mesh Renderer
+          |に発想が近い研究である。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322CMR.png`,alt="180322CMR")
+    .item3
+      .text
+        h1 新規性・結果
+        p 右図を参照。3次元形状（shape）、カメラパラメータ（camera）、テクスチャ（texture）の推定を統合して形状のみならず色やその構造まで復元できている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p バークレーで2D画像から3D画像を復元する研究が進んでいるが、カテゴリを限定すれば3次元構造が復元できるまでになって来た。次はカテゴリフリー（カテゴリも推定しながら）で構造理解ができるようになりそう。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07549.pdf") 論文
+          li
+            a(href="https://akanazawa.github.io/cmr/") Project
+          li
+            a(href="http://shiropen.com/2018/03/21/33481") 参考
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 08:56:48
+
+  +slide
     .title Learning from Physical Human Corrections, One Feature at a Time
     .info
       .authors Andrea Bajcsy, Dylan P. Losey, Marcia K. O'Malley, Anca D. Dragan
