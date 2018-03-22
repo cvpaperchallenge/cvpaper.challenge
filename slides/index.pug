@@ -2,6 +2,36 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Multiple-Human Parsing in the Wild
+    .info
+      .authors Jianshu Li, Jian Zhao, Yunchao Wei, Congyan Lang, Yidong Li, Terence Sim, Shuicheng Yan, Jiashi Feng
+      .conference arXiv 1705.07206
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 複数の人物に関する、パーツごとのセマンティック/インスタンスセグメンテーションを提案する。この問題に対してデータセットであるMultiple Human Parsing (MHP)データセットや認識のモデルを同時に提案する。データセットに関しては人物に関する18カテゴリ（7が人体、11が服装に関するカテゴリ）、4,980画像、2~16人/画像、
+          |計14,969人で構成される。モデルであるMH-ParserはDeepLab-ResNet-101によりパージング、graph-GANによりAffinity Mapを推定してセマンティックのみならずインスタンスのセグメンテーションを高度に解決する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322MHP.png`,alt="180322MHP")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来のデータセットであるLIPやATRなどと比較すると人物数が多いわけではないが、「複数人」が１画像に映り込んでいるという意味で利点がある。Mask R-CNNとの比較において、全てのデータを含んだ精度ではComparativeであるが、Top-20/-5の精度ではMH-Parserが高い精度を実現した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 人物の解析はより詳細になりつつある。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1705.07206.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:33:35
+
+  +slide
     .title Learning to Localize Sound Source in Visual Scenes
     .info
       .authors Arda Senocak, Tae-Hyun Oh, Junsik Kim, Ming-Hsuan Yang, In So Kweon
