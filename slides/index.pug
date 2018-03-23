@@ -2,6 +2,258 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Inferring Person-to-person Proximity Using WiFi Signals
+    .info
+      .authors P. Sapiezynski et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        特別な装置を使うことなくWiFiネットワークの信号を利用して
+        人と人との接近というインタラクションを検出する手法を提案．
+        病気の感染の解析とか，ソーシャルグループの解析とかそういう応用が目的．
+        二人のスマホでのWiFiスキャンの結果を比較して類似度を図ることで接近を検出．
+        従来手法は単一の尺度を利用することが多かったが，
+        この研究では複数の尺度・特徴量を組み合わることで精度を向上．
+        WiFiとBluetoothの情報があるデータセットを用いて，Bluetoothを真値としてWiFi特徴からの接近検出を学習．
+        提案手法が高い性能を示すことを実験的に確認．
+
+    .item2
+      img(src=figpath+"180323_wifi.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li WiFiネットワークとスマホから人と人との物理的な接近の検出を実現
+          li 統制された環境ではないデータでも提案手法が有効に働くことを実証
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 7: WiFi Sensing
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title CSGNet: Neural Shape Parser for Constructive Solid Geometry
+    .info
+      .authors G. Sharma et al.,
+      .conference arXiv
+      .paper_id 1712.08290
+    .item1
+      h1 概要
+      .text.
+        ピクセルボクセルなどのLow-levelな表現ではなく，
+        Illustratorなどで使うような円，三角形といった高次の表現でのParsing．
+        Constructive Solid Geometry (CSG) というモデリングをベースを利用．
+        入力された画像や3次元形状をCSG Engineで扱うプログラムに分解する手法を提案．
+        CNNでEncodingした後にRNNでプログラムにDecoding．
+        CSG Engineで作成した人工的データを用いた教師あり学習と，
+        入力と，DecodeしたプログラムをEngineで出力したものとの差分を元に計算する報酬ベースの教科学習でモデルを学習．
+        両学習手法の組み合わせでより高い精度を実現可能なことを示した．
+
+    .item2
+      img(src=figpath+"180322_parser.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 高速かつ効果的なCSGプログラムの推定手法を提案
+          li 強化学習によりプログラムの教師情報なしの学習を実現
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li CVPR2018に採択されている
+          li さすがにこういう新しくて面白い問題設定だと比較手法がNearest Neighborでも文句は言われない模様
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Affective image adjustment with a single word
+    .info
+      .authors Xiaohui Wang, Jia Jia, Lianhong Cai
+      .conference The Visual Computing 2013
+    .slide_editor Kazuki Inoue
+
+    .item1
+      .text
+        h1 概要
+        p 画像の色を特定の感情を想起するように変換する手法。入力は画像と感情を表す単語であり、入力感情を表すように画像の色が変換される。感情形容詞に対してカラーパレットが定義付けられたデータを使用し、色と感情の距離を計算することで画像に適用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}affective_image_adjustment.jpg`,alt="affective_image_adjustment")
+    .item3
+      .text
+        h1 新規性・結果
+        p 1024x768の画像を1秒以下で生成可能。提案手法によって生成された画像と、アーティストによって作成された作品を、1)入力感情が表されているか、2)画像の見た目として自然か、という観点でユーザに採点を行ってもらったところ、提案手法が優位な結果となった。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 単語間の距離を学習しているため、トレーニングデータセットにない単語の入力も可能。感情から５色のカラーパレットへ変換するが、入力画像が６種類以上の色相を持つ場合には生成画像が不自然になる。適応的に色数を変更していきたい、と主張。
+        ul
+          li
+            a(href="https://link.springer.com/article/10.1007/s00371-012-0755-3") 論文
+    .slide_index #{getSlideIndex()}
+  
+  +slide
+    .title Detecting and Recognizing Human-Object Interactions
+    .info
+      .authors Georgia Gkioxari, Ross Girshick, Piotr Dollár, Kaiming He
+      .conference CVPR 2018 (spotlight)
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 人物検出と同時に人物行動やその物体とのインタラクションも含めて学習を行うモデルを提案する。本論文では物体候補の中でも特にインタラクションに関係ありそうな物体に特化して認識ができるようにする。さらに、検出された<human, verb, object>のペアを用いて学習する（図の場合には<human, cut, knnife>）。さらに、その他の行動（図の場合にはstand）を同時に推定することもできる。モデルはFaster R-CNNをベースとするが、物体検出（box, class）、行動推定（action, target）、インタラクション（action）を推定して誤差を計算する。さらに、推定した人物位置に対する対象物体の方向も確率的に計算することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322HOI.png`,alt="180322HOI")
+    .item3
+      .text
+        h1 新規性・結果
+        p 人間に特化した検出と行動推定の枠組みを提案した。V-COCO（Verbs in COCO）にて、相対的に26%精度が向上（31.8=>40.0）、HICO-DETデータセットにて27%相対的な精度向上が見られた。計算速度は135ms/imageであり、高速に計算が可能である。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 単純な多タスク学習ではなく、人物に特化して対象物体の位置も確率的に推定しているところがGood。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1704.07333.pdf") 論文
+          li
+            a(href="https://gkioxari.github.io/InteractNet/index.html") Project
+          li
+            a(href="https://github.com/s-gupta/v-coco") Verbs in COCO DB
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:55:34
+
+  +slide
+    .title Multiple-Human Parsing in the Wild
+    .info
+      .authors Jianshu Li, Jian Zhao, Yunchao Wei, Congyan Lang, Yidong Li, Terence Sim, Shuicheng Yan, Jiashi Feng
+      .conference arXiv 1705.07206
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 複数の人物に関する、パーツごとのセマンティック/インスタンスセグメンテーションを提案する。この問題に対してデータセットであるMultiple Human Parsing (MHP)データセットや認識のモデルを同時に提案する。データセットに関しては人物に関する18カテゴリ（7が人体、11が服装に関するカテゴリ）、4,980画像、2~16人/画像、
+          |計14,969人で構成される。モデルであるMH-ParserはDeepLab-ResNet-101によりパージング、graph-GANによりAffinity Mapを推定してセマンティックのみならずインスタンスのセグメンテーションを高度に解決する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322MHP.png`,alt="180322MHP")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来のデータセットであるLIPやATRなどと比較すると人物数が多いわけではないが、「複数人」が１画像に映り込んでいるという意味で利点がある。Mask R-CNNとの比較において、全てのデータを含んだ精度ではComparativeであるが、Top-20/-5の精度ではMH-Parserが高い精度を実現した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 人物の解析はより詳細になりつつある。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1705.07206.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:33:35
+
+  +slide
+    .title Learning to Localize Sound Source in Visual Scenes
+    .info
+      .authors Arda Senocak, Tae-Hyun Oh, Junsik Kim, Ming-Hsuan Yang, In So Kweon
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 画像と音声の入力から、音が画像のどこで鳴っているか（鳴りそうか？）を推定した研究。さらに、人の声なら人の領域、車の音なら車の領域にアテンションがあたるなど物体と音声の対応関係も学習することができる。学習には音源とその対応する物体の位置を対応づけたデータセット（144Kのペアが含まれるSound Source Localization Dataset）を準備した。さらに既存の物体認識と音声を対応づけて（？）Unsupervised/Semi-supervisedに学習することにも成功した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322LocalizeSound.png`,alt="180322LocalizeSound")
+    .item3
+      .text
+        h1 新規性・結果
+        p 教師あり、教師なし、半教師あり、いずれの枠組みでも音声ー物体の対応関係を学習することができるようにした。音源とそれに対応する物体領域の尤度がヒートマップにて高く表示されている。結果はビデオを参照されたい。教師なし学習はTriplet-lossにより構成され、ビデオと近い/遠い音声の誤差により計算。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 非常に面白い問題設定、プラス誤差関数を柔軟に抽出可能というところが上手。精読しても良いと感じた論文。CVにおいてビデオの音声は今まで使用しないことも多かった（もしくは精度向上のために活用していた）が、これからは使用方法を見直してもよいと感じた。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03849.pdf") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=UyairkbzR_Y") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:18:32
+
+  +slide
+    .title Training of Convolutional Networks on Multiple Heterogeneous Datasets for Street Scene Semantic Segmentation
+    .info
+      .authors P. Meletis, G. Dubbelman
+      .conference IEEE IV 2018 submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p セマンティックセグメンテーションに関して異なる複数のデータセットを統合して学習する枠組み（Heterogeneous Learningと呼ぶ）を提案する。本稿ではCityscapes, GTSDB, Mapillary Vistasという公開DBを統合してモデルを学習。また、階層的モデルは畳み込み特徴を共有し、各データセットからそれぞれラベルを学習して誤差をフィードバックしながらモデルを学習する（これによりデータセット間でラベルのあり/なしを相殺しながら学習、カテゴリ数が異なる場合にも学習を強化できる）。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322Heterogeneous.png`,alt="180322Heterogeneous")
+    .item3
+      .text
+        h1 新規性・結果
+        p ３つの異なるデータベースから知識を（Heterogeneous学習で）統合することにより、最終的には108カテゴリの階層的な分類をセマンティックセグメンテーションの枠組みで行うことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 各大学、企業などが独立に集めているデータセットも統合し続けたら無限にカテゴリが増えて行くのか？細切れのデータを結集させてさらに強いデータにして行くという枠組みも今後は必要か？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.05675.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 18:52:15
+
+  +slide
+    .title Fusing Hierarchical Convolutional Features for Human Body Segmentation and Clothing Fashion Classification
+    .info
+      .authors Zheng Zhang, Chengfang Song, Qin Zou
+      .conference arXiv, 1803.03415
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p ファッションにおいて各年のコレクションから収集したファッションスナップをデータベース化。服装も含めた人物領域のセグメンテーションや8カテゴリ（2008~2015）のYearを識別する問題に落とし込んだ。この問題を解決するため、多階層の特徴抽出を行い、統合することによりセグメントとラベルを判断した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322Fashion8.png`,alt="180322Fashion8")
+    .item3
+      .text
+        h1 新規性・結果
+        p 全9339枚の画像から構成される8年分のファッションDB、Fashion8を提案、ファッションセグメンテーションや識別を行うためにEnd-to-End/Multi-scaleのアーキテクチャを提案。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 学習によりファッションが出てきた年を当てるのは？だが、同時に付与されているファッションブランドを当てる問題はある程度できそう。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03415.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 18:31:05
+
+  +slide
     .title Learning Category-Specific Mesh Reconstruction from Image Collections
     .info
       .authors Angjoo Kanazawa,Shubham Tulsiani,Alexei A. Efros,Jitendra Malik
