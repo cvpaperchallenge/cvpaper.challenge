@@ -2,6 +2,37 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Unsupervised learning of common sense event structures from simple English stories
+    .info
+      .authors Ken Arnold, Dustin Smith
+      .conference 2008
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p OMICSコーパスに書いてあるシンプルなストーリー展開から常識を教師なしで学習。コーパスには「手紙を受け取る」「ベッドメイクする」などの日常生活における手続きを英語のナレーションで記述している。異なる文脈で同じイベントが発生した場合にも時系列的な階層構造を構築してイベント/サブイベント間の関係性を把握。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324CommonSense.png`,alt="180324CommonSense")
+    .item3
+      .text
+        h1 新規性・結果
+        p 論文にはコンピュータが「常識」のような知識をいかに自然言語から獲得するかが記述されている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p Open Mind Common Sense projectというプロジェクトを発見した。ここを掘り下げても面白いかも？また、文脈の表現はCVよりもNLPのほうが優れているかも。
+        ul
+          li
+            a(href="http://alumni.media.mit.edu/~dustin/papers/story_parser/story_parser.pdf") 論文
+          li
+            a(href="https://github.com/commonsense/omcs") Project
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 13:30:39
+
+  +slide
     .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
     .info
       .authors Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
