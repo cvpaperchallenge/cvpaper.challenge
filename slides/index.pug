@@ -3764,3 +3764,31 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Scene Graph Generation by Iterative Message Passing
+    .info
+      .authors Danfei Xu et al.
+      .conference CVPR, 2017.
+    .item1
+      h1 概要
+      .text.
+        画像に写っている物体同士の関係を表したscene graphを生成する手法。グラフのnodeが物体、edgeが関係を表す。初めに、入力画像から物体検出によって画像に写っている物体(=node)を検出する。続いて、RNNにより検出された物体同士の関係を決定していく。
+
+    .item2
+      img(src=figpath+"20180325scenegraph.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 従来手法ではグラフの各要素を独立して求めていたのに対して、RNNによりiterativeに関係性を決定していくEnd-to-Endのネットワークを構築した。
+          li Visual Genome Datasetを基に作成した新たなデータセットを導入し、評価を行った。
+          li 従来手法と比較して、aboveやbehindなど多くの物体同士の関係性において精度が大幅に向上した。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://cs.stanford.edu/~danfei/scene-graph/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
