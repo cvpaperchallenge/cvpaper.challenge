@@ -3819,3 +3819,30 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Unsupervised Learning of Depth and Ego-Motion from Video
+    .info
+      .authors Tinghui Zhou et al.
+      .conference CVPR, 2017.
+    .item1
+      h1 概要
+      .text.
+        教師無し学習によってdepthとカメラの相対位置(R,t)を推定する手法を提案。ネットワークは、1枚画像からのdepth推定と2枚画像からのカメラの相対位置の推定により構築されている。隣接するフレームtとsを考え、推定した情報を用いてsからtへの変換を行う。変換結果が、tと一致するように学習をしていく。
+
+    .item2
+      img(src=figpath+"180325depth.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 学習時には2つのネットワークを同時に学習しているが、テスト時にはそれぞれを単独で使用することが可能となる。
+          li 従来手法では何かしらの教師データが必要であったのに対して、ラベルを含まない動画のみで学習が可能に。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://people.eecs.berkeley.edu/%7Etinghuiz/projects/SfMLearner/" target="blank") プロジェクトページ
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
