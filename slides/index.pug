@@ -2,6 +2,874 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title TOM-Net: Learning Transparent Object Matting from a Single Image
+    .info
+      .authors Guanying Chen, Kai Han, Kwan-Yee K. Wong
+      .conference CVPR 2018 (spotlight)
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 透明物体の切り抜き（Transparent Object Matting; TOM）と反射特性を推定することが可能なネットワークTOM-Netを提案する。TOM-Netにより、物体の反射特性を保存しながら他の画像にレンダリングして、同画像のテクスチャを反映させることができる。同問題を反射フローの推定問題と捉えてDNNのモデルを構築することで解決した。荒い部分は多階層のEncoder-Decorderで推定し、詳細な部分はResidualNetで調整する。この問題を解決するために、データセットを構築した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324TOMNet.png`,alt="180324TOMNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p 178Kの画像を含むデータセットを構築した。同DBには876サンプル、14の透明物体、60種の背景を含む。透明物体の推定と反射特性のレンダリングはGitHubページを参照。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.04636.pdf") 論文
+          li
+            a(href="http://gychen.org/TOM-Net/") Project
+          li
+            a(href="https://github.com/guanyingc/TOM-Net_Rendering") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 18:05:46
+
+  +slide
+    .title Multi-Frame Quality Enhancement for Compressed Video
+    .info
+      .authors Ren Yang, Mai Xu, Zulin Wang, Tianyi Li
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 圧縮した動画像に対して画質を向上させる研究。Peak Quality Frames (PQFs)を用いたSVMベースの手法やMulti-Frame CNN (MF-CNN)を提案。提案法により、圧縮動画における連続フレームからアーティファクトを補正するような働きが見られた。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324PQF.png`,alt="180324PQF")
+    .item3
+      .text
+        h1 新規性・結果
+        p 動画の画質改善手法においてState-of-the-art。動画に対する画質改善の結果は図を参照。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.04680") 論文
+          li
+            a(href="https://github.com/ryangBUAA/MFQE") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 15:14:35
+
+  +slide
+    .title Don’t count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors
+    .info
+      .authors Marco Baroni, Georgiana Dinu, German Kruszewski
+      .conference ACL 2014
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 単語の特徴表現（Word Embedding）を獲得するための手法としてCount-based（カウント手法）とPredict-based（推定手法）があるが両者を比較して各タスクにて比較を行った。結果は推定手法が総合的に高い精度を記録することが明らかとなった。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324CountPredict.png`,alt="180324CountPredict")
+    .item3
+      .text
+        h1 新規性・結果
+        p 結果は右に示すとおりである。count（cnt）とpredict（pre）において、大体においてpreの方が高い精度である。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="http://www.aclweb.org/anthology/P14-1023") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 14:53:51
+
+  +slide
+    .title Improving word representations via global context and multiple word prototypes
+    .info
+      .authors Eric H. Huang, Richard Socher, Christopher D. Manning, Andrew Y. Ng
+      .conference ACL 2012
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 自然言語処理におけるコンテキスト学習に関する論文。局所的かつ大域的に文章のコンテキストを捉え、ワードに関する特徴表現（Word Embeddings）をニューラルネットで学習する。ワードに着目した際には複数の表現方法を獲得できるようにも改良。目的関数にはあるワードとその前後の単語の文脈から誤算関数を定義して、着目した単語が有効に学習できるように設定。この問題を解決するため、データセットも新規に提案した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324GlobalContext.png`,alt="180324GlobalContext")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来のコンテキスト学習はある単語とその周辺単語のコンテキストのみしか学習していなかったが、本論文ではよりグローバルなコンテキストを学習できるようにニューラルネットの表現方法を考案。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p ローカルコンテキスト、グローバルコンテキストという考え方は面白い。データドリブンでコンテキストというのが学習できる。
+        ul
+          li
+            a(href="http://delivery.acm.org/10.1145/2400000/2390645/p873-huang.pdf?ip=150.246.205.244&id=2390645&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EBBDCA88875059ADA%2E6D218144511F3437&__acm__=1521866546_0c7b755f7717bc4cb75a01c5405797f1") 論文
+          li
+            a(href="https://scholar.google.co.jp/citations?hl=ja&vq=eng_computationallinguistics&view_op=list_hcore&venue=Y3UjV9bSCxMJ.2017") ACL Top-paper
+          li
+            a(href="http://ai.stanford.edu/~ehhuang/") Dataset
+          li
+            a(href="https://github.com/ninjin/huang_et_al_2012") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 14:09:09
+
+  +slide
+    .title Unsupervised learning of common sense event structures from simple English stories
+    .info
+      .authors Ken Arnold, Dustin Smith
+      .conference 2008
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p OMICSコーパスに書いてあるシンプルなストーリー展開から常識を教師なしで学習。コーパスには「手紙を受け取る」「ベッドメイクする」などの日常生活における手続きを英語のナレーションで記述している。異なる文脈で同じイベントが発生した場合にも時系列的な階層構造を構築してイベント/サブイベント間の関係性を把握。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324CommonSense.png`,alt="180324CommonSense")
+    .item3
+      .text
+        h1 新規性・結果
+        p 論文にはコンピュータが「常識」のような知識をいかに自然言語から獲得するかが記述されている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p Open Mind Common Sense projectというプロジェクトを発見した。ここを掘り下げても面白いかも？また、文脈の表現はCVよりもNLPのほうが優れているかも。
+        ul
+          li
+            a(href="http://alumni.media.mit.edu/~dustin/papers/story_parser/story_parser.pdf") 論文
+          li
+            a(href="https://github.com/commonsense/omcs") Project
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 13:30:39
+
+  +slide
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .info
+      .authors Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p オクルージョンが発生している場合/複雑な環境下でも簡単な形状がポイントクラウドから検出できる枠組みを提案する。手法は3D楕円形状のフィッティング、3次元空間操作、4点取得により構成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324Quadrics.png`,alt="180324Quadrics")
+    .item3
+      .text
+        h1 新規性・結果
+        p タイプに依存しない3次元の二次曲面（楕円球形状）検出を点群の入力から行う手法を考案した。さらに、4点探索問題を3点探索にしてRANSACベースの手法で解を求めた。モデルベースのアプローチよりはフィッティングの性能がよいが、キーポイントベースの手法よりは劣る。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 曖昧な教示のみで3次元形状探索問題が解決できるようになる？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07191.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 13:04:44
+
+  +slide
+    .title Actor and Action Video Segmentation from a Sentence
+    .info
+      .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G.M. Snoek
+      .conference CVPR 2018 (oral)
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p センテンスの入力から、行動者と行動（Actor and Action）を同時に特定する研究である。複数の同様の物体から特定の人物など、詳細な分類が必要になる。ここではFully-Convolutional（構造の全てが畳み込みで構成される）モデルを適用してセグメンテーションベースで出力を行うモデルを提案。図は提案モデルを示す。I3Dにより動画像のエンコーディング、自然言語側はWord2Vecの特徴をさらにCNNによりエンコーディング。その後、動画像・言語特徴を統合してDeconvを繰り返しセグメントを獲得していく。
+    .item2
+      .text
+        p
+          img(src=`${figpath}1803ActorAction.png`,alt="1803ActorAction")
+    .item3
+      .text
+        h1 新規性・結果
+        p 文章（と動画像）の入力から行動者と行動の位置を特定すべくセグメンテーションを実行するという問題を提起した。また、二つの有名なデータセット（A2D/J-HMDB）を拡張して7,500を超える自然言語表現を含むデータとした。同問題に対してはSoTA。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p CVxNLPの問題はここにも進出して来た。画像キャプションに限らず、この手の統合は進められるはず。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07485.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 12:47:10
+
+  +slide
+    .title Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatio-temporal Patterns
+    .info
+      .authors Jianming, Lv and Weihang, Chen and Qing, Li and Can, Yang
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p ラベルなし、ドメインが異なる環境に対して人物再同定を行う手法を提案する。モデルであるTFusionは４ステップにより構築（１）教師あり学習により識別器を構築（２）ターゲットであるラベルなしデータにより時空間特徴パターン（Spatio-temporal Pattern）を学習（３）統合モデルFを学習（４）ラベルなしのターゲットデータにて徐々に識別器を学習する（１〜４は図に示されている）。Bayesian Fusionを提案して、時空間特徴パターンと人物のアピアランス特徴を統合してドメイン変換を行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180323CDReID.png`,alt="180323CDReID")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来の人物再同定の設定では比較的小さいデータセットであり、完全に教師ありの環境を想定していたが、本論文ではラベルなし、ドメインが異なる環境に対して人物再同定を実行するため、非常に難しい問題となる。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07293.pdf") 論文
+          li
+            a(href="https://github.com/ahangchen/TFusion") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.23 20:37:22
+
+  +slide
+    .title Towards Universal Representation for Unseen Action Recognition
+    .info
+      .authors Yi Zhu, Yang Long, Yu Guan, Shawn Newsam, Ling Shao
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 学習画像がなくても行動認識を実現する「Unseen Action Recognition (UAR)」についての研究。UARの問題をMIL（Multiple Instance Learning）の一般化（GMIL）として扱い、ActivityNetなど大規模動画データから分布推定して表現を獲得。図は提案手法であるCross-Domain UAR (CD-UAR)である。ビデオから抽出したDeep特徴はGMILによりカーネル化される。Word2Vecとの投稿によりURを獲得し、ドメイン変換により新しい概念を獲得する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180323UAR.png`,alt="180323UAR")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来法では見た/見てないの対応関係をデータセット中に含ませていたが、本論文での提案はUniversal Representation（ユニバーサル表現）を獲得して同タスクを解決する。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08460.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.23 19:40:06
+
+  +slide
+    .title Robust Depth Estimation from Auto Bracketed Images
+    .info
+      .authors Sunghoon Im, Hae-Gon Jeon, In So Kweon
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p HDRの画像の明るさを補正するためのブラケット撮影からの距離画像やカメラ姿勢を同時推定する手法を提案する論文。ブラケット撮影とは通常の露出撮影以外に意図的に「少し明るめの写真」と「少し暗めの写真」を同時に撮影。距離画像推定は幾何変換をResidual-flow Networkに統合したモデルにより行う。ここでは学習ベースのMulti-view stereo手法（Deep Multi-View Stereo; DMVS）を幾何推定（Structure-from-Small-Motion; SfSM）と組み合わせる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180323BracketedImages.png`,alt="180323BracketedImages")
+    .item3
+      .text
+        h1 新規性・結果
+        p 距離画像推定において、スマートフォンやDSLRカメラなど種々のデータセットにてSoTAな精度を達成。モバイル環境でも動作するような小さなネットワークと処理速度についても同時に実現した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.07702") 論文
+          li
+            a(href="https://sunghoonim.github.io/") 著者
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.23 19:11:04
+
+  +slide
+    .title Inferring Person-to-person Proximity Using WiFi Signals
+    .info
+      .authors P. Sapiezynski et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        特別な装置を使うことなくWiFiネットワークの信号を利用して
+        人と人との接近というインタラクションを検出する手法を提案．
+        病気の感染の解析とか，ソーシャルグループの解析とかそういう応用が目的．
+        二人のスマホでのWiFiスキャンの結果を比較して類似度を図ることで接近を検出．
+        従来手法は単一の尺度を利用することが多かったが，
+        この研究では複数の尺度・特徴量を組み合わることで精度を向上．
+        WiFiとBluetoothの情報があるデータセットを用いて，Bluetoothを真値としてWiFi特徴からの接近検出を学習．
+        提案手法が高い性能を示すことを実験的に確認．
+
+    .item2
+      img(src=figpath+"180323_wifi.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li WiFiネットワークとスマホから人と人との物理的な接近の検出を実現
+          li 統制された環境ではないデータでも提案手法が有効に働くことを実証
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 7: WiFi Sensing
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title CSGNet: Neural Shape Parser for Constructive Solid Geometry
+    .info
+      .authors G. Sharma et al.,
+      .conference arXiv
+      .paper_id 1712.08290
+    .item1
+      h1 概要
+      .text.
+        ピクセルボクセルなどのLow-levelな表現ではなく，
+        Illustratorなどで使うような円，三角形といった高次の表現でのParsing．
+        Constructive Solid Geometry (CSG) というモデリングをベースを利用．
+        入力された画像や3次元形状をCSG Engineで扱うプログラムに分解する手法を提案．
+        CNNでEncodingした後にRNNでプログラムにDecoding．
+        CSG Engineで作成した人工的データを用いた教師あり学習と，
+        入力と，DecodeしたプログラムをEngineで出力したものとの差分を元に計算する報酬ベースの教科学習でモデルを学習．
+        両学習手法の組み合わせでより高い精度を実現可能なことを示した．
+
+    .item2
+      img(src=figpath+"180322_parser.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 高速かつ効果的なCSGプログラムの推定手法を提案
+          li 強化学習によりプログラムの教師情報なしの学習を実現
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li CVPR2018に採択されている
+          li さすがにこういう新しくて面白い問題設定だと比較手法がNearest Neighborでも文句は言われない模様
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Affective image adjustment with a single word
+    .info
+      .authors Xiaohui Wang, Jia Jia, Lianhong Cai
+      .conference The Visual Computing 2013
+    .slide_editor Kazuki Inoue
+
+    .item1
+      .text
+        h1 概要
+        p 画像の色を特定の感情を想起するように変換する手法。入力は画像と感情を表す単語であり、入力感情を表すように画像の色が変換される。感情形容詞に対してカラーパレットが定義付けられたデータを使用し、色と感情の距離を計算することで画像に適用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}affective_image_adjustment.jpg`,alt="affective_image_adjustment")
+    .item3
+      .text
+        h1 新規性・結果
+        p 1024x768の画像を1秒以下で生成可能。提案手法によって生成された画像と、アーティストによって作成された作品を、1)入力感情が表されているか、2)画像の見た目として自然か、という観点でユーザに採点を行ってもらったところ、提案手法が優位な結果となった。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 単語間の距離を学習しているため、トレーニングデータセットにない単語の入力も可能。感情から５色のカラーパレットへ変換するが、入力画像が６種類以上の色相を持つ場合には生成画像が不自然になる。適応的に色数を変更していきたい、と主張。
+        ul
+          li
+            a(href="https://link.springer.com/article/10.1007/s00371-012-0755-3") 論文
+    .slide_index #{getSlideIndex()}
+  
+  +slide
+    .title Detecting and Recognizing Human-Object Interactions
+    .info
+      .authors Georgia Gkioxari, Ross Girshick, Piotr Dollár, Kaiming He
+      .conference CVPR 2018 (spotlight)
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 人物検出と同時に人物行動やその物体とのインタラクションも含めて学習を行うモデルを提案する。本論文では物体候補の中でも特にインタラクションに関係ありそうな物体に特化して認識ができるようにする。さらに、検出された<human, verb, object>のペアを用いて学習する（図の場合には<human, cut, knnife>）。さらに、その他の行動（図の場合にはstand）を同時に推定することもできる。モデルはFaster R-CNNをベースとするが、物体検出（box, class）、行動推定（action, target）、インタラクション（action）を推定して誤差を計算する。さらに、推定した人物位置に対する対象物体の方向も確率的に計算することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322HOI.png`,alt="180322HOI")
+    .item3
+      .text
+        h1 新規性・結果
+        p 人間に特化した検出と行動推定の枠組みを提案した。V-COCO（Verbs in COCO）にて、相対的に26%精度が向上（31.8=>40.0）、HICO-DETデータセットにて27%相対的な精度向上が見られた。計算速度は135ms/imageであり、高速に計算が可能である。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 単純な多タスク学習ではなく、人物に特化して対象物体の位置も確率的に推定しているところがGood。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1704.07333.pdf") 論文
+          li
+            a(href="https://gkioxari.github.io/InteractNet/index.html") Project
+          li
+            a(href="https://github.com/s-gupta/v-coco") Verbs in COCO DB
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:55:34
+
+  +slide
+    .title Multiple-Human Parsing in the Wild
+    .info
+      .authors Jianshu Li, Jian Zhao, Yunchao Wei, Congyan Lang, Yidong Li, Terence Sim, Shuicheng Yan, Jiashi Feng
+      .conference arXiv 1705.07206
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 複数の人物に関する、パーツごとのセマンティック/インスタンスセグメンテーションを提案する。この問題に対してデータセットであるMultiple Human Parsing (MHP)データセットや認識のモデルを同時に提案する。データセットに関しては人物に関する18カテゴリ（7が人体、11が服装に関するカテゴリ）、4,980画像、2~16人/画像、
+          |計14,969人で構成される。モデルであるMH-ParserはDeepLab-ResNet-101によりパージング、graph-GANによりAffinity Mapを推定してセマンティックのみならずインスタンスのセグメンテーションを高度に解決する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322MHP.png`,alt="180322MHP")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来のデータセットであるLIPやATRなどと比較すると人物数が多いわけではないが、「複数人」が１画像に映り込んでいるという意味で利点がある。Mask R-CNNとの比較において、全てのデータを含んだ精度ではComparativeであるが、Top-20/-5の精度ではMH-Parserが高い精度を実現した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 人物の解析はより詳細になりつつある。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1705.07206.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:33:35
+
+  +slide
+    .title Learning to Localize Sound Source in Visual Scenes
+    .info
+      .authors Arda Senocak, Tae-Hyun Oh, Junsik Kim, Ming-Hsuan Yang, In So Kweon
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 画像と音声の入力から、音が画像のどこで鳴っているか（鳴りそうか？）を推定した研究。さらに、人の声なら人の領域、車の音なら車の領域にアテンションがあたるなど物体と音声の対応関係も学習することができる。学習には音源とその対応する物体の位置を対応づけたデータセット（144Kのペアが含まれるSound Source Localization Dataset）を準備した。さらに既存の物体認識と音声を対応づけて（？）Unsupervised/Semi-supervisedに学習することにも成功した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322LocalizeSound.png`,alt="180322LocalizeSound")
+    .item3
+      .text
+        h1 新規性・結果
+        p 教師あり、教師なし、半教師あり、いずれの枠組みでも音声ー物体の対応関係を学習することができるようにした。音源とそれに対応する物体領域の尤度がヒートマップにて高く表示されている。結果はビデオを参照されたい。教師なし学習はTriplet-lossにより構成され、ビデオと近い/遠い音声の誤差により計算。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 非常に面白い問題設定、プラス誤差関数を柔軟に抽出可能というところが上手。精読しても良いと感じた論文。CVにおいてビデオの音声は今まで使用しないことも多かった（もしくは精度向上のために活用していた）が、これからは使用方法を見直してもよいと感じた。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03849.pdf") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=UyairkbzR_Y") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 19:18:32
+
+  +slide
+    .title Training of Convolutional Networks on Multiple Heterogeneous Datasets for Street Scene Semantic Segmentation
+    .info
+      .authors P. Meletis, G. Dubbelman
+      .conference IEEE IV 2018 submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p セマンティックセグメンテーションに関して異なる複数のデータセットを統合して学習する枠組み（Heterogeneous Learningと呼ぶ）を提案する。本稿ではCityscapes, GTSDB, Mapillary Vistasという公開DBを統合してモデルを学習。また、階層的モデルは畳み込み特徴を共有し、各データセットからそれぞれラベルを学習して誤差をフィードバックしながらモデルを学習する（これによりデータセット間でラベルのあり/なしを相殺しながら学習、カテゴリ数が異なる場合にも学習を強化できる）。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322Heterogeneous.png`,alt="180322Heterogeneous")
+    .item3
+      .text
+        h1 新規性・結果
+        p ３つの異なるデータベースから知識を（Heterogeneous学習で）統合することにより、最終的には108カテゴリの階層的な分類をセマンティックセグメンテーションの枠組みで行うことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 各大学、企業などが独立に集めているデータセットも統合し続けたら無限にカテゴリが増えて行くのか？細切れのデータを結集させてさらに強いデータにして行くという枠組みも今後は必要か？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.05675.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 18:52:15
+
+  +slide
+    .title Fusing Hierarchical Convolutional Features for Human Body Segmentation and Clothing Fashion Classification
+    .info
+      .authors Zheng Zhang, Chengfang Song, Qin Zou
+      .conference arXiv, 1803.03415
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p ファッションにおいて各年のコレクションから収集したファッションスナップをデータベース化。服装も含めた人物領域のセグメンテーションや8カテゴリ（2008~2015）のYearを識別する問題に落とし込んだ。この問題を解決するため、多階層の特徴抽出を行い、統合することによりセグメントとラベルを判断した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322Fashion8.png`,alt="180322Fashion8")
+    .item3
+      .text
+        h1 新規性・結果
+        p 全9339枚の画像から構成される8年分のファッションDB、Fashion8を提案、ファッションセグメンテーションや識別を行うためにEnd-to-End/Multi-scaleのアーキテクチャを提案。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 学習によりファッションが出てきた年を当てるのは？だが、同時に付与されているファッションブランドを当てる問題はある程度できそう。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03415.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 18:31:05
+
+  +slide
+    .title Learning Category-Specific Mesh Reconstruction from Image Collections
+    .info
+      .authors Angjoo Kanazawa,Shubham Tulsiani,Alexei A. Efros,Jitendra Malik
+      .conference arXiv, 2018
+    .slide_editor Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 一枚絵の画像から3次元形状、カメラパラメータ、テクスチャを推定して物体の構造を再現するという研究。シルエット、3次元キーポイント、テクスチャを推定して誤差を計算、ネットワークを学習する。
+          a(href="http://hiroharu-kato.com/projects/neural_renderer.html") Neural 3D Mesh Renderer
+          |に発想が近い研究である。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180322CMR.png`,alt="180322CMR")
+    .item3
+      .text
+        h1 新規性・結果
+        p 右図を参照。3次元形状（shape）、カメラパラメータ（camera）、テクスチャ（texture）の推定を統合して形状のみならず色やその構造まで復元できている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p バークレーで2D画像から3D画像を復元する研究が進んでいるが、カテゴリを限定すれば3次元構造が復元できるまでになって来た。次はカテゴリフリー（カテゴリも推定しながら）で構造理解ができるようになりそう。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07549.pdf") 論文
+          li
+            a(href="https://akanazawa.github.io/cmr/") Project
+          li
+            a(href="http://shiropen.com/2018/03/21/33481") 参考
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.22 08:56:48
+
+  +slide
+    .title Learning from Physical Human Corrections, One Feature at a Time
+    .info
+      .authors Andrea Bajcsy, Dylan P. Losey, Marcia K. O'Malley, Anca D. Dragan
+      .conference HRI'18
+      .paper_id pp. 141-149
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 図は，テーブルに腕を近づける動きをさせているが，意図せずコップの向きも変えてしまっている．
+          |このままではロボットはこの二つを同時に学習してしまうが，本来は対テーブルの動きのみ学習すべきである．
+          |そこで，意図しない動きを抜いた動きを使ってロボットの動きを学習しようという試み．
+        p 意図する動きがメジャーを取っているという仮定のもと，
+          |その時々で，ロボットの軌跡の修正に関わる特徴のうち一つだけを使って，あとはゼロにしてしまう（One feature at a time）ことで実現する．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Learning_from_Physical_Human_Corrections_One_Feature_at_a_Time_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p 簡単だが面白いアイデアで，しかも実際にうまくできているという大変興味深い論文．
+          |まさに真理を突いた研究といえる．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171267") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 18:00:31
+
+  +slide
+    .title Understanding Deep Image Representations by Inverting Them 
+    .info
+      .authors Aravindh Mahendran and Andrea Vedaldi 
+      .conference in CVPR 2016
+    .item1
+      h1 概要
+      .text.
+        特徴量から元画像復元することで、その特徴量への圧縮によって失われる情報やその特徴量が捉えているものを可視化する研究。
+        特徴量としてはCNN以外にも、微分可能な処理として定義されるHOGやSIFTについても利用できる。
+        CNNの位置普遍性や深いfc層にも画像情報がかなり含まれていること受容野外との関係やチャネルごとの役割の違いなどがわかった。
+
+    .item2
+      img(src=figpath+"image_inversion.png")
+    .item3
+      h1 手法
+      .text.
+        ある(CNNの場合、学習済み )モデルから得られる特徴量のMSEを最小化するように入力画像に対してSGDによって勾配を計算して再構成を行う。
+        画像を自然らしく生成するために、上記MSE以外にtotal variance(TV)制約項を損失関数に導入する。
+
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |全結合層にも画像情報がかなり含まれているなど、興味深い結果が多かった。一方、可視化結果から特徴量の情報を得られるわけではなく、その特徴量となりうる入力画像の「集合」を見て初めて何を特徴量化しているかがわかってくる気がした。
+
+        ul
+          li
+            a(href="https://arxiv.org/abs/1412.0035") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+  +slide
+    .title Illumination-aware Faster R-CNN for Robust Multispectral Pedestrian Detection
+    .info
+      .authors Chengyang Li, Dan Song, Ruofeng Tong, Min Tang
+      .conference arXiv:1803.05347
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 昼夜問わず歩行者を検出する枠組みを考察する。本稿ではRGBや温度センサの入力から、いかにネットワークを構築して良好な特徴を評価するかについて、6つのネットワーク（(a) Input Fusion, (b) Early Fusion
+          |(c) Halfway Fusion (d) Late Fusion (e) Score Fusion I (f) Score Fusion II）を比較した。この枠組みの中でさらに、Illumination-aware Faster R-CNN（IAF R-CNN; 右図）を提案して夜間の歩行者検出でも良好な精度を実現した。なお、本論文ではKAIST Multispectral Pedestrian Benchmarkを用いて検証をおこなった。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180315IAFRCNN.png`,alt="180315IAFRCNN")
+    .item3
+      .text
+        h1 新規性・結果
+        p Halfway fusion（Error-rate: 17.57%）, Score Fusion I（17.43%）あたりが性能が良かった。IAF R-CNNではエラー率16.22%であった。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 自動運転では昼夜問わずの歩行者検知が重要である（ということは言うまでもないが意外とできていない）。データセットを作成する際には温度カメラやステレオ、レーダセンサとRGBカメラを組み合わせるのが一般的になってきた？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.05347.pdf") 論文
+          li
+            a(href="https://sites.google.com/site/pedestrianbenchmark/") KAIST Multispectral Pedestrian Benchmark
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.15 20:27:41
+
+  +slide
+    .title Learning from Richer Human Guidance: Augmenting Comparison-Based Learning with Feature Queries
+    .info
+      .authors Chandrayee Basu, Mukesh Singhal and Anca D. Dragan
+      .conference HRI'18
+      .paper_id pp. 132-140
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 所望の機能をロボットに学習させるにあたり，軌跡表示はよい情報提供となるものの，ユーザに見せるには難しい．
+          |ただの比較クエリへの回答（どっちの軌跡が良いか？）はユーザには大分簡単なので，効果的な代替手法として使われてきた．
+          |しかし，比較は情報量に乏しい．やっぱりもっとリッチな情報が欲しい．
+        p 特徴クエリによる比較の拡張に焦点を行ってみる．
+        p シミュレーションと本物ユーザ両方で試した．リッチで特徴拡張なクエリは早くて，よりマッチしたユーザ選択を導くことが分かった．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Learning_from_Richer_Human_Guidance_Augmenting_Comparison-Based_Learning_with_Feature_Queries_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ユーザに特徴を追加した（情報量増やした）クエリを作るという形式は，インタラクションとしては挑戦的に感じる．
+          |「無回答（わからない）」を回答してもよいとか，同じクエリに毎回異なる回答をするユーザを想定するところがちゃんとやっている感じがする．
+        p イントロでContribution並べているCVPR感．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171284") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 14:49:23
+
+  +slide
+    .title Deep Affordance-grounded Sensorimotor Object Recognition
+    .info
+      .authors S. Thermos et al.,
+      .conference CVPR 2017
+    .item1
+      h1 概要
+      .text.
+        物体のアピアランス (sensory) と人と物体のインタラクション (motor) の情報を組み合わせて
+        物体認識するSensorimotor Object Recognitionにおいて，Deep Learningを導入した手法を提案．
+        物体のアピアランスを捉えるストリーム (Colorized Object Depth Map) と，
+        インタラクションを捉えるストリーム (Colorized Hand Depth Map & Hand 3D Flow Magnitude) を組み合わせて利用．
+        様々なFusionの方法を比較した結果，図の(d)に対応するMulti-level Slow Fusionが最高精度を達成．
+        新たなデータセットの提供もしている他，
+        提案アーキテクチャは神経科学などの知見と合わせて議論されている．
+
+    .item2
+      img(src=figpath+"180319_deepaffordance.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li Sensorimotor Object RecognitionにCNNを導入
+          li RGB-D物体認識の新しい大規模データセットを提供
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li 普通にDeepでやりましたという論文にも見えてしまうけど論文の書き方が上手いのか？
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Colorful Image Colorization
+    .info
+      .authors Richard Zhang, Phillip Isola, Alexei A. Efros 
+      .conference ECCV 2016
+    .item1
+      h1 概要
+      .text.
+        グレースケール画像への色づけ、およびそれに伴う表現学習手法。
+        MSEやMAEでの単純なカラー画像回帰はその平均的な色へ収束するため、彩度が低い画像になりやすい。
+        そこで色の出現頻度に応じた損失重み、分布を再現する出力、Lab空間での処理を行うことで高い彩度を実現し、
+        チューリングテストでSoTA。表現学習でも特にsegmentationで高い性能を発揮した。
+
+    .item2
+      img(src=figpath+"colorful_image.png")
+    .item3
+      h1 手法
+      .text.
+        分布としての出力を行うために、Lab空間を313に分割し、単純に画素値を出力させるのではなく識別問題とする。
+        また、出力された分布から最終的な色を決めるとき、最頻値や平均をとるなど複数の手段が考えられるが、今回はアニーリングをした後、
+        その分布の平均を取っている。アニーリングで平均に近づくほど彩度が失われるが、最頻値に近づくほど空間的整合性が失われる。
+
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |おそらく今のSoTAはGANベースだが、出力値の分布化や、アニーリングによる連続的なトレードオフの考慮は興味深い。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1603.08511") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+
+  +slide
+    .title Active Robot Learning for Temporal Task Models
+    .info
+      .authors M. Racca and V. Kyrki
+      .conference HRI'18
+      .paper_id pp. 123-131
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p タスク実行に関する，自然言語によるユーザー表現のモデル化を行うアクティブラーニングの枠組みを提案．
+          |タスクの時系列に対する素人ユーザの表現を学習する．
+          |以下のような質問を行い，ディリクレ多項モデルなどでモデル化し，逐次アップデートしていく．
+        ul
+          li 「タスクA」の後に，「このくらいの頻度で」「タスクB」をやりますか？
+          li 「タスクA」の後に，どちらかといえば「タスクB」「タスクC」のどちらをやりたいですか？
+          li 「このくらいの頻度で」「タスクA」から始めますか？
+          li どちらかといえば「タスクA」「タスクB」のどちらから始めたいですか？
+    .item2
+      .text
+        p
+          img(src=`${figpath}Active_Robot_Learning_for_Temporal_Task_Models_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p 他手法に比べ，時系列変化を考慮に入れていることが新しい点とのこと．
+        p ロボットとの対話の中で，ロボットとの協議でユーザの傾向を測るのは，あるべきパラダイムであろう．
+          |時変化という制約を付けたことでインタラクション的にも機械学習的にもうまくいくデザインが見つかったのは価値があると思う．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171241") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.19 13:49:03
+
+  +slide
+    .title VIDEO (LANGUAGE) MODELING: A BASELINE FOR GENERATIVE MODELS OF NATURAL VIDEOS 
+    .info
+      .authors Marc’Aurelio Ranzato et al., 
+      .conference 2014
+    .item1
+      h1 概要
+      .text.
+        言語処理などで行われる時系列生成モデリング(過去フレームを条件とした先フレーム
+        生成)を動画に対して行う問題設定とそのベースラインの提案。
+        MSEやMAEではブラーが起きてしまうため、patchをk-meansクラスタリングし、所属するクラスタを予測することで分布を再現する。
+        本論文では”予想できること”を目標にしている。
+        
+    .item2
+      img(src=figpath+"video_modeling.png")
+    .item3
+      h1 新規性・結果
+      .text.
+        画像は連続空間であるため、P(xt|x[1:t-1])の分布を再現するのが難しくMSEやMAEのが用いられてきたが、クラスタリングによって離散化することで識別問題に帰着させた。
+        定量評価は主にperplexityを用いており、言語モデルを参考にしている。通常のrNNとrCNN(畳み込みでのRNN)などで評価を行っており、従来手法との比較はほぼない（できない）
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |アーキテクチャのlimitationは割と大きい。行動認識など、表現学習の枠組みでの精度評価も気になった。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1412.6604") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+    
+  +slide
     .title Low-resource Multi-task Audio Sensing for Mobile and Embedded Devices via Shared Deep Neural Network Representations
     .info
       .authors P. Georgiev et al.,
@@ -3256,7 +4124,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Visual Forecasting by Imitating Dynamics in Natural Sequences
     .info
@@ -3341,7 +4209,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title DeepNav: Learning to Navigate Large Cities
     .info
@@ -3372,7 +4240,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Forecasting Human Dynamics from Static Images
     .info
@@ -3545,7 +4413,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Predicting Object Dynamics in Scenes
     .info
@@ -3572,7 +4440,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Event Detection using Multi-Level Relevance Labels and Multiple Features
     .info
@@ -3597,7 +4465,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Some like it hot - visual guidance for preference prediction
     .info
@@ -3625,7 +4493,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Understanding Pedestrian Behaviors from Stationary Crowd Groups
     .info
@@ -3654,7 +4522,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Let there be Color!: Joint End-to-end Learning of Global and Loacal Image Priors for Automatic Image Colorization with Simultaneous Classification
     .info
@@ -3682,7 +4550,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup
     .info
@@ -3710,7 +4578,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Semantic Shape Editing Using Deformation Handles
     .info
@@ -3737,7 +4605,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title AttribIt: Content Creation with Semantic Attributes
     .info
