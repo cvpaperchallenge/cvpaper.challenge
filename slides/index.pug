@@ -3873,3 +3873,30 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
+	
+  +slide
+    .title Personalized Image Aesthetics
+    .info
+      .authors Jian Ren et al.
+      .conference ICCV, 2017.
+    .item1
+      h1 概要
+      .text.
+        個人の好みを考慮した画像の評価システムを提案した。画像のスコア付けに関する研究は数多く存在するが、実際には人によって高い点数をつける画像は大きく異なる。そこで、クラウドソーシングを用いて一般的な画像の評価を行うネットワークに加え、個人の画像の好みを推定することによって好みに応じた画像の評価システムを構築した。個人の好みの推定には、contentとattributeの2つを特徴として抽出して行う。個人の好みの学習には、active learningを導入することによって少ない学習データでも学習を可能にした。
+
+    .item2
+      img(src=figpath+"180325personalize.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li クラウドソーシングによってスコア付けしたgeneralな評価用のデータベースと撮影者がスコア付けを行った個人性の学習用のデータベースの2つのデータベースを構築。
+          li 個人の好みを直接学習するより、generalな評価と個人の好みを組み合わせた方が精度が高いことを示した
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Ren_Personalized_Image_Aesthetics_ICCV_2017_paper.pdf" target="blank") 論文
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto
