@@ -2,6 +2,107 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Deep Reinforcement Learning of Abstract Reasoning from Demonstrations
+    .info
+      .authors Madison Clark-Turner and Momotaz Begum
+      .conference HRI'18
+      .paper_id pp. 160-168
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 深層強化学習により，人対人インタラクションの高度なダイナミクスにおける一般化ルールの抽出を行う枠組みを提案．
+          |音声およびカメラ画像の疎な時系列を入力とし，2エージェント間の動きの介入セッションを規定する規則のセットの学習を行う．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Deep_Reinforcement_Learning_of_Abstract_Reasoning_from_Demonstrations_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p インタラクションのルール付けが深層学習でできるというのが感慨深い．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171289") ACM library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.27 12:18:23
+
+  +slide
+    .title Learning to Judge Like a Human: Convolutional Networks for Classification of Ski Jumping Errors
+    .info
+      .authors H. Brock et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        CNNを用いたスキージャンプの評価手法を提案．
+        体につけたセンサで人の各部位のモーションを計測．
+        センサを付けた位置を縦軸，時間を横軸，センサ種類をチャンネルに取ったモーション画像として
+        CNNに入力してジャンプのエラーの有無を識別．SVMやHMMよりも高い性能を示した．
+        Conv層の数は1と3を比較して，1で十分という結論．
+
+    .item2
+      img(src=figpath+"180327_ski.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 多次元CNNを用いて複数センサを組み合わせて利用し，識別する手法を提案．
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 19: Sports 2
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title DNN-HMM based Automatic Speech Recognition for HRI Scenarios
+    .info
+      .authors José Novoa, Jorge Wuth, Juan Pablo Escudero, Josué Fredes, Rodrigo Mahu and Néstor Becerra Yoma
+      .conference HRI'18
+      .paper_id pp. 150-159
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 動くロボットの頭部に載せたマイクで音声認識する場合，ロボットのノイズや環境によるエコーの影響
+          |などの認識率低下の要素が多い．
+          |そこで，自動音声認識に，音声入力だけでなく，ユーザの音響情報，ロボットの情報，環境情報も与えると，
+          |DNN-HMM，少ない学習データでも精度が良くなる．
+        ol
+          li Clean Database : 英語発話データベース
+            a(href="http://aurora.hsnr.de/aurora-4.html") Aurora4
+            |を別のマイクで録音
+          li Environment-based Database : 25%-ロボット固定，75%-ロボット動きながらロボマイクで録音＋ノイズ合成
+    .item2
+      .text
+        p
+          img(src=`${figpath}DNN-HMM_based_Automatic_Speech_Recognition_for_HRI_Scenarios_Figure.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p DNN-HMM＋ロボット＋音響考慮
+        p (なんか読みづらい)
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171280") ACM library
+          li
+            a(href="http://www.lptv.cl/en/hri-asr/") 学習データなど
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.27 08:58:36
+
+  +slide
     .title TOM-Net: Learning Transparent Object Matting from a Single Image
     .info
       .authors Guanying Chen, Kai Han, Kwan-Yee K. Wong
@@ -531,7 +632,7 @@ block slides
     .info
       .authors Zheng Zhang, Chengfang Song, Qin Zou
       .conference arXiv, 1803.03415
-    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+    .slide_editor Hirokatsu Kataoka
 
     .item1
       .text
@@ -4124,7 +4225,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Visual Forecasting by Imitating Dynamics in Natural Sequences
     .info
@@ -4209,7 +4310,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title DeepNav: Learning to Navigate Large Cities
     .info
@@ -4240,7 +4341,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Forecasting Human Dynamics from Static Images
     .info
@@ -4413,7 +4514,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Predicting Object Dynamics in Scenes
     .info
@@ -4440,7 +4541,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Event Detection using Multi-Level Relevance Labels and Multiple Features
     .info
@@ -4465,7 +4566,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Some like it hot - visual guidance for preference prediction
     .info
@@ -4493,7 +4594,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Understanding Pedestrian Behaviors from Stationary Crowd Groups
     .info
@@ -4522,7 +4623,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Let there be Color!: Joint End-to-end Learning of Global and Loacal Image Priors for Automatic Image Colorization with Simultaneous Classification
     .info
@@ -4550,7 +4651,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup
     .info
@@ -4578,7 +4679,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title Semantic Shape Editing Using Deformation Handles
     .info
@@ -4605,7 +4706,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-  
+	
   +slide
     .title AttribIt: Content Creation with Semantic Attributes
     .info
@@ -4629,142 +4730,6 @@ block slides
       .text
         ul
           li: a(href="http://gfx.cs.princeton.edu/pubs/Chaudhuri_2013_ACC/index.php" target="blank") 論文URL
-    .slide_index
-      | #{getSlideIndex()}
-    .slide_editor Shintaro Yamamoto
-	
-  +slide
-    .title Scene Graph Generation by Iterative Message Passing
-    .info
-      .authors Danfei Xu et al.
-      .conference CVPR, 2017.
-    .item1
-      h1 概要
-      .text.
-        画像に写っている物体同士の関係を表したscene graphを生成する手法。グラフのnodeが物体、edgeが関係を表す。初めに、入力画像から物体検出によって画像に写っている物体(=node)を検出する。続いて、RNNにより検出された物体同士の関係を決定していく。
-
-    .item2
-      img(src=figpath+"20180325scenegraph.png")
-    .item3
-      h1 新規性・結果
-      .text
-        ul
-          li 従来手法ではグラフの各要素を独立して求めていたのに対して、RNNによりiterativeに関係性を決定していくEnd-to-Endのネットワークを構築した。
-          li Visual Genome Datasetを基に作成した新たなデータセットを導入し、評価を行った。
-          li 従来手法と比較して、aboveやbehindなど多くの物体同士の関係性において精度が大幅に向上した。
-    .item4
-      h1 自由記述欄
-      .text
-        ul
-          li: a(href="https://cs.stanford.edu/~danfei/scene-graph/" target="blank") プロジェクトページ
-    .slide_index
-      | #{getSlideIndex()}
-    .slide_editor Shintaro Yamamoto
-	
-  +slide
-    .title The shape of art history in the eyes of the machine
-    .info
-      .authors Ahmed Elgammal et al.
-      .conference AAAI, 2018.
-    .item1
-      h1 概要
-      .text.
-        機械学習による絵画の分類に関する検証。VGGやＲｅｓＮｅｔなどのネットワークを用いて、絵画を分類するタスクを学習し、その中間出力を特徴量として考えることで分析を行っている。得られた特徴量を次元削減しその分布を可視化する、各軸と芸術分野において提唱されている分野との相関関係の算出などを行った。
-
-    .item2
-      img(src=figpath+"180325shapeofart.png")
-    .item3
-      h1 新規性・結果
-      .text
-        ul
-          li 物体検出のタスクで学習したネットワークはgaborフィルターのようなものを見ているのに対して、絵画の分類を目的として学習したネットワークはより大域的な特徴を見ていることがわかった。
-          li 得られた特徴量を可視化した結果、機械学習による絵画の識別によって絵画の時系列情報が得られていることが判明した。
-    .item4
-      h1 自由記述欄
-      .text
-        ul
-          li: a(href="https://arxiv.org/abs/1801.07729" target="blank") 論文
-    .slide_index
-      | #{getSlideIndex()}
-    .slide_editor Shintaro Yamamoto
-	
-  +slide
-    .title Unsupervised Learning of Depth and Ego-Motion from Video
-    .info
-      .authors Tinghui Zhou et al.
-      .conference CVPR, 2017.
-    .item1
-      h1 概要
-      .text.
-        教師無し学習によってdepthとカメラの相対位置(R,t)を推定する手法を提案。ネットワークは、1枚画像からのdepth推定と2枚画像からのカメラの相対位置の推定により構築されている。隣接するフレームtとsを考え、推定した情報を用いてsからtへの変換を行う。変換結果が、tと一致するように学習をしていく。
-
-    .item2
-      img(src=figpath+"180325depth.png")
-    .item3
-      h1 新規性・結果
-      .text
-        ul
-          li 学習時には2つのネットワークを同時に学習しているが、テスト時にはそれぞれを単独で使用することが可能となる。
-          li 従来手法では何かしらの教師データが必要であったのに対して、ラベルを含まない動画のみで学習が可能に。
-    .item4
-      h1 自由記述欄
-      .text
-        ul
-          li: a(href="https://people.eecs.berkeley.edu/%7Etinghuiz/projects/SfMLearner/" target="blank") プロジェクトページ
-    .slide_index
-      | #{getSlideIndex()}
-    .slide_editor Shintaro Yamamoto
-	
-  +slide
-    .title CAN: Creative Adversarial Networks Generating "Art" by Learning About Styles and Deviating from Style Norms
-    .info
-      .authors Ahmed Elgammal et al.
-      .conference ICCC, 2017.
-    .item1
-      h1 概要
-      .text.
-        GANを用いてコンピュータに新たな芸術作品を創らせる研究。心理学と美学の知見を取り入れ、これまでの芸術作品と比べると新しいが新しすぎない画像を生成する。過去の作品と比べて新しいか否かは、芸術作品の分類を考えどのクラスにも分類されないものを従来のものとは異なると判定している。それに加え、GANによって芸術である画像を生成するよううに学習している。
-
-    .item2
-      img(src=figpath+"180325CAN.png")
-    .item3
-      h1 新規性・結果
-      .text
-        ul
-          li 新しいが新しすぎない絵画を生成するための評価関数を構築した。
-          li 評価にはDCGANにより学習したもの及び実際の芸術作品との比較をユーザースタディによって行った。
-    .item4
-      h1 自由記述欄
-      .text
-        ul
-          li: a(href="https://arxiv.org/abs/1706.07068" target="blank") 論文
-    .slide_index
-      | #{getSlideIndex()}
-    .slide_editor Shintaro Yamamoto
-	
-  +slide
-    .title Personalized Image Aesthetics
-    .info
-      .authors Jian Ren et al.
-      .conference ICCV, 2017.
-    .item1
-      h1 概要
-      .text.
-        個人の好みを考慮した画像の評価システムを提案した。画像のスコア付けに関する研究は数多く存在するが、実際には人によって高い点数をつける画像は大きく異なる。そこで、クラウドソーシングを用いて一般的な画像の評価を行うネットワークに加え、個人の画像の好みを推定することによって好みに応じた画像の評価システムを構築した。個人の好みの推定には、contentとattributeの2つを特徴として抽出して行う。個人の好みの学習には、active learningを導入することによって少ない学習データでも学習を可能にした。
-
-    .item2
-      img(src=figpath+"180325personalize.png")
-    .item3
-      h1 新規性・結果
-      .text
-        ul
-          li クラウドソーシングによってスコア付けしたgeneralな評価用のデータベースと撮影者がスコア付けを行った個人性の学習用のデータベースの2つのデータベースを構築。
-          li 個人の好みを直接学習するより、generalな評価と個人の好みを組み合わせた方が精度が高いことを示した
-    .item4
-      h1 自由記述欄
-      .text
-        ul
-          li: a(href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Ren_Personalized_Image_Aesthetics_ICCV_2017_paper.pdf" target="blank") 論文
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
