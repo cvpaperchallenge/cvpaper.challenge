@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Fusion of stereo and still monocular depth estimates in a self-supervised learning context
+    .info
+      .authors Diogo Martins, Kevin van Hecke, Guido de Croon
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自律ロボットにおける、奥行き推定能力を向上させる手法の提案。ロボットが教師あり学習(CNN)でステレオビジョン深度を学習し、静止画像からの深さを推定。このとき、ステレオ視からの深度推定結果だけでなく、単眼深度推定と静止画像をマージすることで精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330FOSASMDE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ステレオとモノラルの両方を融合された場合の推定値が、ステレオだけの場合よりも高パフォーマンス。近距離を除くほとんどの距離において、単眼視力よりも立体視がより正確に行える。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KITTIデータセットとParrot SLAMDunkで実験した結果、ステレオ視覚ロボットに自律走行させるための、より正確なデプスマップを作成できることを示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07512.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Dynamic Sampling Convolutional Neural Networks
     .info
       .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
