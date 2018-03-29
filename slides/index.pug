@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Actor and Action Video Segmentation from a Sentence
+    .info
+      .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 文章を用いて、ビデオ内のアクターとそのアクションについて、ピクセル単位でセグメンテーションを行うモデルを提案。ビデオに最適化されたエンコーダとデコーダのアーキテクチャを使用し、時間的性質を考慮したfully-convolutionalモデル。文章によるセグメンテーションを可能にするために、2つの既存のデータセットを、アクターとそのアクションを記述する文章のアノテーションで拡張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p 従来手法とは異なり、固定されたアクターとアクションのペアを学習し、自然言語の入力文からセグメンテーションを推定。 これにより、同一カテゴリ内のアクターを細かく識別し、アクターとアクションのインスタンスを識別することが可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07485.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatial-Temporal Patterns
     .info
       .authors Jianming Lv, et al.
