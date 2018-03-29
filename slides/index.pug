@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Speech-Driven Facial Reenactment Using Conditional Generative Adversarial Networks
+    .info
+      .authors Seyed Ali Jalalifar, Hosein Hasani, Hamid Aghajan
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SDFR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p LSTMとC-GANのネットワークは、独立しているので、ターゲットの人物ではなく、他ソースからのオーディオでターゲットの顔を口パクさせることが可能。 顔の変換、アプリなど、多くの新しいアプリケーションに応用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07461.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
     .info
       .authors Tao Hu, et al.
