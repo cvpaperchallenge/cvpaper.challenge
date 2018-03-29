@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Robust Depth Estimation from Auto Bracketed Images
+    .info
+      .authors Sunghoon Im, Hae-Gon Jeon, In So Kweon
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カメラ機能であるバーストショットから、堅牢な深度推定手法の. Deep Multi-view Stereo Matching(DMVS)を提案。バースト画像に適したフローと深度の幾何学的変換を導入し、学習を用いたマルチビューステレオマッチングを効果的に実行。次に、フローネットワークに幾何変換を組み込んだ深度推定によって正確な奥行きマップを生成。図より、青破線はフローから深度に変換。赤破線は逆に、深度からフローに変換し、次のフレームで使用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DMVS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p スマホなどの小型機器において奥行きを捉えるのは大事になってくるが、低照明条件下では精度が低い。様々な強度（オートブラケット）または強いノイズ（高ISO）を持つバーストを使用することによって精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンとDSLRカメラで、されたさまざまなデータセットの最先端の手法を上回る。 さらに、推定された深度が画質向上と写真編集に適用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07702.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Unsupervised Representation Learning by Predicting Image Rotations
     .info
       .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
