@@ -2,6 +2,159 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Weakly-Supervised Action Segmentation with Iterative Soft Boundary Assignment
+    .info
+      .authors Li Ding, Chenliang Xu
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 時系列の行動検出/セグメンテーション（Action Segmentation）に関する問題をWeakly-Supervised（WS学習）に解いた。ここではTemporal Convolutional Feature Pyramid Network (TCFPN)とIterative Soft Boundary Assignment (ISBA)を繰り返すことで行動に関する条件学習ができてくるという仕組み。TCFPNではフレームの行動を予測し、ISBAではそれを検証、それらを繰り返して行動間の境界線を定めながらWS学習の教師としていく。さらに、WS学習を促進するためにより弱い境界として行動間の繋がりを定義することでWS学習の精度を向上させる。学習はビデオ単位の誤差を最適化することで境界についても徐々に定まる（ここがWS学習の所以）ように学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329ISBATCFN.png`,alt="180329ISBATCFN")
+    .item3
+      .text
+        h1 新規性・結果
+        p Breakfast dataset, Hollywood extended datasetにて弱教師付き学習とテストを行いState-of-the-artな精度を達成した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 弱い教師データを大量に集めると、そろそろ（ある程度の）教師ありデータによる精度を超えそう？もっと汎用的に学習できる枠組みが必要か。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10699v1.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 14:27:12
+
+  +slide
+    .title COCO-Stuff: Thing and Stuff Classes in Context
+    .info
+      .authors Holger Caesar, Jasper Uijlings, Vittorio Ferrari
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p MSCOCOデータセットに対してThing（もの）やStuff（材質）に関する追加アノテーションを行い、さらにコンテキスト情報も追加したCOCO-Stuffを提案した。このデータセットには主にシーンタイプ、そのものがどこに現れそうかという場所、物理的/材質的な属性などをアノテーションとして付与する。COCO2017をベースにして164Kに対して91カテゴリを付与し、スーパーピクセルを用いた効率的なアノテーションについてもトライした。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329COCOStuff.png`,alt="180329COCOStuff")
+    .item3
+      .text
+        h1 新規性・結果
+        p 材質的なアノテーションは画像キャプションに対して重要であることを確認、相対的な位置関係などデータセットのリッチなアノテーションが重要であること、セマンティックセグメンテーションベースの方法により今回のアノテーションを簡易的に行えたこと、などを示した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p さらにリッチなアノテーションは今後重要になる。この論文ではスーパーピクセルという弱い知識を用い、人間のアノテーションと組み合わせることでボトムアップ・トップダウンを効果的かつ効率的に組み合わせてアノテーションを行っている点が素晴らしい。ラストオーサのVittorio Ferrariは機械と人の協調によるアノテーションが得意（なので、既存データセットへのよりリッチなアノテーションを早いペースで提案できる）。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1612.03716v4.pdf") 論文
+          li
+            a(href="https://github.com/nightrome/cocostuff10k") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 13:59:43
+  +slide
+    .title Semantic Part Detection with Object Context
+    .info
+      .authors Abel Gonzalez-Garcia, Davide Modolo, Vittorio Ferrari
+      .conference arXiv 1703.09529
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体の全体をbboxで検出するのみならず、相対的なパーツ検出も同時に達成した。物体検出・パーツ検出はEnd-to-Endでの学習が可能である。パーツ検出のモデルは図に示す通りである。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329PartDetection.png`,alt="180329PartDetection")
+    .item3
+      .text
+        h1 新規性・結果
+        p ベースラインと比較して+5 mAP @PASCAL-Part dataset/CUB200-2011 datasetを達成した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.09529.pdf") 論文
+          li
+            a(href="https://github.com/agonzgarc/parts-object-context") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 13:11:12
+
+  +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference Submission to ECCV 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 画像キャプションの研究においてSelf-Retrieval（自己検索？）の機能を追加して学習時の教示することで識別性に優れたキャプションの生成に成功した。Self-Retrievalの効果により、欠損のある画像ーキャプションの対応関係ラベルデータにおいても効率的に学習ができることを示した。識別性に優れたキャプションの生成により、画像中の物体を発見する能力が向上し、より表現力のあるキャプション生成となった。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180326SelfRetrieval.png`,alt="180326SelfRetrieval")
+    .item3
+      .text
+        h1 新規性・結果
+        p 図を参照。強化学習の枠組みによりSelf-Retrievalの報酬を定義してラベルに欠損を含む状態でもキャプショニングの精度を向上させた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 物体認識や検出、セグメンテーションなどあらゆる精度が向上して来たので、多数決を取るように強化学習を行うとラベルが貧弱でも多少は問題解決に向かうようになるのか？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.26 20:52:24
+
+  +slide
+    .title YOLOv3: An Incremental Improvement
+    .info
+      .authors Joseph Redmon, Ali Farhadi
+      .conference Tech Report
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出手法であるYOLO（You Only Look Once）に関する続報であり早くもv3となった。OpenImagesの使用、bboxのスケール間での推定結果統合、スキップコネクション適用や畳み込み層の増加（Darknet-53）など軽微な改良を行ってYOLO自体の精度を向上させ速度を維持した。また、TechReport中にはやってもうまくいかなったこと（Anchor box x, y offset predictions, Linear x,y predictions instead of logistic, Focal loss, Dual IOU threshold and truth assignment）が書かれている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180327YOLOv3.png`,alt="180327YOLOv3")
+    .item3
+      .text
+        h1 新規性・結果
+        p 精度はSSDとほぼ同等でかつ3倍の速さを実現した。また、Focal Lossを用いて学習したRetina Netとも同等で3倍以上の速さを実現した（YOLOv3-608 57.9 mAP, 51 ms/img vs. RetinaNet-101 57.5, 198 ms/img）。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 全体にわたりネタが仕込まれつつも、新規性や学びが含まれている論文。ネタを仕込むことで論文を読ませ、引用に繋げている好例。動画も性能の高さを示しているので参照されたい。さらに、ネットを賑わせすぐに記事が多数アップされる。論文まとめかきづらい、犬はずるい。
+        ul
+          li
+            a(href="https://pjreddie.com/media/files/papers/YOLOv3.pdf") 論文
+          li
+            a(href="https://pjreddie.com/darknet/yolo/") Project
+          li
+            a(href="https://www.youtube.com/watch?v=MPU2HistivI") YouTube
+          li
+            a(href="https://www.youtube.com/watch?v=8jfscFuP_9k") YouTube2
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 09:28:32
+
+  +slide
     .title Teleoperation of a Robot through Audio-Visual Signal via Video Chat
     .info
       .authors Hisato Fukuda, Yoshinori Kobayashi and Yoshinori Kuno
