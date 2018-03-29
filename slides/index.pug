@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Exploiting deep residual networks for human action recognition from skeletal data
+    .info
+      .authors Huy-Hieu Pham, Louahdi Khoudour, Alain Crouzil, Pablo Zegers, Sergio A. Velastin
+      .conference CVIU 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p デプスセンサによって得られる骨格情報を用いて人間の行動認識に深いResNetsを適用する。スケルトンシーケンスで、人体関節の3D座標を画像ベースの表現に変換し、RGB画像として格納。これらの画像は、3D運動の空間 - 時間的進化をとらえることができ、D-CNNによって効率的に学習可能。次に、得られた画像ベースの表現から特徴量を学習し、行動クラスに分類するためにResNetsにて学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330EDRN.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p MSR Action 3D、KARD、およびNTU-RGB + Dデータセットを含む3つのデータセットで評価。最先端の精度かつ、計算量の削減。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07781.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330EDRN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
     .info
       .authors Tolga Birdal, et al.
