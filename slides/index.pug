@@ -2,6 +2,148 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Towards Human-Machine Cooperation:Self-supervised Sample Mining for Object Detection
+    .info
+      .authors Keze Wang, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出の課題を考慮し、既存のActive Learning(AL)の欠点を改善することを目的とした、Self-Supervised Sample Mining(SSM)の提案。ラベルなし、もしくは一部ラベルのないデータを使って学習することができる。交差検証後のスコアによってサンプルを選別。低い場合にはユーザによってアノテーション、高い場合にはそのままラベルとして採用。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SSM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のAL法では主に、単一の画像コンテクスト内でサンプル選択基準を定義し、大規模な物体検出において最適ではなく、頑強性および非実用的である。SSMによって、ユーザが必要な部分にだけ介入し、アノテーションの作業を軽減。
+    .item4
+      .text
+        h1 結果・リンク集
+        p アノテーションが少ないデータセットにおいても最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09867.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Image Semantic Transformation: Faster, Lighter and Stronger
+    .info
+      .authors Dasong Li, Jianbo Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味的変換を施し，画像を再構成する，facenet‘sのユークリッド空間を使ったモデルであるImage-Semantic-Transformation-Reconstruction-Circle(ISTRC)の提案。その名の通り、構造が円になっている。画像を識別するために、FaceNetの最後の層を用いて、画像をユークリッド空間に変換。意味理解のためにユークリッド空間ベクトルを操作し、マッピング。GANを使って、ベクトルから画像を再構成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 本論文では10種類の変換(「男性と女性」「笑顔を加える」「口を開ける」「大きい/小さい鼻」「年をとる」など)を実施。今後は、種類を拡張し、より高解像度の画像に適応できるように改良予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09932.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A New Target-specific Object Proposal Generation Method for Visual Tracking
+    .info
+      .authors Guanjun Guo, et al.
+      .conference IEEE Transactions on Cybernetisc
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 映像のコンテキスト情報を活用した、bject proposal手法であるTpecific Object Proposal Generation(TOPG)の提案。具体的には、対象物体のobject proposalを生成する際に、色とエッジの情報を統合する。これにより，様々な環境に適応することができ、 TOPGのリコールが大幅に増加。また、生成したobject proposalのランク精度を高めるためのランク付け手法を提案。そして、TOPGをvisual trackingに適応したTOPG-based tracker (TOPGT)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TOPG.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のobject proposal手法をビデオなどのタスクに適用したときに発生する、モーションブラー、低コントラスト、変形などの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TOPGおよびTOPGT共に既存の研究より精度向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10098.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Robust Depth Estimation from Auto Bracketed Images
+    .info
+      .authors Sunghoon Im, Hae-Gon Jeon, In So Kweon
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カメラ機能であるバーストショットから、堅牢な深度推定手法の. Deep Multi-view Stereo Matching(DMVS)を提案。バースト画像に適したフローと深度の幾何学的変換を導入し、学習を用いたマルチビューステレオマッチングを効果的に実行。次に、フローネットワークに幾何変換を組み込んだ深度推定によって正確な奥行きマップを生成。図より、青破線はフローから深度に変換。赤破線は逆に、深度からフローに変換し、次のフレームで使用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DMVS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p スマホなどの小型機器において奥行きを捉えるのは大事になってくるが、低照明条件下では精度が低い。様々な強度（オートブラケット）または強いノイズ（高ISO）を持つバーストを使用することによって精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンとDSLRカメラで、されたさまざまなデータセットの最先端の手法を上回る。 さらに、推定された深度が画質向上と写真編集に適用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07702.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Representation Learning by Predicting Image Rotations
+    .info
+      .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNにおいて、入力画像に適用された2次元回転を認識するように学習する、自己管理特徴学習手法を提案。この単純なタスクによって、semantic feature learningの質の向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330URL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 2018年現在、CNNは画像の意味的要素まで学習できるようになってきた。しかし、これには大量のデータが必要なため、教師なし学習に着目。回転を認識させる学習によって、物体認識、物体検出、セグメンテーションなどのさまざまな視覚的認識タスクに有用な意味的特徴を学習させることに成功。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ImageNet分類、PASCAL分類、PASCAL検出、PASCALセグメンテーション、CIFAR-10分類の教師なし特徴学習精度を大幅に改善。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07728.pdf") 論文
+          li
+            a(href="https://github.com/gidariss/FeatureLearningRotNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Fusion of stereo and still monocular depth estimates in a self-supervised learning context
     .info
       .authors Diogo Martins, Kevin van Hecke, Guido de Croon
