@@ -2,6 +2,32 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Boosted Convolutional Neural Networks
+    .info
+      .authors Mohammad Moghimi et al.
+      .conference BMVC, 2016.
+    .item1
+      h1 概要
+      .text.
+        CNNとBoostingのメリットを組み合わせ，BoostingするためのBoostCNNを提案．このモデルを学習するための，重みを更新アルゴリズムを設計．具体的にはBoostingの各反復において，Boostingの重みを近似するためのネットワークの学習を行う．また，異なるネットワークにおいても使用可能であり，優れた性能を示すだけでなく，適切なネットワーク構造を探索するための効率を上げることができると示唆．
+
+    .item2
+      img(src=figpath+"180329boostingcnn.png")
+    .item3
+      h1 新規性・結果
+      .text
+        fine-grained 認識においてSOTA．
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://www.bmva.org/bmvc/2016/papers/paper024/abstract024.pdf" target="blank") 論文 
+          li: a(href="https://github.com/mmoghimi/BoostCNN" target="blank") Code
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Yuta Matsuzaki
+
+  +slide
     .title Rotation-Sensitive Regression for Oriented Scene Text Detection
     .info
       .authors Minghui Liao, et al.
