@@ -2,6 +2,33 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .info
+      .authors Tolga Birdal, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 点群の一般的な幾何学的二次形状を検出するセグメンテーションフリーの手法を提案。オクルージョン、部分的な可視性、クラッタを用いてPoint Cloudsの二次形状(プリミティブ)を検出。ノイズの多い困難なシーンでも、一般的なマルチオブジェクトプリミティブ検出を実行できる最初の手法。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TADOQ.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 日常生活には、 平面、円錐、球、円柱などの3Dプリミティブで構成される人工物に満ち溢れている。これらのプリミティブを介して3Dシーンを抽象化することで、幾何学的形態が高レベル3Dシーン理解に使えるのでは？という発想。従来とは異なり、単一のアルゴリズムで全てのプリミティブを検出することができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 研究が進めばリアルタイムを実現できるかも？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07191.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
     .title Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
     .info
       .authors Xiaolong Wang, Yufei Ye, Abhinav Gupta, The Robotics Institute, Carnegie Mellon University
