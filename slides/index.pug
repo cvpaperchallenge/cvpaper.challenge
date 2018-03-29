@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Three Birds One Stone: A Unified Framework for Salient Object Segmentation, Edge Detection and Skeleton Extraction
+    .info
+      .authors Qibin Hou, et al.
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顕著性オブジェクトセグメンテーション、スケルトン抽出、エッジ検出など、ピクセル単位のバイナリ問題における類似点を見出し、一つのフレームワークに統一。 CNNをより有効的に活用するために、異なるレベルのフィーチャマップから信号を受け取るtransition nodeという概念を導入している。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TBOS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 異なるタスクを一つのフレームワークに統一させることで、全てのタスクにおいて精度向上を図っている。他のバイナリピクセルラベリングタスクも統一できる可能性を示している。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 本質的に異なるタスクでも、統一してしまうことで、それら全てで効率よく機能し、現在(2018年)の単一の最先端の手法よりはるかに優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09860.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Towards Human-Machine Cooperation:Self-supervised Sample Mining for Object Detection
     .info
       .authors Keze Wang, et al.
