@@ -2,6 +2,41 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title YOLOv3: An Incremental Improvement
+    .info
+      .authors Joseph Redmon, Ali Farhadi
+      .conference Tech Report
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出手法であるYOLO（You Only Look Once）に関する続報であり早くもv3となった。OpenImagesの使用、bboxのスケール間での推定結果統合、スキップコネクション適用や畳み込み層の増加（Darknet-53）など軽微な改良を行ってYOLO自体の精度を向上させ速度を維持した。また、TechReport中にはやってもうまくいかなったこと（Anchor box x, y offset predictions, Linear x,y predictions instead of logistic, Focal loss, Dual IOU threshold and truth assignment）が書かれている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180327YOLOv3.png`,alt="180327YOLOv3")
+    .item3
+      .text
+        h1 新規性・結果
+        p 精度はSSDとほぼ同等でかつ3倍の速さを実現した。また、Focal Lossを用いて学習したRetina Netとも同等で3倍以上の速さを実現した（YOLOv3-608 57.9 mAP, 51 ms/img vs. RetinaNet-101 57.5, 198 ms/img）。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 全体にわたりネタが仕込まれつつも、新規性や学びが含まれている論文。ネタを仕込むことで論文を読ませ、引用に繋げている好例。動画も性能の高さを示しているので参照されたい。さらに、ネットを賑わせすぐに記事が多数アップされる。論文まとめかきづらい、犬はずるい。
+        ul
+          li
+            a(href="https://pjreddie.com/media/files/papers/YOLOv3.pdf") 論文
+          li
+            a(href="https://pjreddie.com/darknet/yolo/") Project
+          li
+            a(href="https://www.youtube.com/watch?v=MPU2HistivI") YouTube
+          li
+            a(href="https://www.youtube.com/watch?v=8jfscFuP_9k") YouTube2
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 09:28:32
+
+  +slide
     .title Teleoperation of a Robot through Audio-Visual Signal via Video Chat
     .info
       .authors Hisato Fukuda, Yoshinori Kobayashi and Yoshinori Kuno
