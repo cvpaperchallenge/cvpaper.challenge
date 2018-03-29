@@ -2,6 +2,148 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Actor and Action Video Segmentation from a Sentence
+    .info
+      .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 文章を用いて、ビデオ内のアクターとそのアクションについて、ピクセル単位でセグメンテーションを行うモデルを提案。ビデオに最適化されたエンコーダとデコーダのアーキテクチャを使用し、時間的性質を考慮したfully-convolutionalモデル。文章によるセグメンテーションを可能にするために、2つの既存のデータセットを、アクターとそのアクションを記述する文章のアノテーションで拡張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p 従来手法とは異なり、固定されたアクターとアクションのペアを学習し、自然言語の入力文からセグメンテーションを推定。 これにより、同一カテゴリ内のアクターを細かく識別し、アクターとアクションのインスタンスを識別することが可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07485.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatial-Temporal Patterns
+    .info
+      .authors Jianming Lv, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 歩行者の時空間パターンを用いた、教師なし学習の人物再同定アルゴリズムであるTFusionを提案。既存の人物再同定アルゴリズムのほとんどは、小サイズのラベル付きデータセットを用いた教師付き学習手法である。そのため、大規模な実世界のカメラネットワークに適応することは困難である。また、そこで、ラベルなしデータセットも用いたクロスデータセット手法によって精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TFusion.jpg`)
+    .item3
+      .text
+        h1 手法
+        p まず、歩行者の空間的-時間的パターンを学習するために、ラベル付きデータセットを用いて学習した視覚的分類器を、ラベルなしデータセットに転送。次に、Bayesian fusion modelによって、学習された時空間パターンを視覚的特徴と組み合わせて、分類器を改善。最後に、ラベルのないデータを用いて分類器を段階的に最適化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 人物再同定のための、教師なしクロスデータセット学習手法の中では最先端。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07293.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title HATS: Histograms of Averaged Time Surfaces for Robust Event-based Object Classification
+    .info
+      .authors Amos Sironi, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p イベントベースカメラにおける、識別アルゴリズムの提案。本研究では、(1)イベントベースのオブジェクト分類のための低レベル表現とアーキテクチャの欠如、(2)実世界における大きなイベントベースのデータセットの欠如、の2つの問題に取り組む。新しい機械学習アーキテクチャ、イベントベースの特徴表現(Histograms of Averaged Time Surfaces)、データセット(N-CARS)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330NCARS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p イベントベースのカメラは、従来のフレームベースのカメラと比較して、高時間分解能、低消費電力、高ダイナミックレンジという点で優れており、様々なシーンで応用が利く。しかし、イベントベースのオブジェクト分類アルゴリズムの精度は未だ低い。特徴表現には過去時間の情報を使用。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 過去の情報を使うことで、既存のイベントベースカメラによる認識手法よりも優れた結果となった。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07913.pdf") 論文
+          li
+            a(href="http://www.prophesee.ai/dataset-n-cars/") データセット
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Speech-Driven Facial Reenactment Using Conditional Generative Adversarial Networks
+    .info
+      .authors Seyed Ali Jalalifar, Hosein Hasani, Hamid Aghajan
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SDFR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p LSTMとC-GANのネットワークは、独立しているので、ターゲットの人物ではなく、他ソースからのオーディオでターゲットの顔を口パクさせることが可能。 顔の変換、アプリなど、多くの新しいアプリケーションに応用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07461.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
+    .info
+      .authors Tao Hu, et al.
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SIR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06598.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Zoom and Learn: Generalizing Deep Stereo Matching to Novel Domains
     .info
       .authors Jiahao Pang, et al.
