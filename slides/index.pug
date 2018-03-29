@@ -2,6 +2,33 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Guided Open Vocabulary Image Captioning with Constrained Beam Search
+    .info
+      .authors Peter Anderson, et al.
+      .conference EMNLP 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNN-RNNという画像キャプションの流れにビーム探索を追加。制約付きビーム探索を用いて選択したタグを出力として強制的に適用し、事前に学習したword embeddingを用いて、未知のタグへの語彙拡張を行う。これにより、既存のアーキテクチャで、未知データを柔軟に解決。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329GuidedOpenVocab.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p RNNを回している途中に意味属性(タグ)を組み込むことで、既存の手法では捉えられなかったオブジェクトをキャプションすることができる。新規のシーンやオブジェクトなど、ドメイン外のデータに対するキャプショニングの改善。
+    .item4
+      .text
+        h1 結果・リンク集
+        p MSCOCOのドメイン外キャプションを用いた結果は良好。既存のドメイン内のキャプションよりも優れた結果になることも。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1612.00576.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
     .title Rotation-Sensitive Regression for Oriented Scene Text Detection
     .info
       .authors Minghui Liao, et al.
