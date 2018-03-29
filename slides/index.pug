@@ -2,6 +2,35 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference Submission to ECCV 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 画像キャプションの研究においてSelf-Retrieval（自己検索？）の機能を追加して学習時の教示することで識別性に優れたキャプションの生成に成功した。Self-Retrievalの効果により、欠損のある画像ーキャプションの対応関係ラベルデータにおいても効率的に学習ができることを示した。識別性に優れたキャプションの生成により、画像中の物体を発見する能力が向上し、より表現力のあるキャプション生成となった。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180326SelfRetrieval.png`,alt="180326SelfRetrieval")
+    .item3
+      .text
+        h1 新規性・結果
+        p 図を参照。強化学習の枠組みによりSelf-Retrievalの報酬を定義してラベルに欠損を含む状態でもキャプショニングの精度を向上させた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 物体認識や検出、セグメンテーションなどあらゆる精度が向上して来たので、多数決を取るように強化学習を行うとラベルが貧弱でも多少は問題解決に向かうようになるのか？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.26 20:52:24
+
+  +slide
     .title YOLOv3: An Incremental Improvement
     .info
       .authors Joseph Redmon, Ali Farhadi
