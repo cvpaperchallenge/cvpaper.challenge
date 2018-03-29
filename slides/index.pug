@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Image Semantic Transformation: Faster, Lighter and Stronger
+    .info
+      .authors Dasong Li, Jianbo Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味的変換を施し，画像を再構成する，facenet‘sのユークリッド空間を使ったモデルであるImage-Semantic-Transformation-Reconstruction-Circle(ISTRC)の提案。その名の通り、構造が円になっている。画像を識別するために、FaceNetの最後の層を用いて、画像をユークリッド空間に変換。意味理解のためにユークリッド空間ベクトルを操作し、マッピング。GANを使って、ベクトルから画像を再構成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 本論文では10種類の変換(「男性と女性」「笑顔を加える」「口を開ける」「大きい/小さい鼻」「年をとる」など)を実施。今後は、種類を拡張し、より高解像度の画像に適応できるように改良予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09932.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title A New Target-specific Object Proposal Generation Method for Visual Tracking
     .info
       .authors Guanjun Guo, et al.
