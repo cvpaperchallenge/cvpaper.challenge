@@ -2,6 +2,174 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Fusion of stereo and still monocular depth estimates in a self-supervised learning context
+    .info
+      .authors Diogo Martins, Kevin van Hecke, Guido de Croon
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自律ロボットにおける、奥行き推定能力を向上させる手法の提案。ロボットが教師あり学習(CNN)でステレオビジョン深度を学習し、静止画像からの深さを推定。このとき、ステレオ視からの深度推定結果だけでなく、単眼深度推定と静止画像をマージすることで精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330FOSASMDE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ステレオとモノラルの両方を融合された場合の推定値が、ステレオだけの場合よりも高パフォーマンス。近距離を除くほとんどの距離において、単眼視力よりも立体視がより正確に行える。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KITTIデータセットとParrot SLAMDunkで実験した結果、ステレオ視覚ロボットに自律走行させるための、より正確なデプスマップを作成できることを示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07512.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Dynamic Sampling Convolutional Neural Networks
+    .info
+      .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。
+        p Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07624.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自己検索モジュールを学習時のガイダンスとし、識別キャプションの生成を促す画像キャプションフレームワークを提案。(1)自己検索ガイダンスによって、キャプションの識別性を評価し、生成されたキャプションの品質を保つ。(2)生成されたキャプションと画像との対応は、アノテーションを伴わない生成プロセスに自然に組み込まれており、大量の未ラベル画像を使用して、面倒なアノテーションを付けを行わずにキャプションのパフォーマンスを向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330STAD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来の主流なアプローチのほとんどは言語構造パターンを模倣しており、頻繁なフレーズや文章を複製して、各イメージのユニークな側面を無視するというステレオタイプになる傾向。本手法では、似たような画像を入力した場合でも、キャプションの弁別性を向上させることができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p MS-COCOとFlickr30kデータセットで提案された有効性を実証し、優れた字幕演出をより差別的な字幕とともに示す。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Exploiting deep residual networks for human action recognition from skeletal data
+    .info
+      .authors Huy-Hieu Pham, Louahdi Khoudour, Alain Crouzil, Pablo Zegers, Sergio A. Velastin
+      .conference CVIU 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p デプスセンサによって得られる骨格情報を用いて人間の行動認識に深いResNetsを適用する。スケルトンシーケンスで、人体関節の3D座標を画像ベースの表現に変換し、RGB画像として格納。これらの画像は、3D運動の空間 - 時間的進化をとらえることができ、D-CNNによって効率的に学習可能。次に、得られた画像ベースの表現から特徴量を学習し、行動クラスに分類するためにResNetsにて学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330EDRN.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p MSR Action 3D、KARD、およびNTU-RGB + Dデータセットを含む3つのデータセットで評価。最先端の精度かつ、計算量の削減。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07781.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330EDRN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .info
+      .authors Tolga Birdal, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 点群の一般的な幾何学的二次形状を検出するセグメンテーションフリーの手法を提案。オクルージョン、部分的な可視性、クラッタを用いてPoint Cloudsの二次形状(プリミティブ)を検出。ノイズの多い困難なシーンでも、一般的なマルチオブジェクトプリミティブ検出を実行できる最初の手法。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TADOQ.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 日常生活には、 平面、円錐、球、円柱などの3Dプリミティブで構成される人工物に満ち溢れている。これらのプリミティブを介して3Dシーンを抽象化することで、幾何学的形態が高レベル3Dシーン理解に使えるのでは？という発想。従来とは異なり、単一のアルゴリズムで全てのプリミティブを検出することができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 研究が進めばリアルタイムを実現できるかも？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07191.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
+    .title Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
+    .info
+      .authors Xiaolong Wang, Yufei Ye, Abhinav Gupta, The Robotics Institute, Carnegie Mellon University
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カテゴリの単語の埋め込みと他のカテゴリとの関係(視覚データが提供される)を使用するだけで、学習例がないカテゴリの分類器を学習するゼロショット認識モデルを提案。 knowledge graph (KG) を入力とし、Graph Convolutional Network(GCN)を基に、セマンティック埋め込みとカテゴリの関係の両方を使用して分類器を予測する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330KG.jpg`)
+    .item3
+      .text
+        h1 手法
+        p 学習済のKGが与えられると、各ノードに対する意味的埋め込みとして入力を得る。一連のグラフ畳み込みの後、各カテゴリの視覚的分類器を予測する。トレーニング中に、カテゴリの視覚的分類器が与えられ、GCNパラメータを学習。テスト時に、これらのフィルタを使用して、見えないカテゴリの視覚的分類器を予測する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KGのノイズに対してロバストであり、最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08035.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Actor and Action Video Segmentation from a Sentence
     .info
       .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek
