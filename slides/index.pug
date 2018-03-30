@@ -2,6 +2,64 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Pyramid Stereo Matching Network
+    .info
+      .authors Jia-Ren Chang, Yong-Sheng Chen
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 空間ピラミッドプーリングと3D CNNの2つのモジュールから構成された、ステレオ画像対からの奥行き推定を行うPyramid Stereo Matching Network(PSMNet)の提案。空間ピラミッドプーリングは、異なるスケールおよび位置でコンテキストを集約し、コストボリュームを形成する。 3D CNNは、複数のhourglass networksを重ねて、コストボリュームを規則化することを学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PSMN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 現在(2018)ではステレオ画像からの奥行き推定を、CNNの教師あり学習で解決されてきている。 コンテキスト情報を利用することで精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法よりも優れている結果。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08669.pdf") 論文
+          li
+            a(href="https: //github.com/JiaRenChang/PSMNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Learning Shape-from-Shading for Deformable Surfaces
+    .info
+      .authors Jan Bednarık, Pascal Fua, Mathieu Salzmann
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2D画像からメッシュ、法線、深度マップなどの3D表現を予測できるフレームワークを提案。人が着用するTシャツのしわなど、表面をより詳細に、正確にモデル化できる。基本的にはShape-from-Shading技術に関連する技術。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LSFS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 画像から、テクスチャを加えることで表面の3D形状を再現する手法は開発されている。しかし、テクスチャのない表面の3D形状を回復することはできていない。
+    .item4
+      .text
+        h1 結果・リンク集
+        p メッシュはテクスチャありの場合はとても良い精度だが、テクスチャなしの場合だとあまり適さない。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08908.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title P2P-NET: Bidirectional Point Displacement Net for Shape Transform
     .info
       .authors Kangxue Yin, Hui Huang, Daniel Cohen-Or, Hao Zhang
