@@ -41,6 +41,229 @@ block slides
     .slide_editor Kensho Hara
 
   +slide
+    .title Movie Editing and Cognitive Event Segmentation in Virtual Reality Video
+    .info
+      .authors A. Serrano, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p VRビデオ鑑賞において多数ユーザの視線トラッキングを解析してVR動画の編集を行う研究を実施した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330VRVideo.png`,alt="180330VRVideo")
+    .item3
+      .text
+        h1 新規性・結果
+        p VRのビデオ編集において最新の認知科学を適用、VRビデオ鑑賞におけるコンテンツを強化した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/docs/Serrano_SIGG2017_VR-cine.pdf") 論文
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/projects/VR-cinematography") Project
+          li
+            a(href="https://www.youtube.com/watch?v=cF79m_U31cU") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:59:04
+
+  +slide
+    .title VNect: Real-time 3D Human Pose Estimation with a Single RGB Camera
+    .info
+      .authors A. Uthors, B. Uthors and C. Uthors
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p Single RGBからの入力で姿勢推定を行い、3次元空間に投影してマーカレスモーキャプを実現。自己遮蔽や複雑姿勢などが発生してもロバストにキーポイントの追跡に成功した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330VNNect.png`,alt="180330VNNect")
+    .item3
+      .text
+        h1 新規性・結果
+        p 結果は動画を参照。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="www") 論文
+          li
+            a(href="http://people.mpi-inf.mpg.de/~dmehta/VNectDemo/") Project
+          li
+            a(href="www") GitHub
+          li
+            a(href="https://www.youtube.com/watch?v=W1ZNFfftx2E") YouTube
+          li
+            a(href="https://qiita.com/latte_zero/items/7d28b96a8f666f393965") Qiita
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:44:20
+
+  +slide
+    .title Discovering and synthesizing humanoid climbing movements
+    .info
+      .authors K. Naderi, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p シミュレーション上でヒューマンノイドのエージェントが壁を登る様子を学習する研究。エージェントの体の動かし方も含めて経路探索を実施する。提案手法ではk-shortest Pathsによるアルゴリズムを用いて同タスクを解決した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330HumanoidMovement.png`,alt="180330HumanoidMovement")
+    .item3
+      .text
+        h1 新規性・結果
+        p 多数の関節を同時に動かし、ボルダリングのための経路探索を行う問題を提供した。シミュレーション結果はYouTube動画中にて示されている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3073707") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=rfqLrNnhRWo") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:21:16
+
+  +slide
+    .title Phase-Functioned Neural Networks for Character Control
+    .info
+      .authors D. Holden, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p ニューラルネットによりリアルタイムにキャラクターを操作するPhase-Functioned Neural Networkを提案する。ある動作（ここでは主に歩行、runningという意味で走行、ジャンプ、登る）というのはある周期性を持つと仮定して重みを計算し、ユーザの操作に応じて動作を柔軟に変更することができる。より柔軟な動きにするために、モーションキャプチャのデータを大量に使用してニューラルネットを学習した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PhaseFunctionedNN.png`,alt="180330PhaseFunctionedNN")
+    .item3
+      .text
+        h1 新規性・結果
+        p モーキャプデータを大量に使用してニューラルネットを学習することで、ユーザフレンドリな動作表現を実現した。動的な結果についてはYouTubeを参照されたい。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p モーキャプxニューラルネットの有効な組み合わせ例かもしれない。次はデータを効果的に増やす方にも活用できるのでは？
+        ul
+          li
+            a(href="http://theorangeduck.com/media/uploads/other_stuff/phasefunction.pdf") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=Ul0Gilv5wvY") YouTube
+          li
+            a(href="http://mizuooon.hatenablog.jp/entry/phase-functioned_neural_networks_for_character_control") 参考
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:08:53
+
+  +slide
+    .title DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning
+    .info
+      .authors X. B. Peng, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+
+    .item1
+      .text
+        h1 概要
+        p 階層的強化学習により、3次元アニメーションにおいて道順さえ教えれば歩行動作を自動で獲得するアルゴリズムを提案した。より速いレートで関節やバランスをコントロールするLLC（Low-level Controller）と道を外れずにゴールを目指すことができるHLC（High-level Controller）を階層的に組み合わせて歩行動作を獲得する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DeepLOCO.png`,alt="180330DeepLOCO")
+    .item3
+      .text
+        h1 新規性・結果
+        p 階層的な強化学習（Hierarchical Reinforcement Learning）により歩行動作を自動で獲得した。曲がりくねった道、サッカーボールのドリブル、障害物中の歩行（いずれも図に示されている）などの場面でより自然な歩行動作を獲得した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 道筋（やボールの操作）に関するインストラクションさえできれば歩行動作を獲得してくれるので、より柔軟にグラフィックスが作れる？さらに研究が進めば歩行と追加動作が指定できそう。
+        ul
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/2017-TOG-deepLoco.pdf") 論文
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/") Project
+          li
+            a(href="https://github.com/xbpeng/DeepLoco") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 13:53:45
+  +slide
+    .title Regularized Kelvinlets: Sculpting Brushes based on Fundamental Solutions of Elasticity
+    .info
+      .authors Fernando de Goes, Doug L. James
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p より自然な物理的な拘束を保持しつつ弾力によるグラフィックモデルの変形を実現した。キャラクターを擬似的につかむ、ねじる、はさむなどの影響を弾性的に表現した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330Kelvinlets.png`,alt="180330Kelvinlets")
+    .item3
+      .text
+        h1 新規性・結果
+        p グラッフィクスに弾力を持たせるような表現を実現した。詳細な結果はProject Pageの動画を参照。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="www") 論文
+          li
+            a(href="http://graphics.pixar.com/library/Kelvinlets/index.html") Project
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 12:21:25
+
+  +slide
+    .title Variance-Minimizing Transport Plans for Inter-surface Mapping
+    .info
+      .authors M. Mandad et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 密な3次元サーフェイス同士のマッピング計算に関する研究。より効率的かつ歪みが少ないモデルの生成を実現した。関節情報など意味的な点探索やサーフェイスの対応付けでなく直接的に分散を最適化して対象のサーフェイス間の転移を行う手法（variance-minimizing trannsport plan）を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330InterSurface.png`,alt="180330InterSurface")
+    .item3
+      .text
+        h1 新規性・結果
+        p 凸最適化によりこれを計算し、なおかつ疎密探索により効率的な計算ができることが判明した。モデルの例は図を参照。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjg8ZW5iJPaAhVEiLwKHdILBv0QFggoMAA&url=http%3A%2F%2Fwww.geometry.caltech.edu%2Fpubs%2FMCKAD17.pdf&usg=AOvVaw0jLXBRcwb5TLC0arn81nGR") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=XOIpY2rZjKw") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 12:08:00
+
+  +slide
     .title Needs and Expectations for Fully Autonomous Vehicle Interfaces
     .info
       .authors T. Amanatidis, P. Langdon, P. J. Clarkson
