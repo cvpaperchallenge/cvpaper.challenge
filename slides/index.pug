@@ -2,6 +2,136 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Progressive Neural Architecture Search
+    .info
+      .authors Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy
+      .conference arXiv 1712.00559
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 強化学習・遺伝的アルゴリズムによりニューラルネット構造を探索するProgressive Neural Architecture Search (PNAS)の提案。従来法の
+          a(href="https://arxiv.org/abs/1707.07012") Zoch+,CVPR2018
+          |と比較すると5倍も高速な探索アルゴリズムとなった。「探索のための探索」を行うヒューリスティックな探索を実施して簡単なものから複雑な構造への拡張を実施する。Progressive (simple to complex)な探索が効率化と高精度なモデルの発見に寄与した。図はセル（畳み込みの最小ユニットでGoogLeNetのインセプションのようなもの）とセルの組み合わせによるアーキテクチャを示す。従来法であるNASNetと類似する構造になったと主張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PNAS.png`,alt="180330PNAS")
+    .item3
+      .text
+        h1 新規性・結果
+        p アーキテクチャ探索自体を人間ではなく強化学習に任せることでCIFAR/ImageNetにてstate-of-the-art。より効率的に従来法と類似する構造に行き着くことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 構造探索自体もハンドクラフト特徴と同様にやることがなくなるので、ますますデータを集める方に人間は注力？（だがデータを集める方も自動で集まる仕組みがどんどん整えられている）
+        ul
+          li
+            a(href="https://arxiv.org/abs/1712.00559") 論文
+          li
+            a(href="https://github.com/tensorflow/models/tree/master/research/slim#Pretrained") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 11:08:02
+
+  +slide
+    .title MentorNet: Regularizing Very Deep Neural Networks on Corrupted Labels
+    .info
+      .authors Lu Jiang, Zhengyuan Zhou, Thomas Leung, Li-Jia Li, Li Fei-Fei
+      .conference arXiv 1712.05055
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p データ自体を正則化し重み付けを行い、各データサンプルに重要度を与えて柔軟に学習する仕組みを考案した。データの入力に対して、MentorNetはミニバッチごとにどの程度の重みをつければ良いのかを返却してDeepCNNを学習する。知識蒸留などと同様にMentorNetとStudentNetが存在してCurriculum Learningにより徐々に学習を進める。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329MentorNet.png`,alt="180329MentorNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p あまり整備されていないデータの場合（e.g. ウェブ画像）にはノイズが誤っていたり、なかったり、崩れていたりするが、本論文で提案のMentorNetではデータに重要度を与えて、どのデータをどの程度信頼して良いのかを与えた。Weakly Supervised学習よりも精度が高いことを示した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1712.05055.pdf") 論文
+          li
+            a(href="https://github.com/arXivTimes/arXivTimes/issues/566") 参考
+          li
+            a(href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf") Curriculum Learning
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 16:00:41
+
+  +slide
+    .title Long-term Tracking in the Wild: A Benchmark
+    .info
+      .authors Jack Valmadre, Luca Bertinetto, João F. Henriques, Ran Tao, Andrea Vedaldi, Arnold Smeulders, Philip Torr, Efstratios Gavves
+      .conference arXiv 1803.09502
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 従来データよりも（最低でも2分以上のビデオが含まれる）長期にわたる物体追跡のビデオデータセットを提供、さらには評価用サーバも提供して長期物体追跡の研究に貢献する。同データセットは366シーケンスを含め、14時間以上のビデオ、150万のフレームを含みこれはOTB-100の約26倍のデータサイズである。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329LongTermTrackingDB.png`,alt="180329LongTermTrackingDB")
+    .item3
+      .text
+        h1 新規性・結果
+        p データセットを提供すると同時に、ベンチマークとして代表的なトラッキング手法を実装して精度を算出した。手法はSiamFC、TLD、MDNet、SINT、SiamFC、ECO-HC、EBT、BACF、Staple、LCTを比較した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p トラッキングはより長期になるし、するべき。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.09502") 論文
+          li
+            a(href="https://oxuva.github.io/long-term-tracking-benchmark/") Project
+          li
+            a(href="https://oxuva.github.io/long-term-tracking-benchmark/video_grid.html") Video
+          li
+            a(href="https://github.com/oxuva/long-term-tracking-benchmark") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 15:16:07
+
+  +slide
+    .title Am I Done? Predicting Action Progress in Videos
+    .info
+      .authors Federico Becattini, Tiberio Uricchio, Lorenzo Seidenari, Alberto Del Bimbo, Lamberto Ballan
+      .conference ECCV 2018 Submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 人物行動の進行を予測するDNNNのネットワークであるProgressNetを提案する。ProgressNetでは動画の入力において、現在フレームからその後の行動の未来の進行状況を予測する。Faster R-CNNのフレームワークを参照して、さらにLSTMのネットワークを統合してフレームを予測する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329ProgressNet.png`,alt="180329ProgressNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p 実験はUCF-101とJ-HMDBデータセットにて行った。Faster R-CNN + LSTMベースの手法で従来法よりもよく、行動推定とbbox検出を同時に達成した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1705.01781v3") 論文
+          li
+            a(href="https://github.com/jinwchoi/awesome-action-recognition") Awesome Action Recognition
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 14:56:48
+
+  +slide
     .title WebSeg: Learning Semantic Segmentation from Web Searches
     .info
       .authors Qibin Hou, et al.
@@ -828,7 +958,7 @@ block slides
     .timestamp 2018.3.29 13:11:12
 
   +slide
-    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data 
     .info
       .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
       .conference Submission to ECCV 2018
@@ -1184,7 +1314,7 @@ block slides
     .timestamp 2018.3.24 13:30:39
 
   +slide
-    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds 
     .info
       .authors Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
       .conference CVPR 2018
@@ -1213,7 +1343,7 @@ block slides
     .timestamp 2018.3.24 13:04:44
 
   +slide
-    .title Actor and Action Video Segmentation from a Sentence
+    .title Actor and Action Video Segmentation from a Sentence 
     .info
       .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G.M. Snoek
       .conference CVPR 2018 (oral)
