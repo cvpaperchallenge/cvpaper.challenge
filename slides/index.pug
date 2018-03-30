@@ -2,6 +2,36 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Variance-Minimizing Transport Plans for Inter-surface Mapping
+    .info
+      .authors M. Mandad et al.
+      .conference SIGGRAPH 2017
+    .slide_editor a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 密な3次元サーフェイス同士のマッピング計算に関する研究。より効率的かつ歪みが少ないモデルの生成を実現した。関節情報など意味的な点探索やサーフェイスの対応付けでなく直接的に分散を最適化して対象のサーフェイス間の転移を行う手法（variance-minimizing trannsport plan）を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330InterSurface.png`,alt="180330InterSurface")
+    .item3
+      .text
+        h1 新規性・結果
+        p 凸最適化によりこれを計算し、なおかつ疎密探索により効率的な計算ができることが判明した。モデルの例は図を参照。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjg8ZW5iJPaAhVEiLwKHdILBv0QFggoMAA&url=http%3A%2F%2Fwww.geometry.caltech.edu%2Fpubs%2FMCKAD17.pdf&usg=AOvVaw0jLXBRcwb5TLC0arn81nGR") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=XOIpY2rZjKw") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 12:08:00
+
+  +slide
     .title Needs and Expectations for Fully Autonomous Vehicle Interfaces
     .info
       .authors T. Amanatidis, P. Langdon, P. J. Clarkson
