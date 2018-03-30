@@ -2,10 +2,42 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Movie Editing and Cognitive Event Segmentation in Virtual Reality Video
+    .info
+      .authors A. Serrano, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p VRビデオ鑑賞において多数ユーザの視線トラッキングを解析してVR動画の編集を行う研究を実施した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330VRVideo.png`,alt="180330VRVideo")
+    .item3
+      .text
+        h1 新規性・結果
+        p VRのビデオ編集において最新の認知科学を適用、VRビデオ鑑賞におけるコンテンツを強化した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/docs/Serrano_SIGG2017_VR-cine.pdf") 論文
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/projects/VR-cinematography") Project
+          li
+            a(href="https://www.youtube.com/watch?v=cF79m_U31cU") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:59:04
+
+  +slide
     .title VNect: Real-time 3D Human Pose Estimation with a Single RGB Camera
     .info
       .authors A. Uthors, B. Uthors and C. Uthors
-    .slide_editor a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
 
     .item1
       .text
