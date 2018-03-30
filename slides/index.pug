@@ -2,6 +2,41 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Learning Intelligent Dialogs for Bounding Box Annotation
+    .info
+      .authors K. Konyushkova et al.,
+      .conference arXiv:
+      .paper_id 1712.08087
+    .item1
+      h1 概要
+      .text.
+        Bounding Boxのアノテーションを効率的に行うためのシステムを提案．
+        手動でBounding Boxを描く，Detectorが生成したBounding Boxが正しいかを判定するという2つの作業を
+        どのようにやらせると効率的かをシステムが学習．
+        確信度が高そうなBounding Boxを判定させて，ダメだったら手動で描かせる，など．
+        Boxがacceptされる確率を推定して最適なアノテーション方法を決定する方法と，
+        強化学習ベースで決定する方法の2つを提案．
+        固定された戦略でアノテーションするよりも，
+        提案手法により決定する戦略を用いる方が多くの場合で効率的なことを実験的に示した．
+
+    .item2
+      img(src=figpath+"180330_iad.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 効率的なBounding Boxのアノテーションを支援するためのシステムを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Bounding Boxがacceptされる確率って本来はそのBoxのスコアで完結されているべきな気もする
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
     .title Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks
     .info
       .authors A. Gupta et al.,
@@ -19,7 +54,6 @@ block slides
         シーン中のすべての人の関係を扱う新たなPooling方法を提案して一つ目の問題を解決し，
         過去の軌跡を入力として未来の軌跡を生成するGANにより二つ目の問題を解決した．
         
-
     .item2
       img(src=figpath+"180330_socialgan.png")
     .item3
