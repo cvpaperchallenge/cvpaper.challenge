@@ -2,6 +2,41 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Coherence in One-Shot Gesture Recognition for Human-Robot Interaction
+    .info
+      .authors Maria E. Cabrera, Richard M. Voyles, Juan P. Wachs
+      .conference HRI'18 LBR
+      .paper_id pp. 75-76
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p ロボットのジェスチャをワンショットで認識する時，人間と機械でどんな違いがあるのかを見た．
+          |ロボットは2腕あるロボット腕のBaxter．
+          |機械側はワンショット骨格情報からHMM，SVM，CRF，DTWで認識．人間側は10人．
+          |モーションのサンプルは，動きが大きく変わる顕著な時点を選んだ．
+        p 人間は'Shoot'が比較的わかりにくい（3/10人わからなかった）．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Coherence_in_One-Shot_Gesture_Recognition_for_Human-Robot_Interaction_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ロボットのジェスチャのワンショット認識をHRIに水平思考しただけだが，
+          |HRIとしての話題としてだけ見れば結構面白い．
+          |「選ぶジェスチャとか機械側の手法に大きく依るじゃん」などのツッコミが多々あるが，そこは今後に期待．
+    .item4
+      .text
+        h1 リンク集・コメント
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3176977") ACM library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 15:47:02
+
+  +slide
     .title Needs and Expectations for Fully Autonomous Vehicle Interfaces
     .info
       .authors T. Amanatidis, P. Langdon, P. J. Clarkson
