@@ -44,6 +44,35 @@ block slides
     .timestamp 2018.3.30 13:25:21
 
   +slide
+    .title Learning Transferable Architectures for Scalable Image Recognition
+    .info
+      .authors Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 遺伝的アルゴリズムを参考にしてニューラルネット構造のシードとその周辺探索を行うNeural Architecture Search (NASNet)を提案。自動でアーキテクチャを探索するという手法を考案し、TensorFlowやGoogleのサービスであるAutoMLに搭載した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330NASNet.png`,alt="180330NASNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p ImageNetの識別にて82.7%（top1）、96.2%（top5）を達成した。この精度は人間が探索したアルゴリズムであるSE-Net（ILSVRC2017勝者）よりも1.2%高い精度である。CIFARにおいても同様にState-of-the-art、さらにFaster R-CNNと組み合わせて物体検出を行った場合でもCOCOにて43.1%でSoTA。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1707.07012") 論文
+          li
+            a(href="https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet") TensorFlow
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 11:45:54
+
+  +slide
     .title Progressive Neural Architecture Search
     .info
       .authors Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy
@@ -1000,7 +1029,7 @@ block slides
     .timestamp 2018.3.29 13:11:12
 
   +slide
-    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data 
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data (2)
     .info
       .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
       .conference Submission to ECCV 2018
@@ -1356,7 +1385,7 @@ block slides
     .timestamp 2018.3.24 13:30:39
 
   +slide
-    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds 
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds  (2)
     .info
       .authors Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
       .conference CVPR 2018
@@ -1385,7 +1414,7 @@ block slides
     .timestamp 2018.3.24 13:04:44
 
   +slide
-    .title Actor and Action Video Segmentation from a Sentence 
+    .title Actor and Action Video Segmentation from a Sentence (2)
     .info
       .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G.M. Snoek
       .conference CVPR 2018 (oral)
