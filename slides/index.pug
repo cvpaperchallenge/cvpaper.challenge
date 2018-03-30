@@ -2,6 +2,90 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title P2P-NET: Bidirectional Point Displacement Net for Shape Transform
+    .info
+      .authors Kangxue Yin, Hui Huang, Daniel Cohen-Or, Hao Zhang
+      .conference SIGGRAPH 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2つの領域(例えば、骨格と表面、部分的および完全なスキャンデータ)からポイントベースの形状表現に幾何学的変換するための、汎用DNNであるP2P-NETの提案。データから学習された点群に変換、またはその逆の変換を行う双方向点変位ネットワーク。lossは、予測された点集合と目標点集合との間の形状的類似性を比較する幾何学的損失と、逆方向に進む変位ベクトル間の相互正規化項とを組み合わせる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331P2PNET.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ポイントセットを1つのドメインから別のドメインにマッピングするように学習することにより、2Dまたは3D空間に配置できる。また、マッピングは2Dプロファイルを3D形状に変換することも可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p P2P-NETをもちいたアプリケーションを複数開発し、様々なポイントベースの形状変換問題を解決するネットワークの有効性、汎用性、および可能性を示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09263.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Fast and Accurate Single Image Super-Resolution via Information Distillation Network
+    .info
+      .authors Zheng Hui, Xiumei Wang, Xinbo Gao
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 元の低解像度画像から高解像度画像を再構築するための、深くてコンパクトなCNNを提案。提案モデルは、特徴抽出ブロック、積み重ね情報蒸留ブロック、再構成ブロックの3部構成。これにより、情報量が豊富かつ効率的に特徴を徐々に抽出できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331FaASISR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNが超解像殿画像を扱うようになってきたが、ネットワークが増大するにつれて、計算上の複雑さとメモリ消費という問題が生じる。これらの問題を解決するためのコンパクトなCNN。
+    .item4
+      .text
+        h1 結果・リンク集
+        p PSNR、SSIM、IFCの4つのデータセットで検証し、精度向上を確認。デシジョンおよび圧縮アーチファクト低減などの他の画像修復問題にも応用可能？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08679.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title ITERATIVE LOW-RANK APPROXIMATION FOR CNN COMPRESSION
+    .info
+      .authors Maksym Kholiavchenko
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNを圧縮するために、低ランク近似を適用する反復アプローチの提案。入力モデルを反復して圧縮していき、構成と重みを出力する。反復の中でノイズ低減をアルゴリズムを追加し、精度低下を避ける。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ILRA.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNには数千万のパラメータが含まれているため、組み込み機器で効率的に動作することは不可能。AlexNet、VGG-16、YOLOv2、およびTiny YOLOネットワークを圧縮することで、CNNを多様化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p より高い圧縮率かつ、精度の低下が少ない。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08995") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Coherence in One-Shot Gesture Recognition for Human-Robot Interaction
     .info
       .authors Maria E. Cabrera, Richard M. Voyles, Juan P. Wachs
