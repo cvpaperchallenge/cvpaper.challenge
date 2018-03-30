@@ -2,6 +2,715 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title WebSeg: Learning Semantic Segmentation from Web Searches
+    .info
+      .authors Qibin Hou, et al.
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 特定のキーワードに関連したFlickr画像を用いて、ユーザーのアノテーションに頼ることなく、自動的でセマンティックセグメンテーションの学習を行うWebSegの提案。(1)ウェブクローラによって、ユーザ定義のキーワードに関連する画像をダウンロード。(2)数種類の低レベルキュー(顕著性、エッジなど)を抽出し、それらを学習のヒューリスティクスとして結合。(3)Noise Filtering Module(NFM)を備えたセマンティックセグメンテーションネットワーク。の3部構成。ベースはDeeplab-Large-FOV。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330WebSeg.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p フリーのWeb画像からセマンティックセグメンテーションを学習。ノイズの多いWeb画像と不完全なproxy ground-truthに関して、学習に望ましくないノイズの多い領域を除去するオンラインノイズフィルタリングメカニズムを考案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Web画像のみを使った学習にもかかわらず、従来の最先端の方法と比較して同等の結果を出している。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09859.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Three Birds One Stone: A Unified Framework for Salient Object Segmentation, Edge Detection and Skeleton Extraction
+    .info
+      .authors Qibin Hou, et al.
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顕著性オブジェクトセグメンテーション、スケルトン抽出、エッジ検出など、ピクセル単位のバイナリ問題における類似点を見出し、一つのフレームワークに統一。 CNNをより有効的に活用するために、異なるレベルのフィーチャマップから信号を受け取るtransition nodeという概念を導入している。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TBOS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 異なるタスクを一つのフレームワークに統一させることで、全てのタスクにおいて精度向上を図っている。他のバイナリピクセルラベリングタスクも統一できる可能性を示している。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 本質的に異なるタスクでも、統一してしまうことで、それら全てで効率よく機能し、現在(2018年)の単一の最先端の手法よりはるかに優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09860.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Towards Human-Machine Cooperation:Self-supervised Sample Mining for Object Detection
+    .info
+      .authors Keze Wang, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出の課題を考慮し、既存のActive Learning(AL)の欠点を改善することを目的とした、Self-Supervised Sample Mining(SSM)の提案。ラベルなし、もしくは一部ラベルのないデータを使って学習することができる。交差検証後のスコアによってサンプルを選別。低い場合にはユーザによってアノテーション、高い場合にはそのままラベルとして採用。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SSM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のAL法では主に、単一の画像コンテクスト内でサンプル選択基準を定義し、大規模な物体検出において最適ではなく、頑強性および非実用的である。SSMによって、ユーザが必要な部分にだけ介入し、アノテーションの作業を軽減。
+    .item4
+      .text
+        h1 結果・リンク集
+        p アノテーションが少ないデータセットにおいても最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09867.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Image Semantic Transformation: Faster, Lighter and Stronger
+    .info
+      .authors Dasong Li, Jianbo Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味的変換を施し，画像を再構成する，facenet‘sのユークリッド空間を使ったモデルであるImage-Semantic-Transformation-Reconstruction-Circle(ISTRC)の提案。その名の通り、構造が円になっている。画像を識別するために、FaceNetの最後の層を用いて、画像をユークリッド空間に変換。意味理解のためにユークリッド空間ベクトルを操作し、マッピング。GANを使って、ベクトルから画像を再構成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 本論文では10種類の変換(「男性と女性」「笑顔を加える」「口を開ける」「大きい/小さい鼻」「年をとる」など)を実施。今後は、種類を拡張し、より高解像度の画像に適応できるように改良予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09932.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A New Target-specific Object Proposal Generation Method for Visual Tracking
+    .info
+      .authors Guanjun Guo, et al.
+      .conference IEEE Transactions on Cybernetisc
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 映像のコンテキスト情報を活用した、bject proposal手法であるTpecific Object Proposal Generation(TOPG)の提案。具体的には、対象物体のobject proposalを生成する際に、色とエッジの情報を統合する。これにより，様々な環境に適応することができ、 TOPGのリコールが大幅に増加。また、生成したobject proposalのランク精度を高めるためのランク付け手法を提案。そして、TOPGをvisual trackingに適応したTOPG-based tracker (TOPGT)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TOPG.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のobject proposal手法をビデオなどのタスクに適用したときに発生する、モーションブラー、低コントラスト、変形などの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TOPGおよびTOPGT共に既存の研究より精度向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10098.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Robust Depth Estimation from Auto Bracketed Images
+    .info
+      .authors Sunghoon Im, Hae-Gon Jeon, In So Kweon
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カメラ機能であるバーストショットから、堅牢な深度推定手法の. Deep Multi-view Stereo Matching(DMVS)を提案。バースト画像に適したフローと深度の幾何学的変換を導入し、学習を用いたマルチビューステレオマッチングを効果的に実行。次に、フローネットワークに幾何変換を組み込んだ深度推定によって正確な奥行きマップを生成。図より、青破線はフローから深度に変換。赤破線は逆に、深度からフローに変換し、次のフレームで使用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DMVS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p スマホなどの小型機器において奥行きを捉えるのは大事になってくるが、低照明条件下では精度が低い。様々な強度（オートブラケット）または強いノイズ（高ISO）を持つバーストを使用することによって精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンとDSLRカメラで、されたさまざまなデータセットの最先端の手法を上回る。 さらに、推定された深度が画質向上と写真編集に適用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07702.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Representation Learning by Predicting Image Rotations
+    .info
+      .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNにおいて、入力画像に適用された2次元回転を認識するように学習する、自己管理特徴学習手法を提案。この単純なタスクによって、semantic feature learningの質の向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330URL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 2018年現在、CNNは画像の意味的要素まで学習できるようになってきた。しかし、これには大量のデータが必要なため、教師なし学習に着目。回転を認識させる学習によって、物体認識、物体検出、セグメンテーションなどのさまざまな視覚的認識タスクに有用な意味的特徴を学習させることに成功。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ImageNet分類、PASCAL分類、PASCAL検出、PASCALセグメンテーション、CIFAR-10分類の教師なし特徴学習精度を大幅に改善。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07728.pdf") 論文
+          li
+            a(href="https://github.com/gidariss/FeatureLearningRotNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Fusion of stereo and still monocular depth estimates in a self-supervised learning context
+    .info
+      .authors Diogo Martins, Kevin van Hecke, Guido de Croon
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自律ロボットにおける、奥行き推定能力を向上させる手法の提案。ロボットが教師あり学習(CNN)でステレオビジョン深度を学習し、静止画像からの深さを推定。このとき、ステレオ視からの深度推定結果だけでなく、単眼深度推定と静止画像をマージすることで精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330FOSASMDE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ステレオとモノラルの両方を融合された場合の推定値が、ステレオだけの場合よりも高パフォーマンス。近距離を除くほとんどの距離において、単眼視力よりも立体視がより正確に行える。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KITTIデータセットとParrot SLAMDunkで実験した結果、ステレオ視覚ロボットに自律走行させるための、より正確なデプスマップを作成できることを示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07512.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Dynamic Sampling Convolutional Neural Networks
+    .info
+      .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。
+        p Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07624.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自己検索モジュールを学習時のガイダンスとし、識別キャプションの生成を促す画像キャプションフレームワークを提案。(1)自己検索ガイダンスによって、キャプションの識別性を評価し、生成されたキャプションの品質を保つ。(2)生成されたキャプションと画像との対応は、アノテーションを伴わない生成プロセスに自然に組み込まれており、大量の未ラベル画像を使用して、面倒なアノテーションを付けを行わずにキャプションのパフォーマンスを向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330STAD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来の主流なアプローチのほとんどは言語構造パターンを模倣しており、頻繁なフレーズや文章を複製して、各イメージのユニークな側面を無視するというステレオタイプになる傾向。本手法では、似たような画像を入力した場合でも、キャプションの弁別性を向上させることができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p MS-COCOとFlickr30kデータセットで提案された有効性を実証し、優れた字幕演出をより差別的な字幕とともに示す。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Exploiting deep residual networks for human action recognition from skeletal data
+    .info
+      .authors Huy-Hieu Pham, Louahdi Khoudour, Alain Crouzil, Pablo Zegers, Sergio A. Velastin
+      .conference CVIU 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p デプスセンサによって得られる骨格情報を用いて人間の行動認識に深いResNetsを適用する。スケルトンシーケンスで、人体関節の3D座標を画像ベースの表現に変換し、RGB画像として格納。これらの画像は、3D運動の空間 - 時間的進化をとらえることができ、D-CNNによって効率的に学習可能。次に、得られた画像ベースの表現から特徴量を学習し、行動クラスに分類するためにResNetsにて学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330EDRN.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p MSR Action 3D、KARD、およびNTU-RGB + Dデータセットを含む3つのデータセットで評価。最先端の精度かつ、計算量の削減。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07781.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330EDRN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .info
+      .authors Tolga Birdal, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 点群の一般的な幾何学的二次形状を検出するセグメンテーションフリーの手法を提案。オクルージョン、部分的な可視性、クラッタを用いてPoint Cloudsの二次形状(プリミティブ)を検出。ノイズの多い困難なシーンでも、一般的なマルチオブジェクトプリミティブ検出を実行できる最初の手法。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TADOQ.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 日常生活には、 平面、円錐、球、円柱などの3Dプリミティブで構成される人工物に満ち溢れている。これらのプリミティブを介して3Dシーンを抽象化することで、幾何学的形態が高レベル3Dシーン理解に使えるのでは？という発想。従来とは異なり、単一のアルゴリズムで全てのプリミティブを検出することができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 研究が進めばリアルタイムを実現できるかも？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07191.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
+    .title Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
+    .info
+      .authors Xiaolong Wang, Yufei Ye, Abhinav Gupta, The Robotics Institute, Carnegie Mellon University
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カテゴリの単語の埋め込みと他のカテゴリとの関係(視覚データが提供される)を使用するだけで、学習例がないカテゴリの分類器を学習するゼロショット認識モデルを提案。 knowledge graph (KG) を入力とし、Graph Convolutional Network(GCN)を基に、セマンティック埋め込みとカテゴリの関係の両方を使用して分類器を予測する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330KG.jpg`)
+    .item3
+      .text
+        h1 手法
+        p 学習済のKGが与えられると、各ノードに対する意味的埋め込みとして入力を得る。一連のグラフ畳み込みの後、各カテゴリの視覚的分類器を予測する。トレーニング中に、カテゴリの視覚的分類器が与えられ、GCNパラメータを学習。テスト時に、これらのフィルタを使用して、見えないカテゴリの視覚的分類器を予測する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KGのノイズに対してロバストであり、最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08035.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Actor and Action Video Segmentation from a Sentence
+    .info
+      .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 文章を用いて、ビデオ内のアクターとそのアクションについて、ピクセル単位でセグメンテーションを行うモデルを提案。ビデオに最適化されたエンコーダとデコーダのアーキテクチャを使用し、時間的性質を考慮したfully-convolutionalモデル。文章によるセグメンテーションを可能にするために、2つの既存のデータセットを、アクターとそのアクションを記述する文章のアノテーションで拡張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p 従来手法とは異なり、固定されたアクターとアクションのペアを学習し、自然言語の入力文からセグメンテーションを推定。 これにより、同一カテゴリ内のアクターを細かく識別し、アクターとアクションのインスタンスを識別することが可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07485.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatial-Temporal Patterns
+    .info
+      .authors Jianming Lv, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 歩行者の時空間パターンを用いた、教師なし学習の人物再同定アルゴリズムであるTFusionを提案。既存の人物再同定アルゴリズムのほとんどは、小サイズのラベル付きデータセットを用いた教師付き学習手法である。そのため、大規模な実世界のカメラネットワークに適応することは困難である。また、そこで、ラベルなしデータセットも用いたクロスデータセット手法によって精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TFusion.jpg`)
+    .item3
+      .text
+        h1 手法
+        p まず、歩行者の空間的-時間的パターンを学習するために、ラベル付きデータセットを用いて学習した視覚的分類器を、ラベルなしデータセットに転送。次に、Bayesian fusion modelによって、学習された時空間パターンを視覚的特徴と組み合わせて、分類器を改善。最後に、ラベルのないデータを用いて分類器を段階的に最適化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 人物再同定のための、教師なしクロスデータセット学習手法の中では最先端。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07293.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title HATS: Histograms of Averaged Time Surfaces for Robust Event-based Object Classification
+    .info
+      .authors Amos Sironi, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p イベントベースカメラにおける、識別アルゴリズムの提案。本研究では、(1)イベントベースのオブジェクト分類のための低レベル表現とアーキテクチャの欠如、(2)実世界における大きなイベントベースのデータセットの欠如、の2つの問題に取り組む。新しい機械学習アーキテクチャ、イベントベースの特徴表現(Histograms of Averaged Time Surfaces)、データセット(N-CARS)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330NCARS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p イベントベースのカメラは、従来のフレームベースのカメラと比較して、高時間分解能、低消費電力、高ダイナミックレンジという点で優れており、様々なシーンで応用が利く。しかし、イベントベースのオブジェクト分類アルゴリズムの精度は未だ低い。特徴表現には過去時間の情報を使用。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 過去の情報を使うことで、既存のイベントベースカメラによる認識手法よりも優れた結果となった。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07913.pdf") 論文
+          li
+            a(href="http://www.prophesee.ai/dataset-n-cars/") データセット
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Speech-Driven Facial Reenactment Using Conditional Generative Adversarial Networks
+    .info
+      .authors Seyed Ali Jalalifar, Hosein Hasani, Hamid Aghajan
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SDFR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p LSTMとC-GANのネットワークは、独立しているので、ターゲットの人物ではなく、他ソースからのオーディオでターゲットの顔を口パクさせることが可能。 顔の変換、アプリなど、多くの新しいアプリケーションに応用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07461.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
+    .info
+      .authors Tao Hu, et al.
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SIR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06598.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Zoom and Learn: Generalizing Deep Stereo Matching to Novel Domains
+    .info
+      .authors Jiahao Pang, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 学習済みデータと新しいドメイン(ground-truthなし)の両方を用いて、ディープステレオマッチングを行うZoom and Lean(ZOLE)の提案。これにより，他のドメインに一般化できるプレトレインモデルを作成することができる。一般化に際する不具合を抑制しながらアップサンプリングを行う、反復最適化問題を定式化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ZOLE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ground-truthデータが不足しているため、CNNを用いたステレオマッチングでは学習済みステレオモデルを新規ドメインに一般化することが困難とされていた。CNN学習時のイテレーションごとに最適化していくイメージ。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンで収集したデータを従来の手法に入力すると、物体のエッジがぼやけてしまうが、提案手法のZOLEではこれらを改善できる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06641.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Alive Caricature from 2D to 3D
+    .info
+      .authors Qianyi Wu, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2Dの似顔絵画像から3Dの似顔絵を作成するためのアルゴリズムの提案。似顔絵画像のテストデータとしてはカリカチュアを使用し、カリカチュア画像の3Dモデルとテクスチャ化された画像を生成する。データは、標準の3D顔の変形を座標系に配置(下図、 xは口の開き具合)し、金のオリジナルデータから線形結合によって白い顔を生成する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330AC2Dto3D_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p カリカチュアを集めたデータセットを作って学習するのではなく、標準の3D顔のデータセットから実装でき、アプリケーションの柔軟さを推している。
+        p 3DMMやFaceWareHouseなどの従来手法と比較して、形の歪みが少なく、従来のものよりも綺麗な3D顔の出力が可能。顔以外にも、概形の予測が可能なオブジェクトなら応用できる？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06802.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330AC2Dto3D_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Face2Text: Collecting an Annotated Image Description Corpus for the Generation of Rich Face Descriptions
+    .info
+      .authors Albert Gatt, et al. 
+      .conference LREC 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顔の記述に特化し、より具体的に記載できるイメージキャプショニングの提案。シーン記述のようなオブジェクトやその関係性などではなく、画像から得られた属性に依存した記述となる。データはクラウドソーシングを使ってアノテーションを収集し(The Face2Text dataset)、アノテーションの解析まで行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TF2TD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p “顔についてのキャプション”という新しいテーマのデータセットを提案、およびその解析。
+    .item4
+      .text
+        h1 結果・リンク集
+        p The Face2Text datasetは、感情的または推論的な属性を含んだアノテーションを含む。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03827.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Style Aggregated Network for Facial Landmark Detection
+    .info
+      .authors Xuanyi Dong, Yan Yan, Wanli Ouyang, Yi Yang, University of Technology Sydney, The University of Sydney
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顔のランドマーク検出。顔そのもののばらつきの他に、グレースケールやカラー画像、明暗などの画像スタイルが変わっても同様に検出できるStyle Aggregated Network(SAN)の提案。まず、(1)入力画像をさまざまなスタイルに変換し、スタイルを集約し、(2)顔のランドマーク予測する。(2)は、元画像とスタイルを集約した特徴の両方を入力し、融合してカスケード式のヒートマップ予測を生成する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SAN_1.jpg`)
+    .item3
+      .text
+        h1 結果・リンク集
+        p Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.04108.pdf") 論文
+          li
+            a(href="https://github.com/D-X-Y/SAN") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330SAN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title phi-LSTM: A Phrase-based Hierarchical LSTM Model for Image Captioning
+    .info
+      .authors Ying Hua Tan, et al.
+      .conference ACCV 2016
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p フレーズベースでの画像キャプショニングを行うphrase-based hierarchical Long Short-Term Memory (phi-LSTM)の提案。(1)画像に関連した名詞句を生成(低レベル)、(2)コーパス内のフレーズと他の単語から適切なキャプションを生成(高レベル)、それぞれの処理に専念するRNNモデルを実装することでフレーズベースを実現している。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330phiLSTM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来までは、オブジェクトを検出/名前付けし、その属性を記述して、その関係/相互作用を認識するモデルが提案されている。従来研究では単語のシーケンスだけでキャプションを生成していたが、本研究ではフレーズと単語の組み合わせのシーケンスとして文章をエンコードする。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1608.05813.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Discriminative Learning of Latent Features for Zero-Shot Recognition
+    .info
+      .authors Minghui Yan Li, et al
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Zero-shot learning(ZSL)における、視覚的および意味的インスタンスを別々に表現し学習するLatent Discriminative Features Learning(LDF)の提案。 (1)ズームネットワークにより差別的な領域を自動的に発見することができるネットワークの提案。(2)ユーザによって定義された属性と潜在属性の両方について、拡張空間における弁別的意味表現の学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LDF.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ZSLは、画像表現と意味表現の間の空間を学習することによって、見えない画像カテゴリを認識する。 既存の手法では、視覚と意味空間を合わせたマッピングマトリックスを学習することが中心的課題。提案手法では、差別的に学習するとうアプローチで識別精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 2つのコンポーネントによって、互いに支援しながら学習することで最先端の精度に。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06731.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Boosted Convolutional Neural Networks
+    .info
+      .authors Mohammad Moghimi et al.
+      .conference BMVC, 2016.
+    .slide_editor Yuta Matsuzaki
+
+    .item1
+      .text
+        h1 概要
+        p CNNとBoostingのメリットを組み合わせ，BoostingするためのBoostCNNを提案．このモデルを学習するための，重みを更新アルゴリズムを設計．具体的にはBoostingの各反復において，Boostingの重みを近似するためのネットワークの学習を行う．また，異なるネットワークにおいても使用可能であり，優れた性能を示すだけでなく，適切なネットワーク構造を探索するための効率を上げることができると示唆．
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329boostingcnn.png`)
+    .item3
+      .text
+        h1 新規性
+        p fine-grained認識においてSOTA．
+    .item4
+      .text
+        h1 結果・リンク集
+        p 
+        ul
+          li
+            a(href="http://www.bmva.org/bmvc/2016/papers/paper024/abstract024.pdf") 論文
+          li
+            a(href="https://github.com/mmoghimi/BoostCNN") Code
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title Rotation-Sensitive Regression for Oriented Scene Text Detection
     .info
       .authors Minghui Liao, et al.

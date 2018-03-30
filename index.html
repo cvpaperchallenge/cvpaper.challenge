@@ -22,6 +22,931 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">WebSeg: Learning Semantic Segmentation from Web Searches</div>
+            <div class="info">
+              <div class="authors">Qibin Hou, et al.</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>特定のキーワードに関連したFlickr画像を用いて、ユーザーのアノテーションに頼ることなく、自動的でセマンティックセグメンテーションの学習を行うWebSegの提案。(1)ウェブクローラによって、ユーザ定義のキーワードに関連する画像をダウンロード。(2)数種類の低レベルキュー(顕著性、エッジなど)を抽出し、それらを学習のヒューリスティクスとして結合。(3)Noise Filtering Module(NFM)を備えたセマンティックセグメンテーションネットワーク。の3部構成。ベースはDeeplab-Large-FOV。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330WebSeg.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>フリーのWeb画像からセマンティックセグメンテーションを学習。ノイズの多いWeb画像と不完全なproxy ground-truthに関して、学習に望ましくないノイズの多い領域を除去するオンラインノイズフィルタリングメカニズムを考案。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>Web画像のみを使った学習にもかかわらず、従来の最先端の方法と比較して同等の結果を出している。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.09859.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Three Birds One Stone: A Unified Framework for Salient Object Segmentation, Edge Detection and Skeleton Extraction</div>
+            <div class="info">
+              <div class="authors">Qibin Hou, et al.</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>顕著性オブジェクトセグメンテーション、スケルトン抽出、エッジ検出など、ピクセル単位のバイナリ問題における類似点を見出し、一つのフレームワークに統一。 CNNをより有効的に活用するために、異なるレベルのフィーチャマップから信号を受け取るtransition nodeという概念を導入している。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330TBOS.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>異なるタスクを一つのフレームワークに統一させることで、全てのタスクにおいて精度向上を図っている。他のバイナリピクセルラベリングタスクも統一できる可能性を示している。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>本質的に異なるタスクでも、統一してしまうことで、それら全てで効率よく機能し、現在(2018年)の単一の最先端の手法よりはるかに優れている。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.09860.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#2]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Towards Human-Machine Cooperation:Self-supervised Sample Mining for Object Detection</div>
+            <div class="info">
+              <div class="authors">Keze Wang, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>物体検出の課題を考慮し、既存のActive Learning(AL)の欠点を改善することを目的とした、Self-Supervised Sample Mining(SSM)の提案。ラベルなし、もしくは一部ラベルのないデータを使って学習することができる。交差検証後のスコアによってサンプルを選別。低い場合にはユーザによってアノテーション、高い場合にはそのままラベルとして採用。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330SSM.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>既存のAL法では主に、単一の画像コンテクスト内でサンプル選択基準を定義し、大規模な物体検出において最適ではなく、頑強性および非実用的である。SSMによって、ユーザが必要な部分にだけ介入し、アノテーションの作業を軽減。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>アノテーションが少ないデータセットにおいても最先端の精度。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.09867.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#3]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Image Semantic Transformation: Faster, Lighter and Stronger</div>
+            <div class="info">
+              <div class="authors">Dasong Li, Jianbo Wang</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>画像の意味的変換を施し，画像を再構成する，facenet‘sのユークリッド空間を使ったモデルであるImage-Semantic-Transformation-Reconstruction-Circle(ISTRC)の提案。その名の通り、構造が円になっている。画像を識別するために、FaceNetの最後の層を用いて、画像をユークリッド空間に変換。意味理解のためにユークリッド空間ベクトルを操作し、マッピング。GANを使って、ベクトルから画像を再構成。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330ISTRC_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果・リンク集</h1>
+                <p>本論文では10種類の変換(「男性と女性」「笑顔を加える」「口を開ける」「大きい/小さい鼻」「年をとる」など)を実施。今後は、種類を拡張し、より高解像度の画像に適応できるように改良予定。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.09932.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330ISTRC_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#4]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">A New Target-specific Object Proposal Generation Method for Visual Tracking</div>
+            <div class="info">
+              <div class="authors">Guanjun Guo, et al.</div>
+              <div class="conference">IEEE Transactions on Cybernetisc</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>映像のコンテキスト情報を活用した、bject proposal手法であるTpecific Object Proposal Generation(TOPG)の提案。具体的には、対象物体のobject proposalを生成する際に、色とエッジの情報を統合する。これにより，様々な環境に適応することができ、 TOPGのリコールが大幅に増加。また、生成したobject proposalのランク精度を高めるためのランク付け手法を提案。そして、TOPGをvisual trackingに適応したTOPG-based tracker (TOPGT)を提案。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330TOPG.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>既存のobject proposal手法をビデオなどのタスクに適用したときに発生する、モーションブラー、低コントラスト、変形などの問題を解決。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>TOPGおよびTOPGT共に既存の研究より精度向上。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.10098.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#5]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Robust Depth Estimation from Auto Bracketed Images</div>
+            <div class="info">
+              <div class="authors">Sunghoon Im, Hae-Gon Jeon, In So Kweon</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>カメラ機能であるバーストショットから、堅牢な深度推定手法の. Deep Multi-view Stereo Matching(DMVS)を提案。バースト画像に適したフローと深度の幾何学的変換を導入し、学習を用いたマルチビューステレオマッチングを効果的に実行。次に、フローネットワークに幾何変換を組み込んだ深度推定によって正確な奥行きマップを生成。図より、青破線はフローから深度に変換。赤破線は逆に、深度からフローに変換し、次のフレームで使用する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330DMVS.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>スマホなどの小型機器において奥行きを捉えるのは大事になってくるが、低照明条件下では精度が低い。様々な強度（オートブラケット）または強いノイズ（高ISO）を持つバーストを使用することによって精度向上を図る。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>スマートフォンとDSLRカメラで、されたさまざまなデータセットの最先端の手法を上回る。 さらに、推定された深度が画質向上と写真編集に適用可能。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07702.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#6]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Unsupervised Representation Learning by Predicting Image Rotations</div>
+            <div class="info">
+              <div class="authors">Spyros Gidaris, Praveer Singh, Nikos Komodakis</div>
+              <div class="conference">ICRA 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>CNNにおいて、入力画像に適用された2次元回転を認識するように学習する、自己管理特徴学習手法を提案。この単純なタスクによって、semantic feature learningの質の向上。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330URL.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>2018年現在、CNNは画像の意味的要素まで学習できるようになってきた。しかし、これには大量のデータが必要なため、教師なし学習に着目。回転を認識させる学習によって、物体認識、物体検出、セグメンテーションなどのさまざまな視覚的認識タスクに有用な意味的特徴を学習させることに成功。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>ImageNet分類、PASCAL分類、PASCAL検出、PASCALセグメンテーション、CIFAR-10分類の教師なし特徴学習精度を大幅に改善。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07728.pdf">論文</a></li>
+                  <li><a href="https://github.com/gidariss/FeatureLearningRotNet">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#7]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Fusion of stereo and still monocular depth estimates in a self-supervised learning context</div>
+            <div class="info">
+              <div class="authors">Diogo Martins, Kevin van Hecke, Guido de Croon</div>
+              <div class="conference">ICRA 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>自律ロボットにおける、奥行き推定能力を向上させる手法の提案。ロボットが教師あり学習(CNN)でステレオビジョン深度を学習し、静止画像からの深さを推定。このとき、ステレオ視からの深度推定結果だけでなく、単眼深度推定と静止画像をマージすることで精度向上を図る。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330FOSASMDE.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>ステレオとモノラルの両方を融合された場合の推定値が、ステレオだけの場合よりも高パフォーマンス。近距離を除くほとんどの距離において、単眼視力よりも立体視がより正確に行える。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>KITTIデータセットとParrot SLAMDunkで実験した結果、ステレオ視覚ロボットに自律走行させるための、より正確なデプスマップを作成できることを示唆。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07512.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#8]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Dynamic Sampling Convolutional Neural Networks</div>
+            <div class="info">
+              <div class="authors">Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330DSCNN_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果・リンク集</h1>
+                <p>下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。</p>
+                <p>Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07624.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330DSCNN_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#9]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data</div>
+            <div class="info">
+              <div class="authors">Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>自己検索モジュールを学習時のガイダンスとし、識別キャプションの生成を促す画像キャプションフレームワークを提案。(1)自己検索ガイダンスによって、キャプションの識別性を評価し、生成されたキャプションの品質を保つ。(2)生成されたキャプションと画像との対応は、アノテーションを伴わない生成プロセスに自然に組み込まれており、大量の未ラベル画像を使用して、面倒なアノテーションを付けを行わずにキャプションのパフォーマンスを向上。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330STAD.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>従来の主流なアプローチのほとんどは言語構造パターンを模倣しており、頻繁なフレーズや文章を複製して、各イメージのユニークな側面を無視するというステレオタイプになる傾向。本手法では、似たような画像を入力した場合でも、キャプションの弁別性を向上させることができる。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>MS-COCOとFlickr30kデータセットで提案された有効性を実証し、優れた字幕演出をより差別的な字幕とともに示す。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.08314.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#10]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Exploiting deep residual networks for human action recognition from skeletal data</div>
+            <div class="info">
+              <div class="authors">Huy-Hieu Pham, Louahdi Khoudour, Alain Crouzil, Pablo Zegers, Sergio A. Velastin</div>
+              <div class="conference">CVIU 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>デプスセンサによって得られる骨格情報を用いて人間の行動認識に深いResNetsを適用する。スケルトンシーケンスで、人体関節の3D座標を画像ベースの表現に変換し、RGB画像として格納。これらの画像は、3D運動の空間 - 時間的進化をとらえることができ、D-CNNによって効率的に学習可能。次に、得られた画像ベースの表現から特徴量を学習し、行動クラスに分類するためにResNetsにて学習。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330EDRN.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・リンク集</h1>
+                <p>MSR Action 3D、KARD、およびNTU-RGB + Dデータセットを含む3つのデータセットで評価。最先端の精度かつ、計算量の削減。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07781.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330EDRN_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#11]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds</div>
+            <div class="info">
+              <div class="authors">Tolga Birdal, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>点群の一般的な幾何学的二次形状を検出するセグメンテーションフリーの手法を提案。オクルージョン、部分的な可視性、クラッタを用いてPoint Cloudsの二次形状(プリミティブ)を検出。ノイズの多い困難なシーンでも、一般的なマルチオブジェクトプリミティブ検出を実行できる最初の手法。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330TADOQ.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>日常生活には、 平面、円錐、球、円柱などの3Dプリミティブで構成される人工物に満ち溢れている。これらのプリミティブを介して3Dシーンを抽象化することで、幾何学的形態が高レベル3Dシーン理解に使えるのでは？という発想。従来とは異なり、単一のアルゴリズムで全てのプリミティブを検出することができる。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>研究が進めばリアルタイムを実現できるかも？</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07191.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#12]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs</div>
+            <div class="info">
+              <div class="authors">Xiaolong Wang, Yufei Ye, Abhinav Gupta, The Robotics Institute, Carnegie Mellon University</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>カテゴリの単語の埋め込みと他のカテゴリとの関係(視覚データが提供される)を使用するだけで、学習例がないカテゴリの分類器を学習するゼロショット認識モデルを提案。 knowledge graph (KG) を入力とし、Graph Convolutional Network(GCN)を基に、セマンティック埋め込みとカテゴリの関係の両方を使用して分類器を予測する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330KG.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>学習済のKGが与えられると、各ノードに対する意味的埋め込みとして入力を得る。一連のグラフ畳み込みの後、各カテゴリの視覚的分類器を予測する。トレーニング中に、カテゴリの視覚的分類器が与えられ、GCNパラメータを学習。テスト時に、これらのフィルタを使用して、見えないカテゴリの視覚的分類器を予測する。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>KGのノイズに対してロバストであり、最先端の精度。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.08035.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#13]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Actor and Action Video Segmentation from a Sentence</div>
+            <div class="info">
+              <div class="authors">Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>文章を用いて、ビデオ内のアクターとそのアクションについて、ピクセル単位でセグメンテーションを行うモデルを提案。ビデオに最適化されたエンコーダとデコーダのアーキテクチャを使用し、時間的性質を考慮したfully-convolutionalモデル。文章によるセグメンテーションを可能にするために、2つの既存のデータセットを、アクターとそのアクションを記述する文章のアノテーションで拡張。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330ActorAndAction.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・リンク集</h1>
+                <p>従来手法とは異なり、固定されたアクターとアクションのペアを学習し、自然言語の入力文からセグメンテーションを推定。 これにより、同一カテゴリ内のアクターを細かく識別し、アクターとアクションのインスタンスを識別することが可能。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07485.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330ActorAndAction_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#14]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatial-Temporal Patterns</div>
+            <div class="info">
+              <div class="authors">Jianming Lv, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>歩行者の時空間パターンを用いた、教師なし学習の人物再同定アルゴリズムであるTFusionを提案。既存の人物再同定アルゴリズムのほとんどは、小サイズのラベル付きデータセットを用いた教師付き学習手法である。そのため、大規模な実世界のカメラネットワークに適応することは困難である。また、そこで、ラベルなしデータセットも用いたクロスデータセット手法によって精度向上を図る。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330TFusion.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>手法</h1>
+                <p>まず、歩行者の空間的-時間的パターンを学習するために、ラベル付きデータセットを用いて学習した視覚的分類器を、ラベルなしデータセットに転送。次に、Bayesian fusion modelによって、学習された時空間パターンを視覚的特徴と組み合わせて、分類器を改善。最後に、ラベルのないデータを用いて分類器を段階的に最適化。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>人物再同定のための、教師なしクロスデータセット学習手法の中では最先端。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07293.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#15]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">HATS: Histograms of Averaged Time Surfaces for Robust Event-based Object Classification</div>
+            <div class="info">
+              <div class="authors">Amos Sironi, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>イベントベースカメラにおける、識別アルゴリズムの提案。本研究では、(1)イベントベースのオブジェクト分類のための低レベル表現とアーキテクチャの欠如、(2)実世界における大きなイベントベースのデータセットの欠如、の2つの問題に取り組む。新しい機械学習アーキテクチャ、イベントベースの特徴表現(Histograms of Averaged Time Surfaces)、データセット(N-CARS)を提案。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330NCARS.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>イベントベースのカメラは、従来のフレームベースのカメラと比較して、高時間分解能、低消費電力、高ダイナミックレンジという点で優れており、様々なシーンで応用が利く。しかし、イベントベースのオブジェクト分類アルゴリズムの精度は未だ低い。特徴表現には過去時間の情報を使用。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>過去の情報を使うことで、既存のイベントベースカメラによる認識手法よりも優れた結果となった。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07913.pdf">論文</a></li>
+                  <li><a href="http://www.prophesee.ai/dataset-n-cars/">データセット</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#16]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Speech-Driven Facial Reenactment Using Conditional Generative Adversarial Networks</div>
+            <div class="info">
+              <div class="authors">Seyed Ali Jalalifar, Hosein Hasani, Hamid Aghajan</div>
+              <div class="conference">ECCV 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330SDFR.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>LSTMとC-GANのネットワークは、独立しているので、ターゲットの人物ではなく、他ソースからのオーディオでターゲットの顔を口パクさせることが可能。 顔の変換、アプリなど、多くの新しいアプリケーションに応用可能。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.07461.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#17]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network</div>
+            <div class="info">
+              <div class="authors">Tao Hu, et al.</div>
+              <div class="conference">AAAI 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330SIR.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.06598.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#18]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Zoom and Learn: Generalizing Deep Stereo Matching to Novel Domains</div>
+            <div class="info">
+              <div class="authors">Jiahao Pang, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>学習済みデータと新しいドメイン(ground-truthなし)の両方を用いて、ディープステレオマッチングを行うZoom and Lean(ZOLE)の提案。これにより，他のドメインに一般化できるプレトレインモデルを作成することができる。一般化に際する不具合を抑制しながらアップサンプリングを行う、反復最適化問題を定式化する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330ZOLE.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>ground-truthデータが不足しているため、CNNを用いたステレオマッチングでは学習済みステレオモデルを新規ドメインに一般化することが困難とされていた。CNN学習時のイテレーションごとに最適化していくイメージ。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>スマートフォンで収集したデータを従来の手法に入力すると、物体のエッジがぼやけてしまうが、提案手法のZOLEではこれらを改善できる。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.06641.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#19]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Alive Caricature from 2D to 3D</div>
+            <div class="info">
+              <div class="authors">Qianyi Wu, et al.</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>2Dの似顔絵画像から3Dの似顔絵を作成するためのアルゴリズムの提案。似顔絵画像のテストデータとしてはカリカチュアを使用し、カリカチュア画像の3Dモデルとテクスチャ化された画像を生成する。データは、標準の3D顔の変形を座標系に配置(下図、 xは口の開き具合)し、金のオリジナルデータから線形結合によって白い顔を生成する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330AC2Dto3D_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性・結果・リンク集</h1>
+                <p>カリカチュアを集めたデータセットを作って学習するのではなく、標準の3D顔のデータセットから実装でき、アプリケーションの柔軟さを推している。</p>
+                <p>3DMMやFaceWareHouseなどの従来手法と比較して、形の歪みが少なく、従来のものよりも綺麗な3D顔の出力が可能。顔以外にも、概形の予測が可能なオブジェクトなら応用できる？</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.06802.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330AC2Dto3D_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#20]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Face2Text: Collecting an Annotated Image Description Corpus for the Generation of Rich Face Descriptions</div>
+            <div class="info">
+              <div class="authors">Albert Gatt, et al. </div>
+              <div class="conference">LREC 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>顔の記述に特化し、より具体的に記載できるイメージキャプショニングの提案。シーン記述のようなオブジェクトやその関係性などではなく、画像から得られた属性に依存した記述となる。データはクラウドソーシングを使ってアノテーションを収集し(The Face2Text dataset)、アノテーションの解析まで行う。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330TF2TD.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>“顔についてのキャプション”という新しいテーマのデータセットを提案、およびその解析。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>The Face2Text datasetは、感情的または推論的な属性を含んだアノテーションを含む。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.03827.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#21]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Style Aggregated Network for Facial Landmark Detection</div>
+            <div class="info">
+              <div class="authors">Xuanyi Dong, Yan Yan, Wanli Ouyang, Yi Yang, University of Technology Sydney, The University of Sydney</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>顔のランドマーク検出。顔そのもののばらつきの他に、グレースケールやカラー画像、明暗などの画像スタイルが変わっても同様に検出できるStyle Aggregated Network(SAN)の提案。まず、(1)入力画像をさまざまなスタイルに変換し、スタイルを集約し、(2)顔のランドマーク予測する。(2)は、元画像とスタイルを集約した特徴の両方を入力し、融合してカスケード式のヒートマップ予測を生成する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330SAN_1.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.04108.pdf">論文</a></li>
+                  <li><a href="https://github.com/D-X-Y/SAN">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <p><img src="slides/figs/180330SAN_2.jpg"></p>
+              </div>
+            </div>
+            <div class="slide_index">[#22]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">phi-LSTM: A Phrase-based Hierarchical LSTM Model for Image Captioning</div>
+            <div class="info">
+              <div class="authors">Ying Hua Tan, et al.</div>
+              <div class="conference">ACCV 2016</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>フレーズベースでの画像キャプショニングを行うphrase-based hierarchical Long Short-Term Memory (phi-LSTM)の提案。(1)画像に関連した名詞句を生成(低レベル)、(2)コーパス内のフレーズと他の単語から適切なキャプションを生成(高レベル)、それぞれの処理に専念するRNNモデルを実装することでフレーズベースを実現している。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330phiLSTM.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>従来までは、オブジェクトを検出/名前付けし、その属性を記述して、その関係/相互作用を認識するモデルが提案されている。従来研究では単語のシーケンスだけでキャプションを生成していたが、本研究ではフレーズと単語の組み合わせのシーケンスとして文章をエンコードする。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1608.05813.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#23]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Discriminative Learning of Latent Features for Zero-Shot Recognition</div>
+            <div class="info">
+              <div class="authors">Minghui Yan Li, et al</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>Zero-shot learning(ZSL)における、視覚的および意味的インスタンスを別々に表現し学習するLatent Discriminative Features Learning(LDF)の提案。 (1)ズームネットワークにより差別的な領域を自動的に発見することができるネットワークの提案。(2)ユーザによって定義された属性と潜在属性の両方について、拡張空間における弁別的意味表現の学習。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180330LDF.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>ZSLは、画像表現と意味表現の間の空間を学習することによって、見えない画像カテゴリを認識する。 既存の手法では、視覚と意味空間を合わせたマッピングマトリックスを学習することが中心的課題。提案手法では、差別的に学習するとうアプローチで識別精度向上を図る。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>2つのコンポーネントによって、互いに支援しながら学習することで最先端の精度に。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.06731.pdf">論文</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#24]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
+            <div class="title">Boosted Convolutional Neural Networks</div>
+            <div class="info">
+              <div class="authors">Mohammad Moghimi et al.</div>
+              <div class="conference">BMVC, 2016.</div>
+            </div>
+            <div class="slide_editor">Yuta Matsuzaki</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>CNNとBoostingのメリットを組み合わせ，BoostingするためのBoostCNNを提案．このモデルを学習するための，重みを更新アルゴリズムを設計．具体的にはBoostingの各反復において，Boostingの重みを近似するためのネットワークの学習を行う．また，異なるネットワークにおいても使用可能であり，優れた性能を示すだけでなく，適切なネットワーク構造を探索するための効率を上げることができると示唆．</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180329boostingcnn.png"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>fine-grained認識においてSOTA．</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p> </p>
+                <ul>
+                  <li><a href="http://www.bmva.org/bmvc/2016/papers/paper024/abstract024.pdf">論文</a></li>
+                  <li><a href="https://github.com/mmoghimi/BoostCNN">Code</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#25]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Rotation-Sensitive Regression for Oriented Scene Text Detection</div>
             <div class="info">
               <div class="authors">Minghui Liao, et al.</div>
@@ -54,7 +979,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#26]</div>
           </div>
         </section>
         <section>
@@ -91,7 +1016,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#27]</div>
             <div class="timestamp">2018.3.29 14:27:12</div>
           </div>
         </section>
@@ -130,7 +1055,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#28]</div>
             <div class="timestamp">2018.3.29 13:59:43</div>
           </div>
         </section>
@@ -168,7 +1093,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#29]</div>
             <div class="timestamp">2018.3.29 13:11:12</div>
           </div>
         </section>
@@ -206,7 +1131,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#30]</div>
             <div class="timestamp">2018.3.26 20:52:24</div>
           </div>
         </section>
@@ -247,7 +1172,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#31]</div>
             <div class="timestamp">2018.3.29 09:28:32</div>
           </div>
         </section>
@@ -293,7 +1218,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#32]</div>
             <div class="timestamp">2018.3.29 13:55:50</div>
           </div>
         </section>
@@ -332,7 +1257,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#33]</div>
             <div class="timestamp">2018.3.27 12:18:23</div>
           </div>
         </section>
@@ -371,7 +1296,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#34]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -419,7 +1344,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#35]</div>
             <div class="timestamp">2018.3.27 08:58:36</div>
           </div>
         </section>
@@ -458,7 +1383,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#36]</div>
             <div class="timestamp">2018.3.24 18:05:46</div>
           </div>
         </section>
@@ -496,7 +1421,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#37]</div>
             <div class="timestamp">2018.3.24 15:14:35</div>
           </div>
         </section>
@@ -533,7 +1458,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#38]</div>
             <div class="timestamp">2018.3.24 14:53:51</div>
           </div>
         </section>
@@ -574,7 +1499,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#39]</div>
             <div class="timestamp">2018.3.24 14:09:09</div>
           </div>
         </section>
@@ -613,7 +1538,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#40]</div>
             <div class="timestamp">2018.3.24 13:30:39</div>
           </div>
         </section>
@@ -651,7 +1576,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#41]</div>
             <div class="timestamp">2018.3.24 13:04:44</div>
           </div>
         </section>
@@ -689,7 +1614,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#42]</div>
             <div class="timestamp">2018.3.24 12:47:10</div>
           </div>
         </section>
@@ -727,7 +1652,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#43]</div>
             <div class="timestamp">2018.3.23 20:37:22</div>
           </div>
         </section>
@@ -764,7 +1689,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#19]</div>
+            <div class="slide_index">[#44]</div>
             <div class="timestamp">2018.3.23 19:40:06</div>
           </div>
         </section>
@@ -802,7 +1727,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#20]</div>
+            <div class="slide_index">[#45]</div>
             <div class="timestamp">2018.3.23 19:11:04</div>
           </div>
         </section>
@@ -845,7 +1770,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#21]</div>
+            <div class="slide_index">[#46]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -890,7 +1815,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#22]</div>
+            <div class="slide_index">[#47]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -928,7 +1853,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#23]</div>
+            <div class="slide_index">[#48]</div>
           </div>
         </section>
         <section>
@@ -967,7 +1892,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#24]</div>
+            <div class="slide_index">[#49]</div>
             <div class="timestamp">2018.3.22 19:55:34</div>
           </div>
         </section>
@@ -1006,7 +1931,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#25]</div>
+            <div class="slide_index">[#50]</div>
             <div class="timestamp">2018.3.22 19:33:35</div>
           </div>
         </section>
@@ -1045,7 +1970,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#26]</div>
+            <div class="slide_index">[#51]</div>
             <div class="timestamp">2018.3.22 19:18:32</div>
           </div>
         </section>
@@ -1083,7 +2008,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#27]</div>
+            <div class="slide_index">[#52]</div>
             <div class="timestamp">2018.3.22 18:52:15</div>
           </div>
         </section>
@@ -1121,7 +2046,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#28]</div>
+            <div class="slide_index">[#53]</div>
             <div class="timestamp">2018.3.22 18:31:05</div>
           </div>
         </section>
@@ -1161,7 +2086,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#29]</div>
+            <div class="slide_index">[#54]</div>
             <div class="timestamp">2018.3.22 08:56:48</div>
           </div>
         </section>
@@ -1205,7 +2130,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#30]</div>
+            <div class="slide_index">[#55]</div>
             <div class="timestamp">2018.3.19 18:00:31</div>
           </div>
         </section>
@@ -1244,7 +2169,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#31]</div>
+            <div class="slide_index">[#56]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -1284,7 +2209,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#32]</div>
+            <div class="slide_index">[#57]</div>
             <div class="timestamp">2018.3.15 20:27:41</div>
           </div>
         </section>
@@ -1329,7 +2254,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#33]</div>
+            <div class="slide_index">[#58]</div>
             <div class="timestamp">2018.3.19 14:49:23</div>
           </div>
         </section>
@@ -1371,7 +2296,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#34]</div>
+            <div class="slide_index">[#59]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1412,7 +2337,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#35]</div>
+            <div class="slide_index">[#60]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -1461,7 +2386,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#36]</div>
+            <div class="slide_index">[#61]</div>
             <div class="timestamp">2018.3.19 13:49:03</div>
           </div>
         </section>
@@ -1500,7 +2425,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#37]</div>
+            <div class="slide_index">[#62]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -1544,7 +2469,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#38]</div>
+            <div class="slide_index">[#63]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1586,7 +2511,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#39]</div>
+            <div class="slide_index">[#64]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1630,7 +2555,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#40]</div>
+            <div class="slide_index">[#65]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1675,7 +2600,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#41]</div>
+            <div class="slide_index">[#66]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -1714,7 +2639,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#42]</div>
+            <div class="slide_index">[#67]</div>
           </div>
         </section>
         <section>
@@ -1750,7 +2675,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#43]</div>
+            <div class="slide_index">[#68]</div>
             <div class="timestamp">2018.3.15 09:17:35</div>
           </div>
         </section>
@@ -1789,7 +2714,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#44]</div>
+            <div class="slide_index">[#69]</div>
             <div class="timestamp">2018.3.15 09:04:03</div>
           </div>
         </section>
@@ -1828,7 +2753,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#45]</div>
+            <div class="slide_index">[#70]</div>
             <div class="timestamp">2018.3.15 08:43:30</div>
           </div>
         </section>
@@ -1867,7 +2792,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#46]</div>
+            <div class="slide_index">[#71]</div>
           </div>
         </section>
         <section>
@@ -1906,7 +2831,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#47]</div>
+            <div class="slide_index">[#72]</div>
           </div>
         </section>
         <section>
@@ -1944,7 +2869,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#48]</div>
+            <div class="slide_index">[#73]</div>
             <div class="timestamp">2018.3.14 12:12:33</div>
           </div>
         </section>
@@ -1982,7 +2907,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#49]</div>
+            <div class="slide_index">[#74]</div>
             <div class="timestamp">2018.3.14 11:04:45</div>
           </div>
         </section>
@@ -2021,7 +2946,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#50]</div>
+            <div class="slide_index">[#75]</div>
             <div class="timestamp">2018.3.14 08:43:53</div>
           </div>
         </section>
@@ -2058,7 +2983,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#51]</div>
+            <div class="slide_index">[#76]</div>
           </div>
         </section>
         <section>
@@ -2096,7 +3021,7 @@
                 <p><img src="slides/figs/180313DREAM_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#52]</div>
+            <div class="slide_index">[#77]</div>
           </div>
         </section>
         <section>
@@ -2135,7 +3060,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#53]</div>
+            <div class="slide_index">[#78]</div>
           </div>
         </section>
         <section>
@@ -2173,7 +3098,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#54]</div>
+            <div class="slide_index">[#79]</div>
           </div>
         </section>
         <section>
@@ -2217,7 +3142,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#55]</div>
+            <div class="slide_index">[#80]</div>
             <div class="timestamp">2018.3.11 23:53:27</div>
           </div>
         </section>
@@ -2257,7 +3182,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#56]</div>
+            <div class="slide_index">[#81]</div>
           </div>
         </section>
         <section>
@@ -2294,7 +3219,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#57]</div>
+            <div class="slide_index">[#82]</div>
           </div>
         </section>
         <section>
@@ -2331,7 +3256,7 @@
                 <p><img src="slides/figs/180310MSDN_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#58]</div>
+            <div class="slide_index">[#83]</div>
           </div>
         </section>
         <section>
@@ -2368,7 +3293,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#59]</div>
+            <div class="slide_index">[#84]</div>
           </div>
         </section>
         <section>
@@ -2406,7 +3331,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#60]</div>
+            <div class="slide_index">[#85]</div>
           </div>
         </section>
         <section>
@@ -2444,7 +3369,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#61]</div>
+            <div class="slide_index">[#86]</div>
             <div class="timestamp">2018.3.9 22:34:11</div>
           </div>
         </section>
@@ -2483,7 +3408,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#62]</div>
+            <div class="slide_index">[#87]</div>
           </div>
         </section>
         <section>
@@ -2524,7 +3449,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#63]</div>
+            <div class="slide_index">[#88]</div>
           </div>
         </section>
         <section>
@@ -2562,7 +3487,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#64]</div>
+            <div class="slide_index">[#89]</div>
             <div class="timestamp">2018.3.9 18:05:28</div>
           </div>
         </section>
@@ -2614,7 +3539,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#65]</div>
+            <div class="slide_index">[#90]</div>
             <div class="timestamp">2018.3.9 16:21:51</div>
           </div>
         </section>
@@ -2652,7 +3577,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#66]</div>
+            <div class="slide_index">[#91]</div>
             <div class="timestamp">2018.3.9 16:07:03</div>
           </div>
         </section>
@@ -2705,7 +3630,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#67]</div>
+            <div class="slide_index">[#92]</div>
             <div class="timestamp">2018.3.9 16:01:10</div>
           </div>
         </section>
@@ -2754,7 +3679,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#68]</div>
+            <div class="slide_index">[#93]</div>
             <div class="timestamp">2018.3.9 15:34:59</div>
           </div>
         </section>
@@ -2795,7 +3720,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#69]</div>
+            <div class="slide_index">[#94]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2835,7 +3760,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#70]</div>
+            <div class="slide_index">[#95]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2872,7 +3797,7 @@
                 もっとデータセットが実世界のものに近づいていっても同じ結果が出てくるのか気になるところ．
               </div>
             </div>
-            <div class="slide_index">[#71]</div>
+            <div class="slide_index">[#96]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2909,7 +3834,7 @@
                 ある意味直接的な認識である気も．
               </div>
             </div>
-            <div class="slide_index">[#72]</div>
+            <div class="slide_index">[#97]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2940,7 +3865,7 @@
               </div>
             </div>
             <div class="item4"><img src="slides/figs/180307_combining_2.png" alt="180307_combining_2.png"></div>
-            <div class="slide_index">[#73]</div>
+            <div class="slide_index">[#98]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2994,7 +3919,7 @@
                   ※注　ISAとは，発話しながらも間接的に意味を伝える行為．「車に乗れ」「空手の稽古があるの」＞間接的に乗車を拒否．</p>
               </div>
             </div>
-            <div class="slide_index">[#74]</div>
+            <div class="slide_index">[#99]</div>
             <div class="timestamp">2018.3.9 15:11:52</div>
           </div>
         </section>
@@ -3048,7 +3973,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#75]</div>
+            <div class="slide_index">[#100]</div>
             <div class="timestamp">2018.3.9 14:34:36</div>
           </div>
         </section>
@@ -3086,7 +4011,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#76]</div>
+            <div class="slide_index">[#101]</div>
           </div>
         </section>
         <section>
@@ -3123,7 +4048,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#77]</div>
+            <div class="slide_index">[#102]</div>
             <div class="timestamp">2018.3.9 13:45:20</div>
           </div>
         </section>
@@ -3161,7 +4086,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#78]</div>
+            <div class="slide_index">[#103]</div>
             <div class="timestamp">2018.3.9 13:19:40</div>
           </div>
         </section>
@@ -3199,7 +4124,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#79]</div>
+            <div class="slide_index">[#104]</div>
             <div class="timestamp">2018.3.9 12:31:03</div>
           </div>
         </section>
@@ -3243,7 +4168,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#80]</div>
+            <div class="slide_index">[#105]</div>
             <div class="timestamp">2018.3.9 11:59:39</div>
           </div>
         </section>
@@ -3299,7 +4224,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#81]</div>
+            <div class="slide_index">[#106]</div>
             <div class="timestamp">2018.3.9 11:38:49</div>
           </div>
         </section>
@@ -3346,7 +4271,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#82]</div>
+            <div class="slide_index">[#107]</div>
             <div class="timestamp">2018.3.9 10:47:04</div>
           </div>
         </section>
@@ -3384,7 +4309,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#83]</div>
+            <div class="slide_index">[#108]</div>
           </div>
         </section>
         <section>
@@ -3427,7 +4352,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#84]</div>
+            <div class="slide_index">[#109]</div>
             <div class="timestamp">2018.3.8 20:32:44</div>
           </div>
         </section>
@@ -3466,7 +4391,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#85]</div>
+            <div class="slide_index">[#110]</div>
           </div>
         </section>
         <section>
@@ -3513,7 +4438,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#86]</div>
+            <div class="slide_index">[#111]</div>
             <div class="timestamp">2018.3.8 19:13:34</div>
           </div>
         </section>
@@ -3550,7 +4475,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#87]</div>
+            <div class="slide_index">[#112]</div>
             <div class="timestamp">2018.3.8 18:27:18</div>
           </div>
         </section>
@@ -3589,7 +4514,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#88]</div>
+            <div class="slide_index">[#113]</div>
             <div class="timestamp">2018.3.8 18:00:10</div>
           </div>
         </section>
@@ -3628,7 +4553,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#89]</div>
+            <div class="slide_index">[#114]</div>
             <div class="timestamp">2018.3.8 11:04:00</div>
           </div>
         </section>
@@ -3669,7 +4594,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#90]</div>
+            <div class="slide_index">[#115]</div>
           </div>
         </section>
         <section>
@@ -3709,7 +4634,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#91]</div>
+            <div class="slide_index">[#116]</div>
           </div>
         </section>
         <section>
@@ -3748,7 +4673,7 @@
                 <p><img src="slides/figs/180307VIsualDialog_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#92]</div>
+            <div class="slide_index">[#117]</div>
           </div>
         </section>
         <section>
@@ -3791,7 +4716,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#93]</div>
+            <div class="slide_index">[#118]</div>
           </div>
         </section>
         <section>
@@ -3832,7 +4757,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#94]</div>
+            <div class="slide_index">[#119]</div>
           </div>
         </section>
         <section>
@@ -3871,7 +4796,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#95]</div>
+            <div class="slide_index">[#120]</div>
             <div class="timestamp">2018.3.7 12:28:51</div>
           </div>
         </section>
@@ -3912,7 +4837,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#96]</div>
+            <div class="slide_index">[#121]</div>
             <div class="timestamp">2018.3.7 09:23:28</div>
           </div>
         </section>
@@ -3951,7 +4876,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#97]</div>
+            <div class="slide_index">[#122]</div>
             <div class="timestamp">2018.3.7 09:04:15</div>
           </div>
         </section>
@@ -3989,7 +4914,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#98]</div>
+            <div class="slide_index">[#123]</div>
             <div class="timestamp">2018.3.7 08:27:34</div>
           </div>
         </section>
@@ -4028,7 +4953,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#99]</div>
+            <div class="slide_index">[#124]</div>
             <div class="timestamp">2018.3.6 14:58:57</div>
           </div>
         </section>
@@ -4070,7 +4995,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#100]</div>
+            <div class="slide_index">[#125]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4107,7 +5032,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#101]</div>
+            <div class="slide_index">[#126]</div>
             <div class="timestamp">2018.3.6 14:31:32</div>
           </div>
         </section>
@@ -4146,7 +5071,7 @@
                 <p><img src="slides/figs/180306MarioQA_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#102]</div>
+            <div class="slide_index">[#127]</div>
           </div>
         </section>
         <section>
@@ -4183,7 +5108,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#103]</div>
+            <div class="slide_index">[#128]</div>
             <div class="timestamp">2018.3.5 20:25:53</div>
           </div>
         </section>
@@ -4224,7 +5149,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#104]</div>
+            <div class="slide_index">[#129]</div>
             <div class="timestamp">2018.3.5 19:53:46</div>
           </div>
         </section>
@@ -4261,7 +5186,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#105]</div>
+            <div class="slide_index">[#130]</div>
             <div class="timestamp">2018.3.5 19:25:04</div>
           </div>
         </section>
@@ -4299,7 +5224,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#106]</div>
+            <div class="slide_index">[#131]</div>
             <div class="timestamp">2018.3.5 19:08:53</div>
           </div>
         </section>
@@ -4343,7 +5268,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#107]</div>
+            <div class="slide_index">[#132]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4382,7 +5307,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#108]</div>
+            <div class="slide_index">[#133]</div>
           </div>
         </section>
         <section>
@@ -4422,7 +5347,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#109]</div>
+            <div class="slide_index">[#134]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4464,7 +5389,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#110]</div>
+            <div class="slide_index">[#135]</div>
           </div>
         </section>
         <section>
@@ -4503,7 +5428,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#111]</div>
+            <div class="slide_index">[#136]</div>
           </div>
         </section>
         <section>
@@ -4542,7 +5467,7 @@
                 <p><img src="slides/figs/180304DeformableConvolution_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#112]</div>
+            <div class="slide_index">[#137]</div>
           </div>
         </section>
         <section>
@@ -4581,7 +5506,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#113]</div>
+            <div class="slide_index">[#138]</div>
           </div>
         </section>
         <section>
@@ -4623,7 +5548,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#114]</div>
+            <div class="slide_index">[#139]</div>
           </div>
         </section>
         <section>
@@ -4662,7 +5587,7 @@
                 <p> <img src="slides/figs/180303VisualStorytelling_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#115]</div>
+            <div class="slide_index">[#140]</div>
           </div>
         </section>
         <section>
@@ -4700,7 +5625,7 @@
                 <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#116]</div>
+            <div class="slide_index">[#141]</div>
           </div>
         </section>
         <section>
@@ -4737,7 +5662,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#117]</div>
+            <div class="slide_index">[#142]</div>
           </div>
         </section>
         <section>
@@ -4774,7 +5699,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#118]</div>
+            <div class="slide_index">[#143]</div>
           </div>
         </section>
         <section>
@@ -4818,7 +5743,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#119]</div>
+            <div class="slide_index">[#144]</div>
           </div>
         </section>
         <section>
@@ -4858,7 +5783,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#120]</div>
+            <div class="slide_index">[#145]</div>
           </div>
         </section>
         <section>
@@ -4897,7 +5822,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#121]</div>
+            <div class="slide_index">[#146]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -4937,7 +5862,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#122]</div>
+            <div class="slide_index">[#147]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -4987,7 +5912,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#123]</div>
+            <div class="slide_index">[#148]</div>
           </div>
         </section>
         <section>
@@ -5025,7 +5950,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#124]</div>
+            <div class="slide_index">[#149]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -5065,7 +5990,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#125]</div>
+            <div class="slide_index">[#150]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -5111,7 +6036,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#126]</div>
+            <div class="slide_index">[#151]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -5150,7 +6075,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#127]</div>
+            <div class="slide_index">[#152]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -5191,7 +6116,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#128]</div>
+            <div class="slide_index">[#153]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -5228,7 +6153,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#129]</div>
+            <div class="slide_index">[#154]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -5268,7 +6193,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#130]</div>
+            <div class="slide_index">[#155]</div>
           </div>
         </section>
         <section>
@@ -5305,7 +6230,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#131]</div>
+            <div class="slide_index">[#156]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -5342,7 +6267,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#132]</div>
+            <div class="slide_index">[#157]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -5375,7 +6300,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#133]</div>
+            <div class="slide_index">[#158]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -5415,7 +6340,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#134]</div>
+            <div class="slide_index">[#159]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -5460,7 +6385,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#135]</div>
+            <div class="slide_index">[#160]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -5500,7 +6425,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#136]</div>
+            <div class="slide_index">[#161]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -5537,7 +6462,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#137]</div>
+            <div class="slide_index">[#162]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5573,7 +6498,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#138]</div>
+            <div class="slide_index">[#163]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5610,7 +6535,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#139]</div>
+            <div class="slide_index">[#164]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5648,7 +6573,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#140]</div>
+            <div class="slide_index">[#165]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5688,7 +6613,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#141]</div>
+            <div class="slide_index">[#166]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5725,7 +6650,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#142]</div>
+            <div class="slide_index">[#167]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5767,7 +6692,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#143]</div>
+            <div class="slide_index">[#168]</div>
           </div>
         </section>
         <section>
@@ -5803,7 +6728,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#144]</div>
+            <div class="slide_index">[#169]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5841,7 +6766,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#145]</div>
+            <div class="slide_index">[#170]</div>
             <div class="slide_editor">Kazuki Inoue</div>
           </div>
         </section>
@@ -5876,7 +6801,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#146]</div>
+            <div class="slide_index">[#171]</div>
             <div class="slide_editor">Kazuki Inoue</div>
           </div>
         </section>
@@ -5914,7 +6839,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#147]</div>
+            <div class="slide_index">[#172]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5950,7 +6875,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#148]</div>
+            <div class="slide_index">[#173]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -5981,7 +6906,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#149]</div>
+            <div class="slide_index">[#174]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6018,7 +6943,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#150]</div>
+            <div class="slide_index">[#175]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6056,7 +6981,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#151]</div>
+            <div class="slide_index">[#176]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6093,7 +7018,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#152]</div>
+            <div class="slide_index">[#177]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6130,7 +7055,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#153]</div>
+            <div class="slide_index">[#178]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6166,7 +7091,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#154]</div>
+            <div class="slide_index">[#179]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6202,7 +7127,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#155]</div>
+            <div class="slide_index">[#180]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6239,7 +7164,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#156]</div>
+            <div class="slide_index">[#181]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6275,7 +7200,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#157]</div>
+            <div class="slide_index">[#182]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6311,7 +7236,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#158]</div>
+            <div class="slide_index">[#183]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6347,7 +7272,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#159]</div>
+            <div class="slide_index">[#184]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -6383,7 +7308,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#160]</div>
+            <div class="slide_index">[#185]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
