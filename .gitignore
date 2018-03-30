@@ -1,6 +1,4 @@
 node_modules
-package.json
-package-lock.json
 
 # General
 .DS_Store
