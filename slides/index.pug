@@ -2,6 +2,459 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title LayoutNet: Reconstructing the 3D Room Layout from a Single RGB Image
+    .info
+      .authors Chuhang Zou, Alex Colburn, Qi Shan, Derek Hoiem
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 単一のパースペクティブまたはパノラマ画像から屋内3Dルームレイアウトを推定するLayoutNetの提案。最初に、消失点を分析し、水平になるように画像を整列。これにより、壁と壁の境界が垂直になり、ノイズ低減。画像からコーナー(レイアウト接合点)と境界を、エンコーダ/デコーダ構造のCNNで出力。最後に、3D Layoutパラメータを、予測したコーナーと境界に適合するように最適化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401LayoutNet.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p アーキテクチャはRoomNetと似ているが、消失点に基づいて画像を整列させ、複数のレイアウト要素（コーナー、境界線、サイズ、平行移動）を予測し、 “L”形の部屋のような非直方体のマンハッタンレイアウトに対しても適応できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 従来手法と比較して、処理速度と正確さにおいて性能の向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08999.pdf") 論文
+          li
+            a(href="https://github.com/zouchuhang/LayoutNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering
+    .info
+      .authors Somak Aditya, Yezhou Yang, Chitta Baral
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p VQAタスクにおける、DNNの最後から2番目の層にexplicit reasoning layerを追加する。 これにより、常識的な知識が必要な質問に対する回答が可能となり、出力した回答を人間が解釈できるようなインタフェースを提案。reasoning layerは、視覚的な関係、質問の意味解析、word2vecとConceptNetのオントロジーなどを推論するProbabilistic Soft Logic(PSL)ベースのエンジンとなっている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ERL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p VQAなどのvisionや言語タスクでは、DNNを使用して精度向上を図っている。しかし、更なる精度向上には画像や自然言語処理以外の常識的知識を使った推論が必要とされている。また、このようなシステムは一般に不透明(人間が理解できない)であり、予備知識が必要とされる質問を理解するのは困難。本手法によって、常識的知識を追加し、人間に理解できるインタフェースを提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p explicit reasoning layerによって回答と、回答の証拠の両方を生成することが可能。性能向上と、説明能力の向上を実現。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08896.pdf") 論文
+
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++
+    .info
+      .authors David Acuna, Huan Ling, Amlan Kar, Sanja Fidler
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Polygon-RNNのアイデアを踏襲し、ヒューマン・イン・ザ・ループを使って対話的にオブジェクトのポリゴンアノテーションの生成。また、新しいCNNエンコーダアーキテクチャの設計、強化学習によるモデルの効果的な学習、 Graph Neural Networkを使用した出力解像度の向上を行う。これらのアーキテクチャをPolygon-RNN ++と呼ぶ。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331PolygonRNN++_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p アノテーション作成時の負担を軽減。より正確にアノテーションを付加できるため、雑音の多いアノテーターに対しても頑健である。
+        p 高い汎化能力となり、既存のピクセルワイズメソッドよりも大幅に改善。ドメイン外のデータセットにも適応可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09693.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180331PolygonRNN++_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Multi-Level Factorisation Net for Person Re-Identification
+    .info
+      .authors Xiaobin Chang, Timothy M. Hospedales, Tao Xiang
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 人間の視覚的外観を、人の手によるアノテーションなしかつ、複数のセマンティックレベルで識別因子に分解する Multi-Level Factorisation Net(MLFN)の提案。 MLFNは、複数のブロックで構成されており、各ブロックには、複数の因子モジュールと、各入力画像の内容を解釈するための因子選択モジュールが含まれている。 
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331MLFN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 効果的なRe-IDを目指すには、高低のセマンティックレベルでの人の差別化かつ視界不変性をモデル化することである。 近年(2018)のdeep Re-IDモデルは、セマンティックレベルの特徴表現を学習するか、アノテーション付きデータが必要となる。MLFNではこれらを改善する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 3つのRe-IDと、CIFAR-100の結果で最先端。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09132.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title CSfM: Community-based Structure from Motion
+    .info
+      .authors Hainan Cui, Shuhan Shen, Xiang Gao, Zhanyi Hu
+      .conference ICIP 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 頑健性と効率性を考慮した、 Structure-from-Motionアプローチであるcommunity-based SfM(CSfM)の提案。画像をコミュニティにクラスタ化することで、内側が密、外側は疎になるように接続することができる。まず、エピポーラ幾何学グラフを別々のコミュニティに分割し、各コミュニティで並列に再構成処理を行う。そして、新しいグローバル類似度平均法によってマージする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331CSfM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p SfMのアプローチは、次の2つのクラスに大きく分けられる。 (1)インクリメンタル方式は外れ値に対して堅牢だが、誤差の蓄積と計算時の負荷が大きい。 (2)グローバルな方法は、すべてのカメラポーズを同時に推定するという利点があるが、通常、エピポーラ幾何学を算出する際に異常値を生じやすい。これらの、従来のSfMの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 従来のアプローチと比較して、計算効率がよく、類似度や再構成精度、堅牢性の点でも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08716") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title PDNet: Prior-model Guided Depth-enhanced Network for Salient Object Detection
+    .info
+      .authors Chunbiao Zhu, Xing Cai, Kan Huang, Thomas H. Li, Ge Li
+      .conference ICME 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p RGB-Dの顕著な物体の検出のための、深度拡張ネットワークであるPDNetの提案。画像ピクセルのRGB-D値をネットワークに直接送るのではなく、RGB値を処理するためのマスターネットワークと、D値(深度)を組み込むサブネットワークで生成した特徴をマスタネットワークに追加する。ラベル付きRGB-Dデータセットは少ないため、大規模なRGBデータセットを使用してマスターネットワークをプレトレインする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331PDNet.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p FCNは、多くのタスクにおいて優れているが、顕著性検出において2つの問題があると指摘。 1つ目は、ネットワークを学習するための大規模なラベル付きデータがないこと。2つ目は、ノイズがあるシーンなどにおいて、頑健でないこと。PDNetでは上記を改善。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 5つのデータセットで評価し、精度向上を確認。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08636.pdf") 論文
+          li
+            a(href="https://github.com/ChunbiaoZhu/PDNet/") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Pyramid Stereo Matching Network
+    .info
+      .authors Jia-Ren Chang, Yong-Sheng Chen
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 空間ピラミッドプーリングと3D CNNの2つのモジュールから構成された、ステレオ画像対からの奥行き推定を行うPyramid Stereo Matching Network(PSMNet)の提案。空間ピラミッドプーリングは、異なるスケールおよび位置でコンテキストを集約し、コストボリュームを形成する。 3D CNNは、複数のhourglass networksを重ねて、コストボリュームを規則化することを学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PSMN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 現在(2018)ではステレオ画像からの奥行き推定を、CNNの教師あり学習で解決されてきている。 コンテキスト情報を利用することで精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法よりも優れている結果。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08669.pdf") 論文
+          li
+            a(href="https: //github.com/JiaRenChang/PSMNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Learning Shape-from-Shading for Deformable Surfaces
+    .info
+      .authors Jan Bednarık, Pascal Fua, Mathieu Salzmann
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2D画像からメッシュ、法線、深度マップなどの3D表現を予測できるフレームワークを提案。人が着用するTシャツのしわなど、表面をより詳細に、正確にモデル化できる。基本的にはShape-from-Shading技術に関連する技術。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LSFS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 画像から、テクスチャを加えることで表面の3D形状を再現する手法は開発されている。しかし、テクスチャのない表面の3D形状を回復することはできていない。
+    .item4
+      .text
+        h1 結果・リンク集
+        p メッシュはテクスチャありの場合はとても良い精度だが、テクスチャなしの場合だとあまり適さない。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08908.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title P2P-NET: Bidirectional Point Displacement Net for Shape Transform
+    .info
+      .authors Kangxue Yin, Hui Huang, Daniel Cohen-Or, Hao Zhang
+      .conference SIGGRAPH 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2つの領域(例えば、骨格と表面、部分的および完全なスキャンデータ)からポイントベースの形状表現に幾何学的変換するための、汎用DNNであるP2P-NETの提案。データから学習された点群に変換、またはその逆の変換を行う双方向点変位ネットワーク。lossは、予測された点集合と目標点集合との間の形状的類似性を比較する幾何学的損失と、逆方向に進む変位ベクトル間の相互正規化項とを組み合わせる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331P2PNET.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ポイントセットを1つのドメインから別のドメインにマッピングするように学習することにより、2Dまたは3D空間に配置できる。また、マッピングは2Dプロファイルを3D形状に変換することも可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p P2P-NETをもちいたアプリケーションを複数開発し、様々なポイントベースの形状変換問題を解決するネットワークの有効性、汎用性、および可能性を示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09263.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Fast and Accurate Single Image Super-Resolution via Information Distillation Network
+    .info
+      .authors Zheng Hui, Xiumei Wang, Xinbo Gao
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 元の低解像度画像から高解像度画像を再構築するための、深くてコンパクトなCNNを提案。提案モデルは、特徴抽出ブロック、積み重ね情報蒸留ブロック、再構成ブロックの3部構成。これにより、情報量が豊富かつ効率的に特徴を徐々に抽出できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331FaASISR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNが超解像殿画像を扱うようになってきたが、ネットワークが増大するにつれて、計算上の複雑さとメモリ消費という問題が生じる。これらの問題を解決するためのコンパクトなCNN。
+    .item4
+      .text
+        h1 結果・リンク集
+        p PSNR、SSIM、IFCの4つのデータセットで検証し、精度向上を確認。デシジョンおよび圧縮アーチファクト低減などの他の画像修復問題にも応用可能？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08679.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title ITERATIVE LOW-RANK APPROXIMATION FOR CNN COMPRESSION
+    .info
+      .authors Maksym Kholiavchenko
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNを圧縮するために、低ランク近似を適用する反復アプローチの提案。入力モデルを反復して圧縮していき、構成と重みを出力する。反復の中でノイズ低減をアルゴリズムを追加し、精度低下を避ける。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ILRA.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNには数千万のパラメータが含まれているため、組み込み機器で効率的に動作することは不可能。AlexNet、VGG-16、YOLOv2、およびTiny YOLOネットワークを圧縮することで、CNNを多様化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p より高い圧縮率かつ、精度の低下が少ない。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08995") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Coherence in One-Shot Gesture Recognition for Human-Robot Interaction
+    .info
+      .authors Maria E. Cabrera, Richard M. Voyles, Juan P. Wachs
+      .conference HRI'18 LBR
+      .paper_id pp. 75-76
+    .slide_editor Ryota Suzuki
+    .item1
+      .text
+        h1 概要
+        p ロボットのジェスチャをワンショットで認識する時，人間と機械でどんな違いがあるのかを見た．
+          |ロボットは2腕あるロボット腕のBaxter．
+          |機械側はワンショット骨格情報からHMM，SVM，CRF，DTWで認識．人間側は10人．
+          |モーションのサンプルは，動きが大きく変わる顕著な時点を選んだ．
+        p 人間は'Shoot'が比較的わかりにくい（3/10人わからなかった）．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Coherence_in_One-Shot_Gesture_Recognition_for_Human-Robot_Interaction_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ロボットのジェスチャのワンショット認識をHRIに水平思考しただけだが，
+          |HRIとしての話題としてだけ見れば結構面白い．
+          |「選ぶジェスチャとか機械側の手法に大きく依るじゃん」などのツッコミが多々あるが，そこは今後に期待．
+    .item4
+      .text
+        h1 リンク集・コメント
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3176977") ACM library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 15:47:02
+
+  +slide
+    .title HMDを用いた3次元ジェスチャ操作による没入型天体教材の開発
+    .info
+      .authors 田尻圭佑, 瀬戸崎典夫
+      .conference 日本教育工学会
+    .slide_editor Kenichiro Wani
+    .item1
+      .text
+        p 生徒にとって、相対的な考えを必要とする星座の日周運動や年周運動を理解することが困難である。
+        p 仮想環境内における教員の介入による指導が可能な、没入型天体教材の開発。
+        p 3次元ジェスチャ装置によって学習者及び講師の手の動きを認識し，仮想空間に手のCGモデルを表示する。
+        p 学習者はHMDを装着(教員は3次元ジェスチャ装置を用いて仮想空間内で手のジェスチャしながら説明)。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330tentai_wani.png`)
+    .item3
+      .text
+        h1 新規性
+        p 生徒に星座を教えるのに仮想現実(Virtual Reality：以下VR)。
+        p 3次元ジェスチャ装置(Leap Motion)を用いて教師の手の動きを認識し、仮想空間に手のCGモデルを表示する。
+    .item4
+      .text
+        h1 結果
+        p 実験後にアンケートにより回答を得たところ、肯定的な回答では「たのしい・おもしろい」、「没入感があって星の動き・位置が分かりやすい」となった。否定的な回答では「目が痛い・疲れる」、「酔った」、「Leap Motionの位置がわかりずらい」となった。
+        ul
+          li
+            a(href="https://www.jstage.jst.go.jp/article/jjet/40/Suppl./40_S40103/_pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title Learning Intelligent Dialogs for Bounding Box Annotation
+    .info
+      .authors K. Konyushkova et al.,
+      .conference arXiv:
+      .paper_id 1712.08087
+    .item1
+      h1 概要
+      .text.
+        Bounding Boxのアノテーションを効率的に行うためのシステムを提案．
+        手動でBounding Boxを描く，Detectorが生成したBounding Boxが正しいかを判定するという2つの作業を
+        どのようにやらせると効率的かをシステムが学習．
+        確信度が高そうなBounding Boxを判定させて，ダメだったら手動で描かせる，など．
+        Boxがacceptされる確率を推定して最適なアノテーション方法を決定する方法と，
+        強化学習ベースで決定する方法の2つを提案．
+        固定された戦略でアノテーションするよりも，
+        提案手法により決定する戦略を用いる方が多くの場合で効率的なことを実験的に示した．
+
+    .item2
+      img(src=figpath+"180330_iad.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 効率的なBounding Boxのアノテーションを支援するためのシステムを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Bounding Boxがacceptされる確率って本来はそのBoxのスコアで完結されているべきな気もする
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks
+    .info
+      .authors A. Gupta et al.,
+      .conference arXiv:
+      .paper_id 1803.10892
+    .item1
+      h1 概要
+      .text.
+        歩行者の移動軌跡の予測に関する研究．
+        複数人がすれ違うときにぶつかったり極端に近づいたりしないような，
+        自然な軌跡を予測したい．
+        従来手法では主に，人ごとに周辺のみを考慮しシーンにいる全体のインタラクションを効率的に考慮できていないという点と，
+        平均的な一つの振る舞いを学習しており，複数の可能性を考慮できていない点の2つが欠点としてあった．
+        この研究ではそれらをGANベースの手法 (Social GAN) を提案して解決している．
+        シーン中のすべての人の関係を扱う新たなPooling方法を提案して一つ目の問題を解決し，
+        過去の軌跡を入力として未来の軌跡を生成するGANにより二つ目の問題を解決した．
+        
+    .item2
+      img(src=figpath+"180330_socialgan.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 幅広い出力を得るためのロス関数を提案
+          li シーン中のすべての人の関係のエンコードを学習する新しいPoolingを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Stanford (Fei-fei Li) のグループ
+          li GANでの軌跡予測は自然な発想でまだなかったのかという感じもする
+          li 成功させるのが難しい？
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
     .title Movie Editing and Cognitive Event Segmentation in Virtual Reality Video
     .info
       .authors A. Serrano, et al.
@@ -2742,7 +3195,7 @@ block slides
     .title Guided Labeling using Convolutional Neural Networks
     .info
       .authors Sebastian Stabinger, et al. 
-      .conference CVPR 2018
+      .conference CVPR 2018(under review)
     .slide_editor Munetaka Minoguchi
 
     .item1
@@ -6191,7 +6644,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+
   +slide
     .title Personalized Image Aesthetics
     .info
