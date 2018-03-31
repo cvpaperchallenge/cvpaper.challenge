@@ -22,6 +22,44 @@
       <div class="slides">
         <section>
           <div class="paper-abstract">
+            <div class="title">LayoutNet: Reconstructing the 3D Room Layout from a Single RGB Image</div>
+            <div class="info">
+              <div class="authors">Chuhang Zou, Alex Colburn, Qi Shan, Derek Hoiem</div>
+              <div class="conference">CVPR 2018</div>
+            </div>
+            <div class="slide_editor">Munetaka Minoguchi</div>
+            <div class="item1">
+              <div class="text">
+                <h1>概要</h1>
+                <p>単一のパースペクティブまたはパノラマ画像から屋内3Dルームレイアウトを推定するLayoutNetの提案。最初に、消失点を分析し、水平になるように画像を整列。これにより、壁と壁の境界が垂直になり、ノイズ低減。画像からコーナー(レイアウト接合点)と境界を、エンコーダ/デコーダ構造のCNNで出力。最後に、3D Layoutパラメータを、予測したコーナーと境界に適合するように最適化する。</p>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="text">
+                <p><img src="slides/figs/180401LayoutNet.jpg"></p>
+              </div>
+            </div>
+            <div class="item3">
+              <div class="text">
+                <h1>新規性</h1>
+                <p>アーキテクチャはRoomNetと似ているが、消失点に基づいて画像を整列させ、複数のレイアウト要素（コーナー、境界線、サイズ、平行移動）を予測し、 “L”形の部屋のような非直方体のマンハッタンレイアウトに対しても適応できる。</p>
+              </div>
+            </div>
+            <div class="item4">
+              <div class="text">
+                <h1>結果・リンク集</h1>
+                <p>従来手法と比較して、処理速度と正確さにおいて性能の向上。</p>
+                <ul>
+                  <li><a href="https://arxiv.org/pdf/1803.08999.pdf">論文</a></li>
+                  <li><a href="https://github.com/zouchuhang/LayoutNet">ソースコード</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_index">[#1]</div>
+          </div>
+        </section>
+        <section>
+          <div class="paper-abstract">
             <div class="title">Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering</div>
             <div class="info">
               <div class="authors">Somak Aditya, Yezhou Yang, Chitta Baral</div>
@@ -54,7 +92,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#1]</div>
+            <div class="slide_index">[#2]</div>
           </div>
         </section>
         <section>
@@ -91,7 +129,7 @@
                 <p><img src="slides/figs/180331PolygonRNN++_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#2]</div>
+            <div class="slide_index">[#3]</div>
           </div>
         </section>
         <section>
@@ -128,7 +166,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#3]</div>
+            <div class="slide_index">[#4]</div>
           </div>
         </section>
         <section>
@@ -165,7 +203,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#4]</div>
+            <div class="slide_index">[#5]</div>
           </div>
         </section>
         <section>
@@ -203,7 +241,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#5]</div>
+            <div class="slide_index">[#6]</div>
           </div>
         </section>
         <section>
@@ -241,7 +279,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#6]</div>
+            <div class="slide_index">[#7]</div>
           </div>
         </section>
         <section>
@@ -278,7 +316,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#7]</div>
+            <div class="slide_index">[#8]</div>
           </div>
         </section>
         <section>
@@ -315,7 +353,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#8]</div>
+            <div class="slide_index">[#9]</div>
           </div>
         </section>
         <section>
@@ -352,7 +390,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#9]</div>
+            <div class="slide_index">[#10]</div>
           </div>
         </section>
         <section>
@@ -389,7 +427,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#10]</div>
+            <div class="slide_index">[#11]</div>
           </div>
         </section>
         <section>
@@ -434,7 +472,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#11]</div>
+            <div class="slide_index">[#12]</div>
             <div class="timestamp">2018.3.30 15:47:02</div>
           </div>
         </section>
@@ -475,7 +513,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#12]</div>
+            <div class="slide_index">[#13]</div>
           </div>
         </section>
         <section>
@@ -517,7 +555,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#13]</div>
+            <div class="slide_index">[#14]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -563,7 +601,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#14]</div>
+            <div class="slide_index">[#15]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -602,7 +640,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#15]</div>
+            <div class="slide_index">[#16]</div>
             <div class="timestamp">2018.3.30 14:59:04</div>
           </div>
         </section>
@@ -642,7 +680,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#16]</div>
+            <div class="slide_index">[#17]</div>
             <div class="timestamp">2018.3.30 14:44:20</div>
           </div>
         </section>
@@ -680,7 +718,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#17]</div>
+            <div class="slide_index">[#18]</div>
             <div class="timestamp">2018.3.30 14:21:16</div>
           </div>
         </section>
@@ -720,7 +758,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#18]</div>
+            <div class="slide_index">[#19]</div>
             <div class="timestamp">2018.3.30 14:08:53</div>
           </div>
         </section>
@@ -760,7 +798,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#19]</div>
+            <div class="slide_index">[#20]</div>
             <div class="timestamp">2018.3.30 13:53:45</div>
           </div>
         </section>
@@ -798,7 +836,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#20]</div>
+            <div class="slide_index">[#21]</div>
             <div class="timestamp">2018.3.30 12:21:25</div>
           </div>
         </section>
@@ -836,7 +874,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#21]</div>
+            <div class="slide_index">[#22]</div>
             <div class="timestamp">2018.3.30 12:08:00</div>
           </div>
         </section>
@@ -888,7 +926,7 @@
                   LBRならではの調査．UXの知見の共有は，自動走行車両の倫理的議論にも関わると思う．</p>
               </div>
             </div>
-            <div class="slide_index">[#22]</div>
+            <div class="slide_index">[#23]</div>
             <div class="timestamp">2018.3.30 13:25:21</div>
           </div>
         </section>
@@ -925,7 +963,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#23]</div>
+            <div class="slide_index">[#24]</div>
             <div class="timestamp">2018.3.30 11:45:54</div>
           </div>
         </section>
@@ -964,7 +1002,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#24]</div>
+            <div class="slide_index">[#25]</div>
             <div class="timestamp">2018.3.30 11:08:02</div>
           </div>
         </section>
@@ -1003,7 +1041,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#25]</div>
+            <div class="slide_index">[#26]</div>
             <div class="timestamp">2018.3.29 16:00:41</div>
           </div>
         </section>
@@ -1044,7 +1082,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#26]</div>
+            <div class="slide_index">[#27]</div>
             <div class="timestamp">2018.3.29 15:16:07</div>
           </div>
         </section>
@@ -1082,7 +1120,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#27]</div>
+            <div class="slide_index">[#28]</div>
             <div class="timestamp">2018.3.29 14:56:48</div>
           </div>
         </section>
@@ -1120,7 +1158,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#28]</div>
+            <div class="slide_index">[#29]</div>
           </div>
         </section>
         <section>
@@ -1157,7 +1195,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#29]</div>
+            <div class="slide_index">[#30]</div>
           </div>
         </section>
         <section>
@@ -1194,7 +1232,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#30]</div>
+            <div class="slide_index">[#31]</div>
           </div>
         </section>
         <section>
@@ -1230,7 +1268,7 @@
                 <p><img src="slides/figs/180330ISTRC_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#31]</div>
+            <div class="slide_index">[#32]</div>
           </div>
         </section>
         <section>
@@ -1267,7 +1305,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#32]</div>
+            <div class="slide_index">[#33]</div>
           </div>
         </section>
         <section>
@@ -1304,7 +1342,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#33]</div>
+            <div class="slide_index">[#34]</div>
           </div>
         </section>
         <section>
@@ -1342,7 +1380,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#34]</div>
+            <div class="slide_index">[#35]</div>
           </div>
         </section>
         <section>
@@ -1379,7 +1417,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#35]</div>
+            <div class="slide_index">[#36]</div>
           </div>
         </section>
         <section>
@@ -1416,7 +1454,7 @@
                 <p><img src="slides/figs/180330DSCNN_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#36]</div>
+            <div class="slide_index">[#37]</div>
           </div>
         </section>
         <section>
@@ -1453,7 +1491,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#37]</div>
+            <div class="slide_index">[#38]</div>
           </div>
         </section>
         <section>
@@ -1489,7 +1527,7 @@
                 <p><img src="slides/figs/180330EDRN_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#38]</div>
+            <div class="slide_index">[#39]</div>
           </div>
         </section>
         <section>
@@ -1526,7 +1564,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#39]</div>
+            <div class="slide_index">[#40]</div>
           </div>
         </section>
         <section>
@@ -1563,7 +1601,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#40]</div>
+            <div class="slide_index">[#41]</div>
           </div>
         </section>
         <section>
@@ -1599,7 +1637,7 @@
                 <p><img src="slides/figs/180330ActorAndAction_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#41]</div>
+            <div class="slide_index">[#42]</div>
           </div>
         </section>
         <section>
@@ -1636,7 +1674,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#42]</div>
+            <div class="slide_index">[#43]</div>
           </div>
         </section>
         <section>
@@ -1674,7 +1712,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#43]</div>
+            <div class="slide_index">[#44]</div>
           </div>
         </section>
         <section>
@@ -1711,7 +1749,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#44]</div>
+            <div class="slide_index">[#45]</div>
           </div>
         </section>
         <section>
@@ -1748,7 +1786,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#45]</div>
+            <div class="slide_index">[#46]</div>
           </div>
         </section>
         <section>
@@ -1785,7 +1823,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#46]</div>
+            <div class="slide_index">[#47]</div>
           </div>
         </section>
         <section>
@@ -1822,7 +1860,7 @@
                 <p><img src="slides/figs/180330AC2Dto3D_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#47]</div>
+            <div class="slide_index">[#48]</div>
           </div>
         </section>
         <section>
@@ -1859,7 +1897,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#48]</div>
+            <div class="slide_index">[#49]</div>
           </div>
         </section>
         <section>
@@ -1896,7 +1934,7 @@
                 <p><img src="slides/figs/180330SAN_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#49]</div>
+            <div class="slide_index">[#50]</div>
           </div>
         </section>
         <section>
@@ -1933,7 +1971,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#50]</div>
+            <div class="slide_index">[#51]</div>
           </div>
         </section>
         <section>
@@ -1970,7 +2008,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#51]</div>
+            <div class="slide_index">[#52]</div>
           </div>
         </section>
         <section>
@@ -2008,7 +2046,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#52]</div>
+            <div class="slide_index">[#53]</div>
           </div>
         </section>
         <section>
@@ -2045,7 +2083,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#53]</div>
+            <div class="slide_index">[#54]</div>
           </div>
         </section>
         <section>
@@ -2082,7 +2120,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#54]</div>
+            <div class="slide_index">[#55]</div>
             <div class="timestamp">2018.3.29 14:27:12</div>
           </div>
         </section>
@@ -2121,7 +2159,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#55]</div>
+            <div class="slide_index">[#56]</div>
             <div class="timestamp">2018.3.29 13:59:43</div>
           </div>
         </section>
@@ -2159,7 +2197,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#56]</div>
+            <div class="slide_index">[#57]</div>
             <div class="timestamp">2018.3.29 13:11:12</div>
           </div>
         </section>
@@ -2197,7 +2235,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#57]</div>
+            <div class="slide_index">[#58]</div>
             <div class="timestamp">2018.3.26 20:52:24</div>
           </div>
         </section>
@@ -2238,7 +2276,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#58]</div>
+            <div class="slide_index">[#59]</div>
             <div class="timestamp">2018.3.29 09:28:32</div>
           </div>
         </section>
@@ -2284,7 +2322,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#59]</div>
+            <div class="slide_index">[#60]</div>
             <div class="timestamp">2018.3.29 13:55:50</div>
           </div>
         </section>
@@ -2323,7 +2361,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#60]</div>
+            <div class="slide_index">[#61]</div>
             <div class="timestamp">2018.3.27 12:18:23</div>
           </div>
         </section>
@@ -2362,7 +2400,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#61]</div>
+            <div class="slide_index">[#62]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2410,7 +2448,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#62]</div>
+            <div class="slide_index">[#63]</div>
             <div class="timestamp">2018.3.27 08:58:36</div>
           </div>
         </section>
@@ -2449,7 +2487,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#63]</div>
+            <div class="slide_index">[#64]</div>
             <div class="timestamp">2018.3.24 18:05:46</div>
           </div>
         </section>
@@ -2487,7 +2525,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#64]</div>
+            <div class="slide_index">[#65]</div>
             <div class="timestamp">2018.3.24 15:14:35</div>
           </div>
         </section>
@@ -2524,7 +2562,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#65]</div>
+            <div class="slide_index">[#66]</div>
             <div class="timestamp">2018.3.24 14:53:51</div>
           </div>
         </section>
@@ -2565,7 +2603,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#66]</div>
+            <div class="slide_index">[#67]</div>
             <div class="timestamp">2018.3.24 14:09:09</div>
           </div>
         </section>
@@ -2604,7 +2642,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#67]</div>
+            <div class="slide_index">[#68]</div>
             <div class="timestamp">2018.3.24 13:30:39</div>
           </div>
         </section>
@@ -2642,7 +2680,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#68]</div>
+            <div class="slide_index">[#69]</div>
             <div class="timestamp">2018.3.24 13:04:44</div>
           </div>
         </section>
@@ -2680,7 +2718,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#69]</div>
+            <div class="slide_index">[#70]</div>
             <div class="timestamp">2018.3.24 12:47:10</div>
           </div>
         </section>
@@ -2718,7 +2756,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#70]</div>
+            <div class="slide_index">[#71]</div>
             <div class="timestamp">2018.3.23 20:37:22</div>
           </div>
         </section>
@@ -2755,7 +2793,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#71]</div>
+            <div class="slide_index">[#72]</div>
             <div class="timestamp">2018.3.23 19:40:06</div>
           </div>
         </section>
@@ -2793,7 +2831,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#72]</div>
+            <div class="slide_index">[#73]</div>
             <div class="timestamp">2018.3.23 19:11:04</div>
           </div>
         </section>
@@ -2836,7 +2874,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#73]</div>
+            <div class="slide_index">[#74]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2881,7 +2919,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#74]</div>
+            <div class="slide_index">[#75]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -2919,7 +2957,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#75]</div>
+            <div class="slide_index">[#76]</div>
           </div>
         </section>
         <section>
@@ -2958,7 +2996,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#76]</div>
+            <div class="slide_index">[#77]</div>
             <div class="timestamp">2018.3.22 19:55:34</div>
           </div>
         </section>
@@ -2997,7 +3035,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#77]</div>
+            <div class="slide_index">[#78]</div>
             <div class="timestamp">2018.3.22 19:33:35</div>
           </div>
         </section>
@@ -3036,7 +3074,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#78]</div>
+            <div class="slide_index">[#79]</div>
             <div class="timestamp">2018.3.22 19:18:32</div>
           </div>
         </section>
@@ -3074,7 +3112,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#79]</div>
+            <div class="slide_index">[#80]</div>
             <div class="timestamp">2018.3.22 18:52:15</div>
           </div>
         </section>
@@ -3112,7 +3150,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#80]</div>
+            <div class="slide_index">[#81]</div>
             <div class="timestamp">2018.3.22 18:31:05</div>
           </div>
         </section>
@@ -3152,7 +3190,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#81]</div>
+            <div class="slide_index">[#82]</div>
             <div class="timestamp">2018.3.22 08:56:48</div>
           </div>
         </section>
@@ -3196,7 +3234,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#82]</div>
+            <div class="slide_index">[#83]</div>
             <div class="timestamp">2018.3.19 18:00:31</div>
           </div>
         </section>
@@ -3235,7 +3273,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#83]</div>
+            <div class="slide_index">[#84]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -3275,7 +3313,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#84]</div>
+            <div class="slide_index">[#85]</div>
             <div class="timestamp">2018.3.15 20:27:41</div>
           </div>
         </section>
@@ -3320,7 +3358,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#85]</div>
+            <div class="slide_index">[#86]</div>
             <div class="timestamp">2018.3.19 14:49:23</div>
           </div>
         </section>
@@ -3362,7 +3400,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#86]</div>
+            <div class="slide_index">[#87]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -3403,7 +3441,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#87]</div>
+            <div class="slide_index">[#88]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -3452,7 +3490,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#88]</div>
+            <div class="slide_index">[#89]</div>
             <div class="timestamp">2018.3.19 13:49:03</div>
           </div>
         </section>
@@ -3491,7 +3529,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#89]</div>
+            <div class="slide_index">[#90]</div>
             <div class="slide_editor">Tomoyuki Suzuki</div>
           </div>
         </section>
@@ -3535,7 +3573,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#90]</div>
+            <div class="slide_index">[#91]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -3577,7 +3615,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#91]</div>
+            <div class="slide_index">[#92]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -3621,7 +3659,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#92]</div>
+            <div class="slide_index">[#93]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -3666,7 +3704,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#93]</div>
+            <div class="slide_index">[#94]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -3705,7 +3743,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#94]</div>
+            <div class="slide_index">[#95]</div>
           </div>
         </section>
         <section>
@@ -3741,7 +3779,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#95]</div>
+            <div class="slide_index">[#96]</div>
             <div class="timestamp">2018.3.15 09:17:35</div>
           </div>
         </section>
@@ -3780,7 +3818,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#96]</div>
+            <div class="slide_index">[#97]</div>
             <div class="timestamp">2018.3.15 09:04:03</div>
           </div>
         </section>
@@ -3819,7 +3857,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#97]</div>
+            <div class="slide_index">[#98]</div>
             <div class="timestamp">2018.3.15 08:43:30</div>
           </div>
         </section>
@@ -3858,7 +3896,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#98]</div>
+            <div class="slide_index">[#99]</div>
           </div>
         </section>
         <section>
@@ -3897,7 +3935,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#99]</div>
+            <div class="slide_index">[#100]</div>
           </div>
         </section>
         <section>
@@ -3935,7 +3973,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#100]</div>
+            <div class="slide_index">[#101]</div>
             <div class="timestamp">2018.3.14 12:12:33</div>
           </div>
         </section>
@@ -3973,7 +4011,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#101]</div>
+            <div class="slide_index">[#102]</div>
             <div class="timestamp">2018.3.14 11:04:45</div>
           </div>
         </section>
@@ -4012,7 +4050,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#102]</div>
+            <div class="slide_index">[#103]</div>
             <div class="timestamp">2018.3.14 08:43:53</div>
           </div>
         </section>
@@ -4049,7 +4087,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#103]</div>
+            <div class="slide_index">[#104]</div>
           </div>
         </section>
         <section>
@@ -4087,7 +4125,7 @@
                 <p><img src="slides/figs/180313DREAM_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#104]</div>
+            <div class="slide_index">[#105]</div>
           </div>
         </section>
         <section>
@@ -4126,7 +4164,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#105]</div>
+            <div class="slide_index">[#106]</div>
           </div>
         </section>
         <section>
@@ -4164,7 +4202,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#106]</div>
+            <div class="slide_index">[#107]</div>
           </div>
         </section>
         <section>
@@ -4208,7 +4246,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#107]</div>
+            <div class="slide_index">[#108]</div>
             <div class="timestamp">2018.3.11 23:53:27</div>
           </div>
         </section>
@@ -4248,7 +4286,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#108]</div>
+            <div class="slide_index">[#109]</div>
           </div>
         </section>
         <section>
@@ -4285,7 +4323,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#109]</div>
+            <div class="slide_index">[#110]</div>
           </div>
         </section>
         <section>
@@ -4322,7 +4360,7 @@
                 <p><img src="slides/figs/180310MSDN_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#110]</div>
+            <div class="slide_index">[#111]</div>
           </div>
         </section>
         <section>
@@ -4359,7 +4397,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#111]</div>
+            <div class="slide_index">[#112]</div>
           </div>
         </section>
         <section>
@@ -4397,7 +4435,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#112]</div>
+            <div class="slide_index">[#113]</div>
           </div>
         </section>
         <section>
@@ -4435,7 +4473,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#113]</div>
+            <div class="slide_index">[#114]</div>
             <div class="timestamp">2018.3.9 22:34:11</div>
           </div>
         </section>
@@ -4474,7 +4512,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#114]</div>
+            <div class="slide_index">[#115]</div>
           </div>
         </section>
         <section>
@@ -4515,7 +4553,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#115]</div>
+            <div class="slide_index">[#116]</div>
           </div>
         </section>
         <section>
@@ -4553,7 +4591,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#116]</div>
+            <div class="slide_index">[#117]</div>
             <div class="timestamp">2018.3.9 18:05:28</div>
           </div>
         </section>
@@ -4605,7 +4643,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#117]</div>
+            <div class="slide_index">[#118]</div>
             <div class="timestamp">2018.3.9 16:21:51</div>
           </div>
         </section>
@@ -4643,7 +4681,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#118]</div>
+            <div class="slide_index">[#119]</div>
             <div class="timestamp">2018.3.9 16:07:03</div>
           </div>
         </section>
@@ -4696,7 +4734,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#119]</div>
+            <div class="slide_index">[#120]</div>
             <div class="timestamp">2018.3.9 16:01:10</div>
           </div>
         </section>
@@ -4745,7 +4783,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#120]</div>
+            <div class="slide_index">[#121]</div>
             <div class="timestamp">2018.3.9 15:34:59</div>
           </div>
         </section>
@@ -4786,7 +4824,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#121]</div>
+            <div class="slide_index">[#122]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4826,7 +4864,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#122]</div>
+            <div class="slide_index">[#123]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4863,7 +4901,7 @@
                 もっとデータセットが実世界のものに近づいていっても同じ結果が出てくるのか気になるところ．
               </div>
             </div>
-            <div class="slide_index">[#123]</div>
+            <div class="slide_index">[#124]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4900,7 +4938,7 @@
                 ある意味直接的な認識である気も．
               </div>
             </div>
-            <div class="slide_index">[#124]</div>
+            <div class="slide_index">[#125]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4931,7 +4969,7 @@
               </div>
             </div>
             <div class="item4"><img src="slides/figs/180307_combining_2.png" alt="180307_combining_2.png"></div>
-            <div class="slide_index">[#125]</div>
+            <div class="slide_index">[#126]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -4985,7 +5023,7 @@
                   ※注　ISAとは，発話しながらも間接的に意味を伝える行為．「車に乗れ」「空手の稽古があるの」＞間接的に乗車を拒否．</p>
               </div>
             </div>
-            <div class="slide_index">[#126]</div>
+            <div class="slide_index">[#127]</div>
             <div class="timestamp">2018.3.9 15:11:52</div>
           </div>
         </section>
@@ -5039,7 +5077,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#127]</div>
+            <div class="slide_index">[#128]</div>
             <div class="timestamp">2018.3.9 14:34:36</div>
           </div>
         </section>
@@ -5077,7 +5115,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#128]</div>
+            <div class="slide_index">[#129]</div>
           </div>
         </section>
         <section>
@@ -5114,7 +5152,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#129]</div>
+            <div class="slide_index">[#130]</div>
             <div class="timestamp">2018.3.9 13:45:20</div>
           </div>
         </section>
@@ -5152,7 +5190,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#130]</div>
+            <div class="slide_index">[#131]</div>
             <div class="timestamp">2018.3.9 13:19:40</div>
           </div>
         </section>
@@ -5190,7 +5228,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#131]</div>
+            <div class="slide_index">[#132]</div>
             <div class="timestamp">2018.3.9 12:31:03</div>
           </div>
         </section>
@@ -5234,7 +5272,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#132]</div>
+            <div class="slide_index">[#133]</div>
             <div class="timestamp">2018.3.9 11:59:39</div>
           </div>
         </section>
@@ -5290,7 +5328,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#133]</div>
+            <div class="slide_index">[#134]</div>
             <div class="timestamp">2018.3.9 11:38:49</div>
           </div>
         </section>
@@ -5337,7 +5375,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#134]</div>
+            <div class="slide_index">[#135]</div>
             <div class="timestamp">2018.3.9 10:47:04</div>
           </div>
         </section>
@@ -5375,7 +5413,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#135]</div>
+            <div class="slide_index">[#136]</div>
           </div>
         </section>
         <section>
@@ -5418,7 +5456,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#136]</div>
+            <div class="slide_index">[#137]</div>
             <div class="timestamp">2018.3.8 20:32:44</div>
           </div>
         </section>
@@ -5457,7 +5495,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#137]</div>
+            <div class="slide_index">[#138]</div>
           </div>
         </section>
         <section>
@@ -5504,7 +5542,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#138]</div>
+            <div class="slide_index">[#139]</div>
             <div class="timestamp">2018.3.8 19:13:34</div>
           </div>
         </section>
@@ -5541,7 +5579,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#139]</div>
+            <div class="slide_index">[#140]</div>
             <div class="timestamp">2018.3.8 18:27:18</div>
           </div>
         </section>
@@ -5580,7 +5618,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#140]</div>
+            <div class="slide_index">[#141]</div>
             <div class="timestamp">2018.3.8 18:00:10</div>
           </div>
         </section>
@@ -5619,7 +5657,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#141]</div>
+            <div class="slide_index">[#142]</div>
             <div class="timestamp">2018.3.8 11:04:00</div>
           </div>
         </section>
@@ -5660,7 +5698,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#142]</div>
+            <div class="slide_index">[#143]</div>
           </div>
         </section>
         <section>
@@ -5700,7 +5738,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#143]</div>
+            <div class="slide_index">[#144]</div>
           </div>
         </section>
         <section>
@@ -5739,7 +5777,7 @@
                 <p><img src="slides/figs/180307VIsualDialog_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#144]</div>
+            <div class="slide_index">[#145]</div>
           </div>
         </section>
         <section>
@@ -5782,7 +5820,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#145]</div>
+            <div class="slide_index">[#146]</div>
           </div>
         </section>
         <section>
@@ -5823,7 +5861,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#146]</div>
+            <div class="slide_index">[#147]</div>
           </div>
         </section>
         <section>
@@ -5862,7 +5900,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#147]</div>
+            <div class="slide_index">[#148]</div>
             <div class="timestamp">2018.3.7 12:28:51</div>
           </div>
         </section>
@@ -5903,7 +5941,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#148]</div>
+            <div class="slide_index">[#149]</div>
             <div class="timestamp">2018.3.7 09:23:28</div>
           </div>
         </section>
@@ -5942,7 +5980,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#149]</div>
+            <div class="slide_index">[#150]</div>
             <div class="timestamp">2018.3.7 09:04:15</div>
           </div>
         </section>
@@ -5980,7 +6018,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#150]</div>
+            <div class="slide_index">[#151]</div>
             <div class="timestamp">2018.3.7 08:27:34</div>
           </div>
         </section>
@@ -6019,7 +6057,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#151]</div>
+            <div class="slide_index">[#152]</div>
             <div class="timestamp">2018.3.6 14:58:57</div>
           </div>
         </section>
@@ -6061,7 +6099,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#152]</div>
+            <div class="slide_index">[#153]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -6098,7 +6136,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#153]</div>
+            <div class="slide_index">[#154]</div>
             <div class="timestamp">2018.3.6 14:31:32</div>
           </div>
         </section>
@@ -6137,7 +6175,7 @@
                 <p><img src="slides/figs/180306MarioQA_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#154]</div>
+            <div class="slide_index">[#155]</div>
           </div>
         </section>
         <section>
@@ -6174,7 +6212,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#155]</div>
+            <div class="slide_index">[#156]</div>
             <div class="timestamp">2018.3.5 20:25:53</div>
           </div>
         </section>
@@ -6215,7 +6253,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#156]</div>
+            <div class="slide_index">[#157]</div>
             <div class="timestamp">2018.3.5 19:53:46</div>
           </div>
         </section>
@@ -6252,7 +6290,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#157]</div>
+            <div class="slide_index">[#158]</div>
             <div class="timestamp">2018.3.5 19:25:04</div>
           </div>
         </section>
@@ -6290,7 +6328,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#158]</div>
+            <div class="slide_index">[#159]</div>
             <div class="timestamp">2018.3.5 19:08:53</div>
           </div>
         </section>
@@ -6334,7 +6372,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#159]</div>
+            <div class="slide_index">[#160]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -6373,7 +6411,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#160]</div>
+            <div class="slide_index">[#161]</div>
           </div>
         </section>
         <section>
@@ -6413,7 +6451,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#161]</div>
+            <div class="slide_index">[#162]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -6455,7 +6493,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#162]</div>
+            <div class="slide_index">[#163]</div>
           </div>
         </section>
         <section>
@@ -6494,7 +6532,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#163]</div>
+            <div class="slide_index">[#164]</div>
           </div>
         </section>
         <section>
@@ -6533,7 +6571,7 @@
                 <p><img src="slides/figs/180304DeformableConvolution_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#164]</div>
+            <div class="slide_index">[#165]</div>
           </div>
         </section>
         <section>
@@ -6572,7 +6610,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#165]</div>
+            <div class="slide_index">[#166]</div>
           </div>
         </section>
         <section>
@@ -6614,7 +6652,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#166]</div>
+            <div class="slide_index">[#167]</div>
           </div>
         </section>
         <section>
@@ -6653,7 +6691,7 @@
                 <p> <img src="slides/figs/180303VisualStorytelling_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#167]</div>
+            <div class="slide_index">[#168]</div>
           </div>
         </section>
         <section>
@@ -6691,7 +6729,7 @@
                 <p> <img src="slides/figs/180303VisualReasoning_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#168]</div>
+            <div class="slide_index">[#169]</div>
           </div>
         </section>
         <section>
@@ -6728,7 +6766,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#169]</div>
+            <div class="slide_index">[#170]</div>
           </div>
         </section>
         <section>
@@ -6765,7 +6803,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#170]</div>
+            <div class="slide_index">[#171]</div>
           </div>
         </section>
         <section>
@@ -6809,7 +6847,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#171]</div>
+            <div class="slide_index">[#172]</div>
           </div>
         </section>
         <section>
@@ -6849,7 +6887,7 @@
                 <p><img src="slides/figs/180303TowardsDiverse_2.jpg"></p>
               </div>
             </div>
-            <div class="slide_index">[#172]</div>
+            <div class="slide_index">[#173]</div>
           </div>
         </section>
         <section>
@@ -6888,7 +6926,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#173]</div>
+            <div class="slide_index">[#174]</div>
             <div class="timestamp">2018.3.3 10:46:40</div>
           </div>
         </section>
@@ -6928,7 +6966,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#174]</div>
+            <div class="slide_index">[#175]</div>
             <div class="timestamp">2018.3.3 10:13:42</div>
           </div>
         </section>
@@ -6978,7 +7016,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#175]</div>
+            <div class="slide_index">[#176]</div>
           </div>
         </section>
         <section>
@@ -7016,7 +7054,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#176]</div>
+            <div class="slide_index">[#177]</div>
             <div class="timestamp">2018.3.2 20:38:13</div>
           </div>
         </section>
@@ -7056,7 +7094,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#177]</div>
+            <div class="slide_index">[#178]</div>
             <div class="timestamp">2018.3.2 20:04:42</div>
           </div>
         </section>
@@ -7102,7 +7140,7 @@
                 <p>結果：特に人や動物などのオブジェクトが面白さに影響</p>
               </div>
             </div>
-            <div class="slide_index">[#178]</div>
+            <div class="slide_index">[#179]</div>
             <div class="slide_editor">Munetaka Minoguchi</div>
           </div>
         </section>
@@ -7141,7 +7179,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#179]</div>
+            <div class="slide_index">[#180]</div>
             <div class="timestamp">2018.3.2 10:15:30</div>
           </div>
         </section>
@@ -7182,7 +7220,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#180]</div>
+            <div class="slide_index">[#181]</div>
             <div class="timestamp">2018.3.2 09:36:26</div>
           </div>
         </section>
@@ -7219,7 +7257,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#181]</div>
+            <div class="slide_index">[#182]</div>
             <div class="timestamp">2018.3.2 08:39:04</div>
           </div>
         </section>
@@ -7259,7 +7297,7 @@
                   深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。</p>
               </div>
             </div>
-            <div class="slide_index">[#182]</div>
+            <div class="slide_index">[#183]</div>
           </div>
         </section>
         <section>
@@ -7296,7 +7334,7 @@
                 <p>システムやユーザスタディの完成度や完全に実現できたときの有用性が評価された？</p>
               </div>
             </div>
-            <div class="slide_index">[#183]</div>
+            <div class="slide_index">[#184]</div>
             <div class="timestamp">2018.3.1 10:44:03</div>
           </div>
         </section>
@@ -7333,7 +7371,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#184]</div>
+            <div class="slide_index">[#185]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -7366,7 +7404,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#185]</div>
+            <div class="slide_index">[#186]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -7406,7 +7444,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#186]</div>
+            <div class="slide_index">[#187]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -7451,7 +7489,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#187]</div>
+            <div class="slide_index">[#188]</div>
             <div class="slide_editor">Kensho Hara</div>
           </div>
         </section>
@@ -7491,7 +7529,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#188]</div>
+            <div class="slide_index">[#189]</div>
             <div class="slide_editor"><a href="http://hirokatsukataoka.net/" target="blank">Hirokatsu Kataoka</a></div>
           </div>
         </section>
@@ -7528,7 +7566,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#189]</div>
+            <div class="slide_index">[#190]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7564,7 +7602,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#190]</div>
+            <div class="slide_index">[#191]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7601,7 +7639,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#191]</div>
+            <div class="slide_index">[#192]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7639,7 +7677,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#192]</div>
+            <div class="slide_index">[#193]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7679,7 +7717,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#193]</div>
+            <div class="slide_index">[#194]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7716,7 +7754,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#194]</div>
+            <div class="slide_index">[#195]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7758,7 +7796,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#195]</div>
+            <div class="slide_index">[#196]</div>
           </div>
         </section>
         <section>
@@ -7794,7 +7832,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#196]</div>
+            <div class="slide_index">[#197]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7832,7 +7870,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#197]</div>
+            <div class="slide_index">[#198]</div>
             <div class="slide_editor">Kazuki Inoue</div>
           </div>
         </section>
@@ -7867,7 +7905,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#198]</div>
+            <div class="slide_index">[#199]</div>
             <div class="slide_editor">Kazuki Inoue</div>
           </div>
         </section>
@@ -7905,7 +7943,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#199]</div>
+            <div class="slide_index">[#200]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7941,7 +7979,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#200]</div>
+            <div class="slide_index">[#201]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -7972,7 +8010,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#201]</div>
+            <div class="slide_index">[#202]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8009,7 +8047,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#202]</div>
+            <div class="slide_index">[#203]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8047,7 +8085,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#203]</div>
+            <div class="slide_index">[#204]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8084,7 +8122,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#204]</div>
+            <div class="slide_index">[#205]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8121,7 +8159,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#205]</div>
+            <div class="slide_index">[#206]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8157,7 +8195,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#206]</div>
+            <div class="slide_index">[#207]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8193,7 +8231,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#207]</div>
+            <div class="slide_index">[#208]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8230,7 +8268,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#208]</div>
+            <div class="slide_index">[#209]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8266,7 +8304,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#209]</div>
+            <div class="slide_index">[#210]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8302,7 +8340,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#210]</div>
+            <div class="slide_index">[#211]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8338,7 +8376,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#211]</div>
+            <div class="slide_index">[#212]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
@@ -8374,7 +8412,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide_index">[#212]</div>
+            <div class="slide_index">[#213]</div>
             <div class="slide_editor">Shintaro Yamamoto</div>
           </div>
         </section>
