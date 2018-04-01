@@ -2,6 +2,34 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title Weakly-Supervised Action Segmentation with Iterative Soft Boundary Assignment
+    .info
+      .authors Li Ding, Chenliang Xu
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p トリミングされてないビデオに対して、弱教師学習を用いてhuman action segmentationタスクを解決する。 フレーム単位でアクションラベルを推定するTemporal Convolutional Feature Pyramid Network (TCFPN)、 アクションシーケンスを整列させるIterative Soft Boundary Assignment (ISBA)の提案。これらを反復的に学習させることで性能の向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401TCFPN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 近年(2018)のRNNやHidden Markov Models (HMM)などを用いた従来の手法では、計算コストが高く、ネットワークを大規模に展開できない。本手法では、計算の効率性とスケールに着目し、 human action segmentationを行う。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TCFPN、TCFPN + ISBAにおいて最先端の性能。これらの手法は一般化でき、他の手法と併用することで、ビデオアクション理解タスク技術の促進につながる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10699.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
     .title MaskRNN: Instance Level Video Object Segmentation
     .info
       .authors Yuan-Ting Hu, Jia-Bin Huang, Alexander G. Schwing
