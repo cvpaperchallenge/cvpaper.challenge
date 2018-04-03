@@ -1,6 +1,7 @@
 extends layouts/_layout
 
 block slides
+
   +slide
     .title Fashion Forward: Forecasting Visual Style in Fashion
     .info
@@ -22,16 +23,2251 @@ block slides
           img(src=`${figpath}180401.png`,alt="Item3Image")
     .item3
       .text
+  +slide
+    .title Towards Open-Set Identity Preserving Face Synthesis
+    .info
+      .authors Jianmin Bao, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顔画像からidentityとattributesを別々に再構成する、GANに基づいたOpen-Set Identity Generating Adversarial Networkの提案。 face synthesis networkは、ポーズや感情、照明、背景などをキャプチャする属性ベクトルを抽出することができる。図中の2つの入力画像AおよびBから抽出された識別を再結合することによって、A0およびB0を生成することができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401OSIPFS_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 顔の正面化、顔属性モーフィング、 face adversarial example detectionなど、より広範なアプリケーションに応用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.11182.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180401OSIPFS_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title End-to-End Multi-Task Learning with Attention
+    .info
+      .authors Shikun Liu, Edward Johns, Andrew J. Davison
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p グローバル特徴プールを含む単一の共有ネットワークと、end-to-endで学習可能なタスク固有のsoft-attention modulesで構成された、multi-task learningアーキテクチャであるMulti-Task Attention Network (MTAN)の提案。図の(a)は、セマンティックセグメンテーションと深度推定のタスクのための、学習したアテンションマスクの例。(b)は、MTANの概要。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401EtEMTL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p MTANによって、グローバル・プールからのタスク固有の機能の学習が可能になると同時に、異なるタスク間で機能を共有できる。本アーキテクチャは、任意のfeed-forward neural network上に構築することができ、実装が簡単かつパラメータ効率が良い。
+    .item4
+      .text
+        h1 結果・リンク集
+        p CityScapesを用いた実験より、単一タスクとマルチタスク学習の両方でいくつかのベースラインよりも優れている結果。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10704.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Textual Grounding: Linking Words to Image Concepts
+    .info
+      .authors Raymond A. Yeh, Minh N. Do, Alexander G. Schwing
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 単語を検出された画像の概念に関連付けるための、仮説検定を用いた教師なしTextual grounding手法の提案。ネットワークにはVGG-16を採用し、画像内のオブジェクト/単語の空間情報やクラス情報、およびクラス外の新しい概念を学習できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401UTG.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p Textual grounding、すなわち画像内のオブジェクトと単語をリンクさせる既存の技法は、教師付きのディープラーニングとして定式化されており、大規模なデータセットを用いてバウンディングボックスを推定する。しかし、データセットの構築には時間やコストがかかるので教師なしの手法を提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ReferIt GameとFlickr30kを用いたベンチマークでそれぞれ7.98％と6.96％以上の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.11185.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Motion-Appearance Co-Memory Networks for Video Question Answering
+    .info
+      .authors Jiyang Gao, Runzhou Ge, Kan Chen, Ram Nevatia
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p ビデオQAのための、 Dynamic Memory Network(DMN) のコンセプトに基づいたmotion-appearance comemory networkの提案。本研究の特徴は次の3つである。(1)アテンションを生成するために動きと外観情報の両方を手がかりとして利用する共メモリアテンションメカニズム。(2) multi-level contextual factを生成するための時間的conv-deconv network。(3)異なる質問に対して動的な時間表現を構成するdynamic fact ensemble method。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401MACoMN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 本手法は、次のようなvideo QA特有の属性に基づいている。(1)豊富な情報を含む長い画像シーケンスを扱う。(2)動き情報と出現情報を相互に関連付け、アテンションキューを他の情報に応用できる。(3)答えを推論するために必要なフレーム数は質問によって異なる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TGIF-QAの4つのタスクすべてにおいて、最先端技術よりも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10906.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Context-aware Synthesis for Video Frame Interpolation
+    .info
+      .authors Simon Niklaus, Feng Liu
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 入力フレームだけでなく、ピクセル単位の文脈情報を用いて、高品質の中間フレームを補間するためのコンテキスト認識手法の提案。まず、プレトレインモデルを使用して、入力フレームのピクセルごとのコンテキスト情報を抽出。オプティカルフローを使用して、双方向フローを推定し、入力フレームとそのコンテキストマップの両方をワープする。最後にコンテキストマップをsynthesis networkに入力し、補間フレームを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401CaS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来のビデオフレーム補間アルゴリズムは、オプティカルフローまたはその変動を推定し、それを用いて2つのフレーム間の中間フレームを生成する。本手法では、 2つの入力フレーム間の双方向フローを推定し、コンテキスト認識という方式をとることで精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 高品質のビデオフレーム補間実験において、従来を上回る性能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10967.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Referring Relationships
+    .info
+      .authors Ranjay Krishna, Ines Chami, Michael Bernstein, Li Fei-Fei
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p referring relationshipsを利用して同カテゴリのエンティティ間の曖昧さを解消するタスクの提案。特徴抽出後、アテンションを生成。述語を使用することで、アテンションをシフトさせる。この述語シフトモジュールを介して、subjectとobjectの間でメッセージを反復的に渡すことで、2つのエンティティをローカライズ。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401ReferringRelationships_1.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 画像中のエンティティ間の関係にはそれぞれ意味があり、画像の理解に役立つ。例えば、図のサッカーの試合の画像では、複数の人写っているが、それぞれは異なる関係を持っている。一人はボールを蹴っており、もう一人はゴールを守っている。 <person-kicking-ball>に着目すると、述語の”kick”を理解することにより、画像内のどの人物が”ball”を蹴っているのかを正しく識別する。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10362.pdf") 論文
+          li
+            a(href="https://github.com/StanfordVL/ReferringRelationships") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180401ReferringRelationships_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title HDLTex: Hierarchical Deep Learning for Text Classification
+    .info
+      .authors Kamran Kowsari, et al.
+      .conference ICMLA 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p テキスト分類のためのDNNアプローチで階層的分類を行うHierarchical Deep Learning for Text classification (HDLTex)の提案。第1段階の分類(図の左側)がDNN。第2段階の分類は、1段階目の出力と接続されている。1段階目の出力がComputer Scienceの場合、2段階目(Ψ1)は全てComputer Scienceの文章のみで学習する。よって、1段階目は全ての出離の文章、2段階目は指定された文章のみで学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401HDLTex.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p テキストの検索や整理のための情報処理方法の改善が必要となっており、文書分類が重要。従来の分類器の性能は、文書の数が増えるにつれて低下傾向にあり、これはカテゴリ数が増加したためだと指摘。そこで、この問題を多クラス分類と見なす従来の文書分類方法とは異なるアプローチを提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Web of Scienceから入手したドキュメントのデータセットでテスト。高レベルRNNと低レベルDNNまたはCNNの組み合わせが、naïïveBayesまたはSVMを使用する従来のアプローチよりも高精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1709.08267.pdf") 論文
+          li
+            a(href="https://github.com/kk7nc/HDLTex") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Who Let The Dogs Out? Modeling Dog Behavior From Visual Data
+    .info
+      .authors Kiana Ehsani, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 犬視点の大規模ビデオデータセットを作成し、このデータを使用した、犬の行動や行動計画のモデル化。次の3つの問題に焦点を当てる。(1)犬の行動予測。(2)入力された画像対から犬のような行動計画を見出す。(3)例えば、歩行可能な表面推定などのタスクについて、学習された表現を利用。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401DogsOut.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 視覚情報からintelligent agent(知的エージェント)を直接的にモデリングするタスク。犬の視覚情報を使うことで、行動をモデル化する斬新な取り組み。得られたモデルをAIなどに応用する。特に、歩行可能な表面推定のタスクで良い結果となる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 様々なエージェントやシナリオで使用でき、ラベルがないにもかかわらず有用な情報を学習することが可能。今後は、モデルやデーセットの拡張に挑む。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10827.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Weakly-Supervised Action Segmentation with Iterative Soft Boundary Assignment
+    .info
+      .authors Li Ding, Chenliang Xu
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p トリミングされてないビデオに対して、弱教師学習を用いてhuman action segmentationタスクを解決する。 フレーム単位でアクションラベルを推定するTemporal Convolutional Feature Pyramid Network (TCFPN)、 アクションシーケンスを整列させるIterative Soft Boundary Assignment (ISBA)の提案。これらを反復的に学習させることで性能の向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401TCFPN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 近年(2018)のRNNやHidden Markov Models (HMM)などを用いた従来の手法では、計算コストが高く、ネットワークを大規模に展開できない。本手法では、計算の効率性とスケールに着目し、 human action segmentationを行う。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TCFPN、TCFPN + ISBAにおいて最先端の性能。これらの手法は一般化でき、他の手法と併用することで、ビデオアクション理解タスク技術の促進につながる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10699.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title MaskRNN: Instance Level Video Object Segmentation
+    .info
+      .authors Yuan-Ting Hu, Jia-Bin Huang, Alexander G. Schwing
+      .conference NIPS 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p マスクを生成するbinary segmentation netとバウンディングボックスを生成するlocalization net 、2つのネットワークの出力を融合させることでインスタンスレベルのビデオオブジェクトセグメンテーションを行うMaskRNNの提案。時間経過による逆伝搬によってend-to-endで学習でき、2つのネットワークを最適化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401MaskRNN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 2つのネットワークを使用することで、ビデオデータの長期的な時間的情報を利用でき、ノイズも低減できる。マルチオブジェクトに対応、図は人と自転車の2つのオブジェクトにおける例。
+    .item4
+      .text
+        h1 結果・リンク集
+        p DAVIS-2016、DAVIS-2017、Segtrack v2の3つのマークデータセットで検証し、すべてにおいて最先端のパフォーマンス。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.11187.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Iterative Visual Reasoning Beyond Convolutions
+    .info
+      .authors Xinlei Chen, Li-Jia Li, Li Fei-Fei, Abhinav Gupta
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNのような理由を突き止める能力がない認識システムを超えた、反復的なvisual reasoningのための新しいフレームワークの提案。畳み込みベースのローカルモジュールとグラフベースのグローバルモジュールの2コアで構成。2つのモジュールのを繰返し展開し、予測結果を相互にクロスフィードして絞り込む。最後に、両方のモジュールの最高値をアテンションベースのモジュールと組み合わせてプレディクト。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401IVRBC_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p ただ畳み込むだけでなく、Spatial(空間的)およびSemanticの空間を探索することができる。下図のように、「人」は「車」を運転するというSpatialとSemanticの双方を兼ね備えた認識を行うことで精度向上を図る。
+        p 通常のCNNと比較して、ADEで8.4％、COCOで3.7％の精度向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.11189.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180401IVRBC_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Deep Depth Completion of a Single RGB-D Image
+    .info
+      .authors Yinda Zhang, Thomas Funkhouser
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p RGB画像から表面の法線とオクルージョン境界を予測し、 RGB-D画像と組み合わせて、欠けている奥行き情報を補完するDeep Depth Completionの提案。また、奥行き画像と対になったRGB-D画像のデータセットであるcompletion benchmark datasetを作成し、性能を評価。これは、低コストのRGB-Dカメラでキャプチャした画像と、高コストの深度センサで同時にキャプチャした画像で構成されている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401DDC.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 深度カメラは、光沢があり、明るく、透明で、遠い表面の深さを感知しないことが多い。 このような問題を解決するために、本手法ではRGB画像から得た情報と組み合わせて、 RGB-D画像の深度チャネルを完全なものにする。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 深さ修復および推定において従来よりも優れた性能。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.09326") 論文
+          li
+            a(href="http://deepcompletion.cs.princeton.edu/") Project webpage
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title LayoutNet: Reconstructing the 3D Room Layout from a Single RGB Image
+    .info
+      .authors Chuhang Zou, Alex Colburn, Qi Shan, Derek Hoiem
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 単一のパースペクティブまたはパノラマ画像から屋内3Dルームレイアウトを推定するLayoutNetの提案。最初に、消失点を分析し、水平になるように画像を整列。これにより、壁と壁の境界が垂直になり、ノイズ低減。画像からコーナー(レイアウト接合点)と境界を、エンコーダ/デコーダ構造のCNNで出力。最後に、3D Layoutパラメータを、予測したコーナーと境界に適合するように最適化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401LayoutNet.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p アーキテクチャはRoomNetと似ているが、消失点に基づいて画像を整列させ、複数のレイアウト要素（コーナー、境界線、サイズ、平行移動）を予測し、 “L”形の部屋のような非直方体のマンハッタンレイアウトに対しても適応できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 従来手法と比較して、処理速度と正確さにおいて性能の向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08999.pdf") 論文
+          li
+            a(href="https://github.com/zouchuhang/LayoutNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering
+    .info
+      .authors Somak Aditya, Yezhou Yang, Chitta Baral
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p VQAタスクにおける、DNNの最後から2番目の層にexplicit reasoning layerを追加する。 これにより、常識的な知識が必要な質問に対する回答が可能となり、出力した回答を人間が解釈できるようなインタフェースを提案。reasoning layerは、視覚的な関係、質問の意味解析、word2vecとConceptNetのオントロジーなどを推論するProbabilistic Soft Logic(PSL)ベースのエンジンとなっている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ERL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p VQAなどのvisionや言語タスクでは、DNNを使用して精度向上を図っている。しかし、更なる精度向上には画像や自然言語処理以外の常識的知識を使った推論が必要とされている。また、このようなシステムは一般に不透明(人間が理解できない)であり、予備知識が必要とされる質問を理解するのは困難。本手法によって、常識的知識を追加し、人間に理解できるインタフェースを提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p explicit reasoning layerによって回答と、回答の証拠の両方を生成することが可能。性能向上と、説明能力の向上を実現。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08896.pdf") 論文
+
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++
+    .info
+      .authors David Acuna, Huan Ling, Amlan Kar, Sanja Fidler
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Polygon-RNNのアイデアを踏襲し、ヒューマン・イン・ザ・ループを使って対話的にオブジェクトのポリゴンアノテーションの生成。また、新しいCNNエンコーダアーキテクチャの設計、強化学習によるモデルの効果的な学習、 Graph Neural Networkを使用した出力解像度の向上を行う。これらのアーキテクチャをPolygon-RNN ++と呼ぶ。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331PolygonRNN++_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p アノテーション作成時の負担を軽減。より正確にアノテーションを付加できるため、雑音の多いアノテーターに対しても頑健である。
+        p 高い汎化能力となり、既存のピクセルワイズメソッドよりも大幅に改善。ドメイン外のデータセットにも適応可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09693.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180331PolygonRNN++_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Multi-Level Factorisation Net for Person Re-Identification
+    .info
+      .authors Xiaobin Chang, Timothy M. Hospedales, Tao Xiang
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 人間の視覚的外観を、人の手によるアノテーションなしかつ、複数のセマンティックレベルで識別因子に分解する Multi-Level Factorisation Net(MLFN)の提案。 MLFNは、複数のブロックで構成されており、各ブロックには、複数の因子モジュールと、各入力画像の内容を解釈するための因子選択モジュールが含まれている。 
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331MLFN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 効果的なRe-IDを目指すには、高低のセマンティックレベルでの人の差別化かつ視界不変性をモデル化することである。 近年(2018)のdeep Re-IDモデルは、セマンティックレベルの特徴表現を学習するか、アノテーション付きデータが必要となる。MLFNではこれらを改善する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 3つのRe-IDと、CIFAR-100の結果で最先端。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09132.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title CSfM: Community-based Structure from Motion
+    .info
+      .authors Hainan Cui, Shuhan Shen, Xiang Gao, Zhanyi Hu
+      .conference ICIP 2017
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 頑健性と効率性を考慮した、 Structure-from-Motionアプローチであるcommunity-based SfM(CSfM)の提案。画像をコミュニティにクラスタ化することで、内側が密、外側は疎になるように接続することができる。まず、エピポーラ幾何学グラフを別々のコミュニティに分割し、各コミュニティで並列に再構成処理を行う。そして、新しいグローバル類似度平均法によってマージする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331CSfM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p SfMのアプローチは、次の2つのクラスに大きく分けられる。 (1)インクリメンタル方式は外れ値に対して堅牢だが、誤差の蓄積と計算時の負荷が大きい。 (2)グローバルな方法は、すべてのカメラポーズを同時に推定するという利点があるが、通常、エピポーラ幾何学を算出する際に異常値を生じやすい。これらの、従来のSfMの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 従来のアプローチと比較して、計算効率がよく、類似度や再構成精度、堅牢性の点でも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08716") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title PDNet: Prior-model Guided Depth-enhanced Network for Salient Object Detection
+    .info
+      .authors Chunbiao Zhu, Xing Cai, Kan Huang, Thomas H. Li, Ge Li
+      .conference ICME 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p RGB-Dの顕著な物体の検出のための、深度拡張ネットワークであるPDNetの提案。画像ピクセルのRGB-D値をネットワークに直接送るのではなく、RGB値を処理するためのマスターネットワークと、D値(深度)を組み込むサブネットワークで生成した特徴をマスタネットワークに追加する。ラベル付きRGB-Dデータセットは少ないため、大規模なRGBデータセットを使用してマスターネットワークをプレトレインする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331PDNet.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p FCNは、多くのタスクにおいて優れているが、顕著性検出において2つの問題があると指摘。 1つ目は、ネットワークを学習するための大規模なラベル付きデータがないこと。2つ目は、ノイズがあるシーンなどにおいて、頑健でないこと。PDNetでは上記を改善。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 5つのデータセットで評価し、精度向上を確認。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08636.pdf") 論文
+          li
+            a(href="https://github.com/ChunbiaoZhu/PDNet/") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Pyramid Stereo Matching Network
+    .info
+      .authors Jia-Ren Chang, Yong-Sheng Chen
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 空間ピラミッドプーリングと3D CNNの2つのモジュールから構成された、ステレオ画像対からの奥行き推定を行うPyramid Stereo Matching Network(PSMNet)の提案。空間ピラミッドプーリングは、異なるスケールおよび位置でコンテキストを集約し、コストボリュームを形成する。 3D CNNは、複数のhourglass networksを重ねて、コストボリュームを規則化することを学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PSMN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 現在(2018)ではステレオ画像からの奥行き推定を、CNNの教師あり学習で解決されてきている。 コンテキスト情報を利用することで精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法よりも優れている結果。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08669.pdf") 論文
+          li
+            a(href="https: //github.com/JiaRenChang/PSMNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Learning Shape-from-Shading for Deformable Surfaces
+    .info
+      .authors Jan Bednarık, Pascal Fua, Mathieu Salzmann
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2D画像からメッシュ、法線、深度マップなどの3D表現を予測できるフレームワークを提案。人が着用するTシャツのしわなど、表面をより詳細に、正確にモデル化できる。基本的にはShape-from-Shading技術に関連する技術。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LSFS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 画像から、テクスチャを加えることで表面の3D形状を再現する手法は開発されている。しかし、テクスチャのない表面の3D形状を回復することはできていない。
+    .item4
+      .text
+        h1 結果・リンク集
+        p メッシュはテクスチャありの場合はとても良い精度だが、テクスチャなしの場合だとあまり適さない。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08908.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title P2P-NET: Bidirectional Point Displacement Net for Shape Transform
+    .info
+      .authors Kangxue Yin, Hui Huang, Daniel Cohen-Or, Hao Zhang
+      .conference SIGGRAPH 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2つの領域(例えば、骨格と表面、部分的および完全なスキャンデータ)からポイントベースの形状表現に幾何学的変換するための、汎用DNNであるP2P-NETの提案。データから学習された点群に変換、またはその逆の変換を行う双方向点変位ネットワーク。lossは、予測された点集合と目標点集合との間の形状的類似性を比較する幾何学的損失と、逆方向に進む変位ベクトル間の相互正規化項とを組み合わせる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331P2PNET.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ポイントセットを1つのドメインから別のドメインにマッピングするように学習することにより、2Dまたは3D空間に配置できる。また、マッピングは2Dプロファイルを3D形状に変換することも可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p P2P-NETをもちいたアプリケーションを複数開発し、様々なポイントベースの形状変換問題を解決するネットワークの有効性、汎用性、および可能性を示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09263.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Fast and Accurate Single Image Super-Resolution via Information Distillation Network
+    .info
+      .authors Zheng Hui, Xiumei Wang, Xinbo Gao
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 元の低解像度画像から高解像度画像を再構築するための、深くてコンパクトなCNNを提案。提案モデルは、特徴抽出ブロック、積み重ね情報蒸留ブロック、再構成ブロックの3部構成。これにより、情報量が豊富かつ効率的に特徴を徐々に抽出できる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331FaASISR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNが超解像殿画像を扱うようになってきたが、ネットワークが増大するにつれて、計算上の複雑さとメモリ消費という問題が生じる。これらの問題を解決するためのコンパクトなCNN。
+    .item4
+      .text
+        h1 結果・リンク集
+        p PSNR、SSIM、IFCの4つのデータセットで検証し、精度向上を確認。デシジョンおよび圧縮アーチファクト低減などの他の画像修復問題にも応用可能？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08679.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title ITERATIVE LOW-RANK APPROXIMATION FOR CNN COMPRESSION
+    .info
+      .authors Maksym Kholiavchenko
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNを圧縮するために、低ランク近似を適用する反復アプローチの提案。入力モデルを反復して圧縮していき、構成と重みを出力する。反復の中でノイズ低減をアルゴリズムを追加し、精度低下を避ける。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ILRA.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNには数千万のパラメータが含まれているため、組み込み機器で効率的に動作することは不可能。AlexNet、VGG-16、YOLOv2、およびTiny YOLOネットワークを圧縮することで、CNNを多様化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p より高い圧縮率かつ、精度の低下が少ない。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08995") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Coherence in One-Shot Gesture Recognition for Human-Robot Interaction
+    .info
+      .authors Maria E. Cabrera, Richard M. Voyles, Juan P. Wachs
+      .conference HRI'18 LBR
+      .paper_id pp. 75-76
+    .slide_editor Ryota Suzuki
+    .item1
+      .text
+        h1 概要
+        p ロボットのジェスチャをワンショットで認識する時，人間と機械でどんな違いがあるのかを見た．
+          |ロボットは2腕あるロボット腕のBaxter．
+          |機械側はワンショット骨格情報からHMM，SVM，CRF，DTWで認識．人間側は10人．
+          |モーションのサンプルは，動きが大きく変わる顕著な時点を選んだ．
+        p 人間は'Shoot'が比較的わかりにくい（3/10人わからなかった）．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Coherence_in_One-Shot_Gesture_Recognition_for_Human-Robot_Interaction_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ロボットのジェスチャのワンショット認識をHRIに水平思考しただけだが，
+          |HRIとしての話題としてだけ見れば結構面白い．
+          |「選ぶジェスチャとか機械側の手法に大きく依るじゃん」などのツッコミが多々あるが，そこは今後に期待．
+    .item4
+      .text
+        h1 リンク集・コメント
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3176977") ACM library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 15:47:02
+
+  +slide
+    .title HMDを用いた3次元ジェスチャ操作による没入型天体教材の開発
+    .info
+      .authors 田尻圭佑, 瀬戸崎典夫
+      .conference 日本教育工学会
+    .slide_editor Kenichiro Wani
+    .item1
+      .text
+        p 生徒にとって、相対的な考えを必要とする星座の日周運動や年周運動を理解することが困難である。
+        p 仮想環境内における教員の介入による指導が可能な、没入型天体教材の開発。
+        p 3次元ジェスチャ装置によって学習者及び講師の手の動きを認識し，仮想空間に手のCGモデルを表示する。
+        p 学習者はHMDを装着(教員は3次元ジェスチャ装置を用いて仮想空間内で手のジェスチャしながら説明)。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330tentai_wani.png`)
+    .item3
+      .text
+        h1 新規性
+        p 生徒に星座を教えるのに仮想現実(Virtual Reality：以下VR)。
+        p 3次元ジェスチャ装置(Leap Motion)を用いて教師の手の動きを認識し、仮想空間に手のCGモデルを表示する。
+    .item4
+      .text
+        h1 結果
+        p 実験後にアンケートにより回答を得たところ、肯定的な回答では「たのしい・おもしろい」、「没入感があって星の動き・位置が分かりやすい」となった。否定的な回答では「目が痛い・疲れる」、「酔った」、「Leap Motionの位置がわかりずらい」となった。
+        ul
+          li
+            a(href="https://www.jstage.jst.go.jp/article/jjet/40/Suppl./40_S40103/_pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title Learning Intelligent Dialogs for Bounding Box Annotation
+    .info
+      .authors K. Konyushkova et al.,
+      .conference arXiv:
+      .paper_id 1712.08087
+    .item1
+      h1 概要
+      .text.
+        Bounding Boxのアノテーションを効率的に行うためのシステムを提案．
+        手動でBounding Boxを描く，Detectorが生成したBounding Boxが正しいかを判定するという2つの作業を
+        どのようにやらせると効率的かをシステムが学習．
+        確信度が高そうなBounding Boxを判定させて，ダメだったら手動で描かせる，など．
+        Boxがacceptされる確率を推定して最適なアノテーション方法を決定する方法と，
+        強化学習ベースで決定する方法の2つを提案．
+        固定された戦略でアノテーションするよりも，
+        提案手法により決定する戦略を用いる方が多くの場合で効率的なことを実験的に示した．
+
+    .item2
+      img(src=figpath+"180330_iad.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 効率的なBounding Boxのアノテーションを支援するためのシステムを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Bounding Boxがacceptされる確率って本来はそのBoxのスコアで完結されているべきな気もする
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks
+    .info
+      .authors A. Gupta et al.,
+      .conference arXiv:
+      .paper_id 1803.10892
+    .item1
+      h1 概要
+      .text.
+        歩行者の移動軌跡の予測に関する研究．
+        複数人がすれ違うときにぶつかったり極端に近づいたりしないような，
+        自然な軌跡を予測したい．
+        従来手法では主に，人ごとに周辺のみを考慮しシーンにいる全体のインタラクションを効率的に考慮できていないという点と，
+        平均的な一つの振る舞いを学習しており，複数の可能性を考慮できていない点の2つが欠点としてあった．
+        この研究ではそれらをGANベースの手法 (Social GAN) を提案して解決している．
+        シーン中のすべての人の関係を扱う新たなPooling方法を提案して一つ目の問題を解決し，
+        過去の軌跡を入力として未来の軌跡を生成するGANにより二つ目の問題を解決した．
+        
+    .item2
+      img(src=figpath+"180330_socialgan.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 幅広い出力を得るためのロス関数を提案
+          li シーン中のすべての人の関係のエンコードを学習する新しいPoolingを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Stanford (Fei-fei Li) のグループ
+          li GANでの軌跡予測は自然な発想でまだなかったのかという感じもする
+          li 成功させるのが難しい？
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title Movie Editing and Cognitive Event Segmentation in Virtual Reality Video
+    .info
+      .authors A. Serrano, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p VRビデオ鑑賞において多数ユーザの視線トラッキングを解析してVR動画の編集を行う研究を実施した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330VRVideo.png`,alt="180330VRVideo")
+    .item3
+      .text
         h1 新規性・結果
-        p 実験はAmazonの売り上げデータを使用しており、実際に人気の遷移を予測することに成功した。
+        p VRのビデオ編集において最新の認知科学を適用、VRビデオ鑑賞におけるコンテンツを強化した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/docs/Serrano_SIGG2017_VR-cine.pdf") 論文
+          li
+            a(href="http://webdiis.unizar.es/~aserrano/projects/VR-cinematography") Project
+          li
+            a(href="https://www.youtube.com/watch?v=cF79m_U31cU") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:59:04
+
+  +slide
+    .title VNect: Real-time 3D Human Pose Estimation with a Single RGB Camera
+    .info
+      .authors A. Uthors, B. Uthors and C. Uthors
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p Single RGBからの入力で姿勢推定を行い、3次元空間に投影してマーカレスモーキャプを実現。自己遮蔽や複雑姿勢などが発生してもロバストにキーポイントの追跡に成功した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330VNNect.png`,alt="180330VNNect")
+    .item3
+      .text
+        h1 新規性・結果
+        p 結果は動画を参照。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="www") 論文
+          li
+            a(href="http://people.mpi-inf.mpg.de/~dmehta/VNectDemo/") Project
+          li
+            a(href="www") GitHub
+          li
+            a(href="https://www.youtube.com/watch?v=W1ZNFfftx2E") YouTube
+          li
+            a(href="https://qiita.com/latte_zero/items/7d28b96a8f666f393965") Qiita
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:44:20
+
+  +slide
+    .title Discovering and synthesizing humanoid climbing movements
+    .info
+      .authors K. Naderi, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p シミュレーション上でヒューマンノイドのエージェントが壁を登る様子を学習する研究。エージェントの体の動かし方も含めて経路探索を実施する。提案手法ではk-shortest Pathsによるアルゴリズムを用いて同タスクを解決した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330HumanoidMovement.png`,alt="180330HumanoidMovement")
+    .item3
+      .text
+        h1 新規性・結果
+        p 多数の関節を同時に動かし、ボルダリングのための経路探索を行う問題を提供した。シミュレーション結果はYouTube動画中にて示されている。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3073707") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=rfqLrNnhRWo") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:21:16
+
+  +slide
+    .title Phase-Functioned Neural Networks for Character Control
+    .info
+      .authors D. Holden, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p ニューラルネットによりリアルタイムにキャラクターを操作するPhase-Functioned Neural Networkを提案する。ある動作（ここでは主に歩行、runningという意味で走行、ジャンプ、登る）というのはある周期性を持つと仮定して重みを計算し、ユーザの操作に応じて動作を柔軟に変更することができる。より柔軟な動きにするために、モーションキャプチャのデータを大量に使用してニューラルネットを学習した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PhaseFunctionedNN.png`,alt="180330PhaseFunctionedNN")
+    .item3
+      .text
+        h1 新規性・結果
+        p モーキャプデータを大量に使用してニューラルネットを学習することで、ユーザフレンドリな動作表現を実現した。動的な結果についてはYouTubeを参照されたい。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p モーキャプxニューラルネットの有効な組み合わせ例かもしれない。次はデータを効果的に増やす方にも活用できるのでは？
+        ul
+          li
+            a(href="http://theorangeduck.com/media/uploads/other_stuff/phasefunction.pdf") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=Ul0Gilv5wvY") YouTube
+          li
+            a(href="http://mizuooon.hatenablog.jp/entry/phase-functioned_neural_networks_for_character_control") 参考
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 14:08:53
+
+  +slide
+    .title DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning
+    .info
+      .authors X. B. Peng, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+
+    .item1
+      .text
+        h1 概要
+        p 階層的強化学習により、3次元アニメーションにおいて道順さえ教えれば歩行動作を自動で獲得するアルゴリズムを提案した。より速いレートで関節やバランスをコントロールするLLC（Low-level Controller）と道を外れずにゴールを目指すことができるHLC（High-level Controller）を階層的に組み合わせて歩行動作を獲得する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DeepLOCO.png`,alt="180330DeepLOCO")
+    .item3
+      .text
+        h1 新規性・結果
+        p 階層的な強化学習（Hierarchical Reinforcement Learning）により歩行動作を自動で獲得した。曲がりくねった道、サッカーボールのドリブル、障害物中の歩行（いずれも図に示されている）などの場面でより自然な歩行動作を獲得した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 道筋（やボールの操作）に関するインストラクションさえできれば歩行動作を獲得してくれるので、より柔軟にグラフィックスが作れる？さらに研究が進めば歩行と追加動作が指定できそう。
+        ul
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/2017-TOG-deepLoco.pdf") 論文
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/") Project
+          li
+            a(href="https://github.com/xbpeng/DeepLoco") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 13:53:45
+  +slide
+    .title Regularized Kelvinlets: Sculpting Brushes based on Fundamental Solutions of Elasticity
+    .info
+      .authors Fernando de Goes, Doug L. James
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p より自然な物理的な拘束を保持しつつ弾力によるグラフィックモデルの変形を実現した。キャラクターを擬似的につかむ、ねじる、はさむなどの影響を弾性的に表現した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330Kelvinlets.png`,alt="180330Kelvinlets")
+    .item3
+      .text
+        h1 新規性・結果
+        p グラッフィクスに弾力を持たせるような表現を実現した。詳細な結果はProject Pageの動画を参照。
     .item4
       .text
         h1 リンク集
         ul
           li
-            a(href="https://arxiv.org/abs/1705.06394") 論文
+            a(href="www") 論文
+          li
+            a(href="http://graphics.pixar.com/library/Kelvinlets/index.html") Project
     .slide_index #{getSlideIndex()}
-    .timestamp 2018.4.1 23:33:02
+    .timestamp 2018.3.30 12:21:25
+
+  +slide
+    .title Variance-Minimizing Transport Plans for Inter-surface Mapping
+    .info
+      .authors M. Mandad et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 密な3次元サーフェイス同士のマッピング計算に関する研究。より効率的かつ歪みが少ないモデルの生成を実現した。関節情報など意味的な点探索やサーフェイスの対応付けでなく直接的に分散を最適化して対象のサーフェイス間の転移を行う手法（variance-minimizing trannsport plan）を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330InterSurface.png`,alt="180330InterSurface")
+    .item3
+      .text
+        h1 新規性・結果
+        p 凸最適化によりこれを計算し、なおかつ疎密探索により効率的な計算ができることが判明した。モデルの例は図を参照。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjg8ZW5iJPaAhVEiLwKHdILBv0QFggoMAA&url=http%3A%2F%2Fwww.geometry.caltech.edu%2Fpubs%2FMCKAD17.pdf&usg=AOvVaw0jLXBRcwb5TLC0arn81nGR") 論文
+          li
+            a(href="https://www.youtube.com/watch?v=XOIpY2rZjKw") YouTube
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 12:08:00
+
+  +slide
+    .title Needs and Expectations for Fully Autonomous Vehicle Interfaces
+    .info
+      .authors T. Amanatidis, P. Langdon, P. J. Clarkson
+      .conference HRI'18 LBR
+      .paper_id pp. 51-52
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 完全自動走行車両のインタフェースに対する要望・期待を調査した．
+          |運転できる人，（障害など身体的に）運転できない人に，グーグルの自動走行車両プロトタイプのビデオ映像を見せ，
+          |聞き取り調査を行った．
+          |身体的に運転できない人の利用について様子を見るつもりだったが，
+          |結果，個人所有か共有かでフィードバックしてほしい情報が異なることが分かった（右表）．
+          |イギリス・ケンブリッジ大学の研究．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Needs_and_Expectations_for_Fully_Autonomous_Vehicle_Interfaces_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 他わかったこと
+        ul
+          li 車両への指示は会話の邪魔なので声でやりたくない
+          li テーブルほしい，地図ほしい
+          li エンタテインメント，作業機能は個人所有にしたい．備え付けは好まれない
+          li 車両との，カレンダー以外の個人的な情報共有に寛容になる
+    .item4
+      .text
+        h1 リンク集・コメント
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3177054") ACM library
+          li
+            a(href="http://link.com/link2/") 見せた映像
+        p LBRならではの調査．
+          |UXの知見の共有は，自動走行車両の倫理的議論にも関わると思う．
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 13:25:21
+
+  +slide
+    .title Learning Transferable Architectures for Scalable Image Recognition
+    .info
+      .authors Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 遺伝的アルゴリズムを参考にしてニューラルネット構造のシードとその周辺探索を行うNeural Architecture Search (NASNet)を提案。自動でアーキテクチャを探索するという手法を考案し、TensorFlowやGoogleのサービスであるAutoMLに搭載した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330NASNet.png`,alt="180330NASNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p ImageNetの識別にて82.7%（top1）、96.2%（top5）を達成した。この精度は人間が探索したアルゴリズムであるSE-Net（ILSVRC2017勝者）よりも1.2%高い精度である。CIFARにおいても同様にState-of-the-art、さらにFaster R-CNNと組み合わせて物体検出を行った場合でもCOCOにて43.1%でSoTA。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1707.07012") 論文
+          li
+            a(href="https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet") TensorFlow
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 11:45:54
+
+  +slide
+    .title Progressive Neural Architecture Search
+    .info
+      .authors Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy
+      .conference arXiv 1712.00559
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 強化学習・遺伝的アルゴリズムによりニューラルネット構造を探索するProgressive Neural Architecture Search (PNAS)の提案。従来法の
+          a(href="https://arxiv.org/abs/1707.07012") Zoch+,CVPR2018
+          |と比較すると5倍も高速な探索アルゴリズムとなった。「探索のための探索」を行うヒューリスティックな探索を実施して簡単なものから複雑な構造への拡張を実施する。Progressive (simple to complex)な探索が効率化と高精度なモデルの発見に寄与した。図はセル（畳み込みの最小ユニットでGoogLeNetのインセプションのようなもの）とセルの組み合わせによるアーキテクチャを示す。従来法であるNASNetと類似する構造になったと主張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PNAS.png`,alt="180330PNAS")
+    .item3
+      .text
+        h1 新規性・結果
+        p アーキテクチャ探索自体を人間ではなく強化学習に任せることでCIFAR/ImageNetにてstate-of-the-art。より効率的に従来法と類似する構造に行き着くことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 構造探索自体もハンドクラフト特徴と同様にやることがなくなるので、ますますデータを集める方に人間は注力？（だがデータを集める方も自動で集まる仕組みがどんどん整えられている）
+        ul
+          li
+            a(href="https://arxiv.org/abs/1712.00559") 論文
+          li
+            a(href="https://github.com/tensorflow/models/tree/master/research/slim#Pretrained") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 11:08:02
+
+  +slide
+    .title MentorNet: Regularizing Very Deep Neural Networks on Corrupted Labels
+    .info
+      .authors Lu Jiang, Zhengyuan Zhou, Thomas Leung, Li-Jia Li, Li Fei-Fei
+      .conference arXiv 1712.05055
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p データ自体を正則化し重み付けを行い、各データサンプルに重要度を与えて柔軟に学習する仕組みを考案した。データの入力に対して、MentorNetはミニバッチごとにどの程度の重みをつければ良いのかを返却してDeepCNNを学習する。知識蒸留などと同様にMentorNetとStudentNetが存在してCurriculum Learningにより徐々に学習を進める。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329MentorNet.png`,alt="180329MentorNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p あまり整備されていないデータの場合（e.g. ウェブ画像）にはノイズが誤っていたり、なかったり、崩れていたりするが、本論文で提案のMentorNetではデータに重要度を与えて、どのデータをどの程度信頼して良いのかを与えた。Weakly Supervised学習よりも精度が高いことを示した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1712.05055.pdf") 論文
+          li
+            a(href="https://github.com/arXivTimes/arXivTimes/issues/566") 参考
+          li
+            a(href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf") Curriculum Learning
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 16:00:41
+
+  +slide
+    .title Long-term Tracking in the Wild: A Benchmark
+    .info
+      .authors Jack Valmadre, Luca Bertinetto, João F. Henriques, Ran Tao, Andrea Vedaldi, Arnold Smeulders, Philip Torr, Efstratios Gavves
+      .conference arXiv 1803.09502
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 従来データよりも（最低でも2分以上のビデオが含まれる）長期にわたる物体追跡のビデオデータセットを提供、さらには評価用サーバも提供して長期物体追跡の研究に貢献する。同データセットは366シーケンスを含め、14時間以上のビデオ、150万のフレームを含みこれはOTB-100の約26倍のデータサイズである。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329LongTermTrackingDB.png`,alt="180329LongTermTrackingDB")
+    .item3
+      .text
+        h1 新規性・結果
+        p データセットを提供すると同時に、ベンチマークとして代表的なトラッキング手法を実装して精度を算出した。手法はSiamFC、TLD、MDNet、SINT、SiamFC、ECO-HC、EBT、BACF、Staple、LCTを比較した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p トラッキングはより長期になるし、するべき。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.09502") 論文
+          li
+            a(href="https://oxuva.github.io/long-term-tracking-benchmark/") Project
+          li
+            a(href="https://oxuva.github.io/long-term-tracking-benchmark/video_grid.html") Video
+          li
+            a(href="https://github.com/oxuva/long-term-tracking-benchmark") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 15:16:07
+
+  +slide
+    .title Am I Done? Predicting Action Progress in Videos
+    .info
+      .authors Federico Becattini, Tiberio Uricchio, Lorenzo Seidenari, Alberto Del Bimbo, Lamberto Ballan
+      .conference ECCV 2018 Submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 人物行動の進行を予測するDNNNのネットワークであるProgressNetを提案する。ProgressNetでは動画の入力において、現在フレームからその後の行動の未来の進行状況を予測する。Faster R-CNNのフレームワークを参照して、さらにLSTMのネットワークを統合してフレームを予測する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329ProgressNet.png`,alt="180329ProgressNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p 実験はUCF-101とJ-HMDBデータセットにて行った。Faster R-CNN + LSTMベースの手法で従来法よりもよく、行動推定とbbox検出を同時に達成した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/abs/1705.01781v3") 論文
+          li
+            a(href="https://github.com/jinwchoi/awesome-action-recognition") Awesome Action Recognition
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 14:56:48
+
+  +slide
+    .title WebSeg: Learning Semantic Segmentation from Web Searches
+    .info
+      .authors Qibin Hou, et al.
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 特定のキーワードに関連したFlickr画像を用いて、ユーザーのアノテーションに頼ることなく、自動的でセマンティックセグメンテーションの学習を行うWebSegの提案。(1)ウェブクローラによって、ユーザ定義のキーワードに関連する画像をダウンロード。(2)数種類の低レベルキュー(顕著性、エッジなど)を抽出し、それらを学習のヒューリスティクスとして結合。(3)Noise Filtering Module(NFM)を備えたセマンティックセグメンテーションネットワーク。の3部構成。ベースはDeeplab-Large-FOV。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330WebSeg.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p フリーのWeb画像からセマンティックセグメンテーションを学習。ノイズの多いWeb画像と不完全なproxy ground-truthに関して、学習に望ましくないノイズの多い領域を除去するオンラインノイズフィルタリングメカニズムを考案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Web画像のみを使った学習にもかかわらず、従来の最先端の方法と比較して同等の結果を出している。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09859.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Three Birds One Stone: A Unified Framework for Salient Object Segmentation, Edge Detection and Skeleton Extraction
+    .info
+      .authors Qibin Hou, et al.
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顕著性オブジェクトセグメンテーション、スケルトン抽出、エッジ検出など、ピクセル単位のバイナリ問題における類似点を見出し、一つのフレームワークに統一。 CNNをより有効的に活用するために、異なるレベルのフィーチャマップから信号を受け取るtransition nodeという概念を導入している。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TBOS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 異なるタスクを一つのフレームワークに統一させることで、全てのタスクにおいて精度向上を図っている。他のバイナリピクセルラベリングタスクも統一できる可能性を示している。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 本質的に異なるタスクでも、統一してしまうことで、それら全てで効率よく機能し、現在(2018年)の単一の最先端の手法よりはるかに優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09860.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Towards Human-Machine Cooperation:Self-supervised Sample Mining for Object Detection
+    .info
+      .authors Keze Wang, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出の課題を考慮し、既存のActive Learning(AL)の欠点を改善することを目的とした、Self-Supervised Sample Mining(SSM)の提案。ラベルなし、もしくは一部ラベルのないデータを使って学習することができる。交差検証後のスコアによってサンプルを選別。低い場合にはユーザによってアノテーション、高い場合にはそのままラベルとして採用。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SSM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のAL法では主に、単一の画像コンテクスト内でサンプル選択基準を定義し、大規模な物体検出において最適ではなく、頑強性および非実用的である。SSMによって、ユーザが必要な部分にだけ介入し、アノテーションの作業を軽減。
+    .item4
+      .text
+        h1 結果・リンク集
+        p アノテーションが少ないデータセットにおいても最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09867.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Image Semantic Transformation: Faster, Lighter and Stronger
+    .info
+      .authors Dasong Li, Jianbo Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 画像の意味的変換を施し，画像を再構成する，facenet‘sのユークリッド空間を使ったモデルであるImage-Semantic-Transformation-Reconstruction-Circle(ISTRC)の提案。その名の通り、構造が円になっている。画像を識別するために、FaceNetの最後の層を用いて、画像をユークリッド空間に変換。意味理解のためにユークリッド空間ベクトルを操作し、マッピング。GANを使って、ベクトルから画像を再構成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 本論文では10種類の変換(「男性と女性」「笑顔を加える」「口を開ける」「大きい/小さい鼻」「年をとる」など)を実施。今後は、種類を拡張し、より高解像度の画像に適応できるように改良予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09932.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ISTRC_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A New Target-specific Object Proposal Generation Method for Visual Tracking
+    .info
+      .authors Guanjun Guo, et al.
+      .conference IEEE Transactions on Cybernetisc
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 映像のコンテキスト情報を活用した、bject proposal手法であるTpecific Object Proposal Generation(TOPG)の提案。具体的には、対象物体のobject proposalを生成する際に、色とエッジの情報を統合する。これにより，様々な環境に適応することができ、 TOPGのリコールが大幅に増加。また、生成したobject proposalのランク精度を高めるためのランク付け手法を提案。そして、TOPGをvisual trackingに適応したTOPG-based tracker (TOPGT)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TOPG.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 既存のobject proposal手法をビデオなどのタスクに適用したときに発生する、モーションブラー、低コントラスト、変形などの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p TOPGおよびTOPGT共に既存の研究より精度向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10098.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Robust Depth Estimation from Auto Bracketed Images
+    .info
+      .authors Sunghoon Im, Hae-Gon Jeon, In So Kweon
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カメラ機能であるバーストショットから、堅牢な深度推定手法の. Deep Multi-view Stereo Matching(DMVS)を提案。バースト画像に適したフローと深度の幾何学的変換を導入し、学習を用いたマルチビューステレオマッチングを効果的に実行。次に、フローネットワークに幾何変換を組み込んだ深度推定によって正確な奥行きマップを生成。図より、青破線はフローから深度に変換。赤破線は逆に、深度からフローに変換し、次のフレームで使用する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DMVS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p スマホなどの小型機器において奥行きを捉えるのは大事になってくるが、低照明条件下では精度が低い。様々な強度（オートブラケット）または強いノイズ（高ISO）を持つバーストを使用することによって精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンとDSLRカメラで、されたさまざまなデータセットの最先端の手法を上回る。 さらに、推定された深度が画質向上と写真編集に適用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07702.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Representation Learning by Predicting Image Rotations
+    .info
+      .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p CNNにおいて、入力画像に適用された2次元回転を認識するように学習する、自己管理特徴学習手法を提案。この単純なタスクによって、semantic feature learningの質の向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330URL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 2018年現在、CNNは画像の意味的要素まで学習できるようになってきた。しかし、これには大量のデータが必要なため、教師なし学習に着目。回転を認識させる学習によって、物体認識、物体検出、セグメンテーションなどのさまざまな視覚的認識タスクに有用な意味的特徴を学習させることに成功。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ImageNet分類、PASCAL分類、PASCAL検出、PASCALセグメンテーション、CIFAR-10分類の教師なし特徴学習精度を大幅に改善。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07728.pdf") 論文
+          li
+            a(href="https://github.com/gidariss/FeatureLearningRotNet") ソースコード
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Fusion of stereo and still monocular depth estimates in a self-supervised learning context
+    .info
+      .authors Diogo Martins, Kevin van Hecke, Guido de Croon
+      .conference ICRA 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自律ロボットにおける、奥行き推定能力を向上させる手法の提案。ロボットが教師あり学習(CNN)でステレオビジョン深度を学習し、静止画像からの深さを推定。このとき、ステレオ視からの深度推定結果だけでなく、単眼深度推定と静止画像をマージすることで精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330FOSASMDE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ステレオとモノラルの両方を融合された場合の推定値が、ステレオだけの場合よりも高パフォーマンス。近距離を除くほとんどの距離において、単眼視力よりも立体視がより正確に行える。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KITTIデータセットとParrot SLAMDunkで実験した結果、ステレオ視覚ロボットに自律走行させるための、より正確なデプスマップを作成できることを示唆。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07512.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Dynamic Sampling Convolutional Neural Networks
+    .info
+      .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。
+        p Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07624.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自己検索モジュールを学習時のガイダンスとし、識別キャプションの生成を促す画像キャプションフレームワークを提案。(1)自己検索ガイダンスによって、キャプションの識別性を評価し、生成されたキャプションの品質を保つ。(2)生成されたキャプションと画像との対応は、アノテーションを伴わない生成プロセスに自然に組み込まれており、大量の未ラベル画像を使用して、面倒なアノテーションを付けを行わずにキャプションのパフォーマンスを向上。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330STAD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来の主流なアプローチのほとんどは言語構造パターンを模倣しており、頻繁なフレーズや文章を複製して、各イメージのユニークな側面を無視するというステレオタイプになる傾向。本手法では、似たような画像を入力した場合でも、キャプションの弁別性を向上させることができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p MS-COCOとFlickr30kデータセットで提案された有効性を実証し、優れた字幕演出をより差別的な字幕とともに示す。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Exploiting deep residual networks for human action recognition from skeletal data
+    .info
+      .authors Huy-Hieu Pham, Louahdi Khoudour, Alain Crouzil, Pablo Zegers, Sergio A. Velastin
+      .conference CVIU 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p デプスセンサによって得られる骨格情報を用いて人間の行動認識に深いResNetsを適用する。スケルトンシーケンスで、人体関節の3D座標を画像ベースの表現に変換し、RGB画像として格納。これらの画像は、3D運動の空間 - 時間的進化をとらえることができ、D-CNNによって効率的に学習可能。次に、得られた画像ベースの表現から特徴量を学習し、行動クラスに分類するためにResNetsにて学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330EDRN.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p MSR Action 3D、KARD、およびNTU-RGB + Dデータセットを含む3つのデータセットで評価。最先端の精度かつ、計算量の削減。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07781.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330EDRN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
+    .info
+      .authors Tolga Birdal, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 点群の一般的な幾何学的二次形状を検出するセグメンテーションフリーの手法を提案。オクルージョン、部分的な可視性、クラッタを用いてPoint Cloudsの二次形状(プリミティブ)を検出。ノイズの多い困難なシーンでも、一般的なマルチオブジェクトプリミティブ検出を実行できる最初の手法。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TADOQ.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 日常生活には、 平面、円錐、球、円柱などの3Dプリミティブで構成される人工物に満ち溢れている。これらのプリミティブを介して3Dシーンを抽象化することで、幾何学的形態が高レベル3Dシーン理解に使えるのでは？という発想。従来とは異なり、単一のアルゴリズムで全てのプリミティブを検出することができる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 研究が進めばリアルタイムを実現できるかも？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07191.pdf") 論文
+    .slide_index #{getSlideIndex()}
+  +slide
+    .title Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs
+    .info
+      .authors Xiaolong Wang, Yufei Ye, Abhinav Gupta, The Robotics Institute, Carnegie Mellon University
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p カテゴリの単語の埋め込みと他のカテゴリとの関係(視覚データが提供される)を使用するだけで、学習例がないカテゴリの分類器を学習するゼロショット認識モデルを提案。 knowledge graph (KG) を入力とし、Graph Convolutional Network(GCN)を基に、セマンティック埋め込みとカテゴリの関係の両方を使用して分類器を予測する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330KG.jpg`)
+    .item3
+      .text
+        h1 手法
+        p 学習済のKGが与えられると、各ノードに対する意味的埋め込みとして入力を得る。一連のグラフ畳み込みの後、各カテゴリの視覚的分類器を予測する。トレーニング中に、カテゴリの視覚的分類器が与えられ、GCNパラメータを学習。テスト時に、これらのフィルタを使用して、見えないカテゴリの視覚的分類器を予測する。
+    .item4
+      .text
+        h1 結果・リンク集
+        p KGのノイズに対してロバストであり、最先端の精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08035.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Actor and Action Video Segmentation from a Sentence
+    .info
+      .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G. M. Snoek
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 文章を用いて、ビデオ内のアクターとそのアクションについて、ピクセル単位でセグメンテーションを行うモデルを提案。ビデオに最適化されたエンコーダとデコーダのアーキテクチャを使用し、時間的性質を考慮したfully-convolutionalモデル。文章によるセグメンテーションを可能にするために、2つの既存のデータセットを、アクターとそのアクションを記述する文章のアノテーションで拡張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク集
+        p 従来手法とは異なり、固定されたアクターとアクションのペアを学習し、自然言語の入力文からセグメンテーションを推定。 これにより、同一カテゴリ内のアクターを細かく識別し、アクターとアクションのインスタンスを識別することが可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07485.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330ActorAndAction_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Unsupervised Cross-dataset Person Re-identification by Transfer Learning of Spatial-Temporal Patterns
+    .info
+      .authors Jianming Lv, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 歩行者の時空間パターンを用いた、教師なし学習の人物再同定アルゴリズムであるTFusionを提案。既存の人物再同定アルゴリズムのほとんどは、小サイズのラベル付きデータセットを用いた教師付き学習手法である。そのため、大規模な実世界のカメラネットワークに適応することは困難である。また、そこで、ラベルなしデータセットも用いたクロスデータセット手法によって精度向上を図る。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TFusion.jpg`)
+    .item3
+      .text
+        h1 手法
+        p まず、歩行者の空間的-時間的パターンを学習するために、ラベル付きデータセットを用いて学習した視覚的分類器を、ラベルなしデータセットに転送。次に、Bayesian fusion modelによって、学習された時空間パターンを視覚的特徴と組み合わせて、分類器を改善。最後に、ラベルのないデータを用いて分類器を段階的に最適化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 人物再同定のための、教師なしクロスデータセット学習手法の中では最先端。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07293.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title HATS: Histograms of Averaged Time Surfaces for Robust Event-based Object Classification
+    .info
+      .authors Amos Sironi, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p イベントベースカメラにおける、識別アルゴリズムの提案。本研究では、(1)イベントベースのオブジェクト分類のための低レベル表現とアーキテクチャの欠如、(2)実世界における大きなイベントベースのデータセットの欠如、の2つの問題に取り組む。新しい機械学習アーキテクチャ、イベントベースの特徴表現(Histograms of Averaged Time Surfaces)、データセット(N-CARS)を提案。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330NCARS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p イベントベースのカメラは、従来のフレームベースのカメラと比較して、高時間分解能、低消費電力、高ダイナミックレンジという点で優れており、様々なシーンで応用が利く。しかし、イベントベースのオブジェクト分類アルゴリズムの精度は未だ低い。特徴表現には過去時間の情報を使用。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 過去の情報を使うことで、既存のイベントベースカメラによる認識手法よりも優れた結果となった。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07913.pdf") 論文
+          li
+            a(href="http://www.prophesee.ai/dataset-n-cars/") データセット
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Speech-Driven Facial Reenactment Using Conditional Generative Adversarial Networks
+    .info
+      .authors Seyed Ali Jalalifar, Hosein Hasani, Hamid Aghajan
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SDFR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 音声入力から、正確な口パク画像(実写の顔)を生成するための新規アプローチの提案。まず、RNN(LSTM)を用いて、音声特徴から口のランドマーク位置をラベルとして生成。次に、ランドマークからC-GANを用いて顔を生成。これらの2つのネットワークによって、入力オーディオトラックと同期し、自然な顔を生成することが可能。
+    .item4
+      .text
+        h1 結果・リンク集
+        p LSTMとC-GANのネットワークは、独立しているので、ターゲットの人物ではなく、他ソースからのオーディオでターゲットの顔を口パクさせることが可能。 顔の変換、アプリなど、多くの新しいアプリケーションに応用可能。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07461.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
+    .info
+      .authors Tao Hu, et al.
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SIR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06598.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Zoom and Learn: Generalizing Deep Stereo Matching to Novel Domains
+    .info
+      .authors Jiahao Pang, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 学習済みデータと新しいドメイン(ground-truthなし)の両方を用いて、ディープステレオマッチングを行うZoom and Lean(ZOLE)の提案。これにより，他のドメインに一般化できるプレトレインモデルを作成することができる。一般化に際する不具合を抑制しながらアップサンプリングを行う、反復最適化問題を定式化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330ZOLE.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ground-truthデータが不足しているため、CNNを用いたステレオマッチングでは学習済みステレオモデルを新規ドメインに一般化することが困難とされていた。CNN学習時のイテレーションごとに最適化していくイメージ。
+    .item4
+      .text
+        h1 結果・リンク集
+        p スマートフォンで収集したデータを従来の手法に入力すると、物体のエッジがぼやけてしまうが、提案手法のZOLEではこれらを改善できる。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06641.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Alive Caricature from 2D to 3D
+    .info
+      .authors Qianyi Wu, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 2Dの似顔絵画像から3Dの似顔絵を作成するためのアルゴリズムの提案。似顔絵画像のテストデータとしてはカリカチュアを使用し、カリカチュア画像の3Dモデルとテクスチャ化された画像を生成する。データは、標準の3D顔の変形を座標系に配置(下図、 xは口の開き具合)し、金のオリジナルデータから線形結合によって白い顔を生成する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330AC2Dto3D_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p カリカチュアを集めたデータセットを作って学習するのではなく、標準の3D顔のデータセットから実装でき、アプリケーションの柔軟さを推している。
+        p 3DMMやFaceWareHouseなどの従来手法と比較して、形の歪みが少なく、従来のものよりも綺麗な3D顔の出力が可能。顔以外にも、概形の予測が可能なオブジェクトなら応用できる？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06802.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330AC2Dto3D_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Face2Text: Collecting an Annotated Image Description Corpus for the Generation of Rich Face Descriptions
+    .info
+      .authors Albert Gatt, et al. 
+      .conference LREC 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顔の記述に特化し、より具体的に記載できるイメージキャプショニングの提案。シーン記述のようなオブジェクトやその関係性などではなく、画像から得られた属性に依存した記述となる。データはクラウドソーシングを使ってアノテーションを収集し(The Face2Text dataset)、アノテーションの解析まで行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330TF2TD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p “顔についてのキャプション”という新しいテーマのデータセットを提案、およびその解析。
+    .item4
+      .text
+        h1 結果・リンク集
+        p The Face2Text datasetは、感情的または推論的な属性を含んだアノテーションを含む。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.03827.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Style Aggregated Network for Facial Landmark Detection
+    .info
+      .authors Xuanyi Dong, Yan Yan, Wanli Ouyang, Yi Yang, University of Technology Sydney, The University of Sydney
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 顔のランドマーク検出。顔そのもののばらつきの他に、グレースケールやカラー画像、明暗などの画像スタイルが変わっても同様に検出できるStyle Aggregated Network(SAN)の提案。まず、(1)入力画像をさまざまなスタイルに変換し、スタイルを集約し、(2)顔のランドマーク予測する。(2)は、元画像とスタイルを集約した特徴の両方を入力し、融合してカスケード式のヒートマップ予測を生成する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SAN_1.jpg`)
+    .item3
+      .text
+        h1 結果・リンク集
+        p Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.04108.pdf") 論文
+          li
+            a(href="https://github.com/D-X-Y/SAN") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330SAN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title phi-LSTM: A Phrase-based Hierarchical LSTM Model for Image Captioning
+    .info
+      .authors Ying Hua Tan, et al.
+      .conference ACCV 2016
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p フレーズベースでの画像キャプショニングを行うphrase-based hierarchical Long Short-Term Memory (phi-LSTM)の提案。(1)画像に関連した名詞句を生成(低レベル)、(2)コーパス内のフレーズと他の単語から適切なキャプションを生成(高レベル)、それぞれの処理に専念するRNNモデルを実装することでフレーズベースを実現している。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330phiLSTM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 従来までは、オブジェクトを検出/名前付けし、その属性を記述して、その関係/相互作用を認識するモデルが提案されている。従来研究では単語のシーケンスだけでキャプションを生成していたが、本研究ではフレーズと単語の組み合わせのシーケンスとして文章をエンコードする。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1608.05813.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Discriminative Learning of Latent Features for Zero-Shot Recognition
+    .info
+      .authors Minghui Yan Li, et al
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p Zero-shot learning(ZSL)における、視覚的および意味的インスタンスを別々に表現し学習するLatent Discriminative Features Learning(LDF)の提案。 (1)ズームネットワークにより差別的な領域を自動的に発見することができるネットワークの提案。(2)ユーザによって定義された属性と潜在属性の両方について、拡張空間における弁別的意味表現の学習。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LDF.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p ZSLは、画像表現と意味表現の間の空間を学習することによって、見えない画像カテゴリを認識する。 既存の手法では、視覚と意味空間を合わせたマッピングマトリックスを学習することが中心的課題。提案手法では、差別的に学習するとうアプローチで識別精度向上を図る。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 2つのコンポーネントによって、互いに支援しながら学習することで最先端の精度に。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06731.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Boosted Convolutional Neural Networks
+    .info
+      .authors Mohammad Moghimi et al.
+      .conference BMVC, 2016.
+    .slide_editor Yuta Matsuzaki
+
+    .item1
+      .text
+        h1 概要
+        p CNNとBoostingのメリットを組み合わせ，BoostingするためのBoostCNNを提案．このモデルを学習するための，重みを更新アルゴリズムを設計．具体的にはBoostingの各反復において，Boostingの重みを近似するためのネットワークの学習を行う．また，異なるネットワークにおいても使用可能であり，優れた性能を示すだけでなく，適切なネットワーク構造を探索するための効率を上げることができると示唆．
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329boostingcnn.png`)
+    .item3
+      .text
+        h1 新規性
+        p fine-grained認識においてSOTA．
+    .item4
+      .text
+        h1 結果・リンク集
+        p 
+        ul
+          li
+            a(href="http://www.bmva.org/bmvc/2016/papers/paper024/abstract024.pdf") 論文
+          li
+            a(href="https://github.com/mmoghimi/BoostCNN") Code
+    .slide_index #{getSlideIndex()}
+    
+  +slide
+    .title Rotation-Sensitive Regression for Oriented Scene Text Detection
+    .info
+      .authors Minghui Liao, et al.
+      .conference CVPR 2018
+    .slide_editor Munetaka Minoguchi
+
+    .item1
+      .text
+        h1 概要
+        p 自然画像から文字を検出する。単なる検出ではなく、文字の方向を考慮したバウンディングボックスによる検出手法であるRotation-sensitive Regression Detector (RRD)の提案。回帰ブランチによって、畳み込みフィルタを回転させて回転感知特徴を抽出。分類ブランチによって、回転感性特徴をプーリングすることによって回転不変特徴を抽出。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329RRD.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 文字をテーマにした研究では(1)テキストの向きを無視した分類方法と，(2)向きを考慮したバウンディングボックスによる回帰がある。従来研究では、両方のタスクの共有の特徴を使用していたが、互換性がなかったためにパフォーマンスが低下(図b)。そこで、異なる2つのネットワークから抽出した、異なる特性の特徴を分類および回帰することを提案(図d,e)。
+    .item4
+      .text
+        h1 結果・リンク集
+        p ICDAR 2015、MSRA-TD500、RCTW-17およびCOCO-Textを含む3つのシーンテキストのデータセットで最先端のパフォーマンスを達成。向きがある一般物体検出にも応用可能？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.05265.pdf") 論文
+    .slide_index #{getSlideIndex()}
+
+  +slide
+    .title Weakly-Supervised Action Segmentation with Iterative Soft Boundary Assignment
+    .info
+      .authors Li Ding, Chenliang Xu
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 時系列の行動検出/セグメンテーション（Action Segmentation）に関する問題をWeakly-Supervised（WS学習）に解いた。ここではTemporal Convolutional Feature Pyramid Network (TCFPN)とIterative Soft Boundary Assignment (ISBA)を繰り返すことで行動に関する条件学習ができてくるという仕組み。TCFPNではフレームの行動を予測し、ISBAではそれを検証、それらを繰り返して行動間の境界線を定めながらWS学習の教師としていく。さらに、WS学習を促進するためにより弱い境界として行動間の繋がりを定義することでWS学習の精度を向上させる。学習はビデオ単位の誤差を最適化することで境界についても徐々に定まる（ここがWS学習の所以）ように学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329ISBATCFN.png`,alt="180329ISBATCFN")
+    .item3
+      .text
+        h1 新規性・結果
+        p Breakfast dataset, Hollywood extended datasetにて弱教師付き学習とテストを行いState-of-the-artな精度を達成した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 弱い教師データを大量に集めると、そろそろ（ある程度の）教師ありデータによる精度を超えそう？もっと汎用的に学習できる枠組みが必要か。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.10699v1.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 14:27:12
+
+  +slide
+    .title COCO-Stuff: Thing and Stuff Classes in Context
+    .info
+      .authors Holger Caesar, Jasper Uijlings, Vittorio Ferrari
+      .conference CVPR 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p MSCOCOデータセットに対してThing（もの）やStuff（材質）に関する追加アノテーションを行い、さらにコンテキスト情報も追加したCOCO-Stuffを提案した。このデータセットには主にシーンタイプ、そのものがどこに現れそうかという場所、物理的/材質的な属性などをアノテーションとして付与する。COCO2017をベースにして164Kに対して91カテゴリを付与し、スーパーピクセルを用いた効率的なアノテーションについてもトライした。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329COCOStuff.png`,alt="180329COCOStuff")
+    .item3
+      .text
+        h1 新規性・結果
+        p 材質的なアノテーションは画像キャプションに対して重要であることを確認、相対的な位置関係などデータセットのリッチなアノテーションが重要であること、セマンティックセグメンテーションベースの方法により今回のアノテーションを簡易的に行えたこと、などを示した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p さらにリッチなアノテーションは今後重要になる。この論文ではスーパーピクセルという弱い知識を用い、人間のアノテーションと組み合わせることでボトムアップ・トップダウンを効果的かつ効率的に組み合わせてアノテーションを行っている点が素晴らしい。ラストオーサのVittorio Ferrariは機械と人の協調によるアノテーションが得意（なので、既存データセットへのよりリッチなアノテーションを早いペースで提案できる）。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1612.03716v4.pdf") 論文
+          li
+            a(href="https://github.com/nightrome/cocostuff10k") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 13:59:43
+  +slide
+    .title Semantic Part Detection with Object Context
+    .info
+      .authors Abel Gonzalez-Garcia, Davide Modolo, Vittorio Ferrari
+      .conference arXiv 1703.09529
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体の全体をbboxで検出するのみならず、相対的なパーツ検出も同時に達成した。物体検出・パーツ検出はEnd-to-Endでの学習が可能である。パーツ検出のモデルは図に示す通りである。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329PartDetection.png`,alt="180329PartDetection")
+    .item3
+      .text
+        h1 新規性・結果
+        p ベースラインと比較して+5 mAP @PASCAL-Part dataset/CUB200-2011 datasetを達成した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.09529.pdf") 論文
+          li
+            a(href="https://github.com/agonzgarc/parts-object-context") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 13:11:12
+
+  +slide
+    .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data (2)
+    .info
+      .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+      .conference Submission to ECCV 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 画像キャプションの研究においてSelf-Retrieval（自己検索？）の機能を追加して学習時の教示することで識別性に優れたキャプションの生成に成功した。Self-Retrievalの効果により、欠損のある画像ーキャプションの対応関係ラベルデータにおいても効率的に学習ができることを示した。識別性に優れたキャプションの生成により、画像中の物体を発見する能力が向上し、より表現力のあるキャプション生成となった。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180326SelfRetrieval.png`,alt="180326SelfRetrieval")
+    .item3
+      .text
+        h1 新規性・結果
+        p 図を参照。強化学習の枠組みによりSelf-Retrievalの報酬を定義してラベルに欠損を含む状態でもキャプショニングの精度を向上させた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 物体認識や検出、セグメンテーションなどあらゆる精度が向上して来たので、多数決を取るように強化学習を行うとラベルが貧弱でも多少は問題解決に向かうようになるのか？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.26 20:52:24
+
+  +slide
+    .title YOLOv3: An Incremental Improvement
+    .info
+      .authors Joseph Redmon, Ali Farhadi
+      .conference Tech Report
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+    .item1
+      .text
+        h1 概要
+        p 物体検出手法であるYOLO（You Only Look Once）に関する続報であり早くもv3となった。OpenImagesの使用、bboxのスケール間での推定結果統合、スキップコネクション適用や畳み込み層の増加（Darknet-53）など軽微な改良を行ってYOLO自体の精度を向上させ速度を維持した。また、TechReport中にはやってもうまくいかなったこと（Anchor box x, y offset predictions, Linear x,y predictions instead of logistic, Focal loss, Dual IOU threshold and truth assignment）が書かれている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180327YOLOv3.png`,alt="180327YOLOv3")
+    .item3
+      .text
+        h1 新規性・結果
+        p 精度はSSDとほぼ同等でかつ3倍の速さを実現した。また、Focal Lossを用いて学習したRetina Netとも同等で3倍以上の速さを実現した（YOLOv3-608 57.9 mAP, 51 ms/img vs. RetinaNet-101 57.5, 198 ms/img）。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 全体にわたりネタが仕込まれつつも、新規性や学びが含まれている論文。ネタを仕込むことで論文を読ませ、引用に繋げている好例。動画も性能の高さを示しているので参照されたい。さらに、ネットを賑わせすぐに記事が多数アップされる。論文まとめかきづらい、犬はずるい。
+        ul
+          li
+            a(href="https://pjreddie.com/media/files/papers/YOLOv3.pdf") 論文
+          li
+            a(href="https://pjreddie.com/darknet/yolo/") Project
+          li
+            a(href="https://www.youtube.com/watch?v=MPU2HistivI") YouTube
+          li
+            a(href="https://www.youtube.com/watch?v=8jfscFuP_9k") YouTube2
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 09:28:32
+
+  +slide
+    .title Teleoperation of a Robot through Audio-Visual Signal via Video Chat
+    .info
+      .authors Hisato Fukuda, Yoshinori Kobayashi and Yoshinori Kuno
+      .conference HRI'18 LBR
+      .paper_id pp. 111-112
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p ロボット操作者と対話相手のモデレーションをする遠隔コミュニケーション支援ロボットにおいて，
+          |ビデオチャット通信とロボット操作通信の両方を用意するのは，
+          |通信品質を保ちにくく，規模も大きくなり，扱いが難しい．
+          |そこで，ビデオチャットの映像に，人間にも直観的に解釈可能なアイコン画像として
+          |遠隔ロボットへのコマンドを埋め込んでしまおうという新たな視点を提案．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Teleoperation_of_a_Robot_through_Audio-Visual_Signal_via_Video_Chat_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p ロボットがハートの動きをしている，と人間が知覚しやすくなる．
+          |人間とロボットがモーダル・認知を共有しつつ，通信の規模も抑えて実装しやすくする
+          |（信頼度の高い既に用意されているビデオチャット通信回線1本あればいい）という一石二鳥の視点が面白い．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3177037") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 13:55:50
+
+  +slide
+    .title Deep Reinforcement Learning of Abstract Reasoning from Demonstrations
+    .info
+      .authors Madison Clark-Turner and Momotaz Begum
+      .conference HRI'18
+      .paper_id pp. 160-168
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 深層強化学習により，人対人インタラクションの高度なダイナミクスにおける一般化ルールの抽出を行う枠組みを提案．
+          |音声およびカメラ画像の疎な時系列を入力とし，2エージェント間の動きの介入セッションを規定する規則のセットの学習を行う．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Deep_Reinforcement_Learning_of_Abstract_Reasoning_from_Demonstrations_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p インタラクションのルール付けが深層学習でできるというのが感慨深い．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171289") ACM library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.27 12:18:23
+
+  +slide
+    .title Learning to Judge Like a Human: Convolutional Networks for Classification of Ski Jumping Errors
+    .info
+      .authors H. Brock et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        CNNを用いたスキージャンプの評価手法を提案．
+        体につけたセンサで人の各部位のモーションを計測．
+        センサを付けた位置を縦軸，時間を横軸，センサ種類をチャンネルに取ったモーション画像として
+        CNNに入力してジャンプのエラーの有無を識別．SVMやHMMよりも高い性能を示した．
+        Conv層の数は1と3を比較して，1で十分という結論．
+
+    .item2
+      img(src=figpath+"180327_ski.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 多次元CNNを用いて複数センサを組み合わせて利用し，識別する手法を提案．
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 19: Sports 2
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara
+
+  +slide
+    .title DNN-HMM based Automatic Speech Recognition for HRI Scenarios
+    .info
+      .authors José Novoa, Jorge Wuth, Juan Pablo Escudero, Josué Fredes, Rodrigo Mahu and Néstor Becerra Yoma
+      .conference HRI'18
+      .paper_id pp. 150-159
+    .slide_editor Ryota Suzuki
+
+    .item1
+      .text
+        h1 概要
+        p 動くロボットの頭部に載せたマイクで音声認識する場合，ロボットのノイズや環境によるエコーの影響
+          |などの認識率低下の要素が多い．
+          |そこで，自動音声認識に，音声入力だけでなく，ユーザの音響情報，ロボットの情報，環境情報も与えると，
+          |DNN-HMM，少ない学習データでも精度が良くなる．
+        ol
+          li Clean Database : 英語発話データベース
+            a(href="http://aurora.hsnr.de/aurora-4.html") Aurora4
+            |を別のマイクで録音
+          li Environment-based Database : 25%-ロボット固定，75%-ロボット動きながらロボマイクで録音＋ノイズ合成
+    .item2
+      .text
+        p
+          img(src=`${figpath}DNN-HMM_based_Automatic_Speech_Recognition_for_HRI_Scenarios_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p DNN-HMM＋ロボット＋音響考慮
+        p (なんか読みづらい)
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171280") ACM library
+          li
+            a(href="http://www.lptv.cl/en/hri-asr/") 学習データなど
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.27 08:58:36
 
   +slide
     .title TOM-Net: Learning Transparent Object Matting from a Single Image
