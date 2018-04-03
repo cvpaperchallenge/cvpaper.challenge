@@ -1,6 +1,28 @@
 extends layouts/_layout
 
 block slides
+
+  +slide
+    .title Fashion Forward: Forecasting Visual Style in Fashion
+    .info
+      .authors Ziad Al-Halah et al.
+      .conference ICCV 2017
+    .slide_editor a(href="https://sites.google.com/site/shinatoyamamoto/" target="blank") ShintaroYamamoto
+
+    .item1
+      .text
+        h1 概要
+        p ファッションの流行遷移をCV的アプローチによって予測する研究。
+          |オンラインショッピングなどにおいてついているタグは不正確なことが多い。
+          |そこで、画像からファッション特徴を抽出することでトレンドを予測する。
+          |CNNによって画像からファッション特徴を抽出したのち、NMFを用いてスタイルに分解する。
+          |最後にファッションの売り上げデータを用いて近い将来ファッションの人気がどのように遷移するかを予測する。 
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401.png`,alt="Item3Image")
+    .item3
+      .text
   +slide
     .title Towards Open-Set Identity Preserving Face Synthesis
     .info
@@ -2404,7 +2426,7 @@ block slides
     .timestamp 2018.3.24 13:30:39
 
   +slide
-    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds  (2)
+    .title A Minimalist Approach to Type-Agnostic Detection of Quadrics in Point Clouds
     .info
       .authors Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
       .conference CVPR 2018
@@ -2433,7 +2455,7 @@ block slides
     .timestamp 2018.3.24 13:04:44
 
   +slide
-    .title Actor and Action Video Segmentation from a Sentence (2)
+    .title Actor and Action Video Segmentation from a Sentence
     .info
       .authors Kirill Gavrilyuk, Amir Ghodrati, Zhenyang Li, Cees G.M. Snoek
       .conference CVPR 2018 (oral)
@@ -2777,7 +2799,7 @@ block slides
     .info
       .authors Zheng Zhang, Chengfang Song, Qin Zou
       .conference arXiv, 1803.03415
-    .slide_editor Hirokatsu Kataoka
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
 
     .item1
       .text
@@ -3538,7 +3560,7 @@ block slides
     .title Guided Labeling using Convolutional Neural Networks
     .info
       .authors Sebastian Stabinger, et al. 
-      .conference CVPR 2018(under review)
+      .conference CVPR 2018
     .slide_editor Munetaka Minoguchi
 
     .item1
@@ -6370,7 +6392,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Visual Forecasting by Imitating Dynamics in Natural Sequences
     .info
@@ -6455,7 +6477,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title DeepNav: Learning to Navigate Large Cities
     .info
@@ -6486,7 +6508,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Forecasting Human Dynamics from Static Images
     .info
@@ -6659,7 +6681,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Predicting Object Dynamics in Scenes
     .info
@@ -6686,7 +6708,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Event Detection using Multi-Level Relevance Labels and Multiple Features
     .info
@@ -6711,7 +6733,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Some like it hot - visual guidance for preference prediction
     .info
@@ -6739,7 +6761,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Understanding Pedestrian Behaviors from Stationary Crowd Groups
     .info
@@ -6768,7 +6790,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Let there be Color!: Joint End-to-end Learning of Global and Loacal Image Priors for Automatic Image Colorization with Simultaneous Classification
     .info
@@ -6796,7 +6818,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup
     .info
@@ -6824,7 +6846,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title Semantic Shape Editing Using Deformation Handles
     .info
@@ -6851,7 +6873,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-	
+  
   +slide
     .title AttribIt: Content Creation with Semantic Attributes
     .info
@@ -6878,7 +6900,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-
+	
   +slide
     .title Scene Graph Generation by Iterative Message Passing
     .info
@@ -6987,7 +7009,7 @@ block slides
     .slide_index
       | #{getSlideIndex()}
     .slide_editor Shintaro Yamamoto
-
+	
   +slide
     .title Personalized Image Aesthetics
     .info
