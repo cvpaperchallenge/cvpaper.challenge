@@ -2,6 +2,42 @@ extends layouts/_layout
 
 block slides
   +slide
+    .title UNSUPERVISED REPRESENTATION LEARNING BY PREDICTING IMAGE ROTATIONS
+    .info
+      .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
+      .conference ICLR 2018
+    .item1
+      h1 概要
+      .text.
+        画像のオリジナルからの回転角度の識別によってself-supervisedな表現学習を行う手法。
+        人が画像を「up-standing」な方向で描写する傾向があることから回転角識別はタスクとしてうまく定義できる。
+        このタスクと解くためには映っている物体は何で、どの方向を向いているのかなどの高次な情報を学習する必要があるため表現を獲得できると言われている。
+
+    .item2
+      img(src=figpath+"rotation.png")
+    .item3
+      h1 手法
+      .text.
+        評価タスクはImageNetで表現学習を行ったのち、ImageNet, PascalVOC, Placesでfine-tuningである。一枚画像からの表現学習としてはほとんどのタスクで現時点のSoTA。
+        しかしImageとデータ分布が大きく異なるPlacesのみはcountingの方が精度が良い。
+        この手法の利点として、画像の転置と反転のみで学習データ作成が可能であるのでscale変換などで生じるartifactがなく、low-levelな特徴による解法の可能性が少ないことも挙げられている。
+
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |非常に簡潔な手法でかなりの精度向上を達成している。データ分布が異なる場合の汎化性能ではcountingの方が高いのは、countingは物体が写っていないような画像も学習中に使用されていることが影響しているように思えた。本タスクではほとんど入力しない回転角を含めて表現学習してもうまくいくことが直感と少し反した。
+        |
+        |
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.07728") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki
+  +slide
     .title Non-local Neural Networks 
     .info
       .authors Xiaolong Wang et al.
