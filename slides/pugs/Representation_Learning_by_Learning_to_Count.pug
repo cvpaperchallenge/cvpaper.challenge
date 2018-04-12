@@ -1,0 +1,41 @@
++slide
+  .title Representation Learning by Learning to Count 
+  .info
+    .authors Mehdi Noroozi et al. 
+    .conference ICCV 2017 (Oral)
+  .slide_editor Tomoyuki Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p 
+      |「画像内のprimitiveを認識できることは高次の特徴を掴んでいる」という考えを基にした、self-supervisedな特徴表現学習手法。
+      |画像のオリジナルとそれらを各タイルに分割したものを同じNNに入力し、出力されるタイルのprimitive数の和とオリジナルのprimitive数が一致するように学習する。
+      |しかしそれでは出力を単に小さくするように学習することで損失を０にできてしまうので異なる画像も含めたcontrastiveな損失を用いる。
+        
+  .item3
+    .text
+      h1 新規性・結果
+      p 
+      |画像識別、物体検出、意味領域分割などのタスクで評価を行っており、識別ではSoTA。
+      |学習したNNからの出力を確認すると、ノルムが大きいものは高次な物体が含まれる画像、小さいものは低次なテクスチャしか含まない画像が得られた。
+      |これからNNが高次なprimitiveをcountしていることが考察できる。
+      
+  .item2
+    .text
+      p
+        img(src=`${figpath}count1.png`)
+        img(src=`${figpath}count2.png`)
+        img(src=`${figpath}count3.png`)
+      
+  .item4
+    .text
+      h1 自由記述欄
+      p
+      |損失を最小化することで結果的にNNが「何かしらのprimitiveを数えていること」になり、冒頭の考えと合わせることで特徴表現学習が可能となる。 
+      |何か明示的に数える対象を与えるように想像したが、実際に何を数えているかは学習ベースで、明示的には与えていない点が非常に面白い。
+
+      ul
+        li
+          a(href="https://arxiv.org/abs/1708.06734") 論文
+  .slide_index #{getSlideIndex()}

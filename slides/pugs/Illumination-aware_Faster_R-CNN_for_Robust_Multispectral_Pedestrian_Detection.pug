@@ -1,0 +1,31 @@
++slide
+  .title Illumination-aware Faster R-CNN for Robust Multispectral Pedestrian Detection
+  .info
+    .authors Chengyang Li, Dan Song, Ruofeng Tong, Min Tang
+    .conference arXiv:1803.05347
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 昼夜問わず歩行者を検出する枠組みを考察する。本稿ではRGBや温度センサの入力から、いかにネットワークを構築して良好な特徴を評価するかについて、6つのネットワーク（(a) Input Fusion, (b) Early Fusion
+        |(c) Halfway Fusion (d) Late Fusion (e) Score Fusion I (f) Score Fusion II）を比較した。この枠組みの中でさらに、Illumination-aware Faster R-CNN（IAF R-CNN; 右図）を提案して夜間の歩行者検出でも良好な精度を実現した。なお、本論文ではKAIST Multispectral Pedestrian Benchmarkを用いて検証をおこなった。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180315IAFRCNN.png`,alt="180315IAFRCNN")
+  .item3
+    .text
+      h1 新規性・結果
+      p Halfway fusion（Error-rate: 17.57%）, Score Fusion I（17.43%）あたりが性能が良かった。IAF R-CNNではエラー率16.22%であった。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p 自動運転では昼夜問わずの歩行者検知が重要である（ということは言うまでもないが意外とできていない）。データセットを作成する際には温度カメラやステレオ、レーダセンサとRGBカメラを組み合わせるのが一般的になってきた？
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.05347.pdf") 論文
+        li
+          a(href="https://sites.google.com/site/pedestrianbenchmark/") KAIST Multispectral Pedestrian Benchmark
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.15 20:27:41

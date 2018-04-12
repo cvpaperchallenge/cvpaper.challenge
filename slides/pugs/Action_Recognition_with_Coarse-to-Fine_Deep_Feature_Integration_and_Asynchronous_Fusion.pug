@@ -1,0 +1,27 @@
++slide
+  .title Action Recognition with Coarse-to-Fine Deep Feature Integration and Asynchronous Fusion
+  .info
+    .authors Weiyao Lin, Yang Mi, Jianxin Wu, Ke Lu, Hongkai Xiong
+    .conference AAAI 2018
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p AAAIに採択された、行動認識の研究。(1)より精緻な特徴量抽出、(2)異なるチャンネルの入力からの非同時性（asynchrony）を考慮して公開データベースに対する認識精度を向上させた。Coarse-, Middle-, Fine-levelの特徴量を統合して識別を実行する、さらにはそれぞれ異なる時間とチャンネル（e.g. rgb at time t & flow at time t+2）からの特徴組み合わせにより参照する尺度を変更し、特徴量をさらに強化した。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180306ActionCoarseFine.png`,alt="180306ActionCoarseFine")
+  .item3
+    .text
+      h1 新規性・結果
+      p 多階層の特徴量の組み合わせや非同時性を考慮した特徴抽出により手法を構成、UCF101にて95.2%、HMDB51にて72.6%を達成した。
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1711.07430.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.6 14:31:32

@@ -1,0 +1,27 @@
++slide
+  .title Joint Object Category and 3D Pose Estimation from 2D Images
+  .info
+    .authors Siddharth Mahendran, Haider Ali, Rene Vidal
+    .conference arXiv:1711.07426
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 「2D画像」と「物体位置」の入力から「3D物体姿勢」と「カテゴリラベル」を出力する研究。ResNetベースのアーキテクチャを採用している。物体カテゴリが既知/未知の場合の両方で3次元物体姿勢の推定ができる。物体の回転とカテゴリ推定の同時誤差を計算する関数も定義。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180305_2D23D.png`,alt="180305_2D23D")
+  .item3
+    .text
+      h1 新規性・結果
+      p 3次元物体姿勢推定とカテゴリ推定の同時回帰問題において、Pascal3D+ datasetでState-of-the-artな精度。物体カテゴリが未知の場合でもカテゴリを推定しながら3次元姿勢推定を実行することができる。
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1711.07426.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.5 19:25:04

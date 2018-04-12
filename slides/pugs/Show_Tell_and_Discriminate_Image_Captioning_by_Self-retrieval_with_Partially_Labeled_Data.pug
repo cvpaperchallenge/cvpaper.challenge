@@ -1,0 +1,28 @@
++slide
+  .title Show, Tell and Discriminate: Image Captioning by Self-retrieval with Partially Labeled Data
+  .info
+    .authors Xihui Liu, Hongsheng Li, Jing Shao, Dapeng Chen, Xiaogang Wang
+    .conference ECCV 2018
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 自己検索モジュールを学習時のガイダンスとし、識別キャプションの生成を促す画像キャプションフレームワークを提案。(1)自己検索ガイダンスによって、キャプションの識別性を評価し、生成されたキャプションの品質を保つ。(2)生成されたキャプションと画像との対応は、アノテーションを伴わない生成プロセスに自然に組み込まれており、大量の未ラベル画像を使用して、面倒なアノテーションを付けを行わずにキャプションのパフォーマンスを向上。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180330STAD.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p 従来の主流なアプローチのほとんどは言語構造パターンを模倣しており、頻繁なフレーズや文章を複製して、各イメージのユニークな側面を無視するというステレオタイプになる傾向。本手法では、似たような画像を入力した場合でも、キャプションの弁別性を向上させることができる。
+  .item4
+    .text
+      h1 結果・リンク集
+      p MS-COCOとFlickr30kデータセットで提案された有効性を実証し、優れた字幕演出をより差別的な字幕とともに示す。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.08314.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  

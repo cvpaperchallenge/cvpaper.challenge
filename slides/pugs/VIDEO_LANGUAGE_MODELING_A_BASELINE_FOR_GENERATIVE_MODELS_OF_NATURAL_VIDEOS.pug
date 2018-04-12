@@ -1,0 +1,35 @@
++slide
+  .title VIDEO (LANGUAGE) MODELING: A BASELINE FOR GENERATIVE MODELS OF NATURAL VIDEOS 
+  .info
+    .authors Marc’Aurelio Ranzato et al., 
+    .conference 2014
+  .item1
+    h1 概要
+    .text.
+      言語処理などで行われる時系列生成モデリング(過去フレームを条件とした先フレーム
+      生成)を動画に対して行う問題設定とそのベースラインの提案。
+      MSEやMAEではブラーが起きてしまうため、patchをk-meansクラスタリングし、所属するクラスタを予測することで分布を再現する。
+      本論文では”予想できること”を目標にしている。
+      
+  .item2
+    img(src=figpath+"video_modeling.png")
+  .item3
+    h1 新規性・結果
+    .text.
+      画像は連続空間であるため、P(xt|x[1:t-1])の分布を再現するのが難しくMSEやMAEのが用いられてきたが、クラスタリングによって離散化することで識別問題に帰着させた。
+      定量評価は主にperplexityを用いており、言語モデルを参考にしている。通常のrNNとrCNN(畳み込みでのRNN)などで評価を行っており、従来手法との比較はほぼない（できない）
+  .item4
+    h1 自由記述欄
+    .text
+      h1 コメント・リンク
+      p
+      |アーキテクチャのlimitationは割と大きい。行動認識など、表現学習の枠組みでの精度評価も気になった。
+      
+      ul
+        li
+          a(href="https://arxiv.org/abs/1412.6604") 論文
+      
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Tomoyuki Suzuki
+  

@@ -1,0 +1,32 @@
++slide
+  .title Inferring and Executing Programs for Visual Reasoning
+  .info
+    .authors Justin Johnson, Bharath Hariharan, Laurens van der Maaten, et al.
+    .conference ICCV 2017
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 理由に基づいたVQA。既存の手法では，入力を出力に直接マッピングしているため，視覚的推論の学習というよりも，データの偏りを学習しているといえる。そこで，理由を伴った視覚的推論モデルを提案。モデルは、プログラムジェネレータと実行エンジンの2部構成。CLEVRベンチマークを使用し評価。回答の柔軟性、拡張性の向上。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180303VisualReasoning_1.jpg`)
+  .item3
+    .text
+      h1 手法・リンク
+      p プログラムジェネレータは、質問の読み取り、単語の羅列として表現される質問から質問に答えるためのプログラムを生成する。基本的にはLSTMのsequence-to-sequenceの考え方。
+      p 実行エンジンは、予測されたプログラムをミラーリングするニューラルモジュールネットワークを構成し、実行することで画像から回答を生成。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1705.03633.pdf") 論文
+        li
+          a(href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf") seq-to-seq
+  .item4
+    .text
+      p 
+        img(src=`${figpath}180303VisualReasoning_2.jpg`)
+
+  .slide_index #{getSlideIndex()}
+  

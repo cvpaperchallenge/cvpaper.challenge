@@ -1,0 +1,31 @@
++slide
+  .title ASePPI: Robust Privacy Protection Against De-Anonymization Attacks
+  .info
+    .authors Natacha Ruchaud, Jean-Luc Dugelay
+    .conference CVPR 2017 Workshop on CV-COPS
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 監視カメラ映像などにおいて人物領域のde-anonymization（匿名にしていた情報をオープンにされること？）を防ぐための研究。RoIに対して実行することで人物再同定（Person Re-identification）の精度を落とすことに成功している。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180309AsePPI.png`,alt="180309AsePPI")
+  .item3
+    .text
+      h1 新規性・結果
+      p 本提案手法であるAdaptive Scrambling enabling Privacy Protection and Intelligibility (ASePPI)により、匿名性が保たれることが明らかになった。これは、従来法よりも優れている。
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w16/papers/Dugelay_ASePPI_Robust_Privacy_CVPR_2017_paper.pdf") 論文
+        li
+          a(href="http://www.eurecom.fr/en/publication/5283/detail/aseppi-robust-privacy-protection-against-de-anonymization-attacks") Project
+        li
+          a(href="https://github.com/NatachaRuchaud/ASePPI") GitHub
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.9 18:05:28

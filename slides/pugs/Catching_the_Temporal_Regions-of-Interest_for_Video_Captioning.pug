@@ -1,0 +1,32 @@
++slide
+  .title Catching the Temporal Regions-of-Interest for Video Captioning
+  .info
+    .authors Ziwei Yang, Yahong han, Zheng Wang
+    .conference ACM MM 2017
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 動画キャプションのため、動画中から時系列のRegions-of-Interest（RoI）を獲得する。動画中のアテンションを獲得するDual Memory Recurrent Model（DMRM）を提案して時系列の大域的構造/特徴とRoI特徴を対応づける。これにより、人間のように動画を粗く流し見することに相当するモデルが構築できる。さらに詳細に特徴を評価するため、意味的な教示（semantic supervision）を行う。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180307VideoROI.png`,alt="180307VideoROI")
+  .item3
+    .text
+      h1 新規性・結果
+      p 評価にはMicrosoft Video Description Corpus (MSVD)やMotreal Video Annotation (M-VAD)を採用。動画キャプショニングにおける評価法、BLEU-4, CIDEr, METEORにてState-of-the-artな精度を得た。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p 動画キャプショニングは今やると面白い？動画VQAなんかは進んでいるかも？
+      ul
+        li
+          a(href="https://dl.acm.org/citation.cfm?id=3123327") 論文
+        li
+          a(href="https://ziweiyang.github.io/") Project
+        li
+          a(href="https://github.com/ziweiyang/dualMemoryModel") GitHub
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.7 12:28:51

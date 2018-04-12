@@ -1,0 +1,28 @@
++slide
+  .title Forecasting Human Dynamics from Static Images
+  .info
+    .authors Chao et al.
+    .conference CVPR, 2017.
+  .item1
+    h1 概要
+    .text.
+      1枚の画像から、人間のモーションを推定する研究。画像から2次元の姿勢を推定し，その結果を3次元に変換することで出力を得る。学習は3段階に分かれており、2次元姿勢推定部は2次元姿勢データベースを使用して学習をし、3次元姿勢推定部はモーションキャプチャデータを2次元投影することにより学習を行い、最後に全体を通して学習を行う。
+
+  .item2
+    img(src=figpath+"180306humandynamics1.png")
+    img(src=figpath+"180306humandynamics2.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li 従来研究とは異なり、RNNを用いることにより静止画からモーションを推定することを可能とした
+        li 推定した2次元の姿勢から3次元の情報を復元するネットワークを提案した
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li: a(href="https://arxiv.org/abs/1704.03432" target="blank") 論文URL
+        li: a(href="http://www-personal.umich.edu/~ywchao/image-play/" target="blank") プロジェクトページ
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Shintaro Yamamoto

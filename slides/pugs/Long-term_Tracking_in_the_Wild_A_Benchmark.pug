@@ -1,0 +1,34 @@
++slide
+  .title Long-term Tracking in the Wild: A Benchmark
+  .info
+    .authors Jack Valmadre, Luca Bertinetto, João F. Henriques, Ran Tao, Andrea Vedaldi, Arnold Smeulders, Philip Torr, Efstratios Gavves
+    .conference arXiv 1803.09502
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 従来データよりも（最低でも2分以上のビデオが含まれる）長期にわたる物体追跡のビデオデータセットを提供、さらには評価用サーバも提供して長期物体追跡の研究に貢献する。同データセットは366シーケンスを含め、14時間以上のビデオ、150万のフレームを含みこれはOTB-100の約26倍のデータサイズである。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180329LongTermTrackingDB.png`,alt="180329LongTermTrackingDB")
+  .item3
+    .text
+      h1 新規性・結果
+      p データセットを提供すると同時に、ベンチマークとして代表的なトラッキング手法を実装して精度を算出した。手法はSiamFC、TLD、MDNet、SINT、SiamFC、ECO-HC、EBT、BACF、Staple、LCTを比較した。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p トラッキングはより長期になるし、するべき。
+      ul
+        li
+          a(href="https://arxiv.org/abs/1803.09502") 論文
+        li
+          a(href="https://oxuva.github.io/long-term-tracking-benchmark/") Project
+        li
+          a(href="https://oxuva.github.io/long-term-tracking-benchmark/video_grid.html") Video
+        li
+          a(href="https://github.com/oxuva/long-term-tracking-benchmark") GitHub
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.29 15:16:07

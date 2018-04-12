@@ -1,0 +1,29 @@
++slide
+  .title Forecasting Interactive Dynamics of Pedestrians with Fictitious Play
+  .info
+    .authors Ma et al.
+    .conference CVPR, 2017.
+  .item1
+    h1 概要
+    .text.
+      画像中に写っている人々の歩行ルートを予測する手法。各歩行者に対して歩行モデルを決定し、他の人とぶつからないようによけるなど他者の行動を考慮した上で歩行ルートを決定していく。
+
+  .item2
+    img(src=figpath+"180306pedestrians1.png")
+    img(src=figpath+"180306pedestrians2.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li ゲーム理論に基づき、他の歩行者の進行方向を予測した上でルートを決定する
+        li 年齢などの情報を抽出し、各歩行者の歩行速度などを決定する
+        li 既存手法と比べて長期的な予測の精度が向上
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li ゲーム理論の応用は興味深い
+        li どれくらいの人数までできるのだろうか？（人ゴミは無理？）
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Shintaro Yamamoto

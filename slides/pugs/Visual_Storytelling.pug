@@ -1,0 +1,31 @@
++slide
+  .title Visual Storytelling
+  .info
+    .authors Ting-Hao (Kenneth) Huang, et al.
+    .conference NAACL 2016
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p アルバムのような時系列画像でキャプション生成を行うためのデータセット。ストーリ性のある画像キャプションデータセット：SINDを構築。10,117個のFlickrアルバム、210,819枚の写真。各アルバムは平均20.8枚。
+      p descriptions for images in isolation (DII)：画像一枚の記述
+      p descriptions of images in sequence (DIS)：連続画像
+      p stories for images in sequence (SIS)：ストーリー
+  .item2
+    .text
+      p
+        img(src=`${figpath}180303VisualStorytelling_1.jpg`)
+  .item3
+    .text
+      h1 手法・リンク
+      p SINDを使いキャプションをイメージごとに生成(Table5)。ストーリー性を含んだキャプションが生成できている。METEORによるスコアも向上。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1604.03968.pdf") 論文
+  .item4
+    .text
+      p 
+        img(src=`${figpath}180303VisualStorytelling_2.jpg`)
+
+  .slide_index #{getSlideIndex()}

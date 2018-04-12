@@ -1,0 +1,28 @@
++slide
+  .title Dense-Captioning Events in Videos
+  .info
+    .authors Ranjay Krishna, Kenji Hata, Frederic Ren, Li Fei-Fei, Juan Carlos Niebles Stanford University
+    .conference ICCV 2017
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p ビデオ中の事象の検出と記述、両方を含む高密度キャプションイベントのタスク。つまり、ビデオ内で検出された複数のイベントを自然言語で同時に記述しながら、全てのイベントを識別できる新しいモデルを提案。ビデオ内のイベント間の依存関係を取得するために、過去と未来のイベントのコンテキスト情報を使用し、すべてのイベントを共同して記述するキャプションモジュールを導入。高密度キャプションイベントの大規模データセットのActivityNet Captionsも提案。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180309DenseCaptioning.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p ビデオには多数のイベントが含まれている。例えば、「ピアノを弾く男」のビデオでは、「別の男の踊り」や「群衆の拍手」が含まれてたりなど。これらすべてのイベントについて、ビデオを1回パスするだけで記述する。
+      p ActivityNetには、100kのキャプション、849時間の動画20k本が含まれる。
+  .item4
+    .text
+      h1 結果・リンク集
+      p 複数イベントのキャプションを行えるので、複数人同時に行動認識ができる。人間が見落としがちな細かいシーンも見逃さないのでは？その点では人間を超えてる？
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1705.00754.pdf") 論文
+  .slide_index #{getSlideIndex()}

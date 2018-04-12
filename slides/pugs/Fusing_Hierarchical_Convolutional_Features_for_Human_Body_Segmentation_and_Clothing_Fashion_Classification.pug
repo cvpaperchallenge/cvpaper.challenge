@@ -1,0 +1,28 @@
++slide
+  .title Fusing Hierarchical Convolutional Features for Human Body Segmentation and Clothing Fashion Classification
+  .info
+    .authors Zheng Zhang, Chengfang Song, Qin Zou
+    .conference arXiv, 1803.03415
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p ファッションにおいて各年のコレクションから収集したファッションスナップをデータベース化。服装も含めた人物領域のセグメンテーションや8カテゴリ（2008~2015）のYearを識別する問題に落とし込んだ。この問題を解決するため、多階層の特徴抽出を行い、統合することによりセグメントとラベルを判断した。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180322Fashion8.png`,alt="180322Fashion8")
+  .item3
+    .text
+      h1 新規性・結果
+      p 全9339枚の画像から構成される8年分のファッションDB、Fashion8を提案、ファッションセグメンテーションや識別を行うためにEnd-to-End/Multi-scaleのアーキテクチャを提案。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p 学習によりファッションが出てきた年を当てるのは？だが、同時に付与されているファッションブランドを当てる問題はある程度できそう。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.03415.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.22 18:31:05

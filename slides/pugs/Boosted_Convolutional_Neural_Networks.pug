@@ -1,0 +1,30 @@
++slide
+  .title Boosted Convolutional Neural Networks
+  .info
+    .authors Mohammad Moghimi et al.
+    .conference BMVC, 2016.
+  .slide_editor Yuta Matsuzaki
+
+  .item1
+    .text
+      h1 概要
+      p CNNとBoostingのメリットを組み合わせ，BoostingするためのBoostCNNを提案．このモデルを学習するための，重みを更新アルゴリズムを設計．具体的にはBoostingの各反復において，Boostingの重みを近似するためのネットワークの学習を行う．また，異なるネットワークにおいても使用可能であり，優れた性能を示すだけでなく，適切なネットワーク構造を探索するための効率を上げることができると示唆．
+  .item2
+    .text
+      p
+        img(src=`${figpath}180329boostingcnn.png`)
+  .item3
+    .text
+      h1 新規性
+      p fine-grained認識においてSOTA．
+  .item4
+    .text
+      h1 結果・リンク集
+      p 
+      ul
+        li
+          a(href="http://www.bmva.org/bmvc/2016/papers/paper024/abstract024.pdf") 論文
+        li
+          a(href="https://github.com/mmoghimi/BoostCNN") Code
+  .slide_index #{getSlideIndex()}
+  

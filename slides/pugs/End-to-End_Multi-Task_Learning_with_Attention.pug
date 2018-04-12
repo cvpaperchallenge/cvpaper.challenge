@@ -1,0 +1,28 @@
++slide
+  .title End-to-End Multi-Task Learning with Attention
+  .info
+    .authors Shikun Liu, Edward Johns, Andrew J. Davison
+    .conference submitted to ECCV 2018
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p グローバル特徴プールを含む単一の共有ネットワークと、end-to-endで学習可能なタスク固有のsoft-attention modulesで構成された、multi-task learningアーキテクチャであるMulti-Task Attention Network (MTAN)の提案。図の(a)は、セマンティックセグメンテーションと深度推定のタスクのための、学習したアテンションマスクの例。(b)は、MTANの概要。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180401EtEMTL.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p MTANによって、グローバル・プールからのタスク固有の機能の学習が可能になると同時に、異なるタスク間で機能を共有できる。本アーキテクチャは、任意のfeed-forward neural network上に構築することができ、実装が簡単かつパラメータ効率が良い。
+  .item4
+    .text
+      h1 結果・リンク集
+      p CityScapesを用いた実験より、単一タスクとマルチタスク学習の両方でいくつかのベースラインよりも優れている結果。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.10704.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  

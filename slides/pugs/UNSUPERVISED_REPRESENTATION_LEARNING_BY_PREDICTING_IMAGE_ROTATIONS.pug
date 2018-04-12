@@ -1,0 +1,30 @@
++slide
+  .title Unsupervised Representation Learning by Predicting Image Rotations
+  .info
+    .authors Spyros Gidaris, Praveer Singh, Nikos Komodakis
+    .conference ICRA 2018
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p CNNにおいて、入力画像に適用された2次元回転を認識するように学習する、自己管理特徴学習手法を提案。この単純なタスクによって、semantic feature learningの質の向上。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180330URL.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p 2018年現在、CNNは画像の意味的要素まで学習できるようになってきた。しかし、これには大量のデータが必要なため、教師なし学習に着目。回転を認識させる学習によって、物体認識、物体検出、セグメンテーションなどのさまざまな視覚的認識タスクに有用な意味的特徴を学習させることに成功。
+  .item4
+    .text
+      h1 結果・リンク集
+      p ImageNet分類、PASCAL分類、PASCAL検出、PASCALセグメンテーション、CIFAR-10分類の教師なし特徴学習精度を大幅に改善。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.07728.pdf") 論文
+        li
+          a(href="https://github.com/gidariss/FeatureLearningRotNet") ソースコード
+  .slide_index #{getSlideIndex()}
+  

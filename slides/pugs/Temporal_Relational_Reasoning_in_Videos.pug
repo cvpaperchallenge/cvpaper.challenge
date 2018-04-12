@@ -1,0 +1,34 @@
++slide
+  .title Temporal Relational Reasoning in Videos
+  .info
+    .authors Bolei Zhou, Alex Andonian, Antonio Torralba
+    .conference arXiv:1711.08496
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p 時系列の理由付け、（物体や人物行動などの）関連性を学習するTemporal Relation Network (TRN)を提案する。TRNはフレーム数を変えながら特徴表現を行い、前後の時系列を対応づけることで理由付けを行う。このネットワークを学習して時系列の対応付けを行うため、3つの動画データベースーSomething-Something（ビデオ数108,499）, Jester（148,092）, Charades（9,848）ーを用いた。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180307TRN.png`,alt="180307TRN")
+  .item3
+    .text
+      h1 新規性・結果
+      p TRNは場面によりC3DやTwo-Stream ConvNetsよりも高精度。ビジュアルの結果は動画を参照。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p 動画像に対しても理由付け（Reasoning）ができるようになってきた。行動検出の高精度化は待たれるが、トリミングされた動画像に対しては効果を発揮する手法。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1711.08496.pdf") 論文
+        li
+          a(href="http://relation.csail.mit.edu/") Project
+        li
+          a(href="https://github.com/metalbubble/TRN-pytorch") GitHub
+        li
+          a(href="https://www.youtube.com/watch?v=D42erLb42_k") YouTube
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.7 09:23:28
