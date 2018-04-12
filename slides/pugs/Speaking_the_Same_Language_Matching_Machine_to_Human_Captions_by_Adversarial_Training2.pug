@@ -1,0 +1,34 @@
++slide
+  .title Speaking the Same Language: Matching Machine to Human Captions by Adversarial Training
+  .info
+    .authors Rakshith Shetty, Marcus Rohrbach, Lisa Anne Hendricks, Mario Fritz and Bernt Schiele
+    .conference ICCV2017
+    .paper_id arXiv:1703.10476v2
+  .slide_editor Kota Yoshida
+
+  .item1
+    .text
+      h1 概要
+      p groundtruthキャプションの再生から人間のキャプションンとの見分けが付かないキャプション生成
+        |言葉の統計にマッチする偏りのない多様なキャプションの生成
+        |敵対的キャプションジェネレータによるキャプション生成，ハイパーパラメータの調整にGANを使用することで精度も向上
+  .item2
+    .text
+      p
+        img(src=`${figpath}Speaking_the_Same_Language_Matching_Machine_to_Human_Captions_by_Adversarial_Training.png`,alt="result")
+  .item3
+    .text
+      h1 新規性
+      ul
+        li 人間のキャプションと画像キャプショニングによる区別をつけるのは容易(欠陥or不自然)
+  .item4
+    .text
+      h1 結果・リンク集
+      ul
+        li
+          p 提案されたadversarial modelによって、膨大なボキャブラリーかつ多くの斬新なキャプションを生成することができた
+        li
+          p
+            a(href="https://arxiv.org/pdf/1703.10476.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.4.12 21:28:21
