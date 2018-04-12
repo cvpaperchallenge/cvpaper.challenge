@@ -1,0 +1,28 @@
++slide
+  .title P2P-NET: Bidirectional Point Displacement Net for Shape Transform
+  .info
+    .authors Kangxue Yin, Hui Huang, Daniel Cohen-Or, Hao Zhang
+    .conference SIGGRAPH 2018
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 2つの領域(例えば、骨格と表面、部分的および完全なスキャンデータ)からポイントベースの形状表現に幾何学的変換するための、汎用DNNであるP2P-NETの提案。データから学習された点群に変換、またはその逆の変換を行う双方向点変位ネットワーク。lossは、予測された点集合と目標点集合との間の形状的類似性を比較する幾何学的損失と、逆方向に進む変位ベクトル間の相互正規化項とを組み合わせる。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180331P2PNET.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p ポイントセットを1つのドメインから別のドメインにマッピングするように学習することにより、2Dまたは3D空間に配置できる。また、マッピングは2Dプロファイルを3D形状に変換することも可能。
+  .item4
+    .text
+      h1 結果・リンク集
+      p P2P-NETをもちいたアプリケーションを複数開発し、様々なポイントベースの形状変換問題を解決するネットワークの有効性、汎用性、および可能性を示唆。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.09263.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  

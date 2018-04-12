@@ -1,0 +1,32 @@
++slide
+  .title Deep mutual learning 
+  .info
+    .authors Ying Zhang, Tao Xiang, Timothy M. Hospedales, Huchuan Lu
+    .conference 2017
+  .slide_editor Tomoyuki Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p 教師モデルと生徒モデルを分けていた従来の蒸留に対してモデル同士の相互学習を提案。ハードラベルによる交差エントロピーと対象モデル以外のモデルの出力とのKL距離を最小化するように学習する。様々なモデル同士の相互学習実験や通常の蒸留との比較、相互学習を行った場合の解がより高い汎化性能を保有していることの検証実験も行っている。
+
+      
+  .item2
+    .text
+      p
+        img(src=`${figpath}deep_mutual2.png`)
+        img(src=`${figpath}deep_mutual3.png`)
+        
+  .item3
+    .text
+      h1 新規性・結果
+      p 画像識別において通常の蒸留を行うよりも精度が良くなった。生徒モデルの中で相対的に小規模なモデルのみならず大規模なモデルも独立で学習を行うより精度が良かった。さらに相互学習を行うことで、wider minimaに収束しているという実験結果も得られた。特に出力される事後確率のエントロピーが大きくなるように学習されることがwider minimaへの収束を促していることがいわれている。
+      
+  .item4
+    .text
+      h1 自由記述欄
+      p ハードラベルありき（ないと相互学習が正しい方向に向かわない）の手法であったが、教師なし手法に拡張できたら面白くなりそうだと感じる。
+      ul
+        li
+          a(href="https://arxiv.org/abs/1706.00384") 論文
+  .slide_index #{getSlideIndex()}

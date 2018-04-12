@@ -1,0 +1,37 @@
++slide
+  .title Active Robot Learning for Temporal Task Models
+  .info
+    .authors M. Racca and V. Kyrki
+    .conference HRI'18
+    .paper_id pp. 123-131
+  .slide_editor Ryota Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p タスク実行に関する，自然言語によるユーザー表現のモデル化を行うアクティブラーニングの枠組みを提案．
+        |タスクの時系列に対する素人ユーザの表現を学習する．
+        |以下のような質問を行い，ディリクレ多項モデルなどでモデル化し，逐次アップデートしていく．
+      ul
+        li 「タスクA」の後に，「このくらいの頻度で」「タスクB」をやりますか？
+        li 「タスクA」の後に，どちらかといえば「タスクB」「タスクC」のどちらをやりたいですか？
+        li 「このくらいの頻度で」「タスクA」から始めますか？
+        li どちらかといえば「タスクA」「タスクB」のどちらから始めたいですか？
+  .item2
+    .text
+      p
+        img(src=`${figpath}Active_Robot_Learning_for_Temporal_Task_Models_Figure1.png`,alt="Figure1")
+  .item3
+    .text
+      h1 評価点
+      p 他手法に比べ，時系列変化を考慮に入れていることが新しい点とのこと．
+      p ロボットとの対話の中で，ロボットとの協議でユーザの傾向を測るのは，あるべきパラダイムであろう．
+        |時変化という制約を付けたことでインタラクション的にも機械学習的にもうまくいくデザインが見つかったのは価値があると思う．
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="https://dl.acm.org/citation.cfm?id=3171241") ACM Library
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.19 13:49:03

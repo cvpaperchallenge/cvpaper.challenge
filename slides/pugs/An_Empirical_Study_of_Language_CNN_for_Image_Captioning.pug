@@ -1,0 +1,28 @@
++slide
+  .title An Empirical Study of Language CNN for Image Captioning
+  .info
+    .authors Jiuxiang Gu, et al.
+    .conference ICCV 2017
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p CNNでイメージキャプショニングを行う言語モデルの提案。1つの単語と状態(state)に基づいて時系列的に次の単語を予測するRNNとは異なり、Language CNNは以前に推定された全ての単語を入力とすることで、画像キャプションとして重要な単語の長期依存性をモデル化できる。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180310LCNN.jpg`)
+  .item3
+    .text
+      h1 新規性・手法
+      p 以前の単語の忘却を防ぐために、RNNにCNNLを追加して文章を生成する。全ての時間枠で重みが共有されるのがミソ。
+      p 画像特徴抽出のためのCNNI、言語モデリングのためCNNL、CNNIとCNNLを接続するマルチモーダル層（M）、単語予測のための再帰ネットワーク（RNNやLSTMなど）の4部構成。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p バニラのRNNよりも優れた性能。同じことを何度も言ったり、変な文章になりにくいのでは？
+      ul
+        li
+          a(href="https://arxiv.org/abs/1612.07086") 論文
+  .slide_index #{getSlideIndex()}

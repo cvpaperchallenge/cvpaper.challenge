@@ -1,0 +1,35 @@
++slide
+  .title Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles
+  .info
+    .authors Mehdi Noroozi et al.
+    .conference in ECCV 2016
+  .slide_editor Tomoyuki Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p 
+      |一枚画像から作成されるジグソーパズルを解くことで表現学習を行う。SiameseNetを用い、9×9のpermutationの識別を解く(実際にはハミング距離などが考慮された1000通りのpermutationに限定)。タイルの境界部分などの低レベルな特徴によってとかないよう、境界を消すような前処理を行う。
+      //|時間の設定をもとに対応する特徴量を計算することができ、実験では仮想的なデータにおけるフレーム生成タスクにおいて、鮮明な出力が得られている
+        
+  .item3
+    .text
+      h1 手法・結果
+      p 
+      |既存手法として中心タイルからの相対位置８クラス分類などの表現学習方法が存在したが、難度が高すぎた。本手法ではpermutationの限定、すべてのタイルを入力として使用することで難度を調整している。様々なタスクの表現学習においてSoTA。
+      
+  .item2
+    .text
+      p
+        img(src=`${figpath}jg_puzzle.png`)
+  .item4
+    .text
+      h1 コメント・リンク
+      p
+      |表現学習にはタスク自体の難易度の調整は重要そう。本研究でも、permutationの数、ハミング距離などが大きく影響していた。
+      
+      ul
+        li
+          a(href="https://arxiv.org/abs/1603.09246") 論文
+  .slide_index #{getSlideIndex()}
+  

@@ -1,0 +1,39 @@
++slide
+  .title DNN-HMM based Automatic Speech Recognition for HRI Scenarios
+  .info
+    .authors José Novoa, Jorge Wuth, Juan Pablo Escudero, Josué Fredes, Rodrigo Mahu and Néstor Becerra Yoma
+    .conference HRI'18
+    .paper_id pp. 150-159
+  .slide_editor Ryota Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p 動くロボットの頭部に載せたマイクで音声認識する場合，ロボットのノイズや環境によるエコーの影響
+        |などの認識率低下の要素が多い．
+        |そこで，自動音声認識に，音声入力だけでなく，ユーザの音響情報，ロボットの情報，環境情報も与えると，
+        |DNN-HMM，少ない学習データでも精度が良くなる．
+      ol
+        li Clean Database : 英語発話データベース
+          a(href="http://aurora.hsnr.de/aurora-4.html") Aurora4
+          |を別のマイクで録音
+        li Environment-based Database : 25%-ロボット固定，75%-ロボット動きながらロボマイクで録音＋ノイズ合成
+  .item2
+    .text
+      p
+        img(src=`${figpath}DNN-HMM_based_Automatic_Speech_Recognition_for_HRI_Scenarios_Figure1.png`,alt="Figure1")
+  .item3
+    .text
+      h1 評価点
+      p DNN-HMM＋ロボット＋音響考慮
+      p (なんか読みづらい)
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="https://dl.acm.org/citation.cfm?id=3171280") ACM library
+        li
+          a(href="http://www.lptv.cl/en/hri-asr/") 学習データなど
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.27 08:58:36

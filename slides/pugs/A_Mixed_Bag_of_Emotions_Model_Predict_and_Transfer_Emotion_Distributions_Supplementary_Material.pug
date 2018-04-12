@@ -1,0 +1,27 @@
++slide
+  .title A Mixed Bag of Emotions: Model, Predict, and Transfer Emotion Distributions Supplementary Material
+  .info
+    .authors Kuan-Chuan Peng, Tsuhan Chen, Amir Sadovnik, Andrew Gallagher.
+    .conference CVPR, 2015.
+  .item1
+    h1 概要
+    .text.
+      一人の人間は一枚の画像に対して様々な感情を抱くことから、一枚の画像に対する感情のアノテーションをある一つの感情ラベルにするのではなく、ヒストグラム(各成分はanger, disgust, fear, joy, sadness, surprise, neutral)として扱い、データセットを構築。このデータセットに対して、感情ヒストグラムを推定するCNNRというモデルを提案。また、ターゲットとなる感情ヒストグラムをもつ参照画像を用いて、生成画像がターゲット感情ヒストグラムに近くなるようなカラートランスファーを提案。
+  .item2
+    img(src=figpath+"cvpr2015_a_mixed_bag.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li 画像1980枚に対して感情ヒストグラム(各7つの成分は概要参照)と感情を表すVA値がアノテーションされているEmotion6データセットデータベースを構築
+        li 入力を画像とし、感情ヒストグラムをSVRとCNNよりも精度が高いCNNRを提案
+        li 入力画像のもつ感情ヒストグラムに対して、ターゲット感情ヒストグラムに近くなるようなカラートランスファーを提案。
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li: a(href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Peng_A_Mixed_Bag_2015_CVPR_paper.pdf" target="blank") 論文URL
+        li: a(href="http://chenlab.ece.cornell.edu/Publication/Kuan-Chuan/CVPR15_emotion_supp.pdf" target="blank") Supplementary
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Kazuki Inoue

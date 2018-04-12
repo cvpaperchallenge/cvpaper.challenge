@@ -1,0 +1,26 @@
++slide
+  .title Predicting Object Dynamics in Scenes
+  .info
+    .authors David F. Fouhey et al.
+    .conference CVPR, 2014.
+  .item1
+    h1 概要
+    .text.
+      画像に写っている物が、どのように移動していくかを予測する研究。接触している物体同士(例：人間と帽子)は一緒に移動するなど、周囲との相互作用などを考慮して過去のフレームからの変化を確率モデルとして考える。
+
+  .item2
+    img(src=figpath+"180310dynamics.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li CRFを用いて前のフレームからの遷移を定式化した
+        li CG画像、自然画像どちらに対しても適用が可能
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li: a(href="http://larryzitnick.org/publication/fouhey_zitnick_dynamics.pdf" target="blank") 論文URL
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Shintaro Yamamoto

@@ -1,0 +1,41 @@
++slide
+  .title Learning to Linearize Under Uncertainty  
+  .info
+    .authors Ross Goroshin  et al. 
+    .conference in NIPS 2015
+  .slide_editor Tomoyuki Suzuki
+
+  .item1
+    .text
+      h1 概要
+      p 
+      |「動画は単一画像を表す特徴空間上におけるManifoldとして表すことができる」という考えをもとにしている。その場合、線形な時間変化に対して各フレームを表す特徴量も線形な変位をするのが妥当であり、制約を加えることでそのような特徴空間への埋め込みを学習させる。
+      //|時間の設定をもとに対応する特徴量を計算することができ、実験では仮想的なデータにおけるフレーム生成タスクにおいて、鮮明な出力が得られている
+        
+  .item3
+    .text
+      h1 手法
+      p 
+      |t-1, t の埋め込みベクトルzt, zt-1からt+1の埋め込みベクトルzt+1を予測し、それからt+1の画像復元を行うモデルを考えるが、以下の３つの要素を加える。（1）zの時間的変位のcos類似度が近くなるようにする、（２）max-pooling(出力m)とargmax-pooling (出力p)を行い、t+1のz(=(m, p))を求める際は、pを線形外挿により求める、（3）未来の不確実性の対処として、潜在変数δを定義。
+      |argmax-poolingはソフトな近似関数を定義することで逆伝搬可能にし、δは学習時はサンプルごとにSGDにより最適化し、テスト時はランダムサンプリング。
+      
+  .item2
+    .text
+      p
+        img(src=`${figpath}Linearize1.png`)
+        img(src=`${figpath}Linearize2.png`)
+        //img(src=`${figpath}Linearize3.png`)
+        img(src=`${figpath}Linearize4.png`)
+  .item4
+    .text
+      h1 コメント・リンク
+      p
+      |動画を画像表現空間上のManifold捉える視点、逆伝搬不可能な関数をソフトな関数で近似する手法、潜在変数の導入による未来の不確実性への対応が面白く、非常に参考になりそう。
+      |時間の設定をもとに対応する特徴量を計算することができ、実験では仮想的なデータにおけるフレーム生成タスクにおいて、鮮明な出力が得られているが、
+      |線形で動く事を前提とした仮想データや今回の特徴空間の制約が実際の識別タスクなどで有効な特徴量かの実験がないなど疑問な点もあった。
+
+      ul
+        li
+          a(href="https://arxiv.org/abs/1506.03011") 論文
+  .slide_index #{getSlideIndex()}
+  

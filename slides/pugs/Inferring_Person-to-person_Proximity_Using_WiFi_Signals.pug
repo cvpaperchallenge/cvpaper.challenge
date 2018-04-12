@@ -1,0 +1,34 @@
++slide
+  .title Inferring Person-to-person Proximity Using WiFi Signals
+  .info
+    .authors P. Sapiezynski et al.,
+    .conference Ubicomp 2017
+  .item1
+    h1 概要
+    .text.
+      特別な装置を使うことなくWiFiネットワークの信号を利用して
+      人と人との接近というインタラクションを検出する手法を提案．
+      病気の感染の解析とか，ソーシャルグループの解析とかそういう応用が目的．
+      二人のスマホでのWiFiスキャンの結果を比較して類似度を図ることで接近を検出．
+      従来手法は単一の尺度を利用することが多かったが，
+      この研究では複数の尺度・特徴量を組み合わることで精度を向上．
+      WiFiとBluetoothの情報があるデータセットを用いて，Bluetoothを真値としてWiFi特徴からの接近検出を学習．
+      提案手法が高い性能を示すことを実験的に確認．
+
+  .item2
+    img(src=figpath+"180323_wifi.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li WiFiネットワークとスマホから人と人との物理的な接近の検出を実現
+        li 統制された環境ではないデータでも提案手法が有効に働くことを実証
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li Session 7: WiFi Sensing
+      
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Kensho Hara

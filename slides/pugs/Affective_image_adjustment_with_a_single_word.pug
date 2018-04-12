@@ -1,0 +1,27 @@
++slide
+  .title Affective image adjustment with a single word
+  .info
+    .authors Xiaohui Wang, Jia Jia, Lianhong Cai
+    .conference The Visual Computing 2013
+  .slide_editor Kazuki Inoue
+
+  .item1
+    .text
+      h1 概要
+      p 画像の色を特定の感情を想起するように変換する手法。入力は画像と感情を表す単語であり、入力感情を表すように画像の色が変換される。感情形容詞に対してカラーパレットが定義付けられたデータを使用し、色と感情の距離を計算することで画像に適用する。
+  .item2
+    .text
+      p
+        img(src=`${figpath}affective_image_adjustment.jpg`,alt="affective_image_adjustment")
+  .item3
+    .text
+      h1 新規性・結果
+      p 1024x768の画像を1秒以下で生成可能。提案手法によって生成された画像と、アーティストによって作成された作品を、1)入力感情が表されているか、2)画像の見た目として自然か、という観点でユーザに採点を行ってもらったところ、提案手法が優位な結果となった。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p 単語間の距離を学習しているため、トレーニングデータセットにない単語の入力も可能。感情から５色のカラーパレットへ変換するが、入力画像が６種類以上の色相を持つ場合には生成画像が不自然になる。適応的に色数を変更していきたい、と主張。
+      ul
+        li
+          a(href="https://link.springer.com/article/10.1007/s00371-012-0755-3") 論文
+  .slide_index #{getSlideIndex()}

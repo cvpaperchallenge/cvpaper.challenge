@@ -1,0 +1,31 @@
++slide
+  .title Image Captioning with Sentiment Terms via Weakly-Supervised Sentiment Dataset
+  .info
+    .authors Andrew Shin, et al.
+    .conference BMVC 2016
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 画像キャプショニングの中でも、画像上にはない形容詞で表現された“感情”についてのキャプションに焦点を当てる。センチメントタームを用いた画像キャプションモデルを提案。これにより、センチメントの主観的性質に対応するマルチラベル学習を実現。FlickrとDeviantArtから、2.5Mの画像と28Mのコメントを収集し，感情に対するデータセットを構築。“コメント”はキャプションとは性質が異なるが、感情を表現するために適している(否定や不適切を除く)。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180304CaptioningWithSentiment.jpg`)
+  .item3
+    .text
+      h1 手法
+      p CNN→LSTMという一般的な画像キャプションの流れに、センチメント分析を行うCNNを追加する。SentiWordNetの正または負のスコアが0.5以上の単語を感情単語とする。
+      p SentiWordNet：意見聴衆のための語彙リソース。正、負、客観性の3つの感情スコアを算出。
+  .item4
+    .text
+      h1 結果・リンク
+      p キャプションが適切出るかどうかと、キャプションのランク付けの2つの人間による評価。モデルからのキャプションがイメージの感情に関してより適切であるという結果となった。
+      ul
+        li
+          a(href="http://www.bmva.org/bmvc/2016/papers/paper053/paper053.pdf") 論文
+        li
+          a(href="http://nmis.isti.cnr.it/sebastiani/Publications/LREC10.pdf") SentiWordNet
+
+  .slide_index #{getSlideIndex()}

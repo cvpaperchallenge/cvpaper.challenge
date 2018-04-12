@@ -1,0 +1,29 @@
++slide
+  .title Multi-Agent Cooperation and the Emergence of (Natural) Language
+  .info
+    .authors Angeliki Lazaridou, et al.
+    .conference ICLP 2017
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p マルチエージェント間の対話による言語学習を提案。SenderエージェントとReceiverエージェント間で簡単な画像当てゲームを実施。ゲームの正解のためにより良質なコミュニケーションが必要となり、言語を学習していく。また、ゲーム環境を変化させることで、単語の意味と画像がより良く対応するようになる。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180305MultiAgent.jpg`)
+  .item3
+    .text
+      h1 手法
+      p Senderエージェントは、2枚の画像のうち1枚がtargetであると伝えられる。そして、これを伝えるためにReceiverエージェントにsymbol(メッセージ)を送信する。Receiverエージェントは、受信したsymbolの情報のみから、どちらの画像がtargetであるかを当てる。
+      p SenderとReceiverに見せる画像を変える実験や、人がゲームを実施する実験を行った。
+  .item4
+    .text
+      h1 結果・リンク
+      p 人間と生産的にコミュニケーションできるAIの開発に貢献できる。言語の習得には、大量のデータだけでなく、他者との対話が重要。また、Senderが出力したsymbol(Image Netのラベルに対応したもの)を人間に見せると68%の正解率となった。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1612.07182.pdf") 論文
+        
+  .slide_index #{getSlideIndex()}

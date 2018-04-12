@@ -1,0 +1,32 @@
++slide
+  .title Towards Diverse and Natural Image Descriptions via a Conditional GAN
+  .info
+    .authors Bo Dai, Sanja Fidler, Raquel Urtasun, Dahua Lin, et al.
+    .conference ICCV 2017
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 画像キャプショニングの性能向上を図る。従来のロバスト性が低いRNNに代わって，GANのフレームワークを採用することで，自然性と多様性を向上。図より，ジェネレータ(G)が文を生成し，ディスクリミネータ(E)が文や段落がどれだけうまく記述されているかを評価する。GとEを同時に学習させることにより，自然な文章を生成。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180303TowardsDiverse_1.jpg`)
+  .item3
+    .text
+      h1 結果・リンク集
+      ul
+        li 人間，G-MLE，G-GAN(本手法)の3つを比較して性能評価
+        li ユーザー調査、定性的な例、および検索アプリケーションなどの評価により，より自然かつ多様、意味的に関連する記述を実現
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1703.06029.pdf") 論文
+        li
+          a(href="https://arxiv.org/abs/1411.4555") MLE
+  .item4
+    .text
+      p
+        img(src=`${figpath}180303TowardsDiverse_2.jpg`)
+
+  .slide_index #{getSlideIndex()}

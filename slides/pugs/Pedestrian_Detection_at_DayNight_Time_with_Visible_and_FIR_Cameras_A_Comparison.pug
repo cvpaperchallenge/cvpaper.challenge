@@ -1,0 +1,30 @@
++slide
+  .title Pedestrian Detection at Day/Night Time with Visible and FIR Cameras: A Comparison
+  .info
+    .authors Alejandro Gonzalez et al.
+    .conference Sensors Journal 2016
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+
+  .item1
+    .text
+      h1 概要
+      p Far Infrared（FIR）カメラを用いて昼夜問わず歩行者を検出するための取り組み。同タスクを解決すべく、FIRカメラによる歩行者検出データベースを構築、複数の歩行者検出モデルーHolistic, Part-basedアプローチ, Patch-basedアプローチーを比較してベンチマークした。また、RGB画像、FIR画像、その両方を用いて歩行者検出を試行した。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180309FIRDB.png`,alt="180309FIRDB")
+  .item3
+    .text
+      h1 新規性・結果
+      p 識別器としてSVM/DPM/RF、特徴量はHOG/LBP/HOG+LBP、Day/Night、Visible/FIRの組み合わせを調査した。Day/Night問わずエラー率はFIRが良く、特徴を組み合わせるHOG+LBPの方が良い結果を示した。Dayの場合にはHOG+LBP+RF（ランダムフォレスト）が、Nightの場合にはHOG+LBP+SVMがもっとも精度がよかった。
+  .item4
+    .text
+      h1 コメント・リンク集
+      p RGBのデータセットよりもFIRの方が精度が良く昼夜問わず検出ができるなら、今後はFIRカメラで収集し始めた方がよい？（最近査読でFIRで集めろと言われていたのはこういう背景があったからだった。。）
+      ul
+        li
+          a(href="http://www.mdpi.com/1424-8220/16/6/820") 論文
+        li
+          a(href="http://adas.cvc.uab.es/") 研究室
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.3.9 22:34:11

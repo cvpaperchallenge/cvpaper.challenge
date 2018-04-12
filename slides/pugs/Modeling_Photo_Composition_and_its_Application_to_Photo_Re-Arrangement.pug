@@ -1,0 +1,29 @@
++slide
+  .title Modeling Photo Composition and its Application to Photo Re-Arrangement
+  .info
+    .authors Jaesik Park et al.
+    .conference ICIP 2012
+  .slide_editor: a(href="https://sites.google.com/site/shinatoyamamoto/" target="blank") ShintaroYamamoto
+
+  .item1
+    .text
+      h1 概要
+      p 構図のモデル化及び最適化手法の提案。
+        |画像からSaliencyを検出し、PCAにより次元を圧縮したものを構図を表す特徴量として扱う。
+        |また、MAP推定によって入力画像を美化するためのクロッピング領域を決定する。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180411composition.png`,alt="Item3Image")
+  .item3
+    .text
+      h1 新規性・結果
+      p 実験の結果、従来手法で扱われている三分割法などを定義することなく表現することに成功。
+  .item4
+    .text
+      h1 リンク集
+      ul
+        li
+          a(href="https://ieeexplore.ieee.org/document/6467466/") 論文
+  .slide_index #{getSlideIndex()}
+  .timestamp 2018.4.11 16:03:23

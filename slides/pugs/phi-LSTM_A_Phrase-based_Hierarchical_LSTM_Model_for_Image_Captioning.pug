@@ -1,0 +1,28 @@
++slide
+  .title phi-LSTM: A Phrase-based Hierarchical LSTM Model for Image Captioning
+  .info
+    .authors Ying Hua Tan, et al.
+    .conference ACCV 2016
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p フレーズベースでの画像キャプショニングを行うphrase-based hierarchical Long Short-Term Memory (phi-LSTM)の提案。(1)画像に関連した名詞句を生成(低レベル)、(2)コーパス内のフレーズと他の単語から適切なキャプションを生成(高レベル)、それぞれの処理に専念するRNNモデルを実装することでフレーズベースを実現している。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180330phiLSTM.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p 従来までは、オブジェクトを検出/名前付けし、その属性を記述して、その関係/相互作用を認識するモデルが提案されている。従来研究では単語のシーケンスだけでキャプションを生成していたが、本研究ではフレーズと単語の組み合わせのシーケンスとして文章をエンコードする。
+  .item4
+    .text
+      h1 結果・リンク集
+      p Flickr8kとFlickr30kを使った実験において、最先端モデルと同等かそれ以上の結果。より正確で、より多様なキャプション生成。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1608.05813.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  

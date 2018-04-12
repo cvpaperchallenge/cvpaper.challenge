@@ -1,0 +1,30 @@
++slide
+  .title End-to-end Driving via Conditional Imitation Learning
+  .info
+    .authors Felipe Codevilla, Matthias Müller, Alexey Dosovitskiy, Antonio López, and Vladlen Koltun,
+    .conference arXiv
+    .paper_id 1710.02410
+  .item1
+    h1 概要
+    .text.
+      自動運転を模倣学習により行う手法を提案。実空間での学習結果をヴァーチャルな空間での自動運転にて再現することができた。RGB画像、計測（e.g. スピード）や命令（e.g. turn right）などからステアリング、アクセル、ブレーキなどのコマンドを出力して自動車を操作する。
+  .item2
+    img(src=figpath+"180205conditionalimitationlearning.png")
+    img(src=figpath+"180205framework_imitation.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li 模倣学習による自動運転を実現した。
+        li 実空間とシミュレーションベースの転移を行うことにも成功。
+  .item4
+    h1 リンク集
+    .text
+      ul
+        li 自動運転の学習はシミュレーションベースで完結してしまう可能性がある。
+        li メタ学習/模倣学習/強化学習などはCVに徐々に取り入れられてくるはずなので、2018年は学習しておいて損はない？
+        li: a(href="https://arxiv.org/pdf/1710.02410.pdf" target="blank") [論文] End-to-end Driving via Conditional Imitation Learning
+        li: a(href="https://www.youtube.com/watch?v=cFtnflNe5fM" target="blank") YouTube
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka

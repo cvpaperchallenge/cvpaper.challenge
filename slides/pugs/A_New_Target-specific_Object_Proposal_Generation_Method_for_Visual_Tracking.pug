@@ -1,0 +1,28 @@
++slide
+  .title A New Target-specific Object Proposal Generation Method for Visual Tracking
+  .info
+    .authors Guanjun Guo, et al.
+    .conference IEEE Transactions on Cybernetisc
+  .slide_editor Munetaka Minoguchi
+
+  .item1
+    .text
+      h1 概要
+      p 映像のコンテキスト情報を活用した、bject proposal手法であるTpecific Object Proposal Generation(TOPG)の提案。具体的には、対象物体のobject proposalを生成する際に、色とエッジの情報を統合する。これにより，様々な環境に適応することができ、 TOPGのリコールが大幅に増加。また、生成したobject proposalのランク精度を高めるためのランク付け手法を提案。そして、TOPGをvisual trackingに適応したTOPG-based tracker (TOPGT)を提案。
+  .item2
+    .text
+      p
+        img(src=`${figpath}180330TOPG.jpg`)
+  .item3
+    .text
+      h1 新規性
+      p 既存のobject proposal手法をビデオなどのタスクに適用したときに発生する、モーションブラー、低コントラスト、変形などの問題を解決。
+  .item4
+    .text
+      h1 結果・リンク集
+      p TOPGおよびTOPGT共に既存の研究より精度向上。
+      ul
+        li
+          a(href="https://arxiv.org/pdf/1803.10098.pdf") 論文
+  .slide_index #{getSlideIndex()}
+  

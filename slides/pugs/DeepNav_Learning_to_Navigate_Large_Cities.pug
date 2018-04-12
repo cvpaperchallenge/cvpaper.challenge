@@ -1,0 +1,30 @@
++slide
+  .title DeepNav: Learning to Navigate Large Cities
+  .info
+    .authors Brahmbhatt and Hays
+    .conference CVPR, 2017.
+  .item1
+    h1 概要
+    .text.
+      目的地までのルートを推測する研究。ストリートビューの画像から、どの方向に進めば銀行やガソリンスタンドなどの目的地に近付けるかを決定していく。ネットワークとしては、目的地までの距離、最も最短となる方角、2枚の画像のどちらが目的地に近いかの3種類を提案。
+
+  .item2
+    img(src=figpath+"180306Deepnav.png")
+  .item3
+    h1 新規性・結果
+    .text
+      ul
+        li アメリカ10都市を対象にストリートビューのデータセットを構築
+        li 3種類のCNNネットワークを構築し，hand-crafted特徴及びSVRベースの手法より精度が向上した
+        li ラベル付けを効率化するメカニズムを提案した
+  .item4
+    h1 自由記述欄
+    .text
+      ul
+        li それぞれの目的地に対してどのような特徴を持った方向が選ばれているのか気になった
+        li 場合によっては同じ場所を何度も回るだけになってしまう？
+        li: a(href="https://arxiv.org/abs/1701.09135" target="blank") 論文URL
+        li: a(href="http://mcdonalds.csail.mit.edu/" target="blank") 比較論文
+  .slide_index
+    | #{getSlideIndex()}
+  .slide_editor Shintaro Yamamoto
