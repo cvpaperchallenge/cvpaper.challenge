@@ -1,32 +1,34 @@
-+slide
-  .title Weakly Supervised Affordance Detection
-  .info
-    .authors J. Sawatzky et al.,
-    .conference CVPR 2017
-  .item1
-    h1 概要
-    .text.
-      物体のパーツごとのAffordanceを推定する問題の研究．
-      CAD120データセットにpixel-wiseのAffordanceラベルを付けてデータセットを作成．
-      CNNにより入力画像からAffordanceを推定するが，Affordanceはマルチラベル（複数のラベルを持つ画素が存在）なので，
-      それに対応できるような拡張手法を提案．
-      加えて，キーポイントレベルのアノテーション (Weakly label) からの学習を行う手法も提案．
-      Fully supervised, Weakly supervisedの両設定においてSOTAを達成．
-
-  .item2
-    img(src=figpath+"180306_weaklyaffordance.png",alt="180306_weaklyaffordance.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li Affordance推定の問題においてKeypointアノテーションから学習する手法を提案
-        li Pixel-wiseアノテーション付きで実データに近いAffordanceデータセットを提供
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li せっかくWeakly Supervisedなんだからデータをたくさん用意したらどうなるかの結果とかも見たい
-        li: a(href="https://github.com/ykztawas/Weakly-Supervised-Affordance-Detection") GitHub
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Weakly_Supervised_Affordance_Detection
+  .paper-abstract
+    .title Weakly Supervised Affordance Detection
+    .info
+      .authors J. Sawatzky et al.,
+      .conference CVPR 2017
+    .item1
+      h1 概要
+      .text.
+        物体のパーツごとのAffordanceを推定する問題の研究．
+        CAD120データセットにpixel-wiseのAffordanceラベルを付けてデータセットを作成．
+        CNNにより入力画像からAffordanceを推定するが，Affordanceはマルチラベル（複数のラベルを持つ画素が存在）なので，
+        それに対応できるような拡張手法を提案．
+        加えて，キーポイントレベルのアノテーション (Weakly label) からの学習を行う手法も提案．
+        Fully supervised, Weakly supervisedの両設定においてSOTAを達成．
+  
+    .item2
+      img(src=figpath+"180306_weaklyaffordance.png",alt="180306_weaklyaffordance.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li Affordance推定の問題においてKeypointアノテーションから学習する手法を提案
+          li Pixel-wiseアノテーション付きで実データに近いAffordanceデータセットを提供
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li せっかくWeakly Supervisedなんだからデータをたくさん用意したらどうなるかの結果とかも見たい
+          li: a(href="https://github.com/ykztawas/Weakly-Supervised-Affordance-Detection") GitHub
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

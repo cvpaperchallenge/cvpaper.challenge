@@ -1,28 +1,30 @@
-+slide
-  .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
-  .info
-    .authors Tao Hu, et al.
-    .conference AAAI 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180330SIR.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。
-  .item4
-    .text
-      h1 結果・リンク集
-      p 最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.06598.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Facial_Landmarks_Detection_by_Self-Iterative_Regression_based_Landmarks-Attention_Network
+  .paper-abstract
+    .title Facial Landmarks Detection by Self-Iterative Regression based Landmarks-Attention Network
+    .info
+      .authors Tao Hu, et al.
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p Cascaded Regression(CR)ベースの顔ランドマーク検出モデルの効率を改善するSelf-Iterative Regression(SIR)の提案。また、各ランドマーク周辺のフィーチャを同時に学習し、全体的な位置増分を取得するLandmarks-Attention Network（LAN）を提案。これにより、一回の回帰分析で反復的にパラメータを更新することができる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330SIR.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CRは、細かい段階と荒い段階で別々に学習することができるが、以前の回帰の出力が次の回帰時のデータとなるので十分に頑強とは言えない。さらに、複数の回帰を学習するにはかなりのリソースが必要。SIRはこれらの問題を解決できる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 最先端の手法に匹敵する精度を持ち、学習済みモデルのパラメータおよびメモリ使用量を大幅に減らせる。 将来的には、人間の姿勢推定などに応用する予定。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.06598.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    

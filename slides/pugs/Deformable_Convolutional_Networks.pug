@@ -1,33 +1,35 @@
-+slide
-  .title Deformable Convolutional Networks
-  .info
-    .authors Jifeng Dai, et al.
-    .conference ICCV 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p CNNの表現力の向上を図る。CNNによる物体検出などでは、矩形を用いるために検出対象の物体だけでなく、余計な背景も含んでしまい精度低下につながる。可変可能な畳み込みとRoIプーリングを提案。これにより、画像の畳み込みを行う際に、重みに加えてセルの位置も学習する。特に、物体検出やセマンティックセグメンテーションなどのタスクに効果的。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180304DeformableConvolution_1.jpg`)
-  .item3
-    .text
-      h1 手法・結果・リンク
-      p 変形可能な畳み込み：規則的(矩形)にセルをサンプリングする標準の畳み込みに、オフセットを追加することで、自由形状変形を可能にする。オフセットは追加の畳み込みレイヤを介し、前のfeature mapから学習可能。
-      p 可変可能なRoIプーリング：RoIプーリング時の各binの位置にオフセットを追加する。畳み込みと同様に、前のfeature mapから学習可能。
-      p 様々な条件での実験を実施。どの条件でも提案手法の精度が高い結果となった。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1703.06211.pdf") 論文
-        li
-          a(href="https://github.com/msracver/Deformable-ConvNets") ソースコード
-  .item4
-    .text
-      p
-        img(src=`${figpath}180304DeformableConvolution_2.jpg`)
-        
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Deformable_Convolutional_Networks
+  .paper-abstract
+    .title Deformable Convolutional Networks
+    .info
+      .authors Jifeng Dai, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p CNNの表現力の向上を図る。CNNによる物体検出などでは、矩形を用いるために検出対象の物体だけでなく、余計な背景も含んでしまい精度低下につながる。可変可能な畳み込みとRoIプーリングを提案。これにより、画像の畳み込みを行う際に、重みに加えてセルの位置も学習する。特に、物体検出やセマンティックセグメンテーションなどのタスクに効果的。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180304DeformableConvolution_1.jpg`)
+    .item3
+      .text
+        h1 手法・結果・リンク
+        p 変形可能な畳み込み：規則的(矩形)にセルをサンプリングする標準の畳み込みに、オフセットを追加することで、自由形状変形を可能にする。オフセットは追加の畳み込みレイヤを介し、前のfeature mapから学習可能。
+        p 可変可能なRoIプーリング：RoIプーリング時の各binの位置にオフセットを追加する。畳み込みと同様に、前のfeature mapから学習可能。
+        p 様々な条件での実験を実施。どの条件でも提案手法の精度が高い結果となった。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.06211.pdf") 論文
+          li
+            a(href="https://github.com/msracver/Deformable-ConvNets") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180304DeformableConvolution_2.jpg`)
+          
+    .slide_index #{getSlideIndex()}
+    

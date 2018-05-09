@@ -1,28 +1,30 @@
-+slide
-  .title Learning Shape-from-Shading for Deformable Surfaces
-  .info
-    .authors Jan Bednarık, Pascal Fua, Mathieu Salzmann
-    .conference ECCV 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 2D画像からメッシュ、法線、深度マップなどの3D表現を予測できるフレームワークを提案。人が着用するTシャツのしわなど、表面をより詳細に、正確にモデル化できる。基本的にはShape-from-Shading技術に関連する技術。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180330LSFS.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p 画像から、テクスチャを加えることで表面の3D形状を再現する手法は開発されている。しかし、テクスチャのない表面の3D形状を回復することはできていない。
-  .item4
-    .text
-      h1 結果・リンク集
-      p メッシュはテクスチャありの場合はとても良い精度だが、テクスチャなしの場合だとあまり適さない。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.08908.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Learning_Shape-from-Shading_for_Deformable_Surfaces
+  .paper-abstract
+    .title Learning Shape-from-Shading for Deformable Surfaces
+    .info
+      .authors Jan Bednarık, Pascal Fua, Mathieu Salzmann
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 2D画像からメッシュ、法線、深度マップなどの3D表現を予測できるフレームワークを提案。人が着用するTシャツのしわなど、表面をより詳細に、正確にモデル化できる。基本的にはShape-from-Shading技術に関連する技術。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330LSFS.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 画像から、テクスチャを加えることで表面の3D形状を再現する手法は開発されている。しかし、テクスチャのない表面の3D形状を回復することはできていない。
+    .item4
+      .text
+        h1 結果・リンク集
+        p メッシュはテクスチャありの場合はとても良い精度だが、テクスチャなしの場合だとあまり適さない。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08908.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    

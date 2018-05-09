@@ -1,29 +1,31 @@
-+slide
-  .title Moments in Time Dataset: one million videos for event understanding
-  .info
-    .authors Mathew Monfort, Bolei Zhou, Sarah Adel Bargal, Alex Andonian, Tom Yan, Kandan Ramakrishnan, Lisa Brown, Quanfu Fan, Dan Gutfruend, Carl Vondrick, Aude Oliva
-    .conference 1801.03150
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p 3秒以内のラベル付けされた動画像が100万以上含まれるデータセットMoments in Time Datasetを提案。今まで動画DBでありがちであった人物のみに偏ることなく、物体や動物、自然現象なども積極的に含んでいる。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180305MomentsInTime.png`,alt="180305MomentsInTime")
-  .item3
-    .text
-      h1 新規性・結果
-      p 3秒以内の瞬間的な動画にすることでノイズを含まない動画になりやすく、クラス間/クラス内のDIVERSITYを考慮、人物のみに限定せず動画像を汎用的に収集、動き自体の転移を考慮してカテゴリを定義している。
-  .item4
-    .text
-      h1 リンク集
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1801.03150.pdf") 論文
-        li
-          a(href="http://moments.csail.mit.edu/") Project
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.5 20:25:53
+﻿+slide
+section#Moments_in_Time_Dataset_one_million_videos_for_event_understanding
+  .paper-abstract
+    .title Moments in Time Dataset: one million videos for event understanding
+    .info
+      .authors Mathew Monfort, Bolei Zhou, Sarah Adel Bargal, Alex Andonian, Tom Yan, Kandan Ramakrishnan, Lisa Brown, Quanfu Fan, Dan Gutfruend, Carl Vondrick, Aude Oliva
+      .conference 1801.03150
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 3秒以内のラベル付けされた動画像が100万以上含まれるデータセットMoments in Time Datasetを提案。今まで動画DBでありがちであった人物のみに偏ることなく、物体や動物、自然現象なども積極的に含んでいる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180305MomentsInTime.png`,alt="180305MomentsInTime")
+    .item3
+      .text
+        h1 新規性・結果
+        p 3秒以内の瞬間的な動画にすることでノイズを含まない動画になりやすく、クラス間/クラス内のDIVERSITYを考慮、人物のみに限定せず動画像を汎用的に収集、動き自体の転移を考慮してカテゴリを定義している。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1801.03150.pdf") 論文
+          li
+            a(href="http://moments.csail.mit.edu/") Project
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.5 20:25:53

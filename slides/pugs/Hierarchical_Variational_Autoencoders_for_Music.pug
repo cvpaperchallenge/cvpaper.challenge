@@ -1,33 +1,35 @@
-+slide
-  .title Hierarchical Variational Autoencoders for Music
-  .info
-    .authors A. Roberts et al.,
-    .conference NIPS WS on Machine Learning for Creativity and Design, 2017.
-  .item1
-    h1 概要
-    .text
-      | 音楽を生成するためのHierarchical Variational Autoencoders (VAE) を提案．
-      | エンコーダとデコーダがLSTMで構成されているReccurent VAEがベース．
-      a(href="https://goo.gl/twGuP2") 結果サンプル
-      | 長い音楽（実験では32小節）を単純なLSTMデコーダで生成するのは難しいので，
-      | この研究では複数のLSTMを階層的に重ねて，段階的に長くしていくHierarchical VAEを提案．
-      | ループメロディの外挿や，メロディの生成，3ピース構成の音楽生成の実験で性能を検討．
-      | 結果の音楽やコードは公開されている．
-  .item2
-    img(src=figpath+"hierarchical_vae.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li 階層的なLSTMによるデコーダをVAEによる音楽生成に導入
-        li
-          a(href="https://goo.gl/twGuP2") 結果サンプル
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li これも長期的な構成を考えて生成することはできていない
-        li Future Workにはインタフェースを作るとあるし，1曲まるごと作るというよりは適当にサンプルを出して作曲家のアイデアを促進することを目指しているのかな．
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Hierarchical_Variational_Autoencoders_for_Music
+  .paper-abstract
+    .title Hierarchical Variational Autoencoders for Music
+    .info
+      .authors A. Roberts et al.,
+      .conference NIPS WS on Machine Learning for Creativity and Design, 2017.
+    .item1
+      h1 概要
+      .text
+        | 音楽を生成するためのHierarchical Variational Autoencoders (VAE) を提案．
+        | エンコーダとデコーダがLSTMで構成されているReccurent VAEがベース．
+        a(href="https://goo.gl/twGuP2") 結果サンプル
+        | 長い音楽（実験では32小節）を単純なLSTMデコーダで生成するのは難しいので，
+        | この研究では複数のLSTMを階層的に重ねて，段階的に長くしていくHierarchical VAEを提案．
+        | ループメロディの外挿や，メロディの生成，3ピース構成の音楽生成の実験で性能を検討．
+        | 結果の音楽やコードは公開されている．
+    .item2
+      img(src=figpath+"hierarchical_vae.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 階層的なLSTMによるデコーダをVAEによる音楽生成に導入
+          li
+            a(href="https://goo.gl/twGuP2") 結果サンプル
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li これも長期的な構成を考えて生成することはできていない
+          li Future Workにはインタフェースを作るとあるし，1曲まるごと作るというよりは適当にサンプルを出して作曲家のアイデアを促進することを目指しているのかな．
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

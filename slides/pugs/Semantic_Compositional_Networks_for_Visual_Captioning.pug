@@ -1,30 +1,32 @@
-+slide
-  .title Semantic Compositional Networks for Visual Captioning
-  .info
-    .authors Zhe Gan, et al. 
-    .conference CVPR 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 意味的概念(タグ)を画像から取得し、各タグの確率をLSTMのパラメータとして使用することでイメージキャプショニングを行うSemantic Compositional Network (SCN)の提案。SCNは、LSTMの重みをタグの情報を含んだ重みに拡張する。タグには確率が設けてあり、大きければ大きいほどタグをLSTMに反映させる。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180312SCN.jpg`)
-  .item3
-    .text
-      h1 新規性・手法
-      p 従来のRNNに、意味的特徴を追加したイメージ。LSTMに“単語”と“状態”を入力する際に、意味的特徴を追加していく。通常の入力と意味的情報を追加したものを重み行列のアンサンブルと呼んでいる。
-  .item4
-    .text
-      h1 結果・リンク集
-      p COCO、Flickr30k、Youtube2Textの3つのデータセットで、最先端の手法よりも優れている。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1611.08002.pdf") 論文
-        li
-          a(href="https://github.com/zhegan27/Semantic_Compositional_Nets") ソースコード
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Semantic_Compositional_Networks_for_Visual_Captioning
+  .paper-abstract
+    .title Semantic Compositional Networks for Visual Captioning
+    .info
+      .authors Zhe Gan, et al. 
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 意味的概念(タグ)を画像から取得し、各タグの確率をLSTMのパラメータとして使用することでイメージキャプショニングを行うSemantic Compositional Network (SCN)の提案。SCNは、LSTMの重みをタグの情報を含んだ重みに拡張する。タグには確率が設けてあり、大きければ大きいほどタグをLSTMに反映させる。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180312SCN.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p 従来のRNNに、意味的特徴を追加したイメージ。LSTMに“単語”と“状態”を入力する際に、意味的特徴を追加していく。通常の入力と意味的情報を追加したものを重み行列のアンサンブルと呼んでいる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p COCO、Flickr30k、Youtube2Textの3つのデータセットで、最先端の手法よりも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.08002.pdf") 論文
+          li
+            a(href="https://github.com/zhegan27/Semantic_Compositional_Nets") ソースコード
+    .slide_index #{getSlideIndex()}
+    

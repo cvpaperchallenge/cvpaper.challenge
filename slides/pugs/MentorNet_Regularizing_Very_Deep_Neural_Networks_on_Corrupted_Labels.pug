@@ -1,31 +1,33 @@
-+slide
-  .title MentorNet: Regularizing Very Deep Neural Networks on Corrupted Labels
-  .info
-    .authors Lu Jiang, Zhengyuan Zhou, Thomas Leung, Li-Jia Li, Li Fei-Fei
-    .conference arXiv 1712.05055
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p データ自体を正則化し重み付けを行い、各データサンプルに重要度を与えて柔軟に学習する仕組みを考案した。データの入力に対して、MentorNetはミニバッチごとにどの程度の重みをつければ良いのかを返却してDeepCNNを学習する。知識蒸留などと同様にMentorNetとStudentNetが存在してCurriculum Learningにより徐々に学習を進める。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180329MentorNet.png`,alt="180329MentorNet")
-  .item3
-    .text
-      h1 新規性・結果
-      p あまり整備されていないデータの場合（e.g. ウェブ画像）にはノイズが誤っていたり、なかったり、崩れていたりするが、本論文で提案のMentorNetではデータに重要度を与えて、どのデータをどの程度信頼して良いのかを与えた。Weakly Supervised学習よりも精度が高いことを示した。
-  .item4
-    .text
-      h1 コメント・リンク集
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1712.05055.pdf") 論文
-        li
-          a(href="https://github.com/arXivTimes/arXivTimes/issues/566") 参考
-        li
-          a(href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf") Curriculum Learning
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.29 16:00:41
+﻿+slide
+section#MentorNet_Regularizing_Very_Deep_Neural_Networks_on_Corrupted_Labels
+  .paper-abstract
+    .title MentorNet: Regularizing Very Deep Neural Networks on Corrupted Labels
+    .info
+      .authors Lu Jiang, Zhengyuan Zhou, Thomas Leung, Li-Jia Li, Li Fei-Fei
+      .conference arXiv 1712.05055
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p データ自体を正則化し重み付けを行い、各データサンプルに重要度を与えて柔軟に学習する仕組みを考案した。データの入力に対して、MentorNetはミニバッチごとにどの程度の重みをつければ良いのかを返却してDeepCNNを学習する。知識蒸留などと同様にMentorNetとStudentNetが存在してCurriculum Learningにより徐々に学習を進める。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180329MentorNet.png`,alt="180329MentorNet")
+    .item3
+      .text
+        h1 新規性・結果
+        p あまり整備されていないデータの場合（e.g. ウェブ画像）にはノイズが誤っていたり、なかったり、崩れていたりするが、本論文で提案のMentorNetではデータに重要度を与えて、どのデータをどの程度信頼して良いのかを与えた。Weakly Supervised学習よりも精度が高いことを示した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1712.05055.pdf") 論文
+          li
+            a(href="https://github.com/arXivTimes/arXivTimes/issues/566") 参考
+          li
+            a(href="https://ronan.collobert.com/pub/matos/2009_curriculum_icml.pdf") Curriculum Learning
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.29 16:00:41

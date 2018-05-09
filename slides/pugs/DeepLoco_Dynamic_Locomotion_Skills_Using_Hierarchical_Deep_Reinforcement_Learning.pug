@@ -1,33 +1,35 @@
-+slide
-  .title DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning
-  .info
-    .authors X. B. Peng, et al.
-    .conference SIGGRAPH 2017
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-
-  .item1
-    .text
-      h1 概要
-      p 階層的強化学習により、3次元アニメーションにおいて道順さえ教えれば歩行動作を自動で獲得するアルゴリズムを提案した。より速いレートで関節やバランスをコントロールするLLC（Low-level Controller）と道を外れずにゴールを目指すことができるHLC（High-level Controller）を階層的に組み合わせて歩行動作を獲得する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180330DeepLOCO.png`,alt="180330DeepLOCO")
-  .item3
-    .text
-      h1 新規性・結果
-      p 階層的な強化学習（Hierarchical Reinforcement Learning）により歩行動作を自動で獲得した。曲がりくねった道、サッカーボールのドリブル、障害物中の歩行（いずれも図に示されている）などの場面でより自然な歩行動作を獲得した。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p 道筋（やボールの操作）に関するインストラクションさえできれば歩行動作を獲得してくれるので、より柔軟にグラフィックスが作れる？さらに研究が進めば歩行と追加動作が指定できそう。
-      ul
-        li
-          a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/2017-TOG-deepLoco.pdf") 論文
-        li
-          a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/") Project
-        li
-          a(href="https://github.com/xbpeng/DeepLoco") GitHub
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.30 13:53:45
+﻿+slide
+section#DeepLoco_Dynamic_Locomotion_Skills_Using_Hierarchical_Deep_Reinforcement_Learning
+  .paper-abstract
+    .title DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning
+    .info
+      .authors X. B. Peng, et al.
+      .conference SIGGRAPH 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+  
+    .item1
+      .text
+        h1 概要
+        p 階層的強化学習により、3次元アニメーションにおいて道順さえ教えれば歩行動作を自動で獲得するアルゴリズムを提案した。より速いレートで関節やバランスをコントロールするLLC（Low-level Controller）と道を外れずにゴールを目指すことができるHLC（High-level Controller）を階層的に組み合わせて歩行動作を獲得する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DeepLOCO.png`,alt="180330DeepLOCO")
+    .item3
+      .text
+        h1 新規性・結果
+        p 階層的な強化学習（Hierarchical Reinforcement Learning）により歩行動作を自動で獲得した。曲がりくねった道、サッカーボールのドリブル、障害物中の歩行（いずれも図に示されている）などの場面でより自然な歩行動作を獲得した。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 道筋（やボールの操作）に関するインストラクションさえできれば歩行動作を獲得してくれるので、より柔軟にグラフィックスが作れる？さらに研究が進めば歩行と追加動作が指定できそう。
+        ul
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/2017-TOG-deepLoco.pdf") 論文
+          li
+            a(href="http://www.cs.ubc.ca/~van/papers/2017-TOG-deepLoco/") Project
+          li
+            a(href="https://github.com/xbpeng/DeepLoco") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 13:53:45

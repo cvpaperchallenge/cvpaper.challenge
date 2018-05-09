@@ -1,30 +1,32 @@
-+slide
-  .title 3D Human Pose Estimation in RGBD Images for Robotic Task Learning
-  .info
-    .authors Christian Zimmermann, Tim Welschehold, Christian Dornhege, Wolfram Burgard, Thomas Brox
-    .conference ICRA 2018
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p RGB-Dセンサによる入力から、人物の3次元キーポイントを検出して、可能であれば手領域の法線ベクトルを抽出する。手領域はロボット操作に活用してデモンストレーションを実行する。図に示すアーキテクチャでは、主に姿勢推定（2D Keypoint Detector）、3次元への投影（VoxelPoseNet）、手領域の法線ベクトル推定（HandNormalNet）から構成される。姿勢推定はOpenPoseを活用、VoxelPoseNetは3次元のL2ノルム誤差により計算する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}1803153DHumanPose.png`,alt="1803153DHumanPose")
-  .item3
-    .text
-      h1 新規性・結果
-      p 実環境におけるデモンストレーションではロボットPR2を用いて人物の把持行動を教師としてマニピューレーションタスクを模倣した。実験はMulti View Kinect DatasetやCaptury Datasetにておこなった。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p コンピュータビジョンを用いてロボット操作を実現できる敷居が下がって来た？逆に、ICRA2018なんかではコンピュータビジョン研究者が一気に増えて分野間のシームレス化が進んでいるのでは？
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.02622.pdf") 論文
-        li
-          a(href="https://lmb.informatik.uni-freiburg.de/projects/rgbd-pose3d/") Project
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.15 08:43:30
+﻿+slide
+section#3D_Human_Pose_Estimation_in_RGBD_Images_for_Robotic_Task_Learning
+  .paper-abstract
+    .title 3D Human Pose Estimation in RGBD Images for Robotic Task Learning
+    .info
+      .authors Christian Zimmermann, Tim Welschehold, Christian Dornhege, Wolfram Burgard, Thomas Brox
+      .conference ICRA 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p RGB-Dセンサによる入力から、人物の3次元キーポイントを検出して、可能であれば手領域の法線ベクトルを抽出する。手領域はロボット操作に活用してデモンストレーションを実行する。図に示すアーキテクチャでは、主に姿勢推定（2D Keypoint Detector）、3次元への投影（VoxelPoseNet）、手領域の法線ベクトル推定（HandNormalNet）から構成される。姿勢推定はOpenPoseを活用、VoxelPoseNetは3次元のL2ノルム誤差により計算する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}1803153DHumanPose.png`,alt="1803153DHumanPose")
+    .item3
+      .text
+        h1 新規性・結果
+        p 実環境におけるデモンストレーションではロボットPR2を用いて人物の把持行動を教師としてマニピューレーションタスクを模倣した。実験はMulti View Kinect DatasetやCaptury Datasetにておこなった。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p コンピュータビジョンを用いてロボット操作を実現できる敷居が下がって来た？逆に、ICRA2018なんかではコンピュータビジョン研究者が一気に増えて分野間のシームレス化が進んでいるのでは？
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.02622.pdf") 論文
+          li
+            a(href="https://lmb.informatik.uni-freiburg.de/projects/rgbd-pose3d/") Project
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.15 08:43:30

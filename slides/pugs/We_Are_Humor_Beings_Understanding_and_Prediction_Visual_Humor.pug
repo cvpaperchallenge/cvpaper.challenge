@@ -1,35 +1,37 @@
-+slide
-  .title We Are Humor Beings: Understanding and Prediction Visual Humor
-  .info
-    .authors Arjun Chandrasekaran, Ashwin K. Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh, Virginia Tech, TTI-Chicago, Facebook AI Research
-    .conference CVPR 2016
-  .item1
-    h1 概要
-    .text
-      ul
-        li 視覚とユーモアの関係をモデル化(不調和説に基づく)
-        li アニメ画像の面白さを推定
-        li 画像のオブジェクトと面白さの関連性を推定
-        li データセットの作成
-        li 抽象的なシーンを使用したユーモアを引き起こすシーンの理解
-  .item2
-    img(src=figpath+"180205HumorBeings.jpg")
-  .item3
-    h1 手法1
-    .text
-      p 面白さ推定
-      ul
-        li 特徴抽出し，重み付き誤差平均(面白さによって誤差を変える)
-        li Abstract Scenesのアニメ画像(VQAの画像とクラウドソーシングで依頼した面白い画像)に5段階評価したデータセット(AVH)
-  .item4
-    h1 手法2
-    .text
-      p 面白い画像・面白くない画像の変換
-      ul
-        li オブジェクトを変更することで，面白い⇔面白くない画像に相互変換
-        li AVHから面白いものを選び，クラウドソーシングで依頼した面白くない画像を使い/面白い画像ペアを作成
-        li どのオブジェクトが面白さに影響しているか調査
-      p 結果：特に人や動物などのオブジェクトが面白さに影響
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Munetaka Minoguchi
+﻿+slide
+section#We_Are_Humor_Beings_Understanding_and_Prediction_Visual_Humor
+  .paper-abstract
+    .title We Are Humor Beings: Understanding and Prediction Visual Humor
+    .info
+      .authors Arjun Chandrasekaran, Ashwin K. Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh, Virginia Tech, TTI-Chicago, Facebook AI Research
+      .conference CVPR 2016
+    .item1
+      h1 概要
+      .text
+        ul
+          li 視覚とユーモアの関係をモデル化(不調和説に基づく)
+          li アニメ画像の面白さを推定
+          li 画像のオブジェクトと面白さの関連性を推定
+          li データセットの作成
+          li 抽象的なシーンを使用したユーモアを引き起こすシーンの理解
+    .item2
+      img(src=figpath+"180205HumorBeings.jpg")
+    .item3
+      h1 手法1
+      .text
+        p 面白さ推定
+        ul
+          li 特徴抽出し，重み付き誤差平均(面白さによって誤差を変える)
+          li Abstract Scenesのアニメ画像(VQAの画像とクラウドソーシングで依頼した面白い画像)に5段階評価したデータセット(AVH)
+    .item4
+      h1 手法2
+      .text
+        p 面白い画像・面白くない画像の変換
+        ul
+          li オブジェクトを変更することで，面白い⇔面白くない画像に相互変換
+          li AVHから面白いものを選び，クラウドソーシングで依頼した面白くない画像を使い/面白い画像ペアを作成
+          li どのオブジェクトが面白さに影響しているか調査
+        p 結果：特に人や動物などのオブジェクトが面白さに影響
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Munetaka Minoguchi

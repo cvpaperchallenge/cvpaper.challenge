@@ -1,24 +1,26 @@
-+slide
-  .title Event Detection using Multi-Level Relevance Labels and Multiple Features
-  .info
-    .authors Zhongwen Xu et al.
-    .conference CVPR, 2014.
-  .item1
-    h1 概要
-    .text.
-      部分的に関連するexemplarを用いてイベント検出する手法の提案。例えば、”乗り物のタイヤを交換する”というイベントに対して、”車を運転する”というイベントはタイヤを交換という要素は含んでいるが乗り物という要素を含んでいる。このように部分的に関連する動画を探し重みづけすることによりイベント検出を行う。
-
-  .item2
-    img(src=figpath+"180311event.png")
-  .item3
-    h1 新規性・結果
-    .text.
-      対象となるイベントに対して，候補となる動画を列挙する。それらの候補に対して，関連度合いにより重みつけをする手法を提案。
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li: a(href="http://zhongwen.ai/pdf/multi-level.pdf" target="blank") 論文URL
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Shintaro Yamamoto
+﻿+slide
+section#Event_Detection_using_Multi-Level_Relevance_Labels_and_Multiple_Features
+  .paper-abstract
+    .title Event Detection using Multi-Level Relevance Labels and Multiple Features
+    .info
+      .authors Zhongwen Xu et al.
+      .conference CVPR, 2014.
+    .item1
+      h1 概要
+      .text.
+        部分的に関連するexemplarを用いてイベント検出する手法の提案。例えば、”乗り物のタイヤを交換する”というイベントに対して、”車を運転する”というイベントはタイヤを交換という要素は含んでいるが乗り物という要素を含んでいる。このように部分的に関連する動画を探し重みづけすることによりイベント検出を行う。
+  
+    .item2
+      img(src=figpath+"180311event.png")
+    .item3
+      h1 新規性・結果
+      .text.
+        対象となるイベントに対して，候補となる動画を列挙する。それらの候補に対して，関連度合いにより重みつけをする手法を提案。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="http://zhongwen.ai/pdf/multi-level.pdf" target="blank") 論文URL
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto

@@ -1,34 +1,36 @@
-+slide
-  .title Personalized Cinemagraphs using Semantic Understanding and Collaborative Learning
-  .info
-    .authors T. Oh et al.,
-    .conference ICCV 2017
-  .item1
-    h1 概要
-    .text.
-      Cinemagraph（画像中の一部だけ動画）を自動生成するための手法を提案．
-      セマンティックセグメンテーションも導入してシーンの意味的な情報を利用し，
-      高品質なCinemagraphの生成を実現する手法とした．
-      さらに，動かす対象がたくさんある中でどれを選ぶとよいかをユーザごとの個人的な嗜好を学習することで，
-      personalizeされた生成を実現している．
-      Stablizeされている動画を入力として，
-      セマンティックセグメンテーションの情報を利用したMRFの最適化によりCinemagraphを生成，
-      その後学習したuser preferenceのモデルにより候補の中から選択する．
-
-  .item2
-    img(src=figpath+"180305personalizedcinemagraph.png",alt="180305personalizedcinemagraph.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li セマンティックセグメンテーションにより意味的な理解をCinemagraph生成に導入
-        li 個人的な嗜好に沿ったCinemagraphの自動生成を実現
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li ユーザの嗜好を学習するためにデータにスコア付けしてもらうなど，CVよりはMultimediaっぽい論文
-        li: a(href="http://web.mit.edu/taehyun/www/Research/Cinemagraph/SuppleWeb.htm") 結果サンプル
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Personalized_Cinemagraphs_using_Semantic_Understanding_and_Collaborative_Learning
+  .paper-abstract
+    .title Personalized Cinemagraphs using Semantic Understanding and Collaborative Learning
+    .info
+      .authors T. Oh et al.,
+      .conference ICCV 2017
+    .item1
+      h1 概要
+      .text.
+        Cinemagraph（画像中の一部だけ動画）を自動生成するための手法を提案．
+        セマンティックセグメンテーションも導入してシーンの意味的な情報を利用し，
+        高品質なCinemagraphの生成を実現する手法とした．
+        さらに，動かす対象がたくさんある中でどれを選ぶとよいかをユーザごとの個人的な嗜好を学習することで，
+        personalizeされた生成を実現している．
+        Stablizeされている動画を入力として，
+        セマンティックセグメンテーションの情報を利用したMRFの最適化によりCinemagraphを生成，
+        その後学習したuser preferenceのモデルにより候補の中から選択する．
+  
+    .item2
+      img(src=figpath+"180305personalizedcinemagraph.png",alt="180305personalizedcinemagraph.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li セマンティックセグメンテーションにより意味的な理解をCinemagraph生成に導入
+          li 個人的な嗜好に沿ったCinemagraphの自動生成を実現
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li ユーザの嗜好を学習するためにデータにスコア付けしてもらうなど，CVよりはMultimediaっぽい論文
+          li: a(href="http://web.mit.edu/taehyun/www/Research/Cinemagraph/SuppleWeb.htm") 結果サンプル
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

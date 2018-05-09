@@ -1,34 +1,36 @@
-+slide
-  .title Improving word representations via global context and multiple word prototypes
-  .info
-    .authors Eric H. Huang, Richard Socher, Christopher D. Manning, Andrew Y. Ng
-    .conference ACL 2012
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p 自然言語処理におけるコンテキスト学習に関する論文。局所的かつ大域的に文章のコンテキストを捉え、ワードに関する特徴表現（Word Embeddings）をニューラルネットで学習する。ワードに着目した際には複数の表現方法を獲得できるようにも改良。目的関数にはあるワードとその前後の単語の文脈から誤算関数を定義して、着目した単語が有効に学習できるように設定。この問題を解決するため、データセットも新規に提案した。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180324GlobalContext.png`,alt="180324GlobalContext")
-  .item3
-    .text
-      h1 新規性・結果
-      p 従来のコンテキスト学習はある単語とその周辺単語のコンテキストのみしか学習していなかったが、本論文ではよりグローバルなコンテキストを学習できるようにニューラルネットの表現方法を考案。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p ローカルコンテキスト、グローバルコンテキストという考え方は面白い。データドリブンでコンテキストというのが学習できる。
-      ul
-        li
-          a(href="http://delivery.acm.org/10.1145/2400000/2390645/p873-huang.pdf?ip=150.246.205.244&id=2390645&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EBBDCA88875059ADA%2E6D218144511F3437&__acm__=1521866546_0c7b755f7717bc4cb75a01c5405797f1") 論文
-        li
-          a(href="https://scholar.google.co.jp/citations?hl=ja&vq=eng_computationallinguistics&view_op=list_hcore&venue=Y3UjV9bSCxMJ.2017") ACL Top-paper
-        li
-          a(href="http://ai.stanford.edu/~ehhuang/") Dataset
-        li
-          a(href="https://github.com/ninjin/huang_et_al_2012") GitHub
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.24 14:09:09
+﻿+slide
+section#Improving_word_representations_via_global_context_and_multiple_word_prototypes
+  .paper-abstract
+    .title Improving word representations via global context and multiple word prototypes
+    .info
+      .authors Eric H. Huang, Richard Socher, Christopher D. Manning, Andrew Y. Ng
+      .conference ACL 2012
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 自然言語処理におけるコンテキスト学習に関する論文。局所的かつ大域的に文章のコンテキストを捉え、ワードに関する特徴表現（Word Embeddings）をニューラルネットで学習する。ワードに着目した際には複数の表現方法を獲得できるようにも改良。目的関数にはあるワードとその前後の単語の文脈から誤算関数を定義して、着目した単語が有効に学習できるように設定。この問題を解決するため、データセットも新規に提案した。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180324GlobalContext.png`,alt="180324GlobalContext")
+    .item3
+      .text
+        h1 新規性・結果
+        p 従来のコンテキスト学習はある単語とその周辺単語のコンテキストのみしか学習していなかったが、本論文ではよりグローバルなコンテキストを学習できるようにニューラルネットの表現方法を考案。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p ローカルコンテキスト、グローバルコンテキストという考え方は面白い。データドリブンでコンテキストというのが学習できる。
+        ul
+          li
+            a(href="http://delivery.acm.org/10.1145/2400000/2390645/p873-huang.pdf?ip=150.246.205.244&id=2390645&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EBBDCA88875059ADA%2E6D218144511F3437&__acm__=1521866546_0c7b755f7717bc4cb75a01c5405797f1") 論文
+          li
+            a(href="https://scholar.google.co.jp/citations?hl=ja&vq=eng_computationallinguistics&view_op=list_hcore&venue=Y3UjV9bSCxMJ.2017") ACL Top-paper
+          li
+            a(href="http://ai.stanford.edu/~ehhuang/") Dataset
+          li
+            a(href="https://github.com/ninjin/huang_et_al_2012") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.24 14:09:09

@@ -1,32 +1,34 @@
-+slide
-  .title Progressive Neural Architecture Search
-  .info
-    .authors Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy
-    .conference arXiv 1712.00559
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p 強化学習・遺伝的アルゴリズムによりニューラルネット構造を探索するProgressive Neural Architecture Search (PNAS)の提案。従来法の
-        a(href="https://arxiv.org/abs/1707.07012") Zoch+,CVPR2018
-        |と比較すると5倍も高速な探索アルゴリズムとなった。「探索のための探索」を行うヒューリスティックな探索を実施して簡単なものから複雑な構造への拡張を実施する。Progressive (simple to complex)な探索が効率化と高精度なモデルの発見に寄与した。図はセル（畳み込みの最小ユニットでGoogLeNetのインセプションのようなもの）とセルの組み合わせによるアーキテクチャを示す。従来法であるNASNetと類似する構造になったと主張。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180330PNAS.png`,alt="180330PNAS")
-  .item3
-    .text
-      h1 新規性・結果
-      p アーキテクチャ探索自体を人間ではなく強化学習に任せることでCIFAR/ImageNetにてstate-of-the-art。より効率的に従来法と類似する構造に行き着くことができた。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p 構造探索自体もハンドクラフト特徴と同様にやることがなくなるので、ますますデータを集める方に人間は注力？（だがデータを集める方も自動で集まる仕組みがどんどん整えられている）
-      ul
-        li
-          a(href="https://arxiv.org/abs/1712.00559") 論文
-        li
-          a(href="https://github.com/tensorflow/models/tree/master/research/slim#Pretrained") GitHub
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.30 11:08:02
+﻿+slide
+section#Progressive_Neural_Architecture_Search
+  .paper-abstract
+    .title Progressive Neural Architecture Search
+    .info
+      .authors Chenxi Liu, Barret Zoph, Maxim Neumann, Jonathon Shlens, Wei Hua, Li-Jia Li, Li Fei-Fei, Alan Yuille, Jonathan Huang, Kevin Murphy
+      .conference arXiv 1712.00559
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 強化学習・遺伝的アルゴリズムによりニューラルネット構造を探索するProgressive Neural Architecture Search (PNAS)の提案。従来法の
+          a(href="https://arxiv.org/abs/1707.07012") Zoch+,CVPR2018
+          |と比較すると5倍も高速な探索アルゴリズムとなった。「探索のための探索」を行うヒューリスティックな探索を実施して簡単なものから複雑な構造への拡張を実施する。Progressive (simple to complex)な探索が効率化と高精度なモデルの発見に寄与した。図はセル（畳み込みの最小ユニットでGoogLeNetのインセプションのようなもの）とセルの組み合わせによるアーキテクチャを示す。従来法であるNASNetと類似する構造になったと主張。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330PNAS.png`,alt="180330PNAS")
+    .item3
+      .text
+        h1 新規性・結果
+        p アーキテクチャ探索自体を人間ではなく強化学習に任せることでCIFAR/ImageNetにてstate-of-the-art。より効率的に従来法と類似する構造に行き着くことができた。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 構造探索自体もハンドクラフト特徴と同様にやることがなくなるので、ますますデータを集める方に人間は注力？（だがデータを集める方も自動で集まる仕組みがどんどん整えられている）
+        ul
+          li
+            a(href="https://arxiv.org/abs/1712.00559") 論文
+          li
+            a(href="https://github.com/tensorflow/models/tree/master/research/slim#Pretrained") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.30 11:08:02

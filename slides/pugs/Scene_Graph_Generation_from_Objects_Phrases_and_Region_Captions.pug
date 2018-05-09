@@ -1,30 +1,32 @@
-+slide
-  .title Scene Graph Generation from Objects, Phrases and Region Captions
-  .info
-    .authors Yikang Li, et al.
-    .conference ICCV 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 物体検出、フレーズ、キャプショニングの3つのタスクを共同で学習し、シーン理解を行うMulti-level Scene Description Network(MSDN)の提案。入力画像から異なる意味を持つ領域間をリンクさせるために、グラフを動的に構築。これにより、様々なタスクを整理しながら学習する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180310MSDN_1.jpg`)
-  .item3
-    .text
-      h1 手法・リンク集
-      p VGG16で特徴量を抽出。領域はRoIプーリングで推定。オブジェクト(赤)、フレーズ(緑色)、領域(黄色)から動的グラフを構築。Feature Refiningでは、1つの特徴を、他の2種類の特徴を使ってアップデートさせていくイメージ。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1707.09700.pdf") 論文
-        li
-          a(href="https://github.com/yikang-li/MSDN") ソースコード
-  .item4
-    .text
-      p
-        img(src=`${figpath}180310MSDN_2.jpg`)
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Scene_Graph_Generation_from_Objects_Phrases_and_Region_Captions
+  .paper-abstract
+    .title Scene Graph Generation from Objects, Phrases and Region Captions
+    .info
+      .authors Yikang Li, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 物体検出、フレーズ、キャプショニングの3つのタスクを共同で学習し、シーン理解を行うMulti-level Scene Description Network(MSDN)の提案。入力画像から異なる意味を持つ領域間をリンクさせるために、グラフを動的に構築。これにより、様々なタスクを整理しながら学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310MSDN_1.jpg`)
+    .item3
+      .text
+        h1 手法・リンク集
+        p VGG16で特徴量を抽出。領域はRoIプーリングで推定。オブジェクト(赤)、フレーズ(緑色)、領域(黄色)から動的グラフを構築。Feature Refiningでは、1つの特徴を、他の2種類の特徴を使ってアップデートさせていくイメージ。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1707.09700.pdf") 論文
+          li
+            a(href="https://github.com/yikang-li/MSDN") ソースコード
+    .item4
+      .text
+        p
+          img(src=`${figpath}180310MSDN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    

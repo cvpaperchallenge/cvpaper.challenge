@@ -1,39 +1,41 @@
-+slide
-  .title An Autonomous Dynamic Camera Method for Effective Remote Teleoperation
-  .info
-    .authors Daniel Rakita, Bilge Mutlu and Michael Gleicher
-    .conference HRI’18
-    .paper_id pp. 325-333
-  .slide_editor Ryota Suzuki
-
-  .item1
-    .text
-      h1 概要
-      p 遠隔操作ロボットのための，ロボットカメラの自動姿勢決定．
-        |作業野を見やすくするカメラ姿勢を自動で決定する．
-      ul
-        li どのような遠隔操作インタフェースでもOK
-        li 操作者の操作を予測することで実現
-          ul
-            li 遮蔽のない視野
-            li 作業部とカメラ間の距離を適切に保つ
-        li 方向をわからなくさせないように自動調整
-  .item2
-    .text
-      p
-        img(src=`${figpath}An_Autonomous_Dynamic_Camera_Method_for_Effective_Remote_Teleoperation_Figure1.png`,alt="Figure1")
-  .item3
-    .text
-      h1 評価点
-      p 外科手術などに実用性ありそうでいい．
-      p 適切なロボット動作のダイナミクスを定義して実装し，
-        |ユーザ評価もちゃんと行っている．
-      p BestPaper Nominee．ところで被験者に1時間拘束で10ドル払ってるらしい．
-  .item4
-    .text
-      h1 リンク集
-      ul
-        li
-          a(href="https://dl.acm.org/citation.cfm?id=3171279") ACM Library
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.9 16:21:51
+﻿+slide
+section#An_Autonomous_Dynamic_Camera_Method_for_Effective_Remote_Teleoperation
+  .paper-abstract
+    .title An Autonomous Dynamic Camera Method for Effective Remote Teleoperation
+    .info
+      .authors Daniel Rakita, Bilge Mutlu and Michael Gleicher
+      .conference HRI’18
+      .paper_id pp. 325-333
+    .slide_editor Ryota Suzuki
+  
+    .item1
+      .text
+        h1 概要
+        p 遠隔操作ロボットのための，ロボットカメラの自動姿勢決定．
+          |作業野を見やすくするカメラ姿勢を自動で決定する．
+        ul
+          li どのような遠隔操作インタフェースでもOK
+          li 操作者の操作を予測することで実現
+            ul
+              li 遮蔽のない視野
+              li 作業部とカメラ間の距離を適切に保つ
+          li 方向をわからなくさせないように自動調整
+    .item2
+      .text
+        p
+          img(src=`${figpath}An_Autonomous_Dynamic_Camera_Method_for_Effective_Remote_Teleoperation_Figure1.png`,alt="Figure1")
+    .item3
+      .text
+        h1 評価点
+        p 外科手術などに実用性ありそうでいい．
+        p 適切なロボット動作のダイナミクスを定義して実装し，
+          |ユーザ評価もちゃんと行っている．
+        p BestPaper Nominee．ところで被験者に1時間拘束で10ドル払ってるらしい．
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3171279") ACM Library
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.9 16:21:51

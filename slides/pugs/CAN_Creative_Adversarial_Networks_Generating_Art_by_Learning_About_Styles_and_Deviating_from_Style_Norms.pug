@@ -1,26 +1,28 @@
-+slide
-  .title CAN: Creative Adversarial Networks Generating "Art" by Learning About Styles and Deviating from Style Norms
-  .info
-    .authors Ahmed Elgammal et al.
-    .conference ICCC, 2017.
-  .item1
-    h1 概要
-    .text.
-      GANを用いてコンピュータに新たな芸術作品を創らせる研究。心理学と美学の知見を取り入れ、これまでの芸術作品と比べると新しいが新しすぎない画像を生成する。過去の作品と比べて新しいか否かは、芸術作品の分類を考えどのクラスにも分類されないものを従来のものとは異なると判定している。それに加え、GANによって芸術である画像を生成するよううに学習している。
-
-  .item2
-    img(src=figpath+"180325CAN.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li 新しいが新しすぎない絵画を生成するための評価関数を構築した。
-        li 評価にはDCGANにより学習したもの及び実際の芸術作品との比較をユーザースタディによって行った。
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li: a(href="https://arxiv.org/abs/1706.07068" target="blank") 論文
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Shintaro Yamamoto
+﻿+slide
+section#CAN_Creative_Adversarial_Networks_Generating_Art_by_Learning_About_Styles_and_Deviating_from_Style_Norms
+  .paper-abstract
+    .title CAN: Creative Adversarial Networks Generating "Art" by Learning About Styles and Deviating from Style Norms
+    .info
+      .authors Ahmed Elgammal et al.
+      .conference ICCC, 2017.
+    .item1
+      h1 概要
+      .text.
+        GANを用いてコンピュータに新たな芸術作品を創らせる研究。心理学と美学の知見を取り入れ、これまでの芸術作品と比べると新しいが新しすぎない画像を生成する。過去の作品と比べて新しいか否かは、芸術作品の分類を考えどのクラスにも分類されないものを従来のものとは異なると判定している。それに加え、GANによって芸術である画像を生成するよううに学習している。
+  
+    .item2
+      img(src=figpath+"180325CAN.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 新しいが新しすぎない絵画を生成するための評価関数を構築した。
+          li 評価にはDCGANにより学習したもの及び実際の芸術作品との比較をユーザースタディによって行った。
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li: a(href="https://arxiv.org/abs/1706.07068" target="blank") 論文
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Shintaro Yamamoto

@@ -1,29 +1,31 @@
-+slide
-  .title Dynamic Sampling Convolutional Neural Networks
-  .info
-    .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
-    .conference ECCV 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180330DSCNN_1.jpg`)
-  .item3
-    .text
-      h1 新規性・結果・リンク集
-      p 下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。
-      p Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.07624.pdf") 論文
-  .item4
-    .text
-      p
-        img(src=`${figpath}180330DSCNN_2.jpg`)
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Dynamic_Sampling_Convolutional_Neural_Networks
+  .paper-abstract
+    .title Dynamic Sampling Convolutional Neural Networks
+    .info
+      .authors Jialin Wu, Dai Li, Yu Yang, Chandrajit Bajaj, Xiangyang Ji
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 現在の位置だけでなく、動的な位置特有のカーネルを学習させることで、複数の隣接領域の特徴を融合させて学習することができるDynamic Sampling Convolutional Neural Networks (DSCNN)の提案。上図より、kernel branchで位置特有のカーネルを生成。 feature branchで、各位置ごとに畳み込んで特徴を生成。 attention branchで、各サンプルされた隣接領域からフィーチャを融合させるためのアテンション重みを生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_1.jpg`)
+    .item3
+      .text
+        h1 新規性・結果・リンク集
+        p 下図より、各位置で、個々のカーネルと各サンプルのアテンションの重みを別々に学習。 次に、これらの学習されたアテンションの重みを使用して、複数のサンプルの特徴を結合。十字の付いたボックスは、アテンションの重みを生成する位置を示し、赤色のものはサンプリング位置を示し、黒色のものはサンプリングされた位置を示す。
+        p Effective Receptive Field(ERF)を拡張できることから、認識精度が向上。一般的な深層学習タスクにおいて有効性を示した。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.07624.pdf") 論文
+    .item4
+      .text
+        p
+          img(src=`${figpath}180330DSCNN_2.jpg`)
+    .slide_index #{getSlideIndex()}
+    

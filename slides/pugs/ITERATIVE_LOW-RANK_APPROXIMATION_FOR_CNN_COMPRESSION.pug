@@ -1,28 +1,30 @@
-+slide
-  .title ITERATIVE LOW-RANK APPROXIMATION FOR CNN COMPRESSION
-  .info
-    .authors Maksym Kholiavchenko
-    .conference ECCV 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p CNNを圧縮するために、低ランク近似を適用する反復アプローチの提案。入力モデルを反復して圧縮していき、構成と重みを出力する。反復の中でノイズ低減をアルゴリズムを追加し、精度低下を避ける。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180331ILRA.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p CNNには数千万のパラメータが含まれているため、組み込み機器で効率的に動作することは不可能。AlexNet、VGG-16、YOLOv2、およびTiny YOLOネットワークを圧縮することで、CNNを多様化。
-  .item4
-    .text
-      h1 結果・リンク集
-      p より高い圧縮率かつ、精度の低下が少ない。
-      ul
-        li
-          a(href="https://arxiv.org/abs/1803.08995") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#ITERATIVE_LOW-RANK_APPROXIMATION_FOR_CNN_COMPRESSION
+  .paper-abstract
+    .title ITERATIVE LOW-RANK APPROXIMATION FOR CNN COMPRESSION
+    .info
+      .authors Maksym Kholiavchenko
+      .conference ECCV 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p CNNを圧縮するために、低ランク近似を適用する反復アプローチの提案。入力モデルを反復して圧縮していき、構成と重みを出力する。反復の中でノイズ低減をアルゴリズムを追加し、精度低下を避ける。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ILRA.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p CNNには数千万のパラメータが含まれているため、組み込み機器で効率的に動作することは不可能。AlexNet、VGG-16、YOLOv2、およびTiny YOLOネットワークを圧縮することで、CNNを多様化。
+    .item4
+      .text
+        h1 結果・リンク集
+        p より高い圧縮率かつ、精度の低下が少ない。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08995") 論文
+    .slide_index #{getSlideIndex()}
+    

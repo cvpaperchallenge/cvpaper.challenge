@@ -1,29 +1,31 @@
-+slide
-  .title Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering
-  .info
-    .authors Somak Aditya, Yezhou Yang, Chitta Baral
-    .conference AAAI 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p VQAタスクにおける、DNNの最後から2番目の層にexplicit reasoning layerを追加する。 これにより、常識的な知識が必要な質問に対する回答が可能となり、出力した回答を人間が解釈できるようなインタフェースを提案。reasoning layerは、視覚的な関係、質問の意味解析、word2vecとConceptNetのオントロジーなどを推論するProbabilistic Soft Logic(PSL)ベースのエンジンとなっている。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180331ERL.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p VQAなどのvisionや言語タスクでは、DNNを使用して精度向上を図っている。しかし、更なる精度向上には画像や自然言語処理以外の常識的知識を使った推論が必要とされている。また、このようなシステムは一般に不透明(人間が理解できない)であり、予備知識が必要とされる質問を理解するのは困難。本手法によって、常識的知識を追加し、人間に理解できるインタフェースを提案。
-  .item4
-    .text
-      h1 結果・リンク集
-      p explicit reasoning layerによって回答と、回答の証拠の両方を生成することが可能。性能向上と、説明能力の向上を実現。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.08896.pdf") 論文
-
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Explicit_Reasoning_over_End-to-End_Neural_Architectures_for_Visual_Question_Answering
+  .paper-abstract
+    .title Explicit Reasoning over End-to-End Neural Architectures for Visual Question Answering
+    .info
+      .authors Somak Aditya, Yezhou Yang, Chitta Baral
+      .conference AAAI 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p VQAタスクにおける、DNNの最後から2番目の層にexplicit reasoning layerを追加する。 これにより、常識的な知識が必要な質問に対する回答が可能となり、出力した回答を人間が解釈できるようなインタフェースを提案。reasoning layerは、視覚的な関係、質問の意味解析、word2vecとConceptNetのオントロジーなどを推論するProbabilistic Soft Logic(PSL)ベースのエンジンとなっている。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331ERL.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p VQAなどのvisionや言語タスクでは、DNNを使用して精度向上を図っている。しかし、更なる精度向上には画像や自然言語処理以外の常識的知識を使った推論が必要とされている。また、このようなシステムは一般に不透明(人間が理解できない)であり、予備知識が必要とされる質問を理解するのは困難。本手法によって、常識的知識を追加し、人間に理解できるインタフェースを提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p explicit reasoning layerによって回答と、回答の証拠の両方を生成することが可能。性能向上と、説明能力の向上を実現。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08896.pdf") 論文
+  
+    .slide_index #{getSlideIndex()}
+    

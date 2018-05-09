@@ -1,36 +1,38 @@
-+slide
-  .title BlindType: Eyes-Free Text Entry on Handheld Touchpad by Leveraging Thumb’s Muscle Memory
-  .info
-    .authors C. Seim et al.,
-    .conference Ubicomp 2017
-  .item1
-    h1 概要
-    .text.
-      入力画面を見ないでキー入力するときの入力方法に関する研究．
-      大画面を見たり，HMDをつけたりしながら手元のスマホなどで入力することを想定．
-      入力はQWERTYのバーチャルキーボード．
-      1キーずつ独立に入力判定をする方法 (Absolute) と，
-      前のタッチ位置との相対位置から入力判定する方法 (Relative) の2種類を検討．
-      加えて，ユーザごとにキーボードサイズや位置を学習するPersonalと
-      そうしないGeneralの2パターンを合わせて，組み合わせの4通りを比較．
-      Personalizeはされている方が良いし，Relativeの方が良いという結論．
-      実際にキーボードを見ながら入力するのに近い結果を得た．
-
-  .item2
-    img(src=figpath+"180317_eyefree.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li ユーザに合わせたキーボードモデルの学習手法を提案
-        li Eyes-freeでのタイピングデータをユーザスタディで獲得
-        li ユーザスタディの結果から，入力アルゴリズムを提案
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li Session 1: Input Methods
-      
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#BlindType_Eyes-Free_Text_Entry_on_Handheld_Touchpad_by_Leveraging_Thumbs_Muscle_Memory
+  .paper-abstract
+    .title BlindType: Eyes-Free Text Entry on Handheld Touchpad by Leveraging Thumb’s Muscle Memory
+    .info
+      .authors C. Seim et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        入力画面を見ないでキー入力するときの入力方法に関する研究．
+        大画面を見たり，HMDをつけたりしながら手元のスマホなどで入力することを想定．
+        入力はQWERTYのバーチャルキーボード．
+        1キーずつ独立に入力判定をする方法 (Absolute) と，
+        前のタッチ位置との相対位置から入力判定する方法 (Relative) の2種類を検討．
+        加えて，ユーザごとにキーボードサイズや位置を学習するPersonalと
+        そうしないGeneralの2パターンを合わせて，組み合わせの4通りを比較．
+        Personalizeはされている方が良いし，Relativeの方が良いという結論．
+        実際にキーボードを見ながら入力するのに近い結果を得た．
+  
+    .item2
+      img(src=figpath+"180317_eyefree.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li ユーザに合わせたキーボードモデルの学習手法を提案
+          li Eyes-freeでのタイピングデータをユーザスタディで獲得
+          li ユーザスタディの結果から，入力アルゴリズムを提案
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 1: Input Methods
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

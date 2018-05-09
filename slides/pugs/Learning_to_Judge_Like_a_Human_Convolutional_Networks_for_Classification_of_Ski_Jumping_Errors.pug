@@ -1,30 +1,32 @@
-+slide
-  .title Learning to Judge Like a Human: Convolutional Networks for Classification of Ski Jumping Errors
-  .info
-    .authors H. Brock et al.,
-    .conference Ubicomp 2017
-  .item1
-    h1 概要
-    .text.
-      CNNを用いたスキージャンプの評価手法を提案．
-      体につけたセンサで人の各部位のモーションを計測．
-      センサを付けた位置を縦軸，時間を横軸，センサ種類をチャンネルに取ったモーション画像として
-      CNNに入力してジャンプのエラーの有無を識別．SVMやHMMよりも高い性能を示した．
-      Conv層の数は1と3を比較して，1で十分という結論．
-
-  .item2
-    img(src=figpath+"180327_ski.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li 多次元CNNを用いて複数センサを組み合わせて利用し，識別する手法を提案．
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li Session 19: Sports 2
-      
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Learning_to_Judge_Like_a_Human_Convolutional_Networks_for_Classification_of_Ski_Jumping_Errors
+  .paper-abstract
+    .title Learning to Judge Like a Human: Convolutional Networks for Classification of Ski Jumping Errors
+    .info
+      .authors H. Brock et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        CNNを用いたスキージャンプの評価手法を提案．
+        体につけたセンサで人の各部位のモーションを計測．
+        センサを付けた位置を縦軸，時間を横軸，センサ種類をチャンネルに取ったモーション画像として
+        CNNに入力してジャンプのエラーの有無を識別．SVMやHMMよりも高い性能を示した．
+        Conv層の数は1と3を比較して，1で十分という結論．
+  
+    .item2
+      img(src=figpath+"180327_ski.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 多次元CNNを用いて複数センサを組み合わせて利用し，識別する手法を提案．
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 19: Sports 2
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

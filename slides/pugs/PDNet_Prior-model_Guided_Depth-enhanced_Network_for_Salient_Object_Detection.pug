@@ -1,30 +1,32 @@
-+slide
-  .title PDNet: Prior-model Guided Depth-enhanced Network for Salient Object Detection
-  .info
-    .authors Chunbiao Zhu, Xing Cai, Kan Huang, Thomas H. Li, Ge Li
-    .conference ICME 2018
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p RGB-Dの顕著な物体の検出のための、深度拡張ネットワークであるPDNetの提案。画像ピクセルのRGB-D値をネットワークに直接送るのではなく、RGB値を処理するためのマスターネットワークと、D値(深度)を組み込むサブネットワークで生成した特徴をマスタネットワークに追加する。ラベル付きRGB-Dデータセットは少ないため、大規模なRGBデータセットを使用してマスターネットワークをプレトレインする。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180331PDNet.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p FCNは、多くのタスクにおいて優れているが、顕著性検出において2つの問題があると指摘。 1つ目は、ネットワークを学習するための大規模なラベル付きデータがないこと。2つ目は、ノイズがあるシーンなどにおいて、頑健でないこと。PDNetでは上記を改善。
-  .item4
-    .text
-      h1 結果・リンク集
-      p 5つのデータセットで評価し、精度向上を確認。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.08636.pdf") 論文
-        li
-          a(href="https://github.com/ChunbiaoZhu/PDNet/") ソースコード
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#PDNet_Prior-model_Guided_Depth-enhanced_Network_for_Salient_Object_Detection
+  .paper-abstract
+    .title PDNet: Prior-model Guided Depth-enhanced Network for Salient Object Detection
+    .info
+      .authors Chunbiao Zhu, Xing Cai, Kan Huang, Thomas H. Li, Ge Li
+      .conference ICME 2018
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p RGB-Dの顕著な物体の検出のための、深度拡張ネットワークであるPDNetの提案。画像ピクセルのRGB-D値をネットワークに直接送るのではなく、RGB値を処理するためのマスターネットワークと、D値(深度)を組み込むサブネットワークで生成した特徴をマスタネットワークに追加する。ラベル付きRGB-Dデータセットは少ないため、大規模なRGBデータセットを使用してマスターネットワークをプレトレインする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331PDNet.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p FCNは、多くのタスクにおいて優れているが、顕著性検出において2つの問題があると指摘。 1つ目は、ネットワークを学習するための大規模なラベル付きデータがないこと。2つ目は、ノイズがあるシーンなどにおいて、頑健でないこと。PDNetでは上記を改善。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 5つのデータセットで評価し、精度向上を確認。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.08636.pdf") 論文
+          li
+            a(href="https://github.com/ChunbiaoZhu/PDNet/") ソースコード
+    .slide_index #{getSlideIndex()}
+    

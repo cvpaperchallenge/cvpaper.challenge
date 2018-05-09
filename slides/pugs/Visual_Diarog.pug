@@ -1,33 +1,35 @@
-+slide
-  .title Visual Diarog
-  .info
-    .authors Abhishek Das, et al. 
-    .conference CVPR 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p Visual Diarog：AIエージェントが人間と、画像に関した対話をするタスクを目標とする。エージェントが、画像に対する質問に、対話履歴から文脈を推測し正確に回答する。チャットデータ収集プロトコルを開発し、Visual Dialogデータセット(VisDial)を作成。COCOの120kの画像に10の質問と回答ペアを含む1つのダイアログが含まれており、合計は1.2Mのダイアログ質問回答ペア。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180307VIsualDialog.jpg`)
-  .item3
-    .text
-      h1 新規性・リンク
-      p VQAとは異なる、Visual Dialogタスク。
-      p 3つのエンコーダ2つのデコーダからなるVisual Diarogモデル。
-      p コード、モデル、データセット、ビジュアルチャットボックスを公開中。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1611.08669v5.pdf") 論文
-        li
-          a(href="https://visualdialog.org") Visual Dialog
-  .item4
-    .text
-      p
-        img(src=`${figpath}180307VIsualDialog_2.jpg`)
-        
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Visual_Diarog
+  .paper-abstract
+    .title Visual Diarog
+    .info
+      .authors Abhishek Das, et al. 
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p Visual Diarog：AIエージェントが人間と、画像に関した対話をするタスクを目標とする。エージェントが、画像に対する質問に、対話履歴から文脈を推測し正確に回答する。チャットデータ収集プロトコルを開発し、Visual Dialogデータセット(VisDial)を作成。COCOの120kの画像に10の質問と回答ペアを含む1つのダイアログが含まれており、合計は1.2Mのダイアログ質問回答ペア。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180307VIsualDialog.jpg`)
+    .item3
+      .text
+        h1 新規性・リンク
+        p VQAとは異なる、Visual Dialogタスク。
+        p 3つのエンコーダ2つのデコーダからなるVisual Diarogモデル。
+        p コード、モデル、データセット、ビジュアルチャットボックスを公開中。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.08669v5.pdf") 論文
+          li
+            a(href="https://visualdialog.org") Visual Dialog
+    .item4
+      .text
+        p
+          img(src=`${figpath}180307VIsualDialog_2.jpg`)
+          
+    .slide_index #{getSlideIndex()}
+    
