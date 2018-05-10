@@ -1,28 +1,30 @@
-+slide
-  .title Robust Loss Functions under Label Noise for Deep Neural Networks
-  .info
-    .authors A. Ghosh et al.,
-    .conference AAAI 2017
-  .item1
-    h1 概要
-    .text.
-      ラベルノイズに頑健な損失関数を提案．
-      理論的に，Cross entropyやMean Square ErrorよりもMean Absolute Error (MAE)の方がラベルノイズに対して頑健であることを証明し，実験的にもその優位性を確認．
-      しかし，MAEによる学習は遅いので，MAEを使う場合に適した最適化手法の検討を行う必要あり．
-
-  .item2
-    img(src=figpath+"180307_robustloss.png",alt="180307_robustloss.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li 従来研究だと2クラス識別の問題設定での検討が多かったが，この研究では多クラス識別での解析を行っている．
-        li MAEを用いることとラベルノイズに頑健であることを示した．
-  .item4
-    h1 自由記述欄
-    .text.
-      MNISTなどの実験で主張通りの結果になっていることを確認しているが，
-      もっとデータセットが実世界のものに近づいていっても同じ結果が出てくるのか気になるところ．
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Robust_Loss_Functions_under_Label_Noise_for_Deep_Neural_Networks
+  .paper-abstract
+    .title Robust Loss Functions under Label Noise for Deep Neural Networks
+    .info
+      .authors A. Ghosh et al.,
+      .conference AAAI 2017
+    .item1
+      h1 概要
+      .text.
+        ラベルノイズに頑健な損失関数を提案．
+        理論的に，Cross entropyやMean Square ErrorよりもMean Absolute Error (MAE)の方がラベルノイズに対して頑健であることを証明し，実験的にもその優位性を確認．
+        しかし，MAEによる学習は遅いので，MAEを使う場合に適した最適化手法の検討を行う必要あり．
+  
+    .item2
+      img(src=figpath+"180307_robustloss.png",alt="180307_robustloss.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li 従来研究だと2クラス識別の問題設定での検討が多かったが，この研究では多クラス識別での解析を行っている．
+          li MAEを用いることとラベルノイズに頑健であることを示した．
+    .item4
+      h1 自由記述欄
+      .text.
+        MNISTなどの実験で主張通りの結果になっていることを確認しているが，
+        もっとデータセットが実世界のものに近づいていっても同じ結果が出てくるのか気になるところ．
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

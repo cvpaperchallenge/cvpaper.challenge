@@ -1,28 +1,30 @@
-+slide
-  .title MaskRNN: Instance Level Video Object Segmentation
-  .info
-    .authors Yuan-Ting Hu, Jia-Bin Huang, Alexander G. Schwing
-    .conference NIPS 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p マスクを生成するbinary segmentation netとバウンディングボックスを生成するlocalization net 、2つのネットワークの出力を融合させることでインスタンスレベルのビデオオブジェクトセグメンテーションを行うMaskRNNの提案。時間経過による逆伝搬によってend-to-endで学習でき、2つのネットワークを最適化する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180401MaskRNN.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p 2つのネットワークを使用することで、ビデオデータの長期的な時間的情報を利用でき、ノイズも低減できる。マルチオブジェクトに対応、図は人と自転車の2つのオブジェクトにおける例。
-  .item4
-    .text
-      h1 結果・リンク集
-      p DAVIS-2016、DAVIS-2017、Segtrack v2の3つのマークデータセットで検証し、すべてにおいて最先端のパフォーマンス。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.11187.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#MaskRNN_Instance_Level_Video_Object_Segmentation
+  .paper-abstract
+    .title MaskRNN: Instance Level Video Object Segmentation
+    .info
+      .authors Yuan-Ting Hu, Jia-Bin Huang, Alexander G. Schwing
+      .conference NIPS 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p マスクを生成するbinary segmentation netとバウンディングボックスを生成するlocalization net 、2つのネットワークの出力を融合させることでインスタンスレベルのビデオオブジェクトセグメンテーションを行うMaskRNNの提案。時間経過による逆伝搬によってend-to-endで学習でき、2つのネットワークを最適化する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401MaskRNN.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 2つのネットワークを使用することで、ビデオデータの長期的な時間的情報を利用でき、ノイズも低減できる。マルチオブジェクトに対応、図は人と自転車の2つのオブジェクトにおける例。
+    .item4
+      .text
+        h1 結果・リンク集
+        p DAVIS-2016、DAVIS-2017、Segtrack v2の3つのマークデータセットで検証し、すべてにおいて最先端のパフォーマンス。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.11187.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    

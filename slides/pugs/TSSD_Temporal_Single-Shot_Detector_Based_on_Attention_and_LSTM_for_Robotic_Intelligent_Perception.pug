@@ -1,36 +1,38 @@
-+slide
-  .title TSSD: Temporal Single-Shot Detector Based on Attention and LSTM for Robotic Intelligent Perception
-  .info
-    .authors Xingyu Chen, Zhengxing Wu, Junzhi Yu
-    .conference Submitted to IROS 2018
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p アテンションとConvLSTM構造を参考にして時系列のROI検出器であるTemporal Single-Shot Detector (TSSD)を構築して、ロボットビジョンに応用する。ConvLSTMでは階層的な時系列特徴を取り扱い、High-levelからLow-levelな特徴を処理できるようにした。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180311TSSD.png`,alt="180311TSSD")
-  .item3
-    .text
-      h1 新規性・結果
-      ul
-        li 初めてOne-shotで時系列情報（ビデオ）から検出を行なった。
-        li 階層的に時系列情報を取り扱い、High-levelとLow-levelの情報をSSDの構造内で統合することに成功、時系列検出を高精度に実行することができた。
-        li 冗長な処理部分を削減してアテンション構造を取り入れた。
-        li ImageNet-VID（ビデオに対する検出）にて64.5% @mAPを達成、なおかつ27fpsで処理することができた。TPNやD&Tと比較すると精度は劣るが、リアルタイム性でいうと有効性があると考える。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p ビデオに対する検出処理は静止画のそれとは若干異なる？SSD vs. TSSDを比較しても最大5%くらい差があるし、最先端手法であるTPNやD&Tと比較するとTSSDからさらに10%以上も差がついている。ただ単にConvLSTMなど時系列手法を導入しても性能は思うように上がらないということか。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1803.00197.pdf") 論文
-        li
-          a(href="https://arxiv.org/abs/1702.06355") TPN
-        li
-          a(href="https://arxiv.org/abs/1710.03958") D&T
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.11 23:53:27
+﻿+slide
+section#TSSD_Temporal_Single-Shot_Detector_Based_on_Attention_and_LSTM_for_Robotic_Intelligent_Perception
+  .paper-abstract
+    .title TSSD: Temporal Single-Shot Detector Based on Attention and LSTM for Robotic Intelligent Perception
+    .info
+      .authors Xingyu Chen, Zhengxing Wu, Junzhi Yu
+      .conference Submitted to IROS 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p アテンションとConvLSTM構造を参考にして時系列のROI検出器であるTemporal Single-Shot Detector (TSSD)を構築して、ロボットビジョンに応用する。ConvLSTMでは階層的な時系列特徴を取り扱い、High-levelからLow-levelな特徴を処理できるようにした。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180311TSSD.png`,alt="180311TSSD")
+    .item3
+      .text
+        h1 新規性・結果
+        ul
+          li 初めてOne-shotで時系列情報（ビデオ）から検出を行なった。
+          li 階層的に時系列情報を取り扱い、High-levelとLow-levelの情報をSSDの構造内で統合することに成功、時系列検出を高精度に実行することができた。
+          li 冗長な処理部分を削減してアテンション構造を取り入れた。
+          li ImageNet-VID（ビデオに対する検出）にて64.5% @mAPを達成、なおかつ27fpsで処理することができた。TPNやD&Tと比較すると精度は劣るが、リアルタイム性でいうと有効性があると考える。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p ビデオに対する検出処理は静止画のそれとは若干異なる？SSD vs. TSSDを比較しても最大5%くらい差があるし、最先端手法であるTPNやD&Tと比較するとTSSDからさらに10%以上も差がついている。ただ単にConvLSTMなど時系列手法を導入しても性能は思うように上がらないということか。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.00197.pdf") 論文
+          li
+            a(href="https://arxiv.org/abs/1702.06355") TPN
+          li
+            a(href="https://arxiv.org/abs/1710.03958") D&T
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.11 23:53:27

@@ -1,35 +1,37 @@
-+slide
-  .title Image2song: Song Retrieval via Bridging Image Content and Lyric Words
-  .info
-    .authors Xuelong Li, Di Hu and Xiaoqiang Lu
-    .conference ICCV2017
-    .paper_id arXiv:1708.05851
-  .slide_editor Kota Yoshida
-
-  .item1
-    .text
-      h1 概要
-      p 画像のセマンティックごとに関連する曲を自動選択，
-        |画像内容と歌詞の単語との間の相互関係を学習する意味ベースでの歌検索フレームワークを構築する．
-      p 画像コンテンツタグをR-CNNによって予測，歌詞はLSTMが対応する歌詞をモデル化する．
-  .item2
-    .text
-      p
-        img(src=`${figpath}Image2song_Song_Retrieval_via_Bridging_Image_Content_and_Lyric_Words.png`,alt="提案手法概要")
-  .item3
-    .text
-      h1 新規性
-      ul
-        li セマンティックベースの曲検索タスクのテキストデータモダリティ
-        li ニューラルネットワークに基づくマルチモーダルモデルの開発
-        li インターネットのソーシャル上のモーダルデータから収集された(画像，音楽クリップ，歌詞)のデータセットを構築
-  .item4
-    .text
-      h1 結果・リンク集
-      ul
-        li ほかの手法よりも優れた性能で与えられた画像に対して適切な歌を推奨
-        li 時間の短縮，人間の感覚との相関を確立することが課題
-        li
-          a(href="https://arxiv.org/pdf/1708.05851.pdf") 論文
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.4.12 15:26:01
+﻿+slide
+section#Image2song_Song_Retrieval_via_Bridging_Image_Content_and_Lyric_Words
+  .paper-abstract
+    .title Image2song: Song Retrieval via Bridging Image Content and Lyric Words
+    .info
+      .authors Xuelong Li, Di Hu and Xiaoqiang Lu
+      .conference ICCV2017
+      .paper_id arXiv:1708.05851
+    .slide_editor Kota Yoshida
+  
+    .item1
+      .text
+        h1 概要
+        p 画像のセマンティックごとに関連する曲を自動選択，
+          |画像内容と歌詞の単語との間の相互関係を学習する意味ベースでの歌検索フレームワークを構築する．
+        p 画像コンテンツタグをR-CNNによって予測，歌詞はLSTMが対応する歌詞をモデル化する．
+    .item2
+      .text
+        p
+          img(src=`${figpath}Image2song_Song_Retrieval_via_Bridging_Image_Content_and_Lyric_Words.png`,alt="提案手法概要")
+    .item3
+      .text
+        h1 新規性
+        ul
+          li セマンティックベースの曲検索タスクのテキストデータモダリティ
+          li ニューラルネットワークに基づくマルチモーダルモデルの開発
+          li インターネットのソーシャル上のモーダルデータから収集された(画像，音楽クリップ，歌詞)のデータセットを構築
+    .item4
+      .text
+        h1 結果・リンク集
+        ul
+          li ほかの手法よりも優れた性能で与えられた画像に対して適切な歌を推奨
+          li 時間の短縮，人間の感覚との相関を確立することが課題
+          li
+            a(href="https://arxiv.org/pdf/1708.05851.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.4.12 15:26:01

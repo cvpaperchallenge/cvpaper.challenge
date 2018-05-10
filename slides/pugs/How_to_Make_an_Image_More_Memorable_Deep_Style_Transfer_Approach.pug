@@ -1,31 +1,33 @@
-+slide
-  .title How to Make an Image More Memorable? Deep Style Transfer Approach
-  .info
-    .authors Aliaksandr Siarohin et al.
-    .conference ICMR 2017
-  .slide_editor: a(href="https://sites.google.com/site/shinatoyamamoto/" target="blank") ShintaroYamamoto
-
-  .item1
-    .text
-      h1 概要
-      p スタイルトランスファーによって画像をより記憶に残るようにする研究。
-        |入力画像に対して、どのスタイル画像がMemorablityを上昇するかを調べることによって実現する。
-        |具体的には、Synthesizer、Scorer、Selectorの3つのネットワークを使用する。
-        |Synthesizerはスタイルトランスファーのためのネットワーク、ScorerはMemorabilityを調べるネットワーク、Selectorは適切なスタイル画像を選択するネットワークとなっている。
-        |学習時には、学習データに対してSynthesizerでスタイルの変換を施し、その画像に対してScorerでスコア付けを行い、スタイルを変化させた画像とソース画像のペア及びScorerによって得たスコアを学習データとしてSelectorの学習を行う。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180408memorable.png`,alt="Item3Image")
-  .item3
-    .text
-      h1 新規性・結果
-      p 提案手法によって選択したスタイル画像を用いた際のスコア上昇は、全スタイル画像の平均上昇スコアよりも大きいことを示した。
-  .item4
-    .text
-      h1 リンク集
-      ul
-        li
-          a(href="https://dl.acm.org/citation.cfm?id=3078986") 論文
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.4.8 01:30:24
+﻿+slide
+section#How_to_Make_an_Image_More_Memorable_Deep_Style_Transfer_Approach
+  .paper-abstract
+    .title How to Make an Image More Memorable? Deep Style Transfer Approach
+    .info
+      .authors Aliaksandr Siarohin et al.
+      .conference ICMR 2017
+    .slide_editor: a(href="https://sites.google.com/site/shinatoyamamoto/" target="blank") ShintaroYamamoto
+  
+    .item1
+      .text
+        h1 概要
+        p スタイルトランスファーによって画像をより記憶に残るようにする研究。
+          |入力画像に対して、どのスタイル画像がMemorablityを上昇するかを調べることによって実現する。
+          |具体的には、Synthesizer、Scorer、Selectorの3つのネットワークを使用する。
+          |Synthesizerはスタイルトランスファーのためのネットワーク、ScorerはMemorabilityを調べるネットワーク、Selectorは適切なスタイル画像を選択するネットワークとなっている。
+          |学習時には、学習データに対してSynthesizerでスタイルの変換を施し、その画像に対してScorerでスコア付けを行い、スタイルを変化させた画像とソース画像のペア及びScorerによって得たスコアを学習データとしてSelectorの学習を行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180408memorable.png`,alt="Item3Image")
+    .item3
+      .text
+        h1 新規性・結果
+        p 提案手法によって選択したスタイル画像を用いた際のスコア上昇は、全スタイル画像の平均上昇スコアよりも大きいことを示した。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://dl.acm.org/citation.cfm?id=3078986") 論文
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.4.8 01:30:24

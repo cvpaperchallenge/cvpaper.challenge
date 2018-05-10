@@ -1,0 +1,35 @@
+﻿+slide
+section#FaceForensics_A_Large-scale_Video_Dataset_for_Forgery_Detection_in_Human_Faces
+  .paper-abstract
+    .title FaceForensics: A Large-scale Video Dataset for Forgery Detection in Human Faces
+    .info
+      .authors Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner
+      .conference ECCV 2018 Submission
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 2016年に出た他人の顔表情を操るFace2Faceの続編的研究であり、（1）操られた顔を見破る（Real/Fake）識別、（2）操られた顔領域をセグメント、（3）Face2Faceした領域をより自然になるように補正を行なった。同タスクを解決するために、本論文ではリアルの顔表情の変化が含まれる動画とFace2Faceにより作成した1000動画を含むFaceForensics Datasetを作成して識別問題に取り組んだ。識別においてはSVM/CNNを含めベンチマーク的に複数の実装を評価した。セグメンテーションタスクには識別で良好な性能だったXceptionNetを用いた。さらに、RefinementにおいてはAutoencoder構造を用いた。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180415FaceForensics.png`,alt="180415FaceForensics")
+    .item3
+      .text
+        h1 新規性・結果
+        p 顔表情操作によるフェイク動画を作るのみならず、それを見破る識別器/セグメンテーション/修正器を作成したことが新規性として挙げられる。また、Real/Fakeのペアを多数含むデータセットを構築したことも貢献した。識別では簡単な場面ではほぼ100%、難しい状況でも90%弱くらいでの識別が可能である。詳細な結果はYouTubeの動画を参照されたい。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1803.09179.pdf") 論文
+          li
+            a(href="http://niessnerlab.org/projects/roessler2018faceforensics.html") Project
+          li
+            a(href="https://www.youtube.com/watch?v=Tle7YaPkO_k&feature=youtu.be") YouTube
+          li
+            a(href="https://www.youtube.com/watch?v=ohmajJTcpNk") Face2Face
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.4.15 09:07:22

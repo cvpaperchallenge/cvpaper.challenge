@@ -1,33 +1,35 @@
-+slide
-  .title Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN
-  .info
-    .authors Jiyang Gao, Zijian (James) Guo, Zhen Li, Ram Nevatia
-    .conference arXiv:1711.07607
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p 画像識別における知識蒸留（Knowledge Distillation）の内容である。本論文ではある概念（e.g. 動物認識、人工物認識）ごとに教師となる識別器を事前学習しておき、それらの知識を単一の識別器に学習（これをKnowledge Concentrationと呼称）する。いわば複数の先生がある生徒に教えるという流れで学習する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180302KnowledgeConcentration.png`,alt="180302KnowledgeConcentration")
-  .item3
-    .text
-      h1 新規性・結果
-      p よくも悪くも、現状のCVはImageNetの1,000カテゴリに頼っているが、これを100倍の100,000カテゴリに増やして学習したらどうか？また、いかにしたら効率よく学習ができるかを検討した。結果はSingle Model（従来のようなCNNによるカテゴリ識別学習）にするよりも複数のスペシャリスト識別器から知識蒸留を行う方が効率よく、精度よく学習ができた。本論文で使用したEFT（Entity-Foto-Tree）データセットはカテゴリ数でImageNetの100倍、JFT-300Mの5倍である。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p 読んだだけでGoogleの研究所であることがわかってしまう論文。実行ができるかどうかはさておき、大規模データの扱いやCNN学習の効率化という意味でも精読すべき論文。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1711.07607.pdf") 論文
-        li
-          a(href="https://jiyanggao.github.io/") 著者
-        li
-          a(href="http://codecrafthouse.jp/p/2018/01/knowledge-distillation/") 知識蒸留の参考
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.2 20:04:42
-
+﻿+slide
+section#Knowledge_Concentration_Learning_100K_Object_Classifiers_in_a_Single_CNN
+  .paper-abstract
+    .title Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN
+    .info
+      .authors Jiyang Gao, Zijian (James) Guo, Zhen Li, Ram Nevatia
+      .conference arXiv:1711.07607
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 画像識別における知識蒸留（Knowledge Distillation）の内容である。本論文ではある概念（e.g. 動物認識、人工物認識）ごとに教師となる識別器を事前学習しておき、それらの知識を単一の識別器に学習（これをKnowledge Concentrationと呼称）する。いわば複数の先生がある生徒に教えるという流れで学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180302KnowledgeConcentration.png`,alt="180302KnowledgeConcentration")
+    .item3
+      .text
+        h1 新規性・結果
+        p よくも悪くも、現状のCVはImageNetの1,000カテゴリに頼っているが、これを100倍の100,000カテゴリに増やして学習したらどうか？また、いかにしたら効率よく学習ができるかを検討した。結果はSingle Model（従来のようなCNNによるカテゴリ識別学習）にするよりも複数のスペシャリスト識別器から知識蒸留を行う方が効率よく、精度よく学習ができた。本論文で使用したEFT（Entity-Foto-Tree）データセットはカテゴリ数でImageNetの100倍、JFT-300Mの5倍である。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 読んだだけでGoogleの研究所であることがわかってしまう論文。実行ができるかどうかはさておき、大規模データの扱いやCNN学習の効率化という意味でも精読すべき論文。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1711.07607.pdf") 論文
+          li
+            a(href="https://jiyanggao.github.io/") 著者
+          li
+            a(href="http://codecrafthouse.jp/p/2018/01/knowledge-distillation/") 知識蒸留の参考
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.2 20:04:42
+  

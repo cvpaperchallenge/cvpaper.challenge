@@ -1,27 +1,29 @@
-+slide
-  .title From Red Wine to Red Tomato: Composition with Context
-  .info
-    .authors Ishan Misra, Abhinav Gupta, Martial Hebert, The Robotics Institute, Carnegie Mellon University
-    .conference CVPR 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 既知の視覚的概念の分類子を構成するために、コンテクストの依存性に着目した手法を提案。コアアイデアは、複数の単純な概念を組み合わせることによる複雑なコンセプトの開発。赤ワインの赤と、トマトの赤では意味は異なる。形容詞(赤)と物体(ワイン、トマト)の間にはコンテクスト依存性がある。このようなコンテクストを全てビックデータで学習することはナンセンスなため、独立した識別器を合成する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180309WineTomato.jpg`)
-  .item3
-    .text
-      h1 手法
-      p 学習： primitive（大きい、象）などの組み合わせのセットにアクセス。これらのprimitiveの各々を線形分類器（w）を学習することによってモデル化。これらの分類器を合成し、その組み合わせの分類器を生成する変換ネットワークを学習。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p 闇雲にデータ数(クラス数)をあげて学習するのではなく、コンテクストの依存性に着目した予測モデルを使用するのはスマート。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1611.05267.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#From_Red_Wine_to_Red_Tomato_Composition_with_Context
+  .paper-abstract
+    .title From Red Wine to Red Tomato: Composition with Context
+    .info
+      .authors Ishan Misra, Abhinav Gupta, Martial Hebert, The Robotics Institute, Carnegie Mellon University
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
+  
+    .item1
+      .text
+        h1 概要
+        p 既知の視覚的概念の分類子を構成するために、コンテクストの依存性に着目した手法を提案。コアアイデアは、複数の単純な概念を組み合わせることによる複雑なコンセプトの開発。赤ワインの赤と、トマトの赤では意味は異なる。形容詞(赤)と物体(ワイン、トマト)の間にはコンテクスト依存性がある。このようなコンテクストを全てビックデータで学習することはナンセンスなため、独立した識別器を合成する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180309WineTomato.jpg`)
+    .item3
+      .text
+        h1 手法
+        p 学習： primitive（大きい、象）などの組み合わせのセットにアクセス。これらのprimitiveの各々を線形分類器（w）を学習することによってモデル化。これらの分類器を合成し、その組み合わせの分類器を生成する変換ネットワークを学習。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p 闇雲にデータ数(クラス数)をあげて学習するのではなく、コンテクストの依存性に着目した予測モデルを使用するのはスマート。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.05267.pdf") 論文
+    .slide_index #{getSlideIndex()}

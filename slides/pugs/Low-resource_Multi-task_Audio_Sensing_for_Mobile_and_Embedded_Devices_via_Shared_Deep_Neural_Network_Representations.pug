@@ -1,35 +1,37 @@
-+slide
-  .title Low-resource Multi-task Audio Sensing for Mobile and Embedded Devices via Shared Deep Neural Network Representations
-  .info
-    .authors P. Georgiev et al.,
-    .conference Ubicomp 2017
-  .item1
-    h1 概要
-    .text.
-      複数タスクを共通の層を使って特徴抽出して解くMulti-task Learningにより，
-      少ない消費電力でのオーディオセンシングを実現する手法を提案．
-      Amazon Echoなどのスマートスピーカで音声認識に加えてその他タスクを同時に実行する必要がある．
-      そのような状況で効率的に動くためのDeep Learningの手法を提案している．
-      評価実験では話者認識，感情認識，ストレス認識，環境音認識の4タスクを扱い，
-      タスクごとに独立でやる場合に比べてマルチタスクで処理したときの有用性を評価．
-      マルチタスクにすることで精度を大きく落とすことなく少ない消費電力での認識が可能なことを示した．
-
-  .item2
-    img(src=figpath+"180317_lowenergy.png")
-  .item3
-    h1 新規性・結果
-    .text
-      ul
-        li オーディオ認識系の複数タスクを同時に学習するためのフレームワークを提案
-        li マルチタスクで解くことでの少消費電力での認識を実証
-  .item4
-    h1 自由記述欄
-    .text
-      ul
-        li Session 5: Machine Learning
-        li Multi-taskでやったときの電力消費とかに注目して分析してるのがUbicompっぽい
-        li 技術的なContributionは主張してるけどそこまで大きくないように見える
-      
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Kensho Hara
+﻿+slide
+section#Low-resource_Multi-task_Audio_Sensing_for_Mobile_and_Embedded_Devices_via_Shared_Deep_Neural_Network_Representations
+  .paper-abstract
+    .title Low-resource Multi-task Audio Sensing for Mobile and Embedded Devices via Shared Deep Neural Network Representations
+    .info
+      .authors P. Georgiev et al.,
+      .conference Ubicomp 2017
+    .item1
+      h1 概要
+      .text.
+        複数タスクを共通の層を使って特徴抽出して解くMulti-task Learningにより，
+        少ない消費電力でのオーディオセンシングを実現する手法を提案．
+        Amazon Echoなどのスマートスピーカで音声認識に加えてその他タスクを同時に実行する必要がある．
+        そのような状況で効率的に動くためのDeep Learningの手法を提案している．
+        評価実験では話者認識，感情認識，ストレス認識，環境音認識の4タスクを扱い，
+        タスクごとに独立でやる場合に比べてマルチタスクで処理したときの有用性を評価．
+        マルチタスクにすることで精度を大きく落とすことなく少ない消費電力での認識が可能なことを示した．
+  
+    .item2
+      img(src=figpath+"180317_lowenergy.png")
+    .item3
+      h1 新規性・結果
+      .text
+        ul
+          li オーディオ認識系の複数タスクを同時に学習するためのフレームワークを提案
+          li マルチタスクで解くことでの少消費電力での認識を実証
+    .item4
+      h1 自由記述欄
+      .text
+        ul
+          li Session 5: Machine Learning
+          li Multi-taskでやったときの電力消費とかに注目して分析してるのがUbicompっぽい
+          li 技術的なContributionは主張してるけどそこまで大きくないように見える
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Kensho Hara

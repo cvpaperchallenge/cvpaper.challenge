@@ -1,33 +1,35 @@
-+slide
-  .title One-Shot Visual Imitation Learning via Meta-Learning
-  .info
-    .authors Chelsea Finn*, Tianhe Yu*, Tianhao Zhang, Pieter Abbeel, and Sergey Levine
-    .conference NIPS 2017
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p ワンショットで人間の教示を模倣するロボットのための学習「One-shot Imitation Learning」を提案。人間が物体を把持するなど動作を教示するとロボットが特徴や動作を学習してタスクをこなす様子を学習。Model-Agnostic Meta-Learning（MAML; ICML2017）を応用したモデルを提案し、（VR空間、人間のデモによる）教示から動作を学習する。アーキテクチャはCNNをベースとしてRGB入力から特徴を抽出、中間層（全結合層直前）からロボットの動作やバイアス項を入力してロボットの行動（pre-/post-update）を出力する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180303OneshotImitation.png`,alt="180303OneshotImitation")
-  .item3
-    .text
-      h1 新規性・結果
-      p ロボットの把持タスクをシミュレーション/実空間にておこなった。シミュレーションでは提案法のMILが1ショットで85.81%、5ショットで88.75%（従来法LSTMでは各78.38%, 83.11%）。実空間では90%を実現（従来法LSTM/contextualでは25%）。詳細にはプロジェクトページやプレゼンのビデオを参照。
-  .item4
-    .text
-      h1 コメント・リンク集
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1709.04905.pdf") 論文
-        li
-          a(href="https://sites.google.com/view/one-shot-imitation") Project
-        li
-          a(href="https://github.com/tianheyu927/mil") GitHub
-        li
-          a(href="https://vimeo.com/252186304") Presen
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.3 10:13:42
+﻿+slide
+section#One-Shot_Visual_Imitation_Learning_via_Meta-Learning
+  .paper-abstract
+    .title One-Shot Visual Imitation Learning via Meta-Learning
+    .info
+      .authors Chelsea Finn*, Tianhe Yu*, Tianhao Zhang, Pieter Abbeel, and Sergey Levine
+      .conference NIPS 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p ワンショットで人間の教示を模倣するロボットのための学習「One-shot Imitation Learning」を提案。人間が物体を把持するなど動作を教示するとロボットが特徴や動作を学習してタスクをこなす様子を学習。Model-Agnostic Meta-Learning（MAML; ICML2017）を応用したモデルを提案し、（VR空間、人間のデモによる）教示から動作を学習する。アーキテクチャはCNNをベースとしてRGB入力から特徴を抽出、中間層（全結合層直前）からロボットの動作やバイアス項を入力してロボットの行動（pre-/post-update）を出力する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180303OneshotImitation.png`,alt="180303OneshotImitation")
+    .item3
+      .text
+        h1 新規性・結果
+        p ロボットの把持タスクをシミュレーション/実空間にておこなった。シミュレーションでは提案法のMILが1ショットで85.81%、5ショットで88.75%（従来法LSTMでは各78.38%, 83.11%）。実空間では90%を実現（従来法LSTM/contextualでは25%）。詳細にはプロジェクトページやプレゼンのビデオを参照。
+    .item4
+      .text
+        h1 コメント・リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1709.04905.pdf") 論文
+          li
+            a(href="https://sites.google.com/view/one-shot-imitation") Project
+          li
+            a(href="https://github.com/tianheyu927/mil") GitHub
+          li
+            a(href="https://vimeo.com/252186304") Presen
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.3 10:13:42

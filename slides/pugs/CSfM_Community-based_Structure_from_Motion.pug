@@ -1,28 +1,30 @@
-+slide
-  .title CSfM: Community-based Structure from Motion
-  .info
-    .authors Hainan Cui, Shuhan Shen, Xiang Gao, Zhanyi Hu
-    .conference ICIP 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 頑健性と効率性を考慮した、 Structure-from-Motionアプローチであるcommunity-based SfM(CSfM)の提案。画像をコミュニティにクラスタ化することで、内側が密、外側は疎になるように接続することができる。まず、エピポーラ幾何学グラフを別々のコミュニティに分割し、各コミュニティで並列に再構成処理を行う。そして、新しいグローバル類似度平均法によってマージする。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180331CSfM.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p SfMのアプローチは、次の2つのクラスに大きく分けられる。 (1)インクリメンタル方式は外れ値に対して堅牢だが、誤差の蓄積と計算時の負荷が大きい。 (2)グローバルな方法は、すべてのカメラポーズを同時に推定するという利点があるが、通常、エピポーラ幾何学を算出する際に異常値を生じやすい。これらの、従来のSfMの問題を解決。
-  .item4
-    .text
-      h1 結果・リンク集
-      p 従来のアプローチと比較して、計算効率がよく、類似度や再構成精度、堅牢性の点でも優れている。
-      ul
-        li
-          a(href="https://arxiv.org/abs/1803.08716") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#CSfM_Community-based_Structure_from_Motion
+  .paper-abstract
+    .title CSfM: Community-based Structure from Motion
+    .info
+      .authors Hainan Cui, Shuhan Shen, Xiang Gao, Zhanyi Hu
+      .conference ICIP 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 頑健性と効率性を考慮した、 Structure-from-Motionアプローチであるcommunity-based SfM(CSfM)の提案。画像をコミュニティにクラスタ化することで、内側が密、外側は疎になるように接続することができる。まず、エピポーラ幾何学グラフを別々のコミュニティに分割し、各コミュニティで並列に再構成処理を行う。そして、新しいグローバル類似度平均法によってマージする。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180331CSfM.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p SfMのアプローチは、次の2つのクラスに大きく分けられる。 (1)インクリメンタル方式は外れ値に対して堅牢だが、誤差の蓄積と計算時の負荷が大きい。 (2)グローバルな方法は、すべてのカメラポーズを同時に推定するという利点があるが、通常、エピポーラ幾何学を算出する際に異常値を生じやすい。これらの、従来のSfMの問題を解決。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 従来のアプローチと比較して、計算効率がよく、類似度や再構成精度、堅牢性の点でも優れている。
+        ul
+          li
+            a(href="https://arxiv.org/abs/1803.08716") 論文
+    .slide_index #{getSlideIndex()}
+    

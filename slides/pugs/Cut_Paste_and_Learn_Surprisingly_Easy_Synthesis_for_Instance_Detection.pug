@@ -1,30 +1,32 @@
-+slide
-  .title Cut, Paste and Learn: Surprisingly Easy Synthesis for Instance Detection
-  .info
-    .authors Debidatta Dwibedi, Ishan Misra, Martial Hebert
-    .conference ICCV 2017
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p タイトルの通り、Cut, Paste and Learn（物体の切り抜き、任意画像への埋め込みにより物体検出の学習を実行）により自動アノテーションを行い、学習画像を大量に生成することに成功。ここで問題になるのは切り抜いた物体と画像埋め込みの際のアーティファクト（artifact）であり、自然な埋め込みのみならずアーティファクトを無視して学習する手法を提案した。CutのフェーズではFully-Convolutional Networks (FCN)を用いてセグメンテーションを実行するがさらに後処理にて境界線を綺麗にした。PasteのフェーズではGaussian/Poisson Blendingによりアーティファクトをできる限り削減した状態で背景画像に対して埋め込みを行う。データ拡張についても、2次元3次元の回転、オクルージョンなど行う。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180308CutPasteLearn.png`,alt="180308CutPasteLearn")
-  .item3
-    .text
-      h1 新規性・結果
-      p Blendingにおいては{なし, Gaussian, Poisson}の全てを混ぜる手法が最もよくオリジナル画像のみと比較して8AP向上。データ拡張についても全ての拡張{2D rotation, 3D rotation, Truncation, Occlusion, Distractor}を行う拡張が最も良かった。ベンチマークに対して相対的に21%の向上が見られた。クロスドメインの学習においても10%の向上が見られたと報告。
-  .item4
-    .text
-      h1 コメント・リンク集
-      p セグメンテーション・ブレンディングを用いることで実画像からデータを増やすことができることがわかった。今後はCGのみでなく実画像からのデータ合成も一般的になると考えられる。
-      ul
-        li
-          a(href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Dwibedi_Cut_Paste_and_ICCV_2017_paper.pdf") 論文
-        li
-          a(href="https://github.com/debidatta/syndata-generation") GitHub
-  .slide_index #{getSlideIndex()}
-  .timestamp 2018.3.8 11:04:00
+﻿+slide
+section#Cut_Paste_and_Learn_Surprisingly_Easy_Synthesis_for_Instance_Detection
+  .paper-abstract
+    .title Cut, Paste and Learn: Surprisingly Easy Synthesis for Instance Detection
+    .info
+      .authors Debidatta Dwibedi, Ishan Misra, Martial Hebert
+      .conference ICCV 2017
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p タイトルの通り、Cut, Paste and Learn（物体の切り抜き、任意画像への埋め込みにより物体検出の学習を実行）により自動アノテーションを行い、学習画像を大量に生成することに成功。ここで問題になるのは切り抜いた物体と画像埋め込みの際のアーティファクト（artifact）であり、自然な埋め込みのみならずアーティファクトを無視して学習する手法を提案した。CutのフェーズではFully-Convolutional Networks (FCN)を用いてセグメンテーションを実行するがさらに後処理にて境界線を綺麗にした。PasteのフェーズではGaussian/Poisson Blendingによりアーティファクトをできる限り削減した状態で背景画像に対して埋め込みを行う。データ拡張についても、2次元3次元の回転、オクルージョンなど行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180308CutPasteLearn.png`,alt="180308CutPasteLearn")
+    .item3
+      .text
+        h1 新規性・結果
+        p Blendingにおいては{なし, Gaussian, Poisson}の全てを混ぜる手法が最もよくオリジナル画像のみと比較して8AP向上。データ拡張についても全ての拡張{2D rotation, 3D rotation, Truncation, Occlusion, Distractor}を行う拡張が最も良かった。ベンチマークに対して相対的に21%の向上が見られた。クロスドメインの学習においても10%の向上が見られたと報告。
+    .item4
+      .text
+        h1 コメント・リンク集
+        p セグメンテーション・ブレンディングを用いることで実画像からデータを増やすことができることがわかった。今後はCGのみでなく実画像からのデータ合成も一般的になると考えられる。
+        ul
+          li
+            a(href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Dwibedi_Cut_Paste_and_ICCV_2017_paper.pdf") 論文
+          li
+            a(href="https://github.com/debidatta/syndata-generation") GitHub
+    .slide_index #{getSlideIndex()}
+    .timestamp 2018.3.8 11:04:00

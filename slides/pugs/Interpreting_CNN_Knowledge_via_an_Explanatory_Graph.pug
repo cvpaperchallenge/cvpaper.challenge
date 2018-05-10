@@ -1,29 +1,31 @@
-+slide
-  .title Interpreting CNN Knowledge via an Explanatory Graph
-  .info
-    .authors Q. Zhang, et al.
-    .conference AAAI 2018
-  .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
-
-  .item1
-    .text
-      h1 概要
-      p 深層学習の解釈性に関する論文であり、畳み込み層の特徴マップの応答を外的に解析して対応する反応を可視化。
-        |畳み込みの各フィルタが異なる部位（e.g. 馬の耳や目）に反応するので、グラフにより解析して元画像の対象位置にアクセス。
-
-  .item2
-    .text
-      p
-        img(src=`${figpath}180301interpretability.png`,alt="180301interpretability.png")
-  .item3
-    .text
-      h1 新規性・結果
-      p Ground-truthなしに各部位に関する解釈性を与えたことが新規性である。
-        |図に示すように入力画像に対するパーツごとの解析をフィルタの反応やグラフの解析から可視化することができる。
-        |さらに、異なる画像間においても一貫性のある反応を得ることができた。
-  .item4
-    .text
-      h1 自由記述欄
-      p 深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。
-        |さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Interpreting_CNN_Knowledge_via_an_Explanatory_Graph
+  .paper-abstract
+    .title Interpreting CNN Knowledge via an Explanatory Graph
+    .info
+      .authors Q. Zhang, et al.
+      .conference AAAI 2018
+    .slide_editor: a(href="http://hirokatsukataoka.net/" target="blank") Hirokatsu Kataoka
+  
+    .item1
+      .text
+        h1 概要
+        p 深層学習の解釈性に関する論文であり、畳み込み層の特徴マップの応答を外的に解析して対応する反応を可視化。
+          |畳み込みの各フィルタが異なる部位（e.g. 馬の耳や目）に反応するので、グラフにより解析して元画像の対象位置にアクセス。
+  
+    .item2
+      .text
+        p
+          img(src=`${figpath}180301interpretability.png`,alt="180301interpretability.png")
+    .item3
+      .text
+        h1 新規性・結果
+        p Ground-truthなしに各部位に関する解釈性を与えたことが新規性である。
+          |図に示すように入力画像に対するパーツごとの解析をフィルタの反応やグラフの解析から可視化することができる。
+          |さらに、異なる画像間においても一貫性のある反応を得ることができた。
+    .item4
+      .text
+        h1 自由記述欄
+        p 深層学習は教師なしによる解釈性を獲得しているが、まだ反応している部分の可視化や部分ごとの解析が進んでいるにすぎない。
+          |さらなる発展のためには、言語的な解釈や人間にわかりやすい加工（イラストとか？）が必要になるのではないだろうか。
+    .slide_index #{getSlideIndex()}

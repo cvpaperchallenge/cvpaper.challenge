@@ -1,29 +1,31 @@
-+slide
-  .title Unsupervised Visual-Linguistic Reference Resolution in Instructional Videos
-  .info
-    .authors De-An Huang, el al.
-    .conference CVPR 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 解説動画(お料理動画)におけるアクションとエンティティ間をリンクさせる教師なし学習を提案。グラフ表現によって、言語および視覚的モデルを共有することで、ビデオ内の視覚的・言語的曖昧さを回避する。映像中の作業に対して、言語と動画の2つのワークフローを出力し、最適化を施す。WhatsCookinデータセットより、2000の字幕付き動画を使用。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180308VisualLinguistic.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p 曖昧さ回避
-      p 図は、動画中の曖昧なアクションとエンティティを示す。(c)の場合、3つ目のフレームで“ドレッシングを加える”とあるが、果たしてどのドレッシングなのか？というあいまいさが生じる。この場合のドレッシングはヨーグルトを混ぜたものになる。つまり、“ドレッシング”をエンティティ、“混ぜる”をアクションとしてこの2つをリンクさせる。
-  .item4
-    .text
-      h1 結果・リンク集
-      p 過去のシーンを参照することで、動画と文字列の位置合わせに有効。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1703.02521.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Unsupervised_Visual-Linguistic_Reference_Resolution_in_Instructional_Videos
+  .paper-abstract
+    .title Unsupervised Visual-Linguistic Reference Resolution in Instructional Videos
+    .info
+      .authors De-An Huang, el al.
+      .conference CVPR 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 解説動画(お料理動画)におけるアクションとエンティティ間をリンクさせる教師なし学習を提案。グラフ表現によって、言語および視覚的モデルを共有することで、ビデオ内の視覚的・言語的曖昧さを回避する。映像中の作業に対して、言語と動画の2つのワークフローを出力し、最適化を施す。WhatsCookinデータセットより、2000の字幕付き動画を使用。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180308VisualLinguistic.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p 曖昧さ回避
+        p 図は、動画中の曖昧なアクションとエンティティを示す。(c)の場合、3つ目のフレームで“ドレッシングを加える”とあるが、果たしてどのドレッシングなのか？というあいまいさが生じる。この場合のドレッシングはヨーグルトを混ぜたものになる。つまり、“ドレッシング”をエンティティ、“混ぜる”をアクションとしてこの2つをリンクさせる。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 過去のシーンを参照することで、動画と文字列の位置合わせに有効。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1703.02521.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    

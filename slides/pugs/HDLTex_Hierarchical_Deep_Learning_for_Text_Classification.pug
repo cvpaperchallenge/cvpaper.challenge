@@ -1,30 +1,32 @@
-+slide
-  .title HDLTex: Hierarchical Deep Learning for Text Classification
-  .info
-    .authors Kamran Kowsari, et al.
-    .conference ICMLA 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p テキスト分類のためのDNNアプローチで階層的分類を行うHierarchical Deep Learning for Text classification (HDLTex)の提案。第1段階の分類(図の左側)がDNN。第2段階の分類は、1段階目の出力と接続されている。1段階目の出力がComputer Scienceの場合、2段階目(Ψ1)は全てComputer Scienceの文章のみで学習する。よって、1段階目は全ての出離の文章、2段階目は指定された文章のみで学習する。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180401HDLTex.jpg`)
-  .item3
-    .text
-      h1 新規性
-      p テキストの検索や整理のための情報処理方法の改善が必要となっており、文書分類が重要。従来の分類器の性能は、文書の数が増えるにつれて低下傾向にあり、これはカテゴリ数が増加したためだと指摘。そこで、この問題を多クラス分類と見なす従来の文書分類方法とは異なるアプローチを提案。
-  .item4
-    .text
-      h1 結果・リンク集
-      p Web of Scienceから入手したドキュメントのデータセットでテスト。高レベルRNNと低レベルDNNまたはCNNの組み合わせが、naïïveBayesまたはSVMを使用する従来のアプローチよりも高精度。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1709.08267.pdf") 論文
-        li
-          a(href="https://github.com/kk7nc/HDLTex") ソースコード
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#HDLTex_Hierarchical_Deep_Learning_for_Text_Classification
+  .paper-abstract
+    .title HDLTex: Hierarchical Deep Learning for Text Classification
+    .info
+      .authors Kamran Kowsari, et al.
+      .conference ICMLA 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p テキスト分類のためのDNNアプローチで階層的分類を行うHierarchical Deep Learning for Text classification (HDLTex)の提案。第1段階の分類(図の左側)がDNN。第2段階の分類は、1段階目の出力と接続されている。1段階目の出力がComputer Scienceの場合、2段階目(Ψ1)は全てComputer Scienceの文章のみで学習する。よって、1段階目は全ての出離の文章、2段階目は指定された文章のみで学習する。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180401HDLTex.jpg`)
+    .item3
+      .text
+        h1 新規性
+        p テキストの検索や整理のための情報処理方法の改善が必要となっており、文書分類が重要。従来の分類器の性能は、文書の数が増えるにつれて低下傾向にあり、これはカテゴリ数が増加したためだと指摘。そこで、この問題を多クラス分類と見なす従来の文書分類方法とは異なるアプローチを提案。
+    .item4
+      .text
+        h1 結果・リンク集
+        p Web of Scienceから入手したドキュメントのデータセットでテスト。高レベルRNNと低レベルDNNまたはCNNの組み合わせが、naïïveBayesまたはSVMを使用する従来のアプローチよりも高精度。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1709.08267.pdf") 論文
+          li
+            a(href="https://github.com/kk7nc/HDLTex") ソースコード
+    .slide_index #{getSlideIndex()}
+    

@@ -1,36 +1,38 @@
-+slide
-  .title Colorful Image Colorization
-  .info
-    .authors Richard Zhang, Phillip Isola, Alexei A. Efros 
-    .conference ECCV 2016
-  .item1
-    h1 概要
-    .text.
-      グレースケール画像への色づけ、およびそれに伴う表現学習手法。
-      MSEやMAEでの単純なカラー画像回帰はその平均的な色へ収束するため、彩度が低い画像になりやすい。
-      そこで色の出現頻度に応じた損失重み、分布を再現する出力、Lab空間での処理を行うことで高い彩度を実現し、
-      チューリングテストでSoTA。表現学習でも特にsegmentationで高い性能を発揮した。
-
-  .item2
-    img(src=figpath+"colorful_image.png")
-  .item3
-    h1 手法
-    .text.
-      分布としての出力を行うために、Lab空間を313に分割し、単純に画素値を出力させるのではなく識別問題とする。
-      また、出力された分布から最終的な色を決めるとき、最頻値や平均をとるなど複数の手段が考えられるが、今回はアニーリングをした後、
-      その分布の平均を取っている。アニーリングで平均に近づくほど彩度が失われるが、最頻値に近づくほど空間的整合性が失われる。
-
-  .item4
-    h1 自由記述欄
-    .text
-      h1 コメント・リンク
-      p
-      |おそらく今のSoTAはGANベースだが、出力値の分布化や、アニーリングによる連続的なトレードオフの考慮は興味深い。
-      
-      ul
-        li
-          a(href="https://arxiv.org/abs/1603.08511") 論文
-      
-  .slide_index
-    | #{getSlideIndex()}
-  .slide_editor Tomoyuki Suzuki
+﻿+slide
+section#Colorful_Image_Colorization
+  .paper-abstract
+    .title Colorful Image Colorization
+    .info
+      .authors Richard Zhang, Phillip Isola, Alexei A. Efros 
+      .conference ECCV 2016
+    .item1
+      h1 概要
+      .text.
+        グレースケール画像への色づけ、およびそれに伴う表現学習手法。
+        MSEやMAEでの単純なカラー画像回帰はその平均的な色へ収束するため、彩度が低い画像になりやすい。
+        そこで色の出現頻度に応じた損失重み、分布を再現する出力、Lab空間での処理を行うことで高い彩度を実現し、
+        チューリングテストでSoTA。表現学習でも特にsegmentationで高い性能を発揮した。
+  
+    .item2
+      img(src=figpath+"colorful_image.png")
+    .item3
+      h1 手法
+      .text.
+        分布としての出力を行うために、Lab空間を313に分割し、単純に画素値を出力させるのではなく識別問題とする。
+        また、出力された分布から最終的な色を決めるとき、最頻値や平均をとるなど複数の手段が考えられるが、今回はアニーリングをした後、
+        その分布の平均を取っている。アニーリングで平均に近づくほど彩度が失われるが、最頻値に近づくほど空間的整合性が失われる。
+  
+    .item4
+      h1 自由記述欄
+      .text
+        h1 コメント・リンク
+        p
+        |おそらく今のSoTAはGANベースだが、出力値の分布化や、アニーリングによる連続的なトレードオフの考慮は興味深い。
+        
+        ul
+          li
+            a(href="https://arxiv.org/abs/1603.08511") 論文
+        
+    .slide_index
+      | #{getSlideIndex()}
+    .slide_editor Tomoyuki Suzuki

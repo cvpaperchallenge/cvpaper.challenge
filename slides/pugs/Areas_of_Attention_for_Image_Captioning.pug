@@ -1,29 +1,31 @@
-+slide
-  .title Areas of Attention for Image Captioning
-  .info
-    .authors Marco Pedersoli, et al.
-    .conference ICCV 2017
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p 画像キャプショニングのための、アテンションベースモデルであるAreas of Attentionの提案。画像領域、キャプションワード、RNNの状態の間の依存関係をモデル化。従来の画像領域のみをRNN状態に関連付けるモデルとは異なり、キャプションワードと画像領域との間の直接的な関連付けを行う。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180310AreasOfAttention.jpg`)
-  .item3
-    .text
-      h1 新規性・手法
-      p CNN-RNNをベースラインとする。RNNの状態が与えられたときに、次の単語と対応する領域を各タイムステップで共同して予測するアテンションメカニズム。
-  .item4
-    .text
-      h1 リンク集
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1612.01033.pdf") 論文
-        li
-          a(href="https://github.com/marcopede/AreasOfAttention") ソースコード
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Areas_of_Attention_for_Image_Captioning
+  .paper-abstract
+    .title Areas of Attention for Image Captioning
+    .info
+      .authors Marco Pedersoli, et al.
+      .conference ICCV 2017
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p 画像キャプショニングのための、アテンションベースモデルであるAreas of Attentionの提案。画像領域、キャプションワード、RNNの状態の間の依存関係をモデル化。従来の画像領域のみをRNN状態に関連付けるモデルとは異なり、キャプションワードと画像領域との間の直接的な関連付けを行う。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310AreasOfAttention.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p CNN-RNNをベースラインとする。RNNの状態が与えられたときに、次の単語と対応する領域を各タイムステップで共同して予測するアテンションメカニズム。
+    .item4
+      .text
+        h1 リンク集
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1612.01033.pdf") 論文
+          li
+            a(href="https://github.com/marcopede/AreasOfAttention") ソースコード
+    .slide_index #{getSlideIndex()}
+    

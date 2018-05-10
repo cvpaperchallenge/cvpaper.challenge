@@ -1,30 +1,32 @@
-+slide
-  .title Boosting Image Captioning with Attributes
-  .info
-    .authors Ting Yao, et al.
-    .conference ICCV 2016
-  .slide_editor Munetaka Minoguchi
-
-  .item1
-    .text
-      h1 概要
-      p CNN-RNNのキャプション生成モデルに、属性推定を追加したLong Short-Term Memory with Attributes(LSTM-A)を提案。属性間の相関を、 Multiple Instance Learning(MIL)で統合することにより、属性間相関を探索し、文章生成。
-  .item2
-    .text
-      p
-        img(src=`${figpath}180310LSTMA.jpg`)
-  .item3
-    .text
-      h1 新規性・手法
-      p LSTM-Aの5つの変種について研究。
-      p 3つのモデルは属性をどこに追加するか：LSTM-A1は属性のみを利用、LSTM-A2は最初に画像表現を挿入する、LSTM-A3は最初に属性を供給。
-      p 2つのモデルはLSTMに属性や画像表現をどのタイミングで入力するか： LSTMA4は各時間ステップでの画像表現の入力、LSTM-A5は各時間ステップでの属性の入力。
-  .item4
-    .text
-      h1 結果・リンク集
-      p 属性推定を追加することでキャプションのパフォーマンスの向上。
-      ul
-        li
-          a(href="https://arxiv.org/pdf/1611.01646.pdf") 論文
-  .slide_index #{getSlideIndex()}
+﻿+slide
+section#Boosting_Image_Captioning_with_Attributes
+  .paper-abstract
+    .title Boosting Image Captioning with Attributes
+    .info
+      .authors Ting Yao, et al.
+      .conference ICCV 2016
+    .slide_editor Munetaka Minoguchi
   
+    .item1
+      .text
+        h1 概要
+        p CNN-RNNのキャプション生成モデルに、属性推定を追加したLong Short-Term Memory with Attributes(LSTM-A)を提案。属性間の相関を、 Multiple Instance Learning(MIL)で統合することにより、属性間相関を探索し、文章生成。
+    .item2
+      .text
+        p
+          img(src=`${figpath}180310LSTMA.jpg`)
+    .item3
+      .text
+        h1 新規性・手法
+        p LSTM-Aの5つの変種について研究。
+        p 3つのモデルは属性をどこに追加するか：LSTM-A1は属性のみを利用、LSTM-A2は最初に画像表現を挿入する、LSTM-A3は最初に属性を供給。
+        p 2つのモデルはLSTMに属性や画像表現をどのタイミングで入力するか： LSTMA4は各時間ステップでの画像表現の入力、LSTM-A5は各時間ステップでの属性の入力。
+    .item4
+      .text
+        h1 結果・リンク集
+        p 属性推定を追加することでキャプションのパフォーマンスの向上。
+        ul
+          li
+            a(href="https://arxiv.org/pdf/1611.01646.pdf") 論文
+    .slide_index #{getSlideIndex()}
+    
