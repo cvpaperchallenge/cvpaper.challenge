@@ -14,27 +14,27 @@ linked to summary slide pages and formal CVPR pages.
 スライドページおよびCVPRの公式ページにリンクを貼っています。
 スライドがないものも含め、CVPRの全ての論文の一覧です。
 
-- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)
+- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)>
 
     - Abhishek Das, Samyak Datta, Georgia Gkioxari, Stefan Lee, Devi Parikh, Dhruv Batra
 
 
-- [Learning by Asking Questions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-local_Neural_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Misra_Learning_by_Asking_CVPR_2018_paper.html)
+- [Learning by Asking Questions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-local_Neural_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Misra_Learning_by_Asking_CVPR_2018_paper.html)>
 
     - Ishan Misra, Ross Girshick, Rob Fergus, Martial Hebert, Abhinav Gupta, Laurens van der Maaten
 
 
-- [Finding Tiny Faces in the Wild With Generative Adversarial Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_Tiny_Faces_in_the_Wild_with_Generative_Adversarial_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Finding_Tiny_Faces_CVPR_2018_paper.html)
+- [Finding Tiny Faces in the Wild With Generative Adversarial Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_Tiny_Faces_in_the_Wild_with_Generative_Adversarial_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Finding_Tiny_Faces_CVPR_2018_paper.html)>
 
     - Yancheng Bai, Yongqiang Zhang, Mingli Ding, Bernard Ghanem
 
 
-- [Learning Face Age Progression: A Pyramid Architecture of GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Face_Age_Progression_A_Pyramid_Architecture_of_GANs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Learning_Face_Age_CVPR_2018_paper.html)
+- [Learning Face Age Progression: A Pyramid Architecture of GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Face_Age_Progression_A_Pyramid_Architecture_of_GANs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Learning_Face_Age_CVPR_2018_paper.html)>
 
     - Hongyu Yang, Di Huang, Yunhong Wang, Anil K. Jain
 
 
-- [PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PairedCycleGAN_Asymmetric_Style_Transfer_for_Applying_and_Removing_Makeup)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_PairedCycleGAN_Asymmetric_Style_CVPR_2018_paper.html)
+- [PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PairedCycleGAN_Asymmetric_Style_Transfer_for_Applying_and_Removing_Makeup)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_PairedCycleGAN_Asymmetric_Style_CVPR_2018_paper.html)>
 
     - Huiwen Chang, Jingwan Lu, Fisher Yu, Adam Finkelstein
 
@@ -64,7 +64,7 @@ linked to summary slide pages and formal CVPR pages.
     - Adrian Spurr, Jie Song, Seonwook Park, Otmar Hilliges
 
 
-- [Disentangled Person Image Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Conditional_Image-to-Image_Translation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Disentangled_Person_Image_CVPR_2018_paper.html)
+- [Disentangled Person Image Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Conditional_Image-to-Image_Translation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Disentangled_Person_Image_CVPR_2018_paper.html)>
 
     - Liqian Ma, Qianru Sun, Stamatios Georgoulis, Luc Van Gool, Bernt Schiele, Mario Fritz
 
@@ -94,7 +94,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jesus Briales, Laurent Kneip, Javier Gonzalez-Jimenez
 
 
-- [Single View Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Learning_of_Graph_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Luo_Single_View_Stereo_CVPR_2018_paper.html)
+- [Single View Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Learning_of_Graph_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Luo_Single_View_Stereo_CVPR_2018_paper.html)>
 
     - Yue Luo, Jimmy Ren, Mude Lin, Jiahao Pang, Wenxiu Sun, Hongsheng Li, Liang Lin
 
@@ -114,7 +114,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tan Yu, Jingjing Meng, Junsong Yuan
 
 
-- [PPFNet: Global Context Aware Local Features for Robust 3D Point Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PPFNet_Global_Context_Aware_Local_Features_for_Robust_3D_Point_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_PPFNet_Global_Context_CVPR_2018_paper.html)
+- [PPFNet: Global Context Aware Local Features for Robust 3D Point Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PPFNet_Global_Context_Aware_Local_Features_for_Robust_3D_Point_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_PPFNet_Global_Context_CVPR_2018_paper.html)>
 
     - Haowen Deng, Tolga Birdal, Slobodan Ilic
 
@@ -129,17 +129,17 @@ linked to summary slide pages and formal CVPR pages.
     - Thibault Groueix, Matthew Fisher, Vladimir G. Kim, Bryan C. Russell, Mathieu Aubry
 
 
-- [LEGO: Learning Edge With Geometry All at Once by Watching Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LEGO_Learning_Edge_with_Geometry_all_at_Once_by_Watching_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_LEGO_Learning_Edge_CVPR_2018_paper.html)
+- [LEGO: Learning Edge With Geometry All at Once by Watching Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LEGO_Learning_Edge_with_Geometry_all_at_Once_by_Watching_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_LEGO_Learning_Edge_CVPR_2018_paper.html)>
 
     - Zhenheng Yang, Peng Wang, Yang Wang, Wei Xu, Ram Nevatia
 
 
-- [Five-Point Fundamental Matrix Estimation for Uncalibrated Cameras](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Five-point_Fundamental_Matrix_Estimation_for_Uncalibrated_Cameras)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Barath_Five-Point_Fundamental_Matrix_CVPR_2018_paper.html)
+- [Five-Point Fundamental Matrix Estimation for Uncalibrated Cameras](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Five-point_Fundamental_Matrix_Estimation_for_Uncalibrated_Cameras)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Barath_Five-Point_Fundamental_Matrix_CVPR_2018_paper.html)>
 
     - Daniel Barath
 
 
-- [PointFusion: Deep Sensor Fusion for 3D Bounding Box Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PointFusion_Deep_Sensor_Fusion_for_3D_Bounding_Box_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_PointFusion_Deep_Sensor_CVPR_2018_paper.html)
+- [PointFusion: Deep Sensor Fusion for 3D Bounding Box Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PointFusion_Deep_Sensor_Fusion_for_3D_Bounding_Box_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_PointFusion_Deep_Sensor_CVPR_2018_paper.html)>
 
     - Danfei Xu, Dragomir Anguelov, Ashesh Jain
 
@@ -199,12 +199,12 @@ linked to summary slide pages and formal CVPR pages.
     - Rohit Girdhar, Georgia Gkioxari, Lorenzo Torresani, Manohar Paluri, Du Tran
 
 
-- [Supervision-by-Registration: An Unsupervised Approach to Improve the Precision of Facial Landmark Detectors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Supervision-by-Registration_An_Unsupervised_Approach_to_Improve_the_Precision_of_Facial_Landmark_Detectors)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Dong_Supervision-by-Registration_An_Unsupervised_CVPR_2018_paper.html)
+- [Supervision-by-Registration: An Unsupervised Approach to Improve the Precision of Facial Landmark Detectors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Supervision-by-Registration_An_Unsupervised_Approach_to_Improve_the_Precision_of_Facial_Landmark_Detectors)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Dong_Supervision-by-Registration_An_Unsupervised_CVPR_2018_paper.html)>
 
     - Xuanyi Dong, Shoou-I Yu, Xinshuo Weng, Shih-En Wei, Yi Yang, Yaser Sheikh
 
 
-- [Diversity Regularized Spatiotemporal Attention for Video-Based Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Diversity_Regularized_Spatiotemporal_Attention_for_Video-based_Person_Re-identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Diversity_Regularized_Spatiotemporal_CVPR_2018_paper.html)
+- [Diversity Regularized Spatiotemporal Attention for Video-Based Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Diversity_Regularized_Spatiotemporal_Attention_for_Video-based_Person_Re-identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Diversity_Regularized_Spatiotemporal_CVPR_2018_paper.html)>
 
     - Shuang Li, Slawomir Bak, Peter Carr, Xiaogang Wang
 
@@ -214,17 +214,17 @@ linked to summary slide pages and formal CVPR pages.
     - Xuanyi Dong, Yan Yan, Wanli Ouyang, Yi Yang
 
 
-- [Learning Deep Models for Face Anti-Spoofing: Binary or Auxiliary Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Deep_Models_for_Face_Anti-Spoofing)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Learning_Deep_Models_CVPR_2018_paper.html)
+- [Learning Deep Models for Face Anti-Spoofing: Binary or Auxiliary Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Deep_Models_for_Face_Anti-Spoofing)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Learning_Deep_Models_CVPR_2018_paper.html)>
 
     - Yaojie Liu, Amin Jourabloo, Xiaoming Liu
 
 
-- [Deep Cost-Sensitive and Order-Preserving Feature Learning for Cross-Population Age Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Cost-Sensitive_and_Order-Preserving_Feature_Learning_for_Cross-Population_Age_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Deep_Cost-Sensitive_and_CVPR_2018_paper.html)
+- [Deep Cost-Sensitive and Order-Preserving Feature Learning for Cross-Population Age Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Cost-Sensitive_and_Order-Preserving_Feature_Learning_for_Cross-Population_Age_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Deep_Cost-Sensitive_and_CVPR_2018_paper.html)>
 
     - Kai Li, Junliang Xing, Chi Su, Weiming Hu, Yundong Zhang, Stephen Maybank
 
 
-- [First-Person Hand Action Benchmark With RGB-D Videos and 3D Hand Pose Annotations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_First-Person_Hand_Action_Benchmark_with_RGB-D_Videos_and_3D_Hand_Pose_Annotations)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html)
+- [First-Person Hand Action Benchmark With RGB-D Videos and 3D Hand Pose Annotations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_First-Person_Hand_Action_Benchmark_with_RGB-D_Videos_and_3D_Hand_Pose_Annotations)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html)>
 
     - Guillermo Garcia-Hernando, Shanxin Yuan, Seungryul Baek, Tae-Kyun Kim
 
@@ -234,12 +234,12 @@ linked to summary slide pages and formal CVPR pages.
     - M. Saquib Sarfraz, Arne Schumann, Andreas Eberle, Rainer Stiefelhagen
 
 
-- [Disentangling 3D Pose in a Dendritic CNN for Unconstrained 2D Face Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Disentangling_3D_Pose_in_A_Dendritic_CNN_for_Unconstrained_2D_Face_Alignment)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kumar_Disentangling_3D_Pose_CVPR_2018_paper.html)
+- [Disentangling 3D Pose in a Dendritic CNN for Unconstrained 2D Face Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Disentangling_3D_Pose_in_A_Dendritic_CNN_for_Unconstrained_2D_Face_Alignment)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kumar_Disentangling_3D_Pose_CVPR_2018_paper.html)>
 
     - Amit Kumar, Rama Chellappa
 
 
-- [A Hierarchical Generative Model for Eye Image Synthesis and Eye Gaze Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Hierarchical_Generative_Model_for_Eye_Image_Synthesis_and_Eye_Gaze_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_A_Hierarchical_Generative_CVPR_2018_paper.html)
+- [A Hierarchical Generative Model for Eye Image Synthesis and Eye Gaze Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Hierarchical_Generative_Model_for_Eye_Image_Synthesis_and_Eye_Gaze_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_A_Hierarchical_Generative_CVPR_2018_paper.html)>
 
     - Kang Wang, Rui Zhao, Qiang Ji
 
@@ -249,12 +249,12 @@ linked to summary slide pages and formal CVPR pages.
     - Yizhou Zhou, Xiaoyan Sun, Zheng-Jun Zha, Wenjun Zeng
 
 
-- [Learning to Estimate 3D Human Pose and Shape From a Single Color Image](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Estimate_3D_Human_Pose_and_Shape_from_a_Single_Color_Image)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Pavlakos_Learning_to_Estimate_CVPR_2018_paper.html)
+- [Learning to Estimate 3D Human Pose and Shape From a Single Color Image](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Estimate_3D_Human_Pose_and_Shape_from_a_Single_Color_Image)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Pavlakos_Learning_to_Estimate_CVPR_2018_paper.html)>
 
     - Georgios Pavlakos, Luyang Zhu, Xiaowei Zhou, Kostas Daniilidis
 
 
-- [Glimpse Clouds: Human Activity Recognition From Unstructured Feature Points](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Glimpse_Clouds_Human_Activity_Recognition_from_Unstructured_Feature_Points)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Baradel_Glimpse_Clouds_Human_CVPR_2018_paper.html)
+- [Glimpse Clouds: Human Activity Recognition From Unstructured Feature Points](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Glimpse_Clouds_Human_Activity_Recognition_from_Unstructured_Feature_Points)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Baradel_Glimpse_Clouds_Human_CVPR_2018_paper.html)>
 
     - Fabien Baradel, Christian Wolf, Julien Mille, Graham W. Taylor
 
@@ -284,7 +284,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xingping Dong, Jianbing Shen, Wenguan Wang, Yu Liu, Ling Shao, Fatih Porikli
 
 
-- [Scale-Transferrable Object Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Relation_Networks_for_Object_Detection)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Scale-Transferrable_Object_Detection_CVPR_2018_paper.html)
+- [Scale-Transferrable Object Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Relation_Networks_for_Object_Detection)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Scale-Transferrable_Object_Detection_CVPR_2018_paper.html)>
 
     - Peng Zhou, Bingbing Ni, Cong Geng, Jianguo Hu, Yi Xu
 
@@ -299,7 +299,7 @@ linked to summary slide pages and formal CVPR pages.
     - Zheng Zhu, Wei Wu, Wei Zou, Junjie Yan
 
 
-- [Deep Texture Manifold for Ground Terrain Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Texture_Manifold_for_Ground_Terrain_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xue_Deep_Texture_Manifold_CVPR_2018_paper.html)
+- [Deep Texture Manifold for Ground Terrain Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Texture_Manifold_for_Ground_Terrain_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xue_Deep_Texture_Manifold_CVPR_2018_paper.html)>
 
     - Jia Xue, Hang Zhang, Kristin Dana
 
@@ -314,12 +314,12 @@ linked to summary slide pages and formal CVPR pages.
     - Zhuwen Li, Qifeng Chen, Vladlen Koltun
 
 
-- [The Unreasonable Effectiveness of Deep Features as a Perceptual Metric](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_The_Unreasonable_Effectiveness_of_Deep_Features_as_a_Perceptual_Metric)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html)
+- [The Unreasonable Effectiveness of Deep Features as a Perceptual Metric](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_The_Unreasonable_Effectiveness_of_Deep_Features_as_a_Perceptual_Metric)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html)>
 
     - Richard Zhang, Phillip Isola, Alexei A. Efros, Eli Shechtman, Oliver Wang
 
 
-- [Local Descriptors Optimized for Average Precision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Local_Descriptors_Optimized_for_Average_Precision)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Local_Descriptors_Optimized_CVPR_2018_paper.html)
+- [Local Descriptors Optimized for Average Precision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Local_Descriptors_Optimized_for_Average_Precision)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Local_Descriptors_Optimized_CVPR_2018_paper.html)>
 
     - Kun He, Yan Lu, Stan Sclaroff
 
@@ -329,37 +329,37 @@ linked to summary slide pages and formal CVPR pages.
     - Xintao Wang, Ke Yu, Chao Dong, Chen Change Loy
 
 
-- [Deep Extreme Cut: From Extreme Points to Object Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Extreme_Cut_From_Extreme_Points_to_Object_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Maninis_Deep_Extreme_Cut_CVPR_2018_paper.html)
+- [Deep Extreme Cut: From Extreme Points to Object Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Extreme_Cut_From_Extreme_Points_to_Object_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Maninis_Deep_Extreme_Cut_CVPR_2018_paper.html)>
 
     - Kevis-Kokitsi Maninis, Sergi Caelles, Jordi Pont-Tuset, Luc Van Gool
 
 
-- [Learning to Parse Wireframes in Images of Man-Made Environments](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Parse_Wireframes_in_Images_of_Man-Made_Environments)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_Learning_to_Parse_CVPR_2018_paper.html)
+- [Learning to Parse Wireframes in Images of Man-Made Environments](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Parse_Wireframes_in_Images_of_Man-Made_Environments)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_Learning_to_Parse_CVPR_2018_paper.html)>
 
     - Kun Huang, Yifan Wang, Zihan Zhou, Tianjiao Ding, Shenghua Gao, Yi Ma
 
 
-- [Occlusion-Aware Rolling Shutter Rectification of 3D Scenes](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Occlusion-Aware_Rolling_Shutter_Rectification_of_3D_Scenes)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Vasu_Occlusion-Aware_Rolling_Shutter_CVPR_2018_paper.html)
+- [Occlusion-Aware Rolling Shutter Rectification of 3D Scenes](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Occlusion-Aware_Rolling_Shutter_Rectification_of_3D_Scenes)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Vasu_Occlusion-Aware_Rolling_Shutter_CVPR_2018_paper.html)>
 
     - Subeesh Vasu, Mahesh Mohan M. R., A. N. Rajagopalan
 
 
-- [Content-Sensitive Supervoxels via Uniform Tessellations on Video Manifolds](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Content-Sensitive_Supervoxels_via_Uniform_Tessellations_on_Video_Manifolds)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yi_Content-Sensitive_Supervoxels_via_CVPR_2018_paper.html)
+- [Content-Sensitive Supervoxels via Uniform Tessellations on Video Manifolds](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Content-Sensitive_Supervoxels_via_Uniform_Tessellations_on_Video_Manifolds)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yi_Content-Sensitive_Supervoxels_via_CVPR_2018_paper.html)>
 
     - Ran Yi, Yong-Jin Liu, Yu-Kun Lai
 
 
-- [Intrinsic Image Transformation via Scale Space Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Intrinsic_Image_Transformation_via_Scale_Space_Decomposition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_Intrinsic_Image_Transformation_CVPR_2018_paper.html)
+- [Intrinsic Image Transformation via Scale Space Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Intrinsic_Image_Transformation_via_Scale_Space_Decomposition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_Intrinsic_Image_Transformation_CVPR_2018_paper.html)>
 
     - Lechao Cheng, Chengyi Zhang, Zicheng Liao
 
 
-- [Learned Shape-Tailored Descriptors for Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learned_Shape-Tailored_Descriptors_for_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Khan_Learned_Shape-Tailored_Descriptors_CVPR_2018_paper.html)
+- [Learned Shape-Tailored Descriptors for Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learned_Shape-Tailored_Descriptors_for_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Khan_Learned_Shape-Tailored_Descriptors_CVPR_2018_paper.html)>
 
     - Naeemullah Khan, Ganesh Sundaramoorthi
 
 
-- [PAD-Net: Multi-Tasks Guided Prediction-and-Distillation Network for Simultaneous Depth Estimation and Scene Parsing](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PAD_Net_Multi-Tasks_Guided_Prediction_and_Distillation_Network_for_Simultaneous_Depth_Estimation_and_Scene_Parsing)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_PAD-Net_Multi-Tasks_Guided_CVPR_2018_paper.html)
+- [PAD-Net: Multi-Tasks Guided Prediction-and-Distillation Network for Simultaneous Depth Estimation and Scene Parsing](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PAD_Net_Multi-Tasks_Guided_Prediction_and_Distillation_Network_for_Simultaneous_Depth_Estimation_and_Scene_Parsing)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_PAD-Net_Multi-Tasks_Guided_CVPR_2018_paper.html)>
 
     - Dan Xu, Wanli Ouyang, Xiaogang Wang, Nicu Sebe
 
@@ -369,7 +369,7 @@ linked to summary slide pages and formal CVPR pages.
     - Qianqian Wang, Xiaowei Zhou, Kostas Daniilidis
 
 
-- [Density-Aware Single Image De-Raining Using a Multi-Stream Dense Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Density-aware_Single_Image_De-raining_using_a_Multi-stream_Dense_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Density-Aware_Single_Image_CVPR_2018_paper.html)
+- [Density-Aware Single Image De-Raining Using a Multi-Stream Dense Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Density-aware_Single_Image_De-raining_using_a_Multi-stream_Dense_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Density-Aware_Single_Image_CVPR_2018_paper.html)>
 
     - He Zhang, Vishal M. Patel
 
@@ -404,7 +404,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xiaodan Liang, Hongfei Zhou, Eric Xing
 
 
-- [Cross-Domain Self-Supervised Multi-Task Feature Learning Using Synthetic Imagery](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Domain_Self-supervised_Multi-task_Feature_Learning_using_Synthetic_Imagery)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ren_Cross-Domain_Self-Supervised_Multi-Task_CVPR_2018_paper.html)
+- [Cross-Domain Self-Supervised Multi-Task Feature Learning Using Synthetic Imagery](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Domain_Self-supervised_Multi-task_Feature_Learning_using_Synthetic_Imagery)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ren_Cross-Domain_Self-Supervised_Multi-Task_CVPR_2018_paper.html)>
 
     - Zhongzheng Ren, Yong Jae Lee
 
@@ -414,7 +414,7 @@ linked to summary slide pages and formal CVPR pages.
     - Naama Hadad, Lior Wolf, Moni Shahar
 
 
-- [Robust Facial Landmark Detection via a Fully-Convolutional Local-Global Context Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Robust_Facial_Landmark_Detection_via_a_Fulaly-Convolutional_Local-Global_Context_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Merget_Robust_Facial_Landmark_CVPR_2018_paper.html)
+- [Robust Facial Landmark Detection via a Fully-Convolutional Local-Global Context Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Robust_Facial_Landmark_Detection_via_a_Fulaly-Convolutional_Local-Global_Context_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Merget_Robust_Facial_Landmark_CVPR_2018_paper.html)>
 
     - Daniel Merget, Matthias Rock, Gerhard Rigoll
 
@@ -424,7 +424,7 @@ linked to summary slide pages and formal CVPR pages.
     - Lei Huang, Dawei Yang, Bo Lang, Jia Deng
 
 
-- [Learning to Sketch With Shortcut Cycle Consistency](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Sketch_with_Shortcut_Cycle_Consistency)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Song_Learning_to_Sketch_CVPR_2018_paper.html)
+- [Learning to Sketch With Shortcut Cycle Consistency](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Sketch_with_Shortcut_Cycle_Consistency)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Song_Learning_to_Sketch_CVPR_2018_paper.html)>
 
     - Jifei Song, Kaiyue Pang, Yi-Zhe Song, Tao Xiang, Timothy M. Hospedales
 
@@ -434,7 +434,7 @@ linked to summary slide pages and formal CVPR pages.
     - Hao Shen
 
 
-- [FaceID-GAN: Learning a Symmetry Three-Player GAN for Identity-Preserving Face Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_FaceID-GAN_Learning_a_Symmetry_Three-Player_GAN_for_Identity-Preserving_Face_Synthesis)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Shen_FaceID-GAN_Learning_a_CVPR_2018_paper.html)
+- [FaceID-GAN: Learning a Symmetry Three-Player GAN for Identity-Preserving Face Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_FaceID-GAN_Learning_a_Symmetry_Three-Player_GAN_for_Identity-Preserving_Face_Synthesis)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Shen_FaceID-GAN_Learning_a_CVPR_2018_paper.html)>
 
     - Yujun Shen, Ping Luo, Junjie Yan, Xiaogang Wang, Xiaoou Tang
 
@@ -444,12 +444,12 @@ linked to summary slide pages and formal CVPR pages.
     - Yanzhu Liu, Adams Wai Kin Kong, Chi Keong Goh
 
 
-- [Modulated Convolutional Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Squeeze-and-Excitation_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Modulated_Convolutional_Networks_CVPR_2018_paper.html)
+- [Modulated Convolutional Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Squeeze-and-Excitation_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Modulated_Convolutional_Networks_CVPR_2018_paper.html)>
 
     - Xiaodi Wang, Baochang Zhang, Ce Li, Rongrong Ji, Jungong Han, Xianbin Cao, Jianzhuang Liu
 
 
-- [Learning Steerable Filters for Rotation Equivariant CNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Steerable_Filters_for_Rotation_Equivariant_CNNs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Weiler_Learning_Steerable_Filters_CVPR_2018_paper.html)
+- [Learning Steerable Filters for Rotation Equivariant CNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Steerable_Filters_for_Rotation_Equivariant_CNNs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Weiler_Learning_Steerable_Filters_CVPR_2018_paper.html)>
 
     - Maurice Weiler, Fred A. Hamprecht, Martin Storath
 
@@ -479,7 +479,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tianlu Wang, Kota Yamaguchi, Vicente Ordonez
 
 
-- [Super-Resolving Very Low-Resolution Face Images With Supplementary Attributes](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Super-Resolving_Very_Low-Resolution_Face_Images_with_Supplementary_Attributes)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yu_Super-Resolving_Very_Low-Resolution_CVPR_2018_paper.html)
+- [Super-Resolving Very Low-Resolution Face Images With Supplementary Attributes](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Super-Resolving_Very_Low-Resolution_Face_Images_with_Supplementary_Attributes)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yu_Super-Resolving_Very_Low-Resolution_CVPR_2018_paper.html)>
 
     - Xin Yu, Basura Fernando, Richard Hartley, Fatih Porikli
 
@@ -504,7 +504,7 @@ linked to summary slide pages and formal CVPR pages.
     - Peihua Li, Jiangtao Xie, Qilong Wang, Zilin Gao
 
 
-- [Recurrent Scene Parsing With Perspective Understanding in the Loop](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Recurrent_Scene_Parsing_with_Perspective_Understanding_in_the_Loop)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kong_Recurrent_Scene_Parsing_CVPR_2018_paper.html)
+- [Recurrent Scene Parsing With Perspective Understanding in the Loop](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Recurrent_Scene_Parsing_with_Perspective_Understanding_in_the_Loop)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kong_Recurrent_Scene_Parsing_CVPR_2018_paper.html)>
 
     - Shu Kong, Charless C. Fowlkes
 
@@ -514,7 +514,7 @@ linked to summary slide pages and formal CVPR pages.
     - Junhyug Noh, Soochan Lee, Beomsu Kim, Gunhee Kim
 
 
-- [Learning to Act Properly: Predicting and Explaining Affordances From Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Act_Properly_Predicting_and_Explaining_Affordances_from_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chuang_Learning_to_Act_CVPR_2018_paper.html)
+- [Learning to Act Properly: Predicting and Explaining Affordances From Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Act_Properly_Predicting_and_Explaining_Affordances_from_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chuang_Learning_to_Act_CVPR_2018_paper.html)>
 
     - Ching-Yao Chuang, Jiaman Li, Antonio Torralba, Sanja Fidler
 
@@ -524,7 +524,7 @@ linked to summary slide pages and formal CVPR pages.
     - Binh-Son Hua, Minh-Khoi Tran, Sai-Kit Yeung
 
 
-- [Image-Image Domain Adaptation With Preserved Self-Similarity and Domain-Dissimilarity for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image-Image_Domain_Adaptation_with_Preserved_Self-Similarity_and_Domain_Dissimilarity_for_Person_Re-identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_Image-Image_Domain_Adaptation_CVPR_2018_paper.html)
+- [Image-Image Domain Adaptation With Preserved Self-Similarity and Domain-Dissimilarity for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image-Image_Domain_Adaptation_with_Preserved_Self-Similarity_and_Domain_Dissimilarity_for_Person_Re-identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_Image-Image_Domain_Adaptation_CVPR_2018_paper.html)>
 
     - Weijian Deng, Liang Zheng, Qixiang Ye, Guoliang Kang, Yi Yang, Jianbin Jiao
 
@@ -544,7 +544,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jie Song, Chengchao Shen, Yezhou Yang, Yang Liu, Mingli Song
 
 
-- [Hierarchical Novelty Detection for Visual Object Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Hierarchical_Novelty_Detection_for_Visual_Object_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_Hierarchical_Novelty_Detection_CVPR_2018_paper.html)
+- [Hierarchical Novelty Detection for Visual Object Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Hierarchical_Novelty_Detection_for_Visual_Object_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_Hierarchical_Novelty_Detection_CVPR_2018_paper.html)>
 
     - Kibok Lee, Kimin Lee, Kyle Min, Yuting Zhang, Jinwoo Shin, Honglak Lee
 
@@ -554,7 +554,7 @@ linked to summary slide pages and formal CVPR pages.
     - Long Chen, Hanwang Zhang, Jun Xiao, Wei Liu, Shih-Fu Chang
 
 
-- [Learning Rich Features for Image Manipulation Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Rich_Features_for_Image_Manipulation_Detection)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Learning_Rich_Features_CVPR_2018_paper.html)
+- [Learning Rich Features for Image Manipulation Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Rich_Features_for_Image_Manipulation_Detection)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Learning_Rich_Features_CVPR_2018_paper.html)>
 
     - Peng Zhou, Xintong Han, Vlad I. Morariu, Larry S. Davis
 
@@ -569,7 +569,7 @@ linked to summary slide pages and formal CVPR pages.
     - Haoqi Fan, Jiatong Zhou
 
 
-- [R-FCN-3000 at 30fps: Decoupling Detection and Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_R-FCN-3000_at_30fps_Decoupling_Detection_and_Classification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Singh_R-FCN-3000_at_30fps_CVPR_2018_paper.html)
+- [R-FCN-3000 at 30fps: Decoupling Detection and Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_R-FCN-3000_at_30fps_Decoupling_Detection_and_Classification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Singh_R-FCN-3000_at_30fps_CVPR_2018_paper.html)>
 
     - Bharat Singh, Hengduo Li, Abhishek Sharma, Larry S. Davis
 
@@ -584,17 +584,17 @@ linked to summary slide pages and formal CVPR pages.
     - Jasper Uijlings, Stefan Popov, Vittorio Ferrari
 
 
-- [Deep Sparse Coding for Invariant Multimodal Halle Berry Neurons](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Sparse_Coding_for_Invariant_Multimodal_Halle_Berry_Neurons)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_Deep_Sparse_Coding_CVPR_2018_paper.html)
+- [Deep Sparse Coding for Invariant Multimodal Halle Berry Neurons](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Sparse_Coding_for_Invariant_Multimodal_Halle_Berry_Neurons)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_Deep_Sparse_Coding_CVPR_2018_paper.html)>
 
     - Edward Kim, Darryl Hannan, Garrett Kenyon
 
 
-- [On the Convergence of PatchMatch and Its Variants](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_On_the_convergence_of_PatchMatch_and_its_variants)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ehret_On_the_Convergence_CVPR_2018_paper.html)
+- [On the Convergence of PatchMatch and Its Variants](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_On_the_convergence_of_PatchMatch_and_its_variants)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ehret_On_the_Convergence_CVPR_2018_paper.html)>
 
     - Thibaud Ehret, Pablo Arias
 
 
-- [Rethinking the Faster R-CNN Architecture for Temporal Action Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Rethinking_the_Faster_R-CNN_Architecture_for_Temporal_Action_Localization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chao_Rethinking_the_Faster_CVPR_2018_paper.html)
+- [Rethinking the Faster R-CNN Architecture for Temporal Action Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Rethinking_the_Faster_R-CNN_Architecture_for_Temporal_Action_Localization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chao_Rethinking_the_Faster_CVPR_2018_paper.html)>
 
     - Yu-Wei Chao, Sudheendra Vijayanarasimhan, Bryan Seybold, David A. Ross, Jia Deng, Rahul Sukthankar
 
@@ -639,7 +639,7 @@ linked to summary slide pages and formal CVPR pages.
     - Holger Caesar, Jasper Uijlings, Vittorio Ferrari
 
 
-- [Image Generation From Scene Graphs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_Generation_from_Scene_Graphs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Johnson_Image_Generation_From_CVPR_2018_paper.html)
+- [Image Generation From Scene Graphs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_Generation_from_Scene_Graphs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Johnson_Image_Generation_From_CVPR_2018_paper.html)>
 
     - Justin Johnson, Agrim Gupta, Li Fei-Fei
 
@@ -719,7 +719,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tong Shen, Guosheng Lin, Chunhua Shen, Ian Reid
 
 
-- [DeepVoting: A Robust and Explainable Deep Network for Semantic Part Detection Under Partial Occlusion](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Voting_A_Robust_and_Explainable_Deep_Network_for_Semantic_Part_Detection_under_Partial_Occlusion)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_DeepVoting_A_Robust_CVPR_2018_paper.html)
+- [DeepVoting: A Robust and Explainable Deep Network for Semantic Part Detection Under Partial Occlusion](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Voting_A_Robust_and_Explainable_Deep_Network_for_Semantic_Part_Detection_under_Partial_Occlusion)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_DeepVoting_A_Robust_CVPR_2018_paper.html)>
 
     - Zhishuai Zhang, Cihang Xie, Jianyu Wang, Lingxi Xie, Alan L. Yuille
 
@@ -729,7 +729,7 @@ linked to summary slide pages and formal CVPR pages.
     - Fangfang Wang, Liming Zhao, Xi Li, Xinchao Wang, Dacheng Tao
 
 
-- [Optical Flow Guided Feature: A Fast and Robust Motion Representation for Video Action Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Optical_Flow_Guided_Feature_A_Fast_and_Robust_Motion_Representation_for_Video_Action_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sun_Optical_Flow_Guided_CVPR_2018_paper.html)
+- [Optical Flow Guided Feature: A Fast and Robust Motion Representation for Video Action Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Optical_Flow_Guided_Feature_A_Fast_and_Robust_Motion_Representation_for_Video_Action_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sun_Optical_Flow_Guided_CVPR_2018_paper.html)>
 
     - Shuyang Sun, Zhanghui Kuang, Lu Sheng, Wanli Ouyang, Wei Zhang
 
@@ -739,27 +739,27 @@ linked to summary slide pages and formal CVPR pages.
     - Ping Hu, Gang Wang, Xiangfei Kong, Jason Kuen, Yap-Peng Tan
 
 
-- [A Memory Network Approach for Story-Based Temporal Summarization of 360° Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Memory_Network_Approach_for_Story-based_Temporal_Summarization_of_360_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_A_Memory_Network_CVPR_2018_paper.html)
+- [A Memory Network Approach for Story-Based Temporal Summarization of 360° Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Memory_Network_Approach_for_Story-based_Temporal_Summarization_of_360_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_A_Memory_Network_CVPR_2018_paper.html)>
 
     - Sangho Lee, Jinyoung Sung, Youngjae Yu, Gunhee Kim
 
 
-- [Cube Padding for Weakly-Supervised Saliency Prediction in 360° Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cube_Padding_for_Weakly-Supervised_Saliency_Prediction_in_360_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_Cube_Padding_for_CVPR_2018_paper.html)
+- [Cube Padding for Weakly-Supervised Saliency Prediction in 360° Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cube_Padding_for_Weakly-Supervised_Saliency_Prediction_in_360_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_Cube_Padding_for_CVPR_2018_paper.html)>
 
     - Hsien-Tzu Cheng, Chun-Hung Chao, Jin-Dong Dong, Hao-Kai Wen, Tyng-Luh Liu, Min Sun
 
 
-- [Appearance-and-Relation Networks for Video Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Appearance-and-Relation_Networks_for_Video_Classification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Appearance-and-Relation_Networks_for_CVPR_2018_paper.html)
+- [Appearance-and-Relation Networks for Video Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Appearance-and-Relation_Networks_for_Video_Classification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Appearance-and-Relation_Networks_for_CVPR_2018_paper.html)>
 
     - Limin Wang, Wei Li, Wen Li, Luc Van Gool
 
 
-- [Excitation Backprop for RNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Excitation_Backprop_for_RNNs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bargal_Excitation_Backprop_for_CVPR_2018_paper.html)
+- [Excitation Backprop for RNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Excitation_Backprop_for_RNNs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bargal_Excitation_Backprop_for_CVPR_2018_paper.html)>
 
     - Sarah Adel Bargal, Andrea Zunino, Donghyun Kim, Jianming Zhang, Vittorio Murino, Stan Sclaroff
 
 
-- [One-Shot Action Localization by Learning Sequence Matching Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_One-shot_Action_Localization_by_Learning_Sequence_Matching_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_One-Shot_Action_Localization_CVPR_2018_paper.html)
+- [One-Shot Action Localization by Learning Sequence Matching Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_One-shot_Action_Localization_by_Learning_Sequence_Matching_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_One-Shot_Action_Localization_CVPR_2018_paper.html)>
 
     - Hongtao Yang, Xuming He, Fatih Porikli
 
@@ -769,7 +769,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jingwei Xu, Bingbing Ni, Zefan Li, Shuo Cheng, Xiaokang Yang
 
 
-- [Person Re-Identification With Cascaded Pairwise Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Person_Re-identification_with_Cascaded_Pairwise_Convolutions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Person_Re-Identification_With_CVPR_2018_paper.html)
+- [Person Re-Identification With Cascaded Pairwise Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Person_Re-identification_with_Cascaded_Pairwise_Convolutions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Person_Re-Identification_With_CVPR_2018_paper.html)>
 
     - Yicheng Wang, Zhenzhong Chen, Feng Wu, Gang Wang
 
@@ -779,17 +779,17 @@ linked to summary slide pages and formal CVPR pages.
     - Aleksandar Zlateski, Ronnachai Jaroensri, Prafull Sharma, Frédo Durand
 
 
-- [Scalable and Effective Deep CCA via Soft Decorrelation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Scalable_and_Effective_Deep_CCA_via_Soft_Decorrelation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_Scalable_and_Effective_CVPR_2018_paper.html)
+- [Scalable and Effective Deep CCA via Soft Decorrelation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Scalable_and_Effective_Deep_CCA_via_Soft_Decorrelation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_Scalable_and_Effective_CVPR_2018_paper.html)>
 
     - Xiaobin Chang, Tao Xiang, Timothy M. Hospedales
 
 
-- [Duplex Generative Adversarial Network for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Duplex_Generative_Adversarial_Network_for_Unsupervised_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Duplex_Generative_Adversarial_CVPR_2018_paper.html)
+- [Duplex Generative Adversarial Network for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Duplex_Generative_Adversarial_Network_for_Unsupervised_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Duplex_Generative_Adversarial_CVPR_2018_paper.html)>
 
     - Lanqing Hu, Meina Kan, Shiguang Shan, Xilin Chen
 
 
-- [Edit Probability for Scene Text Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Edit_Probability_for_Scene_Text_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Edit_Probability_for_CVPR_2018_paper.html)
+- [Edit Probability for Scene Text Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Edit_Probability_for_Scene_Text_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Edit_Probability_for_CVPR_2018_paper.html)>
 
     - Fan Bai, Zhanzhan Cheng, Yi Niu, Shiliang Pu, Shuigeng Zhou
 
@@ -799,7 +799,7 @@ linked to summary slide pages and formal CVPR pages.
     - Guo-Jun Qi, Liheng Zhang, Hao Hu, Marzieh Edraki, Jingdong Wang, Xian-Sheng Hua
 
 
-- [MoCoGAN: Decomposing Motion and Content for Video Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_MoCoGAN_Decomposing_Motion_and_Content_for_Video_Generation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tulyakov_MoCoGAN_Decomposing_Motion_CVPR_2018_paper.html)
+- [MoCoGAN: Decomposing Motion and Content for Video Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_MoCoGAN_Decomposing_Motion_and_Content_for_Video_Generation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tulyakov_MoCoGAN_Decomposing_Motion_CVPR_2018_paper.html)>
 
     - Sergey Tulyakov, Ming-Yu Liu, Xiaodong Yang, Jan Kautz
 
@@ -819,12 +819,12 @@ linked to summary slide pages and formal CVPR pages.
     - Arghya Pal, Vineeth N. Balasubramanian
 
 
-- [Stochastic Variational Inference With Gradient Linearization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Stochastic_Variational_Inference_with_Gradient_Linearization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Plotz_Stochastic_Variational_Inference_CVPR_2018_paper.html)
+- [Stochastic Variational Inference With Gradient Linearization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Stochastic_Variational_Inference_with_Gradient_Linearization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Plotz_Stochastic_Variational_Inference_CVPR_2018_paper.html)>
 
     - Tobias Plötz, Anne S. Wannenwetsch, Stefan Roth
 
 
-- [Multi-Label Zero-Shot Learning With Structured Knowledge Graphs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multi-Label_Zero-Shot_Learning_with_Structured_Knowledge_Graphs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_Multi-Label_Zero-Shot_Learning_CVPR_2018_paper.html)
+- [Multi-Label Zero-Shot Learning With Structured Knowledge Graphs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multi-Label_Zero-Shot_Learning_with_Structured_Knowledge_Graphs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lee_Multi-Label_Zero-Shot_Learning_CVPR_2018_paper.html)>
 
     - Chung-Wei Lee, Wei Fang, Chih-Kuan Yeh, Yu-Chiang Frank Wang
 
@@ -844,7 +844,7 @@ linked to summary slide pages and formal CVPR pages.
     - Keze Wang, Xiaopeng Yan, Dongyu Zhang, Lei Zhang, Liang Lin
 
 
-- [Discrete-Continuous ADMM for Transductive Inference in Higher-Order MRFs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Discrete-Continuous_ADMM_for_Transductive_Inference_in_Higher-Order_MRFs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Laude_Discrete-Continuous_ADMM_for_CVPR_2018_paper.html)
+- [Discrete-Continuous ADMM for Transductive Inference in Higher-Order MRFs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Discrete-Continuous_ADMM_for_Transductive_Inference_in_Higher-Order_MRFs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Laude_Discrete-Continuous_ADMM_for_CVPR_2018_paper.html)>
 
     - Emanuel Laude, Jan-Hendrik Lange, Jonas Schüpfer, Csaba Domokos, Laura Leal-Taixé, Frank R. Schmidt, Bjoern Andres, Daniel Cremers
 
@@ -879,7 +879,7 @@ linked to summary slide pages and formal CVPR pages.
     - Can Chen, Scott McCloskey, Jingyi Yu
 
 
-- [Compassionately Conservative Balanced Cuts for Image Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Compassionately_Conservative_Balanced_Cuts_for_Image_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html)
+- [Compassionately Conservative Balanced Cuts for Image Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Compassionately_Conservative_Balanced_Cuts_for_Image_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html)>
 
     - Nathan D. Cahill, Tyler L. Hayes, Renee T. Meinhold, John F. Hamilton
 
@@ -899,7 +899,7 @@ linked to summary slide pages and formal CVPR pages.
     - Wenguan Wang, Jianbing Shen, Xingping Dong, Ali Borji
 
 
-- [Enhancing the Spatial Resolution of Stereo Images Using a Parallax Prior](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Enhancing_the_Spatial_Resolution_of_Stereo_Images_using_a_Parallax_Prior)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Jeon_Enhancing_the_Spatial_CVPR_2018_paper.html)
+- [Enhancing the Spatial Resolution of Stereo Images Using a Parallax Prior](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Enhancing_the_Spatial_Resolution_of_Stereo_Images_using_a_Parallax_Prior)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Jeon_Enhancing_the_Spatial_CVPR_2018_paper.html)>
 
     - Daniel S. Jeon, Seung-Hwan Baek, Inchang Choi, Min H. Kim
 
@@ -914,7 +914,7 @@ linked to summary slide pages and formal CVPR pages.
     - Lu Zhang, Ju Dai, Huchuan Lu, You He, Gang Wang
 
 
-- [Matching Pixels Using Co-Occurrence Statistics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Matching_Pixels_using_Co-Occurrence_Statistics)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kat_Matching_Pixels_Using_CVPR_2018_paper.html)
+- [Matching Pixels Using Co-Occurrence Statistics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Matching_Pixels_using_Co-Occurrence_Statistics)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kat_Matching_Pixels_Using_CVPR_2018_paper.html)>
 
     - Rotal Kat, Roy Jevnisek, Shai Avidan
 
@@ -929,7 +929,7 @@ linked to summary slide pages and formal CVPR pages.
     - Shoichiro Takeda, Kazuki Okami, Dan Mikami, Megumi Isogai, Hideaki Kimata
 
 
-- [Defense Against Adversarial Attacks Using High-Level Representation Guided Denoiser](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Defense_against_Adversarial_Attacks_Using_High-Level_Representation_Guided_Denoiser)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liao_Defense_Against_Adversarial_CVPR_2018_paper.html)
+- [Defense Against Adversarial Attacks Using High-Level Representation Guided Denoiser](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Defense_against_Adversarial_Attacks_Using_High-Level_Representation_Guided_Denoiser)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liao_Defense_Against_Adversarial_CVPR_2018_paper.html)>
 
     - Fangzhou Liao, Ming Liang, Yinpeng Dong, Tianyu Pang, Xiaolin Hu, Jun Zhu
 
@@ -959,7 +959,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jian Zhang, Bernard Ghanem
 
 
-- [Fast End-to-End Trainable Guided Filter](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_End-to-End_Trainable_Guided_Filter)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Fast_End-to-End_Trainable_CVPR_2018_paper.html)
+- [Fast End-to-End Trainable Guided Filter](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_End-to-End_Trainable_Guided_Filter)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Fast_End-to-End_Trainable_CVPR_2018_paper.html)>
 
     - Huikai Wu, Shuai Zheng, Junge Zhang, Kaiqi Huang
 
@@ -979,7 +979,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xing Wei, Yue Zhang, Yihong Gong, Nanning Zheng
 
 
-- [pOSE: Pseudo Object Space Error for Initialization-Free Bundle Adjustment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_pOSE_Pseudo_Object_Space_Error_for_Initialization-Free_Bundle_Adjustment)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hong_pOSE_Pseudo_Object_CVPR_2018_paper.html)
+- [pOSE: Pseudo Object Space Error for Initialization-Free Bundle Adjustment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_pOSE_Pseudo_Object_Space_Error_for_Initialization-Free_Bundle_Adjustment)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hong_pOSE_Pseudo_Object_CVPR_2018_paper.html)>
 
     - Je Hyeong Hong, Christopher Zach
 
@@ -989,7 +989,7 @@ linked to summary slide pages and formal CVPR pages.
     - Or Litany, Alex Bronstein, Michael Bronstein, Ameesh Makadia
 
 
-- [Learning From Millions of 3D Scans for Large-Scale 3D Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Millions_of_3D_Scans_for_Large-scale_3D_Face_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gilani_Learning_From_Millions_CVPR_2018_paper.html)
+- [Learning From Millions of 3D Scans for Large-Scale 3D Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Millions_of_3D_Scans_for_Large-scale_3D_Face_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gilani_Learning_From_Millions_CVPR_2018_paper.html)>
 
     - Syed Zulqarnain Gilani, Ajmal Mian
 
@@ -999,12 +999,12 @@ linked to summary slide pages and formal CVPR pages.
     - N. Dinesh Reddy, Minh Vo, Srinivasa G. Narasimhan
 
 
-- [Deep Material-Aware Cross-Spectral Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Material-aware_Cross-spectral_Stereo_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhi_Deep_Material-Aware_Cross-Spectral_CVPR_2018_paper.html)
+- [Deep Material-Aware Cross-Spectral Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Material-aware_Cross-spectral_Stereo_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhi_Deep_Material-Aware_Cross-Spectral_CVPR_2018_paper.html)>
 
     - Tiancheng Zhi, Bernardo R. Pires, Martial Hebert, Srinivasa G. Narasimhan
 
 
-- [Augmenting Crowd-Sourced 3D Reconstructions Using Semantic Detections](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Augmenting_Crowd-Sourced_3D_Reconstructions_using_Semantic_Detections)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Price_Augmenting_Crowd-Sourced_3D_CVPR_2018_paper.html)
+- [Augmenting Crowd-Sourced 3D Reconstructions Using Semantic Detections](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Augmenting_Crowd-Sourced_3D_Reconstructions_using_Semantic_Detections)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Price_Augmenting_Crowd-Sourced_3D_CVPR_2018_paper.html)>
 
     - True Price, Johannes L. Schönberger, Zhen Wei, Marc Pollefeys, Jan-Michael Frahm
 
@@ -1014,7 +1014,7 @@ linked to summary slide pages and formal CVPR pages.
     - Stephan R. Richter, Stefan Roth
 
 
-- [Triplet-Center Loss for Multi-View 3D Object Retrieval](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Triplet-Center_Loss_for_Multi-View_3D_Object_Retrieval)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Triplet-Center_Loss_for_CVPR_2018_paper.html)
+- [Triplet-Center Loss for Multi-View 3D Object Retrieval](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Triplet-Center_Loss_for_Multi-View_3D_Object_Retrieval)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Triplet-Center_Loss_for_CVPR_2018_paper.html)>
 
     - Xinwei He, Yang Zhou, Zhichao Zhou, Song Bai, Xiang Bai
 
@@ -1024,17 +1024,17 @@ linked to summary slide pages and formal CVPR pages.
     - David Stutz, Andreas Geiger
 
 
-- [End-to-End Learning of Keypoint Detector and Descriptor for Pose Invariant 3D Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_End-to-end_learning_of_keypoint_detector_and_descriptor_for_pose_invariant_3D_matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Georgakis_End-to-End_Learning_of_CVPR_2018_paper.html)
+- [End-to-End Learning of Keypoint Detector and Descriptor for Pose Invariant 3D Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_End-to-end_learning_of_keypoint_detector_and_descriptor_for_pose_invariant_3D_matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Georgakis_End-to-End_Learning_of_CVPR_2018_paper.html)>
 
     - Georgios Georgakis, Srikrishna Karanam, Ziyan Wu, Jan Ernst, Jana Košecká
 
 
-- [ICE-BA: Incremental, Consistent and Efficient Bundle Adjustment for Visual-Inertial SLAM](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_ICE-BA_Incremental_Consistent_and_Efficient_Bundle_Adjustment_for_Visual-Inertial_SLAM)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_ICE-BA_Incremental_Consistent_CVPR_2018_paper.html)
+- [ICE-BA: Incremental, Consistent and Efficient Bundle Adjustment for Visual-Inertial SLAM](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_ICE-BA_Incremental_Consistent_and_Efficient_Bundle_Adjustment_for_Visual-Inertial_SLAM)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_ICE-BA_Incremental_Consistent_CVPR_2018_paper.html)>
 
     - Haomin Liu, Mingyu Chen, Guofeng Zhang, Hujun Bao, Yingze Bao
 
 
-- [GeoNet: Unsupervised Learning of Dense Depth, Optical Flow and Camera Pose](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_GeoNet_Unsupervised_Learning_of_Dense_Depth_Optical_Flow_and_Camera_Pose)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yin_GeoNet_Unsupervised_Learning_CVPR_2018_paper.html)
+- [GeoNet: Unsupervised Learning of Dense Depth, Optical Flow and Camera Pose](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_GeoNet_Unsupervised_Learning_of_Dense_Depth_Optical_Flow_and_Camera_Pose)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yin_GeoNet_Unsupervised_Learning_CVPR_2018_paper.html)>
 
     - Zhichao Yin, Jianping Shi
 
@@ -1049,12 +1049,12 @@ linked to summary slide pages and formal CVPR pages.
     - Huan Fu, Mingming Gong, Chaohui Wang, Kayhan Batmanghelich, Dacheng Tao
 
 
-- [Analytical Modeling of Vanishing Points and Curves in Catadioptric Cameras](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Analytical_Modeling_of_Vanishing_Points_and_Curves_in_Catadioptric_Cameras)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Miraldo_Analytical_Modeling_of_CVPR_2018_paper.html)
+- [Analytical Modeling of Vanishing Points and Curves in Catadioptric Cameras](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Analytical_Modeling_of_Vanishing_Points_and_Curves_in_Catadioptric_Cameras)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Miraldo_Analytical_Modeling_of_CVPR_2018_paper.html)>
 
     - Pedro Miraldo, Francisco Eiras, Srikumar Ramalingam
 
 
-- [Learning Depth From Monocular Videos Using Direct Methods](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Depth_from_Monocular_Videos_using_Direct_Methods)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Learning_Depth_From_CVPR_2018_paper.html)
+- [Learning Depth From Monocular Videos Using Direct Methods](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Depth_from_Monocular_Videos_using_Direct_Methods)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Learning_Depth_From_CVPR_2018_paper.html)>
 
     - Chaoyang Wang, José Miguel Buenaposada, Rui Zhu, Simon Lucey
 
@@ -1084,7 +1084,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jiahao Pang, Wenxiu Sun, Chengxi Yang, Jimmy Ren, Ruichao Xiao, Jin Zeng, Liang Lin
 
 
-- [Exploring Disentangled Feature Representation Beyond Face Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Exploring_Disentangled_Feature_Representation_Beyond_Face_Identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Exploring_Disentangled_Feature_CVPR_2018_paper.html)
+- [Exploring Disentangled Feature Representation Beyond Face Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Exploring_Disentangled_Feature_Representation_Beyond_Face_Identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Exploring_Disentangled_Feature_CVPR_2018_paper.html)>
 
     - Yu Liu, Fangyin Wei, Jing Shao, Lu Sheng, Junjie Yan, Xiaogang Wang
 
@@ -1104,12 +1104,12 @@ linked to summary slide pages and formal CVPR pages.
     - Xiaobin Chang, Timothy M. Hospedales, Tao Xiang
 
 
-- [Attention-Aware Compositional Network for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attention-Aware_Compositional_Network_for_Person_Re-identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Attention-Aware_Compositional_Network_CVPR_2018_paper.html)
+- [Attention-Aware Compositional Network for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attention-Aware_Compositional_Network_for_Person_Re-identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Attention-Aware_Compositional_Network_CVPR_2018_paper.html)>
 
     - Jing Xu, Rui Zhao, Feng Zhu, Huaming Wang, Wanli Ouyang
 
 
-- [Look at Boundary: A Boundary-Aware Face Alignment Algorithm](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Look_at_Boundary_A_Boundary-Aware_Face_Alignment_Algorithm)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Look_at_Boundary_CVPR_2018_paper.html)
+- [Look at Boundary: A Boundary-Aware Face Alignment Algorithm](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Look_at_Boundary_A_Boundary-Aware_Face_Alignment_Algorithm)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Look_at_Boundary_CVPR_2018_paper.html)>
 
     - Wayne Wu, Chen Qian, Shuo Yang, Quan Wang, Yici Cai, Qiang Zhou
 
@@ -1144,12 +1144,12 @@ linked to summary slide pages and formal CVPR pages.
     - Guozhu Peng, Shangfei Wang
 
 
-- [Non-Linear Temporal Subspace Representations for Activity Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-Linear_Temporal_Subspace_Representations_for_Activity_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cherian_Non-Linear_Temporal_Subspace_CVPR_2018_paper.html)
+- [Non-Linear Temporal Subspace Representations for Activity Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-Linear_Temporal_Subspace_Representations_for_Activity_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cherian_Non-Linear_Temporal_Subspace_CVPR_2018_paper.html)>
 
     - Anoop Cherian, Suvrit Sra, Stephen Gould, Richard Hartley
 
 
-- [Towards Pose Invariant Face Recognition in the Wild](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Towards_Pose_Invariant_Face_Recognition_in_the_Wild)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhao_Towards_Pose_Invariant_CVPR_2018_paper.html)
+- [Towards Pose Invariant Face Recognition in the Wild](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Towards_Pose_Invariant_Face_Recognition_in_the_Wild)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhao_Towards_Pose_Invariant_CVPR_2018_paper.html)>
 
     - Jian Zhao, Yu Cheng, Yan Xu, Lin Xiong, Jianshu Li, Fang Zhao, Karlekar Jayashree, Sugiri Pranata, Shengmei Shen, Junliang Xing, Shuicheng Yan, Jiashi Feng
 
@@ -1184,7 +1184,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yantao Shen, Hongsheng Li, Tong Xiao, Shuai Yi, Dapeng Chen, Xiaogang Wang
 
 
-- [Transferable Joint Attribute-Identity Deep Learning for Unsupervised Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Transferable_Joint_Attribute-Identity_Deep_Learning_for_Unsupervised_Person_Re-Identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Transferable_Joint_Attribute-Identity_CVPR_2018_paper.html)
+- [Transferable Joint Attribute-Identity Deep Learning for Unsupervised Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Transferable_Joint_Attribute-Identity_Deep_Learning_for_Unsupervised_Person_Re-Identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Transferable_Joint_Attribute-Identity_CVPR_2018_paper.html)>
 
     - Jingya Wang, Xiatian Zhu, Shaogang Gong, Wei Li
 
@@ -1194,7 +1194,7 @@ linked to summary slide pages and formal CVPR pages.
     - Wei Li, Xiatian Zhu, Shaogang Gong
 
 
-- [Real-Time Rotation-Invariant Face Detection With Progressive Calibration Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Real-Time_Rotation-Invariant_Face_Detection_with_Progressive_Calibration_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Shi_Real-Time_Rotation-Invariant_Face_CVPR_2018_paper.html)
+- [Real-Time Rotation-Invariant Face Detection With Progressive Calibration Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Real-Time_Rotation-Invariant_Face_Detection_with_Progressive_Calibration_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Shi_Real-Time_Rotation-Invariant_Face_CVPR_2018_paper.html)>
 
     - Xuepeng Shi, Shiguang Shan, Meina Kan, Shuzhe Wu, Xilin Chen
 
@@ -1224,7 +1224,7 @@ linked to summary slide pages and formal CVPR pages.
     - Bin Xu, Zhenzhong Chen
 
 
-- [A Perceptual Measure for Deep Single Image Camera Calibration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Perceptual_Measure_for_Deep_Single_Image_Camera_Calibration)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hold-Geoffroy_A_Perceptual_Measure_CVPR_2018_paper.html)
+- [A Perceptual Measure for Deep Single Image Camera Calibration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Perceptual_Measure_for_Deep_Single_Image_Camera_Calibration)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hold-Geoffroy_A_Perceptual_Measure_CVPR_2018_paper.html)>
 
     - Yannick Hold-Geoffroy, Kalyan Sunkavalli, Jonathan Eisenmann, Matthew Fisher, Emiliano Gambaretto, Sunil Hadap, Jean-François Lalonde
 
@@ -1234,17 +1234,17 @@ linked to summary slide pages and formal CVPR pages.
     - Wei Xiong, Wenhan Luo, Lin Ma, Wei Liu, Jiebo Luo
 
 
-- [Document Enhancement Using Visibility Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Document_Enhancement_using_Visibility_Detection)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kligler_Document_Enhancement_Using_CVPR_2018_paper.html)
+- [Document Enhancement Using Visibility Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Document_Enhancement_using_Visibility_Detection)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kligler_Document_Enhancement_Using_CVPR_2018_paper.html)>
 
     - Netanel Kligler, Sagi Katz, Ayellet Tal
 
 
-- [A Weighted Sparse Sampling and Smoothing Frame Transition Approach for Semantic Fast-Forward First-Person Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Weighted_Sparse_Sampling_and_Smoothing_Frame_Transition_Approach_for_Semantic_Fast-Forward_First-Person_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Silva_A_Weighted_Sparse_CVPR_2018_paper.html)
+- [A Weighted Sparse Sampling and Smoothing Frame Transition Approach for Semantic Fast-Forward First-Person Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Weighted_Sparse_Sampling_and_Smoothing_Frame_Transition_Approach_for_Semantic_Fast-Forward_First-Person_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Silva_A_Weighted_Sparse_CVPR_2018_paper.html)>
 
     - Michel Silva, Washington Ramos, João Ferreira, Felipe Chamone, Mario Campos, Erickson R. Nascimento
 
 
-- [Context Contrasted Feature and Gated Multi-Scale Aggregation for Scene Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Context_Contrasted_Feature_and_Gated_Multi-scale_Aggregation_for_Scene_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ding_Context_Contrasted_Feature_CVPR_2018_paper.html)
+- [Context Contrasted Feature and Gated Multi-Scale Aggregation for Scene Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Context_Contrasted_Feature_and_Gated_Multi-scale_Aggregation_for_Scene_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ding_Context_Contrasted_Feature_CVPR_2018_paper.html)>
 
     - Henghui Ding, Xudong Jiang, Bing Shuai, Ai Qun Liu, Gang Wang
 
@@ -1279,7 +1279,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tamar Rott Shaham, Tomer Michaeli
 
 
-- [Distributable Consistent Multi-Object Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Distributable_Consistent_Multi-Object_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Distributable_Consistent_Multi-Object_CVPR_2018_paper.html)
+- [Distributable Consistent Multi-Object Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Distributable_Consistent_Multi-Object_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Distributable_Consistent_Multi-Object_CVPR_2018_paper.html)>
 
     - Nan Hu, Qixing Huang, Boris Thibert, Leonidas J. Guibas
 
@@ -1289,27 +1289,27 @@ linked to summary slide pages and formal CVPR pages.
     - Yulun Zhang, Yapeng Tian, Yu Kong, Bineng Zhong, Yun Fu
 
 
-- [Attentive Generative Adversarial Network for Raindrop Removal From a Single Image](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attentive_Generative_Adversarial_Network_for_Raindrop_Removal_from_a_Single_Image)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Qian_Attentive_Generative_Adversarial_CVPR_2018_paper.html)
+- [Attentive Generative Adversarial Network for Raindrop Removal From a Single Image](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attentive_Generative_Adversarial_Network_for_Raindrop_Removal_from_a_Single_Image)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Qian_Attentive_Generative_Adversarial_CVPR_2018_paper.html)>
 
     - Rui Qian, Robby T. Tan, Wenhan Yang, Jiajun Su, Jiaying Liu
 
 
-- [FSRNet: End-to-End Learning Face Super-Resolution With Facial Priors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_FSRNet_End-to-End_Learning_Face_Super-Resolution_with_Facial_Priors)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_FSRNet_End-to-End_Learning_CVPR_2018_paper.html)
+- [FSRNet: End-to-End Learning Face Super-Resolution With Facial Priors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_FSRNet_End-to-End_Learning_Face_Super-Resolution_with_Facial_Priors)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_FSRNet_End-to-End_Learning_CVPR_2018_paper.html)>
 
     - Yu Chen, Ying Tai, Xiaoming Liu, Chunhua Shen, Jian Yang
 
 
-- [Burst Denoising With Kernel Prediction Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Burst_Denoising_with_Kernel_Prediction_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mildenhall_Burst_Denoising_With_CVPR_2018_paper.html)
+- [Burst Denoising With Kernel Prediction Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Burst_Denoising_with_Kernel_Prediction_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mildenhall_Burst_Denoising_With_CVPR_2018_paper.html)>
 
     - Ben Mildenhall, Jonathan T. Barron, Jiawen Chen, Dillon Sharlet, Ren Ng, Robert Carroll
 
 
-- [Unsupervised Sparse Dirichlet-Net for Hyperspectral Image Super-Resolution](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Sparse_Dirichlet-Net_for_Hyperspectral_Image_Super-Resolution)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Qu_Unsupervised_Sparse_Dirichlet-Net_CVPR_2018_paper.html)
+- [Unsupervised Sparse Dirichlet-Net for Hyperspectral Image Super-Resolution](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Sparse_Dirichlet-Net_for_Hyperspectral_Image_Super-Resolution)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Qu_Unsupervised_Sparse_Dirichlet-Net_CVPR_2018_paper.html)>
 
     - Ying Qu, Hairong Qi, Chiman Kwan
 
 
-- [Dynamic Scene Deblurring Using Spatially Variant Recurrent Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dynamic_Scene_Deblurring_Using_Spatially_Variant_Recurrent_Neural_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Dynamic_Scene_Deblurring_CVPR_2018_paper.html)
+- [Dynamic Scene Deblurring Using Spatially Variant Recurrent Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dynamic_Scene_Deblurring_Using_Spatially_Variant_Recurrent_Neural_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Dynamic_Scene_Deblurring_CVPR_2018_paper.html)>
 
     - Jiawei Zhang, Jinshan Pan, Jimmy Ren, Yibing Song, Linchao Bao, Rynson W.H. Lau, Ming-Hsuan Yang
 
@@ -1324,7 +1324,7 @@ linked to summary slide pages and formal CVPR pages.
     - Ilya Kostrikov, Zhongshi Jiang, Daniele Panozzo, Denis Zorin, Joan Bruna
 
 
-- [Self-Supervised Multi-Level Face Model Learning for Monocular Reconstruction at Over 250 Hz](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Self-supervised_Multi-level_Face_Model_Learning_for_Monocular_Reconstruction_at_over_250_Hz)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tewari_Self-Supervised_Multi-Level_Face_CVPR_2018_paper.html)
+- [Self-Supervised Multi-Level Face Model Learning for Monocular Reconstruction at Over 250 Hz](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Self-supervised_Multi-level_Face_Model_Learning_for_Monocular_Reconstruction_at_over_250_Hz)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tewari_Self-Supervised_Multi-Level_Face_CVPR_2018_paper.html)>
 
     - Ayush Tewari, Michael Zollhöfer, Pablo Garrido, Florian Bernard, Hyeongwoo Kim, Patrick Pérez, Christian Theobalt
 
@@ -1354,12 +1354,12 @@ linked to summary slide pages and formal CVPR pages.
     - Nitika Verma, Edmond Boyer, Jakob Verbeek
 
 
-- [Image Collection Pop-Up: 3D Reconstruction and Clustering of Rigid and Non-Rigid Categories](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_Collection_Pop-up_3D_Reconstruction_and_Clustering_of_Rigid_and_Non-Rigid_Categories)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Agudo_Image_Collection_Pop-Up_CVPR_2018_paper.html)
+- [Image Collection Pop-Up: 3D Reconstruction and Clustering of Rigid and Non-Rigid Categories](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_Collection_Pop-up_3D_Reconstruction_and_Clustering_of_Rigid_and_Non-Rigid_Categories)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Agudo_Image_Collection_Pop-Up_CVPR_2018_paper.html)>
 
     - Antonio Agudo, Melcior Pijoan, Francesc Moreno-Noguer
 
 
-- [Geometry-Aware Learning of Maps for Camera Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry-Aware_Learning_of_Maps_for_Camera_Localization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Brahmbhatt_Geometry-Aware_Learning_of_CVPR_2018_paper.html)
+- [Geometry-Aware Learning of Maps for Camera Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry-Aware_Learning_of_Maps_for_Camera_Localization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Brahmbhatt_Geometry-Aware_Learning_of_CVPR_2018_paper.html)>
 
     - Samarth Brahmbhatt, Jinwei Gu, Kihwan Kim, James Hays, Jan Kautz
 
@@ -1384,12 +1384,12 @@ linked to summary slide pages and formal CVPR pages.
     - Jogendra Nath Kundu, Phani Krishna Uppala, Anuj Pahuja, R. Venkatesh Babu
 
 
-- [Learning to Find Good Correspondences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Find_Good_Correspondences)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yi_Learning_to_Find_CVPR_2018_paper.html)
+- [Learning to Find Good Correspondences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Find_Good_Correspondences)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yi_Learning_to_Find_CVPR_2018_paper.html)>
 
     - Kwang Moo Yi, Eduard Trulls, Yuki Ono, Vincent Lepetit, Mathieu Salzmann, Pascal Fua
 
 
-- [OATM: Occlusion Aware Template Matching by Consensus Set Maximization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_OATM_Occlusion_Aware_Template_Matching_by_Consensus_Set_Maximization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Korman_OATM_Occlusion_Aware_CVPR_2018_paper.html)
+- [OATM: Occlusion Aware Template Matching by Consensus Set Maximization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_OATM_Occlusion_Aware_Template_Matching_by_Consensus_Set_Maximization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Korman_OATM_Occlusion_Aware_CVPR_2018_paper.html)>
 
     - Simon Korman, Mark Milam, Stefano Soatto
 
@@ -1429,7 +1429,7 @@ linked to summary slide pages and formal CVPR pages.
     - Wei Zhu, Qiang Qiu, Jiaji Huang, Robert Calderbank, Guillermo Sapiro, Ingrid Daubechies
 
 
-- [CondenseNet: An Efficient DenseNet Using Learned Group Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CondenseNet_An_Efficient_DenseNet_using_Learned_Group_Convolutions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_CondenseNet_An_Efficient_CVPR_2018_paper.html)
+- [CondenseNet: An Efficient DenseNet Using Learned Group Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CondenseNet_An_Efficient_DenseNet_using_Learned_Group_Convolutions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_CondenseNet_An_Efficient_CVPR_2018_paper.html)>
 
     - Gao Huang, Shichen Liu, Laurens van der Maaten, Kilian Q. Weinberger
 
@@ -1454,7 +1454,7 @@ linked to summary slide pages and formal CVPR pages.
     - Lequan Yu, Xianzhi Li, Chi-Wing Fu, Daniel Cohen-Or, Pheng-Ann Heng
 
 
-- [Real-Time Monocular Depth Estimation Using Synthetic Data With Domain Adaptation via Image Style Transfer](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Real-Time_Monocular_Depth_Estimation_Using_Synthetic_Data_With_Domain_Adaptation_via_Image_Style_Transfer)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Atapour-Abarghouei_Real-Time_Monocular_Depth_CVPR_2018_paper.html)
+- [Real-Time Monocular Depth Estimation Using Synthetic Data With Domain Adaptation via Image Style Transfer](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Real-Time_Monocular_Depth_Estimation_Using_Synthetic_Data_With_Domain_Adaptation_via_Image_Style_Transfer)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Atapour-Abarghouei_Real-Time_Monocular_Depth_CVPR_2018_paper.html)>
 
     - Amir Atapour-Abarghouei, Toby P. Breckon
 
@@ -1469,7 +1469,7 @@ linked to summary slide pages and formal CVPR pages.
     - Po-Han Huang, Kevin Matzen, Johannes Kopf, Narendra Ahuja, Jia-Bin Huang
 
 
-- [Self-Calibrating Polarising Radiometric Calibration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Self-calibrating_Polarising_Radiometric_Calibration)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Teo_Self-Calibrating_Polarising_Radiometric_CVPR_2018_paper.html)
+- [Self-Calibrating Polarising Radiometric Calibration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Self-calibrating_Polarising_Radiometric_Calibration)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Teo_Self-Calibrating_Polarising_Radiometric_CVPR_2018_paper.html)>
 
     - Daniel Teo, Boxin Shi, Yinqiang Zheng, Sai-Kit Yeung
 
@@ -1494,7 +1494,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yunpeng Shi, Gilad Lerman
 
 
-- [4D Human Body Correspondences From Panoramic Depth Maps](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_4D_Human_Body_Correspondences_from_Panoramic_Depth_Maps)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_4D_Human_Body_CVPR_2018_paper.html)
+- [4D Human Body Correspondences From Panoramic Depth Maps](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_4D_Human_Body_Correspondences_from_Panoramic_Depth_Maps)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_4D_Human_Body_CVPR_2018_paper.html)>
 
     - Zhong Li, Minye Wu, Wangyiteng Zhou, Jingyi Yu
 
@@ -1514,7 +1514,7 @@ linked to summary slide pages and formal CVPR pages.
     - Takahiro Isokane, Fumio Okura, Ayaka Ide, Yasuyuki Matsushita, Yasushi Yagi
 
 
-- [Deep Marching Cubes: Learning Explicit Surface Representations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Marching_Cubes_Learning_Explicit_Surface_Representations)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liao_Deep_Marching_Cubes_CVPR_2018_paper.html)
+- [Deep Marching Cubes: Learning Explicit Surface Representations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Marching_Cubes_Learning_Explicit_Surface_Representations)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liao_Deep_Marching_Cubes_CVPR_2018_paper.html)>
 
     - Yiyi Liao, Simon Donné, Andreas Geiger
 
@@ -1534,7 +1534,7 @@ linked to summary slide pages and formal CVPR pages.
     - Sunghoon Im, Hae-Gon Jeon, In So Kweon
 
 
-- [Free Supervision From Video Games](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Correlation_Analysis)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Krahenbuhl_Free_Supervision_From_CVPR_2018_paper.html)
+- [Free Supervision From Video Games](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Correlation_Analysis)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Krahenbuhl_Free_Supervision_From_CVPR_2018_paper.html)>
 
     - Philipp Krähenbühl
 
@@ -1619,7 +1619,7 @@ linked to summary slide pages and formal CVPR pages.
     - Sebastian Palacio, Joachim Folz, Jörn Hees, Federico Raue, Damian Borth, Andreas Dengel
 
 
-- [“Zero-Shot” Super-Resolution Using Deep Internal Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Zero-Shot_Super-Resolution_using_Deep_Internal_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Shocher_Zero-Shot_Super-Resolution_Using_CVPR_2018_paper.html)
+- [“Zero-Shot” Super-Resolution Using Deep Internal Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Zero-Shot_Super-Resolution_using_Deep_Internal_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Shocher_Zero-Shot_Super-Resolution_Using_CVPR_2018_paper.html)>
 
     - Assaf Shocher, Nadav Cohen, Michal Irani
 
@@ -1629,7 +1629,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tiantian Wang, Lihe Zhang, Shuo Wang, Huchuan Lu, Gang Yang, Xiang Ruan, Ali Borji
 
 
-- [Beyond the Pixel-Wise Loss for Topology-Aware Delineation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Beyond_the_Pixel-Wise_Loss_for_Topology-Aware_Delineation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mosinska_Beyond_the_Pixel-Wise_CVPR_2018_paper.html)
+- [Beyond the Pixel-Wise Loss for Topology-Aware Delineation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Beyond_the_Pixel-Wise_Loss_for_Topology-Aware_Delineation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mosinska_Beyond_the_Pixel-Wise_CVPR_2018_paper.html)>
 
     - Agata Mosinska, Pablo Márquez-Neila, Mateusz Koziński, Pascal Fua
 
@@ -1654,17 +1654,17 @@ linked to summary slide pages and formal CVPR pages.
     - Mengran Gou, Fei Xiong, Octavia Camps, Mario Sznaier
 
 
-- [Active Fixation Control to Predict Saccade Sequences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Active_Fixation_Control_to_Predict_Saccade_Sequences)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wloka_Active_Fixation_Control_CVPR_2018_paper.html)
+- [Active Fixation Control to Predict Saccade Sequences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Active_Fixation_Control_to_Predict_Saccade_Sequences)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wloka_Active_Fixation_Control_CVPR_2018_paper.html)>
 
     - Calden Wloka, Iuliia Kotseruba, John K. Tsotsos
 
 
-- [Densely Connected Pyramid Dehazing Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Densely_Connected_Pyramid_Dehazing_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Densely_Connected_Pyramid_CVPR_2018_paper.html)
+- [Densely Connected Pyramid Dehazing Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Densely_Connected_Pyramid_Dehazing_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Densely_Connected_Pyramid_CVPR_2018_paper.html)>
 
     - He Zhang, Vishal M. Patel
 
 
-- [Universal Denoising Networks : A Novel CNN Architecture for Image Denoising](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Universal_Denoising_Networks_A_Novel_CNN_Architecture_for_Image_Denoising)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lefkimmiatis_Universal_Denoising_Networks_CVPR_2018_paper.html)
+- [Universal Denoising Networks : A Novel CNN Architecture for Image Denoising](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Universal_Denoising_Networks_A_Novel_CNN_Architecture_for_Image_Denoising)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lefkimmiatis_Universal_Denoising_Networks_CVPR_2018_paper.html)>
 
     - Stamatios Lefkimmiatis
 
@@ -1699,12 +1699,12 @@ linked to summary slide pages and formal CVPR pages.
     - Kai Zhang, Wangmeng Zuo, Lei Zhang
 
 
-- [Non-Blind Deblurring: Handling Kernel Uncertainty With CNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-blind_Deblurring_Handling_Kernel_Uncertainty_with_CNNs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Vasu_Non-Blind_Deblurring_Handling_CVPR_2018_paper.html)
+- [Non-Blind Deblurring: Handling Kernel Uncertainty With CNNs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-blind_Deblurring_Handling_Kernel_Uncertainty_with_CNNs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Vasu_Non-Blind_Deblurring_Handling_CVPR_2018_paper.html)>
 
     - Subeesh Vasu, Venkatesh Reddy Maligireddy, A. N. Rajagopalan
 
 
-- [Boundary Flow: A Siamese Network That Predicts Boundary Motion Without Training on Motion](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Boundary_Flow_A_Siamese_Network_That_Predicts_Boundary_Motion_Without_Training_on_Motion)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lei_Boundary_Flow_A_CVPR_2018_paper.html)
+- [Boundary Flow: A Siamese Network That Predicts Boundary Motion Without Training on Motion](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Boundary_Flow_A_Siamese_Network_That_Predicts_Boundary_Motion_Without_Training_on_Motion)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lei_Boundary_Flow_A_CVPR_2018_paper.html)>
 
     - Peng Lei, Fuxin Li, Sinisa Todorovic
 
@@ -1714,12 +1714,12 @@ linked to summary slide pages and formal CVPR pages.
     - Chen Chen, Qifeng Chen, Jia Xu, Vladlen Koltun
 
 
-- [BPGrad: Towards Global Optimality in Deep Learning via Branch and Pruning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_BPGrad_Towards_Global_Optimality_in_Deep_Learning_via_Branch_and_Pruning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_BPGrad_Towards_Global_CVPR_2018_paper.html)
+- [BPGrad: Towards Global Optimality in Deep Learning via Branch and Pruning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_BPGrad_Towards_Global_Optimality_in_Deep_Learning_via_Branch_and_Pruning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_BPGrad_Towards_Global_CVPR_2018_paper.html)>
 
     - Ziming Zhang, Yuanwei Wu, Guanghui Wang
 
 
-- [Perturbative Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Wasserstein_Introspective_Neural_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Juefei-Xu_Perturbative_Neural_Networks_CVPR_2018_paper.html)
+- [Perturbative Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Wasserstein_Introspective_Neural_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Juefei-Xu_Perturbative_Neural_Networks_CVPR_2018_paper.html)>
 
     - Felix Juefei-Xu, Vishnu Naresh Boddeti, Marios Savvides
 
@@ -1744,7 +1744,7 @@ linked to summary slide pages and formal CVPR pages.
     - Matthijs Douze, Arthur Szlam, Bharath Hariharan, Hervé Jégou
 
 
-- [Joint Pose and Expression Modeling for Facial Expression Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Joint_Pose_and_Expression_Modeling_for_Facial_Expression_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Joint_Pose_and_CVPR_2018_paper.html)
+- [Joint Pose and Expression Modeling for Facial Expression Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Joint_Pose_and_Expression_Modeling_for_Facial_Expression_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Joint_Pose_and_CVPR_2018_paper.html)>
 
     - Feifei Zhang, Tianzhu Zhang, Qirong Mao, Changsheng Xu
 
@@ -1754,7 +1754,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jochen Gast, Stefan Roth
 
 
-- [Adversarially Learned One-Class Classifier for Novelty Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarially_Learned_One-Class_Classifier_for_Novelty_Detection)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.html)
+- [Adversarially Learned One-Class Classifier for Novelty Detection](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarially_Learned_One-Class_Classifier_for_Novelty_Detection)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.html)>
 
     - Mohammad Sabokrou, Mohammad Khalooei, Mahmood Fathy, Ehsan Adeli
 
@@ -1769,7 +1769,7 @@ linked to summary slide pages and formal CVPR pages.
     - Qiyang Hu, Attila Szabó, Tiziano Portenier, Paolo Favaro, Matthias Zwicker
 
 
-- [Deformable GANs for Pose-Based Human Image Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deformable_GANs_for_Pose-based_Human_Image_Generation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Siarohin_Deformable_GANs_for_CVPR_2018_paper.html)
+- [Deformable GANs for Pose-Based Human Image Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deformable_GANs_for_Pose-based_Human_Image_Generation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Siarohin_Deformable_GANs_for_CVPR_2018_paper.html)>
 
     - Aliaksandr Siarohin, Enver Sangineto, Stéphane Lathuilière, Nicu Sebe
 
@@ -1779,17 +1779,17 @@ linked to summary slide pages and formal CVPR pages.
     - Namdar Homayounfar, Wei-Chiu Ma, Shrinidhi Kowshika Lakshmikanth, Raquel Urtasun
 
 
-- [Sliced Wasserstein Distance for Learning Gaussian Mixture Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sliced_Wasserstein_Distance_for_Learning_Gaussian_Mixture_Models)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kolouri_Sliced_Wasserstein_Distance_CVPR_2018_paper.html)
+- [Sliced Wasserstein Distance for Learning Gaussian Mixture Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sliced_Wasserstein_Distance_for_Learning_Gaussian_Mixture_Models)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kolouri_Sliced_Wasserstein_Distance_CVPR_2018_paper.html)>
 
     - Soheil Kolouri, Gustavo K. Rohde, Heiko Hoffmann
 
 
-- [Aligning Infinite-Dimensional Covariance Matrices in Reproducing Kernel Hilbert Spaces for Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Aligning_Infinite-Dimensional_Covariance_Matrices_in_Reproducing_Kernel_Hilbert_Spaces_for_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Aligning_Infinite-Dimensional_Covariance_CVPR_2018_paper.html)
+- [Aligning Infinite-Dimensional Covariance Matrices in Reproducing Kernel Hilbert Spaces for Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Aligning_Infinite-Dimensional_Covariance_Matrices_in_Reproducing_Kernel_Hilbert_Spaces_for_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Aligning_Infinite-Dimensional_Covariance_CVPR_2018_paper.html)>
 
     - Zhen Zhang, Mianzhi Wang, Yan Huang, Arye Nehorai
 
 
-- [CLEAR: Cumulative LEARning for One-Shot One-Class Image Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CLEAR_Cumulative_LEARning_for_One-Shot_One-Class_Image_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kozerawski_CLEAR_Cumulative_LEARning_CVPR_2018_paper.html)
+- [CLEAR: Cumulative LEARning for One-Shot One-Class Image Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CLEAR_Cumulative_LEARning_for_One-Shot_One-Class_Image_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kozerawski_CLEAR_Cumulative_LEARning_CVPR_2018_paper.html)>
 
     - Jedrzej Kozerawski, Matthew Turk
 
@@ -1824,12 +1824,12 @@ linked to summary slide pages and formal CVPR pages.
     - Krishna Regmi, Ali Borji
 
 
-- [Sparse, Smart Contours to Represent and Edit Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sparse_Smart_Contours_to_Represent_and_Edit_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Dekel_Sparse_Smart_Contours_CVPR_2018_paper.html)
+- [Sparse, Smart Contours to Represent and Edit Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sparse_Smart_Contours_to_Represent_and_Edit_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Dekel_Sparse_Smart_Contours_CVPR_2018_paper.html)>
 
     - Tali Dekel, Chuang Gan, Dilip Krishnan, Ce Liu, William T. Freeman
 
 
-- [Anticipating Traffic Accidents With Adaptive Loss and Large-Scale Incident DB](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Anticipating_Traffic_Accidents_with_Adaptive_Loss_and_Large-scale_Incident_DB)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Suzuki_Anticipating_Traffic_Accidents_CVPR_2018_paper.html)
+- [Anticipating Traffic Accidents With Adaptive Loss and Large-Scale Incident DB](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Anticipating_Traffic_Accidents_with_Adaptive_Loss_and_Large-scale_Incident_DB)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Suzuki_Anticipating_Traffic_Accidents_CVPR_2018_paper.html)>
 
     - Tomoyuki Suzuki, Hirokatsu Kataoka, Yoshimitsu Aoki, Yutaka Satoh
 
@@ -1839,7 +1839,7 @@ linked to summary slide pages and formal CVPR pages.
     - Tolga Birdal, Benjamin Busam, Nassir Navab, Slobodan Ilic, Peter Sturm
 
 
-- [Facelet-Bank for Fast Portrait Manipulation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Facelet-Bank_for_Fast_Portrait_Manipulation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Facelet-Bank_for_Fast_CVPR_2018_paper.html)
+- [Facelet-Bank for Fast Portrait Manipulation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Facelet-Bank_for_Fast_Portrait_Manipulation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Facelet-Bank_for_Fast_CVPR_2018_paper.html)>
 
     - Ying-Cong Chen, Huaijia Lin, Michelle Shu, Ruiyu Li, Xin Tao, Xiaoyong Shen, Yangang Ye, Jiaya Jia
 
@@ -1879,7 +1879,7 @@ linked to summary slide pages and formal CVPR pages.
     - Danna Gurari, Qing Li, Abigale J. Stangl, Anhong Guo, Chi Lin, Kristen Grauman, Jiebo Luo, Jeffrey P. Bigham
 
 
-- [Divide and Grow: Capturing Huge Diversity in Crowd Images With Incrementally Growing CNN](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Divide_and_Grow_Capturing_Huge_Diversity_in_Crowd_Images_with_Incrementally_Growing_CNN)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sam_Divide_and_Grow_CVPR_2018_paper.html)
+- [Divide and Grow: Capturing Huge Diversity in Crowd Images With Incrementally Growing CNN](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Divide_and_Grow_Capturing_Huge_Diversity_in_Crowd_Images_with_Incrementally_Growing_CNN)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sam_Divide_and_Grow_CVPR_2018_paper.html)>
 
     - Deepak Babu Sam, Neeraj N. Sajjan, R. Venkatesh Babu, Mukundhan Srinivasan
 
@@ -1899,12 +1899,12 @@ linked to summary slide pages and formal CVPR pages.
     - Matthijs Douze, Alexandre Sablayrolles, Hervé Jégou
 
 
-- [Textbook Question Answering Under Instructor Guidance With Memory Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Textbook_Question_Answering_under_Instructor_Guidance_with_Memory_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Textbook_Question_Answering_CVPR_2018_paper.html)
+- [Textbook Question Answering Under Instructor Guidance With Memory Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Textbook_Question_Answering_under_Instructor_Guidance_with_Memory_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Textbook_Question_Answering_CVPR_2018_paper.html)>
 
     - Juzheng Li, Hang Su, Jun Zhu, Siyu Wang, Bo Zhang
 
 
-- [Unsupervised Deep Generative Adversarial Hashing Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Deep_Generative_Adversarial_Hashing_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Dizaji_Unsupervised_Deep_Generative_CVPR_2018_paper.html)
+- [Unsupervised Deep Generative Adversarial Hashing Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Deep_Generative_Adversarial_Hashing_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Dizaji_Unsupervised_Deep_Generative_CVPR_2018_paper.html)>
 
     - Kamran Ghasedi Dizaji, Feng Zheng, Najmeh Sadoughi, Yanhua Yang, Cheng Deng, Heng Huang
 
@@ -1919,7 +1919,7 @@ linked to summary slide pages and formal CVPR pages.
     - Maoke Yang, Kun Yu, Chi Zhang, Zhiwei Li, Kuiyuan Yang
 
 
-- [Efficient Optimization for Rank-Based Loss Functions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Efficient_Optimization_for_Rank-based_Loss_Functions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mohapatra_Efficient_Optimization_for_CVPR_2018_paper.html)
+- [Efficient Optimization for Rank-Based Loss Functions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Efficient_Optimization_for_Rank-based_Loss_Functions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mohapatra_Efficient_Optimization_for_CVPR_2018_paper.html)>
 
     - Pritish Mohapatra, Michal Rolínek, C.V. Jawahar, Vladimir Kolmogorov, M. Pawan Kumar
 
@@ -1934,7 +1934,7 @@ linked to summary slide pages and formal CVPR pages.
     - Amir R. Zamir, Alexander Sax, William Shen, Leonidas J. Guibas, Jitendra Malik, Silvio Savarese
 
 
-- [Maximum Classifier Discrepancy for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Maximum_Classifier_Discrepancy_for_Unsupervised_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Saito_Maximum_Classifier_Discrepancy_CVPR_2018_paper.html)
+- [Maximum Classifier Discrepancy for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Maximum_Classifier_Discrepancy_for_Unsupervised_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Saito_Maximum_Classifier_Discrepancy_CVPR_2018_paper.html)>
 
     - Kuniaki Saito, Kohei Watanabe, Yoshitaka Ushiku, Tatsuya Harada
 
@@ -1949,7 +1949,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yang Liu, Zhaowen Wang, Hailin Jin, Ian Wassell
 
 
-- [Learning From Synthetic Data: Addressing Domain Shift for Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Synthetic_Data_Addressing_Domain_Shift_for_Semantic_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sankaranarayanan_Learning_From_Synthetic_CVPR_2018_paper.html)
+- [Learning From Synthetic Data: Addressing Domain Shift for Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Synthetic_Data_Addressing_Domain_Shift_for_Semantic_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sankaranarayanan_Learning_From_Synthetic_CVPR_2018_paper.html)>
 
     - Swami Sankaranarayanan, Yogesh Balaji, Arpit Jain, Ser Nam Lim, Rama Chellappa
 
@@ -1959,7 +1959,7 @@ linked to summary slide pages and formal CVPR pages.
     - Alhussein Fawzi, Seyed-Mohsen Moosavi-Dezfooli, Pascal Frossard, Stefano Soatto
 
 
-- [Boosting Domain Adaptation by Discovering Latent Domains](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Boosting_Domain_Adaptation_by_Discovering_Latent_Domains)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.html)
+- [Boosting Domain Adaptation by Discovering Latent Domains](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Boosting_Domain_Adaptation_by_Discovering_Latent_Domains)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.html)>
 
     - Massimiliano Mancini, Lorenzo Porzi, Samuel Rota Bulò, Barbara Caputo, Elisa Ricci
 
@@ -1969,7 +1969,7 @@ linked to summary slide pages and formal CVPR pages.
     - Dawei Yang, Jia Deng
 
 
-- [Weakly Supervised Instance Segmentation Using Class Peak Response](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Weakly_Supervised_Instance_Segmentation_using_Class_Peak_Response)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html)
+- [Weakly Supervised Instance Segmentation Using Class Peak Response](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Weakly_Supervised_Instance_Segmentation_using_Class_Peak_Response)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Weakly_Supervised_Instance_CVPR_2018_paper.html)>
 
     - Yanzhao Zhou, Yi Zhu, Qixiang Ye, Qiang Qiu, Jianbin Jiao
 
@@ -1989,12 +1989,12 @@ linked to summary slide pages and formal CVPR pages.
     - Oisin Mac Aodha, Shihan Su, Yuxin Chen, Pietro Perona, Yisong Yue
 
 
-- [Density Adaptive Point Set Registration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Density_Adaptive_Point_Set_Registration)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lawin_Density_Adaptive_Point_CVPR_2018_paper.html)
+- [Density Adaptive Point Set Registration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Density_Adaptive_Point_Set_Registration)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lawin_Density_Adaptive_Point_CVPR_2018_paper.html)>
 
     - Felix Järemo Lawin, Martin Danelljan, Fahad Shahbaz Khan, Per-Erik Forssén, Michael Felsberg
 
 
-- [Left-Right Comparative Recurrent Model for Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Left-Right_Comparative_Recurrent_Model_for_Stereo_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Jie_Left-Right_Comparative_Recurrent_CVPR_2018_paper.html)
+- [Left-Right Comparative Recurrent Model for Stereo Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Left-Right_Comparative_Recurrent_Model_for_Stereo_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Jie_Left-Right_Comparative_Recurrent_CVPR_2018_paper.html)>
 
     - Zequn Jie, Pengfei Wang, Yonggen Ling, Bo Zhao, Yunchao Wei, Jiashi Feng, Wei Liu
 
@@ -2004,12 +2004,12 @@ linked to summary slide pages and formal CVPR pages.
     - Shuran Song, Andy Zeng, Angel X. Chang, Manolis Savva, Silvio Savarese, Thomas Funkhouser
 
 
-- [Polarimetric Dense Monocular SLAM](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Polarimetric_Dense_Monocular_SLAM)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Polarimetric_Dense_Monocular_CVPR_2018_paper.html)
+- [Polarimetric Dense Monocular SLAM](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Polarimetric_Dense_Monocular_SLAM)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Polarimetric_Dense_Monocular_CVPR_2018_paper.html)>
 
     - Luwei Yang, Feitong Tan, Ao Li, Zhaopeng Cui, Yasutaka Furukawa, Ping Tan
 
 
-- [A Unifying Contrast Maximization Framework for Event Cameras, With Applications to Motion, Depth, and Optical Flow Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Unifying_Contrast_Maximization_Framework_for_Event_Cameras_with_Applications_to_Motion_Depth_and_Optical_Flow_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gallego_A_Unifying_Contrast_CVPR_2018_paper.html)
+- [A Unifying Contrast Maximization Framework for Event Cameras, With Applications to Motion, Depth, and Optical Flow Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Unifying_Contrast_Maximization_Framework_for_Event_Cameras_with_Applications_to_Motion_Depth_and_Optical_Flow_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gallego_A_Unifying_Contrast_CVPR_2018_paper.html)>
 
     - Guillermo Gallego, Henri Rebecq, Davide Scaramuzza
 
@@ -2034,17 +2034,17 @@ linked to summary slide pages and formal CVPR pages.
     - Hiroharu Kato, Yoshitaka Ushiku, Tatsuya Harada
 
 
-- [Structured Attention Guided Convolutional Neural Fields for Monocular Depth Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Structured_Attention_Guided_Convolutional_Neural_Fields_for_Monocular_Depth_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Structured_Attention_Guided_CVPR_2018_paper.html)
+- [Structured Attention Guided Convolutional Neural Fields for Monocular Depth Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Structured_Attention_Guided_Convolutional_Neural_Fields_for_Monocular_Depth_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Structured_Attention_Guided_CVPR_2018_paper.html)>
 
     - Dan Xu, Wei Wang, Hao Tang, Hong Liu, Nicu Sebe, Elisa Ricci
 
 
-- [Automatic 3D Indoor Scene Modeling From Single Panorama](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Automatic_3D_Indoor_Scene_Modeling_from_Single_Panorama)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Automatic_3D_Indoor_CVPR_2018_paper.html)
+- [Automatic 3D Indoor Scene Modeling From Single Panorama](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Automatic_3D_Indoor_Scene_Modeling_from_Single_Panorama)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Automatic_3D_Indoor_CVPR_2018_paper.html)>
 
     - Yang Yang, Shi Jin, Ruiyang Liu, Sing Bing Kang, Jingyi Yu
 
 
-- [Extreme 3D Face Reconstruction: Seeing Through Occlusions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Extreme_3D_Face_Reconstruction_Looking_Past_Occlusions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tran_Extreme_3D_Face_CVPR_2018_paper.html)
+- [Extreme 3D Face Reconstruction: Seeing Through Occlusions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Extreme_3D_Face_Reconstruction_Looking_Past_Occlusions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tran_Extreme_3D_Face_CVPR_2018_paper.html)>
 
     - Anh Tuấn Trần, Tal Hassner, Iacopo Masi, Eran Paz, Yuval Nirkin, Gérard Medioni
 
@@ -2059,7 +2059,7 @@ linked to summary slide pages and formal CVPR pages.
     - Silvia Zuffi, Angjoo Kanazawa, Michael J. Black
 
 
-- [Deep Cocktail Network: Multi-Source Unsupervised Domain Adaptation With Category Shift](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Cocktail_Network_Multi-source_Unsupervised_Domain_Adaptation_with_Category_Shift)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Deep_Cocktail_Network_CVPR_2018_paper.html)
+- [Deep Cocktail Network: Multi-Source Unsupervised Domain Adaptation With Category Shift](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Cocktail_Network_Multi-source_Unsupervised_Domain_Adaptation_with_Category_Shift)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Deep_Cocktail_Network_CVPR_2018_paper.html)>
 
     - Ruijia Xu, Ziliang Chen, Wangmeng Zuo, Junjie Yan, Liang Lin
 
@@ -2069,7 +2069,7 @@ linked to summary slide pages and formal CVPR pages.
     - Gui-Song Xia, Xiang Bai, Jian Ding, Zhen Zhu, Serge Belongie, Jiebo Luo, Mihai Datcu, Marcello Pelillo, Liangpei Zhang
 
 
-- [Finding Beans in Burgers: Deep Semantic-Visual Embedding With Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_beans_in_burgers_Deep_semantic-visual_embedding_with_localization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Engilberge_Finding_Beans_in_CVPR_2018_paper.html)
+- [Finding Beans in Burgers: Deep Semantic-Visual Embedding With Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_beans_in_burgers_Deep_semantic-visual_embedding_with_localization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Engilberge_Finding_Beans_in_CVPR_2018_paper.html)>
 
     - Martin Engilberge, Louis Chevallier, Patrick Pérez, Matthieu Cord
 
@@ -2094,7 +2094,7 @@ linked to summary slide pages and formal CVPR pages.
     - Kun He, Fatih Cakir, Sarah Adel Bargal, Stan Sclaroff
 
 
-- [Classification-Driven Dynamic Image Enhancement](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Classification-Driven_Dynamic_Image_Enhancement)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_Classification-Driven_Dynamic_Image_CVPR_2018_paper.html)
+- [Classification-Driven Dynamic Image Enhancement](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Classification-Driven_Dynamic_Image_Enhancement)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_Classification-Driven_Dynamic_Image_CVPR_2018_paper.html)>
 
     - Vivek Sharma, Ali Diba, Davy Neven, Michael S. Brown, Luc Van Gool, Rainer Stiefelhagen
 
@@ -2119,12 +2119,12 @@ linked to summary slide pages and formal CVPR pages.
     - Changmao Cheng, Yanwei Fu, Yu-Gang Jiang, Wei Liu, Wenlian Lu, Jianfeng Feng, Xiangyang Xue
 
 
-- [Memory Matching Networks for One-Shot Image Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Memory_Matching_Networks_for_One-Shot_Image_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cai_Memory_Matching_Networks_CVPR_2018_paper.html)
+- [Memory Matching Networks for One-Shot Image Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Memory_Matching_Networks_for_One-Shot_Image_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cai_Memory_Matching_Networks_CVPR_2018_paper.html)>
 
     - Qi Cai, Yingwei Pan, Ting Yao, Chenggang Yan, Tao Mei
 
 
-- [IQA: Visual Question Answering in Interactive Environments](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_IQA_Visual_Question_Answering_in_Interactive_Environments)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gordon_IQA_Visual_Question_CVPR_2018_paper.html)
+- [IQA: Visual Question Answering in Interactive Environments](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_IQA_Visual_Question_Answering_in_Interactive_Environments)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gordon_IQA_Visual_Question_CVPR_2018_paper.html)>
 
     - Daniel Gordon, Aniruddha Kembhavi, Mohammad Rastegari, Joseph Redmon, Dieter Fox, Ali Farhadi
 
@@ -2134,12 +2134,12 @@ linked to summary slide pages and formal CVPR pages.
     - Jinxian Liu, Bingbing Ni, Yichao Yan, Peng Zhou, Shuo Cheng, Jianguo Hu
 
 
-- [Large Scale Fine-Grained Categorization and Domain-Specific Transfer Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Large_Scale_Fine-Grained_Categorization_and_Domain-Specific_Transfer_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cui_Large_Scale_Fine-Grained_CVPR_2018_paper.html)
+- [Large Scale Fine-Grained Categorization and Domain-Specific Transfer Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Large_Scale_Fine-Grained_Categorization_and_Domain-Specific_Transfer_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cui_Large_Scale_Fine-Grained_CVPR_2018_paper.html)>
 
     - Yin Cui, Yang Song, Chen Sun, Andrew Howard, Serge Belongie
 
 
-- [Data Distillation: Towards Omni-Supervised Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Data_Distillation_Towards_Omni_Supervised_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Radosavovic_Data_Distillation_Towards_CVPR_2018_paper.html)
+- [Data Distillation: Towards Omni-Supervised Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Data_Distillation_Towards_Omni_Supervised_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Radosavovic_Data_Distillation_Towards_CVPR_2018_paper.html)>
 
     - Ilija Radosavovic, Piotr Dollár, Ross Girshick, Georgia Gkioxari, Kaiming He
 
@@ -2179,7 +2179,7 @@ linked to summary slide pages and formal CVPR pages.
     - Katarzyna Bozek, Laetitia Hebert, Alexander S. Mikheyev, Greg J. Stephens
 
 
-- [Long-Term On-Board Prediction of People in Traffic Scenes Under Uncertainty](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Long-Term_On-Board_Prediction_of_People_in_Traffic_Scenes_under_Uncertainty)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.html)
+- [Long-Term On-Board Prediction of People in Traffic Scenes Under Uncertainty](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Long-Term_On-Board_Prediction_of_People_in_Traffic_Scenes_under_Uncertainty)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.html)>
 
     - Apratim Bhattacharyya, Mario Fritz, Bernt Schiele
 
@@ -2199,7 +2199,7 @@ linked to summary slide pages and formal CVPR pages.
     - Damien Teney, Peter Anderson, Xiaodong He, Anton van den Hengel
 
 
-- [Learning to Segment Every Thing](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Evaluate_Image_Captioning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Learning_to_Segment_CVPR_2018_paper.html)
+- [Learning to Segment Every Thing](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_to_Evaluate_Image_Captioning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Learning_to_Segment_CVPR_2018_paper.html)>
 
     - Ronghang Hu, Piotr Dollár, Kaiming He, Trevor Darrell, Ross Girshick
 
@@ -2229,17 +2229,17 @@ linked to summary slide pages and formal CVPR pages.
     - Vinay Kumar Verma, Gundeep Arora, Ashish Mishra, Piyush Rai
 
 
-- [Partially Shared Multi-Task Convolutional Neural Network With Local Constraint for Face Attribute Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Partially_Shared_Multi-Task_Convolutional_Neural_Network_with_Local_Constraint_for_Face_Attribute_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Partially_Shared_Multi-Task_CVPR_2018_paper.html)
+- [Partially Shared Multi-Task Convolutional Neural Network With Local Constraint for Face Attribute Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Partially_Shared_Multi-Task_Convolutional_Neural_Network_with_Local_Constraint_for_Face_Attribute_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Partially_Shared_Multi-Task_CVPR_2018_paper.html)>
 
     - Jiajiong Cao, Yingming Li, Zhongfei Zhang
 
 
-- [SYQ: Learning Symmetric Quantization for Efficient Deep Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SYQ_Learning_Symmetric_Quantization_For_Efficient_Deep_Neural_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Faraone_SYQ_Learning_Symmetric_CVPR_2018_paper.html)
+- [SYQ: Learning Symmetric Quantization for Efficient Deep Neural Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SYQ_Learning_Symmetric_Quantization_For_Efficient_Deep_Neural_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Faraone_SYQ_Learning_Symmetric_CVPR_2018_paper.html)>
 
     - Julian Faraone, Nicholas Fraser, Michaela Blott, Philip H.W. Leong
 
 
-- [DS*: Tighter Lifting-Free Convex Relaxations for Quadratic Matching Problems](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_DS_Tighter_Lifting-Free_Convex_Relaxations_for_Quadratic_Matching_Problems)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bernard_DS_Tighter_Lifting-Free_CVPR_2018_paper.html)
+- [DS*: Tighter Lifting-Free Convex Relaxations for Quadratic Matching Problems](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_DS_Tighter_Lifting-Free_Convex_Relaxations_for_Quadratic_Matching_Problems)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bernard_DS_Tighter_Lifting-Free_CVPR_2018_paper.html)>
 
     - Florian Bernard, Christian Theobalt, Michael Moeller
 
@@ -2254,12 +2254,12 @@ linked to summary slide pages and formal CVPR pages.
     - Shixing Chen, Caojin Zhang, Ming Dong
 
 
-- [Residual Parameter Transfer for Deep Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Residual_Parameter_Transfer_for_Deep_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Rozantsev_Residual_Parameter_Transfer_CVPR_2018_paper.html)
+- [Residual Parameter Transfer for Deep Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Residual_Parameter_Transfer_for_Deep_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Rozantsev_Residual_Parameter_Transfer_CVPR_2018_paper.html)>
 
     - Artem Rozantsev, Mathieu Salzmann, Pascal Fua
 
 
-- [High-Order Tensor Regularization With Application to Attribute Ranking](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_High-order_Tensor_Regularization_with_Application_to_Attribute_Ranking)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_High-Order_Tensor_Regularization_CVPR_2018_paper.html)
+- [High-Order Tensor Regularization With Application to Attribute Ranking](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_High-order_Tensor_Regularization_with_Application_to_Attribute_Ranking)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_High-Order_Tensor_Regularization_CVPR_2018_paper.html)>
 
     - Kwang In Kim, Juhyun Park, James Tompkin
 
@@ -2339,7 +2339,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yin Zhou, Oncel Tuzel
 
 
-- [Image to Image Translation for Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_to_Image_Translation_for_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Murez_Image_to_Image_CVPR_2018_paper.html)
+- [Image to Image Translation for Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Image_to_Image_Translation_for_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Murez_Image_to_Image_CVPR_2018_paper.html)>
 
     - Zak Murez, Soheil Kolouri, David Kriegman, Ravi Ramamoorthi, Kyungnam Kim
 
@@ -2359,7 +2359,7 @@ linked to summary slide pages and formal CVPR pages.
     - Hendrik Schilling, Maximilian Diebold, Carsten Rother, Bernd Jähne
 
 
-- [Baseline Desensitizing in Translation Averaging](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Baseline_Desensitizing_In_Translation_Averaging)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhuang_Baseline_Desensitizing_in_CVPR_2018_paper.html)
+- [Baseline Desensitizing in Translation Averaging](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Baseline_Desensitizing_In_Translation_Averaging)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhuang_Baseline_Desensitizing_in_CVPR_2018_paper.html)>
 
     - Bingbing Zhuang, Loong-Fah Cheong, Gim Hee Lee
 
@@ -2384,7 +2384,7 @@ linked to summary slide pages and formal CVPR pages.
     - Angela Dai, Daniel Ritchie, Martin Bokeloh, Scott Reed, Jürgen Sturm, Matthias Nießner
 
 
-- [Solving the Perspective-2-Point Problem for Flying-Camera Photo Composition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Solving_the_Perspective-2-Point_Problem_for_Flying-Camera_Photo_Composition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lan_Solving_the_Perspective-2-Point_CVPR_2018_paper.html)
+- [Solving the Perspective-2-Point Problem for Flying-Camera Photo Composition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Solving_the_Perspective-2-Point_Problem_for_Flying-Camera_Photo_Composition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lan_Solving_the_Perspective-2-Point_CVPR_2018_paper.html)>
 
     - Ziquan Lan, David Hsu, Gim Hee Lee
 
@@ -2399,17 +2399,17 @@ linked to summary slide pages and formal CVPR pages.
     - Saining Xie, Sainan Liu, Zeyu Chen, Zhuowen Tu
 
 
-- [Geometry-Aware Deep Network for Single-Image Novel View Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry-aware_Deep_Network_for_Single-Image_Novel_View_Synthesis)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Geometry-Aware_Deep_Network_CVPR_2018_paper.html)
+- [Geometry-Aware Deep Network for Single-Image Novel View Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry-aware_Deep_Network_for_Single-Image_Novel_View_Synthesis)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Geometry-Aware_Deep_Network_CVPR_2018_paper.html)>
 
     - Miaomiao Liu, Xuming He, Mathieu Salzmann
 
 
-- [InverseFaceNet: Deep Monocular Inverse Face Rendering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_InverseFaceNet_Deep_Monocular_Inverse_Face_Rendering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_InverseFaceNet_Deep_Monocular_CVPR_2018_paper.html)
+- [InverseFaceNet: Deep Monocular Inverse Face Rendering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_InverseFaceNet_Deep_Monocular_Inverse_Face_Rendering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Kim_InverseFaceNet_Deep_Monocular_CVPR_2018_paper.html)>
 
     - Hyeongwoo Kim, Michael Zollhöfer, Ayush Tewari, Justus Thies, Christian Richardt, Christian Theobalt
 
 
-- [Sparse Photometric 3D Face Reconstruction Guided by Morphable Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sparse_Photometric_3D_Face_Reconstruction_Guided_by_Morphable_Models)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Sparse_Photometric_3D_CVPR_2018_paper.html)
+- [Sparse Photometric 3D Face Reconstruction Guided by Morphable Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sparse_Photometric_3D_Face_Reconstruction_Guided_by_Morphable_Models)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Sparse_Photometric_3D_CVPR_2018_paper.html)>
 
     - Xuan Cao, Zhang Chen, Anpei Chen, Xin Chen, Shiying Li, Jingyi Yu
 
@@ -2444,7 +2444,7 @@ linked to summary slide pages and formal CVPR pages.
     - Fereshteh Sadeghi, Alexander Toshev, Eric Jang, Sergey Levine
 
 
-- [DocUNet: Document Image Unwarping via a Stacked U-Net](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_DocUNet_Document_Image_Unwarping_via_A_Stacked_U-Net)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_DocUNet_Document_Image_CVPR_2018_paper.html)
+- [DocUNet: Document Image Unwarping via a Stacked U-Net](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_DocUNet_Document_Image_Unwarping_via_A_Stacked_U-Net)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_DocUNet_Document_Image_CVPR_2018_paper.html)>
 
     - Ke Ma, Zhixin Shu, Xue Bai, Jue Wang, Dimitris Samaras
 
@@ -2454,7 +2454,7 @@ linked to summary slide pages and formal CVPR pages.
     - Aisha Urooj, Ali Borji
 
 
-- [RoadTracer: Automatic Extraction of Road Networks From Aerial Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_RoadTracer_Automatic_Extraction_of_Road_Networks_from_Aerial_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bastani_RoadTracer_Automatic_Extraction_CVPR_2018_paper.html)
+- [RoadTracer: Automatic Extraction of Road Networks From Aerial Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_RoadTracer_Automatic_Extraction_of_Road_Networks_from_Aerial_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bastani_RoadTracer_Automatic_Extraction_CVPR_2018_paper.html)>
 
     - Favyen Bastani, Songtao He, Sofiane Abbar, Mohammad Alizadeh, Hari Balakrishnan, Sanjay Chawla, Sam Madden, David DeWitt
 
@@ -2469,7 +2469,7 @@ linked to summary slide pages and formal CVPR pages.
     - Konstantinos Rematas, Ira Kemelmacher-Shlizerman, Brian Curless, Steve Seitz
 
 
-- [EPINET: A Fully-Convolutional Neural Network Using Epipolar Geometry for Depth From Light Field Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_EPINET_A_Fully-Convolutional_Neural_Network_Using_Epipolar_Geometry_for_Depth_from_Light_Field_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Shin_EPINET_A_Fully-Convolutional_CVPR_2018_paper.html)
+- [EPINET: A Fully-Convolutional Neural Network Using Epipolar Geometry for Depth From Light Field Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_EPINET_A_Fully-Convolutional_Neural_Network_Using_Epipolar_Geometry_for_Depth_from_Light_Field_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Shin_EPINET_A_Fully-Convolutional_CVPR_2018_paper.html)>
 
     - Changha Shin, Hae-Gon Jeon, Youngjin Yoon, In So Kweon, Seon Joo Kim
 
@@ -2499,7 +2499,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yizhen Lao, Omar Ait-Aider
 
 
-- [Time-Resolved Light Transport Decomposition for Thermal Photometric Stereo](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Time-resolved_Light_Transport_Decomposition_for_Thermal_Photometric_Stereo)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tanaka_Time-Resolved_Light_Transport_CVPR_2018_paper.html)
+- [Time-Resolved Light Transport Decomposition for Thermal Photometric Stereo](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Time-resolved_Light_Transport_Decomposition_for_Thermal_Photometric_Stereo)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tanaka_Time-Resolved_Light_Transport_CVPR_2018_paper.html)>
 
     - Kenichiro Tanaka, Nobuhiro Ikeya, Tsuyoshi Takatani, Hiroyuki Kubo, Takuya Funatomi, Yasuhiro Mukaigawa
 
@@ -2554,7 +2554,7 @@ linked to summary slide pages and formal CVPR pages.
     - Feng Li, Cheng Tian, Wangmeng Zuo, Lei Zhang, Ming-Hsuan Yang
 
 
-- [Multimodal Visual Concept Learning With Weakly Supervised Techniques](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multimodal_Visual_Concept_Learning_with_Weakly_Supervised_Techniques)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bouritsas_Multimodal_Visual_Concept_CVPR_2018_paper.html)
+- [Multimodal Visual Concept Learning With Weakly Supervised Techniques](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multimodal_Visual_Concept_Learning_with_Weakly_Supervised_Techniques)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bouritsas_Multimodal_Visual_Concept_CVPR_2018_paper.html)>
 
     - Giorgos Bouritsas, Petros Koutras, Athanasia Zlatintsi, Petros Maragos
 
@@ -2564,27 +2564,27 @@ linked to summary slide pages and formal CVPR pages.
     - Jialiang Zhang, Soroosh Khoram, Jing Li
 
 
-- [Learning a Complete Image Indexing Pipeline](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_a_Complete_Image_Indexing_Pipeline)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Jain_Learning_a_Complete_CVPR_2018_paper.html)
+- [Learning a Complete Image Indexing Pipeline](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_a_Complete_Image_Indexing_Pipeline)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Jain_Learning_a_Complete_CVPR_2018_paper.html)>
 
     - Himalaya Jain, Joaquin Zepeda, Patrick Pérez, Rémi Gribonval
 
 
-- [Transparency by Design: Closing the Gap Between Performance and Interpretability in Visual Reasoning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Transparency_by_Design_Closing_the_Gap_Between_Performance_and_Interpretability_in_Visual_Reasoning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mascharka_Transparency_by_Design_CVPR_2018_paper.html)
+- [Transparency by Design: Closing the Gap Between Performance and Interpretability in Visual Reasoning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Transparency_by_Design_Closing_the_Gap_Between_Performance_and_Interpretability_in_Visual_Reasoning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mascharka_Transparency_by_Design_CVPR_2018_paper.html)>
 
     - David Mascharka, Philip Tran, Ryan Soklaski, Arjun Majumdar
 
 
-- [Fooling Vision and Language Models Despite Localization and Attention Mechanism](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fooling_Vision_and_Language_Models_Despite_Localization_and_Attention_Mechanism)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Fooling_Vision_and_CVPR_2018_paper.html)
+- [Fooling Vision and Language Models Despite Localization and Attention Mechanism](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fooling_Vision_and_Language_Models_Despite_Localization_and_Attention_Mechanism)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Fooling_Vision_and_CVPR_2018_paper.html)>
 
     - Xiaojun Xu, Xinyun Chen, Chang Liu, Anna Rohrbach, Trevor Darrell, Dawn Song
 
 
-- [Categorizing Concepts With Basic Level for Vision-to-Language](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Categorizing_Concepts_with_Basic_Level_for_Vision-to-Language)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Categorizing_Concepts_With_CVPR_2018_paper.html)
+- [Categorizing Concepts With Basic Level for Vision-to-Language](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Categorizing_Concepts_with_Basic_Level_for_Vision-to-Language)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Categorizing_Concepts_With_CVPR_2018_paper.html)>
 
     - Hanzhang Wang, Hanli Wang, Kaisheng Xu
 
 
-- [Don't Just Assume; Look and Answer: Overcoming Priors for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dont_Just_Assume_Look_and_Answer_Overcoming_Priors_for_Visual_Question_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Agrawal_Dont_Just_Assume_CVPR_2018_paper.html)
+- [Don't Just Assume; Look and Answer: Overcoming Priors for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dont_Just_Assume_Look_and_Answer_Overcoming_Priors_for_Visual_Question_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Agrawal_Dont_Just_Assume_CVPR_2018_paper.html)>
 
     - Aishwarya Agrawal, Dhruv Batra, Devi Parikh, Aniruddha Kembhavi
 
@@ -2599,7 +2599,7 @@ linked to summary slide pages and formal CVPR pages.
     - David F. Fouhey, Wei-cheng Kuo, Alexei A. Efros, Jitendra Malik
 
 
-- [Cross-Domain Weakly-Supervised Object Detection Through Progressive Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Domain_Weakly-Supervised_Object_Detection_through_Progressive_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Inoue_Cross-Domain_Weakly-Supervised_Object_CVPR_2018_paper.html)
+- [Cross-Domain Weakly-Supervised Object Detection Through Progressive Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Domain_Weakly-Supervised_Object_Detection_through_Progressive_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Inoue_Cross-Domain_Weakly-Supervised_Object_CVPR_2018_paper.html)>
 
     - Naoto Inoue, Ryosuke Furuta, Toshihiko Yamasaki, Kiyoharu Aizawa
 
@@ -2619,12 +2619,12 @@ linked to summary slide pages and formal CVPR pages.
     - Tatjana Chavdarova, Pierre Baqué, Stéphane Bouquet, Andrii Maksai, Cijo Jose, Timur Bagautdinov, Louis Lettry, Pascal Fua, Luc Van Gool, François Fleuret
 
 
-- [Direct Shape Regression Networks for End-to-End Face Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Direct_Shape_Regression_Networks_for_End-to-End_Face_Alignment)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Miao_Direct_Shape_Regression_CVPR_2018_paper.html)
+- [Direct Shape Regression Networks for End-to-End Face Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Direct_Shape_Regression_Networks_for_End-to-End_Face_Alignment)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Miao_Direct_Shape_Regression_CVPR_2018_paper.html)>
 
     - Xin Miao, Xiantong Zhen, Xianglong Liu, Cheng Deng, Vassilis Athitsos, Heng Huang
 
 
-- [Natural and Effective Obfuscation by Head Inpainting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Natural_and_Effective_Obfuscation_by_Head_Inpainting)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sun_Natural_and_Effective_CVPR_2018_paper.html)
+- [Natural and Effective Obfuscation by Head Inpainting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Natural_and_Effective_Obfuscation_by_Head_Inpainting)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sun_Natural_and_Effective_CVPR_2018_paper.html)>
 
     - Qianru Sun, Liqian Ma, Seong Joon Oh, Luc Van Gool, Bernt Schiele, Mario Fritz
 
@@ -2639,17 +2639,17 @@ linked to summary slide pages and formal CVPR pages.
     - Shizhong Han, Zibo Meng, Zhiyuan Li, James O'Reilly, Jie Cai, Xiaofeng Wang, Yan Tong
 
 
-- [V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation From a Single Depth Map](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_V2V-PoseNet_Voxel-to-Voxel_Prediction_Network_for_Accurate_3D_Hand_and_Human_Pose_Estimation_from_a_Single_Depth_Map)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Moon_V2V-PoseNet_Voxel-to-Voxel_Prediction_CVPR_2018_paper.html)
+- [V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation From a Single Depth Map](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_V2V-PoseNet_Voxel-to-Voxel_Prediction_Network_for_Accurate_3D_Hand_and_Human_Pose_Estimation_from_a_Single_Depth_Map)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Moon_V2V-PoseNet_Voxel-to-Voxel_Prediction_CVPR_2018_paper.html)>
 
     - Gyeongsik Moon, Ju Yong Chang, Kyoung Mu Lee
 
 
-- [Ring Loss: Convex Feature Normalization for Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Ring_loss_Convex_Feature_Normalization_for_Face_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zheng_Ring_Loss_Convex_CVPR_2018_paper.html)
+- [Ring Loss: Convex Feature Normalization for Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Ring_loss_Convex_Feature_Normalization_for_Face_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zheng_Ring_Loss_Convex_CVPR_2018_paper.html)>
 
     - Yutong Zheng, Dipan K. Pal, Marios Savvides
 
 
-- [Adversarially Occluded Samples for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarially_Occluded_Samples_for_Person_Re-identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_Adversarially_Occluded_Samples_CVPR_2018_paper.html)
+- [Adversarially Occluded Samples for Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarially_Occluded_Samples_for_Person_Re-identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_Adversarially_Occluded_Samples_CVPR_2018_paper.html)>
 
     - Houjing Huang, Dangwei Li, Zhang Zhang, Xiaotang Chen, Kaiqi Huang
 
@@ -2664,7 +2664,7 @@ linked to summary slide pages and formal CVPR pages.
     - Shiyang Cheng, Irene Kotsia, Maja Pantic, Stefanos Zafeiriou
 
 
-- [Seeing Small Faces From Robust Anchor's Perspective](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Seeing_Small_Faces_from_Robus_Anchors_Perspective)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhu_Seeing_Small_Faces_CVPR_2018_paper.html)
+- [Seeing Small Faces From Robust Anchor's Perspective](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Seeing_Small_Faces_from_Robus_Anchors_Perspective)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhu_Seeing_Small_Faces_CVPR_2018_paper.html)>
 
     - Chenchen Zhu, Ran Tao, Khoa Luu, Marios Savvides
 
@@ -2709,7 +2709,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yue Luo, Jimmy Ren, Zhouxia Wang, Wenxiu Sun, Jinshan Pan, Jianbo Liu, Jiahao Pang, Liang Lin
 
 
-- [Disentangling Features in 3D Face Shapes for Joint Face Reconstruction and Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Disentangling_Features_in_3D_Face_Shapes_for_Joint_Face_Reconstruction_and_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Disentangling_Features_in_CVPR_2018_paper.html)
+- [Disentangling Features in 3D Face Shapes for Joint Face Reconstruction and Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Disentangling_Features_in_3D_Face_Shapes_for_Joint_Face_Reconstruction_and_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Disentangling_Features_in_CVPR_2018_paper.html)>
 
     - Feng Liu, Ronghang Zhu, Dan Zeng, Qijun Zhao, Xiaoming Liu
 
@@ -2734,17 +2734,17 @@ linked to summary slide pages and formal CVPR pages.
     - Wei Yang, Wanli Ouyang, Xiaolong Wang, Jimmy Ren, Hongsheng Li, Xiaogang Wang
 
 
-- [CosFace: Large Margin Cosine Loss for Deep Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CosFace_Large_Margin_Cosine_Loss_for_Deep_Face_Recogntion)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_CosFace_Large_Margin_CVPR_2018_paper.html)
+- [CosFace: Large Margin Cosine Loss for Deep Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CosFace_Large_Margin_Cosine_Loss_for_Deep_Face_Recogntion)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_CosFace_Large_Margin_CVPR_2018_paper.html)>
 
     - Hao Wang, Yitong Wang, Zheng Zhou, Xing Ji, Dihong Gong, Jingchao Zhou, Zhifeng Li, Wei Liu
 
 
-- [Encoding Crowd Interaction With Deep Neural Network for Pedestrian Trajectory Prediction](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Encoding_Crowd_Interaction_with_Deep_Neural_Network_for_Pedestrian_Trajectory_Prediction)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Encoding_Crowd_Interaction_CVPR_2018_paper.html)
+- [Encoding Crowd Interaction With Deep Neural Network for Pedestrian Trajectory Prediction](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Encoding_Crowd_Interaction_with_Deep_Neural_Network_for_Pedestrian_Trajectory_Prediction)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Encoding_Crowd_Interaction_CVPR_2018_paper.html)>
 
     - Yanyu Xu, Zhixin Piao, Shenghua Gao
 
 
-- [Mean-Variance Loss for Deep Age Estimation From a Face](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Mean-Variance_Loss_for_Deep_Age_Estimation_from_a_Face)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Pan_Mean-Variance_Loss_for_CVPR_2018_paper.html)
+- [Mean-Variance Loss for Deep Age Estimation From a Face](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Mean-Variance_Loss_for_Deep_Age_Estimation_from_a_Face)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Pan_Mean-Variance_Loss_for_CVPR_2018_paper.html)>
 
     - Hongyu Pan, Hu Han, Shiguang Shan, Xilin Chen
 
@@ -2754,12 +2754,12 @@ linked to summary slide pages and formal CVPR pages.
     - Dennis Madsen, Marcel Lüthi, Andreas Schneider, Thomas Vetter
 
 
-- [Learning Latent Super-Events to Detect Multiple Activities in Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Latent_Super-Events_to_Detect_Multiple_Activities_in_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Piergiovanni_Learning_Latent_Super-Events_CVPR_2018_paper.html)
+- [Learning Latent Super-Events to Detect Multiple Activities in Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Latent_Super-Events_to_Detect_Multiple_Activities_in_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Piergiovanni_Learning_Latent_Super-Events_CVPR_2018_paper.html)>
 
     - AJ Piergiovanni, Michael S. Ryoo
 
 
-- [Temporal Hallucinating for Action Recognition With Few Still Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Temporal_Hallucinating_for_Action_Recognition_with_Few_Still_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Temporal_Hallucinating_for_CVPR_2018_paper.html)
+- [Temporal Hallucinating for Action Recognition With Few Still Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Temporal_Hallucinating_for_Action_Recognition_with_Few_Still_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Temporal_Hallucinating_for_CVPR_2018_paper.html)>
 
     - Yali Wang, Lei Zhou, Yu Qiao
 
@@ -2774,7 +2774,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yanyu Xu, Yanbing Dong, Junru Wu, Zhengzhong Sun, Zhiru Shi, Jingyi Yu, Shenghua Gao
 
 
-- [When Will You Do What? - Anticipating Temporal Occurrences of Activities](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_When_will_you_do_what-Anticipating_Temporal_Occurrences_of_Activities)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Abu_Farha_When_Will_You_CVPR_2018_paper.html)
+- [When Will You Do What? - Anticipating Temporal Occurrences of Activities](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_When_will_you_do_what-Anticipating_Temporal_Occurrences_of_Activities)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Abu_Farha_When_Will_You_CVPR_2018_paper.html)>
 
     - Yazan Abu Farha, Alexander Richard, Juergen Gall
 
@@ -2804,7 +2804,7 @@ linked to summary slide pages and formal CVPR pages.
     - Mihai Zanfir, Alin-Ionut Popa, Andrei Zanfir, Cristian Sminchisescu
 
 
-- [Domain Generalization With Adversarial Feature Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Domain_Generalization_with_Adversarial_Feature_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Domain_Generalization_With_CVPR_2018_paper.html)
+- [Domain Generalization With Adversarial Feature Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Domain_Generalization_with_Adversarial_Feature_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Domain_Generalization_With_CVPR_2018_paper.html)>
 
     - Haoliang Li, Sinno Jialin Pan, Shiqi Wang, Alex C. Kot
 
@@ -2814,17 +2814,17 @@ linked to summary slide pages and formal CVPR pages.
     - Jia-Ren Chang, Yong-Sheng Chen
 
 
-- [Event-Based Vision Meets Deep Learning on Steering Prediction for Self-Driving Cars](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Event-based_Vision_meets_Deep_Learning_on_Steering_Prediction_for_Self-driving_Cars)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Maqueda_Event-Based_Vision_Meets_CVPR_2018_paper.html)
+- [Event-Based Vision Meets Deep Learning on Steering Prediction for Self-Driving Cars](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Event-based_Vision_meets_Deep_Learning_on_Steering_Prediction_for_Self-driving_Cars)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Maqueda_Event-Based_Vision_Meets_CVPR_2018_paper.html)>
 
     - Ana I. Maqueda, Antonio Loquercio, Guillermo Gallego, Narciso García, Davide Scaramuzza
 
 
-- [Learning Answer Embeddings for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Answer_Embeddings_for_Visual_Question_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Learning_Answer_Embeddings_CVPR_2018_paper.html)
+- [Learning Answer Embeddings for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Answer_Embeddings_for_Visual_Question_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Learning_Answer_Embeddings_CVPR_2018_paper.html)>
 
     - Hexiang Hu, Wei-Lun Chao, Fei Sha
 
 
-- [Good View Hunting: Learning Photo Composition From Dense View Pairs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Good_View_Hunting_Learning_Photo_Composition_from_Dense_View_Pairs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wei_Good_View_Hunting_CVPR_2018_paper.html)
+- [Good View Hunting: Learning Photo Composition From Dense View Pairs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Good_View_Hunting_Learning_Photo_Composition_from_Dense_View_Pairs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wei_Good_View_Hunting_CVPR_2018_paper.html)>
 
     - Zijun Wei, Jianming Zhang, Xiaohui Shen, Zhe Lin, Radomír Mech, Minh Hoai, Dimitris Samaras
 
@@ -2854,7 +2854,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yuji Tokozume, Yoshitaka Ushiku, Tatsuya Harada
 
 
-- [Adversarial Feature Augmentation for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarial_Feature_Augmentation_for_Unsupervised_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Volpi_Adversarial_Feature_Augmentation_CVPR_2018_paper.html)
+- [Adversarial Feature Augmentation for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Adversarial_Feature_Augmentation_for_Unsupervised_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Volpi_Adversarial_Feature_Augmentation_CVPR_2018_paper.html)>
 
     - Riccardo Volpi, Pietro Morerio, Silvio Savarese, Vittorio Murino
 
@@ -2884,7 +2884,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yongqin Xian, Tobias Lorenz, Bernt Schiele, Zeynep Akata
 
 
-- [Joint Optimization Framework for Learning With Noisy Labels](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Joint_Optimization_Framework_for_Learning_with_Noisy_Labels)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tanaka_Joint_Optimization_Framework_CVPR_2018_paper.html)
+- [Joint Optimization Framework for Learning With Noisy Labels](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Joint_Optimization_Framework_for_Learning_with_Noisy_Labels)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tanaka_Joint_Optimization_Framework_CVPR_2018_paper.html)>
 
     - Daiki Tanaka, Daiki Ikami, Toshihiko Yamasaki, Kiyoharu Aizawa
 
@@ -2894,17 +2894,17 @@ linked to summary slide pages and formal CVPR pages.
     - Jyoti Aneja, Aditya Deshpande, Alexander G. Schwing
 
 
-- [AON: Towards Arbitrarily-Oriented Text Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_AON_Towards_Arbitrarily-Oriented_Text_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_AON_Towards_Arbitrarily-Oriented_CVPR_2018_paper.html)
+- [AON: Towards Arbitrarily-Oriented Text Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_AON_Towards_Arbitrarily-Oriented_Text_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cheng_AON_Towards_Arbitrarily-Oriented_CVPR_2018_paper.html)>
 
     - Zhanzhan Cheng, Yangliu Xu, Fan Bai, Yi Niu, Shiliang Pu, Shuigeng Zhou
 
 
-- [Wrapped Gaussian Process Regression on Riemannian Manifolds](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Wrapped_Gaussian_Process_Regression_on_Riemannian_Manifolds)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mallasto_Wrapped_Gaussian_Process_CVPR_2018_paper.html)
+- [Wrapped Gaussian Process Regression on Riemannian Manifolds](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Wrapped_Gaussian_Process_Regression_on_Riemannian_Manifolds)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mallasto_Wrapped_Gaussian_Process_CVPR_2018_paper.html)>
 
     - Anton Mallasto, Aasa Feragen
 
 
-- [Geometry Guided Convolutional Neural Networks for Self-Supervised Video Representation Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry_Guided_Convolutional_Neural_Networks_for_Self_Supervised_Video_Representation_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gan_Geometry_Guided_Convolutional_CVPR_2018_paper.html)
+- [Geometry Guided Convolutional Neural Networks for Self-Supervised Video Representation Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Geometry_Guided_Convolutional_Neural_Networks_for_Self_Supervised_Video_Representation_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gan_Geometry_Guided_Convolutional_CVPR_2018_paper.html)>
 
     - Chuang Gan, Boqing Gong, Kun Liu, Hao Su, Leonidas J. Guibas
 
@@ -2914,7 +2914,7 @@ linked to summary slide pages and formal CVPR pages.
     - Michael Firman, Neill D. F. Campbell, Lourdes Agapito, Gabriel J. Brostow
 
 
-- [Deep Face Detector Adaptation Without Negative Transfer or Catastrophic Forgetting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Face_Detector_Adaptation_without_Negative_Transfer_or_Catastrophic_Forgetting)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Jamal_Deep_Face_Detector_CVPR_2018_paper.html)
+- [Deep Face Detector Adaptation Without Negative Transfer or Catastrophic Forgetting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Face_Detector_Adaptation_without_Negative_Transfer_or_Catastrophic_Forgetting)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Jamal_Deep_Face_Detector_CVPR_2018_paper.html)>
 
     - Muhammad Abdullah Jamal, Haoxiang Li, Boqing Gong
 
@@ -2969,7 +2969,7 @@ linked to summary slide pages and formal CVPR pages.
     - Filip Radenović, Ahmet Iscen, Giorgos Tolias, Yannis Avrithis, Ondřej Chum
 
 
-- [Cross-Dataset Adaptation for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Dataset_Adaptation_for_Visual_Question_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chao_Cross-Dataset_Adaptation_for_CVPR_2018_paper.html)
+- [Cross-Dataset Adaptation for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cross-Dataset_Adaptation_for_Visual_Question_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chao_Cross-Dataset_Adaptation_for_CVPR_2018_paper.html)>
 
     - Wei-Lun Chao, Hexiang Hu, Fei Sha
 
@@ -3009,7 +3009,7 @@ linked to summary slide pages and formal CVPR pages.
     - Wen-Yan Lin, Siying Liu, Jian-Huang Lai, Yasuyuki Matsushita
 
 
-- [Eliminating Background-Bias for Robust Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Eliminating_Background-bias_for_Robust_Person_Re-identification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tian_Eliminating_Background-Bias_for_CVPR_2018_paper.html)
+- [Eliminating Background-Bias for Robust Person Re-Identification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Eliminating_Background-bias_for_Robust_Person_Re-identification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tian_Eliminating_Background-Bias_for_CVPR_2018_paper.html)>
 
     - Maoqing Tian, Shuai Yi, Hongsheng Li, Shihua Li, Xuesen Zhang, Jianping Shi, Junjie Yan, Xiaogang Wang
 
@@ -3019,7 +3019,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yin Cui, Guandao Yang, Andreas Veit, Xun Huang, Serge Belongie
 
 
-- [Single-Shot Object Detection With Enriched Semantics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single-Shot_Object_Detection_with_Enriched_Semantics)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Single-Shot_Object_Detection_CVPR_2018_paper.html)
+- [Single-Shot Object Detection With Enriched Semantics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single-Shot_Object_Detection_with_Enriched_Semantics)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Single-Shot_Object_Detection_CVPR_2018_paper.html)>
 
     - Zhishuai Zhang, Siyuan Qiao, Cihang Xie, Wei Shen, Bo Wang, Alan L. Yuille
 
@@ -3029,17 +3029,17 @@ linked to summary slide pages and formal CVPR pages.
     - Hang Qi, Matthew Brown, David G. Lowe
 
 
-- [Neural Motifs: Scene Graph Parsing With Global Context](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Neural_Motifs_Scene_Graph_Parsing_with_Global_Context)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zellers_Neural_Motifs_Scene_CVPR_2018_paper.html)
+- [Neural Motifs: Scene Graph Parsing With Global Context](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Neural_Motifs_Scene_Graph_Parsing_with_Global_Context)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zellers_Neural_Motifs_Scene_CVPR_2018_paper.html)>
 
     - Rowan Zellers, Mark Yatskar, Sam Thomson, Yejin Choi
 
 
-- [Variational Autoencoders for Deforming 3D Mesh Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Variational_Autoencoders_for_Deforming_3D_Mesh_Models)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tan_Variational_Autoencoders_for_CVPR_2018_paper.html)
+- [Variational Autoencoders for Deforming 3D Mesh Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Variational_Autoencoders_for_Deforming_3D_Mesh_Models)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tan_Variational_Autoencoders_for_CVPR_2018_paper.html)>
 
     - Qingyang Tan, Lin Gao, Yu-Kun Lai, Shihong Xia
 
 
-- [Fast Monte-Carlo Localization on Aerial Vehicles Using Approximate Continuous Belief Representations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_Monte-Carlo_Localization_on_Aerial_Vehicles_using_Approximate_Continuous_Belief_Representations)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Dhawale_Fast_Monte-Carlo_Localization_CVPR_2018_paper.html)
+- [Fast Monte-Carlo Localization on Aerial Vehicles Using Approximate Continuous Belief Representations](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_Monte-Carlo_Localization_on_Aerial_Vehicles_using_Approximate_Continuous_Belief_Representations)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Dhawale_Fast_Monte-Carlo_Localization_CVPR_2018_paper.html)>
 
     - Aditya Dhawale, Kumar Shaurya Shankar, Nathan Michael
 
@@ -3064,7 +3064,7 @@ linked to summary slide pages and formal CVPR pages.
     - Gedas Bertasius, Aaron Chan, Jianbo Shi
 
 
-- [Human-Centric Indoor Scene Synthesis Using Stochastic Grammar](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Human-centric_Indoor_Scene_Synthesis_Using_Stochastic_Grammar)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Qi_Human-Centric_Indoor_Scene_CVPR_2018_paper.html)
+- [Human-Centric Indoor Scene Synthesis Using Stochastic Grammar](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Human-centric_Indoor_Scene_Synthesis_Using_Stochastic_Grammar)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Qi_Human-Centric_Indoor_Scene_CVPR_2018_paper.html)>
 
     - Siyuan Qi, Yixin Zhu, Siyuan Huang, Chenfanfu Jiang, Song-Chun Zhu
 
@@ -3074,7 +3074,7 @@ linked to summary slide pages and formal CVPR pages.
     - Minghui Liao, Zhen Zhu, Baoguang Shi, Gui-song Xia, Xiang Bai
 
 
-- [Separating Self-Expression and Visual Content in Hashtag Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Separating_Self-Expression_and_Visual_Content_in_Hashtag_Supervision)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Veit_Separating_Self-Expression_and_CVPR_2018_paper.html)
+- [Separating Self-Expression and Visual Content in Hashtag Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Separating_Self-Expression_and_Visual_Content_in_Hashtag_Supervision)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Veit_Separating_Self-Expression_and_CVPR_2018_paper.html)>
 
     - Andreas Veit, Maximilian Nickel, Serge Belongie, Laurens van der Maaten
 
@@ -3114,7 +3114,7 @@ linked to summary slide pages and formal CVPR pages.
     - Alexander Richard, Hilde Kuehne, Juergen Gall
 
 
-- [Low-Latency Video Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Context_Encoding_for_Semantic_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Low-Latency_Video_Semantic_CVPR_2018_paper.html)
+- [Low-Latency Video Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Context_Encoding_for_Semantic_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Low-Latency_Video_Semantic_CVPR_2018_paper.html)>
 
     - Yule Li, Jianping Shi, Dahua Lin
 
@@ -3139,12 +3139,12 @@ linked to summary slide pages and formal CVPR pages.
     - Ergys Ristani, Carlo Tomasi
 
 
-- [AVA: A Video Dataset of Spatio-Temporally Localized Atomic Visual Actions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_AVA_A_Video_Dataset_of_Spatio-temporally_Localized_Atomic_Visual_Actions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gu_AVA_A_Video_CVPR_2018_paper.html)
+- [AVA: A Video Dataset of Spatio-Temporally Localized Atomic Visual Actions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_AVA_A_Video_Dataset_of_Spatio-temporally_Localized_Atomic_Visual_Actions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gu_AVA_A_Video_CVPR_2018_paper.html)>
 
     - Chunhui Gu, Chen Sun, David A. Ross, Carl Vondrick, Caroline Pantofaru, Yeqing Li, Sudheendra Vijayanarasimhan, George Toderici, Susanna Ricco, Rahul Sukthankar, Cordelia Schmid, Jitendra Malik
 
 
-- [Who's Better? Who's Best? Pairwise Deep Ranking for Skill Determination](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Whos_Better_Whos_Best_Pairwise_Deep_Ranking_for_Skill_Determination)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Doughty_Whos_Better_Whos_CVPR_2018_paper.html)
+- [Who's Better? Who's Best? Pairwise Deep Ranking for Skill Determination](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Whos_Better_Whos_Best_Pairwise_Deep_Ranking_for_Skill_Determination)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Doughty_Whos_Better_Whos_CVPR_2018_paper.html)>
 
     - Hazel Doughty, Dima Damen, Walterio Mayol-Cuevas
 
@@ -3159,7 +3159,7 @@ linked to summary slide pages and formal CVPR pages.
     - Peter Anderson, Xiaodong He, Chris Buehler, Damien Teney, Mark Johnson, Stephen Gould, Lei Zhang
 
 
-- [Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Improved_Fusion_of_Visual_and_Language_Representations_by_Dense_Symmetric_Co-Attention_for_Visual_Question_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Nguyen_Improved_Fusion_of_CVPR_2018_paper.html)
+- [Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Improved_Fusion_of_Visual_and_Language_Representations_by_Dense_Symmetric_Co-Attention_for_Visual_Question_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Nguyen_Improved_Fusion_of_CVPR_2018_paper.html)>
 
     - Duy-Kien Nguyen, Takayuki Okatani
 
@@ -3169,12 +3169,12 @@ linked to summary slide pages and formal CVPR pages.
     - Daniela Massiceti, N. Siddharth, Puneet K. Dokania, Philip H.S. Torr
 
 
-- [Are You Talking to Me? Reasoned Visual Dialog Generation Through Adversarial Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Are_You_Talking_to_Me_Reasoned_Visual_Dialog_Generation_through_Adversarial_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Are_You_Talking_CVPR_2018_paper.html)
+- [Are You Talking to Me? Reasoned Visual Dialog Generation Through Adversarial Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Are_You_Talking_to_Me_Reasoned_Visual_Dialog_Generation_through_Adversarial_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Are_You_Talking_CVPR_2018_paper.html)>
 
     - Qi Wu, Peng Wang, Chunhua Shen, Ian Reid, Anton van den Hengel
 
 
-- [Visual Question Generation as Dual Task of Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Generation_as_Dual_Task_of_Visual_Question_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Visual_Question_Generation_CVPR_2018_paper.html)
+- [Visual Question Generation as Dual Task of Visual Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Generation_as_Dual_Task_of_Visual_Question_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Visual_Question_Generation_CVPR_2018_paper.html)>
 
     - Yikang Li, Nan Duan, Bolei Zhou, Xiao Chu, Wanli Ouyang, Xiaogang Wang, Ming Zhou
 
@@ -3229,7 +3229,7 @@ linked to summary slide pages and formal CVPR pages.
     - Zhuo Hui, Kalyan Sunkavalli, Sunil Hadap, Aswin C. Sankaranarayanan
 
 
-- [Trapping Light for Time of Flight](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Trapping_Light_for_Time_of_Flight)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Trapping_Light_for_CVPR_2018_paper.html)
+- [Trapping Light for Time of Flight](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Trapping_Light_for_Time_of_Flight)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xu_Trapping_Light_for_CVPR_2018_paper.html)>
 
     - Ruilin Xu, Mohit Gupta, Shree K. Nayar
 
@@ -3239,12 +3239,12 @@ linked to summary slide pages and formal CVPR pages.
     - Yochai Blau, Tomer Michaeli
 
 
-- [Label Denoising Adversarial Network (LDAN) for Inverse Lighting of Faces](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Label_Denoising_Adversarial_Network_LDAN_for_Inverse_Lighting_of_Faces)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Label_Denoising_Adversarial_CVPR_2018_paper.html)
+- [Label Denoising Adversarial Network (LDAN) for Inverse Lighting of Faces](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Label_Denoising_Adversarial_Network_LDAN_for_Inverse_Lighting_of_Faces)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhou_Label_Denoising_Adversarial_CVPR_2018_paper.html)>
 
     - Hao Zhou, Jin Sun, Yaser Yacoob, David W. Jacobs
 
 
-- [Optimal Structured Light à La Carte](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Optimal_Structured_Light_La_Carte)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mirdehghan_Optimal_Structured_Light_CVPR_2018_paper.html)
+- [Optimal Structured Light à La Carte](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Optimal_Structured_Light_La_Carte)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mirdehghan_Optimal_Structured_Light_CVPR_2018_paper.html)>
 
     - Parsa Mirdehghan, Wenzheng Chen, Kiriakos N. Kutulakos
 
@@ -3264,12 +3264,12 @@ linked to summary slide pages and formal CVPR pages.
     - Tal Tlusty, Tomer Michaeli, Tali Dekel, Lihi Zelnik-Manor
 
 
-- [Robust Video Content Alignment and Compensation for Rain Removal in a CNN Framework](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Robust_Video_Content_Alignment_and_Compensation_for_Rain_Removal_in_a_CNN_Framework)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Robust_Video_content_cvpr_2018_paper.html)
+- [Robust Video Content Alignment and Compensation for Rain Removal in a CNN Framework](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Robust_Video_Content_Alignment_and_Compensation_for_Rain_Removal_in_a_CNN_Framework)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Robust_Video_content_cvpr_2018_paper.html)>
 
     - Jie Chen, Cheen-Hau Tan, Junhui Hou, Lap-Pui Chau, He Li
 
 
-- [SfSNet: Learning Shape, Reflectance and Illuminance of Faces `in the Wild'](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SfSNet_Learning_Shape_Reflectance_and_Illuminance_of_Faces_in_the_Wild)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sengupta_SfSNet_Learning_Shape_CVPR_2018_paper.html)
+- [SfSNet: Learning Shape, Reflectance and Illuminance of Faces `in the Wild'](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SfSNet_Learning_Shape_Reflectance_and_Illuminance_of_Faces_in_the_Wild)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sengupta_SfSNet_Learning_Shape_CVPR_2018_paper.html)>
 
     - Soumyadip Sengupta, Angjoo Kanazawa, Carlos D. Castillo, David W. Jacobs
 
@@ -3279,7 +3279,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yu-Sheng Chen, Yu-Ching Wang, Man-Hsin Kao, Yung-Yu Chuang
 
 
-- [LIME: Live Intrinsic Material Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LIME_Live_Intrinsic_Material_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Meka_LIME_Live_Intrinsic_CVPR_2018_paper.html)
+- [LIME: Live Intrinsic Material Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LIME_Live_Intrinsic_Material_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Meka_LIME_Live_Intrinsic_CVPR_2018_paper.html)>
 
     - Abhimitra Meka, Maxim Maximov, Michael Zollhöfer, Avishek Chatterjee, Hans-Peter Seidel, Christian Richardt, Christian Theobalt
 
@@ -3309,7 +3309,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jiri Fajtl, Vasileios Argyriou, Dorothy Monekosso, Paolo Remagnino
 
 
-- [Blind Predicting Similar Quality Map for Image Quality Assessment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Blind_Predicting_Similar_Quality_Map_for_Image_Quality_Assessment)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Pan_Blind_Predicting_Similar_CVPR_2018_paper.html)
+- [Blind Predicting Similar Quality Map for Image Quality Assessment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Blind_Predicting_Similar_Quality_Map_for_Image_Quality_Assessment)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Pan_Blind_Predicting_Similar_CVPR_2018_paper.html)>
 
     - Da Pan, Ping Shi, Ming Hou, Zefeng Ying, Sizhe Fu, Yuan Zhang
 
@@ -3464,7 +3464,7 @@ linked to summary slide pages and formal CVPR pages.
     - Ren Yang, Mai Xu, Zulin Wang, Tianyi Li
 
 
-- [CNN Based Learning Using Reflection and Retinex Models for Intrinsic Image Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CNN_based_Learning_using_Reflection_and_Retinex_Models_for_Intrinsic_Image_Decomposition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Baslamisli_CNN_Based_Learning_CVPR_2018_paper.html)
+- [CNN Based Learning Using Reflection and Retinex Models for Intrinsic Image Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_CNN_based_Learning_using_Reflection_and_Retinex_Models_for_Intrinsic_Image_Decomposition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Baslamisli_CNN_Based_Learning_CVPR_2018_paper.html)>
 
     - Anil S. Baslamisli, Hoang-An Le, Theo Gevers
 
@@ -3479,7 +3479,7 @@ linked to summary slide pages and formal CVPR pages.
     - Simon Korman, Roee Litman
 
 
-- [Two-Stream Convolutional Networks for Dynamic Texture Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Two-Stream_Convolutional_Networks_for_Dynamic_Texture_Synthesis)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tesfaldet_Two-Stream_Convolutional_Networks_CVPR_2018_paper.html)
+- [Two-Stream Convolutional Networks for Dynamic Texture Synthesis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Two-Stream_Convolutional_Networks_for_Dynamic_Texture_Synthesis)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tesfaldet_Two-Stream_Convolutional_Networks_CVPR_2018_paper.html)>
 
     - Matthew Tesfaldet, Marcus A. Brubaker, Konstantinos G. Derpanis
 
@@ -3499,7 +3499,7 @@ linked to summary slide pages and formal CVPR pages.
     - Daniel Barath, Jiří Matas
 
 
-- [Temporal Deformable Residual Networks for Action Segmentation in Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Temporal_Deformable_Residual_Networks_for_Action_Segmentation_in_Videos)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lei_Temporal_Deformable_Residual_CVPR_2018_paper.html)
+- [Temporal Deformable Residual Networks for Action Segmentation in Videos](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Temporal_Deformable_Residual_Networks_for_Action_Segmentation_in_Videos)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lei_Temporal_Deformable_Residual_CVPR_2018_paper.html)>
 
     - Peng Lei, Sinisa Todorovic
 
@@ -3524,7 +3524,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jianfu Zhang, Naiyan Wang, Liqing Zhang
 
 
-- [Attend and Interact: Higher-Order Object Interactions for Video Understanding](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attend_and_Interact_Higher-Order_Object_Interactions_for_Video_Understanding)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Attend_and_Interact_CVPR_2018_paper.html)
+- [Attend and Interact: Higher-Order Object Interactions for Video Understanding](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Attend_and_Interact_Higher-Order_Object_Interactions_for_Video_Understanding)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Attend_and_Interact_CVPR_2018_paper.html)>
 
     - Chih-Yao Ma, Asim Kadav, Iain Melvin, Zsolt Kira, Ghassan AlRegib, Hans Peter Graf
 
@@ -3534,22 +3534,22 @@ linked to summary slide pages and formal CVPR pages.
     - Ping Wei, Yang Liu, Tianmin Shu, Nanning Zheng, Song-Chun Zhu
 
 
-- [Fully Convolutional Adaptation Networks for Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fully_Convolutional_Adaptation_Networks_for_Semantic_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Fully_Convolutional_Adaptation_CVPR_2018_paper.html)
+- [Fully Convolutional Adaptation Networks for Semantic Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fully_Convolutional_Adaptation_Networks_for_Semantic_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Fully_Convolutional_Adaptation_CVPR_2018_paper.html)>
 
     - Yiheng Zhang, Zhaofan Qiu, Ting Yao, Dong Liu, Tao Mei
 
 
-- [Semantic Video Segmentation by Gated Recurrent Flow Propagation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Semantic_Video_Segmentation_by_Gated_Recurrent_Flow_Propagation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Nilsson_Semantic_Video_Segmentation_CVPR_2018_paper.html)
+- [Semantic Video Segmentation by Gated Recurrent Flow Propagation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Semantic_Video_Segmentation_by_Gated_Recurrent_Flow_Propagation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Nilsson_Semantic_Video_Segmentation_CVPR_2018_paper.html)>
 
     - David Nilsson, Cristian Sminchisescu
 
 
-- [Interpretable Video Captioning via Trajectory Structured Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Interpretable_Video_Captioning_via_Trajectory_Structured_Localization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Interpretable_Video_Captioning_CVPR_2018_paper.html)
+- [Interpretable Video Captioning via Trajectory Structured Localization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Interpretable_Video_Captioning_via_Trajectory_Structured_Localization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Interpretable_Video_Captioning_CVPR_2018_paper.html)>
 
     - Xian Wu, Guanbin Li, Qingxing Cao, Qingge Ji, Liang Lin
 
 
-- [Deep Hashing via Discrepancy Minimization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Hashing_via_Discrepancy_Minimization)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Deep_Hashing_via_CVPR_2018_paper.html)
+- [Deep Hashing via Discrepancy Minimization](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Hashing_via_Discrepancy_Minimization)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Deep_Hashing_via_CVPR_2018_paper.html)>
 
     - Zhixiang Chen, Xin Yuan, Jiwen Lu, Qi Tian, Jie Zhou
 
@@ -3589,7 +3589,7 @@ linked to summary slide pages and formal CVPR pages.
     - Abel Gonzalez-Garcia, Davide Modolo, Vittorio Ferrari
 
 
-- [End-to-End Weakly-Supervised Semantic Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_End-to-end_weakly-supervised_semantic_alignment)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Rocco_End-to-End_Weakly-Supervised_Semantic_CVPR_2018_paper.html)
+- [End-to-End Weakly-Supervised Semantic Alignment](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_End-to-end_weakly-supervised_semantic_alignment)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Rocco_End-to-End_Weakly-Supervised_Semantic_CVPR_2018_paper.html)>
 
     - Ignacio Rocco, Relja Arandjelović, Josef Sivic
 
@@ -3619,7 +3619,7 @@ linked to summary slide pages and formal CVPR pages.
     - Ruotian Luo, Brian Price, Scott Cohen, Gregory Shakhnarovich
 
 
-- [Visual Question Answering With Memory-Augmented Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Answering_with_Memory_Augmented_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Visual_Question_Answering_CVPR_2018_paper.html)
+- [Visual Question Answering With Memory-Augmented Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Answering_with_Memory_Augmented_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ma_Visual_Question_Answering_CVPR_2018_paper.html)>
 
     - Chao Ma, Chunhua Shen, Anthony Dick, Qi Wu, Peng Wang, Anton van den Hengel, Ian Reid
 
@@ -3644,27 +3644,27 @@ linked to summary slide pages and formal CVPR pages.
     - Zilong Huang, Xinggang Wang, Jiasi Wang, Wenyu Liu, Jingdong Wang
 
 
-- [PoTion: Pose MoTion Representation for Action Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PoTion_Pose_MoTion_Representation_for_Action_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Choutas_PoTion_Pose_MoTion_CVPR_2018_paper.html)
+- [PoTion: Pose MoTion Representation for Action Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PoTion_Pose_MoTion_Representation_for_Action_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Choutas_PoTion_Pose_MoTion_CVPR_2018_paper.html)>
 
     - Vasileios Choutas, Philippe Weinzaepfel, Jérôme Revaud, Cordelia Schmid
 
 
-- [Bilateral Ordinal Relevance Multi-Instance Regression for Facial Action Unit Intensity Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Bilateral_Ordinal_Relevance_Multi-instance_Regression_for_Facial_Action_Unit_Intensity_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Bilateral_Ordinal_Relevance_CVPR_2018_paper.html)
+- [Bilateral Ordinal Relevance Multi-Instance Regression for Facial Action Unit Intensity Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Bilateral_Ordinal_Relevance_Multi-instance_Regression_for_Facial_Action_Unit_Intensity_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Bilateral_Ordinal_Relevance_CVPR_2018_paper.html)>
 
     - Yong Zhang, Rui Zhao, Weiming Dong, Bao-Gang Hu, Qiang Ji
 
 
-- [Pulling Actions out of Context: Explicit Separation for Effective Combination](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Pulling_Actions_out_of_Context_Explicit_Separation_for_Effective_Combination)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Pulling_Actions_out_CVPR_2018_paper.html)
+- [Pulling Actions out of Context: Explicit Separation for Effective Combination](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Pulling_Actions_out_of_Context_Explicit_Separation_for_Effective_Combination)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Pulling_Actions_out_CVPR_2018_paper.html)>
 
     - Yang Wang, Minh Hoai
 
 
-- [Dynamic Feature Learning for Partial Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dynamic_Feature_Learning_for_Partial_Face_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Dynamic_Feature_Learning_CVPR_2018_paper.html)
+- [Dynamic Feature Learning for Partial Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Dynamic_Feature_Learning_for_Partial_Face_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/He_Dynamic_Feature_Learning_CVPR_2018_paper.html)>
 
     - Lingxiao He, Haiqing Li, Qi Zhang, Zhenan Sun
 
 
-- [Exploiting Transitivity for Learning Person Re-Identification Models on a Budget](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Exploiting_Transitivity_for_Learning_Person_Re-identification_Models_on_a_Budget)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Roy_Exploiting_Transitivity_for_CVPR_2018_paper.html)
+- [Exploiting Transitivity for Learning Person Re-Identification Models on a Budget](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Exploiting_Transitivity_for_Learning_Person_Re-identification_Models_on_a_Budget)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Roy_Exploiting_Transitivity_for_CVPR_2018_paper.html)>
 
     - Sourya Roy, Sujoy Paul, Neal E. Young, Amit K. Roy-Chowdhury
 
@@ -3674,22 +3674,22 @@ linked to summary slide pages and formal CVPR pages.
     - Lingxiao He, Jian Liang, Haiqing Li, Zhenan Sun
 
 
-- [Every Smile Is Unique: Landmark-Guided Diverse Smile Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Every_Smile_is_Unique_Landmark-Guided_Diverse_Smile_Generation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Every_Smile_Is_CVPR_2018_paper.html)
+- [Every Smile Is Unique: Landmark-Guided Diverse Smile Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Every_Smile_is_Unique_Landmark-Guided_Diverse_Smile_Generation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Every_Smile_Is_CVPR_2018_paper.html)>
 
     - Wei Wang, Xavier Alameda-Pineda, Dan Xu, Pascal Fua, Elisa Ricci, Nicu Sebe
 
 
-- [UV-GAN: Adversarial Facial UV Map Completion for Pose-Invariant Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_UV-GAN_Adversarial_Facial_UV_Map_Completion_for_Pose-invariant_Face_Recognition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_UV-GAN_Adversarial_Facial_CVPR_2018_paper.html)
+- [UV-GAN: Adversarial Facial UV Map Completion for Pose-Invariant Face Recognition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_UV-GAN_Adversarial_Facial_UV_Map_Completion_for_Pose-invariant_Face_Recognition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Deng_UV-GAN_Adversarial_Facial_CVPR_2018_paper.html)>
 
     - Jiankang Deng, Shiyang Cheng, Niannan Xue, Yuxiang Zhou, Stefanos Zafeiriou
 
 
-- [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cascaded_Pyramid_Network_for_Multi-Person_Pose_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Cascaded_Pyramid_Network_CVPR_2018_paper.html)
+- [Cascaded Pyramid Network for Multi-Person Pose Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Cascaded_Pyramid_Network_for_Multi-Person_Pose_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Cascaded_Pyramid_Network_CVPR_2018_paper.html)>
 
     - Yilun Chen, Zhicheng Wang, Yuxiang Peng, Zhiqiang Zhang, Gang Yu, Jian Sun
 
 
-- [A Face-to-Face Neural Conversation Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Face-to-Face_Neural_Conversation_Model)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chu_A_Face-to-Face_Neural_CVPR_2018_paper.html)
+- [A Face-to-Face Neural Conversation Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Face-to-Face_Neural_Conversation_Model)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chu_A_Face-to-Face_Neural_CVPR_2018_paper.html)>
 
     - Hang Chu, Daiqing Li, Sanja Fidler
 
@@ -3704,7 +3704,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jie Hu, Li Shen, Gang Sun
 
 
-- [Revisiting Salient Object Detection: Simultaneous Detection, Ranking, and Subitizing of Multiple Salient Objects](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Revisiting_Salient_Object_Detection_Simultaneous_Detection_Ranking_and_Subitizing_of_Multiple_Salient_Objects)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Islam_Revisiting_Salient_Object_CVPR_2018_paper.html)
+- [Revisiting Salient Object Detection: Simultaneous Detection, Ranking, and Subitizing of Multiple Salient Objects](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Revisiting_Salient_Object_Detection_Simultaneous_Detection_Ranking_and_Subitizing_of_Multiple_Salient_Objects)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Islam_Revisiting_Salient_Object_CVPR_2018_paper.html)>
 
     - Md Amirul Islam, Mahmoud Kalash, Neil D. B. Bruce
 
@@ -3714,22 +3714,22 @@ linked to summary slide pages and formal CVPR pages.
     - Hang Zhang, Kristin Dana, Jianping Shi, Zhongyue Zhang, Xiaogang Wang, Ambrish Tyagi, Amit Agrawal
 
 
-- [Creating Capsule Wardrobes From Fashion Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Creating_Capsule_Wardrobes_from_Fashion_Images)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hsiao_Creating_Capsule_Wardrobes_CVPR_2018_paper.html)
+- [Creating Capsule Wardrobes From Fashion Images](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Creating_Capsule_Wardrobes_from_Fashion_Images)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hsiao_Creating_Capsule_Wardrobes_CVPR_2018_paper.html)>
 
     - Wei-Lin Hsiao, Kristen Grauman
 
 
-- [Webly Supervised Learning Meets Zero-Shot Learning: A Hybrid Approach for Fine-Grained Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Webly_Supervised_Learning_Meets_Zero-shot_Learning_A_Hybrid_Approach_for_Fine-grained_Classification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Niu_Webly_Supervised_Learning_CVPR_2018_paper.html)
+- [Webly Supervised Learning Meets Zero-Shot Learning: A Hybrid Approach for Fine-Grained Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Webly_Supervised_Learning_Meets_Zero-shot_Learning_A_Hybrid_Approach_for_Fine-grained_Classification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Niu_Webly_Supervised_Learning_CVPR_2018_paper.html)>
 
     - Li Niu, Ashok Veeraraghavan, Ashutosh Sabharwal
 
 
-- [Look, Imagine and Match: Improving Textual-Visual Cross-Modal Retrieval With Generative Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Look_Imagine_and_Match_Improving_Textual-Visual_Cross-Modal_Retrieval_with_Generative_Models)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gu_Look_Imagine_and_CVPR_2018_paper.html)
+- [Look, Imagine and Match: Improving Textual-Visual Cross-Modal Retrieval With Generative Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Look_Imagine_and_Match_Improving_Textual-Visual_Cross-Modal_Retrieval_with_Generative_Models)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gu_Look_Imagine_and_CVPR_2018_paper.html)>
 
     - Jiuxiang Gu, Jianfei Cai, Shafiq R. Joty, Li Niu, Gang Wang
 
 
-- [Bidirectional Attentive Fusion With Context Gating for Dense Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Bidirectional_Attentive_Fusion_with_Context_Gating_for_Dense_Video_Captioning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Bidirectional_Attentive_Fusion_CVPR_2018_paper.html)
+- [Bidirectional Attentive Fusion With Context Gating for Dense Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Bidirectional_Attentive_Fusion_with_Context_Gating_for_Dense_Video_Captioning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Bidirectional_Attentive_Fusion_CVPR_2018_paper.html)>
 
     - Jingwen Wang, Wenhao Jiang, Lin Ma, Wei Liu, Yong Xu
 
@@ -3759,7 +3759,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xinlei Chen, Li-Jia Li, Li Fei-Fei, Abhinav Gupta
 
 
-- [Visual Question Reasoning on General Dependency Tree](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Reasoning_on_General_Dependency_Tree)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Visual_Question_Reasoning_CVPR_2018_paper.html)
+- [Visual Question Reasoning on General Dependency Tree](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Question_Reasoning_on_General_Dependency_Tree)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Cao_Visual_Question_Reasoning_CVPR_2018_paper.html)>
 
     - Qingxing Cao, Xiaodan Liang, Bailing Li, Guanbin Li, Liang Lin
 
@@ -3789,12 +3789,12 @@ linked to summary slide pages and formal CVPR pages.
     - Rıza Alp Güler, Natalia Neverova, Iasonas Kokkinos
 
 
-- [Ordinal Depth Supervision for 3D Human Pose Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Ordinal_Depth_Supervision_for_3D_Human_Pose_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Pavlakos_Ordinal_Depth_Supervision_CVPR_2018_paper.html)
+- [Ordinal Depth Supervision for 3D Human Pose Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Ordinal_Depth_Supervision_for_3D_Human_Pose_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Pavlakos_Ordinal_Depth_Supervision_CVPR_2018_paper.html)>
 
     - Georgios Pavlakos, Xiaowei Zhou, Kostas Daniilidis
 
 
-- [Consensus Maximization for Semantic Region Correspondences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Consensus_Maximization_for_Semantic_Region_Correspondences)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Speciale_Consensus_Maximization_for_CVPR_2018_paper.html)
+- [Consensus Maximization for Semantic Region Correspondences](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Consensus_Maximization_for_Semantic_Region_Correspondences)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Speciale_Consensus_Maximization_for_CVPR_2018_paper.html)>
 
     - Pablo Speciale, Danda P. Paudel, Martin R. Oswald, Hayko Riemenschneider, Luc Van Gool, Marc Pollefeys
 
@@ -3809,7 +3809,7 @@ linked to summary slide pages and formal CVPR pages.
     - Qianyi Wu, Juyong Zhang, Yu-Kun Lai, Jianmin Zheng, Jianfei Cai
 
 
-- [Nonlinear 3D Face Morphable Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Nonlinear_3D_Face_Morphable_Model)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tran_Nonlinear_3D_Face_CVPR_2018_paper.html)
+- [Nonlinear 3D Face Morphable Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Nonlinear_3D_Face_Morphable_Model)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tran_Nonlinear_3D_Face_CVPR_2018_paper.html)>
 
     - Luan Tran, Xiaoming Liu
 
@@ -3819,7 +3819,7 @@ linked to summary slide pages and formal CVPR pages.
     - Mingmin Zhao, Tianhong Li, Mohammad Abu Alsheikh, Yonglong Tian, Hang Zhao, Antonio Torralba, Dina Katabi
 
 
-- [What Makes a Video a Video: Analyzing Temporal Information in Video Understanding Models and Datasets](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_What_Makes_a_Video_a_Video_Analyzing_Temporal_Information_in_Video_Understanding_Models_and_Datasets)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_What_Makes_a_CVPR_2018_paper.html)
+- [What Makes a Video a Video: Analyzing Temporal Information in Video Understanding Models and Datasets](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_What_Makes_a_Video_a_Video_Analyzing_Temporal_Information_in_Video_Understanding_Models_and_Datasets)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Huang_What_Makes_a_CVPR_2018_paper.html)>
 
     - De-An Huang, Vignesh Ramanathan, Dhruv Mahajan, Lorenzo Torresani, Manohar Paluri, Li Fei-Fei, Juan Carlos Niebles
 
@@ -3829,7 +3829,7 @@ linked to summary slide pages and formal CVPR pages.
     - Seoung Wug Oh, Joon-Young Lee, Kalyan Sunkavalli, Seon Joo Kim
 
 
-- [NeuralNetwork-Viterbi: A Framework for Weakly Supervised Video Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_NeuralNetwork-Viterbi_A_Framework_for_Weakly_Supervised_Video_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Richard_NeuralNetwork-Viterbi_A_Framework_CVPR_2018_paper.html)
+- [NeuralNetwork-Viterbi: A Framework for Weakly Supervised Video Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_NeuralNetwork-Viterbi_A_Framework_for_Weakly_Supervised_Video_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Richard_NeuralNetwork-Viterbi_A_Framework_CVPR_2018_paper.html)>
 
     - Alexander Richard, Hilde Kuehne, Ahsan Iqbal, Juergen Gall
 
@@ -3859,7 +3859,7 @@ linked to summary slide pages and formal CVPR pages.
     - Atsushi Kanehira, Luc Van Gool, Yoshitaka Ushiku, Tatsuya Harada
 
 
-- [Photometric Stereo in Participating Media Considering Shape-Dependent Forward Scatter](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Photometric_Stereo_in_Participating_Media_Considering_Shape-Dependent_Forward_Scatter)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Fujimura_Photometric_Stereo_in_CVPR_2018_paper.html)
+- [Photometric Stereo in Participating Media Considering Shape-Dependent Forward Scatter](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Photometric_Stereo_in_Participating_Media_Considering_Shape-Dependent_Forward_Scatter)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Fujimura_Photometric_Stereo_in_CVPR_2018_paper.html)>
 
     - Yuki Fujimura, Masaaki Iiyama, Atsushi Hashimoto, Michihiko Minoh
 
@@ -3884,27 +3884,27 @@ linked to summary slide pages and formal CVPR pages.
     - Alex Kendall, Yarin Gal, Roberto Cipolla
 
 
-- [Jointly Localizing and Describing Events for Dense Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Jointly_Localizing_and_Describing_Events_for_Dense_Video_Captioning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Jointly_Localizing_and_CVPR_2018_paper.html)
+- [Jointly Localizing and Describing Events for Dense Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Jointly_Localizing_and_Describing_Events_for_Dense_Video_Captioning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Jointly_Localizing_and_CVPR_2018_paper.html)>
 
     - Yehao Li, Ting Yao, Yingwei Pan, Hongyang Chao, Tao Mei
 
 
-- [Going From Image to Video Saliency: Augmenting Image Salience With Dynamic Attentional Push](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Going_from_Image_to_Video_Saliency_Augmenting_Image_Salience_with_Dynamic_Attentional_Push)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gorji_Going_From_Image_CVPR_2018_paper.html)
+- [Going From Image to Video Saliency: Augmenting Image Salience With Dynamic Attentional Push](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Going_from_Image_to_Video_Saliency_Augmenting_Image_Salience_with_Dynamic_Attentional_Push)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gorji_Going_From_Image_CVPR_2018_paper.html)>
 
     - Siavash Gorji, James J. Clark
 
 
-- [M3: Multimodal Memory Modelling for Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_M3_Multimodal_Memory_Modelling_for_Video_Captioning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_M3_Multimodal_Memory_CVPR_2018_paper.html)
+- [M3: Multimodal Memory Modelling for Video Captioning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_M3_Multimodal_Memory_Modelling_for_Video_Captioning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_M3_Multimodal_Memory_CVPR_2018_paper.html)>
 
     - Junbo Wang, Wei Wang, Yan Huang, Liang Wang, Tieniu Tan
 
 
-- [Emotional Attention: A Study of Image Sentiment and Visual Attention](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Emotional_Attention_A_Study_of_Image_Sentiment_and_Visual_Attention)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Fan_Emotional_Attention_A_CVPR_2018_paper.html)
+- [Emotional Attention: A Study of Image Sentiment and Visual Attention](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Emotional_Attention_A_Study_of_Image_Sentiment_and_Visual_Attention)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Fan_Emotional_Attention_A_CVPR_2018_paper.html)>
 
     - Shaojing Fan, Zhiqi Shen, Ming Jiang, Bryan L. Koenig, Juan Xu, Mohan S. Kankanhalli, Qi Zhao
 
 
-- [A Low Power, High Throughput, Fully Event-Based Stereo System](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Low_Power_High_Throughput_Fully_Event-Based_Stereo_System)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Andreopoulos_A_Low_Power_CVPR_2018_paper.html)
+- [A Low Power, High Throughput, Fully Event-Based Stereo System](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Low_Power_High_Throughput_Fully_Event-Based_Stereo_System)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Andreopoulos_A_Low_Power_CVPR_2018_paper.html)>
 
     - Alexander Andreopoulos, Hirak J. Kashyap, Tapan K. Nayak, Arnon Amir, Myron D. Flickner
 
@@ -3929,7 +3929,7 @@ linked to summary slide pages and formal CVPR pages.
     - Eli Shlizerman, Lucio Dery, Hayden Schoen, Ira Kemelmacher-Shlizerman
 
 
-- [Weakly Supervised Coupled Networks for Visual Sentiment Analysis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Weakly_Supervised_Coupled_Networks_for_Visual_Sentiment_Analysis)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Weakly_Supervised_Coupled_CVPR_2018_paper.html)
+- [Weakly Supervised Coupled Networks for Visual Sentiment Analysis](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Weakly_Supervised_Coupled_Networks_for_Visual_Sentiment_Analysis)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Weakly_Supervised_Coupled_CVPR_2018_paper.html)>
 
     - Jufeng Yang, Dongyu She, Yu-Kun Lai, Paul L. Rosin, Ming-Hsuan Yang
 
@@ -3944,7 +3944,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yashas Annadani, Soma Biswas
 
 
-- [Show Me a Story: Towards Coherent Neural Story Illustration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Show_Me_a_Story_Towards_Coherent_Neural_Story_Illustration)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ravi_Show_Me_a_CVPR_2018_paper.html)
+- [Show Me a Story: Towards Coherent Neural Story Illustration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Show_Me_a_Story_Towards_Coherent_Neural_Story_Illustration)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ravi_Show_Me_a_CVPR_2018_paper.html)>
 
     - Hareesh Ravi, Lezi Wang, Carlos Muniz, Leonid Sigal, Dimitris Metaxas, Mubbasir Kapadia
 
@@ -3954,12 +3954,12 @@ linked to summary slide pages and formal CVPR pages.
     - Bairui Wang, Lin Ma, Wei Zhang, Wei Liu
 
 
-- [Fast Spectral Ranking for Similarity Search](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_Spectral_Ranking_for_Similarity_Search)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Iscen_Fast_Spectral_Ranking_CVPR_2018_paper.html)
+- [Fast Spectral Ranking for Similarity Search](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Fast_Spectral_Ranking_for_Similarity_Search)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Iscen_Fast_Spectral_Ranking_CVPR_2018_paper.html)>
 
     - Ahmet Iscen, Yannis Avrithis, Giorgos Tolias, Teddy Furon, Ondřej Chum
 
 
-- [Mining on Manifolds: Metric Learning Without Labels](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Mining_on_Manifolds_Metric_Learning_without_Labels)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Iscen_Mining_on_Manifolds_CVPR_2018_paper.html)
+- [Mining on Manifolds: Metric Learning Without Labels](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Mining_on_Manifolds_Metric_Learning_without_Labels)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Iscen_Mining_on_Manifolds_CVPR_2018_paper.html)>
 
     - Ahmet Iscen, Giorgos Tolias, Yannis Avrithis, Ondřej Chum
 
@@ -3969,7 +3969,7 @@ linked to summary slide pages and formal CVPR pages.
     - Bin Yang, Wenjie Luo, Raquel Urtasun
 
 
-- [Leveraging Unlabeled Data for Crowd Counting by Learning to Rank](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Leveraging_Unlabeled_Data_for_Crowd_Counting_by_Learning_to_Rank)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Leveraging_Unlabeled_Data_CVPR_2018_paper.html)
+- [Leveraging Unlabeled Data for Crowd Counting by Learning to Rank](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Leveraging_Unlabeled_Data_for_Crowd_Counting_by_Learning_to_Rank)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Leveraging_Unlabeled_Data_CVPR_2018_paper.html)>
 
     - Xialei Liu, Joost van de Weijer, Andrew D. Bagdanov
 
@@ -3984,7 +3984,7 @@ linked to summary slide pages and formal CVPR pages.
     - Badri Patro, Vinay P. Namboodiri
 
 
-- [Learning From Noisy Web Data With Category-Level Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Noisy_Web_Data_with_Category-level_Supervision)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Niu_Learning_From_Noisy_CVPR_2018_paper.html)
+- [Learning From Noisy Web Data With Category-Level Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_from_Noisy_Web_Data_with_Category-level_Supervision)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Niu_Learning_From_Noisy_CVPR_2018_paper.html)>
 
     - Li Niu, Qingtao Tang, Ashok Veeraraghavan, Ashutosh Sabharwal
 
@@ -3994,7 +3994,7 @@ linked to summary slide pages and formal CVPR pages.
     - Vasili Ramanishka, Yi-Ting Chen, Teruhisa Misu, Kate Saenko
 
 
-- [Learning Attribute Representations With Localization for Flexible Fashion Search](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Attribute_Representations_with_Localization_for_Flexible_Fashion_Search)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ak_Learning_Attribute_Representations_CVPR_2018_paper.html)
+- [Learning Attribute Representations With Localization for Flexible Fashion Search](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Attribute_Representations_with_Localization_for_Flexible_Fashion_Search)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ak_Learning_Attribute_Representations_CVPR_2018_paper.html)>
 
     - Kenan E. Ak, Ashraf A. Kassim, Joo Hwee Lim, Jo Yew Tham
 
@@ -4004,7 +4004,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jônatas Wehrmann, Rodrigo C. Barros
 
 
-- [Learning Multi-Instance Enriched Image Representations via Non-Greedy Ratio Maximization of the l1-Norm Distances](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Multi-Instance_Enriched_Image_Representations_via_Non-Greedy_Ratio_Maximization_of_the_l1-Norm_Distances)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Learning_Multi-Instance_Enriched_CVPR_2018_paper.html)
+- [Learning Multi-Instance Enriched Image Representations via Non-Greedy Ratio Maximization of the l1-Norm Distances](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Multi-Instance_Enriched_Image_Representations_via_Non-Greedy_Ratio_Maximization_of_the_l1-Norm_Distances)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Learning_Multi-Instance_Enriched_CVPR_2018_paper.html)>
 
     - Kai Liu, Hua Wang, Feiping Nie, Hao Zhang
 
@@ -4019,17 +4019,17 @@ linked to summary slide pages and formal CVPR pages.
     - Chaorui Deng, Qi Wu, Qingyao Wu, Fuyuan Hu, Fan Lyu, Mingkui Tan
 
 
-- [Beyond Trade-Off: Accelerate FCN-Based Face Detector With Higher Accuracy](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Beyond_Trade_off_Accelerate_FCN_based_Face_Detector_with_Higher_Accuracy)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Song_Beyond_Trade-Off_Accelerate_CVPR_2018_paper.html)
+- [Beyond Trade-Off: Accelerate FCN-Based Face Detector With Higher Accuracy](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Beyond_Trade_off_Accelerate_FCN_based_Face_Detector_with_Higher_Accuracy)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Song_Beyond_Trade-Off_Accelerate_CVPR_2018_paper.html)>
 
     - Guanglu Song, Yu Liu, Ming Jiang, Yujie Wang, Junjie Yan, Biao Leng
 
 
-- [PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PackNet_Adding_Multiple_Tasks_to_a_Single_Network_by_Iterative_Pruning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Mallya_PackNet_Adding_Multiple_CVPR_2018_paper.html)
+- [PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PackNet_Adding_Multiple_Tasks_to_a_Single_Network_by_Iterative_Pruning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Mallya_PackNet_Adding_Multiple_CVPR_2018_paper.html)>
 
     - Arun Mallya, Svetlana Lazebnik
 
 
-- [Repulsion Loss: Detecting Pedestrians in a Crowd](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Repulsion_Loss_Detecting_Pedestrians_in_a_Crowd)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Repulsion_Loss_Detecting_CVPR_2018_paper.html)
+- [Repulsion Loss: Detecting Pedestrians in a Crowd](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Repulsion_Loss_Detecting_Pedestrians_in_a_Crowd)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Repulsion_Loss_Detecting_CVPR_2018_paper.html)>
 
     - Xinlong Wang, Tete Xiao, Yuning Jiang, Shuai Shao, Jian Sun, Chunhua Shen
 
@@ -4069,12 +4069,12 @@ linked to summary slide pages and formal CVPR pages.
     - Christoph Feichtenhofer, Axel Pinz, Richard P. Wildes, Andrew Zisserman
 
 
-- [Controllable Video Generation With Sparse Trajectories](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Controllable_Video_Generation_with_Sparse_Trajectories)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hao_Controllable_Video_Generation_CVPR_2018_paper.html)
+- [Controllable Video Generation With Sparse Trajectories](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Controllable_Video_Generation_with_Sparse_Trajectories)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hao_Controllable_Video_Generation_CVPR_2018_paper.html)>
 
     - Zekun Hao, Xun Huang, Serge Belongie
 
 
-- [Representing and Learning High Dimensional Data With the Optimal Transport Map From a Probabilistic Viewpoint](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Representing_and_Learning_High_Dimensional_Data_with_the_Optimal_Transport_Map_from_a_Probabilistic_Viewpoint)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Representing_and_Learning_CVPR_2018_paper.html)
+- [Representing and Learning High Dimensional Data With the Optimal Transport Map From a Probabilistic Viewpoint](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Representing_and_Learning_High_Dimensional_Data_with_the_Optimal_Transport_Map_from_a_Probabilistic_Viewpoint)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Representing_and_Learning_CVPR_2018_paper.html)>
 
     - Serim Park, Matthew Thorpe
 
@@ -4099,7 +4099,7 @@ linked to summary slide pages and formal CVPR pages.
     - Brian Dolhansky, Cristian Canton Ferrer
 
 
-- [ClcNet: Improving the Efficiency of Convolutional Neural Network Using Channel Local Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_clcNet_Improving_the_Efficiency_of_Convolutional_Neural_Network_using_Channel_Local_Convolutions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_ClcNet_Improving_the_CVPR_2018_paper.html)
+- [ClcNet: Improving the Efficiency of Convolutional Neural Network Using Channel Local Convolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_clcNet_Improving_the_Efficiency_of_Convolutional_Neural_Network_using_Channel_Local_Convolutions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_ClcNet_Improving_the_CVPR_2018_paper.html)>
 
     - Dong-Qing Zhang
 
@@ -4114,7 +4114,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jason Kuen, Xiangfei Kong, Zhe Lin, Gang Wang, Jianxiong Yin, Simon See, Yap-Peng Tan
 
 
-- [Face Aging With Identity-Preserved Conditional Generative Adversarial Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Face_Aging_with_Identity-Preserved_Conditional_Generative_Adversarial_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Face_Aging_With_CVPR_2018_paper.html)
+- [Face Aging With Identity-Preserved Conditional Generative Adversarial Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Face_Aging_with_Identity-Preserved_Conditional_Generative_Adversarial_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Face_Aging_With_CVPR_2018_paper.html)>
 
     - Zongwei Wang, Xu Tang, Weixin Luo, Shenghua Gao
 
@@ -4129,12 +4129,12 @@ linked to summary slide pages and formal CVPR pages.
     - Zhun Sun, Mete Ozay, Yan Zhang, Xing Liu, Takayuki Okatani
 
 
-- [Tagging Like Humans: Diverse and Distinct Image Annotation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Tagging_like_Humans_Diverse_and_Distinct_Image_Annotation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Tagging_Like_Humans_CVPR_2018_paper.html)
+- [Tagging Like Humans: Diverse and Distinct Image Annotation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Tagging_like_Humans_Diverse_and_Distinct_Image_Annotation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Tagging_Like_Humans_CVPR_2018_paper.html)>
 
     - Baoyuan Wu, Weidong Chen, Peng Sun, Wei Liu, Bernard Ghanem, Siwei Lyu
 
 
-- [Re-Weighted Adversarial Adaptation Network for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Re-weighted_Adversarial_Adaptation_Network_for_Unsupervised_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Re-Weighted_Adversarial_Adaptation_CVPR_2018_paper.html)
+- [Re-Weighted Adversarial Adaptation Network for Unsupervised Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Re-weighted_Adversarial_Adaptation_Network_for_Unsupervised_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Re-Weighted_Adversarial_Adaptation_CVPR_2018_paper.html)>
 
     - Qingchao Chen, Yang Liu, Zhaowen Wang, Ian Wassell, Kevin Chetty
 
@@ -4149,7 +4149,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xinpeng Chen, Lin Ma, Wenhao Jiang, Jian Yao, Wei Liu
 
 
-- [Unsupervised Domain Adaptation With Similarity Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Domain_Adaptation_with_Similarity_Learning)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Pinheiro_Unsupervised_Domain_Adaptation_CVPR_2018_paper.html)
+- [Unsupervised Domain Adaptation With Similarity Learning](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Domain_Adaptation_with_Similarity_Learning)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Pinheiro_Unsupervised_Domain_Adaptation_CVPR_2018_paper.html)>
 
     - Pedro O. Pinheiro
 
@@ -4164,12 +4164,12 @@ linked to summary slide pages and formal CVPR pages.
     - Gellért Máttyus, Raquel Urtasun
 
 
-- [SoS-RSC: A Sum-of-Squares Polynomial Approach to Robustifying Subspace Clustering Algorithms](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SoS-RSC_A_Sum-of-Squares_Polynomial_Approach_to_Robustifying_Subspace_Clustering_Algorithms)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sznaier_SoS-RSC_A_Sum-of-Squares_CVPR_2018_paper.html)
+- [SoS-RSC: A Sum-of-Squares Polynomial Approach to Robustifying Subspace Clustering Algorithms](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SoS-RSC_A_Sum-of-Squares_Polynomial_Approach_to_Robustifying_Subspace_Clustering_Algorithms)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sznaier_SoS-RSC_A_Sum-of-Squares_CVPR_2018_paper.html)>
 
     - Mario Sznaier, Octavia Camps
 
 
-- [Resource Aware Person Re-Identification Across Multiple Resolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Resource_Aware_Person_Re-identification_across_Multiple_Resolutions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Resource_Aware_Person_CVPR_2018_paper.html)
+- [Resource Aware Person Re-Identification Across Multiple Resolutions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Resource_Aware_Person_Re-identification_across_Multiple_Resolutions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Resource_Aware_Person_CVPR_2018_paper.html)>
 
     - Yan Wang, Lequn Wang, Yurong You, Xu Zou, Vincent Chen, Serena Li, Gao Huang, Bharath Hariharan, Kilian Q. Weinberger
 
@@ -4214,7 +4214,7 @@ linked to summary slide pages and formal CVPR pages.
     - Sylvestre-Alvise Rebuffi, Hakan Bilen, Andrea Vedaldi
 
 
-- [Deep Density Clustering of Unconstrained Faces](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Density_Clustering_of_Unconstrained_Faces)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lin_Deep_Density_Clustering_CVPR_2018_paper.html)
+- [Deep Density Clustering of Unconstrained Faces](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Deep_Density_Clustering_of_Unconstrained_Faces)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lin_Deep_Density_Clustering_CVPR_2018_paper.html)>
 
     - Wei-An Lin, Jun-Cheng Chen, Carlos D. Castillo, Rama Chellappa
 
@@ -4229,17 +4229,17 @@ linked to summary slide pages and formal CVPR pages.
     - Daiki Ikami, Toshihiko Yamasaki, Kiyoharu Aizawa
 
 
-- [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Importance_Weighted_Adversarial_Nets_for_Partial_Domain_Adaptation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Importance_Weighted_Adversarial_CVPR_2018_paper.html)
+- [Importance Weighted Adversarial Nets for Partial Domain Adaptation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Importance_Weighted_Adversarial_Nets_for_Partial_Domain_Adaptation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Importance_Weighted_Adversarial_CVPR_2018_paper.html)>
 
     - Jing Zhang, Zewei Ding, Wanqing Li, Philip Ogunbona
 
 
-- [Efficient Subpixel Refinement With Symbolic Linear Predictors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Efficient_Subpixel_Refinement_with_Symbolic_Linear_Predictors)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Lui_Efficient_Subpixel_Refinement_CVPR_2018_paper.html)
+- [Efficient Subpixel Refinement With Symbolic Linear Predictors](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Efficient_Subpixel_Refinement_with_Symbolic_Linear_Predictors)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Lui_Efficient_Subpixel_Refinement_CVPR_2018_paper.html)>
 
     - Vincent Lui, Jonathon Geeves, Winston Yii, Tom Drummond
 
 
-- [Scale-Recurrent Network for Deep Image Deblurring](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Scale-recurrent_Network_for_Deep_Image_Deblurring)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Tao_Scale-Recurrent_Network_for_CVPR_2018_paper.html)
+- [Scale-Recurrent Network for Deep Image Deblurring](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Scale-recurrent_Network_for_Deep_Image_Deblurring)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Tao_Scale-Recurrent_Network_for_CVPR_2018_paper.html)>
 
     - Xin Tao, Hongyun Gao, Xiaoyong Shen, Jue Wang, Jiaya Jia
 
@@ -4279,7 +4279,7 @@ linked to summary slide pages and formal CVPR pages.
     - Lu Sheng, Ziyi Lin, Jing Shao, Xiaogang Wang
 
 
-- [Missing Slice Recovery for Tensors Using a Low-Rank Model in Embedded Space](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Missing_Slice_Recovery_for_Tensors_Using_a_Low-rank_Model_in_Embedded_Space)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yokota_Missing_Slice_Recovery_CVPR_2018_paper.html)
+- [Missing Slice Recovery for Tensors Using a Low-Rank Model in Embedded Space](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Missing_Slice_Recovery_for_Tensors_Using_a_Low-rank_Model_in_Embedded_Space)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yokota_Missing_Slice_Recovery_CVPR_2018_paper.html)>
 
     - Tatsuya Yokota, Burak Erem, Seyhmus Guler, Simon K. Warfield, Hidekata Hontani
 
@@ -4294,12 +4294,12 @@ linked to summary slide pages and formal CVPR pages.
     - Yueqi Duan, Ziwei Wang, Jiwen Lu, Xudong Lin, Jie Zhou
 
 
-- [Recurrent Saliency Transformation Network: Incorporating Multi-Stage Visual Cues for Small Organ Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Recurrent_Saliency_Transformation_Network_Incorporating_Multi-Stage_Visual_Cues_for_Small_Organ_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yu_Recurrent_Saliency_Transformation_CVPR_2018_paper.html)
+- [Recurrent Saliency Transformation Network: Incorporating Multi-Stage Visual Cues for Small Organ Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Recurrent_Saliency_Transformation_Network_Incorporating_Multi-Stage_Visual_Cues_for_Small_Organ_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yu_Recurrent_Saliency_Transformation_CVPR_2018_paper.html)>
 
     - Qihang Yu, Lingxi Xie, Yan Wang, Yuyin Zhou, Elliot K. Fishman, Alan L. Yuille
 
 
-- [Thoracic Disease Identification and Localization With Limited Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Thoracic_Disease_Identification_and_Localization_with_Limited_Supervision)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Thoracic_Disease_Identification_CVPR_2018_paper.html)
+- [Thoracic Disease Identification and Localization With Limited Supervision](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Thoracic_Disease_Identification_and_Localization_with_Limited_Supervision)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Thoracic_Disease_Identification_CVPR_2018_paper.html)>
 
     - Zhe Li, Chong Wang, Mei Han, Yuan Xue, Wei Wei, Li-Jia Li, Li Fei-Fei
 
@@ -4309,12 +4309,12 @@ linked to summary slide pages and formal CVPR pages.
     - Xiaowei Xu, Qing Lu, Lin Yang, Sharon Hu, Danny Chen, Yu Hu, Yiyu Shi
 
 
-- [Visual Feature Attribution Using Wasserstein GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Feature_Attribution_using_Wasserstein_Gans)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Baumgartner_Visual_Feature_Attribution_CVPR_2018_paper.html)
+- [Visual Feature Attribution Using Wasserstein GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Visual_Feature_Attribution_using_Wasserstein_Gans)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Baumgartner_Visual_Feature_Attribution_CVPR_2018_paper.html)>
 
     - Christian F. Baumgartner, Lisa M. Koch, Kerem Can Tezcan, Jia Xi Ang, Ender Konukoglu
 
 
-- [Total Capture: A 3D Deformation Model for Tracking Faces, Hands, and Bodies](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Total_Capture_A_3D_Deformation_Model_for_Tracking_Faces_Hands_and_Bodies)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Joo_Total_Capture_A_CVPR_2018_paper.html)
+- [Total Capture: A 3D Deformation Model for Tracking Faces, Hands, and Bodies](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Total_Capture_A_3D_Deformation_Model_for_Tracking_Faces_Hands_and_Bodies)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Joo_Total_Capture_A_CVPR_2018_paper.html)>
 
     - Hanbyul Joo, Tomas Simon, Yaser Sheikh
 
@@ -4329,7 +4329,7 @@ linked to summary slide pages and formal CVPR pages.
     - Guha Balakrishnan, Amy Zhao, Adrian V. Dalca, Frédo Durand, John Guttag
 
 
-- [SSNet: Scale Selection Network for Online 3D Action Prediction](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SSNet_Scale_Selection_Network_for_Online_3D_Action_Prediction)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_SSNet_Scale_Selection_CVPR_2018_paper.html)
+- [SSNet: Scale Selection Network for Online 3D Action Prediction](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_SSNet_Scale_Selection_Network_for_Online_3D_Action_Prediction)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_SSNet_Scale_Selection_CVPR_2018_paper.html)>
 
     - Jun Liu, Amir Shahroudy, Gang Wang, Ling-Yu Duan, Alex C. Kot
 
@@ -4344,17 +4344,17 @@ linked to summary slide pages and formal CVPR pages.
     - Fadime Sener, Angela Yao
 
 
-- [Unsupervised Training for 3D Morphable Model Regression](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Training_for_3D_Morphable_Model_Regression)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Genova_Unsupervised_Training_for_CVPR_2018_paper.html)
+- [Unsupervised Training for 3D Morphable Model Regression](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Unsupervised_Training_for_3D_Morphable_Model_Regression)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Genova_Unsupervised_Training_for_CVPR_2018_paper.html)>
 
     - Kyle Genova, Forrester Cole, Aaron Maschinot, Aaron Sarna, Daniel Vlasic, William T. Freeman
 
 
-- [Video Based Reconstruction of 3D People Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Video_Based_Reconstruction_of_3D_People_Models)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Alldieck_Video_Based_Reconstruction_CVPR_2018_paper.html)
+- [Video Based Reconstruction of 3D People Models](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Video_Based_Reconstruction_of_3D_People_Models)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Alldieck_Video_Based_Reconstruction_CVPR_2018_paper.html)>
 
     - Thiemo Alldieck, Marcus Magnor, Weipeng Xu, Christian Theobalt, Gerard Pons-Moll
 
 
-- [Pose-Guided Photorealistic Face Rotation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Pose-Guided_Photorealistic_Face_Rotation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Pose-Guided_Photorealistic_Face_CVPR_2018_paper.html)
+- [Pose-Guided Photorealistic Face Rotation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Pose-Guided_Photorealistic_Face_Rotation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Pose-Guided_Photorealistic_Face_CVPR_2018_paper.html)>
 
     - Yibo Hu, Xiang Wu, Bing Yu, Ran He, Zhenan Sun
 
@@ -4369,7 +4369,7 @@ linked to summary slide pages and formal CVPR pages.
     - Liuhao Ge, Yujun Cai, Junwu Weng, Junsong Yuan
 
 
-- [Seeing Voices and Hearing Faces: Cross-Modal Biometric Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Seeing_Voices_and_Hearing_Faces_Cross-modal_biometric_matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Nagrani_Seeing_Voices_and_CVPR_2018_paper.html)
+- [Seeing Voices and Hearing Faces: Cross-Modal Biometric Matching](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Seeing_Voices_and_Hearing_Faces_Cross-modal_biometric_matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Nagrani_Seeing_Voices_and_CVPR_2018_paper.html)>
 
     - Arsha Nagrani, Samuel Albanie, Andrew Zisserman
 
@@ -4379,7 +4379,7 @@ linked to summary slide pages and formal CVPR pages.
     - Helge Rhodin, Jörg Spörri, Isinsu Katircioglu, Victor Constantin, Frédéric Meyer, Erich Müller, Mathieu Salzmann, Pascal Fua
 
 
-- [Separating Style and Content for Generalized Style Transfer](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Separating_Style_and_Content_for_Generalized_Style_Transfer)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Separating_Style_and_CVPR_2018_paper.html)
+- [Separating Style and Content for Generalized Style Transfer](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Separating_Style_and_Content_for_Generalized_Style_Transfer)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Separating_Style_and_CVPR_2018_paper.html)>
 
     - Yexun Zhang, Ya Zhang, Wenbin Cai
 
@@ -4399,7 +4399,7 @@ linked to summary slide pages and formal CVPR pages.
     - João F. Henriques, Andrea Vedaldi
 
 
-- [Accurate and Diverse Sampling of Sequences Based on a “Best of Many” Sample Objective](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Accurate_and_Diverse_Sampling_of_Sequences_based_on_a_Best_of_Many_Sample_Objective)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bhattacharyya_Accurate_and_Diverse_CVPR_2018_paper.html)
+- [Accurate and Diverse Sampling of Sequences Based on a “Best of Many” Sample Objective](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Accurate_and_Diverse_Sampling_of_Sequences_based_on_a_Best_of_Many_Sample_Objective)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bhattacharyya_Accurate_and_Diverse_CVPR_2018_paper.html)>
 
     - Apratim Bhattacharyya, Bernt Schiele, Mario Fritz
 
@@ -4429,12 +4429,12 @@ linked to summary slide pages and formal CVPR pages.
     - Miguel Á. Carreira-Perpiñán, Yerlan Idelbayev
 
 
-- [Large-Scale Distance Metric Learning With Uncertainty](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Large-scale_Distance_Metric_Learning_with_Uncertainty)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Qian_Large-Scale_Distance_Metric_CVPR_2018_paper.html)
+- [Large-Scale Distance Metric Learning With Uncertainty](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Large-scale_Distance_Metric_Learning_with_Uncertainty)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Qian_Large-Scale_Distance_Metric_CVPR_2018_paper.html)>
 
     - Qi Qian, Jiasheng Tang, Hao Li, Shenghuo Zhu, Rong Jin
 
 
-- [Guide Me: Interacting With Deep Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Guide_Me_Interacting_with_Deep_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Rupprecht_Guide_Me_Interacting_CVPR_2018_paper.html)
+- [Guide Me: Interacting With Deep Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Guide_Me_Interacting_with_Deep_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Rupprecht_Guide_Me_Interacting_CVPR_2018_paper.html)>
 
     - Christian Rupprecht, Iro Laina, Nassir Navab, Gregory D. Hager, Federico Tombari
 
@@ -4459,7 +4459,7 @@ linked to summary slide pages and formal CVPR pages.
     - Alexander Mathews, Lexing Xie, Xuming He
 
 
-- [Benchmarking 6DOF Outdoor Visual Localization in Changing Conditions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Benchmarking_6DOF_Outdoor_Visual_Localization_in_Changing_Conditions)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Sattler_Benchmarking_6DOF_Outdoor_CVPR_2018_paper.html)
+- [Benchmarking 6DOF Outdoor Visual Localization in Changing Conditions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Benchmarking_6DOF_Outdoor_Visual_Localization_in_Changing_Conditions)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Sattler_Benchmarking_6DOF_Outdoor_CVPR_2018_paper.html)>
 
     - Torsten Sattler, Will Maddern, Carl Toft, Akihiko Torii, Lars Hammarstrand, Erik Stenborg, Daniel Safari, Masatoshi Okutomi, Marc Pollefeys, Josef Sivic, Fredrik Kahl, Tomas Pajdla
 
@@ -4479,7 +4479,7 @@ linked to summary slide pages and formal CVPR pages.
     - Jianwen Xie, Zilong Zheng, Ruiqi Gao, Wenguan Wang, Song-Chun Zhu, Ying Nian Wu
 
 
-- [Neural Kinematic Networks for Unsupervised Motion Retargetting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Neural_Kinematic_Networks_for_Unsupervised_Motion_Retargetting)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Villegas_Neural_Kinematic_Networks_CVPR_2018_paper.html)
+- [Neural Kinematic Networks for Unsupervised Motion Retargetting](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Neural_Kinematic_Networks_for_Unsupervised_Motion_Retargetting)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Villegas_Neural_Kinematic_Networks_CVPR_2018_paper.html)>
 
     - Ruben Villegas, Jimei Yang, Duygu Ceylan, Honglak Lee
 
@@ -4539,7 +4539,7 @@ linked to summary slide pages and formal CVPR pages.
     - Pelin Dogan, Boyang Li, Leonid Sigal, Markus Gross
 
 
-- [Path Aggregation Network for Instance Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Path_Aggregation_Network_for_Instance_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Path_Aggregation_Network_CVPR_2018_paper.html)
+- [Path Aggregation Network for Instance Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Path_Aggregation_Network_for_Instance_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Liu_Path_Aggregation_Network_CVPR_2018_paper.html)>
 
     - Shu Liu, Lu Qi, Haifang Qin, Jianping Shi, Jiaya Jia
 
@@ -4549,12 +4549,12 @@ linked to summary slide pages and formal CVPR pages.
     - Grant Van Horn, Oisin Mac Aodha, Yang Song, Yin Cui, Chen Sun, Alex Shepard, Hartwig Adam, Pietro Perona, Serge Belongie
 
 
-- [Multimodal Explanations: Justifying Decisions and Pointing to the Evidence](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multimodal_Explanations_Justifying_Decisions_and_Pointing_to_the_Evidence)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.html)
+- [Multimodal Explanations: Justifying Decisions and Pointing to the Evidence](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multimodal_Explanations_Justifying_Decisions_and_Pointing_to_the_Evidence)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.html)>
 
     - Dong Huk Park, Lisa Anne Hendricks, Zeynep Akata, Anna Rohrbach, Bernt Schiele, Trevor Darrell, Marcus Rohrbach
 
 
-- [StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_StarGAN_Unified_Generative_Adversarial_Networks_for_Multi_Domain_Image_to_Image_Translation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Choi_StarGAN_Unified_Generative_CVPR_2018_paper.html)
+- [StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_StarGAN_Unified_Generative_Adversarial_Networks_for_Multi_Domain_Image_to_Image_Translation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Choi_StarGAN_Unified_Generative_CVPR_2018_paper.html)>
 
     - Yunjey Choi, Minje Choi, Munyoung Kim, Jung-Woo Ha, Sunghun Kim, Jaegul Choo
 
@@ -4569,7 +4569,7 @@ linked to summary slide pages and formal CVPR pages.
     - Xiaojuan Qi, Qifeng Chen, Jiaya Jia, Vladlen Koltun
 
 
-- [BlockDrop: Dynamic Inference Paths in Residual Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_BlockDrop_Dynamic_Inference_Paths_in_Residual_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_BlockDrop_Dynamic_Inference_CVPR_2018_paper.html)
+- [BlockDrop: Dynamic Inference Paths in Residual Networks](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_BlockDrop_Dynamic_Inference_Paths_in_Residual_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_BlockDrop_Dynamic_Inference_CVPR_2018_paper.html)>
 
     - Zuxuan Wu, Tushar Nagarajan, Abhishek Kumar, Steven Rennie, Larry S. Davis, Kristen Grauman, Rogerio Feris
 
@@ -4589,7 +4589,7 @@ linked to summary slide pages and formal CVPR pages.
     - Guotian Xie, Jingdong Wang, Ting Zhang, Jianhuang Lai, Richang Hong, Guo-Jun Qi
 
 
-- [A Variational U-Net for Conditional Appearance and Shape Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Variational_U-Net_for_Conditional_Appearance_and_Shape_Generation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Esser_A_Variational_U-Net_CVPR_2018_paper.html)
+- [A Variational U-Net for Conditional Appearance and Shape Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_A_Variational_U-Net_for_Conditional_Appearance_and_Shape_Generation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Esser_A_Variational_U-Net_CVPR_2018_paper.html)>
 
     - Patrick Esser, Ekaterina Sutter, Björn Ommer
 
@@ -4599,7 +4599,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yen-Cheng Liu, Yu-Ying Yeh, Tzu-Chien Fu, Sheng-De Wang, Wei-Chen Chiu, Yu-Chiang Frank Wang
 
 
-- [Learning Deep Structured Active Contours End-to-End](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_deep_structured_active_contours_end-to-end)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Marcos_Learning_Deep_Structured_CVPR_2018_paper.html)
+- [Learning Deep Structured Active Contours End-to-End](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_deep_structured_active_contours_end-to-end)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Marcos_Learning_Deep_Structured_CVPR_2018_paper.html)>
 
     - Diego Marcos, Devis Tuia, Benjamin Kellenberger, Lisa Zhang, Min Bai, Renjie Liao, Raquel Urtasun
 
@@ -4624,7 +4624,7 @@ linked to summary slide pages and formal CVPR pages.
     - Siddhartha Chandra, Camille Couprie, Iasonas Kokkinos
 
 
-- [Customized Image Narrative Generation via Interactive Visual Question Generation and Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Customized_Image_Narrative_Generation_via_Interactive_Visual_Question_Generation_and_Answering)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Shin_Customized_Image_Narrative_CVPR_2018_paper.html)
+- [Customized Image Narrative Generation via Interactive Visual Question Generation and Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Customized_Image_Narrative_Generation_via_Interactive_Visual_Question_Generation_and_Answering)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Shin_Customized_Image_Narrative_CVPR_2018_paper.html)>
 
     - Andrew Shin, Yoshitaka Ushiku, Tatsuya Harada
 
@@ -4639,7 +4639,7 @@ linked to summary slide pages and formal CVPR pages.
     - Qingnan Fan, Jiaolong Yang, Gang Hua, Baoquan Chen, David Wipf
 
 
-- [Multi-Cell Detection and Classification Using a Generative Convolutional Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multi-Cell_Detection_and_Classification_using_a_Generative_Convolutional_Model)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yellin_Multi-Cell_Detection_and_CVPR_2018_paper.html)
+- [Multi-Cell Detection and Classification Using a Generative Convolutional Model](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Multi-Cell_Detection_and_Classification_using_a_Generative_Convolutional_Model)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yellin_Multi-Cell_Detection_and_CVPR_2018_paper.html)>
 
     - Florence Yellin, Benjamin D. Haeffele, Sophie Roth, René Vidal
 
@@ -4654,7 +4654,7 @@ linked to summary slide pages and formal CVPR pages.
     - Bo Li, Junjie Yan, Wei Wu, Zheng Zhu, Xiaolin Hu
 
 
-- [LiteFlowNet: A Lightweight Convolutional Neural Network for Optical Flow Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LiteFlowNet_A_Lightweight_Convolutional_Neural_Network_for_Optical_Flow_Estimation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hui_LiteFlowNet_A_Lightweight_CVPR_2018_paper.html)
+- [LiteFlowNet: A Lightweight Convolutional Neural Network for Optical Flow Estimation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_LiteFlowNet_A_Lightweight_Convolutional_Neural_Network_for_Optical_Flow_Estimation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hui_LiteFlowNet_A_Lightweight_CVPR_2018_paper.html)>
 
     - Tak-Wai Hui, Xiaoou Tang, Chen Change Loy
 
@@ -4664,7 +4664,7 @@ linked to summary slide pages and formal CVPR pages.
     - Yibing Song, Chao Ma, Xiaohe Wu, Lijun Gong, Linchao Bao, Wangmeng Zuo, Chunhua Shen, Rynson W.H. Lau, Ming-Hsuan Yang
 
 
-- [Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Super_SloMo_High_Quality_Estimation_of_Multiple_Intermediate_Frames_for_Video_Interpolation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Jiang_Super_SloMo_High_CVPR_2018_paper.html)
+- [Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Super_SloMo_High_Quality_Estimation_of_Multiple_Intermediate_Frames_for_Video_Interpolation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Jiang_Super_SloMo_High_CVPR_2018_paper.html)>
 
     - Huaizu Jiang, Deqing Sun, Varun Jampani, Ming-Hsuan Yang, Erik Learned-Miller, Jan Kautz
 
@@ -4694,12 +4694,12 @@ linked to summary slide pages and formal CVPR pages.
     - Xiaosong Wang, Yifan Peng, Le Lu, Zhiyong Lu, Ronald M. Summers
 
 
-- [Generating Synthetic X-Ray Images of a Person From the Surface Geometry](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Generating_Synthetic_X-ray_Images_of_a_Person_from_the_Surface_Geometry)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Teixeira_Generating_Synthetic_X-Ray_CVPR_2018_paper.html)
+- [Generating Synthetic X-Ray Images of a Person From the Surface Geometry](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Generating_Synthetic_X-ray_Images_of_a_Person_from_the_Surface_Geometry)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Teixeira_Generating_Synthetic_X-Ray_CVPR_2018_paper.html)>
 
     - Brian Teixeira, Vivek Singh, Terrence Chen, Kai Ma, Birgi Tamersoy, Yifan Wu, Elena Balashova, Dorin Comaniciu
 
 
-- [Gibson Env: Real-World Perception for Embodied Agents](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Gibson_Env_Real-World_Perception_for_Embodied_Agents)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Xia_Gibson_Env_Real-World_CVPR_2018_paper.html)
+- [Gibson Env: Real-World Perception for Embodied Agents](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Gibson_Env_Real-World_Perception_for_Embodied_Agents)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Xia_Gibson_Env_Real-World_CVPR_2018_paper.html)>
 
     - Fei Xia, Amir R. Zamir, Zhiyang He, Alexander Sax, Jitendra Malik, Silvio Savarese
 
@@ -4734,7 +4734,7 @@ linked to summary slide pages and formal CVPR pages.
     - Bichen Wu, Alvin Wan, Xiangyu Yue, Peter Jin, Sicheng Zhao, Noah Golmant, Amir Gholaminejad, Joseph Gonzalez, Kurt Keutzer
 
 
-- [Sketch-a-Classifier: Sketch-Based Photo Classifier Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sketch-a-Classifier_Sketch-based_Photo_Classifier_Generation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Sketch-a-Classifier_Sketch-Based_Photo_CVPR_2018_paper.html)
+- [Sketch-a-Classifier: Sketch-Based Photo Classifier Generation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Sketch-a-Classifier_Sketch-based_Photo_Classifier_Generation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Sketch-a-Classifier_Sketch-Based_Photo_CVPR_2018_paper.html)>
 
     - Conghui Hu, Da Li, Yi-Zhe Song, Tao Xiang, Timothy M. Hospedales
 
@@ -4744,7 +4744,7 @@ linked to summary slide pages and formal CVPR pages.
     - Anna Alperovich, Ole Johannsen, Michael Strecke, Bastian Goldluecke
 
 
-- [Learning Generative ConvNets via Multi-Grid Modeling and Sampling](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Generative_ConvNets_via_Multi-grid_Modeling_and_Sampling)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Gao_Learning_Generative_ConvNets_CVPR_2018_paper.html)
+- [Learning Generative ConvNets via Multi-Grid Modeling and Sampling](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Generative_ConvNets_via_Multi-grid_Modeling_and_Sampling)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Gao_Learning_Generative_ConvNets_CVPR_2018_paper.html)>
 
     - Ruiqi Gao, Yang Lu, Junpei Zhou, Song-Chun Zhu, Ying Nian Wu
 
@@ -4774,7 +4774,7 @@ linked to summary slide pages and formal CVPR pages.
     - Truc Le, Ye Duan
 
 
-- [Tell Me Where to Look: Guided Attention Inference Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Tell_Me_Where_To_Look_Guided_Attention_Inference_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Tell_Me_Where_CVPR_2018_paper.html)
+- [Tell Me Where to Look: Guided Attention Inference Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Tell_Me_Where_To_Look_Guided_Attention_Inference_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Li_Tell_Me_Where_CVPR_2018_paper.html)>
 
     - Kunpeng Li, Ziyan Wu, Kuan-Chuan Peng, Jan Ernst, Yun Fu
 
@@ -4794,7 +4794,7 @@ linked to summary slide pages and formal CVPR pages.
     - Zizhao Zhang, Lin Yang, Yefeng Zheng
 
 
-- [An Unsupervised Learning Model for Deformable Medical Image Registration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_An_Unsupervised_Learning_Model_for_Deformable_Medical_Image_Registration)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.html)
+- [An Unsupervised Learning Model for Deformable Medical Image Registration](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_An_Unsupervised_Learning_Model_for_Deformable_Medical_Image_Registration)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Balakrishnan_An_Unsupervised_Learning_CVPR_2018_paper.html)>
 
     - Guha Balakrishnan, Amy Zhao, Mert R. Sabuncu, John Guttag, Adrian V. Dalca
 
@@ -4814,12 +4814,12 @@ linked to summary slide pages and formal CVPR pages.
     - Pingge Jiang, James A. Shackleford
 
 
-- [Anatomical Priors in Convolutional Networks for Unsupervised Biomedical Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Anatomical_Priors_in_Convolutional_Networks_for_Unsupervised_Biomedical_Segmentation)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Dalca_Anatomical_Priors_in_CVPR_2018_paper.html)
+- [Anatomical Priors in Convolutional Networks for Unsupervised Biomedical Segmentation](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Anatomical_Priors_in_Convolutional_Networks_for_Unsupervised_Biomedical_Segmentation)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Dalca_Anatomical_Priors_in_CVPR_2018_paper.html)>
 
     - Adrian V. Dalca, John Guttag, Mert R. Sabuncu
 
 
-- [3D Registration of Curves and Surfaces Using Local Differential Information](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_3D_Registration_of_Curves_and_Surfaces_using_Local_Differential_Information)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Raposo_3D_Registration_of_CVPR_2018_paper.html)
+- [3D Registration of Curves and Surfaces Using Local Differential Information](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_3D_Registration_of_Curves_and_Surfaces_using_Local_Differential_Information)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Raposo_3D_Registration_of_CVPR_2018_paper.html)>
 
     - Carolina Raposo, João P. Barreto
 
@@ -4829,7 +4829,7 @@ linked to summary slide pages and formal CVPR pages.
     - Juan C. Caicedo, Claire McQuin, Allen Goodman, Shantanu Singh, Anne E. Carpenter
 
 
-- [Guided Proofreading of Automatic Segmentations for Connectomics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Guided_Proofreading_of_Automatic_Segmentations_for_Connectomics)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Haehn_Guided_Proofreading_of_CVPR_2018_paper.html)
+- [Guided Proofreading of Automatic Segmentations for Connectomics](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Guided_Proofreading_of_Automatic_Segmentations_for_Connectomics)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Haehn_Guided_Proofreading_of_CVPR_2018_paper.html)>
 
     - Daniel Haehn, Verena Kaynig, James Tompkin, Jeff W. Lichtman, Hanspeter Pfister
 
@@ -4854,12 +4854,12 @@ linked to summary slide pages and formal CVPR pages.
     - Mehdi Noroozi, Ananth Vinjimoor, Paolo Favaro, Hamed Pirsiavash
 
 
-- [The Power of Ensembles for Active Learning in Image Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_The_power_of_ensembles_for_active_learning_in_image_classification)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Beluch_The_Power_of_CVPR_2018_paper.html)
+- [The Power of Ensembles for Active Learning in Image Classification](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_The_power_of_ensembles_for_active_learning_in_image_classification)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Beluch_The_Power_of_CVPR_2018_paper.html)>
 
     - William H. Beluch, Tim Genewein, Andreas Nürnberger, Jan M. Köhler
 
 
-- [Learning Compact Recurrent Neural Networks With Block-Term Tensor Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Compact_Recurrent_Neural_Networks_with_Block-Term_Tensor_Decomposition)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Ye_Learning_Compact_Recurrent_CVPR_2018_paper.html)
+- [Learning Compact Recurrent Neural Networks With Block-Term Tensor Decomposition](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Compact_Recurrent_Neural_Networks_with_Block-Term_Tensor_Decomposition)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Ye_Learning_Compact_Recurrent_CVPR_2018_paper.html)>
 
     - Jinmian Ye, Linnan Wang, Guangxi Li, Di Chen, Shandian Zhe, Xinqi Chu, Zenglin Xu
 
