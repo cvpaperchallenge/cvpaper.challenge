@@ -14,27 +14,27 @@ linked to summary slide pages and formal CVPR pages.
 スライドページおよびCVPRの公式ページにリンクを貼っています。
 スライドがないものも含め、CVPRの全ての論文の一覧です。
 
-- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)
+- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   <[CVPR page]>(http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)
 
     - Abhishek Das, Samyak Datta, Georgia Gkioxari, Stefan Lee, Devi Parikh, Dhruv Batra
 
 
-- [Learning by Asking Questions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-local_Neural_Networks)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Misra_Learning_by_Asking_CVPR_2018_paper.html)
+- [Learning by Asking Questions](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Non-local_Neural_Networks)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Misra_Learning_by_Asking_CVPR_2018_paper.html)>
 
     - Ishan Misra, Ross Girshick, Rob Fergus, Martial Hebert, Abhinav Gupta, Laurens van der Maaten
 
 
-- [Finding Tiny Faces in the Wild With Generative Adversarial Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_Tiny_Faces_in_the_Wild_with_Generative_Adversarial_Network)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Finding_Tiny_Faces_CVPR_2018_paper.html)
+- [Finding Tiny Faces in the Wild With Generative Adversarial Network](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Finding_Tiny_Faces_in_the_Wild_with_Generative_Adversarial_Network)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Bai_Finding_Tiny_Faces_CVPR_2018_paper.html)>
 
     - Yancheng Bai, Yongqiang Zhang, Mingli Ding, Bernard Ghanem
 
 
-- [Learning Face Age Progression: A Pyramid Architecture of GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Face_Age_Progression_A_Pyramid_Architecture_of_GANs)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Learning_Face_Age_CVPR_2018_paper.html)
+- [Learning Face Age Progression: A Pyramid Architecture of GANs](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Learning_Face_Age_Progression_A_Pyramid_Architecture_of_GANs)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_Learning_Face_Age_CVPR_2018_paper.html)>
 
     - Hongyu Yang, Di Huang, Yunhong Wang, Anil K. Jain
 
 
-- [PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PairedCycleGAN_Asymmetric_Style_Transfer_for_Applying_and_Removing_Makeup)   [<CVPR page>](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_PairedCycleGAN_Asymmetric_Style_CVPR_2018_paper.html)
+- [PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_PairedCycleGAN_Asymmetric_Style_Transfer_for_Applying_and_Removing_Makeup)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Chang_PairedCycleGAN_Asymmetric_Style_CVPR_2018_paper.html)>
 
     - Huiwen Chang, Jingwan Lu, Fisher Yu, Adam Finkelstein
 
