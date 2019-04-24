@@ -14,7 +14,7 @@ linked to summary slide pages and formal CVPR pages.
 スライドページおよびCVPRの公式ページにリンクを貼っています。
 スライドがないものも含め、CVPRの全ての論文の一覧です。
 
-- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   <[CVPR page]>(http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)
+- [Embodied Question Answering](https://cvpaperchallenge.github.io/CVPR2018_Survey/#/ID_Single_View_Stereo_Matching)   <[CVPR page](http://openaccess.thecvf.com/content_cvpr_2018/html/Das_Embodied_Question_Answering_CVPR_2018_paper.html)>
 
     - Abhishek Das, Samyak Datta, Georgia Gkioxari, Stefan Lee, Devi Parikh, Dhruv Batra
 
